@@ -1,0 +1,850 @@
+//游戏难度
+[
+	{
+		"name": "Test",//测试
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 50,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.01,//玩家-不满修正
+		"researchCostModifier": 0.01,//玩家-成本修正-科研
+		"policyCostModifier": 0.01,//玩家-成本修正-政策
+		"buildingCostModifier": 0.01,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.01,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	
+//vs Baka
+	
+	{
+		"name": "Baka vs Baka",//Baka vs Baka
+		
+		"baseHappiness": 14,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 4,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 6,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 225,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.5,//玩家-不满修正
+		"researchCostModifier": 0.5,//玩家-成本修正-科研
+		"policyCostModifier": 0.5,//玩家-成本修正-政策
+		"buildingCostModifier": 0.5,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.5,//玩家-单位-建造花费修正
+		"unitSupplyBase": 16,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 8,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.5, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.5,//AI-不满修正
+		"aiUnitCostModifier": 0.5,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.5,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.5,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.5,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.5,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.4,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Simple vs Baka",//简单 vs Baka
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 2,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.33,//对战蛮族加成
+		"barbarianSpawnDelay": 3,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 4,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 175,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.85,//玩家-不满修正
+		"researchCostModifier": 0.85,//玩家-成本修正-科研
+		"policyCostModifier": 0.85,//玩家-成本修正-政策
+		"buildingCostModifier": 0.85,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.85,//玩家-单位-建造花费修正
+		"unitSupplyBase": 14,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 7,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.5, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.5,//AI-不满修正
+		"aiUnitCostModifier": 0.5,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.5,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.5,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.5,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.5,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.4,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Normal vs Baka",//正常 vs Baka
+		
+		"baseHappiness": 10,//基础快乐
+		"extraHappinessPerLuxury": 1,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.25,//对战蛮族加成
+		"barbarianSpawnDelay": 2,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 2,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1,//玩家-不满修正
+		"researchCostModifier": 1,//玩家-成本修正-科研
+		"policyCostModifier": 1,//玩家-成本修正-政策
+		"buildingCostModifier": 1,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1,//玩家-单位-建造花费修正
+		"unitSupplyBase": 12,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.5, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.5,//AI-不满修正
+		"aiUnitCostModifier": 0.5,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.5,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.5,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.5,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.5,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.4,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Challenging vs Baka",//挑战 vs Baka
+		
+		"baseHappiness": 9,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.15,//对战蛮族加成
+		"barbarianSpawnDelay": 1,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 1,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.2,//玩家-不满修正
+		"researchCostModifier": 1.2,//玩家-成本修正-科研
+		"policyCostModifier": 1.2,//玩家-成本修正-政策
+		"buildingCostModifier": 1.2,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.2,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 5,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.5, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.5,//AI-不满修正
+		"aiUnitCostModifier": 0.5,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.5,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.5,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.5,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.5,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.4,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Difficult vs Baka",//困难 vs Baka
+		
+		"baseHappiness": 8,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.4,//玩家-不满修正
+		"researchCostModifier": 1.4,//玩家-成本修正-科研
+		"policyCostModifier": 1.4,//玩家-成本修正-政策
+		"buildingCostModifier": 1.4,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.4,//玩家-单位-建造花费修正
+		"unitSupplyBase": 8,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 4,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.5, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.5,//AI-不满修正
+		"aiUnitCostModifier": 0.5,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.5,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.5,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.5,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.5,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.4,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	
+//vs 简单
+	
+	{
+		"name": "Baka vs Simple",//Baka vs 简单
+		
+		"baseHappiness": 14,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 4,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 6,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 225,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.5,//玩家-不满修正
+		"researchCostModifier": 0.5,//玩家-成本修正-科研
+		"policyCostModifier": 0.5,//玩家-成本修正-政策
+		"buildingCostModifier": 0.5,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.5,//玩家-单位-建造花费修正
+		"unitSupplyBase": 16,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 8,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.15, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.85,//AI-不满修正
+		"aiUnitCostModifier": 0.85,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.85,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.85,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.85,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.3,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Simple vs Simple",//简单 vs 简单
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 2,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.33,//对战蛮族加成
+		"barbarianSpawnDelay": 3,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 4,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 175,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.85,//玩家-不满修正
+		"researchCostModifier": 0.85,//玩家-成本修正-科研
+		"policyCostModifier": 0.85,//玩家-成本修正-政策
+		"buildingCostModifier": 0.85,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.85,//玩家-单位-建造花费修正
+		"unitSupplyBase": 14,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 7,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.15, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.85,//AI-不满修正
+		"aiUnitCostModifier": 0.85,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.85,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.85,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.85,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.3,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Normal vs Simple",//正常 vs 简单
+		
+		"baseHappiness": 10,//基础快乐
+		"extraHappinessPerLuxury": 1,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.25,//对战蛮族加成
+		"barbarianSpawnDelay": 2,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 2,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1,//玩家-不满修正
+		"researchCostModifier": 1,//玩家-成本修正-科研
+		"policyCostModifier": 1,//玩家-成本修正-政策
+		"buildingCostModifier": 1,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1,//玩家-单位-建造花费修正
+		"unitSupplyBase": 12,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.15, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.85,//AI-不满修正
+		"aiUnitCostModifier": 0.85,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.85,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.85,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.85,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.3,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Challenging vs Simple",//挑战 vs 简单
+		
+		"baseHappiness": 9,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.15,//对战蛮族加成
+		"barbarianSpawnDelay": 1,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 1,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.2,//玩家-不满修正
+		"researchCostModifier": 1.2,//玩家-成本修正-科研
+		"policyCostModifier": 1.2,//玩家-成本修正-政策
+		"buildingCostModifier": 1.2,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.2,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 5,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.15, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.85,//AI-不满修正
+		"aiUnitCostModifier": 0.85,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.85,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.85,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.85,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.3,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Difficult vs Simple",//困难 vs 简单
+		
+		"baseHappiness": 8,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.4,//玩家-不满修正
+		"researchCostModifier": 1.4,//玩家-成本修正-科研
+		"policyCostModifier": 1.4,//玩家-成本修正-政策
+		"buildingCostModifier": 1.4,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.4,//玩家-单位-建造花费修正
+		"unitSupplyBase": 8,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 4,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1.15, //AI-城市发展修正
+		"aiUnhappinessModifier": 0.85,//AI-不满修正
+		"aiUnitCostModifier": 0.85,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 0.85,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 0.85,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 0.85,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 0.85,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.3,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	
+//vs 正常
+	
+	{
+		"name": "Baka vs Normal",//Baka vs 正常
+		
+		"baseHappiness": 14,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 4,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 6,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 225,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.5,//玩家-不满修正
+		"researchCostModifier": 0.5,//玩家-成本修正-科研
+		"policyCostModifier": 0.5,//玩家-成本修正-政策
+		"buildingCostModifier": 0.5,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.5,//玩家-单位-建造花费修正
+		"unitSupplyBase": 16,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 8,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Simple vs Normal",//简单 vs 正常
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 2,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.33,//对战蛮族加成
+		"barbarianSpawnDelay": 3,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 4,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 175,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.85,//玩家-不满修正
+		"researchCostModifier": 0.85,//玩家-成本修正-科研
+		"policyCostModifier": 0.85,//玩家-成本修正-政策
+		"buildingCostModifier": 0.85,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.85,//玩家-单位-建造花费修正
+		"unitSupplyBase": 14,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 7,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Normal vs Normal",//正常 vs 正常
+		
+		"baseHappiness": 10,//基础快乐
+		"extraHappinessPerLuxury": 1,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.25,//对战蛮族加成
+		"barbarianSpawnDelay": 2,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 2,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1,//玩家-不满修正
+		"researchCostModifier": 1,//玩家-成本修正-科研
+		"policyCostModifier": 1,//玩家-成本修正-政策
+		"buildingCostModifier": 1,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1,//玩家-单位-建造花费修正
+		"unitSupplyBase": 12,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Challenging vs Normal",//挑战 vs 正常
+		
+		"baseHappiness": 9,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.15,//对战蛮族加成
+		"barbarianSpawnDelay": 1,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 1,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.2,//玩家-不满修正
+		"researchCostModifier": 1.2,//玩家-成本修正-科研
+		"policyCostModifier": 1.2,//玩家-成本修正-政策
+		"buildingCostModifier": 1.2,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.2,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 5,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Difficult vs Normal",//困难 vs 正常
+		
+		"baseHappiness": 8,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.4,//玩家-不满修正
+		"researchCostModifier": 1.4,//玩家-成本修正-科研
+		"policyCostModifier": 1.4,//玩家-成本修正-政策
+		"buildingCostModifier": 1.4,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.4,//玩家-单位-建造花费修正
+		"unitSupplyBase": 8,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 4,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 1, //AI-城市发展修正
+		"aiUnhappinessModifier": 1,//AI-不满修正
+		"aiUnitCostModifier": 1,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.2,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	
+//vs 挑战
+	
+	{
+		"name": "Baka vs Challenging",//Baka vs 挑战
+		
+		"baseHappiness": 14,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 4,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 6,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 225,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.5,//玩家-不满修正
+		"researchCostModifier": 0.5,//玩家-成本修正-科研
+		"policyCostModifier": 0.5,//玩家-成本修正-政策
+		"buildingCostModifier": 0.5,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.5,//玩家-单位-建造花费修正
+		"unitSupplyBase": 16,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 8,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.8, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.2,//AI-不满修正
+		"aiUnitCostModifier": 1.2,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.2,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.2,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.2,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.2,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.1,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Simple vs Challenging",//简单 vs 挑战
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 2,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.33,//对战蛮族加成
+		"barbarianSpawnDelay": 3,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 4,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 175,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.85,//玩家-不满修正
+		"researchCostModifier": 0.85,//玩家-成本修正-科研
+		"policyCostModifier": 0.85,//玩家-成本修正-政策
+		"buildingCostModifier": 0.85,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.85,//玩家-单位-建造花费修正
+		"unitSupplyBase": 14,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 7,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.8, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.2,//AI-不满修正
+		"aiUnitCostModifier": 1.2,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.2,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.2,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.2,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.2,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.1,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Normal vs Challenging",//正常 vs 困难
+		
+		"baseHappiness": 10,//基础快乐
+		"extraHappinessPerLuxury": 1,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.25,//对战蛮族加成
+		"barbarianSpawnDelay": 2,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 2,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1,//玩家-不满修正
+		"researchCostModifier": 1,//玩家-成本修正-科研
+		"policyCostModifier": 1,//玩家-成本修正-政策
+		"buildingCostModifier": 1,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1,//玩家-单位-建造花费修正
+		"unitSupplyBase": 12,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.8, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.2,//AI-不满修正
+		"aiUnitCostModifier": 1.2,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.2,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.2,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.2,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.2,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.1,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Challenging vs Challenging",//挑战 vs 挑战
+		
+		"baseHappiness": 9,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.15,//对战蛮族加成
+		"barbarianSpawnDelay": 1,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 1,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.2,//玩家-不满修正
+		"researchCostModifier": 1.2,//玩家-成本修正-科研
+		"policyCostModifier": 1.2,//玩家-成本修正-政策
+		"buildingCostModifier": 1.2,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.2,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 5,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.8, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.2,//AI-不满修正
+		"aiUnitCostModifier": 1.2,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.2,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.2,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.2,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.2,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.1,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Difficult vs Challenging",//困难 vs 挑战
+		
+		"baseHappiness": 8,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.4,//玩家-不满修正
+		"researchCostModifier": 1.4,//玩家-成本修正-科研
+		"policyCostModifier": 1.4,//玩家-成本修正-政策
+		"buildingCostModifier": 1.4,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.4,//玩家-单位-建造花费修正
+		"unitSupplyBase": 8,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 4,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.8, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.2,//AI-不满修正
+		"aiUnitCostModifier": 1.2,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.2,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.2,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.2,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.2,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0.1,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	
+//vs 困难
+	
+	{
+		"name": "Baka vs Difficult",//Baka vs 困难
+		
+		"baseHappiness": 14,//基础快乐
+		"extraHappinessPerLuxury": 3,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.5,//对战蛮族加成
+		"barbarianSpawnDelay": 4,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 6,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 225,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.5,//玩家-不满修正
+		"researchCostModifier": 0.5,//玩家-成本修正-科研
+		"policyCostModifier": 0.5,//玩家-成本修正-政策
+		"buildingCostModifier": 0.5,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.5,//玩家-单位-建造花费修正
+		"unitSupplyBase": 16,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 8,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.6, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.4,//AI-不满修正
+		"aiUnitCostModifier": 1.4,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.4,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.4,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.4,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.4,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Simple vs Difficult",//简单 vs 困难
+		
+		"baseHappiness": 12,//基础快乐
+		"extraHappinessPerLuxury": 2,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.33,//对战蛮族加成
+		"barbarianSpawnDelay": 3,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 4,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 175,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 0.85,//玩家-不满修正
+		"researchCostModifier": 0.85,//玩家-成本修正-科研
+		"policyCostModifier": 0.85,//玩家-成本修正-政策
+		"buildingCostModifier": 0.85,//玩家-建筑-建造花费修正
+		"unitCostModifier": 0.85,//玩家-单位-建造花费修正
+		"unitSupplyBase": 14,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 7,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.6, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.4,//AI-不满修正
+		"aiUnitCostModifier": 1.4,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.4,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.4,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.4,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.4,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Normal vs Difficult",//正常 vs 困难
+		
+		"baseHappiness": 10,//基础快乐
+		"extraHappinessPerLuxury": 1,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.25,//对战蛮族加成
+		"barbarianSpawnDelay": 2,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 2,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1,//玩家-不满修正
+		"researchCostModifier": 1,//玩家-成本修正-科研
+		"policyCostModifier": 1,//玩家-成本修正-政策
+		"buildingCostModifier": 1,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1,//玩家-单位-建造花费修正
+		"unitSupplyBase": 12,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 6,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.6, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.4,//AI-不满修正
+		"aiUnitCostModifier": 1.4,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.4,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.4,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.4,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.4,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Challenging vs Difficult",//挑战 vs 困难
+		
+		"baseHappiness": 9,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0.15,//对战蛮族加成
+		"barbarianSpawnDelay": 1,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 1,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.2,//玩家-不满修正
+		"researchCostModifier": 1.2,//玩家-成本修正-科研
+		"policyCostModifier": 1.2,//玩家-成本修正-政策
+		"buildingCostModifier": 1.2,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.2,//玩家-单位-建造花费修正
+		"unitSupplyBase": 10,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 5,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.6, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.4,//AI-不满修正
+		"aiUnitCostModifier": 1.4,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.4,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.4,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.4,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.4,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+	{
+		"name": "Difficult vs Difficult",//困难 vs 困难
+		
+		"baseHappiness": 8,//基础快乐
+		"extraHappinessPerLuxury": 0,//每种奢侈品的额外快乐
+		"barbarianBonus": 0,//对战蛮族加成
+		"barbarianSpawnDelay": 0,//蛮族生成延迟
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族可进入玩家领土需要经过的回合
+		"clearBarbarianCampReward": 125,//蛮族营寨清除奖励
+		
+		"unhappinessModifier": 1.4,//玩家-不满修正
+		"researchCostModifier": 1.4,//玩家-成本修正-科研
+		"policyCostModifier": 1.4,//玩家-成本修正-政策
+		"buildingCostModifier": 1.4,//玩家-建筑-建造花费修正
+		"unitCostModifier": 1.4,//玩家-单位-建造花费修正
+		"unitSupplyBase": 8,//玩家-单位-补给-基础
+		"unitSupplyPerCity": 4,//玩家-单位-补给-城市给予
+		"playerBonusStartingUnits": [],//玩家-额外起始单位
+		
+		"aiCityGrowthModifier": 0.6, //AI-城市发展修正
+		"aiUnhappinessModifier": 1.4,//AI-不满修正
+		"aiUnitCostModifier": 1.4,//AI-建造花费修正-单位
+		"aiBuildingCostModifier": 1.4,//AI-建造花费修正-建筑
+		"aiWonderCostModifier": 1.4,//AI-建造花费修正-奇观
+		"aiBuildingMaintenanceModifier": 1.4,//AI-维护费修正-建筑
+		"aiUnitMaintenanceModifier": 1.4,//AI-维护费修正-单位
+		"aiUnitSupplyModifier": 0,//AI-单位-补给修正
+		"aiMajorCivBonusStartingUnits": [],//AI-额外起始单位-主要文明
+		"aiCityStateBonusStartingUnits": [],//AI-额外起始单位-城邦
+		"aiFreeTechs": [],//AI-起始科技
+		"aisExchangeTechs": true,//AI-交流科技
+	},
+]

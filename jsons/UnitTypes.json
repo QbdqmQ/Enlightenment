@@ -1,0 +1,154 @@
+//单位种类
+[
+    //平民
+	{
+        "name": "Land 'Civilian'",//陆地 平民
+        "movementType": "Land"
+    },
+	{
+        "name": "Water 'Civilian'",//水上 平民
+        "movementType": "Water"
+    },
+	
+	{
+        "name": "Great People",//伟人
+        "movementType": "Land",
+        "uniques": []
+    },
+	
+	{
+        "name": "Special Effect",//特殊效果
+        "movementType": "Air",
+        "uniques": []
+    },
+	
+	//陆地
+	{
+        "name": "Land 'Melee' 'Cold weapon'",//陆地近程 冷兵器
+        "movementType": "Land",
+        "uniques": ["Infantry"]
+    },
+	{
+        "name": "Land 'Ranged' 'Cold weapon'",//陆地远程 冷兵器
+        "movementType": "Land",
+        "uniques": ["Infantry"]
+    },
+	{
+        "name": "Land 'Melee' 'Hot weapon'",//陆地近程 热兵器
+        "movementType": "Land",
+        "uniques": ["Infantry"]
+    },
+	{
+        "name": "Land 'Ranged' 'Hot weapon'",//陆地远程 热兵器
+        "movementType": "Land",
+        "uniques": ["Infantry"]
+    },
+	
+	{
+        "name": "Land 'Melee' 'Cavalry'",//陆地近程 骑兵
+        "movementType": "Land",
+        "uniques": ["Cavalry"]
+    },
+	{
+        "name": "Land 'Ranged' 'Cavalry'",//陆地远程 骑兵
+        "movementType": "Land",
+        "uniques": ["Cavalry"]
+    },
+	{
+        "name": "Land 'Melee' 'Armored'",//陆地近程 装甲
+        "movementType": "Land",
+        "uniques": ["Armored"]
+    },
+	{
+        "name": "Land 'Ranged' 'Armored'",//陆地远程 装甲
+        "movementType": "Land",
+        "uniques": ["Armored"]
+    },
+	
+	{
+        "name": "Land 'Ordnance'",//陆地 军械
+        "movementType": "Land",
+        "uniques": []
+    },
+	{
+        "name": "Land 'Support'",//陆地 支援
+        "movementType": "Land",
+        "uniques": []
+    },
+	
+	
+	//水上
+	{
+        "name": "Water 'Melee' 'Cold weapon'",//水上近程 冷兵器
+        "movementType": "Water",
+        "uniques": []
+    },
+	{
+        "name": "Water 'Ranged' 'Cold weapon'",//水上远程 冷兵器
+        "movementType": "Water",
+        "uniques": []
+    },
+	{
+        "name": "Water 'Melee' 'Hot weapon'",//水上近程 热兵器
+        "movementType": "Water",
+        "uniques": []
+    },
+	{
+        "name": "Water 'Ranged' 'Hot weapon'",//水上远程 热兵器
+        "movementType": "Water",
+        "uniques": []
+    },
+	{
+        "name": "Water 'Melee' 'Armored'",//水上近程 装甲
+        "movementType": "Water",
+        "uniques": ["Armored"]
+    },
+	{
+        "name": "Water 'Ranged' 'Armored'",//水上远程 装甲
+        "movementType": "Water",
+        "uniques": ["Armored"]
+    },
+	{
+        "name": "Water 'Support'",//水上 支援
+        "movementType": "Water",
+        "uniques": []
+    },
+	{
+        "name": "Water 'Aircraft Carrier'",//航空母舰
+        "movementType": "Water",
+        "uniques": ["Armored"]
+    },
+	
+	//空中
+	{
+        "name": "Air 'Fighter'",//空中 战斗机
+        "movementType": "Air",
+		"uniques": ["Armored","Aircraft"],
+    },
+	{
+        "name": "Air 'Bomber'",//空中 轰炸机
+        "movementType": "Air",
+        "uniques": ["Armored","Aircraft"]
+    },
+	
+	{
+        "name": "Air 'Missile'",//空中 导弹
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+        "name": "Test",//测试
+        "movementType": "Land",
+        "uniques": []
+    },
+	
+]

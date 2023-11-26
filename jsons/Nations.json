@@ -1,0 +1,1185 @@
+[
+//看海
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+		"innerColor": [0,0,0]
+	},
+	
+//文明
+	{
+		"name": "Macedon",//马其顿
+		"adjective": ["Macedon"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Ancient Greek Religion",
+		"startBias": ["Plains"],
+		"preferredVictoryType": "",//征服
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [118,118,118], 
+		"innerColor": [246,225,070],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Gain a free [Courthouse] [in all cities]",
+					"Free [Macedonian Phalanx] appears <upon constructing [Courthouse]>",
+					
+					"Upon capturing a city, receive [15] times its [Science] production as [Gold] immediately <if [Leader - Alexander III] is constructed>",
+					"Upon capturing a city, receive [15] times its [Culture] production as [Gold] immediately <if [Leader - Alexander III] is constructed>"],
+		"uniqueText": " [Until the End of the World]: \n * [Gain a free '[Courthouse]' [in all cities]] \n * [Upon constructing '[Courthouse]'], [[1] '[Macedonian Phalanx]' units appear] ",
+		
+		"cities":  ["Pella","Aigai","Alexandria","Methone","Chalkidiki","Dion","Alexandropouli","Amphipolis","Alexandria Troas","Pydna",
+					"Alexandria by the Latmus","Alexandretta","ALexandria in Aria","Alexandria Prophthasia","Alexandria in Arachosia","Aiani",
+					"Alexandria in the Caucaus","Alexandria Eschate","Akanthos","Alexandria Oxiana","Heraclea Lyncestis","Alexandria Bucephalia",
+					"Alexandria Nicaea","Philippolis","Alexandria on the Indus","Alexandria Rhambacia","Stagira","Alexandria in Susiana","Apollonia","Batman"]
+	},
+	
+	{
+		"name": "United Kingdom",//大不列颠及爱尔兰联合王国
+		"adjective": ["United Kingdom"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Protestantism",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//征服
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [205,000,001],
+		"innerColor": [255,255,255],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1] Movement <for [Water] units>",
+					"[+10]% Strength <when fighting in [Water] tiles> <for [Water] units>",
+					
+					"[+10]% [Production] [in all cities] <while the empire is happy> <if [Leader - Victoria(UK)] is constructed>",
+					"[+10]% [Gold] [in all cities] <while the empire is happy> <if [Leader - Victoria(UK)] is constructed>",
+					
+					"[+4 Gold, +1 Happiness] per [4] population [in all cities] <if [Leader - Robert Walpole] is constructed>",
+					"[+1 Gold] per [1] population [in all cities] <when not at war> <if [Leader - Robert Walpole] is constructed>"],
+		"uniqueText": " [Full name]: \n [United Kingdom of Great Britain and Ireland] \n\n [The Sun Never Sets]: \n * ['[Water]' [units] [[+1] Movement]] \n * ['[Water]' [units] [[+10]% Strength] when fighting in '[Water]' [tiles]] ",
+		
+		"cities":  ["London","Dublin","Cardiff","Edinbourgh",
+					"York","Cork","Swansea","Glasgow",
+					"Nottingham","Galway","Casnewydd","Stirling",
+					"Hastings","Wexford","Wrecsam","Aberdeen",
+					"Canterbury","Kilkenny","Y Barri","Dundee",
+					"Coventry","Tralee","Cwmbran","Inverness",
+					"Warwick","Limerick","Pen-y-bont ar Ogwr","Perth",
+					"Newcastle","Castlebar","Lianelli","Dunfermline",
+					"Oxford","Lifford","Penrhyndeudraeth","Kilmarnock",
+					"Liverpool","Clonmel","Caerffili","Dumfries",
+					"Dover","Ennis","Ynysybwl","Lanark",
+					"Brighton","Roscommon","Pont-y-pwl","Dumbarton",
+					"Norwich","Cavan","Cefn-Mawr","Falkirk"]
+	},
+	
+	{
+		"name": "Byzantium",//拜占庭
+		"adjective": ["Byzantium"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Orthodox",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [055,000,101],
+		"innerColor": [233,226,158],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+2 Faith] from all [Faith] buildings",
+					"Free [Armored Cavalry] appears <before adopting [Chivalry]> <upon constructing [Hippodrome]>",
+					"Free [Cataphract] appears <after adopting [Chivalry]> <upon constructing [Hippodrome]>",
+					
+					"May buy [Cavalry] units with [Faith] for [2] times their normal Production cost <if [Leader - Justinianus I] is constructed>",
+					"[+1] Movement <for [Heavy Cavalry] units> <if [Leader - Justinianus I] is constructed>",
+					
+					"May choose [1] additional belief(s) of any type when [founding] a religion <if [Leader - Constantinus I] is constructed>",
+					"May choose [1] additional [Follower] beliefs when [enhancing] a religion <if [Leader - Constantinus I] is constructed>",
+					
+					"[Faith] cost of purchasing [Religious Unit] units [-25]% <if [Leader - Heraclius I] is constructed>"],
+		"uniqueText": " [Patriarch]: \n * [[+2 Faith] from all [Faith] buildings] ",
+		
+		"cities":  ["Constantinople","Adrianople","Nicaea","Antioch","Varna","Ohrid","Nicomedia","Trebizond","Cherson","Sardica","Ani","Dyrrachium","Edessa",
+					"Chalcedon","Naissus","Bari","Iconium","Prilep","Samosata","Kars","Nicopolis","Theodosiopolis", "Tyana","Gaza","Kerkyra","Phoenice","Selymbria",
+					"Sillyon","Chrysopolis","Vodena","Caesarea","Traianoupoli","Constantia","Athens","Patra","Korinthos"]
+	},
+	
+	{
+		"name": "Russia (Empire)",//俄罗斯帝国
+		"adjective": ["Russia (Empire)"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Orthodox",
+		"startBias": ["Tundra"],
+		"preferredVictoryType": "",//
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [236,178,000],
+		"innerColor": [000,000,000],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1 Production] from every [Tundra]",
+					"[+1 Production, +1 Food, +1 Faith] from every [Snow]",
+					
+					"[+2 Science, +2 Food] from every [District - Holy Site] <if [Leader - Peter I] is constructed>",
+					
+					"[+33]% Strength <for [Land] units> <vs [Gunnery] units> <if [Leader - Catherine II] is constructed>",
+					
+					"[+1 Happiness] from every [Plantation] <if [Leader - Alexander II] is constructed>",
+					"[+1 Happiness] from every [Camp] <if [Leader - Alexander II] is constructed>"],
+		"uniqueText": " [Mother Russia]: \n * ['[Tundra]' [tiles] [+1 Production]] \n * ['[Snow]' [tiles] [[+1 Production] [+1 Food] [+1 Faith]]] ",
+		
+		"cities":  ["Moscow","St. Petersburg","Novgorod","Rostov","Yaroslavl","Yekaterinburg","Yakutsk","Vladivostok","Smolensk","Orenburg","Krasnoyarsk",
+					"Khabarovsk","Bryansk","Tver","Novosibirsk","Magadan","Murmansk","Irkutsk","Chita","Samara","Arkhangelsk","Chelyabinsk","Tobolsk","Vologda",
+					"Omsk","Astrakhan","Kursk","Saratov","Tula","Vladimir","Perm","Voronezh","Pskov","Starayarussa","Kostoma","Nizhniy Novgorod","Suzdal","Magnitogorsk"]
+	},
+	
+	{
+		"name": "France (First Empire)",//法兰西第一帝国
+		"adjective": ["France (First Empire)"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Catholic",
+		"startBias": ["Plains"],
+		"preferredVictoryType": "",//
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [038,098,255],
+		"innerColor": [239,236,148],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Provides [1] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Military]",
+					
+					"[Military] units gain the [Foreign Wars] promotion <if [Leader - Napoleon Bonaparte] is constructed>"],
+		"uniqueText": " [Napoleonic Code]: \n * [Provides [1] [[Policy Point - Development] & [Policy Point - Military]]] ",
+		
+		"cities":  ["Paris","Orleans","Lyon","Troyes","Tours","Marseille","Chartres","Avignon","Rouen","Grenoble","Dijon","Amiens","Cherbourg","Poitiers","Toulouse",
+					"Bayonne","Strasbourg","Brest","Bordeaux","Rennes","Nice","Saint Etienne","Nantes","Reims","Le Mans","Montpellier","Limoges","Nancy","Lille",
+					"Caen","Toulon","Le Havre","Lourdes","Cannes","Aix-En-Provence","La Rochelle","Bourges","Calais"]
+	},
+
+	{
+		"name": "German Empire",//德意志帝国
+		"adjective": ["German Empire"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Catholic",
+		"startBias": ["Plains"],
+		"preferredVictoryType": "",//
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+
+		"neutralHello": "",
+		"hateHello": "",
+
+		"tradeRequest": "",
+
+		"outerColor": [255,255,255],
+		"innerColor": [000,000,000],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1 Science, +1 Culture] from every [District - City]",
+					
+					"When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <if [Leader - Otto von Bismarck] is constructed>",
+					
+					"[1] XP gained from combat <for [Military] units> <if [Leader - August von Mackensen] is constructed>"],
+		"uniqueText": " [Compulsory Education Act]: \n * ['[City]' [district] [+1 Science, +1 Culture]] ",
+		
+		"cities":  ["Berlin","Hamburg","Munich","Cologne","Frankfurt","Essen","Dortmund","Stuttgart","Dusseldorf","Bremen",
+					"Hannover","Duisburg","Leipzig","Dresden","Bonn","Bochum","Bielefeld","Karlsruhe","Gelsenkirchen","Wiesbaden",
+					"Munster","Rostok","Chemnitz","Braunschweig","Halle","Mצnchengladbach","Kiel","Wuppertal","Freiburg","Hagen",
+					"Erfurt","Kaiserslautern","Kassel","Oberhausen","Hamm","Saarbrucken","Krefeld","Pirmasens","Potsdam","Solingen",
+					"Osnabruck","Ludwingshafen","Leverkusen","Oldenburg","Neuss","Mulheim","Darmstadt","Herne","Wurzburg",
+					"Recklinghausen","Gצttingen","Wolfsburg","Koblenz","Hildesheim","Erlangen"]
+	},
+	
+	{
+		"name": "The Huns",//匈人
+		"adjective": ["The Huns"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Folklore Beliefs",
+		"startBias": ["Grassland"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [180,178,164],
+		"innerColor": [070,000,004],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Provides [-2] [Policy Point - Development] <if [Polity ( Lv. I )] is constructed>",
+					"Provides [2] [Policy Point - Military] <if [Polity ( Lv. I )] is constructed>",
+					"Provides [-4] [Policy Point - Development] <if [Polity ( Lv. II )] is constructed>",
+					"Provides [4] [Policy Point - Military] <if [Polity ( Lv. II )] is constructed>",
+					"Provides [-6] [Policy Point - Development] <if [Polity ( Lv. III )] is constructed>",
+					"Provides [6] [Policy Point - Military] <if [Polity ( Lv. III )] is constructed>",
+					"Provides [-8] [Policy Point - Development] <if [Polity ( Lv. IV )] is constructed>",
+					"Provides [8] [Policy Point - Military] <if [Polity ( Lv. IV )] is constructed>",
+					"\"Borrows\" city names from other civilizations in the game",
+					"[+1 Production] from every [Pasture]",
+					"Starts with [Trapping]",
+					"No movement cost to pillage",
+					"Upon capturing a city, receive [30] times its [Gold] production as [Gold] immediately",
+					"Cities are razed [2] times as fast",
+					"[+500]% City-State Influence degradation",
+					"Resting point for Influence with City-States is increased by [-500]",
+					"Gifts of Gold to City-States generate [-500]% more Influence",
+					
+					"[+1 Production] from every [Cattle] <if [Leader - Attila] is constructed>",
+					"[+1 Production] from every [Sheep] <if [Leader - Attila] is constructed>",
+					"[+1 Production] from every [Horses] <if [Leader - Attila] is constructed>",
+					"[+1] Movement <for [All] units> <if [Leader - Attila] is constructed>"],
+		"uniqueText": " [Nomadic Empire]: \n * [Convert '[Policy Point - Development]' provided by the polity to '[Policy Point - Military]'] \n * [\"Borrows\" city names from other civilizations in the game] \n\n [Scourge of God]: \n * ['[Pasture]' [improvement] [+1 Production]] \n * [Starts with '[Trapping]'] \n\n [Siege and Plunder]: \n * ['[All]' [units] [No movement cost to pillage]] \n * [Upon capturing a city, receive [30] times its [Gold] production as [Gold] immediately] \n * [Cities are razed [2] times as fast] \n\n [Enemy of Civilization]: \n * [[+500]% City-State Influence degradation] \n * [Resting point for Influence with City-States is increased by [-500]] \n * [Gifts of Gold to City-States generate [-500]% more Influence] ",
+		
+		"cities":  ["Atilla's Court"]
+	},
+	
+	{
+		"name": "China (Qing)",//中华 - 秦
+		"adjective": ["China"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Taoism",
+		"startBias": ["Flood plains"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [009,112,084],
+		"innerColor": [255,255,255],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[-1 Food, +1 Production] from every [Farm]",
+					"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",
+					"Free [Warrior] appears <upon gaining a [Spearman] unit>",
+					"Free [Swordsman] appears <upon gaining a [Heavy Spearman] unit>",
+					"Free [Longswordsman] appears <upon gaining a [Pikeman] unit>",
+					"Free [Musketeer] appears <upon gaining a [Pike and Shot] unit>",
+					"Free [Light Infantry] appears <upon gaining a [Line Infantry] unit>",
+					"Free [Assault Infantry] appears <upon gaining a [Anti-tank Gun] unit>",
+					"Free [Mechanized Infantry] appears <upon gaining a [Anti-tank Bazooka] unit>",
+					
+					"Free [Warrior] appears <before discovering [Iron Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Swordsman] appears <before discovering [Metal Casting]> <after discovering [Iron Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Longswordsman] appears <before discovering [Gunpowder]> <after discovering [Metal Casting]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Musketeer] appears <before discovering [Rifling]> <after discovering [Gunpowder]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Light Infantry] appears <before discovering [Ballistics]> <after discovering [Rifling]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Assault Infantry] appears <before discovering [Radar]> <after discovering [Ballistics]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Mechanized Infantry] appears <after discovering [Radar]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>"],
+		"uniqueText": " [Farming and Warfare]: \n * ['[Farm]' [improvement] [-1 Food, +1 Production]] \n * ['[All]' [units] [Earn [33]% of killed [Military] unit's [Cost] as [Gold]]] \n\n [Tiger Tally]: \n * [Upon gaining a '[[Warrior] ([or upgrade])]' unit], [[1] '[[Spearman] ([or upgrade])]' units appear] ",
+		
+		"cities":  ["Beijing","Shanghai","Guangzhou","Nanjing","Xian","Chengdu","Hangzhou","Tianjin","Macau","Shandong",
+					"Kaifeng","Ningbo","Baoding","Yangzhou","Harbin","Chongqing","Luoyang","Kunming","Taipei","Shenyang",
+					"Taiyuan","Tainan","Dalian","Lijiang","Wuxi","Suzhou","Maoming","Shaoguan","Yangjiang","Heyuan",
+					"Huangshi","Yichang","Yingtian","Xinyu","Xinzheng","Handan","Dunhuang","Gaoyu","Nantong","Weifang",
+					"Xikang"]
+	},
+	
+	{
+		"name": "Korea",//朝鲜
+		"adjective": ["Korea"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Confucianism",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [026,032,096],
+		"innerColor": [255,000,000],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+2 Science] from every specialist [in all cities]",
+					"[+1 Science] from all [Science] buildings",
+					
+					"[+1 Science] from every [District - City] <if [Leader - Sejong] is constructed>"],
+		"uniqueText": " [Scholars of the Jade Hall]: \n * [[+2 Science] from every specialist [in all cities]] \n * ['[Science]' [building] [+1 Science]] ",
+		
+		"cities":  ["Seoul","Busan","Jeonju","Daegu","Pyongyang","Kaesong","Suwon","Gwangju","Gangneung","Hamhung",
+					"Wonju","Ulsan","Changwon","Andong","Gongju","Haeju","Cheongju","Mokpo","Dongducheon","Geoje",
+					"Suncheon","Jinju","Sangju","Rason","Gyeongju","Chungju","Sacheon","Gimje","Anju"]
+	},
+	
+	{
+		"name": "Khmer",//高棉
+		"adjective": ["Khmer"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Buddhism",
+		"startBias": ["River"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [116,000,155],
+		"innerColor": [254,129,019],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1 Food] from every [Fresh water]",
+					"[+2 Faith] from every [District] <in [Fresh water] tiles>",
+					
+					"[+1 Food] from every [District - Holy Site] <with [1] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [2] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [3] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [4] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [5] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [6] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>"],
+		"uniqueText": " [Grand Barays]: \n * ['[Fresh water]' [tiles] [+1 Food]] \n * ['[District]' [improvement] [+1 Food] [in [Fresh water] tiles]] ",
+		
+		"cities":  ["Angkor Wat","Hariharalya","Yaodharapura","Mahendraparvata","Vimayapura","Indrapura","Lingapura","Preah Vihear","Bhavapura","Kompong Svay",
+					"Nagara Jayasri","Vyadhapura","Chaturmukha","Dviradapura","Rajavihara","Amarendrapura","Phanom Rung","Isvarapura","Muang Tam","Angkor Borei",
+					"Banteay Kdei","Phetchaburi","Chaiya","Isanapura","Pre Rup","Beng Melea","Lavodayapura","Shrestapura","Aninditapura"]
+	},
+	
+	{
+		"name": "Babylon",//巴比伦
+		"adjective": ["Babylon"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["River"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [027,053,063],
+		"innerColor": [213,249,255],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1 Science] from every [District]",
+					
+					"[+75]% Yield from every [District - Academy] <if [Leader - Hammurabi] is constructed>",
+					
+					"[Land] units gain the [Combat Experience] promotion <if [Leader - Nebuchadnezzar II] is constructed>"],
+		"uniqueText": " [Textual Innovation]: \n * ['[District]' [improvement] [+1 Science]] ",
+		
+		"cities":  ["Babylon","Akkad","Dur-Kurigalzu","Nippur","Borsippa","Sippar","Opis","Mari","Shushan","Eshnunna",
+					"Ellasar","Erech","Kutha","Sirpurla","Neribtum","Ashur","Ninveh","Nimrud","Arbela","Nuzi",
+					"Arrapkha","Tutub","Shaduppum","Rapiqum","Mashkan Shapir","Tuttul","Ramad","Ana","Haradum","Agrab",
+					"Uqair","Gubba","Hafriyat","Nagar","Shubat Enlil","Urhai","Urkesh","Awan","Riblah","Tayma"]
+	},
+	
+	{
+		"name": "Ottoman",//奥斯曼
+		"adjective": ["Ottoman"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Islam",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [245,248,185],
+		"innerColor": [018,084,030],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[-50]% maintenance costs <for [Water] units>",
+					"When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it",
+					
+					"[+2 Happiness, +2 Culture, +3 Gold] [in all cities] <starting from the [Medieval era]> <if [Leader - Suleiman I] is constructed>"],
+		"uniqueText": " [Barbary Corsairs]: \n * ['[Water]' [units] [-50]% maintenance costs] \n * [When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it] ",
+		
+		"cities":  ["Istanbul","Edirne","Ankara","Bursa","Konya","Samsun","Gaziantep","Diyarbakır","Izmir","Kayseri",
+					"Malatya","Mersin","Antalya","Zonguldak","Denizli","Ordu","Muğla","Eskişehir","Inebolu","Sinop",
+					"Adana","Artvin","Bodrum","Eregli","Silifke","Sivas","Amasya","Marmaris","Trabzon","Erzurum",
+					"Urfa","Izmit","Afyonkarahisar","Bitlis","Yalova"]
+	},
+	
+	{
+		"name": "Israel",//以色列
+		"adjective": ["Israel"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Judaism",
+		"startBias": ["Desert"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [237,216,184],
+		"innerColor": [000,054,255],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+50]% Strength <when attacking> <for [All] units>",
+					"[-50]% Strength <when defending> <for [All] units>",
+					"[+20]% [Gold] from Trade Routes",
+					
+					"[+1 Happiness, +1 Faith] [in all non-occupied cities] <if [Leader - David Ben-Gurion] is constructed>",
+					"[-1 Faith] [in capital] <before founding a Pantheon> <if [Leader - David Ben-Gurion] is constructed>",
+					
+					"[+50]% Strength <when attacking> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>",
+					"[-50]% Strength <when defending> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
+		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+50]% Strength] [when attacking]] \n * ['[All]' [units] [[-50]% Strength] [when defending]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
+		
+		"cities":  ["Yerushalayim","Hebron","Jericho","Sidon","Bethlehem","Tyre","Nazareth","Kadesh","Zeboim","Admah",
+            		"Gaza","Megiddo","Nineveh","Gomorrah","Avaris"]
+	},
+	
+	{
+		"name": "India",//印度
+		"adjective": ["India"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Hinduism",
+		"startBias": ["River"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [014,114,004],
+		"innerColor": [255,163,071],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+100]% unhappiness from the number of cities",
+					"[-50]% Unhappiness from [Population] [in all cities]",
+					
+					"Free [Spearman] appears <after discovering [Bronze Working]> <before discovering [Metal Casting]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [Pikeman] appears <after discovering [Metal Casting]> <before discovering [Gunpowder]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [Pike and Shot] appears <after discovering [Gunpowder]> <before discovering [Rifling]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [Line Infantry] appears <after discovering [Rifling]> <before discovering [Ballistics]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [Anti-tank Gun] appears <after discovering [Ballistics]> <before discovering [Rocketry]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [Anti-tank Bazooka] appears <after discovering [Rocketry]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					
+					"[+2 Gold] from every [Harbor] <if [Leader - Shah Jahan] is constructed>",
+					
+					"[20]% Faith cost of generating Great Prophet equivalents <upon constructing [Faith]> <if [Leader - Gandhi] is constructed>",
+					
+					"[+1 Production] from all [Production] buildings <if [Leader - Narendra Modi] is constructed>",
+					"[+2 Gold] from all [Gold] buildings <if [Leader - Narendra Modi] is constructed>"],
+		"uniqueText": " [Population Growth]: \n * [[+100]% unhappiness from the number of cities] \n * [[-50]% Unhappiness from [Population] [in all cities]] ",
+		
+		"cities":  ["Delhi","Mumbai","Vijayanagara","Pataliputra","Varanasi","Agra","Calcutta","Lahore","Bangalore","Hyderabad",
+					"Madurai","Ahmedabad","Kolhapur","Prayaga","Ayodhya","Indraprastha","Mathura","Ujjain","Gulbarga","Jaunpur",
+					"Rajagriha","Sravasti","Tiruchirapalli","Thanjavur","Bodhgaya","Kushinagar","Amaravati","Gaur","Gwalior","Jaipur",
+					"Karachi"]
+	},
+	
+	{
+		"name": "Mali",//马里
+		"adjective": ["Mali"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Islam",
+		"startBias": ["Desert"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [121,000,002],
+		"innerColor": [234,225,158],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[-2 Production, +6 Gold] from every [Mine]",
+					"[+1 Gold, +1 Food] from every [Desert]",
+					"[-25]% [Production] [in all cities]",
+					
+					"[+10]% [Gold] from every [Gold] <if [Leader - Mansa Musa] is constructed>"],
+		"uniqueText": " [Songs of the Jeli]: \n * ['[Mine]' [improvement] [-2 Production, +6 Gold]] \n * ['[Desert]' [tiles] [+1 Gold, +1 Food]] \n * [All cities] [-25]% [Production] ",
+		
+		"cities":  ["Niani","Timbuktu","Jenne","Gao","Kumbi Saleh","Walata","Tawdenni","Tadmekka","Awdaghust","Kirina",
+					"Segu","Nioro","Kangaba","Kouroussa","Niagassola","Diara","Kayes","N'teret","Dia","Arawan",
+					"Kiri","Mopti","Narena","Dakadiala","Kukya","Siby","Fadama","Tabon","Siguiri","Kaniana"]
+	},
+	
+	{
+		"name": "Songhai",//桑海
+		"adjective": ["Songhai"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Islam",
+		"startBias": ["Desert", "River"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [214,145,019],
+		"innerColor": [090,000,010],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Receive triple Gold from Barbarian encampments and pillaging Cities",
+					"Defense bonus when embarked <for [All] units>",
+					"[All] units gain the [Amphibious] promotion",
+					
+					"[All] units gain the ['[Askia]' ability] promotion <if [Leader - Muhammad Ture] is constructed>",
+					
+					"[+1 Culture] [in all cities] <after founding a Pantheon> <if [Leader - Sunni Ali] is constructed>",
+					"[+1 Culture] from every [Mud Pyramid Mosque] <if [Leader - Sunni Ali] is constructed>",
+					"[+10]% [Culture] from every [Mud Pyramid Mosque] <if [Leader - Sunni Ali] is constructed>"],
+		"uniqueText": " [River Warlord]: \n * [Receive triple Gold from Barbarian encampments and pillaging Cities] \n * ['[All]' [units] [Defense bonus when embarked]] \n * ['[All]' units gain the '[Amphibious]' promotion] ",
+		
+		"cities":  ["Gao","Tombouctu","Jenne","Taghaza","Tondibi","Kumbi Saleh","Kukia","Walata","Tegdaoust","Argungu",
+					"Gwandu","Kebbi","Boussa","Motpi","Bamako","Wa","Kayes","Awdaghost","Ouadane","Dakar",
+					"Tadmekket","Tekedda","Kano","Agadez","Niamey","Torodi","Ouatagouna","Dori","Bamba","Segou"]
+	},
+	
+	{
+		"name": "Egypt",//埃及
+		"adjective": ["Egypt"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Islam",
+		"startBias": ["River"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [231,213,000],
+		"innerColor": [098,010,210],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+20]% Production when constructing [Ancient era Wonder] wonders [in all cities]",
+					"[+20]% Production when constructing [Classical era Wonder] wonders [in all cities]",
+					"[+15]% Production when constructing [Ancient era Wonder] wonders [in all cities] <in [River] tiles>",
+					"[+15]% Production when constructing [Classical era Wonder] wonders [in all cities] <in [River] tiles>",
+					
+					"[+1 Food] from every [River] <if [Leader - Ramesses II] is constructed>",
+					
+					"[+1 Faith] from every [Luxury resource] <if [Leader - Tutankhamun] is constructed>",
+					"[+1 Gold] from every [Plantation] <if [Leader - Tutankhamun] is constructed>"],
+		"uniqueText": " [Monument Builders]: \n * [All cities] [[+20]% Production when constructing '[[Ancient era] / [Classical era]]' [wonder]] \n * [All cities] [in [River] tiles], [[+15]% Production when constructing '[[Ancient era] / [Classical era]]' [wonder]] ",
+		
+		"cities":  ["Thebes","Memphis","Heliopolis","Elephantine","Alexandria","Pi-Ramesses","Giza","Byblos","Akhetaten","Hieraconpolis",
+					"Abydos","Asyut","Avaris","Lisht","Buto","Edfu","Pithom","Busiris","Kahun","Athribis",
+			   		"Mendes","Elashmunein","Tanis","Bubastis","Oryx","Sebennytus","Akhmin","Karnak","Luxor","El Kab",
+					"Armant","Balat","Ellahun","Hawara","Dashur","Damanhur","Ellahun","Abusir","Ellahun","Herakleopolis",
+					"Akoris","Benihasan","Badari","Hermopolis","Amrah","Koptos","Ombos","Naqada","Semna","Soleb"]
+	},
+	
+	{
+		"name": "Ethiopia",//埃塞俄比亚
+		"adjective": ["Ethiopia"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Christian",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [248,217,002],
+		"innerColor": [021,108,049],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+33]% Natural religion spread [in all cities]",
+					"[Faith] cost of purchasing [Great Prophet] units [-33]%",
+					
+					"[+20]% Strength <when fighting units from a Civilization with more Cities than you> <if [Leader - Haile Selassie] is constructed>"],
+		"uniqueText": " [The Christian Gospel]: \n * [All cities] [[+33]% Natural religion spread] \n * [[Faith] cost of purchasing '[Great Prophet]' [units] [-33]%] ",
+		
+		"cities":  ["Addis Ababa","Gondar","Harar","Axum","Adwa","Lalibela","Mekele","Dessie","Jimma","Sodo",
+					"Dire Dawa","Adigrat","Weldiya","Ankober","Alamata","Yirgalem","Gore","Negele Borana","Ginir","Debarq",
+					"Nejo","Debre Berhan","Abiy Addi","Mersa","Soqota","Sayint Ajebar","Chencha","Antalo","Yifat","Dabat",
+					"Debre Sina"]
+	},
+	
+	{
+		"name": "America",//美利坚
+		"adjective": ["America"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Christian",
+		"startBias": ["Coast", "Plains"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [028,051,119],
+		"innerColor": [255,255,255],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+1] Sight <for [Military] units> <when at war>",
+					"[-33]% Gold cost of acquiring tiles [in all cities]",
+					
+					"[All] units gain the [Boost Morale] promotion <if [Leader - George Washington] is constructed>",
+					
+					"[+1 Science, +1 Culture] from every [District - City] <with [1] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +1 Culture] from every [District - City] <with [2] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +1 Culture] from every [District - City] <with [3] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +1 Culture] from every [District - City] <with [4] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +1 Culture] from every [District - City] <with [5] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +1 Culture] from every [District - City] <with [6] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					
+					"[+2 Gold] from every [District - Industrial Zone] <if [Leader - Franklin Roosevelt] is constructed>",
+					"[+2 Gold] from every [District - Business Center] <if [Leader - Franklin Roosevelt] is constructed>",
+					"[+2 Gold] from all [Production] buildings <if [Leader - Franklin Roosevelt] is constructed>",
+					"[+2 Gold] from all [Gold] buildings <if [Leader - Franklin Roosevelt] is constructed>",
+					
+					"[+1 Happiness] from every [District - City] <if [Leader - Abraham Lincoln] is constructed>"],
+		"uniqueText": " [Manifest Destiny]: \n * ['[Military]' [units] [when at war] [[+1] Sight]] \n * [All cities] [[-33]% Gold cost of acquiring tiles] ",
+		
+		"cities":  ["Washington","New York","Boston","Philadelphia","Atlanta","Chicago","Seattle","San Francisco","Los Angeles","Houston",
+					"Portland","St. Louis","Miami","Buffalo","Detroit","New Orleans","Baltimore","Denver","Cincinnati","Dallas",
+					"Memphis","Cleveland","Kansas City","San Diego","Richmond","Las Vegas","Phoenix","Albuquerque","Minneapolis","Pittsburgh",
+					"Oakland","Tampa Bay","Orlando","Tacoma","Santa Fe","Olympia","Hunt Valley","Springfield","Palo Alto","Centralia",
+					"Spokane","Jacksonville","Svannah","Charleston","San Antonio","Birmingham","Anchorage","Sacramento","Reno","Salt Lake City",
+					"Boise","Milwaukee","Santa Cruz","Little Rock"]
+	},
+	
+	{
+		"name": "Canada",//加拿大
+		"adjective": ["Canada"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Christian",
+		"startBias": ["Tundra", "Snow", "Furs", "Deer"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [249,249,249],
+		"innerColor": [205,000,001],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["[+2 Gold] from every [Camp]",
+					"[+2 Gold] from every [Furs]",
+					"[+1 Culture] from every [Tundra]",
+					"[+1 Culture] from every [Snow]",
+					
+					"[+1 Production] from every [Mine] <in [Snow] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Mine] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Lumber Mill] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Food] from every [Camp] <if [Leader - Wilfrid Laurier] is constructed>"],
+		"uniqueText": " [Fur Trade]: \n * ['[Camp]' [improvement] [+2 Gold]] \n * ['[Furs]' [tiles] [+2 Gold]] \n\n [Northern Scenery]: \n * ['[Tundra]' & '[Snow]' [tiles] [+1 Culture]] ",
+		
+		"cities":  ["Ottawa","Toronto","Montréal","Quebec City","Hamilton","Winnipeg","Halifax","Saint John","Vancouver","Victoria",
+					"Kingston","Brantford","Windsor","Charlottetown","Calgary","Sherbrooke","Guelph","Peterborough","Valleyfield","Edmonton",
+					"Trois-Rivières","Stratford","Saint Catharines","Waterloo","Saint Hyacinthe","Saint John","Dawson City","Belleville","Chatham","Saskatoon",
+					"Moncton","Mississauga","Brockville","Regina","Red Deer","Brandon","Sault Sainte Marie","Lethbridge","Saint-Lin","Whitehorse",
+					"Thunder Bay"]
+	},
+	
+	{
+		"name": "Inca",//印加
+		"adjective": ["Inca"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["Mountain", "Hill"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [255,184,033],
+		"innerColor": [003,115,086],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Units ignore terrain costs when moving into any tile with Hills",
+					"[-50]% maintenance on road & railroads",
+					"No Maintenance costs for improvements in [Hill] tiles",
+					
+					"[+1 Production] from every [Terrace Farm] <if [Leader - Pachacuti] is constructed>",
+					"[+2 Production] from every [Mountain] <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [1] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [2] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [3] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [4] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [5] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Food] from every [Mountain] <with [6] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					
+					"[Worker] units gain the [Huáscar] promotion <if [Leader - Wayna Qhapaq] is constructed>"],
+		"uniqueText": " [Qhapaq Ñan]: \n * [Units ignore terrain costs when moving into any tile with Hills] \n * [[-50]% maintenance on road & railroads] \n * [No Maintenance costs for improvements in '[Hill]' tiles] ",
+		
+		"cities":  ["Cuzco","Tiwanaku","Machu","Ollantaytambo","Corihuayrachina","Huamanga","Rumicucho","Vilcabamba","Vitcos","Andahuaylas",
+					"Ica","Arequipa","Nasca","Atico","Juli","Chuito","Chuquiapo","Huanuco Pampa","Tamboccocha","Huaras",
+					"Riobamba","Caxamalca","Sausa","Tambo Colorado","Huaca","Tumbes","Chan Chan","Sipan","Pachacamac","Llactapata",
+					"Pisac","Kuelap","Pajaten","Chucuito","Choquequirao"]
+	},
+	
+	{
+		"name": "Aztec",//阿兹特克
+		"adjective": ["Aztec"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["Jungle", "Forest"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [139,032,023],
+		"innerColor": [134,238,214],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Culture]",
+					
+					"[Military] units gain the [Flower] promotion <if [Leader - Montezuma I] is constructed>"],
+		"uniqueText": " [Sacrificial Captives]: \n * ['[All]' [units] [Earn [50]% of killed [Military] unit's [Cost] as [Culture]]] ",
+		
+		"cities":  ["Tenochtitlan","Teotihuacan","Tlatelolco","Texcoco","Tlaxcala","Calixtlahuaca","Xochicalco","Tlacopan","Atzcapotzalco","Tzintzuntzan",
+					"Malinalco","Tula","Tamuin","Teayo","Cempoala","Chalco","Tlalmanalco","Ixtapaluca","Huexotla","Tepexpan",
+					"Tepetlaoxtoc","Chiconautla","Zitlaltepec","Coyotepec","Tequixquiac","Jilotzingo","Tlapanaloya","Tultitan","Ecatepec","Coatepec",
+					"Chalchiuites","Chiauhita","Chapultepec","Itzapalapa","Ayotzinco","Iztapam"]
+	},
+	
+	{
+		"name": "Maya",//玛雅
+		"adjective": ["Maya"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["Jungle", "Forest"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [198,141,099],
+		"innerColor": [024,063,066],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Mathematics]. Each bonus person can only be chosen once.",
+					"Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.",
+					"[+2 Food] from every [Farm] <in [Fresh water] tiles>",
+					"[-3 Food] from every [Farm] <in [non-fresh water] tiles>",
+					
+					"[+2 Science] from all [Faith] buildings <if [Leader - Pacal II] is constructed>"],
+		"uniqueText": " [The Long Count]: \n * [Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Mathematics]. Each bonus person can only be chosen once.] \n * [Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.] \n\n [Milpa]: \n * ['[{Fresh water} {Farm}]' [improvement] [+2 Food]] \n * ['[{non-fresh water} {Farm}]' [improvement] [-3 Food]] ",
+		
+		"cities":  ["Palenque","Tikal","Chichen Itza","Uxmal","Tulum","Copan","Coba","El Mirador","Calakmul","Edzna",
+					"Lamanai","Izapa","Uaxactun","Comalcalco","Piedras Negras","Cancuen","Yaxha","Quirigua","Q'umarkaj","Nakbe",
+					"Cerros","Xunantunich","Takalik Abaj","Cival","San Bartolo","Altar de Sacrificios","Seibal","Caracol","Naranjo","Dos Pilas",
+					"Mayapan","Ixinche","Zaculeu","Kabah"]
+	},
+	
+	{
+		"name": "Iroquois",//易洛魁
+		"adjective": ["Iroquois"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["Jungle", "Forest"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [054,072,072],
+		"innerColor": [246,205,137],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
+					"Resting point for Influence with City-States is increased by [+15]",
+					
+					"Allied City-States provide [Gold] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>",
+					"Allied City-States provide [Culture] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>",
+					"Allied City-States provide [Faith] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>"],
+		"uniqueText": " [The Great Warpath]: \n * [All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.] \n\n [Coalition Politics]: \n * [Resting point for Influence with City-States is increased by [+15]] ",
+		
+		"cities":  ["Onondaga","Osininka","Grand River","Akwesasme","Buffalo Creek","Brantford","Montreal","Genesse River","Canandaigua Lake","Lake Simcoe",
+					"Salamanca","Gowanda","Cuba","Akron","Kanesatake","Ganienkeh","Cayuga Castle","Chondote","Canajoharie","Nedrow",
+					"Oneida Lake","Kanonwalohale","Green Bay","Southwold","Mohawk Valley","Schoharie","Bay of Quinte","Kanawale","Kanatsiokareke","Tyendinaga",
+					"Hahta"]
+	},
+	
+	{
+		"name": "Polynesia",//波利尼西亚
+		"adjective": ["Polynesia"],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "Mythological Beliefs",
+		"startBias": ["Coast"],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [225,105,000],
+		"innerColor": [255,255,078],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": ["Enables embarkation for land units <starting from the [Ancient era]>",
+					"Enables [All] units to enter ocean tiles <starting from the [Ancient era]>",
+					"[+1] Sight <for [Embarked] units>",
+					"[-1 Faith] from every [Water resource] <in [unimproved] tiles>",
+					"[+2 Faith] from every [Water resource]",
+					"[+1 Food] from every [Fishing Boats]",
+					
+					"[+15]% Strength <within [4] tiles of a [Moai]> <if [Leader - Kamehameha I] is constructed>"],
+		"uniqueText": " [Wayfinding]: \n * [Starting from the '[Ancient era]'], ['[All]' [units] [enables enter ocean tiles]] & ['[All]' [units] [enables embarkation]] \n\n [Ocean Pet]: \n * ['[Water Resource]' [tiles] [+2 Faith]] \n * ['[{Unimproved} {Water Resource}]' [tiles] [-1 Faith]] \n * ['[Fishing Boats]' [improvement] [+1 Food]] ",
+		
+		"cities":  ["Honolulu","Samoa","Tonga","Nuku Hiva","Raiatea","Aotearoa","Tahiti","Hilo","Te Wai Pounamu","Rapa Nui",
+					"Tuamotu","Rarotonga","Tuvalu","Tubuai","Mangareva","Oahu","Kiritimati","Ontong Java","Niue","Rekohu",
+					"Rakahanga","Bora Bora","Kailua","Uvea","Futuna","Rotuma","Tokelau","Lahaina","Bellona","Mungava",
+					"Tikopia","Emae","Kapingamarangi","Takuu","Nukuoro","Sikaiana","Anuta","Nuguria","Pileni","Nukumanu"]
+	},
+	
+	{
+		"name": "Rio de Janeiro",
+		"adjective": ["Carioca"],
+		"cityStateType": "Maritime",
+		"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "You can see how fruitless this will be for you... right?",
+		"defeated": "May God grant me these last wishes - peace and prosperity for Brazil.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [211, 220, 103],
+		"cities": ["Rio de Janeiro"]
+	},
+	{
+		"name": "Sydney",
+		"adjective": ["Sydney"],
+		"cityStateType": "Maritime",
+
+		"declaringWar": "After thorough deliberation, Australia finds itself at a crossroads. Prepare yourself, for war is upon us.",
+		"attacked": "We will mobilize every means of resistance to stop this transgression against our nation!",
+		"defeated": "The principles for which we have fought will survive longer than any nation you could ever build.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,204,204],
+		"cities": ["Sydney"]
+	},
+	{
+		"name": "Ur",
+		"adjective": ["Ur"],
+		"cityStateType": "Maritime",
+		"startBias": ["Coast"],
+
+		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
+		"attacked": "Why do we fight? Because Inanna demands it. Now, witness the power of the Sumerians!",
+		"defeated": "What treachery has struck us? No, what evil?",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,69,0],
+		"cities": ["Ur"]
+	},
+	
+/*
+	#####模板#####
+	
+	{
+		"name": "",//
+		"adjective": [""],
+		"leaderName": "Civilization",
+		
+		"favoredReligion": "",
+		"startBias": [],
+		"preferredVictoryType": "",//
+		
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+		
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		
+		"neutralHello": "",
+		"hateHello": "",
+		
+		"tradeRequest": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [000,000,000],
+		
+		"uniqueName": "Unique Ability",
+		"uniques": [
+					],
+		"uniqueText": " []: \n *  ",
+		
+		"cities":  []
+	},
+	
+//城邦
+	{
+		"name": "",
+		"adjective": [""],
+		
+		"cityStateType": "",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		
+		"outerColor": [255,255,255],
+		"innerColor": [000,000,000],
+		
+		"cities": []
+	},
+	
+*/
+	
+//蛮族
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+		"innerColor": [185,12,12],
+		"uniques": ["Can only heal by pillaging",
+					"[All] units gain the [Barbarian ability] promotion"]
+	}
+]

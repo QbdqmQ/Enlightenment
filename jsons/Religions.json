@@ -1,0 +1,39 @@
+//宗教名称
+[
+    "Taoism",//道教
+	
+    "Confucianism",//儒教
+	
+	"Christian",//基督教
+	
+    "Protestantism",//新教
+	
+	"Catholic",//天主教
+	
+	"Orthodox",//东正教
+	
+    "Buddhism",//佛教
+	
+    "Hinduism",//印度教
+	
+    "Islam",//伊斯兰教
+	
+    "Judaism",//犹太教
+	
+    "Shinto",//神道教
+	
+    "Sikhism",//锡克教
+	
+    "Tengriism",//腾格里教
+	
+    "Zoroastrianism",//拜火教
+	
+	"Ancient Greek Religion",//古希腊宗教
+	
+	"Mythological Beliefs",//神话信仰
+	
+	"Folklore Beliefs",//神话信仰
+	
+	"Marxism",//马克思主义
+	
+]

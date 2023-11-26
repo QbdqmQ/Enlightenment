@@ -1,0 +1,2908 @@
+[
+//飞船部件
+	
+	{
+		"name": "SS Booster",//飞船助推器
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 3060,
+		"requiredTech": "Space Dynamics",
+		"uniques": ["Space Unit",
+					"Spaceship part",
+					
+					"Cannot be purchased",
+					"Uncapturable",
+					"Can be added to [The Spaceship] in the Capital",
+					"Limited to [3] per Civilization",
+					"Costs [8] [Aluminum]",
+					"Hidden when [Interstellar Victory] Victory is disabled",
+					"Only available <if [Project - Interstellar] is constructed>"]
+	},
+	{
+		"name": "SS Engine",//飞船发动机
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 3060,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Space Unit",
+					"Spaceship part",
+					
+					"Cannot be purchased",
+					"Uncapturable",
+					"Can be added to [The Spaceship] in the Capital",
+					"Limited to [1] per Civilization",
+					"Costs [8] [Aluminum]",
+					"Hidden when [Interstellar Victory] Victory is disabled",
+					"Only available <if [Project - Interstellar] is constructed>"]
+	},
+	{
+		"name": "SS Stasis Chamber",//飞船休眠舱
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 3420,
+		"requiredTech": "Space Materialogy",
+		"uniques": ["Space Unit",
+					"Spaceship part",
+					
+					"Cannot be purchased",
+					"Uncapturable",
+					"Can be added to [The Spaceship] in the Capital",
+					"Limited to [1] per Civilization",
+					"Costs [8] [Aluminum]",
+					"Hidden when [Interstellar Victory] Victory is disabled",
+					"Only available <if [Project - Interstellar] is constructed>"]
+	},
+	{
+		"name": "SS Cockpit",//飞船驾驶舱
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 3780,
+		"requiredTech": "Space Exploration",
+		"uniques": ["Space Unit",
+					"Spaceship part",
+					
+					"Cannot be purchased",
+					"Uncapturable",
+					"Can be added to [The Spaceship] in the Capital",
+					"Limited to [1] per Civilization",
+					"Costs [8] [Aluminum]",
+					"Hidden when [Interstellar Victory] Victory is disabled",
+					"Only available <if [Project - Interstellar] is constructed>"]
+	},
+	
+//基础
+
+    {
+		"name": "Research Report",//研究报告
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"Can hurry technology research"],
+	},
+
+	{
+		"name": "Settler",//移民
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city",
+					"Requires at least [2] population",
+					"Excess Food converted to Production when under construction"],
+	},
+	
+    {
+		"name": "Worker",//工人
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Can build [Base Improvement] improvements on tiles",
+					"Can build [Resource Improvement] improvements on tiles",
+					"May create improvements on water resources",
+					"Can instantly construct a [Farm] improvement <once>"],
+	},
+    {
+		"name": "City Designer",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 90,
+		"uniques": ["Can build [District] improvements on tiles"],
+	},
+
+	{
+		"name": "Work Boats",//工船
+		"unitType": "Water 'Civilian'",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Fishing",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
+					"May create improvements on water resources"]
+	},
+	
+	{
+		"name": "Icebreaker",//破冰船
+		"unitType": "Water 'Civilian'",
+		"movement": 3,
+		"cost": 115,
+		"requiredTech": "Meteorology",
+		"uniques": ["Can build [Remove Ice] improvements on tiles",
+					"Can enter ice tiles"]
+	},
+	
+	{
+		"name": "Troubadour",//吟游诗人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Orchestra",
+		"strength": 10,
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"May enter foreign tiles without open borders",
+					
+					"This Unit gains [5] XP <upon ending a turn in a [Foreign Land] tile>",
+					
+					"Instantly provides [2] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [4] [Tourism Performance] <[2] times>"],
+	},
+	{
+		"name": "Orchestra",//巡回乐团
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Rock Band",
+		"strength": 10,
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"May enter foreign tiles without open borders",
+					
+					"This Unit gains [10] XP <upon ending a turn in a [Foreign Land] tile>",
+					
+					"Instantly provides [4] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [8] [Tourism Performance] <[2] times>"],
+	},
+	{
+		"name": "Rock Band",//摇滚乐队
+		"unitType": "Land 'Civilian'",
+		"strength": 10,
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"May enter foreign tiles without open borders",
+					
+					"This Unit gains [15] XP <upon ending a turn in a [Foreign Land] tile>",
+					
+					"Instantly provides [8] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [16] [Tourism Performance] <[2] times>"],
+	},
+	
+//宗教单位
+	{
+		"name": "Missionary",//传教士
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"uniques": ["Can Spread Religion <for [2] movement> <[2] times> <after which this unit is consumed>",
+					"May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+					"[-1] Sight",
+					"Unbuildable",
+					"Religious Unit",
+					"Hidden when religion is disabled"],
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",//审判官
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+					"Can remove other religions from cities <in [Friendly] tiles> <for [2] movement> <[1] times> <after which this unit is consumed>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
+					"[-1] Sight",
+					"Unbuildable",
+					"Religious Unit",
+					"Hidden when religion is disabled"],
+	},
+	
+//伟人
+	{
+		"name": "Talent",//天才
+		"unitType": "Great People",
+		"movement": 2,
+		"uniques": ["Great Person - [Base]",
+					"Unbuildable",
+					
+					"Free Great Person <by consuming this unit>"],
+	},
+	
+	{
+		"name": "Great Artist I",//大艺术家
+		"unitType": "Great People",
+		"upgradesTo": "Great Artist II",
+		"strength": 10,
+		"movement": 3,
+		"uniques": ["Great Person - [Culture]",
+					"Great Artist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Gain [1]-[30] [Culture] <upon ending a turn in a [District - Landmark] tile>",
+					"Instantly provides [1] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
+					"This Unit gains [5] XP <upon ending a turn in a [District - Landmark] tile>",
+					
+					"Instantly provides [10] [Tourism Performance] <[1] times>",
+					"Instantly provides [10] [Tourism Performance] <upon being promoted>",
+					
+					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+	},
+	{
+		"name": "Great Artist II",
+		"unitType": "Great People",
+		"upgradesTo": "Great Artist III",
+		"strength": 15,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Artist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					
+					"Gain [1]-[60] [Culture] <upon ending a turn in a [District - Landmark] tile>",
+					"Instantly provides [2] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [District - Landmark] tile>",
+					
+					"Instantly provides [20] [Tourism Performance] <[1] times>",
+					"Instantly provides [20] [Tourism Performance] <upon being promoted>",
+					
+					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+	},
+	{
+		"name": "Great Artist III",
+		"unitType": "Great People",
+		"strength": 20,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Artist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
+					
+					"Gain [1]-[90] [Culture] <upon ending a turn in a [District - Landmark] tile>",
+					"Instantly provides [3] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
+					"This Unit gains [15] XP <upon ending a turn in a [District - Landmark] tile>",
+					
+					"Instantly provides [30] [Tourism Performance] <[1] times>",
+					"Instantly provides [30] [Tourism Performance] <upon being promoted>",
+					
+					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+	},
+	
+	{
+		"name": "Great Scientist I",//大科学家
+		"unitType": "Great People",
+		"upgradesTo": "Great Scientist II",
+		"strength": 10,
+		"movement": 3,
+		"uniques": ["Great Person - [Science]",
+					"Great Scientist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Gain [1]-[50] [Science] <upon ending a turn in a [District - Academy] tile>",
+					"Gain [1]-[50] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
+					"This Unit gains [5] XP <upon ending a turn in a [District - Academy] tile>",
+					
+					"Free [Research Report] appears <[1] times>",
+					"Free [Research Report] appears <upon being promoted>",
+					
+					"Can build [Great People Improvement(Science)] improvements on tiles"],
+	},
+	{
+		"name": "Great Scientist II",
+		"unitType": "Great People",
+		"upgradesTo": "Great Scientist III",
+		"strength": 15,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Scientist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					
+					"Gain [1]-[100] [Science] <upon ending a turn in a [District - Academy] tile>",
+					"Gain [1]-[100] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
+					"This Unit gains [10] XP <upon ending a turn in a [District - Academy] tile>",
+					
+					"Free [Research Report] appears <[1] times>",
+					"Free [Research Report] appears <upon being promoted>",
+					
+					"Can build [Great People Improvement(Science)] improvements on tiles"],
+	},
+	{
+		"name": "Great Scientist III",
+		"unitType": "Great People",
+		"strength": 20,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Scientist",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
+					
+					"Gain [1]-[150] [Science] <upon ending a turn in a [District - Academy] tile>",
+					"Gain [1]-[150] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
+					"This Unit gains [15] XP <upon ending a turn in a [District - Academy] tile>",
+					
+					"Free [Research Report] appears <[1] times>",
+					"Free [Research Report] appears <upon being promoted>",
+					
+					"Can build [Great People Improvement(Science)] improvements on tiles"],
+	},
+	
+	{
+		"name": "Great Merchant I",//大商业家
+		"unitType": "Great People",
+		"upgradesTo": "Great Merchant II",
+		"strength": 10,
+		"movement": 3,
+		"uniques": ["Great Person - [Gold]",
+					"Great Merchant",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Gain [1]-[100] [Gold] <upon ending a turn in a [District - Business Center] tile>",
+					"This Unit gains [5] XP <upon ending a turn in a [District - Business Center] tile>",
+					
+					"Gain [-500]-[1000] [Gold] <[1] times>",
+					"Gain [-500]-[1000] [Gold] <upon being promoted>",
+					
+					"Can build [Trading Post] improvements on tiles",
+					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+	},
+	{
+		"name": "Great Merchant II",
+		"unitType": "Great People",
+		"upgradesTo": "Great Merchant III",
+		"strength": 15,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Merchant",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					
+					"Gain [1]-[200] [Gold] <upon ending a turn in a [District - Business Center] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [District - Business Center] tile>",
+					
+					"Gain [-1000]-[2000] [Gold] <[1] times>",
+					"Gain [-1000]-[2000] [Gold] <upon being promoted>",
+					
+					"Can build [Trading Post] improvements on tiles",
+					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+	},
+	{
+		"name": "Great Merchant III",
+		"unitType": "Great People",
+		"strength": 20,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Merchant",
+					"Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Cannot attack",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
+					
+					"Gain [1]-[300] [Gold] <upon ending a turn in a [District - Business Center] tile>",
+					"This Unit gains [15] XP <upon ending a turn in a [District - Business Center] tile>",
+					
+					"Gain [-1500]-[3000] [Gold] <[1] times>",
+					"Gain [-1500]-[3000] [Gold] <upon being promoted>",
+					
+					"Can build [Trading Post] improvements on tiles",
+					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+	},
+	
+	{
+		"name": "Great Politician(Ordinary)",//大政治家
+		"unitType": "Great People",
+		"strength": 10,
+		"movement": 4,
+		"uniques": ["Great Person - [Politic]",
+					"Great Politician",
+					"Unbuildable",
+					
+					"Can transform to [Great Politician(Development)]",
+					"Can transform to [Great Politician(Military)]"],
+	},
+	{
+		"name": "Great Politician(Development)",
+		"unitType": "Great People",
+		"strength": 10,
+		"movement": 1,
+		"uniques": ["Great Politician",
+					"Unbuildable",
+					
+					"Instantly provides [4] [Policy Point - Development] <for [1] movement> <upon ending a turn in a [District - Municipal Square] tile>",
+					
+					"Can transform to [Great Politician(Ordinary)]"],
+	},
+	{
+		"name": "Great Politician(Military)",
+		"unitType": "Great People",
+		"strength": 10,
+		"movement": 1,
+		"uniques": ["Great Politician",
+					"Unbuildable",
+					
+					"Instantly provides [4] [Policy Point - Military] <for [1] movement> <upon ending a turn in a [District - Municipal Square] tile>",
+					
+					"Can transform to [Great Politician(Ordinary)]"],
+	},
+	
+	{
+		"name": "Great General",//陆军统帅
+		"unitType": "Great People",
+		"movement": 3,
+		"uniques": ["Great Person - [War]",
+					"Unbuildable",
+					
+					"Empire enters a [5]-turn Golden Age <once>",
+					"[+15]% Strength bonus for [Land] units within [2] tiles"],
+	},
+	{
+		"name": "Great Admiral",//海军统帅
+		"unitType": "Great People",
+		"movement": 3,
+		"uniques": ["Great Person - [Water War]",
+					"Unbuildable",
+
+					"Empire enters a [5]-turn Golden Age <once>",
+					"[+15]% Strength bonus for [Water] units within [2] tiles"],
+	},
+	{
+		"name": "Great Diplomat",//大外交官
+		"unitType": "Great People",
+		"movement": 3,
+		"uniques": ["Great Person - [City-State]",
+					"Unbuildable",
+					
+					"Can undertake a trade mission with City-State, giving a large sum of gold and [80] Influence",
+					"May enter foreign tiles without open borders"],
+	},
+	{
+		"name": "Great Engineer",//大工程师
+		"unitType": "Great People",
+		"movement": 3,
+		"uniques": ["Great Person - [Production]",
+					"Unbuildable",
+					
+					"[-50]% tile improvement construction time",
+					"Can build [District] improvements on tiles",
+					"Can build [Base Improvement] improvements on tiles",
+					"Can build [Resource Improvement] improvements on tiles"],
+	},
+	{
+		"name": "Great Prophet",//大先知
+		"unitType": "Great People",
+		"movement": 3,
+		"religiousStrength": 3000,
+		"uniques": ["Great Person - [Faith]",
+					"Unbuildable",
+					
+					"Hidden when religion is disabled",
+					"Religious Unit",
+					
+					"Can Spread Religion <for [2] movement> <[3] times> <after which this unit is consumed>",
+					"Removes other religions when spreading religion",
+					"Takes your religion over the one in their birth city",
+					
+					"May found a religion",
+					"May enhance a religion",
+					
+					"May enter foreign tiles without open borders",
+					"[-1] Sight"],
+	},
+	
+//雇佣兵
+	
+	{
+		"name": "Mercenary - Pike",//雇佣兵 - 长枪
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Mercenary - Musket",
+		"movement": 2,
+		"strength": 25,
+		"cost": 92,
+		"uniques": ["Mercenary",
+					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
+					
+					"Can move immediately once bought",
+					"Unable to capture cities",
+					"Unbuildable",
+					"Can be purchased with [Gold] [in all cities]",
+					"[-100]% maintenance costs",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Mercenary - Musket",//雇佣兵 - 火枪
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Musketeer",
+		"movement": 2,
+		"strength": 40,
+		"cost": 140,
+		"uniques": ["Mercenary",
+					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
+					
+					"Can move immediately once bought",
+					"Unable to capture cities",
+					"Unbuildable",
+					"Can be purchased with [Gold] [in all cities]",
+					"[-100]% maintenance costs",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	
+	{
+		"name": "Mercenary - Bow",//雇佣兵 - 弓箭
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Mercenary - Arquebus",
+		"movement": 2,
+		"range": 2,
+		"strength": 23,
+		"rangedStrength": 28,
+		"cost": 105,
+		"uniques": ["Mercenary",
+					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
+					
+					"Can move immediately once bought",
+					"Unable to capture cities",
+					"Unbuildable",
+					"Can be purchased with [Gold] [in all cities]",
+					"[-100]% maintenance costs",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Mercenary - Arquebus",//雇佣兵 - 火绳枪
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Arquebusier",
+		"movement": 2,
+		"range": 2,
+		"strength": 34,
+		"rangedStrength": 43,
+		"cost": 135,
+		"uniques": ["Mercenary",
+					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
+					
+					"Can move immediately once bought",
+					"Unable to capture cities",
+					"Unbuildable",
+					"Can be purchased with [Gold] [in all cities]",
+					"[-100]% maintenance costs",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//陆地单位
+
+	//特殊单位
+	{
+		"name": "Peacekeeper",//维和部队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 80,
+		"cost": 500,
+		"uniques": ["Only available <after adopting [Non-combat Military Operations]>",
+					"Never appears as a Barbarian unit",
+					
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>",
+					
+					"[+20]% Strength <when fighting in [Foreign Land] tiles>",
+					"[-100]% Strength <when fighting in [Enemy Land] tiles>"],
+		"attackSound": "shot"
+	},
+	
+	//侦查
+	{
+		"name": "Explorer",//探索者
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Scout",
+		"movement": 3,
+		"range": 1,
+		"strength": 10,
+		"rangedStrength": 9,
+		"cost": 35,
+		"obsoleteTech": "Iron Working",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Scout",//斥候
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Chasseur",
+		"movement": 3,
+		"range": 1,
+		"strength": 20,
+		"rangedStrength": 19,
+		"cost": 55,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Chemistry",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Chasseur",//猎兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Skirmisher",
+		"movement": 3,
+		"range": 1,
+		"strength": 30,
+		"rangedStrength": 29,
+		"cost": 125,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Rifling",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Skirmisher",//散兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 3,
+		"range": 1,
+		"strength": 40,
+		"rangedStrength": 39,
+		"cost": 365,
+		"requiredTech": "Rifling",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	
+	//近步
+	{
+		"name": "Warrior",//勇士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Swordsman",
+		"movement": 2,
+		"strength": 20,
+		"cost": 42,
+		"obsoleteTech": "Iron Working",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Swordsman",//剑士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Longswordsman",
+		"movement": 2,
+		"strength": 27,
+		"cost": 71,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Longswordsman",//长剑士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Musketeer",
+		"movement": 2,
+		"strength": 34,
+		"cost": 106,
+		"requiredTech": "Metal Casting",
+		"obsoleteTech": "Gunpowder",
+		"uniques": ["Knights",
+					
+					"Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Musketeer",//火枪手
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Light Infantry",
+		"movement": 2,
+		"strength": 40,
+		"cost": 165,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Rifling",
+		"uniques": ["Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Light Infantry",//轻装步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Assault Infantry",
+		"movement": 2,
+		"strength": 56,
+		"cost": 458,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Assault Infantry",//突击步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Mechanized Infantry",
+		"movement": 2,
+		"strength": 70,
+		"cost": 661,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Radar",
+		"uniques": ["Costs [8] [Steel]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mechanized Infantry",//机械化步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 90,
+		"cost": 912,
+		"requiredTech": "Radar",
+		"uniques": ["Costs [8] [Steel]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"attackSound": "shot"
+	},
+	
+	{
+		"name": "Spearman",//枪兵
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Pikeman",
+		"movement": 2,
+		"strength": 23,
+		"cost": 46,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Heavy Spearman",//重装枪兵
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Heavy Pikeman",
+		"movement": 2,
+		"strength": 23,
+		"cost": 57,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["Costs [8] [Copper]",
+					"[+15]% Strength <when defending>",
+					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Pikeman",//长枪兵
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Pike and Shot",
+		"movement": 2,
+		"strength": 30,
+		"cost": 103,
+		"requiredTech": "Metal Casting",
+		"obsoleteTech": "Gunpowder",
+		"uniques": ["Knights",
+					
+					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Heavy Pikeman",//重装长枪兵
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Pike and Shot",
+		"movement": 2,
+		"strength": 30,
+		"cost": 114,
+		"requiredTech": "Metal Casting",
+		"obsoleteTech": "Gunpowder",
+		"uniques": ["Knights",
+					
+					"Costs [8] [Copper]",
+					"[+15]% Strength <when defending>",
+					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Pike and Shot",//枪矛方阵兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Line Infantry",
+		"movement": 2,
+		"strength": 36,
+		"cost": 155,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Rifling",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Line Infantry",//线列步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Anti-tank Gun",
+		"movement": 2,
+		"strength": 52,
+		"cost": 438,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Anti-tank Gun",//反坦克炮
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Anti-tank Bazooka",
+		"movement": 2,
+		"strength": 66,
+		"cost": 631,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Rocketry",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Anti-tank Bazooka",//反坦克火箭筒
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 86,
+		"cost": 872,
+		"requiredTech": "Rocketry",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "metalhit"
+	},
+	
+	{
+		"name": "Navy Infantry",//海军步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Marine",
+		"movement": 2,
+		"strength": 68,
+		"cost": 646,
+		"requiredTech": "Meteorology",
+		"obsoleteTech": "Radar",
+		"uniques": ["[1] Movement point cost to disembark",
+					"Defense bonus when embarked",
+					"No defensive terrain bonus"],
+		"promotions": ["Amphibious"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Marine",//海军陆战队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 87,
+		"cost": 892,
+		"requiredTech": "Radar",
+		"uniques": ["[1] Movement point cost to disembark",
+					"Defense bonus when embarked",
+					"No defensive terrain bonus"],
+		"promotions": ["Amphibious"],
+		"attackSound": "throw"
+	},
+	
+	{
+		"name": "Paratrooper",//伞兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 85,
+		"cost": 882,
+		"requiredTech": "Radar",
+		"uniques": ["May Paradrop up to [5] tiles from inside friendly territory",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+	},
+	
+	//远步
+	{
+		"name": "Slinger",//投石手
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Archer",
+		"movement": 2,
+		"range": 1,
+		"strength": 16,
+		"rangedStrength": 18,
+		"cost": 39,
+		"obsoleteTech": "Animal Husbandry",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Archer",//弓箭手
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Composite Bowman",
+		"movement": 2,
+		"range": 2,
+		"strength": 18,
+		"rangedStrength": 23,
+		"cost": 53,
+		"requiredTech": "Animal Husbandry",
+		"obsoleteTech": "Mathematics",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Composite Bowman",//复合弓兵
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Crossbowman",
+		"movement": 2,
+		"range": 2,
+		"strength": 24,
+		"rangedStrength": 28,
+		"cost": 67,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Crossbowman",//弩手
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Arquebusier",
+		"movement": 2,
+		"range": 2,
+		"strength": 30,
+		"rangedStrength": 35,
+		"cost": 101,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Gunpowder",
+		"uniques": ["Knights"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Arquebusier",//火绳枪兵
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Gatling Gun",
+		"movement": 2,
+		"range": 2,
+		"strength": 36,
+		"rangedStrength": 41,
+		"cost": 159,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Gatling Gun",//加特林机枪
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Machine Gun",
+		"movement": 2,
+		"range": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"cost": 451,
+		"requiredTech": "Industrialization",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["[+1] additional attacks per turn"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Machine Gun",//机关枪
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Battalion Gun",
+		"movement": 2,
+		"range": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"cost": 653,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Rocketry",
+		"uniques": ["[+1] additional attacks per turn"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Battalion Gun",//步兵炮
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"movement": 2,
+		"range": 1,
+		"strength": 85,
+		"rangedStrength": 85,
+		"cost": 903,
+		"requiredTech": "Rocketry",
+		"uniques": ["Gunnery",
+					"[+1] additional attacks per turn"],
+		"attackSound": "arrow"
+	},
+	
+	//近轻骑
+	
+	{
+		"name": "Horseman",//骑手
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Spear Cavalry",
+		"movement": 4,
+		"strength": 27,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Horse Armor",
+		"uniques": ["Melee Cavalry",
+					"Costs [8] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Spear Cavalry",//长矛骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Honor Knight",
+		"movement": 4,
+		"strength": 34,
+		"cost": 111,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Melee Cavalry",
+					"Costs [9] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Honor Knight",//荣誉骑士
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Lancer",
+		"movement": 4,
+		"strength": 40,
+		"cost": 156,
+		"requiredTech": "Stirrups",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Melee Cavalry",
+					"Knights",
+					
+					"Costs [10] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Lancer",//枪骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Wheeled Armored",
+		"movement": 4,
+		"strength": 60,
+		"cost": 435,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Melee Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Wheeled Armored",//轮式装甲车
+		"unitType": "Land 'Melee' 'Armored'",
+		"upgradesTo": "Main Battle Tank",
+		"movement": 4,
+		"strength": 84,
+		"cost": 990,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Motor",
+		"uniques": ["Melee Armored",
+					"Costs [12] [Steel]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Main Battle Tank",//主战坦克
+		"unitType": "Land 'Melee' 'Armored'",
+		"movement": 4,
+		"strength": 105,
+		"cost": 1359,
+		"requiredTech": "Motor",
+		"uniques": ["Melee Armored",
+					"Costs [13] [Steel]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	
+	//近重骑
+	
+	{
+		"name": "Heavy Chariot",//重型战车
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Armored Cavalry",
+		"movement": 3,
+		"strength": 30,
+		"cost": 105,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Horse Armor",
+		"uniques": ["Heavy Cavalry",
+					"Costs [9] [Horses]",
+					"Costs [5] [Copper]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Armored Cavalry",//披甲骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Valor Knight",
+		"movement": 3,
+		"strength": 37,
+		"cost": 141,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Heavy Cavalry",
+					"Costs [10] [Horses]",
+					"Costs [6] [Iron]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Valor Knight",//英勇骑士
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Cuirassier",
+		"movement": 3,
+		"strength": 43,
+		"cost": 186,
+		"requiredTech": "Stirrups",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Heavy Cavalry",
+					"Knights",
+					
+					"Costs [11] [Horses]",
+					"Costs [7] [Iron]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Cuirassier",//胸甲骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Tracked Armored",
+		"movement": 3,
+		"strength": 63,
+		"cost": 465,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Heavy Cavalry",
+					"Costs [12] [Horses]",
+					"Costs [8] [Iron]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Tracked Armored",//履带装甲车
+		"unitType": "Land 'Melee' 'Armored'",
+		"upgradesTo": "Heavy Tank",
+		"movement": 3,
+		"strength": 87,
+		"cost": 1068,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Motor",
+		"uniques": ["Heavy Armored",
+					"Costs [13] [Steel]",
+					"Costs [9] [Oil]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Heavy Tank",//重型坦克
+		"unitType": "Land 'Melee' 'Armored'",
+		"movement": 3,
+		"strength": 108,
+		"cost": 1437,
+		"requiredTech": "Motor",
+		"uniques": ["Heavy Armored",
+					"Costs [14] [Steel]",
+					"Costs [10] [Oil]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	
+	//远骑
+	
+	{
+		"name": "Chariot Archer",//战车射手
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Bow Cavalry",
+		"movement": 4,
+		"range": 2,
+		"strength": 25,
+		"rangedStrength": 27,
+		"cost": 95,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Horse Armor",
+		"uniques": ["Ranged Cavalry",
+					"Costs [8] [Horses]",
+					"No defensive terrain bonus",
+					"Rough terrain penalty"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Bow Cavalry",//弓骑兵
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Humility Knight",
+		"movement": 4,
+		"range": 2,
+		"strength": 32,
+		"rangedStrength": 34,
+		"cost": 131,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Ranged Cavalry",
+					"Costs [9] [Horses]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Humility Knight",//谦卑骑士
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Courser",
+		"movement": 4,
+		"range": 2,
+		"strength": 38,
+		"rangedStrength": 40,
+		"cost": 176,
+		"requiredTech": "Stirrups",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Ranged Cavalry",
+					"Knights",
+					
+					"Costs [10] [Horses]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Courser",//追猎者
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Machine Gun Armored",
+		"movement": 4,
+		"range": 2,
+		"strength": 58,
+		"rangedStrength": 60,
+		"cost": 455,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Ranged Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Machine Gun Armored",//机枪装甲车
+		"unitType": "Land 'Ranged' 'Armored'",
+		"upgradesTo": "Medium Tank",
+		"movement": 4,
+		"range": 2,
+		"strength": 82,
+		"rangedStrength": 84,
+		"cost": 1038,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Motor",
+		"uniques": ["Ranged Armored",
+					"Costs [12] [Steel]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Medium Tank",//中型坦克
+		"unitType": "Land 'Ranged' 'Armored'",
+		"movement": 4,
+		"range": 2,
+		"strength": 103,
+		"rangedStrength": 105,
+		"cost": 1407,
+		"requiredTech": "Motor",
+		"uniques": ["Ranged Armored",
+					"Costs [13] [Steel]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	
+	//军械&支援
+	
+	{
+		"name": "Battering Ram",//破城槌
+		"unitType": "Land 'Ordnance'",
+		"upgradesTo": "Siege Tower",
+		"movement": 2,
+		"strength": 20,
+		"cost": 80,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Military Engineering",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs cities> <when defending>",
+					"[-67]% Strength <vs [Land] units>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Siege Tower",//攻城塔
+		"unitType": "Land 'Ordnance'",
+		"upgradesTo": "Grenadier",
+		"movement": 2,
+		"strength": 23,
+		"cost": 110,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"uniques": ["[+200]% Strength <vs cities> <when defending>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Grenadier",//掷弹兵
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Field Cannon",
+		"movement": 2,
+		"strength": 25,
+		"cost": 175,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Dynamite",
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>",
+					"[+100]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Field Cannon",//野战加农炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Mortar",
+		"movement": 2,
+		"range": 2,
+		"strength": 44,
+		"rangedStrength": 35,
+		"cost": 510,
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Radio",
+		"uniques": ["Gunnery",
+					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Mortar",//迫击炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Mobile Mortar",
+		"movement": 2,
+		"range": 2,
+		"strength": 58,
+		"rangedStrength": 45,
+		"cost": 740,
+		"requiredTech": "Radio",
+		"obsoleteTech": "Computers",
+		"uniques": ["Gunnery",
+					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Mobile Mortar",//自行迫击炮
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"range": 2,
+		"strength": 78,
+		"rangedStrength": 55,
+		"cost": 1030,
+		"requiredTech": "Computers",
+		"uniques": ["Gunnery",
+					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	
+	{
+		"name": "Catapult",//投石车
+		"unitType": "Land 'Ordnance'",
+		"upgradesTo": "Trebuchet",
+		"movement": 2,
+		"range": 2,
+		"strength": 20,
+		"rangedStrength": 20,
+		"cost": 100,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Trebuchet",//抛石机
+		"unitType": "Land 'Ordnance'",
+		"upgradesTo": "Cannon",
+		"movement": 2,
+		"range": 2,
+		"strength": 25,
+		"rangedStrength": 25,
+		"cost": 140,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Cannon",//加农炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Artillery",
+		"movement": 2,
+		"range": 2,
+		"strength": 30,
+		"rangedStrength": 30,
+		"cost": 210,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Dynamite",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Artillery",//火炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Howitzer",
+		"movement": 2,
+		"range": 3,
+		"strength": 40,
+		"rangedStrength": 40,
+		"cost": 600,
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Radio",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Howitzer",//榴弹炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Rocket Artillery",
+		"movement": 2,
+		"range": 3,
+		"strength": 60,
+		"rangedStrength": 60,
+		"cost": 860,
+		"requiredTech": "Radio",
+		"obsoleteTech": "Rocketry",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Rocket Artillery",//火箭炮
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"range": 3,
+		"strength": 80,
+		"rangedStrength": 80,
+		"cost": 1190,
+		"requiredTech": "Rocketry",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	
+	{
+		"name": "Anti-aircraft Gun",//高射炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Mobile SAM",
+		"movement": 2,
+		"interceptRange": 2,
+		"strength": 60,
+		"cost": 750,
+		"requiredTech": "Radio",
+		"obsoleteTech": "Computers",
+		"uniques": ["Gunnery",
+					"[100]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Air] units>",
+					"[+50]% Strength <vs [Helicopter Gunship] units>",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Mobile SAM",//自行防空导弹
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"interceptRange": 3,
+		"strength": 80,
+		"cost": 1050,
+		"requiredTech": "Computers",
+		"uniques": ["Gunnery",
+					"[100]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Air] units>",
+					"[+50]% Strength <vs [Helicopter Gunship] units>",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	
+	{
+
+		"name": "Helicopter Gunship",//武装直升机
+		"unitType": "Land 'Support'",
+		"movement": 6,
+		"strength": 94,
+		"cost": 932,
+		"requiredTech": "Motor",
+		"uniques": ["Costs [9] [Aluminum]",
+					"Can pass through impassable tiles",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"All tiles cost 1 movement",
+					"Ignores Zone of Control",
+					"Unable to capture cities",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	
+	{
+		"name": "Medic",//医护兵
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"cost": 450,
+		"requiredTech": "Sanitation",
+		"uniques": ["All adjacent units heal [+7] HP when healing",
+					"All healing effects doubled",
+					"Unit will heal every turn, even if it performs an action",
+					"No Sight",
+					"Never appears as a Barbarian unit"]
+	},
+	
+	{
+		"name": "Land Logisticians",//后勤兵
+		"unitType": "Land 'Support'",
+		"movement": 3,
+		"cost": 500,
+		"uniques": ["Only available <after adopting [Logistics]>",
+					
+					"Logisticians",
+
+					"Unit will heal every turn, even if it performs an action",
+					"No Sight",
+					"Never appears as a Barbarian unit"]
+	},
+	
+//水上单位
+	
+	//近程
+	{
+		"name": "Galley",//桨帆船
+		"unitType": "Water 'Melee' 'Cold weapon'",
+		"upgradesTo": "Trireme",
+		"movement": 3,
+		"strength": 24,
+		"cost": 42,
+		"requiredTech": "Sailing",
+		"obsoleteTech": "Optics",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Trireme",//三列桨战船
+		"unitType": "Water 'Melee' 'Cold weapon'",
+		"upgradesTo": "Cog",
+		"movement": 3,
+		"strength": 28,
+		"cost": 66,
+		"requiredTech": "Optics",
+		"obsoleteTech": "Astronomy",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Cog",//柯克船
+		"unitType": "Water 'Melee' 'Cold weapon'",
+		"upgradesTo": "Caravel",
+		"movement": 4,
+		"strength": 35,
+		"cost": 96,
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Square Rigging",
+		"uniques": [],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Caravel",//轻帆船
+		"unitType": "Water 'Melee' 'Hot weapon'",
+		"upgradesTo": "Ironclad",
+		"movement": 4,
+		"strength": 42,
+		"cost": 150,
+		"requiredTech": "Square Rigging",
+		"obsoleteTech": "Steam Power",
+		"uniques": [],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Ironclad",//铁甲舰
+		"unitType": "Water 'Melee' 'Hot weapon'",
+		"upgradesTo": "Battleship",
+		"movement": 4,
+		"strength": 58,
+		"cost": 438,
+		"requiredTech": "Steam Power",
+		"obsoleteTech": "Electronics",
+		"uniques": [],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Battleship",//战列舰
+		"unitType": "Water 'Melee' 'Hot weapon'",
+		"upgradesTo": "Escort Destroyer",
+		"movement": 4,
+		"strength": 74,
+		"cost": 882,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Modern Navy",
+		"uniques": [],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Escort Destroyer",//护航驱逐舰
+		"unitType": "Water 'Melee' 'Hot weapon'",
+		"movement": 4,
+		"strength": 95,
+		"cost": 1398,
+		"requiredTech": "Modern Navy",
+		"uniques": [],
+		"attackSound": "cannon"
+	},
+	
+	//远程
+	{
+		"name": "Squaresail",//横帆战船
+		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Quadrireme",
+		"movement": 3,
+		"range": 2,
+		"strength": 22,
+		"rangedStrength": 25,
+		"cost": 49,
+		"requiredTech": "Sailing",
+		"obsoleteTech": "Optics",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Quadrireme",//四段帆船
+		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Galleass",
+		"movement": 3,
+		"range": 2,
+		"strength": 26,
+		"rangedStrength": 29,
+		"cost": 73,
+		"requiredTech": "Optics",
+		"obsoleteTech": "Astronomy",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Galleass",//桨帆战舰
+		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Frigate",
+		"movement": 4,
+		"range": 2,
+		"strength": 33,
+		"rangedStrength": 36,
+		"cost": 103,
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Square Rigging",
+		"uniques": [],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Frigate",//护卫舰
+		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Monitor",
+		"movement": 4,
+		"range": 2,
+		"strength": 40,
+		"rangedStrength": 43,
+		"cost": 160,
+		"requiredTech": "Square Rigging",
+		"obsoleteTech": "Steam Power",
+		"uniques": ["Costs [8] [Iron]"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Monitor",//重炮舰
+		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Destroyer",
+		"movement": 4,
+		"range": 2,
+		"strength": 53,
+		"rangedStrength": 56,
+		"cost": 458,
+		"requiredTech": "Steam Power",
+		"obsoleteTech": "Electronics",
+		"uniques": ["Costs [9] [Coal]"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Destroyer",//驱逐舰
+		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Missile Destroyer",
+		"movement": 4,
+		"range": 2,
+		"strength": 72,
+		"rangedStrength": 75,
+		"cost": 912,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Modern Navy",
+		"uniques": ["Costs [10] [Oil]"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Missile Destroyer",//导弹驱逐舰
+		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"movement": 4,
+		"range": 2,
+		"strength": 93,
+		"rangedStrength": 96,
+		"cost": 1438,
+		"requiredTech": "Modern Navy",
+		"uniques": ["Costs [11] [Oil]"],
+		"attackSound": "arrow"
+	},
+	
+	//支援
+	{
+		"name": "Privateer",//私掠舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Commerce Raider",
+		"movement": 5,
+		"strength": 37,
+		"cost": 282,
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Steam Power",
+		"uniques": ["May capture killed [Water] units",
+					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Commerce Raider",//伪装巡洋舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Battle Cruiser",
+		"movement": 5,
+		"strength": 53,
+		"cost": 438,
+		"requiredTech": "Steam Power",
+		"obsoleteTech": "Refrigeration",
+		"uniques": ["May capture killed [Water] units",
+					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Battle Cruiser",//战列巡洋舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Mobile Destroyer",
+		"movement": 5,
+		"strength": 69,
+		"cost": 882,
+		"requiredTech": "Refrigeration",
+		"obsoleteTech": "Modern Navy",
+		"uniques": ["May capture killed [Water] units",
+					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Mobile Destroyer",//机动驱逐舰
+		"unitType": "Water 'Support'",
+		"movement": 5,
+		"strength": 90,
+		"cost": 1398,
+		"requiredTech": "Modern Navy",
+		"uniques": ["May capture killed [Water] units",
+					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
+		"attackSound": "cannon"
+	},
+	
+	{
+		"name": "Carrack",//卡拉克帆船
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Capital Ship",
+		"movement": 3,
+		"range": 2,
+		"strength": 28,
+		"rangedStrength": 28,
+		"cost": 110,
+		"requiredTech": "Square Rigging",
+		"obsoleteTech": "Navigation",
+		"uniques": ["[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Capital Ship",//主力舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Dreadnought",
+		"movement": 3,
+		"range": 2,
+		"strength": 36,
+		"rangedStrength": 36,
+		"cost": 349,
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Industrialization",
+		"uniques": ["Costs [9] [Iron]",
+					"[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Dreadnought",//无畏舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Armored Cruiser",
+		"movement": 3,
+		"range": 2,
+		"strength": 44,
+		"rangedStrength": 44,
+		"cost": 531,
+		"requiredTech": "Industrialization",
+		"obsoleteTech": "Electronics",
+		"uniques": ["Costs [10] [Coal]",
+					"[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Armored Cruiser",//装甲巡洋舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Missile Cruiser",
+		"movement": 3,
+		"range": 2,
+		"strength": 60,
+		"rangedStrength": 60,
+		"cost": 1049,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Modern Navy",
+		"uniques": ["Costs [11] [Oil]",
+					"[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Missile Cruiser",//导弹巡洋舰
+		"unitType": "Water 'Support'",
+		"movement": 3,
+		"range": 2,
+		"strength": 81,
+		"rangedStrength": 81,
+		"cost": 1651,
+		"requiredTech": "Modern Navy",
+		"uniques": ["Costs [12] [Oil]",
+					"[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	
+	{
+		"name": "Carrier",//航空母舰
+		"unitType": "Water 'Aircraft Carrier'",
+		"upgradesTo": "Nuclear Carrier",
+		"movement": 4,
+		"strength": 60,
+		"cost": 848,
+		"requiredTech": "Refrigeration",
+		"uniques": ["Can carry [2] [Aircraft] units",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Nuclear Carrier",//核动力航空母舰
+		"unitType": "Water 'Aircraft Carrier'",
+		"movement": 5,
+		"strength": 80,
+		"cost": 1176,
+		"requiredTech": "Nuclear Fission",
+		"uniques": ["Costs [8] [Uranium]",
+					"Can carry [3] [Aircraft] units",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	
+	{
+		"name": "Submarine",//潜艇
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Nuclear Submarine",
+		"movement": 4,
+		"strength": 60,
+		"rangedStrength": 80,
+		"cost": 671,
+		"requiredTech": "Refrigeration",
+		"uniques": ["Submarines",
+					"Can only attack [Water] tiles",
+					"Can enter ice tiles",
+					"Invisible to non-adjacent units",
+					"Can see invisible [Submarines] units",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Nuclear Submarine",//核潜艇
+		"unitType": "Water 'Support'",
+		"movement": 4,
+		"strength": 80,
+		"rangedStrength": 100,
+		"cost": 917,
+		"requiredTech": "Nuclear Fission",
+		"uniques": ["Submarines",
+					"Costs [8] [Uranium]",
+					"Can only attack [Water] tiles",
+					"Can enter ice tiles",
+					"Invisible to non-adjacent units",
+					"Can see invisible [Submarines] units",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "torpedo"
+	},
+	
+	{
+		"name": "Water Logisticians",//水上后勤舰
+		"unitType": "Water 'Support'",
+		"movement": 4,
+		"cost": 500,
+		"uniques": ["Only available <after adopting [Logistics]>",
+					
+					"Logisticians",
+					
+					"Unit will heal every turn, even if it performs an action",
+					"No Sight",
+					"Never appears as a Barbarian unit"]
+	},
+	
+//空中单位
+	
+	{
+		"name": "Triplane",//三翼机
+		"unitType": "Air 'Fighter'",
+		"upgradesTo": "Fighter",
+		"movement": 1,
+		"range": 6,
+		"interceptRange": 6,
+		"strength": 65,
+		"rangedStrength": 65,
+		"cost": 766,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Flight",
+		"uniques": ["Costs [10] [Oil]",
+					"[50]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air 'Bomber'] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Fighter",//战斗机
+		"unitType": "Air 'Fighter'",
+		"upgradesTo": "Stealth Fighter",
+		"movement": 1,
+		"range": 9,
+		"interceptRange": 9,
+		"strength": 80,
+		"rangedStrength": 80,
+		"cost": 1053,
+		"requiredTech": "Flight",
+		"uniques": ["Costs [11] [Aluminum]",
+					"[80]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air 'Bomber'] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Stealth Fighter",//隐形战斗机
+		"unitType": "Air 'Fighter'",
+		"movement": 1,
+		"range": 11,
+		"interceptRange": 11,
+		"strength": 100,
+		"rangedStrength": 100,
+		"cost": 1655,
+		"requiredTech": "Stealth",
+		"uniques": ["Costs [12] [Aluminum]",
+					"[80]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"Damage taken from interception reduced by [-25]%"],
+		"attackSound": "machinegun"
+	},
+	
+	{
+		"name": "Biplane",//双翼机
+		"unitType": "Air 'Bomber'",
+		"upgradesTo": "Bomber",
+		"movement": 1,
+		"range": 7,
+		"strength": 75,
+		"rangedStrength": 75,
+		"cost": 790,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Flight",
+		"uniques": ["Costs [10] [Oil]"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Bomber",//轰炸机
+		"unitType": "Air 'Bomber'",
+		"upgradesTo": "Stealth Bomber",
+		"movement": 1,
+		"range": 11,
+		"strength": 90,
+		"rangedStrength": 90,
+		"cost": 1077,
+		"requiredTech": "Flight",
+		"uniques": ["Costs [11] [Aluminum]"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Stealth Bomber",//隐形轰炸机
+		"unitType": "Air 'Bomber'",
+		"movement": 1,
+		"range": 13,
+		"strength": 110,
+		"rangedStrength": 110,
+		"cost": 1679,
+		"requiredTech": "Stealth",
+		"uniques": ["Costs [12] [Aluminum]",
+					"Damage taken from interception reduced by [-25]%"],
+		"attackSound": "bombing"
+	},
+	
+	{
+		"name": "Guided Missile",//导弹
+		"unitType": "Air 'Missile'",
+		"upgradesTo": "Ballistic Missile",
+		"movement": 1,
+		"range": 10,
+		"interceptRange": 10,
+		"strength": 60,
+		"rangedStrength": 60,
+		"cost": 610,
+		"requiredTech": "Flight",
+		"uniques": ["Costs [7] [Aluminum]",
+					"[2] extra interceptions may be made per turn",
+					"[+2] additional attacks per turn",
+					"No Sight",
+					"Can only heal by pillaging"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Ballistic Missile",//弹道导弹
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 10,
+		"interceptRange": 10,
+		"strength": 80,
+		"rangedStrength": 80,
+		"cost": 815,
+		"requiredTech": "Rocketry",
+		"uniques": ["Costs [9] [Aluminum]",
+					"[2] extra interceptions may be made per turn",
+					"[+2] additional attacks per turn",
+					"No Sight",
+					"Can only heal by pillaging"],
+		"attackSound": "missile"
+	},
+	
+	{
+		"name": "Atomic Bomb",//原子弹
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 10,
+		"strength": 500,
+		"rangedStrength": 500,
+		"cost": 1764,
+		"requiredTech": "Nuclear Fission",
+		"uniques": ["Nuclear Weapon",
+					
+					"Costs [14] [Uranium]",
+					"Nuclear weapon of Strength [1]",
+					"Blast radius [2]",
+					"Self-destructs when attacking",
+					"Only available <if [Project - Nuclear Research] is constructed>"
+					],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Nuclear Missile",//核导弹
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 12,
+		"strength": 1000,
+		"rangedStrength": 1000,
+		"cost": 2796,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["Nuclear Weapon",
+					
+					"Costs [20] [Uranium]",
+					"Nuclear weapon of Strength [2]",
+					"Blast radius [2]",
+					"Self-destructs when attacking",
+					"Only available <if [Project - Nuclear Research] is constructed>"
+					],
+		"attackSound": "nuke"
+	},
+	
+	
+	
+	
+	
+	
+	
+//马其顿
+	{
+		"name": "Macedonian Phalanx",//马其顿方阵
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Heavy Pikeman",
+		"uniqueTo": "Macedon",
+		"replaces": "Heavy Spearman",
+		"movement": 2,
+		"strength": 25,
+		"cost": 57,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["Costs [8] [Copper]",
+					"[+15]% Strength <when defending>",
+					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Companion Cavalry",//禁卫骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Valor Knight",
+		"uniqueTo": "Macedon",
+		"replaces": "Armored Cavalry",
+		"movement": 3,
+		"strength": 39,
+		"cost": 141,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Heavy Cavalry",
+					"Costs [10] [Horses]",
+					"Costs [6] [Iron]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>",
+					
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	
+//联合王国
+	{
+		"name": "Royal Capital Ship",//皇家主力舰
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Dreadnought",
+		"uniqueTo": "United Kingdom",
+		"replaces": "Capital Ship",
+		"movement": 3,
+		"range": 2,
+		"strength": 36,
+		"rangedStrength": 36,
+		"cost": 349,
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Industrialization",
+		"uniques": ["Costs [9] [Iron]",
+					"[+125]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"No Sight",
+					"Never appears as a Barbarian unit",
+					
+					"[+20]% Strength <vs [Water] units> <when attacking>"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//拜占庭
+	{
+		"name": "Dromon",//得罗蒙战舰
+		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Galleass",
+		"uniqueTo": "Byzantium",
+		"replaces": "Quadrireme",
+		"movement": 3,
+		"range": 3,
+		"strength": 26,
+		"rangedStrength": 29,
+		"cost": 73,
+		"requiredTech": "Optics",
+		"obsoleteTech": "Astronomy",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Cataphract",//甲胄骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Cuirassier",
+		"uniqueTo": "Byzantium",
+		"replaces": "Valor Knight",
+		"movement": 3,
+		"strength": 43,
+		"cost": 186,
+		"requiredTech": "Stirrups",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Heavy Cavalry",
+					"Knights",
+					"Costs [11] [Horses]",
+					"Costs [7] [Iron]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>",
+					
+					"[+10]% Strength bonus for [Cavalry] units within [1] tiles"],
+		"attackSound": "horse"
+	},
+	
+//俄罗斯帝国
+	{
+		"name": "Cossack",//哥萨克骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Wheeled Armored",
+		"uniqueTo": "Russia (Empire)",
+		"replaces": "Lancer",
+		"movement": 4,
+		"strength": 60,
+		"cost": 435,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Melee Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"promotions": ["'[Cossack]' ability"],
+		"attackSound": "horse"
+	},
+	
+//法兰西第一帝国
+	{
+		"name": "Smoothbore Field Cannon",//滑膛野战炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Mortar",
+		"uniqueTo": "France (First Empire)",
+		"replaces": "Field Cannon",
+		"movement": 3,
+		"range": 2,
+		"strength": 44,
+		"rangedStrength": 35,
+		"cost": 510,
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Radio",
+		"uniques": ["Gunnery",
+					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	
+//德意志帝国
+	{
+		"name": "Paris-Geschütz",//巴黎巨炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Howitzer",
+		"uniqueTo": "German Empire",
+		"replaces": "Artillery",
+		"movement": 1,
+		"range": 3,
+		"strength": 40,
+		"rangedStrength": 40,
+		"cost": 696,
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Radio",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit",
+					
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+100]% Strength <vs [Military] units> <when attacking>"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Imperial Army",//帝国军队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Anti-tank Gun",
+		"uniqueTo": "German Empire",
+		"replaces": "Line Infantry",
+		"movement": 2,
+		"strength": 52,
+		"cost": 534,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
+					"[+15]% Strength <vs [Military] units> <when attacking>"],
+		"promotions": ["Command"],
+		"attackSound": "metalhit"
+	},
+	
+//匈人
+	{
+		"name": "Horse Archer",//骑射手
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Humility Knight",
+		"uniqueTo": "The Huns",
+		"replaces": "Bow Cavalry",
+		"movement": 4,
+		"range": 2,
+		"strength": 32,
+		"rangedStrength": 34,
+		"cost": 123,
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Ranged Cavalry",
+					"Costs [9] [Horses]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	
+//中华 - 秦
+	{
+		"name": "Heavy Crossbow",//大秦重弩
+		"unitType": "Land 'Ordnance'",
+		"upgradesTo": "Trebuchet",
+		"uniqueTo": "China (Qing)",
+		"replaces": "Catapult",
+		"movement": 2,
+		"range": 3,
+		"strength": 20,
+		"rangedStrength": 20,
+		"cost": 116,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	
+//朝鲜
+	{
+		"name": "Hwach'a",//火厢车
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Artillery",
+		"uniqueTo": "Korea",
+		"replaces": "Cannon",
+		"movement": 2,
+		"range": 2,
+		"strength": 30,
+		"rangedStrength": 30,
+		"cost": 210,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Dynamite",
+		"uniques": ["[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit",
+					
+					"[+60]% Strength <vs [Land] units> <when attacking>"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Turtle Ship",//龟船
+		"unitType": "Water 'Melee' 'Hot weapon'",
+		"upgradesTo": "Ironclad",
+		"uniqueTo": "Korea",
+		"replaces": "Caravel",
+		"movement": 4,
+		"strength": 48,
+		"cost": 150,
+		"requiredTech": "Square Rigging",
+		"obsoleteTech": "Steam Power",
+		"uniques": ["Cannot enter ocean tiles"],
+		"attackSound": "cannon"
+	},
+	
+//高棉
+	{
+		"name": "Domrey",//高棉战象
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Humility Knight",
+		"uniqueTo": "Khmer",
+		"replaces": "Bow Cavalry",
+		"movement": 3,
+		"range": 2,
+		"strength": 33,
+		"rangedStrength": 35,
+		"cost": 131,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Ranged Cavalry",
+					"Costs [5] [Horses]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	
+//巴比伦
+	{
+		"name": "Sabum Kibittum",//主力军团
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Swordsman",
+		"uniqueTo": "Babylon",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 20,
+		"cost": 42,
+		"obsoleteTech": "Iron Working",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects",
+					"[+10]% Strength <when adjacent to a [Sabum Kibittum] unit>"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//奥斯曼
+	{
+		"name": "Sipahi",//西帕希骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Wheeled Armored",
+		"uniqueTo": "Ottoman",
+		"replaces": "Lancer",
+		"movement": 5,
+		"strength": 54,
+		"cost": 435,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Melee Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control",
+					
+					"[+1] Sight",
+					"No movement cost to pillage"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Janissary",//苏丹亲兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Light Infantry",
+		"uniqueTo": "Ottoman",
+		"replaces": "Musketeer",
+		"movement": 2,
+		"strength": 40,
+		"cost": 165,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Rifling",
+		"uniques": ["Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"promotions": ["'[Janissary]' ability"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Urban Cannon",//乌尔班大炮
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Artillery",
+		"uniqueTo": "Ottoman",
+		"movement": 1,
+		"range": 3,
+		"strength": 25,
+		"rangedStrength": 25,
+		"cost": 210,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Dynamite",
+		"uniques": ["Gunnery",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit",
+					
+					"[+500]% Strength <vs cities> <when attacking>",
+					"[+300]% maintenance costs",
+					"Only available <if [Leader - Mehmed II] is constructed>"],
+		"attackSound": "throw"
+	},
+	
+//印度
+	{
+		"name": "LCA",//LCA
+		"unitType": "Air 'Fighter'",
+		"uniqueTo": "India",
+		"replaces": "Stealth Fighter",
+		"movement": 1,
+		"range": 11,
+		"interceptRange": 11,
+		"strength": 100,
+		"rangedStrength": 100,
+		"cost": 1583,
+		"requiredTech": "Stealth",
+		"uniques": ["Costs [12] [Aluminum]",
+					"[80]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"Damage taken from interception reduced by [-25]%"],
+		"attackSound": "machinegun"
+	},
+	
+//马里
+	{
+		"name": "Mandekalu Cavalry",//曼德卡鲁骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Honor Knight",
+		"uniqueTo": "Mali",
+		"replaces": "Spear Cavalry",
+		"movement": 4,
+		"strength": 34,
+		"cost": 111,
+		"requiredTech": "Horse Armor",
+		"obsoleteTech": "Stirrups",
+		"uniques": ["Melee Cavalry",
+					"Costs [9] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"promotions": ["Looting Caravan"],
+		"attackSound": "horse"
+	},
+	
+//桑海
+	{
+		"name": "Songhai Sailor",//桑海水兵
+		"unitType": "Water 'Melee' 'Cold weapon'",
+		"upgradesTo": "Cog",
+		"uniqueTo": "Songhai",
+		"replaces": "Trireme",
+		"movement": 4,
+		"strength": 28,
+		"cost": 66,
+		"requiredTech": "Optics",
+		"obsoleteTech": "Astronomy",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//埃及
+	{
+		"name": "Maryannu Chariot Archer",//战车射手
+		"unitType": "Land 'Ranged' 'Cavalry'",
+		"upgradesTo": "Bow Cavalry",
+		"uniqueTo": "Egypt",
+		"replaces": "Chariot Archer",
+		"movement": 4,
+		"range": 2,
+		"strength": 25,
+		"rangedStrength": 27,
+		"cost": 87,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Horse Armor",
+		"uniques": ["Ranged Cavalry",
+					"Costs [4] [Horses]",
+					"No defensive terrain bonus",
+					"Rough terrain penalty"],
+		"attackSound": "arrow"
+	},
+	
+//埃塞俄比亚
+	{
+		"name": "Oromo Cavalry",//奥罗莫骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Lancer",
+		"uniqueTo": "Ethiopia",
+		"replaces": "Honor Knight",
+		"movement": 4,
+		"strength": 40,
+		"cost": 156,
+		"requiredTech": "Stirrups",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Melee Cavalry",
+					"Knights",
+					
+					"Costs [10] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"promotions": ["Crisscrossing Hills"],
+		"attackSound": "horse"
+	},
+	
+//美利坚
+	{
+		"name": "Minuteman",//快速民兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Light Infantry",
+		"uniqueTo": "America",
+		"replaces": "Musketeer",
+		"movement": 2,
+		"strength": 40,
+		"cost": 165,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Rifling",
+		"uniques": ["Costs [8] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>",
+					
+					"Ignores terrain cost",
+					"Can move immediately once bought"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "B-17",//B-17
+		"unitType": "Air 'Bomber'",
+		"upgradesTo": "Stealth Bomber",
+		"uniqueTo": "America",
+		"replaces": "Bomber",
+		"movement": 1,
+		"range": 11,
+		"strength": 92,
+		"rangedStrength": 92,
+		"cost": 1077,
+		"requiredTech": "Flight",
+		"uniques": ["Costs [11] [Aluminum]"],
+		"promotions": ["'[B-17]' ability"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Arleigh Burke-class Destroyer",//阿利伯克驱逐舰
+		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"uniqueTo": "America",
+		"replaces": "Missile Destroyer",
+		"movement": 4,
+		"range": 2,
+		"strength": 96,
+		"rangedStrength": 99,
+		"cost": 1438,
+		"requiredTech": "Modern Navy",
+		"uniques": ["Costs [11] [Oil]",
+					
+					"[+15]% Strength <vs [Water] units>"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Rough Rider",//莽骑兵
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Wheeled Armored",
+		"uniqueTo": "America",
+		"movement": 4,
+		"strength": 60,
+		"cost": 435,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Melee Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control",
+					
+					"Earn [67]% of killed [Military] unit's [Strength] as [Culture]",
+					"Only available <if [Leader - Theodore Roosevelt] is constructed>"],
+		"attackSound": "horse"
+	},
+	
+//加拿大
+	{
+		"name": "Mountie",//皇家骑警
+		"unitType": "Land 'Melee' 'Cavalry'",
+		"upgradesTo": "Wheeled Armored",
+		"uniqueTo": "Canada",
+		"replaces": "Lancer",
+		"movement": 4,
+		"strength": 60,
+		"cost": 435,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Melee Cavalry",
+					"Costs [11] [Horses]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control",
+					
+					"[+25]% Strength <in [District] tiles>"],
+		"attackSound": "horse"
+	},
+	
+//加拿大
+	{
+		"name": "Warak’aq",//瓦剌卡战士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Chasseur",
+		"uniqueTo": "Inca",
+		"replaces": "Scout",
+		"movement": 3,
+		"range": 1,
+		"strength": 20,
+		"rangedStrength": 19,
+		"cost": 55,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Chemistry",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking",
+					"[+1] additional attacks per turn"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//阿兹特克
+	{
+		"name": "Eagle Warrior",//雄鹰战士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Swordsman",
+		"uniqueTo": "Aztec",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 22,
+		"cost": 42,
+		"obsoleteTech": "Iron Working",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"promotions": ["Eagle & Jaguar"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Jaguar Warrior",//美洲虎战士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Longswordsman",
+		"uniqueTo": "Aztec",
+		"replaces": "Swordsman",
+		"movement": 2,
+		"strength": 29,
+		"cost": 71,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["Costs [4] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+		"promotions": ["Eagle & Jaguar"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//玛雅
+	{
+		"name": "Atlatlist",//投矛战士
+		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"upgradesTo": "Composite Bowman",
+		"uniqueTo": "Maya",
+		"replaces": "Archer",
+		"movement": 2,
+		"range": 2,
+		"strength": 18,
+		"rangedStrength": 23,
+		"cost": 45,
+		"obsoleteTech": "Mathematics",
+		"attackSound": "arrow"
+	},
+	
+//易洛魁
+	{
+		"name": "Mohawk Warrior",//莫霍克战士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Longswordsman",
+		"uniqueTo": "Iroquois",
+		"replaces": "Swordsman",
+		"movement": 2,
+		"strength": 27,
+		"cost": 71,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Metal Casting",
+		"uniques": ["Costs [4] [Iron]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>",
+					
+					"[+25]% Strength <when fighting in [Forest] tiles>",
+					"[+25]% Strength <when fighting in [Jungle] tiles>"],
+		"attackSound": "nonmetalhit"
+	},
+	
+//波利尼西亚
+	{
+		"name": "Maori Warrior",//毛利勇士
+		"unitType": "Land 'Melee' 'Cold weapon'",
+		"upgradesTo": "Swordsman",
+		"uniqueTo": "Polynesia",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 20,
+		"cost": 42,
+		"obsoleteTech": "Iron Working",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"promotions": ["Haka War Dance"],
+		"attackSound": "nonmetalhit"
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+]

@@ -1,0 +1,476 @@
+{
+    "name": "Global uniques", 
+    "uniques": [
+		
+	//万神殿
+		
+		"[+1 Faith] from [District] tiles [in this city] <with [2] to [6] neighboring [Tundra] tiles> <after adopting [Dance of the Aurora]>",
+		"[+1 Faith] from [District] tiles [in this city] <with [4] to [6] neighboring [Tundra] tiles> <after adopting [Dance of the Aurora]>",
+		"[+1 Faith] from [District] tiles [in this city] <with [6] to [6] neighboring [Tundra] tiles> <after adopting [Dance of the Aurora]>",
+		
+		"[+1 Faith] from [District] tiles [in this city] <with [2] to [6] neighboring [Desert] tiles> <after adopting [Desert Folklore]>",
+		"[+1 Faith] from [District] tiles [in this city] <with [4] to [6] neighboring [Desert] tiles> <after adopting [Desert Folklore]>",
+		"[+1 Faith] from [District] tiles [in this city] <with [6] to [6] neighboring [Desert] tiles> <after adopting [Desert Folklore]>",
+		
+		"[+1 Culture] from every [Forest] <after adopting [Sacred Path]>",
+        "[+1 Culture] from every [Jungle] <after adopting [Sacred Path]>",
+		
+		"[+2 Faith, +1 Production, +2 Food] from every [Mountain] <after adopting [Mountain Settlements]>",
+		
+		"[+1 Production] from every [Marsh] <after adopting [Fukuzawa Sentient Beings]>",
+		"[+1 Production] from every [Oasis] <after adopting [Fukuzawa Sentient Beings]>",
+		"[+1 Production] from every [Flood plains] <after adopting [Fukuzawa Sentient Beings]>",
+		
+		"[+2 Faith, +1 Culture] from every [Lakes] <after adopting [Pray for Rain Dance]>",
+		
+		"[+3 Faith] from every [Quarry] <after adopting [Stone Circles]>",
+		
+		"[+1 Happiness] from every [Luxury resource] <after adopting [Religious Idols]>",
+		
+		"[+1 Culture] from every [Plantation] <after adopting [Teach Orally]>",
+		
+		"[+4 Faith] from every [Natural Wonder] <after adopting [One with Nature]>",
+		
+		"[+20]% Production when constructing [All] wonders [in this city] <before the [Medieval era]> <after adopting [Historical Monuments]>",
+		
+		"[+3 Science] [in capital] <before the [Renaissance era]> <after adopting [Enlightenment Unions]>",
+		"[+15]% [Science] [in capital] <before the [Renaissance era]> <after adopting [Enlightenment Unions]>",
+		
+		"[+1] Movement <for [Civilian] units> <in [Friendly Land] tiles> <after adopting [Harvest Ceremony]>",
+		
+		"[1] free [Settler] units appear <after adopting [Religious Settlers]>",
+		
+		"Provides [1] [Horses] <after discovering [Animal Husbandry]> <after adopting [God of Plenty]>",
+		"Provides [1] [Copper] <after discovering [Bronze Working]> <after adopting [God of Plenty]>",
+		"Provides [1] [Iron] <after discovering [Iron Working]> <after adopting [God of Plenty]>",
+		"Provides [1] [Coal] <after discovering [Industrialization]> <after adopting [God of Plenty]>",
+		"Provides [1] [Oil] <after discovering [Biology]> <after adopting [God of Plenty]>",
+		"Provides [1] [Aluminum] <after discovering [Refrigeration]> <after adopting [God of Plenty]>",
+		"Provides [1] [Uranium] <after discovering [Atomic Theory]> <after adopting [God of Plenty]>",
+		
+		"[+2 Faith] from every [Strategic resource] <after adopting [God of Craftsman]>",
+		
+		"[+25]% Production when constructing [Military] units [in this city] <before the [Medieval era]> <after adopting [God of Weapons]>",
+		
+		"[+15]% Production when constructing [All] buildings [in this city] <before the [Medieval era]> <after adopting [God of Forging]>",
+		"[-15]% Production when constructing [All] wonders [in this city] <before the [Medieval era]> <after adopting [God of Forging]>",
+		
+		"[+1 Faith] from every [Coast] <after adopting [God of Sea]>",
+		"[+1 Faith] from every [Ocean] <after adopting [God of Sea]>",
+		
+		"[+1 Culture] from every [Pasture] <after adopting [God of Open Sky]>",
+		
+		"[+1 Production, +1 Food] from every [Camp] <after adopting [Goddess of the Hunt]>",
+		
+		"[+15]% [Production] [in this city] <during a Golden Age> <after adopting [Goddess of Festivals]>",
+		"[+10]% [Science] [in this city] <during a Golden Age> <after adopting [Goddess of Festivals]>",
+		
+	//创始人
+		
+		
+	//信徒
+		
+		"[+2 Faith] from every [Wonder] <after adopting [Divine Revelation]>",
+		
+		"[+2 Food] from all [Faith] buildings <after adopting [Feed the World]>",
+		
+		"[+2 Culture] from every [District - Holy Site] <after adopting [Choral Chant]>",
+		
+		"[+2 Happiness] from every [Garden] <after adopting [Peace Gardens]>",
+		
+		"[+8 Culture] from every [National Museum] <after adopting [Holy Art]>",
+		
+		"[+1 Happiness] from every [District - Holy Site] <after adopting [Asceticism]>",
+		
+		"[+3 Gold] from every [Workshop] <after adopting [Guruship]>",
+		"[+10]% [Production] from every [Workshop] <after adopting [Guruship]>",
+		
+		"[+15]% [Faith] from every [Opera House] <after adopting [Liturgical Opera]>",
+		
+		"[+10]% [Gold] from every [Amphitheater] <after adopting [Arts Tour]>",
+		
+		"[+1 Production] from every [Farm] <with [2] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
+		"[+1 Production] from every [Farm] <with [4] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
+		"[+1 Production] from every [Farm] <with [6] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
+		
+		"[+10]% [Food] [in this city] <when not at war> <after adopting [Swords into Ploughshares]>",
+		
+		"[+2 Science, +1 Gold] from each Trade Route <after adopting [Traveling Messenger]>",
+		
+		"[+15]% [Gold] from Trade Routes <after adopting [Thriving Trade]>",
+		
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [1] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [2] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [3] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [4] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [5] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		"[+1 Culture, +1 Faith] from [Mountain] tiles [in this city] <with [6] to [6] neighboring [Mountain] tiles> <after adopting [Dense and Continuous]>",
+		
+	//强化者
+		
+		"[Missionary] units gain the [Admonition Dogma] promotion <after adopting [Admonition Dogma]>",
+		"[Great Prophet] units gain the [Admonition Dogma] promotion <after adopting [Admonition Dogma]>",
+		
+		"[Missionary] units gain the [Missionary Zeal] promotion <after adopting [Missionary Zeal]>",
+		"[Great Prophet] units gain the [Missionary Zeal] promotion <after adopting [Missionary Zeal]>",
+		
+		"[Faith] cost of purchasing [Missionary] units [-33]% <after adopting [Priesthood Groups]>",
+		"[Faith] cost of purchasing [Inquisitor] units [-33]% <after adopting [Priesthood Groups]>",
+		
+		"[+100]% Yield from every [District - Holy Site] <after adopting [Statues Commemorating]>",
+		
+		"[+15] HP when healing <in [Friendly Land] tiles> <for [Military] units> <after adopting [Healing Light]>",
+		
+		"[+15]% Strength <in [Friendly Land] tiles> <for [Military] units> <after adopting [Defender of the Faith]>",
+		
+		"[+10]% Strength <in [Enemy Land] tiles> <for [Military] units> <after adopting [Just War]>",
+		
+	//人口
+		
+		"[-50]% Unhappiness from [Population] [in all cities]",
+		"[+1 Production] per [1] population [in all cities]",
+		
+	//单位
+		
+		"Gain [25] Influence with a [Peacekeeper] gift to a City-State",
+		
+		"[+15]% maintenance costs <during the [Classical era]>",
+		"[+30]% maintenance costs <during the [Medieval era]>",
+		"[+45]% maintenance costs <during the [Renaissance era]>",
+		"[+60]% maintenance costs <during the [Enlightenment era]>",
+		"[+80]% maintenance costs <during the [Industrial era]>",
+		"[+100]% maintenance costs <during the [Modern era]>",
+		"[+120]% maintenance costs <during the [Atomic era]>",
+		"[+140]% maintenance costs <during the [Information era]>",
+		"[+180]% maintenance costs <during the [Fusion era]>",
+		"[+220]% maintenance costs <during the [Star era]>",
+		"[+260]% maintenance costs <during the [Future era]>",
+		
+	//政策
+		
+		"[-100]% Culture cost of adopting new Policies",
+		"Each city founded increases culture cost of policies [-100]% less than normal",
+		"[+1 Culture] per [2] social policies adopted",
+
+		"May buy [Mercenary] units with [Gold] for [2] times their normal Production cost <after adopting [Mercenary Regiments]>",
+		
+	//快乐值
+		
+        "[+20]% [Science] [in all cities] <when between [41] and [2147483647] Happiness>",
+        "[+20]% [Culture] [in all cities] <when between [41] and [2147483647] Happiness>",
+        "[+20]% [Faith] [in all cities] <when between [41] and [2147483647] Happiness>",
+        "[+20]% [Gold] [in all cities] <when between [41] and [2147483647] Happiness>",
+		
+        "[+15]% [Science] [in all cities] <when between [31] and [40] Happiness>",
+        "[+15]% [Culture] [in all cities] <when between [31] and [40] Happiness>",
+        "[+15]% [Faith] [in all cities] <when between [31] and [40] Happiness>",
+        "[+15]% [Gold] [in all cities] <when between [31] and [40] Happiness>",
+		
+        "[+10]% [Science] [in all cities] <when between [21] and [30] Happiness>",
+        "[+10]% [Culture] [in all cities] <when between [21] and [30] Happiness>",
+        "[+10]% [Faith] [in all cities] <when between [21] and [30] Happiness>",
+        "[+10]% [Gold] [in all cities] <when between [21] and [30] Happiness>",
+		
+        "[+5]% [Science] [in all cities] <when between [11] and [20] Happiness>",
+        "[+5]% [Culture] [in all cities] <when between [11] and [20] Happiness>",
+        "[+5]% [Faith] [in all cities] <when between [11] and [20] Happiness>",
+        "[+5]% [Gold] [in all cities] <when between [11] and [20] Happiness>",
+		
+        "[-5]% [Production] [in all cities] <when between [-10] and [-1] Happiness>",
+        "[-5]% [Gold] [in all cities] <when between [-10] and [-1] Happiness>",
+        "[-15]% growth [in all cities] <when between [-10] and [-1] Happiness>",
+        "[-10]% Strength <for [All] units> <when between [-10] and [-1] Happiness>",
+		
+        "[-20]% [Production] [in all cities] <when between [-20] and [-11] Happiness>",
+        "[-20]% [Gold] [in all cities] <when between [-20] and [-11] Happiness>",
+        "[-50]% growth [in all cities] <when between [-20] and [-11] Happiness>",
+        "[-20]% Strength <for [All] units> <when between [-20] and [-11] Happiness>",
+		
+        "[-35]% [Production] [in all cities] <when between [-30] and [-21] Happiness>",
+        "[-35]% [Gold] [in all cities] <when between [-30] and [-21] Happiness>",
+        "Nullifies Growth [in all cities] <when below [-21] Happiness>",
+        "[-30]% Strength <for [All] units> <when between [-30] and [-21] Happiness>",
+		
+        "[-50]% [Production] [in all cities] <when below [-31] Happiness>",
+        "[-50]% [Gold] [in all cities] <when below [-31] Happiness>",
+        "[-40]% Strength <for [All] units> <when below [-31] Happiness>",
+		
+        "Rebel units may spawn <when below [-10] Happiness>",
+
+        "Cannot build [Settler] units <when below [-15] Happiness>",
+		
+        "[+1 Happiness] [in this city] <during a Golden Age>",
+        "[+1 Happiness] [in this city] <during We Love The King Day>",
+		
+	//晋升
+		
+		"[All] units gain the [Basic Promotion - All] promotion",
+		"[Land] units gain the [Basic Promotion - Land] promotion",
+		"[Water] units gain the [Basic Promotion - Water] promotion",
+		"[Air] units gain the [Basic Promotion - Air] promotion",
+		
+	//伟人
+		
+		"May not generate great prophet equivalents naturally",
+		
+		"May buy [Talent] units for [200] [Culture] [in all cities] at an increasing price ([200])",
+		"May buy [Great Prophet] units for [200] [Faith] [in all cities] at an increasing price ([100])",
+		
+	//地块
+		
+		"[-50]% Yield from every [Fallout]",
+
+		"[+1 Food, +1 Production] from every [Tiles] <with [1] to [6] neighboring [Volcano] tiles>",
+		"[+1 Food, +1 Production] from every [Tiles] <with [2] to [6] neighboring [Volcano] tiles>",
+		"[+1 Food, +1 Production] from every [Tiles] <with [3] to [6] neighboring [Volcano] tiles>",
+		"[+1 Food, +1 Production] from every [Tiles] <with [4] to [6] neighboring [Volcano] tiles>",
+		"[+1 Food, +1 Production] from every [Tiles] <with [5] to [6] neighboring [Volcano] tiles>",
+		"[+1 Food, +1 Production] from every [Tiles] <with [6] to [6] neighboring [Volcano] tiles>",
+		
+	//设施
+		
+		"[+1 Food] from every [Farm] <with [1] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food] from every [Farm] <with [2] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food] from every [Farm] <with [3] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food] from every [Farm] <with [4] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food] from every [Farm] <with [5] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food] from every [Farm] <with [6] to [6] neighboring [Palgum] tiles>",
+
+		"[+1 Food, +1 Production] from every [District - City] <with [1] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food, +1 Production] from every [District - City] <with [2] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food, +1 Production] from every [District - City] <with [3] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food, +1 Production] from every [District - City] <with [4] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food, +1 Production] from every [District - City] <with [5] to [6] neighboring [Palgum] tiles>",
+		"[+1 Food, +1 Production] from every [District - City] <with [6] to [6] neighboring [Palgum] tiles>",
+
+	//奇观
+		
+		//神农架
+		"[+3 Food] from every [Land Tile] <with [1] to [6] neighboring [Shennongjia] tiles>",
+		"[+3 Food] from every [Land Tile] <with [2] to [6] neighboring [Shennongjia] tiles>",
+		"[+3 Food] from every [Land Tile] <with [3] to [6] neighboring [Shennongjia] tiles>",
+		"[+3 Food] from every [Land Tile] <with [4] to [6] neighboring [Shennongjia] tiles>",
+		"[+3 Food] from every [Land Tile] <with [5] to [6] neighboring [Shennongjia] tiles>",
+		"[+3 Food] from every [Land Tile] <with [6] to [6] neighboring [Shennongjia] tiles>",
+		
+		//乌布苏湖
+		"[+2 Faith] from every [District - Holy Site] <with [1] to [6] neighboring [Uvs Nuur] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [2] to [6] neighboring [Uvs Nuur] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [3] to [6] neighboring [Uvs Nuur] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [4] to [6] neighboring [Uvs Nuur] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [5] to [6] neighboring [Uvs Nuur] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [6] to [6] neighboring [Uvs Nuur] tiles>",
+		
+		//的的喀喀湖
+		"[+1 Happiness] from every [District - City] <with [1] to [6] neighboring [Lake Titicaca] tiles>",
+		"[+1 Happiness] from every [District - City] <with [2] to [6] neighboring [Lake Titicaca] tiles>",
+		"[+1 Happiness] from every [District - City] <with [3] to [6] neighboring [Lake Titicaca] tiles>",
+		"[+1 Happiness] from every [District - City] <with [4] to [6] neighboring [Lake Titicaca] tiles>",
+		"[+1 Happiness] from every [District - City] <with [5] to [6] neighboring [Lake Titicaca] tiles>",
+		"[+1 Happiness] from every [District - City] <with [6] to [6] neighboring [Lake Titicaca] tiles>",
+		
+		//玫瑰湖
+		"[+2 Science] from every [District - Academy] <with [1] to [6] neighboring [Lake Retba] tiles>",
+		"[+2 Science] from every [District - Academy] <with [2] to [6] neighboring [Lake Retba] tiles>",
+		"[+2 Science] from every [District - Academy] <with [3] to [6] neighboring [Lake Retba] tiles>",
+		"[+2 Science] from every [District - Academy] <with [4] to [6] neighboring [Lake Retba] tiles>",
+		"[+2 Science] from every [District - Academy] <with [5] to [6] neighboring [Lake Retba] tiles>",
+		"[+2 Science] from every [District - Academy] <with [6] to [6] neighboring [Lake Retba] tiles>",
+		
+		//百慕大
+		"[+6 Science] from every [Water Tile] <with [1] to [6] neighboring [Bermuda] tiles>",
+		"[+6 Science] from every [Water Tile] <with [2] to [6] neighboring [Bermuda] tiles>",
+		"[+6 Science] from every [Water Tile] <with [3] to [6] neighboring [Bermuda] tiles>",
+		"[+6 Science] from every [Water Tile] <with [4] to [6] neighboring [Bermuda] tiles>",
+		"[+6 Science] from every [Water Tile] <with [5] to [6] neighboring [Bermuda] tiles>",
+		"[+6 Science] from every [Water Tile] <with [6] to [6] neighboring [Bermuda] tiles>",
+		
+		//秦岭
+		"[+1 Culture, +1 Faith] from every [District] <with [1] to [6] neighboring [Qin Ling] tiles>",
+		"[+1 Culture, +1 Faith] from every [District] <with [2] to [6] neighboring [Qin Ling] tiles>",
+		"[+1 Culture, +1 Faith] from every [District] <with [3] to [6] neighboring [Qin Ling] tiles>",
+		"[+1 Culture, +1 Faith] from every [District] <with [4] to [6] neighboring [Qin Ling] tiles>",
+		"[+1 Culture, +1 Faith] from every [District] <with [5] to [6] neighboring [Qin Ling] tiles>",
+		"[+1 Culture, +1 Faith] from every [District] <with [6] to [6] neighboring [Qin Ling] tiles>",
+		
+		//帕依提提
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [1] to [6] neighboring [El Dorado] tiles>",
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [2] to [6] neighboring [El Dorado] tiles>",
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [3] to [6] neighboring [El Dorado] tiles>",
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [4] to [6] neighboring [El Dorado] tiles>",
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [5] to [6] neighboring [El Dorado] tiles>",
+		"[+2 Gold, +2 Culture] from every [Land Tile] <with [6] to [6] neighboring [El Dorado] tiles>",
+		
+		//珠穆朗玛峰
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [1] to [6] neighboring [Mount Qomolangma] tiles>",
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [2] to [6] neighboring [Mount Qomolangma] tiles>",
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [3] to [6] neighboring [Mount Qomolangma] tiles>",
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [4] to [6] neighboring [Mount Qomolangma] tiles>",
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [5] to [6] neighboring [Mount Qomolangma] tiles>",
+		"[+1 Science, +1 Faith] from every [Land Tile] <with [6] to [6] neighboring [Mount Qomolangma] tiles>",
+		
+		//棉花堡
+		"[+2 Faith] from every [District - Holy Site] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Faith] from every [District - Holy Site] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		"[+2 Science] from every [District - Academy] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Science] from every [District - Academy] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Science] from every [District - Academy] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Science] from every [District - Academy] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Science] from every [District - Academy] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Science] from every [District - Academy] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		"[+2 Gold] from every [District - Business Center] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Gold] from every [District - Business Center] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Gold] from every [District - Business Center] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Gold] from every [District - Business Center] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Gold] from every [District - Business Center] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Gold] from every [District - Business Center] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		"[+2 Production] from every [District - Industrial Zone] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Production] from every [District - Industrial Zone] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Production] from every [District - Industrial Zone] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Production] from every [District - Industrial Zone] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Production] from every [District - Industrial Zone] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Production] from every [District - Industrial Zone] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		"[+2 Culture] from every [District - Landmark] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Culture] from every [District - Landmark] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Culture] from every [District - Landmark] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Culture] from every [District - Landmark] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Culture] from every [District - Landmark] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Culture] from every [District - Landmark] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		"[+2 Happiness] from every [District - Entertainment] <with [1] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [2] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [3] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [4] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [5] to [6] neighboring [Pamukkale] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [6] to [6] neighboring [Pamukkale] tiles>",
+		
+		//马特洪峰
+		"[+1 Culture] from every [Tile] <with [1] to [6] neighboring [Matterhorn] tiles>",
+		"[+1 Culture] from every [Tile] <with [2] to [6] neighboring [Matterhorn] tiles>",
+		"[+1 Culture] from every [Tile] <with [3] to [6] neighboring [Matterhorn] tiles>",
+		"[+1 Culture] from every [Tile] <with [4] to [6] neighboring [Matterhorn] tiles>",
+		"[+1 Culture] from every [Tile] <with [5] to [6] neighboring [Matterhorn] tiles>",
+		"[+1 Culture] from every [Tile] <with [6] to [6] neighboring [Matterhorn] tiles>",
+		
+		//巴林杰陨石坑
+		"[+2 Science] from every [District - Academy] <with [1] to [6] neighboring [Barringer Crater] tiles>",
+		"[+2 Science] from every [District - Academy] <with [2] to [6] neighboring [Barringer Crater] tiles>",
+		"[+2 Science] from every [District - Academy] <with [3] to [6] neighboring [Barringer Crater] tiles>",
+		"[+2 Science] from every [District - Academy] <with [4] to [6] neighboring [Barringer Crater] tiles>",
+		"[+2 Science] from every [District - Academy] <with [5] to [6] neighboring [Barringer Crater] tiles>",
+		"[+2 Science] from every [District - Academy] <with [6] to [6] neighboring [Barringer Crater] tiles>",
+		
+		//老忠实间歇泉
+		"[+2 Happiness] from every [District - Entertainment] <with [1] to [6] neighboring [Old Faithful] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [2] to [6] neighboring [Old Faithful] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [3] to [6] neighboring [Old Faithful] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [4] to [6] neighboring [Old Faithful] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [5] to [6] neighboring [Old Faithful] tiles>",
+		"[+2 Happiness] from every [District - Entertainment] <with [6] to [6] neighboring [Old Faithful] tiles>",
+		
+		//吕瑟峡湾
+		"[+2 Culture] from every [District] <with [1] to [6] neighboring [Lysefjord] tiles>",
+		"[+2 Culture] from every [District] <with [2] to [6] neighboring [Lysefjord] tiles>",
+		"[+2 Culture] from every [District] <with [3] to [6] neighboring [Lysefjord] tiles>",
+		"[+2 Culture] from every [District] <with [4] to [6] neighboring [Lysefjord] tiles>",
+		"[+2 Culture] from every [District] <with [5] to [6] neighboring [Lysefjord] tiles>",
+		"[+2 Culture] from every [District] <with [6] to [6] neighboring [Lysefjord] tiles>",
+		
+		//西奈山
+		"[+2 Happiness] from every [District - Holy Site] <with [1] to [6] neighboring [Mount Sinai] tiles>",
+		"[+2 Happiness] from every [District - Holy Site] <with [2] to [6] neighboring [Mount Sinai] tiles>",
+		"[+2 Happiness] from every [District - Holy Site] <with [3] to [6] neighboring [Mount Sinai] tiles>",
+		"[+2 Happiness] from every [District - Holy Site] <with [4] to [6] neighboring [Mount Sinai] tiles>",
+		"[+2 Happiness] from every [District - Holy Site] <with [5] to [6] neighboring [Mount Sinai] tiles>",
+		"[+2 Happiness] from every [District - Holy Site] <with [6] to [6] neighboring [Mount Sinai] tiles>",
+		
+		//喀拉喀托火山
+		"[+2 Production] from every [Water Tile] <with [1] to [6] neighboring [Krakatoa] tiles>",
+		"[+2 Production] from every [Water Tile] <with [2] to [6] neighboring [Krakatoa] tiles>",
+		"[+2 Production] from every [Water Tile] <with [3] to [6] neighboring [Krakatoa] tiles>",
+		"[+2 Production] from every [Water Tile] <with [4] to [6] neighboring [Krakatoa] tiles>",
+		"[+2 Production] from every [Water Tile] <with [5] to [6] neighboring [Krakatoa] tiles>",
+		"[+2 Production] from every [Water Tile] <with [6] to [6] neighboring [Krakatoa] tiles>",
+		
+		//艾尔斯岩石
+		"[+2 Faith] from every [Tile] <with [1] to [6] neighboring [Uluru] tiles>",
+		"[+2 Faith] from every [Tile] <with [2] to [6] neighboring [Uluru] tiles>",
+		"[+2 Faith] from every [Tile] <with [3] to [6] neighboring [Uluru] tiles>",
+		"[+2 Faith] from every [Tile] <with [4] to [6] neighboring [Uluru] tiles>",
+		"[+2 Faith] from every [Tile] <with [5] to [6] neighboring [Uluru] tiles>",
+		"[+2 Faith] from every [Tile] <with [6] to [6] neighboring [Uluru] tiles>",
+		
+		//加拉帕戈斯群岛
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [1] to [6] neighboring [Colón Island] tiles>",
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [2] to [6] neighboring [Colón Island] tiles>",
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [3] to [6] neighboring [Colón Island] tiles>",
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [4] to [6] neighboring [Colón Island] tiles>",
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [5] to [6] neighboring [Colón Island] tiles>",
+		"[+2 Gold, +2 Food] from every [Water Tile] <with [6] to [6] neighboring [Colón Island] tiles>",
+		
+/*
+		
+		//
+		"[stats] from every [District] <with [1] to [6] neighboring [tileFilter] tiles>",
+		"[stats] from every [District] <with [2] to [6] neighboring [tileFilter] tiles>",
+		"[stats] from every [District] <with [3] to [6] neighboring [tileFilter] tiles>",
+		"[stats] from every [District] <with [4] to [6] neighboring [tileFilter] tiles>",
+		"[stats] from every [District] <with [5] to [6] neighboring [tileFilter] tiles>",
+		"[stats] from every [District] <with [6] to [6] neighboring [tileFilter] tiles>",
+		
+*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    
+        // TODO: Implement the uniques below
+        // "[+20]% [Culture] [in all cities] <during a golden age>",
+        // "[+20]% [Production] [in all cities] <during a golden age>",
+    
+        // "[+10]% growth [in all cities] <during We Love The King Day>",
+    
+        // "Nullifies All Yield <while is in resistance>",
+        
+        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
+        // "[-25]% [Culture] [in pupetted cities]"
+        
+        // "[+20]% [Production] [in cities connected via railroad]"
+        // something something unit supply
+    ]
+}

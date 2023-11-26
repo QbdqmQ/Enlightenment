@@ -1,0 +1,808 @@
+[
+//远古时代
+	{
+		"columnNumber": 0,
+		"era": "Ancient era",
+		"techCost": 1,
+		"buildingCost": 20,
+		"wonderCost": 60,
+		"techs": [
+			{
+				"name": "Initialization",//初始化
+				"row": 1,
+				"quote": "",
+				"uniques": ["Starting tech"]
+			},
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 10,
+		"buildingCost": 40,
+		"wonderCost": 120,
+		"techs": [
+			{
+				"name": "Fishing",//捕鱼
+				"row": 1,
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Agriculture",//农业
+				"row": 4,
+				"quote": "",
+				"uniques": []
+			},
+			{
+				"name": "Trapping",//捕猎
+				"row": 6,
+				"quote": "",
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 40,
+		"buildingCost": 60,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "Sailing",//帆船
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Fishing"],
+				"uniques": []
+			},
+			{
+				"name": "Mining",//采矿
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Agriculture"],
+				"uniques": []
+			},
+			{
+				"name": "Pottery",//制陶
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Agriculture"],
+				"uniques": []
+			},
+			{
+				"name": "Animal Husbandry",//家畜驯养
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Trapping"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Ancient era",
+		"techCost": 80,
+		"buildingCost": 80,
+		"wonderCost": 240,
+		"techs": [
+			{
+				"name": "Masonry",//石工术
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Mining"],
+				"uniques": []
+			},
+			{
+				"name": "Bronze Working",//青铜器
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Mining"],
+				"uniques": []
+			},
+			{
+				"name": "The Wheel",//轮子
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Mining"],
+				"uniques": []
+			},
+			{
+				"name": "Horseback Riding",//骑术
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Animal Husbandry"],
+				"uniques": []
+			},
+		]
+	},
+	
+//古典时代
+	{
+		"columnNumber": 4,
+		"era": "Classical era",
+		"techCost": 140,
+		"buildingCost": 100,
+		"wonderCost": 300,
+		"techs": [
+			{
+				"name": "Optics",//光学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Sailing"],
+				"uniques": ["Enables embarkation for land units"]
+			},
+			{
+				"name": "Iron Working",//铁器
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Bronze Working"],
+				"uniques": []
+			},
+			{
+				"name": "Mathematics",//数学
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Pottery","The Wheel"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Classical era",
+		"techCost": 200,
+		"buildingCost": 120,
+		"wonderCost": 360,
+		"techs": [
+			{
+				"name": "Engineering",//工程学
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Masonry"],
+				"uniques": ["Roads connect tiles across rivers"]
+			},
+			{
+				"name": "Horse Armor",//战马铠甲
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Horseback Riding"],
+				"uniques": []
+			},
+		]
+	},
+	
+//中古时代
+	{
+		"columnNumber": 6,
+		"era": "Medieval era",
+		"techCost": 280,
+		"buildingCost": 150,
+		"wonderCost": 420,
+		"techs": [
+			{
+				"name": "Astronomy",//天文学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Optics"],
+				"uniques": []
+			},
+			{
+				"name": "Metal Casting",//金属铸造
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Iron Working"],
+				"uniques": []
+			},
+			{
+				"name": "Physics",//物理学
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Mathematics"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Medieval era",
+		"techCost": 400,
+		"buildingCost": 180,
+		"wonderCost": 480,
+		"techs": [
+			{
+				"name": "Machinery",//机械
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Metal Casting","Engineering"],
+				"uniques": []
+			},
+			{
+				"name": "Education",//教育
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Metal Casting","Physics"],
+				"uniques": ["Enables conversion of city production to [Science]",
+							"Enables Research agreements"]
+			},
+			{
+				"name": "Stirrups",//马镫
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Horse Armor"],
+				"uniques": []
+			},
+		]
+	},
+	
+//文艺复兴
+	{
+		"columnNumber": 8,
+		"era": "Renaissance era",
+		"techCost": 680,
+		"buildingCost": 210,
+		"wonderCost": 540,
+		"techs": [
+			{
+				"name": "Square Rigging",//横帆装置
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Astronomy","Machinery"],
+				"uniques": ["Enables [Land] units to enter ocean tiles"]
+			},
+			{
+				"name": "Gunpowder",//火药
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Machinery"],
+				"uniques": []
+			},
+			{
+				"name": "Military Engineering",//军事工程
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Education","Stirrups"],
+				"uniques": ["Improves movement speed on roads"]
+			},
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Renaissance era",
+		"techCost": 800,
+		"buildingCost": 240,
+		"wonderCost": 600,
+		"techs": [
+			{
+				"name": "Chemistry",//化学
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Machinery"],
+				"uniques": []
+			},
+			{
+				"name": "Printing",//印刷术
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Education"],
+				"uniques": []
+			},
+		]
+	},
+	
+//启蒙时代
+	{
+		"columnNumber": 10,
+		"era": "Enlightenment era",
+		"techCost": 960,
+		"buildingCost": 270,
+		"wonderCost": 660,
+		"techs": [
+			{
+				"name": "Navigation",//航海术
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Square Rigging"],
+				"uniques": ["[+1] Movement <for [Embarked] units>"]//“[船运]”单位 +1 移动力
+			},
+			{
+				"name": "Scientific Theory",//科学理论
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Printing"],
+				"uniques": []
+			},
+			{
+				"name": "Military Science",//军事科学
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Military Engineering"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Enlightenment era",
+		"techCost": 1400,
+		"buildingCost": 300,
+		"wonderCost": 720,
+		"techs": [
+			{
+				"name": "Metallurgy",//冶金学
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Scientific Theory","Gunpowder"],
+				"uniques": []
+			},
+			{
+				"name": "Mass Production",//批量生产
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Scientific Theory","Military Science"],
+				"uniques": []
+			},
+		]
+	},
+	
+//工业时代
+	{
+		"columnNumber": 12,
+		"era": "Industrial era",
+		"techCost": 1800,
+		"buildingCost": 340,
+		"wonderCost": 840,
+		"techs": [
+			{
+				"name": "Oceanography",//海洋学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Navigation"],
+				"uniques": ["[+1 Science] from every [Ocean]"]
+			},
+			{
+				"name": "Dynamite",//炸药
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Metallurgy","Chemistry"],
+				"uniques": []
+			},
+			{
+				"name": "Rifling",//膛线
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Metallurgy"],
+				"uniques": []
+			},
+			{
+				"name": "Industrialization",//工业化
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Mass Production"],
+				"uniques": []
+			},
+			{
+				"name": "Biology",//生物学
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Mass Production"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Industrial era",
+		"techCost": 2400,
+		"buildingCost": 380,
+		"wonderCost": 960,
+		"techs": [
+			{
+				"name": "Electricity",//电力
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Dynamite"],
+				"uniques": []
+			},
+			{
+				"name": "Steam Power",//蒸汽动力
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Industrialization"],
+				"uniques": []
+			},
+			{
+				"name": "Refining",//精炼技术
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Industrialization"],
+				"uniques": []
+			},
+			{
+				"name": "Sanitation",//卫生设施
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Biology"],
+				"uniques": []
+			},
+		]
+	},
+	
+//电气时代
+	{
+		"columnNumber": 14,
+		"era": "Modern era",
+		"techCost": 3100,
+		"buildingCost": 425,
+		"wonderCost": 1080,
+		"techs": [
+			{
+				"name": "Meteorology",//气象学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Oceanography"],
+				"uniques": ["[+1 Food] from every [Snow]",
+							"[+1 Food] from every [Tundra] <for [15] turns>"]
+			},
+			{
+				"name": "Radio",//无线电
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Electricity"],
+				"uniques": []
+			},
+			{
+				"name": "Ballistics",//弹道学
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Rifling"],
+				"uniques": []
+			},
+			{
+				"name": "Combustion",//内燃机
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Refining","Steam Power"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Modern era",
+		"techCost": 4100,
+		"buildingCost": 470,
+		"wonderCost": 1200,
+		"techs": [
+			{
+				"name": "Refrigeration",//制冷
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Radio","Meteorology"],
+				"uniques": []
+			},
+			{
+				"name": "Flight",//飞行
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Ballistics","Radio"],
+				"uniques": []
+			},
+			{
+				"name": "Electronics",//电子设备
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Combustion"],
+				"uniques": []
+			},
+			{
+				"name": "Ecology",//生态学
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Sanitation"],
+				"uniques": []
+			},
+		]
+	},
+	
+//原子时代
+	{
+		"columnNumber": 16,
+		"era": "Atomic era",
+		"techCost": 6000,
+		"buildingCost": 520,
+		"wonderCost": 1320,
+		"techs": [
+			{
+				"name": "Environmental Science",//环境科学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Refrigeration"],
+				"uniques": []
+			},
+			{
+				"name": "Radar",//雷达
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Flight"],
+				"uniques": []
+			},
+			{
+				"name": "Atomic Theory",//原子理论
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Ballistics"],
+				"uniques": []
+			},
+			{
+				"name": "Motor",//电动机
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Electronics"],
+				"uniques": []
+			},
+			{
+				"name": "Pharmaceuticals",//制药学
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Ecology"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Atomic era",
+		"techCost": 7400,
+		"buildingCost": 570,
+		"wonderCost": 1440,
+		"techs": [
+			{
+				"name": "Rocketry",//火箭
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Radar"],
+				"uniques": []
+			},
+			{
+				"name": "Nuclear Fission",//核裂变
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Atomic Theory"],
+				"uniques": []
+			},
+			{
+				"name": "Computers",//电子计算机
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Electronics"],
+				"uniques": []
+			},
+			{
+				"name": "Composites",//复合材料
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Motor"],
+				"uniques": []
+			},
+			{
+				"name": "Agricultural Science",//农业学
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Pharmaceuticals"],
+				"uniques": []
+			},
+		]
+	},
+	
+//信息时代
+	{
+		"columnNumber": 18,
+		"era": "Information era",
+		"techCost": 8600,
+		"buildingCost": 625,
+		"wonderCost": 1560,
+		"techs": [
+			{
+				"name": "Modern Navy",//现代化海军
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Environmental Science"],
+				"uniques": []
+			},
+			{
+				"name": "Stealth",//隐形技术
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Rocketry"],
+				"uniques": []
+			},
+			{
+				"name": "Clean Energy",//清洁能源
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Nuclear Fission"],
+				"uniques": []
+			},
+			{
+				"name": "Satellites",//人造卫星
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Composites","Computers"],
+				"uniques": ["Reveals the entire map"]//显示整个地图
+			},
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Information era",
+		"techCost": 9800,
+		"buildingCost": 680,
+		"wonderCost": 1680,
+		"techs": [
+			{
+				"name": "Particle Physics",//粒子物理
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Clean Energy"],
+				"uniques": []
+			},
+			{
+				"name": "Advanced Ballistics",//高等弹道学
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Computers"],
+				"uniques": []
+			},
+			{
+				"name": "Telecommunications",//远程通信
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Satellites"],
+				"uniques": []
+			},
+			{
+				"name": "Biotech",//生物科技
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Agricultural Science"],
+				"uniques": []
+			},
+		]
+	},
+	
+//聚变时代
+	{
+		"columnNumber": 20,
+		"era": "Fusion era",
+		"techCost": 12800,
+		"buildingCost": 740,
+		"wonderCost": 1860,
+		"techs": [
+			{
+				"name": "Robotics",//机器人学
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Stealth"],
+				"uniques": []
+			},
+			{
+				"name": "Superconductor",//超导材料
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Advanced Ballistics"],
+				"uniques": []
+			},
+			{
+				"name": "Exoskeleton",//外骨骼
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Biotech"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 21,
+		"era": "Fusion era",
+		"techCost": 25600,
+		"buildingCost": 800,
+		"wonderCost": 2040,
+		"techs": [
+			{
+				"name": "Space Dynamics",//太空动力学
+				"row": 1,
+				"quote": "",
+				"prerequisites": ["Modern Navy"],
+				"uniques": []
+			},
+			{
+				"name": "Nuclear Fusion",//核聚变
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Superconductor","Particle Physics"],
+				"uniques": []
+			},
+			{
+				"name": "Combat Mech",//战斗机甲
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Telecommunications","Exoskeleton"],
+				"uniques": []
+			},
+		]
+	},
+	
+//星际时代
+	{
+		"columnNumber": 22,
+		"era": "Star era",
+		"techCost": 51200,
+		"buildingCost": 865,
+		"wonderCost": 2280,
+		"techs": [
+			{
+				"name": "Stellar Utilization",//恒星利用
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Robotics","Space Dynamics","Nuclear Fusion"],
+				"uniques": []
+			},
+			{
+				"name": "Space Materialogy",//太空材料学
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Nuclear Fusion"],
+				"uniques": []
+			},
+		]
+	},
+	{
+		"columnNumber": 23,
+		"era": "Star era",
+		"techCost": 102400,
+		"buildingCost": 930,
+		"wonderCost": 2520,
+		"techs": [
+			{
+				"name": "Cosmic Weapons",//宇宙级武器
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Stellar Utilization","Space Materialogy"],
+				"uniques": []
+			},
+			{
+				"name": "Space Exploration",//星际探索
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Space Materialogy"],
+				"uniques": []
+			},
+			{
+				"name": "Starship",//星舰
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Combat Mech","Space Materialogy"],
+				"uniques": []
+			},
+		]
+	},
+	
+//未来时代
+	{
+		"columnNumber": 24,
+		"era": "Future era",
+		"techCost": 204800,
+		"buildingCost": 1000,
+		"wonderCost": 2760,
+		"techs": [
+			{
+				"name": "Future Tech",//未来科技
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Cosmic Weapons","Starship","Space Exploration"],
+				"uniques": ["Can be continually researched"]
+			},
+		]
+	},
+]

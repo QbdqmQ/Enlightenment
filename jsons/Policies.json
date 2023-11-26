@@ -1,0 +1,3732 @@
+[
+    
+	{
+        "name": "[History] [(Policy)]",//历史
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <with [Policy Point - Development]>",
+            "Instantly consumes [10] [Policy Point - Development]",
+            
+			"[+2 Culture] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Writing",//文字
+                "uniques": [
+                    "Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+                    
+                    "Unlock '[Library]'",
+                    "Unlock '[The Great Library]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Worship",//崇拜
+                "uniques": [
+                    "Only available <when above [7] [Policy Point - Development]>",
+                    "Instantly consumes [8] [Policy Point - Development]",
+                    
+                    "Unlock '[Shrine]'",
+                    "Unlock '[Ancestral Hall]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Recorded History",//历史记录
+                "uniques": [
+                    "Only available <when above [12] [Policy Point - Development]>",
+                    "Instantly consumes [13] [Policy Point - Development]",
+                    
+					"Provides [1] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Military]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Writing"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Calendar",//历法
+                "uniques": [
+                    "Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+                    
+                    "Unlock '[Sundial]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Writing","Worship"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Astrology",//占星术
+                "uniques": [
+                    "Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+                    
+                    "Unlock '[Stonehenge]'",
+                    "Unlock '[Chichen Itza]'",
+                    "Unlock '[Holy Site]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Worship"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[History] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [5] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Development] [(Policy)]",//发展
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <with [Policy Point - Development]>",
+            "Instantly consumes [10] [Policy Point - Development]",
+            
+			"[+1 Production] [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "Expansion",//扩张
+                "uniques": [
+                    "Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+                    
+                    "[+25]% Production when constructing [Settler] units [in all cities]",
+                    "[+25]% Production when constructing [Settler] units [in capital]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "State Workforce",//国家劳务
+                "uniques": [
+                    "Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+                    
+                    "[+2 Production] [in all cities]",
+                    "Unlock '[Aqueduct]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Craftsmanship",//手工技艺
+                "uniques": [
+                    "Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+                    
+                    "[+15]% Production when constructing [Worker] units [in all cities]",
+                    "[+15]% Production when constructing [Worker] units [in capital]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Construction",//建设
+                "uniques": [
+                    "Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+                    
+                    "[+10]% Production when constructing [All] buildings [in all cities]",
+                    "Unlock '[Colossus]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["State Workforce","Craftsmanship"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Urban Planning",//城市规划
+                "uniques": [
+                    "Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+                    
+                    "[+10]% Production when constructing [City Designer] units [in all cities]",
+                    "[+10]% Production when constructing [City Designer] units [in capital]",
+                    "Unlock '[Petra]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Craftsmanship"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Development] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [5] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Exploration] [(Policy)]",//探索
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <with [Policy Point - Military]>",
+            "Instantly consumes [12] [Policy Point - Military]",
+            
+            "Notified of new Barbarian encampments"
+        ],
+        "policies": [
+            {
+                "name": "Investigation",//侦查
+                "uniques": [
+                    "Only available <when above [6] [Policy Point - Military]>",
+                    "Instantly consumes [7] [Policy Point - Military]",
+                    
+                    "[+1] Sight <for [Explorations] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Discipline",//纪律
+                "uniques": [
+                    "Only available <when above [12] [Policy Point - Military]>",
+                    "Instantly consumes [13] [Policy Point - Military]",
+                    
+                    "[+20]% Strength <for [non-air] units> <vs [Barbarians] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Plunder",//掠夺
+                "uniques": [
+                    "Only available <when above [10] [Policy Point - Military]>",
+                    "Instantly consumes [11] [Policy Point - Military]",
+                    
+					"Earn [25]% of the damage done to [non-air] units as [Gold] <for [Land] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Investigation"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Warrior Code",//尚武精神
+                "uniques": [
+                    "Only available <when above [10] [Policy Point - Military]>",
+                    "Instantly consumes [11] [Policy Point - Military]",
+                    
+                    "[+15]% Production when constructing [Melee] units [in all cities]",
+                    "Unlock '[Roman Colosseum]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Investigation"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Training",//训练
+                "uniques": [
+                    "Only available <when above [12] [Policy Point - Military]>",
+                    "Instantly consumes [13] [Policy Point - Military]",
+                    
+                    "[+1] XP gained from combat <for [All] units>",
+                    "Unlock '[Training Grounds]'",
+                    "Unlock '[Barracks]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Discipline"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Exploration] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [6] [Policy Point - Military]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Ideology] [(Policy)]",//思想
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Astrology]> <with [Policy Point - Development]>",
+            "Instantly consumes [20] [Policy Point - Development]",
+            
+            "Provides [2] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Mysticism",//神秘主义
+                "uniques": [
+                    "Only available <when above [19] [Policy Point - Development]>",
+                    "Instantly consumes [20] [Policy Point - Development]",
+                    
+                    "[+2 Faith] [in all cities]",
+                    "Unlock '[Garden]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Classical Philosophy",//古典哲学
+                "uniques": [
+                    "Only available <when above [21] [Policy Point - Development]>",
+                    "Instantly consumes [22] [Policy Point - Development]",
+                    
+                    "Unlock '[Theatre]'",
+                    "Unlock '[National Epic]'",
+                    "Unlock '[The Oracle]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Mysticism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Drama and Poetry",//戏剧与诗歌
+                "uniques": [
+                    "Only available <when above [25] [Policy Point - Development]>",
+                    "Instantly consumes [26] [Policy Point - Development]",
+                    
+                    "Unlock '[Amphitheater]'",
+                    "Unlock '[Mogao Caves]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Mysticism"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Idealism",//唯心主义
+                "uniques": [
+                    "Only available <when above [25] [Policy Point - Development]>",
+                    "Instantly consumes [26] [Policy Point - Development]",
+                    
+                    "[+15]% [Faith] [in all cities]",
+                    "Unlock '[Great Mosque of Djenne]'",
+                    "Unlock '[Mahabodhi Temple]'",
+                    "Unlock '[Umayyad Mosque]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Classical Philosophy"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Theology",//神学
+                "uniques": [
+                    "Only available <when above [27] [Policy Point - Development]>",
+                    "Instantly consumes [28] [Policy Point - Development]",
+                    
+                    "Unlock '[Temple]'",
+                    "Unlock '[Grand Temple]'",
+                    "Unlock '[Hagia Sophia]'",
+                    "Unlock '[Mont St. Michel]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Classical Philosophy"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Ideology] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [10] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Trading] [(Policy)]",//贸易
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Urban Planning]> <with [Policy Point - Development]>",
+            "Instantly consumes [20] [Policy Point - Development]",
+            
+            "Provides [2] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Caravansaries",//商队旅馆
+                "uniques": [
+                    "Only available <when above [21] [Policy Point - Development]>",
+                    "Instantly consumes [22] [Policy Point - Development]",
+                    
+                    "[+2 Gold] [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Subdivision of Land",//土地划分
+                "uniques": [
+                    "Only available <when above [21] [Policy Point - Development]>",
+                    "Instantly consumes [22] [Policy Point - Development]",
+                    
+                    "[-15]% Culture cost of natural border growth [in all cities]",
+                    "Enables Open Borders agreements",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Foreign Trade",//对外贸易
+                "uniques": [
+                    "Only available <when above [21] [Policy Point - Development]>",
+                    "Instantly consumes [22] [Policy Point - Development]",
+                    
+                    "Unlock '[Market]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Chowk",//集市
+                "uniques": [
+                    "Only available <when above [21] [Policy Point - Development]>",
+                    "Instantly consumes [22] [Policy Point - Development]",
+                    
+                    "Unlock '[Trading Post]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Caravansaries"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Currency",//货币
+                "uniques": [
+                    "Only available <when above [25] [Policy Point - Development]>",
+                    "Instantly consumes [26] [Policy Point - Development]",
+                    
+                    "Unlock '[Mint]'",
+                    "Unlock '[Statue of Zeus]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Foreign Trade"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Trading] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [10] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Military] [(Policy)]",//军事
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Training]> <with [Policy Point - Military]>",
+            "Instantly consumes [24] [Policy Point - Military]",
+            
+            "Provides [3] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Military Tradition",//军事传统
+                "uniques": [
+                    "Only available <when above [23] [Policy Point - Military]>",
+                    "Instantly consumes [24] [Policy Point - Military]",
+                    
+                    "[Great General] is earned [+33]% faster",
+                    "Unlock '[Heroic Monument]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Conscription",//征兵
+                "uniques": [
+                    "Only available <when above [25] [Policy Point - Military]>",
+                    "Instantly consumes [26] [Policy Point - Military]",
+                    
+                    "[+15]% Production when constructing [All] units [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Military Caste",//军人阶层
+                "uniques": [
+                    "Only available <when above [29] [Policy Point - Military]>",
+                    "Instantly consumes [30] [Policy Point - Military]",
+                    
+                    "Provides [3] [Policy Point - Military]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Military Tradition"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Exercise",//演习
+                "uniques": [
+                    "Only available <when above [25] [Policy Point - Military]>",
+                    "Instantly consumes [26] [Policy Point - Military]",
+                    
+                    "New [All] units start with [8] Experience [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Military Tradition","Conscription"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Military Formations",//阵型
+                "uniques": [
+                    "Only available <when above [27] [Policy Point - Military]>",
+                    "Instantly consumes [28] [Policy Point - Military]",
+                    
+					"[+10]% Strength <when adjacent to a [Land] unit> <for [Land] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Exercise"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Military] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [12] [Policy Point - Military]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Art] [(Policy)]",//艺术
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Drama and Poetry]> <with [Policy Point - Development]>",
+            "Instantly consumes [30] [Policy Point - Development]",
+            
+            "Provides [3] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Aesthetics",//美学理论
+                "uniques": [
+                    "Only available <when above [33] [Policy Point - Development]>",
+                    "Instantly consumes [34] [Policy Point - Development]",
+                    
+                    "Unlock '[Concert Hall]'",
+                    "Unlock '[Alhambra]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Art Education",//美术教育
+                "uniques": [
+                    "Only available <when above [31] [Policy Point - Development]>",
+                    "Instantly consumes [32] [Policy Point - Development]",
+                    
+                    "[+5]% [Culture] [in all cities]",
+                    "Unlock '[Sistine Chapel]'",
+                    "Unlock '[St. Basil's Cathedral]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Acoustics",//声学
+                "uniques": [
+                    "Only available <when above [37] [Policy Point - Development]>",
+                    "Instantly consumes [38] [Policy Point - Development]",
+                    
+                    "Enables conversion of city production to [Culture]",
+                    "Unlock '[Opera House]'",
+                    "Unlock '[Entertainment]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Art Education","Aesthetics"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Archaeology",//考古学
+                "uniques": [
+                    "Only available <when above [109] [Policy Point - Development]>",
+                    "Instantly consumes [110] [Policy Point - Development]",
+                    
+                    "Unlock '[Museum]'",
+                    "Unlock '[National Museum]'",
+                    "Unlock '[The Louvre]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Art Education"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Cultural Heritage",//文化遗产
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Development]>",
+                    "Instantly consumes [140] [Policy Point - Development]",
+                    
+                    "[+5]% [Culture] from every [Ancient Wonder]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Archaeology"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Art] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [15] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Commerce] [(Policy)]",//商业
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Currency]> <with [Policy Point - Development]>",
+            "Instantly consumes [30] [Policy Point - Development]",
+            
+            "Provides [3] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Guilds",//行会
+                "uniques": [
+                    "Only available <when above [29] [Policy Point - Development]>",
+                    "Instantly consumes [30] [Policy Point - Development]",
+                    
+                    "[-15]% Unhappiness from [Specialists] [in all cities]",
+                    "Unlock '[National Treasury]'",
+                    "Unlock '[Leaning Tower of Pisa]'",
+                    "Unlock '[Business Center]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Professionalism",//职业精神
+                "uniques": [
+                    "Only available <when above [33] [Policy Point - Development]>",
+                    "Instantly consumes [34] [Policy Point - Development]",
+                    
+                    "[+2 Gold] from every specialist [in all cities]",
+                    "Enables conversion of city production to [Gold]",
+                    "Unlock '[St. Peter's Basilica Church]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Guilds"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Apprenticeship",//学徒
+                "uniques": [
+                    "Only available <when above [35] [Policy Point - Development]>",
+                    "Instantly consumes [36] [Policy Point - Development]",
+                    
+                    "[+2 Production] [in all cities]",
+                    "[+1 Production] from every specialist [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Guilds"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Banking",//银行业
+                "uniques": [
+                    "Only available <when above [74] [Policy Point - Development]>",
+                    "Instantly consumes [82] [Policy Point - Development]",
+                    
+                    "Unlock '[Bank]'",
+                    "Unlock '[Central Bank]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Professionalism"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Economics",//经济学
+                "uniques": [
+                    "Only available <when above [74] [Policy Point - Development]>",
+                    "Instantly consumes [82] [Policy Point - Development]",
+                    
+                    "Unlock '[Stock Exchange]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Professionalism"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Commerce] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [15] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Defense] [(Policy)]",//防御
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Exercise]> <with [Policy Point - Military]>",
+            "Instantly consumes [36] [Policy Point - Military]",
+            
+            "Provides [4] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Fortifications",//防御工事
+                "uniques": [
+                    "Only available <when above [29] [Policy Point - Military]>",
+                    "Instantly consumes [30] [Policy Point - Military]",
+                    
+                    "Enables Defensive Pacts",
+                    "Unlock '[Fort]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Bastions",//棱堡
+                "uniques": [
+                    "Only available <when above [35] [Policy Point - Military]>",
+                    "Instantly consumes [36] [Policy Point - Military]",
+                    
+                    "Provides a [Castle] in your first [4] cities for free",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Fortifications"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Resist",//殊死抵抗
+                "uniques": [
+                    "Only available <when above [39] [Policy Point - Military]>",
+                    "Instantly consumes [40] [Policy Point - Military]",
+                    
+					"[+25]% Strength for cities <when attacking>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Fortifications"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Siege Tactics",//攻城术
+                "uniques": [
+                    "Only available <when above [41] [Policy Point - Military]>",
+                    "Instantly consumes [42] [Policy Point - Military]",
+                    
+					"[+20]% Strength <vs cities> <for [non-air] units> <when attacking>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Bastions"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Scorched Earth",//焦土策略
+                "uniques": [
+                    "Only available <when above [45] [Policy Point - Military]>",
+                    "Instantly consumes [46] [Policy Point - Military]",
+                    
+                    "Unlock '['[Scorched Earth]' ability]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Resist"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Defense] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [18] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Urban] [(Policy)]",//城市
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Acoustics]> <with [Policy Point - Development]>",
+            "Instantly consumes [40] [Policy Point - Development]",
+            
+            "Provides [4] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Architecture",//建筑设计
+                "uniques": [
+                    "Only available <when above [43] [Policy Point - Development]>",
+                    "Instantly consumes [44] [Policy Point - Development]",
+                    
+                    "Unlock '[Taj Mahal]'",
+                    "Unlock '[Hermitage]'",
+                    "Unlock '[Summer Palace]'",
+                    "Unlock '[Landmark]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Civil Engineering",//土木工程
+                "uniques": [
+                    "Only available <when above [45] [Policy Point - Development]>",
+                    "Instantly consumes [46] [Policy Point - Development]",
+                    
+                    "Unlock '[Dam]'",
+                    "Unlock '[Royal Greenwich Observatory]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Town",//城镇
+                "uniques": [
+                    "Only available <when above [45] [Policy Point - Development]>",
+                    "Instantly consumes [46] [Policy Point - Development]",
+                    
+                    "'[City center]' [District] [Gain relevant adjacent yield] from each [1] adjacent '[Relevant]' [District]",
+                    "Unlock '[Furniture Factory]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Tourism",//旅游业
+                "uniques": [
+                    "Only available <when above [99] [Policy Point - Development]>",
+                    "Instantly consumes [100] [Policy Point - Development]",
+                    
+					"[+2 Gold] from every [Great People Improvement]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Architecture","Civil Engineering"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Urbanization",//城市化
+                "uniques": [
+                    "Only available <when above [49] [Policy Point - Development]>",
+                    "Instantly consumes [50] [Policy Point - Development]",
+                    
+                    "Unlock '[Faculty of Civil Engineering]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Town","Civil Engineering"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "[Urban] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [20] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Navigation] [(Policy)]",//航行
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Professionalism]> <after adopting [Apprenticeship]> <with [Policy Point - Development]>",
+            "Instantly consumes [40] [Policy Point - Development]",
+            
+            "Provides [4] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Colonize",//殖民
+                "uniques": [
+                    "Only available <when above [39] [Policy Point - Development]>",
+                    "Instantly consumes [40] [Policy Point - Development]",
+                    
+                    "[+1] Movement <for [Settler] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Naval Tradition",//海军传统
+                "uniques": [
+                    "Only available <when above [29] [Policy Point - Development]> <when above [29] [Policy Point - Military]>",
+                    "Instantly consumes [30] [Policy Point - Development]",
+                    "Instantly consumes [30] [Policy Point - Military]",
+                    
+                    "[+1] Movement <for [Water] units>",
+                    "[+1] Sight <for [Water] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Triangular Trade",//三角贸易
+                "uniques": [
+                    "Only available <when above [45] [Policy Point - Development]>",
+                    "Instantly consumes [46] [Policy Point - Development]",
+                    
+					"[+3 Gold] from each Trade Route",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Colonize"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Coastal Construction",//海岸建设
+                "uniques": [
+                    "Only available <when above [45] [Policy Point - Development]>",
+                    "Instantly consumes [46] [Policy Point - Development]",
+                    
+                    "[+4 Production] [in all coastal cities]",
+                    "Unlock '[Kilwa Kisiwani]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Colonize"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Merchant Fleets",//商船舰队
+                "uniques": [
+                    "Only available <when above [49] [Policy Point - Development]>",
+                    "Instantly consumes [50] [Policy Point - Development]",
+                    
+					"[+20]% [Gold] from Trade Routes",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Naval Tradition","Coastal Construction"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Navigation] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [20] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Indenture] [(Policy)]",//契约
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Siege Tactics]> <with [Policy Point - Military]>",
+            "Instantly consumes [48] [Policy Point - Military]",
+            
+            "Provides [5] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Chivalry",//骑士制度
+                "uniques": [
+                    "Only available <when above [49] [Policy Point - Military]>",
+                    "Instantly consumes [50] [Policy Point - Military]",
+                    
+                    "Unlock '[Knights Team]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Mercenary Regiments",//雇佣兵团
+                "uniques": [
+                    "Only available <when above [52] [Policy Point - Military]>",
+                    "Instantly consumes [53] [Policy Point - Military]",
+                    
+                    "Unlock '[Mercenary]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Professional Army",//职业军队
+                "uniques": [
+                    "Only available <when above [55] [Policy Point - Military]>",
+                    "Instantly consumes [56] [Policy Point - Military]",
+                    
+                    "[-15]% maintenance costs <for [Military] units>",
+                    "Unlock '[Armory]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Wars of Religion",//宗教战争
+                "uniques": [
+                    "Only available <when above [55] [Policy Point - Military]>",
+                    "Instantly consumes [56] [Policy Point - Military]",
+                    
+					"Earn [75]% of killed [non-air] unit's [Strength] as [Faith] <for [non-air] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Chivalry"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Ranks",//军衔制度
+                "uniques": [
+                    "Only available <when above [62] [Policy Point - Military]>",
+                    "Instantly consumes [63] [Policy Point - Military]",
+                    
+                    "Unlock '[Awarded Ranks]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Professional Army"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Indenture] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [24] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Enlightenment] [(Policy)]",//启蒙
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Urbanization]> <with [Policy Point - Development]>",
+            "Instantly consumes [70] [Policy Point - Development]",
+            
+            "Provides [5] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Enlightenment Thought",//启蒙思想
+                "uniques": [
+                    "Only available <when above [74] [Policy Point - Development]>",
+                    "Instantly consumes [75] [Policy Point - Development]",
+                    
+                    "[+25]% Natural religion spread [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Humanism",//人文主义
+                "uniques": [
+                    "Only available <when above [76] [Policy Point - Development]>",
+                    "Instantly consumes [77] [Policy Point - Development]",
+                    
+					"[+2 Culture] from every specialist [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Free Thought",//思想自由
+                "uniques": [
+                    "Only available <when above [79] [Policy Point - Development]>",
+                    "Instantly consumes [80] [Policy Point - Development]",
+                    
+					"[-15]% Unhappiness from [Specialists] [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Enlightenment Thought"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Free Speech",//言论自由
+                "uniques": [
+                    "Only available <when above [79] [Policy Point - Development]>",
+                    "Instantly consumes [80] [Policy Point - Development]",
+                    
+					"[+3 Happiness] per [6] population [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Enlightenment Thought"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Political Reform",//政治改革
+                "uniques": [
+                    "Only available <when above [89] [Policy Point - Development]>",
+                    "Instantly consumes [90] [Policy Point - Development]",
+                    
+                    "Unlock '[City Hall]'",
+                    "Unlock '[Supreme Courthouse]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Humanism","Free Thought","Free Speech"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Enlightenment] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [35] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Research] [(Policy)]",//科研
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Coastal Construction]> <after adopting [Naval Tradition]> <with [Policy Point - Development]>",
+            "Instantly consumes [70] [Policy Point - Development]",
+            
+            "Provides [5] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Co-research",//科技共研
+                "uniques": [
+                    "Only available <when above [75] [Policy Point - Development]>",
+                    "Instantly consumes [76] [Policy Point - Development]",
+                    
+                    "Science gained from research agreements [+75]%",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Rationalism",//理性主义
+                "uniques": [
+                    "Only available <when above [77] [Policy Point - Development]>",
+                    "Instantly consumes [78] [Policy Point - Development]",
+					
+                    "[+2 Science] from every specialist [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Educated Elite",//精英教育
+                "uniques": [
+                    "Only available <when above [81] [Policy Point - Development]>",
+                    "Instantly consumes [82] [Policy Point - Development]",
+					
+					"[+25]% Great Person generation [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Scientific Revolution",//科技革命
+                "uniques": [
+                    "Only available <when above [93] [Policy Point - Development]>",
+                    "Instantly consumes [94] [Policy Point - Development]",
+					
+                    "May buy [Effect - Scientific Revolution] buildings for [500] [Gold] [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Rationalism","Co-research"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Compulsory Education",//义务教育
+                "uniques": [
+                    "Only available <when above [92] [Policy Point - Development]>",
+                    "Instantly consumes [93] [Policy Point - Development]",
+                    
+                    "[+1 Science] per [1] population [in all cities]",
+                    "Unlock '[Public School]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Educated Elite"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Research] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [35] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Tactics] [(Policy)]",//战术
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Mercenary Regiments]> <after adopting [Ranks]> <with [Policy Point - Military]>",
+            "Instantly consumes [84] [Policy Point - Military]",
+            
+            "Provides [6] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Drill Manuals",//训练手册
+                "uniques": [
+                    "Only available <when above [87] [Policy Point - Military]>",
+                    "Instantly consumes [88] [Policy Point - Military]",
+                    
+                    "[+25]% XP gained from combat",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Logistics",//后勤
+                "uniques": [
+                    "Only available <when above [89] [Policy Point - Military]>",
+                    "Instantly consumes [90] [Policy Point - Military]",
+					
+                    "Unlock '[Logisticians]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Tactical Theory",//战术理论
+                "uniques": [
+                    "Only available <when above [95] [Policy Point - Military]>",
+                    "Instantly consumes [96] [Policy Point - Military]",
+					
+                    "[+50]% to Flank Attack bonuses",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Drill Manuals","Logistics"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Military Research",//军事研究
+                "uniques": [
+                    "Only available <when above [101] [Policy Point - Military]>",
+                    "Instantly consumes [102] [Policy Point - Military]",
+					
+                    "Free [Honor Knight] appears <upon declaring war with a major Civilization> <after discovering [Stirrups]> <before discovering [Military Science]>",
+                    "Free [Lancer] appears <upon declaring war with a major Civilization> <after discovering [Military Science]> <before discovering [Combustion]>",
+                    "Free [Wheeled Armored] appears <upon declaring war with a major Civilization> <after discovering [Combustion]> <before discovering [Motor]>",
+                    "Free [Main Battle Tank] appears <upon declaring war with a major Civilization> <after discovering [Motor]> <before discovering [Future Tech]>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Tactical Theory"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Elite Soldier",//精兵政策
+                "uniques": [
+                    "Only available <when above [101] [Policy Point - Military]>",
+                    "Instantly consumes [102] [Policy Point - Military]",
+					
+                    "[+10]% Strength <for [Land] units> <with [20]% chance>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Tactical Theory"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Tactics] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [42] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Diplomacy] [(Policy)]",//外交
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+            "Only available <after adopting [Free Thought]> <after adopting [Free Speech]> <with [Policy Point - Development]>",
+            "Instantly consumes [100] [Policy Point - Development]",
+            
+            "Provides [6] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Philantropy",//慈善事业
+                "uniques": [
+                    "Only available <when above [99] [Policy Point - Development]>",
+                    "Instantly consumes [100] [Policy Point - Development]",
+                    
+                    "Gifts of Gold to City-States generate [+33]% more Influence",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Friendly Diplomacy",//友善外交
+                "uniques": [
+                    "Only available <when above [109] [Policy Point - Development]>",
+                    "Instantly consumes [110] [Policy Point - Development]",
+                    
+                    "[-33]% City-State Influence degradation",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Reciprocity",//互利互惠
+                "uniques": [
+                    "Only available <when above [119] [Policy Point - Development]>",
+                    "Instantly consumes [120] [Policy Point - Development]",
+                    
+                    "Allied City-States provide [Gold] equal to [50]% of what they produce for themselves",
+                    "Allied City-States provide [Science] equal to [50]% of what they produce for themselves",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "United Front",//联合战线
+                "uniques": [
+                    "Only available <when above [119] [Policy Point - Development]>",
+                    "Instantly consumes [120] [Policy Point - Development]",
+                    
+                    "Militaristic City-States grant units [2] times as fast when you are at war with a common nation",
+                    "Military Units gifted from City-States start with [5] XP",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Friendly Diplomacy","Philantropy"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Aid",//援助
+                "uniques": [
+                    "Only available <when above [119] [Policy Point - Development]>",
+                    "Instantly consumes [120] [Policy Point - Development]",
+                    
+                    "Allied City-States will occasionally gift Great People",
+                    "Resting point for Influence with City-States is increased by [20]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["United Front"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "[Diplomacy] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [50] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Wartime] [(Policy)]",//战时
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [Scientific Revolution]> <with [Policy Point - Development]>",
+            "Instantly consumes [100] [Policy Point - Development]",
+            
+            "Provides [6] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Cash-for-work",//以工代赈
+                "uniques": [
+                    "Only available <when above [106] [Policy Point - Development]>",
+                    "Instantly consumes [107] [Policy Point - Development]",
+                    
+                    "[+10]% Production when constructing [All] buildings [in all cities] <when at war>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Emergency",//紧急状态
+                "uniques": [
+                    "Only available <when above [111] [Policy Point - Development]>",
+                    "Instantly consumes [112] [Policy Point - Development]",
+                    
+                    "[+3 Gold] from all [Production] buildings <when at war>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Mobilization",//动员
+                "uniques": [
+                    "Only available <when above [106] [Policy Point - Development]>",
+                    "Instantly consumes [107] [Policy Point - Development]",
+                    
+                    "[+10]% Production when constructing [All] units [in all cities] <when at war>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Wartime Economy",//战时经济
+                "uniques": [
+                    "Only available <when above [116] [Policy Point - Development]>",
+                    "Instantly consumes [115] [Policy Point - Development]",
+                    
+                    "[-10]% maintenance cost for buildings [in all cities] <when at war>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Cash-for-work","Emergency"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Military Control",//军事管制
+                "uniques": [
+                    "Only available <when above [119] [Policy Point - Development]>",
+                    "Instantly consumes [120] [Policy Point - Development]",
+                    
+                    "[+5]% [Production] [in all cities with a garrison] <when at war>",
+                    "[+5]% [Gold] [in all cities with a garrison] <when at war>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Mobilization","Emergency"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "[Wartime] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [50] [Policy Point - Development]"
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Warfare] [(Policy)]",//作战
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [Tactical Theory]> <with [Policy Point - Military]>",
+            "Instantly consumes [120] [Policy Point - Military]",
+            
+            "Provides [7] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Rapid Deployment",//紧急部署
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Military]>",
+                    "Instantly consumes [140] [Policy Point - Military]",
+                    
+                    "[+1] Movement <for [Military] units> <in [District - City] tiles>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Depth",//纵深
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Military]>",
+                    "Instantly consumes [140] [Policy Point - Military]",
+					
+                    "[+10]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "After Action Reports",//行动总结报告
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Military]>",
+                    "Instantly consumes [140] [Policy Point - Military]",
+					
+                    "[+25]% XP gained from combat <for [Military] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Combined Arms",//协同作战
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Military]>",
+                    "Instantly consumes [140] [Policy Point - Military]",
+                    
+                    "[+50]% to Flank Attack bonuses <for [Military] units>",
+                    "Unlock '[Pentagon]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Mobile Combat",//机动作战
+                "uniques": [
+                    "Only available <when above [139] [Policy Point - Military]>",
+                    "Instantly consumes [140] [Policy Point - Military]",
+					
+                    "[+1] Movement <for [Melee] units>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "[Warfare] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [60] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Environment] [(Policy)]",//环境
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [United Front]> <with [Policy Point - Development]>",
+            "Instantly consumes [150] [Policy Point - Development]",
+            
+            "Provides [7] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Natural History",//自然历史
+                "uniques": [
+                    "Only available <when above [154] [Policy Point - Development]>",
+                    "Instantly consumes [155] [Policy Point - Development]",
+					
+                    "[+5]% [Culture] from every [Museum]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Environmental Protection",//环境保护
+                "uniques": [
+					"Only available <when above [159] [Policy Point - Development]>",
+                    "Instantly consumes [160] [Policy Point - Development]",
+					
+					"[-1 Production, -1 Food, +3 Gold, +2 Culture] from every [Vegetation]",
+                    "Unlock '[National Park]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Natural History"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Environmental Governance",//环境治理
+                "uniques": [
+					"Only available <when above [159] [Policy Point - Development]>",
+                    "Instantly consumes [160] [Policy Point - Development]",
+					
+					"[+1 Happiness] from every [District]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Natural History"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Nature Reserves",//自然保护区
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "Unlock '[Nature Reserve]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Environmental Protection"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Reforestation",//植树造林
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "Unlock '[Plantations]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Environmental Governance"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Environment] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [75] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Economy] [(Policy)]",//经济
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [Wartime Economy]> <with [Policy Point - Development]>",
+            "Instantly consumes [150] [Policy Point - Development]",
+            
+            "Provides [7] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Recovery Program",//复兴计划
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "[+5]% [Science] [in all cities] <when not at war>",
+                    "[+5]% [Gold] [in all cities] <when not at war>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Multinationals",//跨国公司
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "[+3 Gold] from all [Gold] buildings",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Recovery Program"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Tertiary Industry",//第三产业
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "Unlock '[Tourist Center]'",
+                    "Unlock '[Shopping Center]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Recovery Program"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Medicare for All",//全民医保
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "[+5]% [Food] [in all cities]",
+                    "Unlock '[Hospital]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Recovery Program"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "World Trade Organization",//世贸组织
+                "uniques": [
+					"Only available <when above [169] [Policy Point - Development]>",
+                    "Instantly consumes [170] [Policy Point - Development]",
+					
+                    "[+20]% [Gold] from every [District - Business Center]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Multinationals","Tertiary Industry"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "[Economy] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [75] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Cold War] [(Policy)]",//冷战
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [[Warfare] [(Policy)]]> <with [Policy Point - Military]>",
+            "Instantly consumes [180] [Policy Point - Military]",
+            
+            "Provides [8] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Arms Race",//军备竞赛
+                "uniques": [
+                    "Only available <when above [179] [Policy Point - Military]>",
+                    "Instantly consumes [180] [Policy Point - Military]",
+                    
+                    "[+15]% Production when constructing [Military] units [in all cities] <when not at war>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Defence Industry",//国防工业
+                "uniques": [
+                    "Only available <when above [184] [Policy Point - Military]>",
+                    "Instantly consumes [185] [Policy Point - Military]",
+                    
+                    "[+2 Production] from all [Production] buildings",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Containment",//遏制
+                "uniques": [
+                    "Only available <when above [199] [Policy Point - Military]>",
+                    "Instantly consumes [200] [Policy Point - Military]",
+                    
+                    "Influence of all other civilizations with all city-states degrades [+20]% faster",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Second Strike Capability",//二次攻击能力
+                "uniques": [
+                    "Only available <when above [109] [Policy Point - Military]>",
+                    "Instantly consumes [210] [Policy Point - Military]",
+                    
+                    "[+20]% Production when constructing [Nuclear Weapon] units [in all cities]",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Defence Industry","Arms Race"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Covert Operations",//隐秘行动
+                "uniques": [
+                    "Only available <when above [199] [Policy Point - Military]>",
+                    "Instantly consumes [200] [Policy Point - Military]",
+                    
+                    "[+10]% Strength <for [All] units> <when fighting units from a Civilization with more Cities than you>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Containment"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Cold War] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [90] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Energy] [(Policy)]",//能源
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [United Front]> <with [Policy Point - Development]>",
+            "Instantly consumes [200] [Policy Point - Development]",
+            
+            "Provides [8] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Power Construction",//电力建设
+                "uniques": [
+                    "Only available <when above [214] [Policy Point - Development]>",
+                    "Instantly consumes [215] [Policy Point - Development]",
+					
+                    "Each '[Power Plant]' provide [1] '[Electric Power]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Reserve Resources",//储备资源
+                "uniques": [
+					"Only available <when above [214] [Policy Point - Development]>",
+                    "Instantly consumes [215] [Policy Point - Development]",
+					
+                    "Quantity of strategic resources produced by the empire +[+100]%",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Electric Company",//电气公司
+                "uniques": [
+					"Only available <when above [214] [Policy Point - Development]>",
+                    "Instantly consumes [215] [Policy Point - Development]",
+					
+                    "[+3 Gold] from every [Power Plant]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Power Construction"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Ultra-efficient Processing",//超高效处理
+                "uniques": [
+					"Only available <when above [219] [Policy Point - Development]>",
+                    "Instantly consumes [220] [Policy Point - Development]",
+					
+                    "[+1 Production] from all [Production] buildings",
+                    "[+1 Science] from all [Science] buildings",
+                    "[+2 Gold] from all [Gold] buildings",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Reserve Resources"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Conserve Resources",//节约资源
+                "uniques": [
+					"Only available <when above [224] [Policy Point - Development]>",
+                    "Instantly consumes [225] [Policy Point - Development]",
+					
+                    "[Starting from the [Atomic era]], ['[Military]' [units] [-25]% resource costs]",
+					"（暂未实装）",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Reserve Resources"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "[Energy] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [100] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[New Era] [(Policy)]",//新时代
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [United Front]> <with [Policy Point - Development]>",
+            "Instantly consumes [200] [Policy Point - Development]",
+            
+            "Provides [8] [Policy Point - Development]"
+        ],
+        "policies": [
+            {
+                "name": "Globalization",//全球化
+                "uniques": [
+					"Only available <when above [209] [Policy Point - Development]>",
+                    "Instantly consumes [210] [Policy Point - Development]",
+					
+                    "[+5]% Yield from every [City center]",
+                    "Unlock '[Stadium]'",
+                    "Unlock '[Estadio do Maracana]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Modern Industry",//现代化工业
+                "uniques": [
+					"Only available <when above [209] [Policy Point - Development]>",
+                    "Instantly consumes [210] [Policy Point - Development]",
+					
+                    "[+3 Production] from every [District - Industrial Zone]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Globalization"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "E-commerce",//电子商务
+                "uniques": [
+					"Only available <when above [209] [Policy Point - Development]>",
+                    "Instantly consumes [210] [Policy Point - Development]",
+					
+                    "[+20]% [Gold] from every [District - Business Center]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Globalization"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Online Communities",//在线社区
+                "uniques": [
+					"Only available <when above [209] [Policy Point - Development]>",
+                    "Instantly consumes [210] [Policy Point - Development]",
+					
+                    "[+2 Happiness] from every [District - Entertainment]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Globalization"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Multicultural",//多元文化
+                "uniques": [
+					"Only available <when above [209] [Policy Point - Development]>",
+                    "Instantly consumes [210] [Policy Point - Development]",
+					
+                    "[+3 Culture] from every [District - Landmark]",
+                    "Unlock '[Museo Nacional Centro de Arte Reina Sofía]'",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Globalization"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[New Era] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [100] [Policy Point - Development]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Digitalization] [(Policy)]",//信息
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after adopting [Tactical Theory]> <with [Policy Point - Military]>",
+            "Instantly consumes [240] [Policy Point - Military]",
+            
+            "Provides [9] [Policy Point - Military]"
+        ],
+        "policies": [
+            {
+                "name": "Integrated Space Cell",//一体化空间机构
+                "uniques": [
+                    "Only available <when above [239] [Policy Point - Military]>",
+                    "Instantly consumes [240] [Policy Point - Military]",
+                    
+                    "[+10]% Production when constructing [Space Building] buildings [in all cities] <in cities with a [Assembly Factory]>",
+                    "[+10]% Production when constructing [Space Unit] units [in all cities] <in cities with a [Assembly Factory]>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Informationized Troops",//信息化部队
+                "uniques": [
+                    "Only available <when above [239] [Policy Point - Military]>",
+                    "Instantly consumes [240] [Policy Point - Military]",
+                    
+                    "[+1] Sight <for [Military] units>",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Non-combat Military Operations",//非战争军事行动
+                "uniques": [
+                    "Only available <when above [239] [Policy Point - Military]>",
+                    "Instantly consumes [240] [Policy Point - Military]",
+                    
+                    "Unlock '[Peacekeeper]'",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Information Warfare",//信息战
+                "uniques": [
+                    "Only available <when above [269] [Policy Point - Military]>",
+                    "Instantly consumes [270] [Policy Point - Military]",
+                    
+                    "相邻的“所有”地块中的敌方“信息化”单位 -40% 战斗力",
+					"（暂未实装）",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Informationized Troops","Integrated Space Cell"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Integrated Attack Logistics",//综合攻击后勤保障
+                "uniques": [
+                    "Only available <when above [269] [Policy Point - Military]>",
+                    "Instantly consumes [270] [Policy Point - Military]",
+                    
+                    "加强“后勤保障”晋升",
+					"（暂未实装）",
+                    
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Informationized Troops","Non-combat Military Operations"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "[Digitalization] [(Policy)] Complete",//完整政策
+                "uniques": [
+                    "Instantly provides [120] [Policy Point - Military]",
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Universe] [(Policy)]",//宇宙
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+        ],
+        "policies": [
+            {
+                "name": "Interstellar Project",//星际计划
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Planetary Modification",//行星改造
+                "uniques": [
+					
+                ],
+                "requires": ["Interstellar Project"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Set Sail",//起航
+                "uniques": [
+					
+                ],
+                "requires": ["Interstellar Project"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Space City",//太空城市
+                "uniques": [
+					
+                ],
+                "requires": ["Planetary Modification"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Space Tourism",//太空旅游
+                "uniques": [
+					
+                ],
+                "requires": ["Planetary Modification"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Universe] [(Policy)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Technology] [(Policy)]",//科技
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+        ],
+        "policies": [
+            {
+                "name": "Research Grants",//科研拨款
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Resource Management",//资源管理
+                "uniques": [
+					
+                ],
+                "row": 1,
+                "column": 4
+            },
+            {
+                "name": "Scientific Research Institution",//科研院所
+                "uniques": [
+					
+                ],
+                "requires": ["Research Grants"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Unified Distribution",//统一分配
+                "uniques": [
+					
+                ],
+                "requires": ["Resource Management"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Technological Singularity",//技术爆炸
+                "uniques": [
+					
+                ],
+                "requires": ["Unified Distribution","Scientific Research Institution"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Technology] [(Policy)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Mecha] [(Policy)]",//机甲
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+        ],
+        "policies": [
+            {
+                "name": "Individual-soldier Fighting",//单兵作战
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Mecha Battle",//机甲战
+                "uniques": [
+					
+                ],
+                "requires": ["Individual-soldier Fighting"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Firepower Limit",//火力限制
+                "uniques": [
+					
+                ],
+                "requires": ["Mecha Battle"],
+                "row": 3,
+                "column": 1
+            },
+            {
+                "name": "Energy War",//能源战
+                "uniques": [
+					
+                ],
+                "requires": ["Mecha Battle"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Wreckage Recovered",//回收残骸
+                "uniques": [
+					
+                ],
+                "requires": ["Mecha Battle"],
+                "row": 3,
+                "column": 5
+            },
+            {
+                "name": "[Mecha] [(Policy)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+    
+//////////
+    
+	{
+        "name": "[Monarchy] [(Polity)]",//君主统治
+        "era": "Classical era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Aristocracy] [(Polity)]]> <before adopting [[Collective] [(Polity)]]> <before adopting [[Anarchy] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. I )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Divine Right",//君权神授
+                "uniques": [
+					"Only available <when above [9] [Policy Point - Development]>",
+                    "Instantly consumes [10] [Policy Point - Development]",
+					
+                    "[+3 Faith] [in capital]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Landed Elite",//缙绅阶层
+                "uniques": [
+					"Only available <when above [12] [Policy Point - Development]>",
+                    "Instantly consumes [13] [Policy Point - Development]",
+					
+					"[+2 Happiness] per [8] population [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Divine Right"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Centralization",//中央集权
+                "uniques": [
+					"Only available <when above [15] [Policy Point - Development]>",
+                    "Instantly consumes [16] [Policy Point - Development]",
+					
+					"[+20]% Production when constructing [Ancient Wonder] wonders [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Divine Right"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Rehabilitate",//休养生息
+                "uniques": [
+					"Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+					
+					"[-15]% Food is carried over after population increases [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Divine Right"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Reducing Burden",//轻徭薄赋
+                "uniques": [
+					"Only available <when above [19] [Policy Point - Development]>",
+                    "Instantly consumes [20] [Policy Point - Development]",
+					
+					"[-8]% Unhappiness from [Population] [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Rehabilitate","Centralization"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Monarchy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Aristocracy] [(Polity)]",//贵族统治
+        "era": "Classical era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Monarchy] [(Polity)]]> <before adopting [[Collective] [(Polity)]]> <before adopting [[Anarchy] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. I )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Representation",//议会制
+                "uniques": [
+					"Only available <when above [10] [Policy Point - Development]>",
+                    "Instantly consumes [11] [Policy Point - Development]",
+					
+					"[+1 Culture] per [3] population [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Class Norms",//阶级规范
+                "uniques": [
+					"Only available <when above [19] [Policy Point - Development]>",
+                    "Instantly consumes [20] [Policy Point - Development]",
+					
+                    "Provides the cheapest [Culture] building in your first [4] cities for free",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Representation"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Hereditary",//世袭制
+                "uniques": [
+					"Only available <when above [13] [Policy Point - Development]>",
+                    "Instantly consumes [14] [Policy Point - Development]",
+					
+					"[-15]% Culture cost of natural border growth [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Representation"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Meritocracy",//精英政治
+                "uniques": [
+					"Only available <when above [16] [Policy Point - Development]>",
+                    "Instantly consumes [17] [Policy Point - Development]",
+					
+					"[+25]% Great Person generation [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Representation"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Noble Privileges",//贵族特权
+                "uniques": [
+					"Only available <when above [19] [Policy Point - Development]>",
+                    "Instantly consumes [20] [Policy Point - Development]",
+					
+					"[+5 Gold] per [8] population [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Representation"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Aristocracy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Collective] [(Polity)]",//集体统治
+        "era": "Classical era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Monarchy] [(Polity)]]> <before adopting [[Aristocracy] [(Polity)]]> <before adopting [[Anarchy] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. I )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Election",//选举制
+                "uniques": [
+					"Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+					
+                    "[+2] population in a random city",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Citizen Welfare",//公民福利
+                "uniques": [
+					"Only available <when above [11] [Policy Point - Development]>",
+                    "Instantly consumes [12] [Policy Point - Development]",
+					
+					"[+33]% growth [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Election"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Sovereignty",//主权在民
+                "uniques": [
+					"Only available <when above [14] [Policy Point - Development]>",
+                    "Instantly consumes [15] [Policy Point - Development]",
+					
+					"[-50]% Unhappiness from [Unemployed] [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Election"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Civil Right",//公民权利
+                "uniques": [
+					"Only available <when above [19] [Policy Point - Development]>",
+                    "Instantly consumes [20] [Policy Point - Development]",
+					
+					"[+1 Production, +2 Gold, +1 Science] per [3] population [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Citizen Welfare"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Civil Society",//公民社会
+                "uniques": [
+					"Only available <when above [17] [Policy Point - Development]>",
+                    "Instantly consumes [18] [Policy Point - Development]",
+					
+					"[+1] population [in all cities] <upon entering a Golden Age>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Sovereignty"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Collective] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Anarchy] [(Polity)]",//无政府
+        "era": "Classical era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+			"Only available <before adopting [[Monarchy] [(Polity)]]> <before adopting [[Aristocracy] [(Polity)]]> <before adopting [[Collective] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. I )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Revolution",//革命
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Mutualism",//互助主义
+                "uniques": [
+					
+                ],
+                "requires": ["Revolution"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Armed Struggle",//武装斗争
+                "uniques": [
+					
+                ],
+                "requires": ["Revolution"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Internationalism",//国际主义
+                "uniques": [
+					
+                ],
+                "requires": ["Mutualism"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Utopia",//乌托邦
+                "uniques": [
+					
+                ],
+                "requires": ["Mutualism","Armed Struggle"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Anarchy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+
+	{
+        "name": "[Theocracy] [(Polity)]",//神权统治
+        "era": "Medieval era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Merchant Republic] [(Polity)]]> <before adopting [[Junta] [(Polity)]]> <before adopting [[Art Association] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. II )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Clericalism",//教权主义
+                "uniques": [
+					"Only available <when above [27] [Policy Point - Development]>",
+                    "Instantly consumes [28] [Policy Point - Development]",
+					
+                    "[+6 Faith, +6 Gold] [in all cities in which the majority religion is a major religion]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Mandate of Heaven",//受命于天
+                "uniques": [
+					"Only available <when above [35] [Policy Point - Development]>",
+                    "Instantly consumes [36] [Policy Point - Development]",
+					
+					"[200]% of excess happiness converted to [Faith]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Clericalism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Scripture",//经文
+                "uniques": [
+					"Only available <when above [34] [Policy Point - Development]>",
+                    "Instantly consumes [35] [Policy Point - Development]",
+					
+					"[+4 Gold] from all [Faith] buildings",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Clericalism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Organized Religion",//教会组织
+                "uniques": [
+					"Only available <when above [36] [Policy Point - Development]>",
+                    "Instantly consumes [37] [Policy Point - Development]",
+					
+					"[+33]% Natural religion spread [in all cities in which the majority religion is a major religion]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Clericalism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Tolerance",//宗教宽容
+                "uniques": [
+					"Only available <when above [41] [Policy Point - Development]>",
+                    "Instantly consumes [42] [Policy Point - Development]",
+					
+					"[Faith] cost of purchasing items in cities [-20]%",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Organized Religion","Mandate of Heaven","Scripture"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Theocracy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Merchant Republic] [(Polity)]",//商业共和
+        "era": "Medieval era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Theocracy] [(Polity)]]> <before adopting [[Junta] [(Polity)]]> <before adopting [[Art Association] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. II )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Mercantilism",//重商主义
+                "uniques": [
+					"Only available <when above [27] [Policy Point - Development]>",
+                    "Instantly consumes [28] [Policy Point - Development]",
+					
+                    "[+4 Gold] from all [Gold] buildings",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Trade Regulations",//贸易法规
+                "uniques": [
+					"Only available <when above [33] [Policy Point - Development]>",
+                    "Instantly consumes [34] [Policy Point - Development]",
+					
+					"[-15]% maintenance cost for buildings [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Mercantilism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Trade Protection",//贸易保护
+                "uniques": [
+					"Only available <when above [36] [Policy Point - Development]>",
+                    "Instantly consumes [37] [Policy Point - Development]",
+					
+					"[+3 Gold] from every specialist [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Mercantilism"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Free Trade",//自由贸易
+                "uniques": [
+					"Only available <when above [38] [Policy Point - Development]>",
+                    "Instantly consumes [39] [Policy Point - Development]",
+					
+					"[+2] Happiness from each type of luxury resource",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Trade Protection","Trade Regulations"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Gunboat Diplomacy",//炮舰外交
+                "uniques": [
+					"Only available <when above [43] [Policy Point - Development]>",
+                    "Instantly consumes [44] [Policy Point - Development]",
+					
+					"[Gold] cost of purchasing [Military] units [-33]%",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Trade Regulations"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Merchant Republic] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Junta] [(Polity)]",//军政府
+        "era": "Medieval era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <before adopting [[Theocracy] [(Polity)]]> <before adopting [[Merchant Republic] [(Polity)]]> <before adopting [[Art Association] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. II )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Militarism",//军国主义
+                "uniques": [
+					"Only available <when above [28] [Policy Point - Development]>",
+                    "Instantly consumes [29] [Policy Point - Development]",
+					
+                    "[10] units cost no maintenance",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Soldiers in First",//军人至上
+                "uniques": [
+					"Only available <when above [38] [Policy Point - Development]>",
+                    "Instantly consumes [39] [Policy Point - Development]",
+					
+					"[+10]% Strength <for [Military] units>",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Militarism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Military Politics",//军队参政
+                "uniques": [
+					"Only available <when above [35] [Policy Point - Development]>",
+                    "Instantly consumes [36] [Policy Point - Development]",
+					
+					"Quantity of strategic resources produced by the empire +[+25]%",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Militarism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Expand Military",//扩军
+                "uniques": [
+					"Only available <when above [37] [Policy Point - Development]>",
+                    "Instantly consumes [38] [Policy Point - Development]",
+					
+					"[+20]% Production when constructing [Military] units [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Militarism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Permanent Emergency",//永久性紧急状态
+                "uniques": [
+					"Only available <when above [44] [Policy Point - Development]>",
+                    "Instantly consumes [45] [Policy Point - Development]",
+					
+					"New [Military] units start with [10] Experience [in all cities]",
+					
+                    "Provides [1] [Policies Number]"
+                ],
+                "requires": ["Military Politics","Soldiers in First"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "[Junta] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Art Association] [(Polity)]",//艺术协会
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+			"Only available <before adopting [[Theocracy] [(Polity)]]> <before adopting [[Merchant Republic] [(Polity)]]> <before adopting [[Junta] [(Polity)]]> <before adopting [[Art Association] [(Polity)]]>",
+            "Gain a free [Polity ( Lv. II )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Aestheticism",//唯美主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Work of Art",//艺术作品
+                "uniques": [
+					
+                ],
+                "requires": ["Aestheticism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Cultural Exchange",//文化交流
+                "uniques": [
+					
+                ],
+                "requires": ["Aestheticism"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Masterpiece",//巨作
+                "uniques": [
+					
+                ],
+                "requires": ["Work of Art","Cultural Exchange"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "True Meaning",//美学真谛
+                "uniques": [
+					
+                ],
+                "requires": ["Work of Art","Cultural Exchange"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Art Association] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	
+	{
+        "name": "[Autarchy] [(Polity)]",//独裁政体
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. III )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Fascism",//法西斯主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Personality Cult",//个人崇拜
+                "uniques": [
+					
+                ],
+                "requires": ["Fascism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Third Alternative",//第三选择
+                "uniques": [
+					
+                ],
+                "requires": ["Fascism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Totalitarianism",//极权主义
+                "uniques": [
+					
+                ],
+                "requires": ["Fascism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Total War",//全面战争
+                "uniques": [
+					
+                ],
+                "requires": ["Third Alternative","Totalitarianism"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Autarchy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Republic] [(Polity)]",//共和政体
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. III )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Socialism",//社会主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Command Economy",//计划经济
+                "uniques": [
+					
+                ],
+                "requires": ["Socialism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Five-year Plan",//五年计划
+                "uniques": [
+					
+                ],
+                "requires": ["Socialism"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "Economic Reform and Open Up",//改革开放
+                "uniques": [
+					
+                ],
+                "requires": ["Command Economy","Five-year Plan"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Communism",//共产主义
+                "uniques": [
+					
+                ],
+                "requires": ["Five-year Plan"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Republic] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Democracy] [(Polity)]",//民主政体
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. III )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Liberalism",//自由主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Constitutionalism",//宪政主义
+                "uniques": [
+					
+                ],
+                "requires": ["Liberalism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Capitalism",//资本主义
+                "uniques": [
+					
+                ],
+                "requires": ["Liberalism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Universal Suffrage",//普选制度
+                "uniques": [
+					
+                ],
+                "requires": ["Liberalism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Market Economy",//市场经济
+                "uniques": [
+					
+                ],
+                "requires": ["Capitalism"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Democracy] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Cthulhu Order] [(Polity)]",//克苏鲁教团
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. III )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Cosmicis",//宇宙恐怖主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Delta Green",//绿色三角洲
+                "uniques": [
+					
+                ],
+                "requires": ["Cosmicis"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "New God",//新神
+                "uniques": [
+					
+                ],
+                "requires": ["Cosmicis"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Destroy Tradition",//摧毁传统
+                "uniques": [
+					
+                ],
+                "requires": ["Cosmicis"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Lovecraft Worship",//洛夫克拉夫特崇拜
+                "uniques": [
+					
+                ],
+                "requires": ["Destroy Tradition","New God","Delta Green"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Cthulhu Order] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+
+	{
+        "name": "[Galactic Empire] [(Polity)]",//星海帝国
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. IV )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Authoritarianism",//威权主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Galactic Emperor",//星海帝皇
+                "uniques": [
+					
+                ],
+                "requires": ["Authoritarianism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Galactic Overlordship",//星海霸业
+                "uniques": [
+					
+                ],
+                "requires": ["Authoritarianism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Imperial Authority",//帝国权威
+                "uniques": [
+					
+                ],
+                "requires": ["Authoritarianism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "The Great Expedition",//大远征
+                "uniques": [
+					
+                ],
+                "requires": ["Galactic Emperor","Galactic Overlordship","Imperial Authority"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[Galactic Empire] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[United Federation of Planets] [(Polity)]",//星际联邦
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. IV )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Pacificism",//和平主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Khitomer Accords",//基特玛协议
+                "uniques": [
+					
+                ],
+                "requires": ["Pacificism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Racial Equality",//种族平等
+                "uniques": [
+					
+                ],
+                "requires": ["Pacificism"],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Starfleet",//星际舰队
+                "uniques": [
+					
+                ],
+                "requires": ["Pacificism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Coalition of Planets",//星际联盟
+                "uniques": [
+					
+                ],
+                "requires": ["Racial Equality"],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "[United Federation of Planets] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Science Directorate] [(Polity)]",//科学理事会
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. IV )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Scientism",//科学主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Rational Supremacy",//理性至上
+                "uniques": [
+					
+                ],
+                "requires": ["Scientism"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Expert Seats",//专家席位
+                "uniques": [
+					
+                ],
+                "requires": ["Scientism"],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Scientific Distribution",//科学分配
+                "uniques": [
+					
+                ],
+                "requires": ["Scientism"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Rational Consensus",//理性共识
+                "uniques": [
+					
+                ],
+                "requires": ["Scientism"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Science Directorate] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	{
+        "name": "[Virtual World] [(Polity)]",//虚拟世界
+        "era": "Ancient era",
+        "priorities": {
+            "Neutral": 0,
+            "Cultural": 0,
+            "Diplomatic": 0,
+            "Domination": 0,
+            "Scientific": 0
+        },
+        "uniques": [
+			"Only available <after discovering [Future Tech]>",
+            "Gain a free [Polity ( Lv. IV )] [in capital]"
+        ],
+        "policies": [
+            {
+                "name": "Virtualism",//虚拟主义
+                "uniques": [
+                    
+                ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Virtual Reality",//虚拟现实
+                "uniques": [
+					
+                ],
+                "requires": ["Virtualism"],
+                "row": 2,
+                "column": 2
+            },
+            {
+                "name": "Control Center",//控制中心
+                "uniques": [
+					
+                ],
+                "requires": ["Virtualism"],
+                "row": 2,
+                "column": 4
+            },
+            {
+                "name": "NO GAME NO LIFE",//游戏人生
+                "uniques": [
+					
+                ],
+                "requires": ["Virtual Reality","Control Center"],
+                "row": 3,
+                "column": 2
+            },
+            {
+                "name": "Dream Universe",//梦宙
+                "uniques": [
+					
+                ],
+                "requires": ["Virtual Reality","Control Center"],
+                "row": 3,
+                "column": 4
+            },
+            {
+                "name": "[Virtual World] [(Polity)] Complete",//完整政策
+                "uniques": [
+					
+                ]
+            }
+        ]
+    },
+	
+	
+]

@@ -1,0 +1,1397 @@
+[
+//基础资源设施
+	{
+		"name": "Camp",//猎场
+		"turnsToBuild": 7,
+		"techRequired": "Trapping",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					
+					"Does not need removal of [Forest]",
+					"Does not need removal of [Jungle]",
+					
+					"[+1 Production] <after discovering [Biology]>",
+					"[+1 Gold] <after discovering [Pharmaceuticals]>",
+					
+					"Pillaging this improvement yields approximately [+50 Gold]"],
+	},
+	{
+		"name": "Pasture",//牧场
+		"turnsToBuild": 8,
+		"techRequired": "Animal Husbandry",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					
+					"[+1 Food] <after discovering [Biology]>",
+					"[+1 Gold] <after discovering [Pharmaceuticals]>",
+					
+					"Pillaging this improvement yields approximately [+50 Gold]"],
+	},
+	
+	{
+		"name": "Fishing Boats",//渔船
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"food": 1,
+		"techRequired": "Fishing",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					
+					"[+1 Gold] <after discovering [Biology]>",
+					"[+1 Food] <after discovering [Pharmaceuticals]>",
+					
+					"Pillaging this improvement yields approximately [+50 Gold]"]
+	},
+	
+	{
+		"name": "Quarry",//采石场
+		"turnsToBuild": 8,
+		"techRequired": "Mining",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					
+					"[+1 Production] <after discovering [Physics]>",
+					"[+1 Production] <after discovering [Mass Production]>",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]"],
+	},
+	
+	{
+		"name": "Plantation",//种植园
+		"gold": 1,
+		"turnsToBuild": 6,
+		"techRequired": "Agriculture",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					
+					"[+1 Food] <after discovering [Biology]>",
+					"[+1 Gold] <after discovering [Agricultural Science]>",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]"],
+	},
+	
+	{
+		"name": "Oil Well",//油井
+		"turnsToBuild": 9,
+		"techRequired": "Refining",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					"Cannot be built on [Water] tiles",
+					
+					"Pillaging this improvement yields approximately [+80 Gold]"],
+	},
+	{
+		"name": "Offshore Platform",//海上油井
+		"techRequired": "Refining",
+		"uniques": ["Resource Improvement",
+					
+					"Can only be built to improve a resource",
+					"Can only be built on [Water] tiles",
+					
+					"Pillaging this improvement yields approximately [+80 Gold]"],
+	},
+	
+	{
+		"name": "Mine",//矿井
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Mining",
+		"uniques": ["Base Improvement",
+					
+					"[+1 Production] <in [Plains] tiles>",
+					"[+1 Production] <in [Desert] tiles>",
+					"[+1 Production] <in [Tundra] tiles>",
+					"[+1 Production] <in [Snow] tiles>",
+					
+					"[+1 Production] <after discovering [Chemistry]>",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]"],
+	},
+	{
+		"name": "Farm",//农场
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Agriculture",
+		"uniques": ["Base Improvement",
+					
+					"Can also be built on tiles adjacent to fresh water",
+					
+					"[+2 Food] <in [Grassland] tiles>",
+					"[+1 Food] <in [Plains] tiles>",
+					"[+1 Food] <in [Desert] tiles>",
+
+					"[+1 Food] <after discovering [Agricultural Science]>",
+					
+					"Pillaging this improvement yields approximately [+40 Gold]"],
+	},
+	
+	{
+		"name": "Lumber Mill",//锯木厂
+		"terrainsCanBeBuiltOn": ["Forest","Jungle"],
+		"production": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Bronze Working",
+		"uniques": ["Base Improvement",
+					
+					"[+1 Production] <after discovering [Metallurgy]>",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]"],
+	},
+	{
+		"name": "Baths",//浴场
+		"terrainsCanBeBuiltOn": ["Geothermal Fissure"],
+		"gold": 1,
+		"culture": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Masonry",
+		"uniques": ["Base Improvement",
+					
+					"Pillaging this improvement yields approximately [+80 Gold]",
+					
+					"[+1 Gold] <after discovering [Sanitation]>",
+					"[+1 Gold] <after adopting [Tourism]>"],
+	},
+
+	{
+		"name": "Trading Post",//贸易站
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Geothermal Fissure","Atoll"],
+		"gold": 2,
+		"turnsToBuild": 7,
+		"uniques": ["Base Improvement",
+					
+					"Pillaging this improvement yields approximately [+100 Gold]",
+					
+					"[+1 Gold] <with [2] to [6] neighboring [Road] tiles>",
+					"[+2 Gold] <with [2] to [6] neighboring [Railroad] tiles>",
+					
+					"[+1 Gold] <after adopting [Guilds]>",
+					"[+1 Gold] <after adopting [Economics]>",
+
+					"Only available <after adopting [Chowk]>"],
+	},
+
+	{
+		"name": "Plantations",//人工林区
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
+		"food": 2,
+		"gold": 2,
+		"turnsToBuild": 7,
+		"uniques": ["Base Improvement",
+					
+					"Pillaging this improvement yields approximately [+80 Gold]",
+					
+					"Provides [-1] [Pollution]",
+
+					"Only available <after adopting [Reforestation]>"],
+	},
+
+	{
+		"name": "Tourist Center",//旅游中心
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 7,
+		"uniques": ["Base Improvement",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+
+					"Only available <after adopting [Tertiary Industry]>"],
+	},
+
+	{
+		"name": "Electrolysis Factory",//电解工厂
+		"terrainsCanBeBuiltOn": ["Ocean"],
+		"production": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Particle Physics",
+		"uniques": ["Base Improvement",
+					
+					"Provides [1] [Deuterium] <when above [2] [Electric Power]>",
+					"Consumes [2] [Electric Power] <when above [2] [Electric Power]>",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]"],
+	},
+	
+//发电
+	{
+		"name": "Coal-fired Plant",//燃煤发电厂
+		"terrainsCanBeBuiltOn": ["Land"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Industrialization",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Provides [3] [Pollution] <when above [1] [Coal]>",
+					"Provides [3] [Electric Power] <when above [1] [Coal]>",
+					"Consumes [1] [Coal] <when above [1] [Coal]>",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]> <when above [1] [Coal]>",],
+	},
+	{
+		"name": "Oil-fired Plant",//燃油发电厂
+		"terrainsCanBeBuiltOn": ["Land"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Refining",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+200 Gold]",
+					
+					"Provides [3] [Pollution] <when above [1] [Oil]>",
+					"Provides [4] [Electric Power] <when above [1] [Oil]>",
+					"Consumes [1] [Oil] <when above [1] [Oil]>",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]> <when above [1] [Oil]>",],
+	},
+	{
+		"name": "Nuclear Fission Plant",//核裂变发电厂
+		"terrainsCanBeBuiltOn": ["Land"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Nuclear Fission",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+250 Gold]",
+					
+					"Provides [1] [Pollution] <when above [1] [Uranium]>",
+					"Provides [5] [Electric Power] <when above [1] [Uranium]>",
+					"Consumes [1] [Uranium] <when above [1] [Uranium]>",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]> <when above [1] [Uranium]>",],
+	},
+	{
+		"name": "Nuclear Fusion Plant",//核聚变发电厂
+		"terrainsCanBeBuiltOn": ["Land"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Nuclear Fusion",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+300 Gold]",
+					
+					"Provides [6] [Electric Power] <when above [1] [Deuterium]>",
+					"Consumes [1] [Deuterium] <when above [1] [Deuterium]>",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]> <when above [1] [Deuterium]>"],
+	},
+
+	{
+		"name": "Solar Plant",//太阳能发电厂
+		"terrainsCanBeBuiltOn": ["Desert", "Plains", "Grassland"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Clean Energy",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Provides [2] [Electric Power]",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
+	},
+	{
+		"name": "Wind Plant",//风力发电厂
+		"terrainsCanBeBuiltOn": ["Hill", "Mountain"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Clean Energy",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Provides [1] [Electric Power]",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
+	},
+	{
+		"name": "Geothermal Plant",//地热发电厂
+		"terrainsCanBeBuiltOn": ["Geothermal Fissure"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Composites",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Provides [3] [Electric Power]",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
+	},
+	{
+		"name": "Tidal Plant",//潮汐发电厂
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Particle Physics",
+		"uniques": ["Base Improvement",
+					"Power Plant",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Provides [1] [Electric Power]",
+					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
+	},
+	
+//城市
+	{
+		"name": "Ancient City",//远古城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"food": 1,
+		"production": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+50 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Production, +1 Food] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Production, +1 Food] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Production, +1 Food] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Ancient era]>"]
+	},
+	{
+		"name": "Classical City",//古典城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 1,
+		"production": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+100 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Production, +1 Culture] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Production, +1 Culture] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Production, +1 Culture] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Classical era]>"]
+	},
+	{
+		"name": "Medieval City",//中古城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 1,
+		"production": 2,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +1 Faith] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Faith] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Faith] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Medieval era]>"]
+	},
+	{
+		"name": "Renaissance City",//文艺复兴城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 2,
+		"production": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+200 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +1 Faith, +1 Culture] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Faith, +1 Culture] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Faith, +1 Culture] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Renaissance era]>"]
+	},
+	{
+		"name": "Enlightenment City",//启蒙城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 2,
+		"faith": 2,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+250 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +1 Culture, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Culture, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Culture, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Enlightenment era]>"]
+	},
+	{
+		"name": "Industrial City",//工业城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 1,
+		"production": 3,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+300 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +2 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +2 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +2 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Industrial era]>"]
+	},
+	{
+		"name": "Modern City",//电气城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 2,
+		"science": 1,
+		"production": 2,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+350 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+2 Gold, +1 Science, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +1 Science, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +1 Science, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Modern era]>"]
+	},
+	{
+		"name": "Atomic City",//原子城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"science": 2,
+		"food": 1,
+		"production": 2,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+400 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +2 Science, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +2 Science, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +2 Science, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Atomic era]>"]
+	},
+	{
+		"name": "Information City",//信息城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 1,
+		"science": 1,
+		"production": 1,
+		"food": 1,
+		"culture": 1,
+		"faith": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+450 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold, +1 Science, +1 Culture, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Science, +1 Culture, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+1 Gold, +1 Science, +1 Culture, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Information era]>"]
+	},
+	{
+		"name": "Fusion City",//聚变城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 2,
+		"science": 2,
+		"culture": 1,
+		"faith": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+500 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+2 Gold, +3 Science] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +3 Science] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +3 Science] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Fusion era]>"]
+	},
+	{
+		"name": "Star City",//星际城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 2,
+		"production": 2,
+		"food": 2,
+		"culture": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+550 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+2 Gold, +1 Science, +1 Culture, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +1 Science, +1 Culture, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +1 Science, +1 Culture, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Star era]>"]
+	},
+	{
+		"name": "Future City",//未来城市
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 3,
+		"science": 1,
+		"production": 2,
+		"culture": 1,
+		"turnsToBuild": 14,
+		"uniques": ["District",
+					"District - City",
+					
+					"Pillaging this improvement yields approximately [+600 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+2 Gold, +2 Culture, +1 Production] <with [2] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +2 Culture, +1 Production] <with [4] to [6] neighboring [District - City] tiles>",
+					"[+2 Gold, +2 Culture, +1 Production] <with [6] to [6] neighboring [District - City] tiles>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+
+					"[+1 Food] for each adjacent [Camp]",
+					"[+1 Food] for each adjacent [Pasture]",
+					"[+1 Food] for each adjacent [Fishing Boats]",
+					"[+1 Food] for each adjacent [Farm]",
+
+					"Only available <starting from the [Future era]>"]
+	},
+	
+//区域
+	{
+		"name": "Holy Site",//圣地
+		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Holy Site",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+30 Faith]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Faith] <with [2] to [6] neighboring [District] tiles>",
+					"[+1 Faith] <with [4] to [6] neighboring [District] tiles>",
+					"[+1 Faith] <with [6] to [6] neighboring [District] tiles>",
+
+					"Only available <after adopting [Astrology]>"]
+	},
+	{
+		"name": "Academy",//学院
+		"terrainsCanBeBuiltOn": ["Land"],
+		"techRequired": "Mathematics",
+		"science": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Academy",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+20 Science]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Science] <with [2] to [6] neighboring [District] tiles>",
+					"[+1 Science] <with [4] to [6] neighboring [District] tiles>",
+					"[+1 Science] <with [6] to [6] neighboring [District] tiles>"]
+	},
+	{
+		"name": "Barracks",//军营
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Barracks",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"Gives a defensive bonus of [100]%",
+					"Gives a defensive bonus of [50]% <with [2] to [6] neighboring [District - Barracks] tiles>",
+					"Adjacent enemy units ending their turn take [15] damage",
+					"Adjacent enemy units ending their turn take [15] damage <with [2] to [6] neighboring [District - Barracks] tiles>",
+
+					"Only available <after adopting [Training]>"]
+	},
+	{
+		"name": "Harbor",//港口
+		"terrainsCanBeBuiltOn": ["Coast","Mangrove","Atoll"],
+		"techRequired": "Astronomy",
+		"gold": 1,
+		"turnsToBuild": 17,
+		"uniques": ["Unbuildable <within [1] tiles of a [Harbor]>",
+					
+					"District",
+					"District - Harbor",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+2 Gold] for each adjacent [District]"]
+	},
+	{
+		"name": "Business Center",//商业中心
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Business Center",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+90 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Gold] <with [2] to [6] neighboring [District] tiles>",
+					"[+1 Gold] <with [4] to [6] neighboring [District] tiles>",
+					"[+1 Gold] <with [6] to [6] neighboring [District] tiles>",
+
+					"Only available <after adopting [Guilds]>"]
+	},
+	{
+		"name": "Entertainment",//娱乐中心
+		"terrainsCanBeBuiltOn": ["Land"],
+		"happiness": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Entertainment",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"Tile provides yield without assigned population",
+					
+					"[+1 Happiness] <with [3] to [6] neighboring [District] tiles>",
+					"[+1 Happiness] <with [6] to [6] neighboring [District] tiles>",
+
+					"Only available <after adopting [Acoustics]>"]
+	},
+	{
+		"name": "Landmark",//风景地标
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Landmark",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+20 Culture]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Culture] <with [2] to [6] neighboring [District] tiles>",
+					"[+1 Culture] <with [4] to [6] neighboring [District] tiles>",
+					"[+1 Culture] <with [6] to [6] neighboring [District] tiles>",
+
+					"Only available <after adopting [Architecture]>"]
+	},
+	{
+		"name": "Industrial Zone",//工业区
+		"terrainsCanBeBuiltOn": ["Land"],
+		"techRequired": "Machinery",
+		"production": 1,
+		"turnsToBuild": 17,
+		"uniques": ["District",
+					"District - Industrial Zone",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"[+1 Production] <with [2] to [6] neighboring [District] tiles>",
+					"[+1 Production] <with [4] to [6] neighboring [District] tiles>",
+					"[+1 Production] <with [6] to [6] neighboring [District] tiles>"]
+	},
+	{
+		"name": "Municipal Square",//市政广场
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 20,
+		"uniques": ["District",
+					"District - Municipal Square",
+					
+					"Removes removable features when built",
+					
+					"Pillaging this improvement yields approximately [+160 Gold]",
+
+					"Gives a defensive bonus of [10]%",
+					
+					"Provides [2] [Policy Point - Development]",
+					"Provides [2] [Policy Point - Military]",
+
+					"Only available <if [Polity ( Lv. I )] is constructed>"]
+	},
+	
+//伟人设施
+	
+	//大艺术家
+	{
+		"name": "Large Sculptures",//大型雕塑
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Initialization",
+		"uniques": ["Great People Improvement",
+					"Great People Improvement(Culture)",
+					
+					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+35 Culture]",
+					
+					"[+2 Culture] for each adjacent [District]",
+					"[+2 Culture] for each adjacent [District - Landmark]"]
+	},
+	
+	//大科学家
+	{
+		"name": "Seminar",//研讨会
+		"terrainsCanBeBuiltOn": ["Land"],
+		"science": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Initialization",
+		"uniques": ["Great People Improvement",
+					"Great People Improvement(Science)",
+					
+					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+70 Gold]",
+					
+					"[+2 Science] for each adjacent [District]",
+					"[+2 Science] for each adjacent [District - Academy]"]
+	},
+	
+	//大商业家
+	{
+		"name": "Trading Station",//商站
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Initialization",
+		"uniques": ["Great People Improvement",
+					"Great People Improvement(Gold)",
+					
+					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+140 Gold]",
+					
+					"[+2 Gold] for each adjacent [District]",
+					"[+2 Gold] for each adjacent [District - Business Center]"]
+	},
+	
+//移除地块
+	{
+		"name": "Remove Road",//移除道路
+		"turnsToBuild": 2,
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Railroad",//移除铁路
+		"turnsToBuild": 2,
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Fallout",//移除核污染
+		"turnsToBuild": 2,
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"]
+	},
+	{
+		"name": "Remove Forest",//移除森林
+		"turnsToBuild": 4,
+		"techRequired": "Pottery",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"],
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	{
+		"name": "Remove Jungle",//移除丛林
+		"turnsToBuild": 4,
+		"techRequired": "Pottery",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"],
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	{
+		"name": "Remove Marsh",//移除沼泽
+		"turnsToBuild": 6,
+		"techRequired": "Bronze Working",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"],
+	},
+	{
+		"name": "Remove Mangrove",//移除红树林
+		"turnsToBuild": 6,
+		"techRequired": "Iron Working",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"],
+	},
+	{
+		"name": "Remove Ice",//移除冰区
+		"turnsToBuild": 8,
+		"techRequired": "Meteorology",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders"],
+	},
+	/*
+	{
+		"name": "Remove Bamboo Forest",//移除竹林
+		"turnsToBuild": 4,
+		"techRequired": "Pottery",
+		"uniques": ["Can be built outside your borders"],
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	*/
+	
+	{
+		"name": "Cancel improvement order",//取消建设设施
+		"uniques": ["Base Improvement",
+					"District",
+					
+					"Can be built outside your borders"],
+	},
+	{
+		"name": "Repair",//修复设施
+		"turnsToBuild": 1,
+        "uniques": ["Base Improvement",
+					"District",
+					
+					"Unbuildable"],
+        "civilopediaText": [{"text":"Repairs a pillaged Improvement or Route"}]
+	},
+	
+//军事设施
+	{
+		"name": "Fort",//堡垒
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow",
+								 "Hill","Forest","Jungle","Marsh","Geothermal Fissure","Flood plains","Oasis"],
+		"turnsToBuild": 8,
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders",
+					
+					"Gives a defensive bonus of [50]%",
+
+					"Only available <after adopting [Fortifications]>"]
+	},
+	{
+		"name": "Trenchs",//堑壕
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow",
+								 "Hill","Forest","Jungle","Marsh","Geothermal Fissure","Flood plains","Oasis"],
+		"turnsToBuild": 8,
+		"techRequired": "Dynamite",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders",
+					
+					"Gives a defensive bonus of [100]%"]
+	},
+	
+//特殊设施
+	{
+		"name": "Road",//道路
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 5,
+		"techRequired": "The Wheel",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders",
+					
+					"Costs [1] [Gold] per turn when in your territory"],
+        "civilopediaText": [
+            {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
+            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
+            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
+        ]
+	},
+	{
+		"name": "Railroad",//铁路
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 5,
+		"techRequired": "Steam Power",
+		"uniques": ["Base Improvement",
+					
+					"Can be built outside your borders",
+					
+					"Costs [2] [Gold] per turn when in your territory"],
+        "civilopediaText": [{"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"}]
+	},
+	
+	{ 
+		"name": "Ancient ruins", //远古遗迹
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable",
+					"Provides a random bonus when entered"]
+	},
+	{ 
+		"name": "City ruins", //城市废墟
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable",
+					"Provides a random bonus when entered"],
+        "civilopediaText": [{"text":"A bleak reminder of the destruction wreaked by War"}]
+	},
+	{ 
+		"name": "City center", //城市中心
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable",
+					"Irremovable",
+
+					"District",
+					"District - City",
+					"Great Improvement",
+
+					"[+1 Production, +1 Food] for each adjacent [Ancient City] <after adopting [Town]>",
+					"[+1 Production, +1 Culture] for each adjacent [Classical City] <after adopting [Town]>",
+					"[+1 Gold, +1 Faith] for each adjacent [Medieval City] <after adopting [Town]>",
+					"[+1 Gold, +1 Faith, +1 Culture] for each adjacent [Renaissance City] <after adopting [Town]>",
+					"[+1 Gold, +1 Culture, +1 Production] for each adjacent [Enlightenment City] <after adopting [Town]>",
+					"[+1 Gold, +2 Production] for each adjacent [Industrial City] <after adopting [Town]>",
+					"[+2 Gold, +1 Science, +1 Production] for each adjacent [Modern City] <after adopting [Town]>",
+					"[+1 Gold, +2 Science, +1 Production] for each adjacent [Atomic City] <after adopting [Town]>",
+					"[+1 Gold, +1 Science, +1 Culture, +1 Production] for each adjacent [Information City] <after adopting [Town]>",
+					"[+2 Gold, +3 Science] for each adjacent [Fusion City] <after adopting [Town]>",
+					"[+2 Gold, +1 Science, +1 Culture, +1 Production] for each adjacent [Star City] <after adopting [Town]>",
+					"[+2 Gold, +1 Culture, +2 Production] for each adjacent [Future City] <after adopting [Town]>",
+
+					"[+1 Faith] for each adjacent [District - Holy Site] <after adopting [Town]>",
+					"[+1 Science] for each adjacent [District - Academy] <after adopting [Town]>",
+					"[+1 Gold] for each adjacent [District - Harbor] <after adopting [Town]>",
+					"[+1 Gold] for each adjacent [District - Business Center] <after adopting [Town]>",
+					"[+1 Happiness] for each adjacent [District - Entertainment] <after adopting [Town]>",
+					"[+1 Culture] for each adjacent [District - Landmark] <after adopting [Town]>",
+					"[+1 Production] for each adjacent [District - Industrial Zone] <after adopting [Town]>",
+					"[+1 Happiness] for each adjacent [District - Municipal Square] <after adopting [Town]>",],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+	{
+		"name": "Barbarian encampment",//蛮族营地
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniqueTo": "Barbarian",
+		"turnsToBuild": 2,
+		"uniques": ["Unpillagable",
+					"Can be built outside your borders"],
+        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+	},
+	
+	
+	
+//文明特色
+	
+	
+	{
+		"name": "Palgum",//沟渠
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniqueTo": "Babylon",
+		"turnsToBuild": 12,
+		"techRequired": "The Wheel",
+		"uniques": ["Base Improvement",
+					
+					"Unbuildable <within [1] tiles of a [Palgum]>",
+					"Can only be built on [Fresh water] tiles",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"Produced for adjacent '[City]' [district] [+1 Food, +1 Production]",
+					"Produced for adjacent '[Farm]' [improvement] [+1 Food]"],
+	},
+	
+	{
+		"name": "Sphinx",//狮身人面像
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","Flood plains"],
+		"uniqueTo": "Egypt",
+		"turnsToBuild": 7,
+		"techRequired": "Masonry",
+		"uniques": ["Base Improvement",
+					
+					"[+1 Faith, +1 Culture]",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Faith] for each adjacent [Natural Wonder]",
+					
+					"[+1 Culture] <after adopting [Archaeology]>",
+					"[+2 Gold] <after adopting [Tourism]>",
+					
+					"Provides [1] [Tourism Performance]"],
+	},
+	
+	{
+		"name": "Stele",//石碑
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"uniqueTo": "Ethiopia",
+		"turnsToBuild": 7,
+		"techRequired": "Masonry",
+		"uniques": ["Base Improvement",
+					
+					"[+2 Faith, +1 Culture]",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Culture] <after adopting [Archaeology]>"],
+	},
+	
+	{
+		"name": "Commercial Bank",//商业银行
+		"terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","Flood plains"],
+		"uniqueTo": "America",
+		"turnsToBuild": 20,
+		"uniques": ["District",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+3 Gold] for each adjacent [District - City]",
+
+					"Only available <after adopting [Banking]>"],
+	},
+	
+	{
+		"name": "Terrace Farm",//梯田
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"food": 2,
+		"turnsToBuild": 7,
+		"techRequired": "Pottery",
+		"uniques": ["Base Improvement",
+					
+					"Cannot be built on [Bonus resource] tiles",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+1 Food] for each adjacent [Terrace Farm]",
+					"[+1 Gold] for each adjacent [Fresh water]",
+					"[+1 Production] for each adjacent [Mountain]"]
+	},
+	{
+		"name": "Blessing - Food",//恩赐 - 食物
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Mountain"],
+		"food": 2,
+		"turnsToBuild": 10,
+		"techRequired": "Pottery",
+		"uniques": ["Blessing",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Food] for each adjacent [Blessing - Food]",
+					"[+2 Production] for each adjacent [Blessing - Production]",
+					"[+2 Gold] for each adjacent [Blessing - Gold]",
+					"[+2 Culture] for each adjacent [Blessing - Culture]",
+					"[+2 Faith] for each adjacent [Blessing - Faith]"]
+	},
+	{
+		"name": "Blessing - Production",//恩赐 - 产能
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Mountain"],
+		"production": 2,
+		"turnsToBuild": 10,
+		"techRequired": "Pottery",
+		"uniques": ["Blessing",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Food] for each adjacent [Blessing - Food]",
+					"[+2 Production] for each adjacent [Blessing - Production]",
+					"[+2 Gold] for each adjacent [Blessing - Gold]",
+					"[+2 Culture] for each adjacent [Blessing - Culture]",
+					"[+2 Faith] for each adjacent [Blessing - Faith]"]
+	},
+	{
+		"name": "Blessing - Gold",//恩赐 - 金钱
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Mountain"],
+		"gold": 2,
+		"turnsToBuild": 10,
+		"techRequired": "Pottery",
+		"uniques": ["Blessing",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Food] for each adjacent [Blessing - Food]",
+					"[+2 Production] for each adjacent [Blessing - Production]",
+					"[+2 Gold] for each adjacent [Blessing - Gold]",
+					"[+2 Culture] for each adjacent [Blessing - Culture]",
+					"[+2 Faith] for each adjacent [Blessing - Faith]"]
+	},
+	{
+		"name": "Blessing - Culture",//恩赐 - 文化
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Mountain"],
+		"culture": 2,
+		"turnsToBuild": 10,
+		"techRequired": "Pottery",
+		"uniques": ["Blessing",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Food] for each adjacent [Blessing - Food]",
+					"[+2 Production] for each adjacent [Blessing - Production]",
+					"[+2 Gold] for each adjacent [Blessing - Gold]",
+					"[+2 Culture] for each adjacent [Blessing - Culture]",
+					"[+2 Faith] for each adjacent [Blessing - Faith]"]
+	},
+	{
+		"name": "Blessing - Faith",//恩赐 - 信仰
+		"uniqueTo": "Inca",
+		"terrainsCanBeBuiltOn": ["Mountain"],
+		"faith": 2,
+		"turnsToBuild": 10,
+		"techRequired": "Pottery",
+		"uniques": ["Blessing",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+2 Food] for each adjacent [Blessing - Food]",
+					"[+2 Production] for each adjacent [Blessing - Production]",
+					"[+2 Gold] for each adjacent [Blessing - Gold]",
+					"[+2 Culture] for each adjacent [Blessing - Culture]",
+					"[+2 Faith] for each adjacent [Blessing - Faith]"]
+	},
+	
+	{
+		"name": "Moai",//摩艾石像
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniqueTo": "Polynesia",
+		"turnsToBuild": 7,
+		"techRequired": "Masonry",
+		"uniques": ["Base Improvement",
+					
+					"[+1 Culture]",
+					
+					"Can only be built on [Coastal] tiles",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+1 Culture] for each adjacent [Moai]",
+					
+					"[+2 Culture] <after adopting [Archaeology]>",
+					"[+1 Gold] <after adopting [Tourism]>"],
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+]

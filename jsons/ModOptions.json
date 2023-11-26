@@ -1,0 +1,35 @@
+{
+	"isBaseRuleset":true,
+	
+	"constants":{
+		"maxXPfromBarbarians":2147483647,
+		
+		"cityStrengthBase": 10,
+		"cityStrengthPerPop": 1,
+		
+		"unitSupplyPerPopulation":0.8,
+		
+		"unitUpgradeCost":{},
+	
+		"minimalCityDistance": 2,
+		"minimalCityDistanceOnDifferentContinents": 2,
+		
+		"naturalWonderCountMultiplier":0.2,
+		"naturalWonderCountAddedConstant":0.5,
+		
+		"ancientRuinCountMultiplier":0.05,
+		
+		"maxLakeSize":18,
+		
+		"riverCountMultiplier":0.08,
+		"minRiverLength":6,
+		"maxRiverLength":512,
+		
+		"pantheonBase":20,
+		"pantheonGrowth":5
+	},
+	
+	"uniques": ["Allow City States to spawn with additional units",
+				"Allow raze holy city",
+				"Allow raze capital"]
+}

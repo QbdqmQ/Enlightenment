@@ -1,0 +1,1399 @@
+[
+	//基础效果
+	
+	{
+		"name": "Basic Promotion - All",//基础效果 - 所有
+		"uniques": ["Heal this unit by [5] HP <upon defeating a [All] unit>",
+					"This Unit gains the [Whets] promotion <upon defeating a [All] unit>"],
+		"column": 1,
+		"row": 1
+	},
+	{
+		"name": "Basic Promotion - Land",//基础效果 - 陆地
+		"uniques": ["Heal this unit by [20] HP <upon being promoted>",
+					
+					"[1] Movement point cost to disembark <in [Harbor] tiles>",
+					"[2] Movement point cost to embark <in [Harbor] tiles>",
+					
+					"[+50]% Strength <for [Melee] units> <vs cities> <when adjacent to a [Siege Tower] unit>",
+					
+					"[+10]% Strength when stacked with [Logisticians]",
+					
+					"[+1] Movement <in [District - City] tiles> <for [Military] units>"],
+		"column": 1,
+		"row": 2
+	},
+	{
+		"name": "Basic Promotion - Water",//基础效果 - 水上
+		"uniques": ["Heal this unit by [10] HP <upon being promoted>",
+					
+					"[+10]% Strength when stacked with [Water Logisticians]"],
+		"column": 1,
+		"row": 3
+	},
+	{
+		"name": "Basic Promotion - Air",//基础效果 - 空中
+		"uniques": ["Heal this unit by [10] HP <upon being promoted>"],
+		"column": 1,
+		"row": 4
+	},
+	{
+		"name": "Whets",//磨砺
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
+					"[+2]% Strength"],
+		"column": 1,
+		"row": 5
+	},
+	
+	//文明能力
+	
+	{
+		"name": "Foreign Wars",//对外战争
+		"uniques": ["[+20]% Strength <when below [50] HP> <when defending>",
+					"[+5] HP when healing <when above [50] HP>"],
+		"column": 2,
+		"row": 1
+	},
+	{
+		"name": "Combat Experience",//作战经验
+		"uniques": ["[+20]% XP gained from combat"],
+		"column": 2,
+		"row": 2
+	},
+	{
+		"name": "'[Askia]' ability",//阿斯基亚能力
+		"uniques": ["Heal this unit by [8] HP <upon ending a turn in a [Desert] tile>",],
+		"column": 2,
+		"row": 3
+	},
+	{
+		"name": "Boost Morale",//振奋军心
+		"uniques": ["[+10]% Strength <when below [50] HP>",
+					"[+20]% Strength <when below [40] HP>",
+					"[+30]% Strength <when below [30] HP>",
+					"Heals [50] damage if it kills a unit <when below [20] HP>"],
+		"column": 2,
+		"row": 4
+	},
+	{
+		"name": "Huáscar",//金缆绳
+		"uniques": ["Can pass through impassable tiles",
+					"Heal this unit by [50] HP <upon ending a turn in a [Mountain] tile>",
+					"Can build [Blessing] improvements on tiles"],
+		"column": 2,
+		"row": 5
+	},
+	{
+		"name": "Flower",//鲜花
+		"uniques": ["[+1] population in a random city <upon defeating a [{Land} {Melee}] unit>"],
+		"column": 2,
+		"row": 6
+	},
+	
+	{
+		"name": "Barbarian ability",//蛮族能力
+		"uniques": ["May capture killed [All] units",
+					"[-20]% Strength <when defending> <during the [Ancient era]>",
+					"[-1] Movement <for [Cavalry] units> <during the [Ancient era]>"],
+		"column": 2,
+		"row": 100
+	},
+	
+	//伟人
+	
+	{
+		"name": "Nurturing - I",//培育 - I
+		"uniques": [],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 1
+	},
+	{
+		"name": "Nurturing - II",//培育 - II
+		"prerequisites": ["Nurturing - I"],
+		"uniques": [],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 2
+	},
+	{
+		"name": "Nurturing - III",//培育 - III
+		"prerequisites": ["Nurturing - II"],
+		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. II )]>"],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 3
+	},
+	{
+		"name": "Nurturing - IV",//培育 - IV
+		"prerequisites": ["Nurturing - III"],
+		"uniques": [],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 4
+	},
+	{
+		"name": "Nurturing - V",//培育 - V
+		"prerequisites": ["Nurturing - IV"],
+		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. III )]>"],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 5
+	},
+
+	{
+		"name": "Working",//工作
+		"prerequisites": ["Nurturing - I"],
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes":   ["Great People"],
+		"column": 3,
+		"row": 6
+	},
+	
+	//外物给予
+	{
+		"name": "Martyrdom",//殉道
+		"uniques": ["Earn [50]% of the damage done to [non-air] units as [Faith]"],
+		"column": 4,
+		"row": 1
+	},
+	{
+		"name": "Civil Engineer",//土木工程师
+		"uniques": ["[-25]% tile improvement construction time"],
+		"column": 4,
+		"row": 2
+	},
+	{
+		"name": "Morale",//士气昂扬
+		"uniques": ["[+15]% Strength"],
+		"column": 4,
+		"row": 3
+	},
+	{
+		"name": "Admonition Dogma",//教条训诫
+        "uniques": ["[+2] Sight",
+					"Ignores terrain cost"],
+		"column": 4,
+		"row": 4
+	},
+	{
+		"name": "Devout",//虔诚
+        "uniques": ["Can Spread Religion <[+1] additional time(s)>",
+					"[+50]% Spread Religion Strength"],
+		"column": 4,
+		"row": 5
+	},
+	{
+		"name": "Missionary Zeal",//传教热忱
+        "uniques": ["Can Spread Religion <[+1] additional time(s)>",
+					"[+100]% Spread Religion Strength"],
+		"column": 4,
+		"row": 6
+	},
+	{
+		"name": "Siberia",//西伯利亚
+        "uniques": ["Can build [Road] improvements on tiles",
+					"Can build [Fort] improvements on tiles"],
+		"column": 4,
+		"row": 7
+	},
+	{
+		"name": "Rejuvenation",//返老还童
+		"uniques": ["All healing effects doubled"],
+		"column": 4,
+		"row": 8
+	},
+	{
+		"name": "Crisscrossing Hills",//纵横丘陵
+		"uniques": ["Double movement in [Hill]",
+					"[+15]% Strength <in [Hill] tiles>"],
+		"column": 4,
+		"row": 9
+	},
+	{
+		"name": "Ordine Ospedaliero",//医院骑士团
+		"uniques": ["All adjacent units heal [+10] HP when healing"],
+		"column": 4,
+		"row": 10
+	},
+	{
+		"name": "Deutscher Orden",//条顿骑士团
+		"uniques": ["[+15]% Strength <when adjacent to a [Knights] unit>"],
+		"column": 4,
+		"row": 11
+	},
+	{
+		"name": "Ordre du Temple",//圣殿骑士团
+		"uniques": ["Can Spread Religion <[+2] additional time(s)>",
+					"Removes other religions when spreading religion"],
+		"column": 4,
+		"row": 12
+	},
+	{
+		"name": "Fanatic Knights",//狂热骑士团
+		"uniques": ["[+50]% XP gained from combat"],
+		"column": 4,
+		"row": 13
+	},
+	{
+		"name": "Glorious Knights",//光荣骑士团
+		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Faith]"],
+		"column": 4,
+		"row": 14
+	},
+	
+	//单位
+	{
+		"name": "Investigation",//侦查
+		"uniques": ["Ignores terrain cost"],
+		"column": 5,
+		"row": 1
+	},
+	{
+		"name": "'[Cossack]' ability",//哥萨克骑兵能力
+		"uniques": ["[+50]% Strength <vs [Wounded] units>"],
+		"column": 5,
+		"row": 2
+	},
+	{
+		"name": "Command",//指挥
+		"uniques": ["[Great General] is earned [+50]% faster"],
+		"column": 5,
+		"row": 3
+	},
+	{
+		"name": "'[Janissary]' ability",//苏丹亲兵能力
+		"uniques": ["Heals [50] damage if it kills a unit",
+					"[+15]% Strength <when attacking>"],
+		"column": 5,
+		"row": 4
+	},
+	{
+		"name": "Looting Caravan",//抢掠商队
+		"uniques": ["Earn [125]% of killed [All] unit's [Strength] as [Gold]"],
+		"column": 5,
+		"row": 5
+	},
+	{
+		"name": "'[B-17]' ability",//B-17能力
+		"uniques": ["Damage taken from interception reduced by [-20]%",
+					"[+20]% Strength <vs cities>"],
+		"column": 5,
+		"row": 6
+	},
+	{
+		"name": "Eagle & Jaguar",//雄鹰 & 美洲虎
+		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>",
+					"[+33]% Strength <when fighting in [Jungle] tiles>",
+					"Double movement in [Forest]",
+					"Double movement in [Jungle]",
+					"Heals [25] damage if it kills a unit",
+					"Heals [50] damage if it kills a unit <when below [50] HP>"],
+		"column": 5,
+		"row": 7
+	},
+	{
+		"name": "Haka War Dance",//哈卡战舞
+		"uniques": ["[-15]% Strength for enemy [Land] units in adjacent [All] tiles"],
+		"column": 5,
+		"row": 8
+	},
+	
+	//编制
+	
+	{
+		"name": "Squads",//班
+		"prerequisites": [],
+		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+					"[+10]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+2]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 1
+	},
+	{
+		"name": "Platoons",//排
+		"prerequisites": ["Squads"],
+		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+					"[+10]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+2]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 2
+	},
+	{
+		"name": "Companies",//连
+		"prerequisites": ["Platoons"],
+		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+					"[+10]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+3]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 3
+	},
+	{
+		"name": "Battalions",//营
+		"prerequisites": ["Companies"],
+		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+					"[+10]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+3]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 4
+	},
+	{
+		"name": "Regiments",//团
+		"prerequisites": ["Battalions"],
+		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+					"[+15]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+4]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 5
+	},
+	{
+		"name": "Brigades",//旅
+		"prerequisites": ["Regiments"],
+		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+					"[+15]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+4]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 6
+	},
+	{
+		"name": "Divisions",//师
+		"prerequisites": ["Brigades"],
+		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+					"[+15]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+5]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 7
+	},
+	{
+		"name": "Corps",//军
+		"prerequisites": ["Divisions"],
+		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+					"[+15]% XP gained from combat",
+					"[+1] XP gained from combat",
+					"[+5]% Strength"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'"
+						],
+		"column": 6,
+		"row": 8
+	},
+	
+	//通用 - 全部
+	
+	{
+		"name": "Alert",//警戒
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 1
+	},
+	{
+		"name": "Besiege",//攻坚
+		"prerequisites": ["Companies"],
+		"uniques": ["[+50]% Strength <vs cities>",
+					"[-35]% Strength <vs cities> <for [Land 'Melee' 'Cavalry'] units>",
+					"[-20]% Strength <vs cities> <for [Land 'Ordnance'] units>",
+					"[-20]% Strength <vs cities> <for [Land 'Support'] units>",
+					"[-20]% Strength <vs cities> <for [Water 'Support'] units>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 2
+	},
+	{
+		"name": "Mobility",//机动能力
+		"prerequisites": ["Companies"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 3
+	},
+	{
+		"name": "Blitzkrieg",//闪击
+		"prerequisites": ["Regiments"],
+		"uniques": ["[+1] Movement",
+					"Cannot be intercepted <for [Air] units> <when above [85] HP>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 4
+	},
+	{
+		"name": "Ambush",//伏击
+		"prerequisites": ["Battalions"],
+		"uniques": ["[+20]% Strength <for [non-air] units> <when above [95] HP>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 5
+	},
+	{
+		"name": "Logistics",//后勤补给
+		"prerequisites": ["Regiments"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 6
+	},
+	{
+		"name": "Promotion - [Awarded Ranks]",//授勋
+		"prerequisites": ["Squads"],
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
+					
+            		"Only available <after adopting [Ranks]>",
+					"This Unit gains the [Awarded Ranks] promotion"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 7,
+		"row": 7
+	},
+	{
+		"name": "Awarded Ranks",//授勋
+		"uniques": ["[+1]% Strength <for [50] turns>"],
+		"column": 7,
+		"row": 8
+	},
+	
+	//通用 - 陆地
+	
+	{
+		"name": "Cover",//隐蔽
+		"prerequisites": ["Squads"],
+		"uniques": ["[+15]% Strength <when defending> <vs [Ranged] units>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Test"
+						],
+		"column": 8,
+		"row": 1
+	},
+	{
+		"name": "Amphibious",//两栖作战
+		"prerequisites": ["Platoons"],
+		"uniques": ["Eliminates combat penalty for attacking over a river",
+					"Eliminates combat penalty for attacking across a coast"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Test"
+						],
+		"column": 8,
+		"row": 2
+	},
+	{
+		"name": "Air Defence",//防空
+		"prerequisites": ["Companies"],
+		"uniques": ["[+25]% Strength <when defending> <vs [Air] units>"],
+		"unitTypes":   ["Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Test"
+						],
+		"column": 8,
+		"row": 3
+	},
+	{
+		"name": "March",//长途行军
+		"prerequisites": ["Regiments"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Test"
+						],
+		"column": 8,
+		"row": 4
+	},
+	
+	//通用 - 海军
+	
+	{
+		"name": "Armor Plating",//船体装甲
+		"prerequisites": ["Squads"],
+		"uniques": ["[+15]% Strength <when defending>",
+					"[+15]% Strength <when attacking> <for [Melee] units>"],
+		"unitTypes":   ["Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Test"
+						],
+		"column": 9,
+		"row": 1
+	},
+	{
+		"name": "Supply",//海上补给
+		"prerequisites": ["Battalions"],
+		"uniques": ["May heal outside of friendly territory",
+					"[+15] HP when healing <in [Foreign Land] tiles>"],
+		"unitTypes":   ["Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Test"
+						],
+		"column": 9,
+		"row": 2
+	},
+	
+	//通用 - 空军
+	
+	{
+		"name": "Targeted Strikes",//定点打击
+		"prerequisites": ["Squads"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
+						"Test"],
+		"column": 10,
+		"row": 1
+	},
+	{
+		"name": "Evasion",//战术躲避
+		"prerequisites": ["Platoons"],
+		"uniques": ["Damage taken from interception reduced by [-50]%"],
+		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
+						"Test"],
+		"column": 10,
+		"row": 2
+	},
+	{
+		"name": "Operational Range",//航程拓展
+		"prerequisites": ["Companies"],
+		"uniques": ["[+2] Range"],
+		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
+						"Test"],
+		"column": 10,
+		"row": 3
+	},
+	{
+		"name": "Air Repair",//空中维修
+		"prerequisites": ["Battalions"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
+						"Test"],
+		"column": 10,
+		"row": 4
+	},
+	
+	//通用 - 近战
+	
+	{
+		"name": "Plier-shaped",//钳形攻势
+		"prerequisites": ["Companies"],
+		"uniques": ["[+50]% to Flank Attack bonuses"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'",
+						"Land 'Melee' 'Armored'",
+						"Water 'Melee' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'",
+						"Water 'Melee' 'Armored'",
+						"Test"
+						],
+		"column": 11,
+		"row": 1
+	},
+	{
+		"name": "Pounce",//奇袭
+		"prerequisites": ["Battalions"],
+		"uniques": ["[+50]% Strength <when above [98] HP>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'",
+						"Land 'Melee' 'Armored'",
+						"Water 'Melee' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'",
+						"Water 'Melee' 'Armored'",
+						"Test"
+						],
+		"column": 11,
+		"row": 2
+	},
+	
+	//通用 - 远程
+	
+	{
+		"name": "Extended Range",//射程拓展
+		"prerequisites": ["Companies"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Land 'Ranged' 'Cold weapon'",
+						"Land 'Ranged' 'Hot weapon'",
+						"Land 'Ranged' 'Cavalry'",
+						"Land 'Ranged' 'Armored'",
+						"Water 'Ranged' 'Cold weapon'",
+						"Water 'Ranged' 'Hot weapon'",
+						"Water 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 12,
+		"row": 1
+	},
+	{
+		"name": "Indirect Fire",//间瞄射击
+		"prerequisites": ["Battalions"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes":   ["Land 'Ranged' 'Cold weapon'",
+						"Land 'Ranged' 'Hot weapon'",
+						"Land 'Ranged' 'Cavalry'",
+						"Land 'Ranged' 'Armored'",
+						"Water 'Ranged' 'Cold weapon'",
+						"Water 'Ranged' 'Hot weapon'",
+						"Water 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 12,
+		"row": 2
+	},
+	
+	//通用 - 军械/支援
+	
+	{
+		"name": "Suppression",//压制
+		"prerequisites": ["Squads"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
+						"Test"],
+		"column": 13,
+		"row": 1
+	},
+	{
+		"name": "Attack Reinforcements",//围点打援
+		"prerequisites": ["Companies"],
+		"uniques": ["Blast radius [1]",
+					"[+10]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
+						"Test"],
+        "civilopediaText": [{"text":"Encircle an enemy post in order to attack reinforcements coming to its aid"}],
+		"column": 13,
+		"row": 2
+	},
+	{
+		"name": "'[Scorched Earth]' ability",//焦土策略
+		"prerequisites": ["Companies"],
+		"uniques": ["Only available <after adopting [Scorched Earth]>",
+					"Destroys tile improvements when attacking",
+					"[+10]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
+						"Test"],
+		"column": 13,
+		"row": 3
+	},
+	
+	//陆地 - 近战/远程
+	
+	{
+		"name": "Choke Points",//咽喉要道
+		"prerequisites": ["Squads"],
+		"uniques": ["[+25]% Strength <when defending> <in [Marsh] tiles>",
+					"[+10]% Strength <when defending> <in [Jungle] tiles>",
+					"[+10]% Strength <when defending> <in [Forest] tiles>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 1
+	},
+	{
+		"name": "Urban Warfare",//城市战
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+15]% Strength <when fighting in [District] tiles>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 2
+	},
+	{
+		"name": "Military Doctor",//军医
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+5] HP when healing",
+					"All adjacent units heal [+5] HP when healing"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 3
+	},
+	{
+		"name": "Forest Shuttle",//林间穿梭
+		"prerequisites": ["Companies"],
+		"uniques": ["Double movement in [Forest]",
+					"Double movement in [Jungle]"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 4
+	},
+	{
+		"name": "Guerrilla",//游击
+		"prerequisites": ["Battalions"],
+		"uniques": ["Ignores Zone of Control <in [Forest] tiles>",
+					"Ignores Zone of Control <in [Jungle] tiles>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 5
+	},
+	{
+		"name": "Trench",//堑壕战
+		"prerequisites": ["Battalions"],
+		"uniques": ["[+10]% Strength <when defending>",
+					"[+15]% Strength <when defending> <in [Trenchs] tiles>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"
+						],
+		"column": 14,
+		"row": 6
+	},
+	
+	//陆地 - 近战
+	
+	{
+		"name": "Drill",//操练
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
+						"Test"],
+		"column": 15,
+		"row": 1
+	},
+	{
+		"name": "Shock",//冲击
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
+						"Test"],
+		"column": 15,
+		"row": 2
+	},
+	{
+		"name": "Formation",//列阵
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+15]% Strength <when adjacent to a [{Land} {Melee}] unit>"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
+						"Test"],
+		"column": 15,
+		"row": 3
+	},
+	
+	//陆地 - 远程
+	
+	{
+		"name": "Accuracy",//精准
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+		"unitTypes":   ["Land 'Ranged' 'Cold weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"],
+		"column": 16,
+		"row": 1
+	},
+	{
+		"name": "Salvo",//齐射
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+		"unitTypes":   ["Land 'Ranged' 'Cold weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Test"],
+		"column": 16,
+		"row": 2
+	},
+	
+	//陆地 - 骑兵/装甲
+	
+	{
+		"name": "Encirclement",//围剿
+		"prerequisites": ["Squads"],
+		"uniques": ["[+25]% to Flank Attack bonuses",
+					"[+15]% Strength <when adjacent to a [Cavalry] unit> <for [Land 'Melee' 'Cavalry'] units>",
+					"[+15]% Strength <when adjacent to a [Cavalry] unit> <for [Land 'Ranged' 'Cavalry'] units>",
+					"[+15]% Strength <when adjacent to a [Armored] unit> <for [Land 'Melee' 'Armored'] units>",
+					"[+15]% Strength <when adjacent to a [Armored] unit> <for [Land 'Ranged' 'Armored'] units>"],
+		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 17,
+		"row": 1
+	},
+	{
+		"name": "Looting",//劫掠
+		"prerequisites": ["Platoons"],
+		"uniques": ["No movement cost to pillage"],
+		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 17,
+		"row": 2
+	},
+	{
+		"name": "Pursuit",//追击
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+25]% Strength <when attacking> <vs [Wounded] units>"],
+		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 17,
+		"row": 3
+	},
+	{
+		"name": "Fleeing",//逃窜
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+1] Movement <when below [15] HP>"],
+		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 17,
+		"row": 4
+	},
+	{
+		"name": "Charge Fiercely",//猛烈冲锋
+		"prerequisites": ["Battalions"],
+		"uniques": ["[+50]% Strength <when attacking> <when above [98] HP>",
+					"[+1] Movement <when above [98] HP>"],
+		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 17,
+		"row": 5
+	},
+	
+	//陆地 - 装甲
+	
+	{
+		"name": "Repair",//修复
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+10] HP when healing"],
+		"unitTypes":   ["Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Test"
+						],
+		"column": 18,
+		"row": 1
+	},
+	{
+		"name": "Reactive Armor",//反应装甲
+		"prerequisites": ["Companies"],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Test"],
+		"column": 18,
+		"row": 2
+	},
+	
+	//水上 - 近战
+	
+	{
+		"name": "Boarding Party",//接舷
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <vs [Water] units>"],
+		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'",
+						"Water 'Melee' 'Armored'",
+						"Test"
+						],
+		"column": 19,
+		"row": 1
+	},
+	{
+		"name": "Coastal Raider",//海掠
+		"prerequisites": ["Squads"],
+		"uniques": ["Earn [50]% of the damage done to [Water] units as [Gold]",
+					"Earn [50]% of killed [Water] unit's [Strength] as [Gold]"],
+		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'",
+						"Water 'Melee' 'Armored'",
+						"Test"
+						],
+		"column": 19,
+		"row": 2
+	},
+	{
+		"name": "Landing Party",//抢滩登陆
+		"prerequisites": ["Platoons"],
+		"uniques": ["Eliminates combat penalty for attacking across a coast",
+					"[+10]% Strength <when fighting in [Coastal] tiles>"],
+		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'",
+						"Water 'Melee' 'Armored'",
+						"Test"
+						],
+		"column": 19,
+		"row": 3
+	},
+	
+	//水上 - 远程
+	
+	{
+		"name": "Targeting",//定位
+		"prerequisites": ["Squads"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes":   ["Water 'Ranged' 'Cold weapon'",
+						"Water 'Ranged' 'Hot weapon'",
+						"Water 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 20,
+		"row": 1
+	},
+	{
+		"name": "Coincidence Rangefinding",//测距一致
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes":   ["Water 'Ranged' 'Cold weapon'",
+						"Water 'Ranged' 'Hot weapon'",
+						"Water 'Ranged' 'Armored'",
+						"Test"
+						],
+		"column": 20,
+		"row": 2
+	},
+	
+	//水上 - 航空母舰
+	
+	{
+		"name": "Flight Deck",//飞行甲板
+		"prerequisites": [],
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes":   ["Water 'Aircraft Carrier'",
+						"Test"],
+		"column": 21,
+		"row": 1
+	},
+	{
+		"name": "Aircraft Depot",//航母机库
+		"prerequisites": ["Flight Deck"],
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes":   ["Water 'Aircraft Carrier'",
+						"Test"],
+		"column": 21,
+		"row": 2
+	},
+	{
+		"name": "Folding Wing Aircraft",//折翼装载
+		"prerequisites": ["Aircraft Depot"],
+		"uniques": ["Can carry [1] extra [Aircraft] units"],
+		"unitTypes":   ["Water 'Aircraft Carrier'",
+						"Test"],
+		"column": 21,
+		"row": 3
+	},
+	{
+		"name": "Scout Aircraft",//侦察机
+		"prerequisites": ["Platoons"],
+		"uniques": ["[+2] Sight"],
+		"unitTypes":   ["Water 'Aircraft Carrier'",
+						"Test"],
+		"column": 21,
+		"row": 4
+	},
+	
+	//空中 - 战斗机
+	
+	{
+		"name": "Dogfighting",//缠斗
+		"prerequisites": ["Squads"],
+		"uniques": ["[+33]% Strength when performing Air Sweep",
+					"Damage taken from interception reduced by [-20]%"],
+		"unitTypes":   ["Air 'Fighter'",
+						"Test"],
+		"column": 22,
+		"row": 1
+	},
+	{
+		"name": "Interception",//拦截
+		"prerequisites": ["Squads"],
+		"uniques": ["[+20]% chance to intercept air attacks",
+					"[+20]% Damage when intercepting"],
+		"unitTypes":   ["Air 'Fighter'",
+						"Test"],
+		"column": 22,
+		"row": 2
+	},
+	{
+		"name": "Sortie",//连续出击
+		"prerequisites": ["Companies"],
+		"uniques": ["[+1] extra interceptions may be made per turn"],
+		"unitTypes":   ["Air 'Fighter'",
+						"Test"],
+		"column": 22,
+		"row": 3
+	},
+	
+	//空中 - 轰炸机
+	
+	{
+		"name": "Bombing",//轰炸
+		"prerequisites": ["Squads"],
+		"uniques": ["[+10]% Strength <when attacking>"],
+		"unitTypes":   ["Air 'Bomber'",
+						"Test"],
+		"column": 23,
+		"row": 1
+	},
+	{
+		"name": "Aviation Torpedoes",//航空鱼雷
+		"prerequisites": ["Companies"],
+		"uniques": ["[+10]% Strength <vs [Water] units> <when attacking>"],
+		"unitTypes":   ["Air 'Bomber'",
+						"Test"],
+		"column": 23,
+		"row": 2
+	},
+	
+	//空中 - 导弹
+	
+	{
+		"name": "Anti-tank",//反坦
+		"prerequisites": [],
+		"uniques": ["[+50]% Strength <vs [Land 'Melee' 'Armored'] units>",
+					"[+50]% Strength <vs [Land 'Ranged' 'Armored'] units>"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 1
+	},
+	{
+		"name": "Anti-aircraft",//反空
+		"prerequisites": [],
+		"uniques": ["[+50]% Strength <vs [Air] units>"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 2
+	},
+	{
+		"name": "Anti-missile",//反导
+		"prerequisites": [],
+		"uniques": ["[+75]% Strength <vs [Air 'Missile'] units>"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 3
+	},
+	{
+		"name": "Anti-submarine",//反潜
+		"prerequisites": [],
+		"uniques": ["[+50]% Strength <vs [Submarines] units>"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 4
+	},
+	{
+		"name": "Anti-ship",//反舰
+		"prerequisites": [],
+		"uniques": ["[+50]% Strength <vs [Water] units>"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 5
+	},
+	{
+		"name": "Propulsion Unit",//推进装置
+		"prerequisites": ["Anti-tank","Anti-aircraft","Anti-missile","Anti-submarine","Anti-ship"],
+		"uniques": ["[+3] Range"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 6
+	},
+	{
+		"name": "New Type Charge",//新型装药
+		"prerequisites": ["Anti-tank","Anti-aircraft","Anti-missile","Anti-submarine","Anti-ship"],
+		"uniques": ["[+100]% Strength",
+					"Blast radius [2]"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 7
+	},
+	{
+		"name": "Qian Xuesen Ballistic",//钱学森弹道
+		"prerequisites": ["Propulsion Unit","New Type Charge"],
+		"uniques": ["Cannot be intercepted",
+					"[+2] Range"],
+		"unitTypes":   ["Air 'Missile'",
+						"Test"],
+		"column": 24,
+		"row": 8
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+]
