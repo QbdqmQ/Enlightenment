@@ -57,7 +57,7 @@
     {
         "name": "Interstellar Victory",//星际胜利
         "milestones": [
-            "Add all [Spaceship Parts] in capital"
+            "Add all [Spaceship part] in capital"
         ],
         "requiredSpaceshipParts": [
             "SS Engine", "SS Stasis Chamber", "SS Cockpit", "SS Booster", "SS Booster", "SS Booster"

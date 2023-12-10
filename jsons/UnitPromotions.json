@@ -44,6 +44,35 @@
 		"column": 1,
 		"row": 5
 	},
+	{
+		"name": "Promotion - [Awarded Ranks]",//授勋
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
+					
+            		"Only available <after adopting [Ranks]>",
+					"This Unit gains the [Awarded Ranks] promotion"],
+		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
+						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
+						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
+						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
+						"Land 'Ordnance'", "Land 'Support'",
+						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
+						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
+						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
+						"Water 'Support'",
+						"Water 'Aircraft Carrier'",
+						"Air 'Fighter'",
+						"Air 'Bomber'",
+						"Test"
+						],
+		"column": 1,
+		"row": 6
+	},
+	{
+		"name": "Awarded Ranks",//授勋
+		"uniques": ["[+1]% Strength <for [50] turns>"],
+		"column": 1,
+		"row": 7
+	},
 	
 	//文明能力
 	
@@ -159,7 +188,7 @@
 	},
 	{
 		"name": "Civil Engineer",//土木工程师
-		"uniques": ["[-25]% tile improvement construction time"],
+		"uniques": ["[-25]% construction time for [District] improvements"],
 		"column": 4,
 		"row": 2
 	},
@@ -241,6 +270,18 @@
 		"column": 4,
 		"row": 14
 	},
+	{
+		"name": "Alliances - Almaty",//同盟 - 阿拉木图
+		"uniques": ["Can build [Fortification] improvements on tiles"],
+		"column": 4,
+		"row": 15
+	},
+	{
+		"name": "Alliances - Cahokia",//同盟 - 卡霍基亚
+		"uniques": ["Can build [Cahokia Mounds] improvements on tiles"],
+		"column": 4,
+		"row": 16
+	},
 	
 	//单位
 	{
@@ -304,7 +345,7 @@
 	{
 		"name": "Squads",//班
 		"prerequisites": [],
-		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+		"uniques": ["This Unit gains [4] XP <upon being promoted>",
 					"[+10]% XP gained from combat",
 					"[+1] XP gained from combat",
 					"[+2]% Strength"],
@@ -327,7 +368,7 @@
 	{
 		"name": "Platoons",//排
 		"prerequisites": ["Squads"],
-		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+		"uniques": ["This Unit gains [5] XP <upon being promoted>",
 					"[+10]% XP gained from combat",
 					"[+1] XP gained from combat",
 					"[+2]% Strength"],
@@ -350,10 +391,10 @@
 	{
 		"name": "Companies",//连
 		"prerequisites": ["Platoons"],
-		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+		"uniques": ["This Unit gains [6] XP <upon being promoted>",
 					"[+10]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+3]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -373,10 +414,10 @@
 	{
 		"name": "Battalions",//营
 		"prerequisites": ["Companies"],
-		"uniques": ["This Unit gains [10] XP <upon being promoted>",
+		"uniques": ["This Unit gains [7] XP <upon being promoted>",
 					"[+10]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+3]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -396,10 +437,10 @@
 	{
 		"name": "Regiments",//团
 		"prerequisites": ["Battalions"],
-		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+		"uniques": ["This Unit gains [8] XP <upon being promoted>",
 					"[+15]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+4]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -419,10 +460,10 @@
 	{
 		"name": "Brigades",//旅
 		"prerequisites": ["Regiments"],
-		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+		"uniques": ["This Unit gains [9] XP <upon being promoted>",
 					"[+15]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+4]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -442,10 +483,10 @@
 	{
 		"name": "Divisions",//师
 		"prerequisites": ["Brigades"],
-		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+		"uniques": ["This Unit gains [10] XP <upon being promoted>",
 					"[+15]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+5]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -465,10 +506,10 @@
 	{
 		"name": "Corps",//军
 		"prerequisites": ["Divisions"],
-		"uniques": ["This Unit gains [15] XP <upon being promoted>",
+		"uniques": ["This Unit gains [11] XP <upon being promoted>",
 					"[+15]% XP gained from combat",
 					"[+1] XP gained from combat",
-					"[+5]% Strength"],
+					"[+2]% Strength"],
 		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
 						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
 						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
@@ -618,36 +659,6 @@
 						],
 		"column": 7,
 		"row": 6
-	},
-	{
-		"name": "Promotion - [Awarded Ranks]",//授勋
-		"prerequisites": ["Squads"],
-		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
-					
-            		"Only available <after adopting [Ranks]>",
-					"This Unit gains the [Awarded Ranks] promotion"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
-		"column": 7,
-		"row": 7
-	},
-	{
-		"name": "Awarded Ranks",//授勋
-		"uniques": ["[+1]% Strength <for [50] turns>"],
-		"column": 7,
-		"row": 8
 	},
 	
 	//通用 - 陆地

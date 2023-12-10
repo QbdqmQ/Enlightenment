@@ -86,7 +86,6 @@
 		"movement": 2,
 		"cost": 106,
 		"uniques": ["Founds a new city",
-					"Requires at least [2] population",
 					"Excess Food converted to Production when under construction"],
 	},
 	
@@ -98,7 +97,8 @@
 		"uniques": ["Can build [Base Improvement] improvements on tiles",
 					"Can build [Resource Improvement] improvements on tiles",
 					"May create improvements on water resources",
-					"Can instantly construct a [Farm] improvement <once>"],
+					"Can instantly construct a [Farm] improvement <once>",
+					"Gain [248] [Gold] (modified by game speed) <by consuming this unit>"],
 	},
     {
 		"name": "City Designer",//城市设计员
@@ -483,13 +483,13 @@
 		"uniques": ["Great Person - [Production]",
 					"Unbuildable",
 					
-					"[-50]% tile improvement construction time",
+					"[-50]% construction time for [All] improvements",
 					"Can build [District] improvements on tiles",
 					"Can build [Base Improvement] improvements on tiles",
 					"Can build [Resource Improvement] improvements on tiles"],
 	},
 	{
-		"name": "Great Prophet",//大先知
+		"name": "Great Prophet",//大预言家
 		"unitType": "Great People",
 		"movement": 3,
 		"religiousStrength": 3000,

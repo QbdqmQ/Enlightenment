@@ -1,0 +1,324 @@
+[
+    {
+        "name":"A 01 [About Enlightenment]",
+        "civilopediaText":[
+            { 
+                "text": "Mod Version: [0.0.1]",
+                "size":15
+            },
+            { 
+                "text": "Enlightenment is a large ruleset developed by me (QbdqmQ) and my friends.",
+                "size":20
+            },
+            {
+                "text": "The mod adds an extremely large number of new units, buildings, improvements and more!",
+                "size":20
+            },
+            {
+                "text": "There are also many new settings, such as urban planning.",
+                "size":20
+            },
+            {
+                "text": "If you like my mod, please go to the mod page and click on the stars!",
+                "link":"https://github.com/QbdqmQ/Enlightenment",
+                "size":20,
+                "starred":true,
+                "color":"#FFFF00"
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            }
+        ]
+    },
+    {
+        "name":"B 01 [City-states Type]",
+        "civilopediaText":[
+            {
+                "text":"Militaristic City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"Provides military units every ≈[17] turns",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era reduces the value by [1]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"Provides military units every ≈[13] turns",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era reduces the value by [1]]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Cultured City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"+6 Culture",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [3]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"+12 Culture",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [6]]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Religious City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"+4 Faith",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [4]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"+8 Faith",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [8]]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Industrial City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"[+3 Production] [in capital]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"[+3 Production] [in capital]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
+                "size":18
+            },
+            {
+                "text":"[+1 Production] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[Starting from the '[Ancient era]'], [per [2] era increases the value by [1]]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Scientific City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"[+2 Science] [in capital]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"[+2 Science] [in capital]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
+                "size":18
+            },
+            {
+                "text":"[+1 Science] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [1]]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Mercantile City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"+3 Gold",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [3]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"+6 Gold",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [6]]",
+                "size":18
+            },
+            {
+                "text":"[+1 Gold] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
+                "size":18
+            },
+            {
+                "text":"Provides a unique luxury",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Agricultural City-states Effect",
+                "size":22
+            },
+            {
+                "text":"Friend Bonus",
+                "size":20,
+                "color":"#00EE00"
+            },
+            {
+                "text":"[+1 Food] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [1]]",
+                "size":18
+            },
+            {
+                "text":"Ally Bonus",
+                "size":20,
+                "color":"#1E90FF"
+            },
+            {
+                "text":"[+1 Food] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Ancient era]'], [per [1] era increases the value by [1]]",
+                "size":18
+            },
+            {
+                "text":"+1 Happiness",
+                "size":18
+            },
+            {
+                "text":"[During the '[Ancient era]' and '[Enlightenment era]'], [per [1] era increases the value by [1]]",
+                "size":18
+            },
+            {
+                "text":"[+1 Happiness] [in all cities]",
+                "size":18
+            },
+            {
+                "text":"[After the '[Industrial era]'], [per [1] era increases the value by [1]]",
+                "size":18
+            },
+        ],
+    }
+]

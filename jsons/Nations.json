@@ -548,16 +548,16 @@
 		"innerColor": [000,054,255],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+50]% Strength <when attacking> <for [All] units>",
-					"[-50]% Strength <when defending> <for [All] units>",
+		"uniques": ["[+25]% Strength <when attacking> <for [All] units>",
+					"[-25]% Strength <when defending> <for [All] units>",
 					"[+20]% [Gold] from Trade Routes",
 					
 					"[+1 Happiness, +1 Faith] [in all non-occupied cities] <if [Leader - David Ben-Gurion] is constructed>",
 					"[-1 Faith] [in capital] <before founding a Pantheon> <if [Leader - David Ben-Gurion] is constructed>",
 					
-					"[+50]% Strength <when attacking> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>",
-					"[-50]% Strength <when defending> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
-		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+50]% Strength] [when attacking]] \n * ['[All]' [units] [[-50]% Strength] [when defending]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
+					"[+25]% Strength <when attacking> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>",
+					"[-25]% Strength <when defending> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
+		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+25]% Strength] [when attacking]] \n * ['[All]' [units] [[-25]% Strength] [when defending]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
 		
 		"cities":  ["Yerushalayim","Hebron","Jericho","Sidon","Bethlehem","Tyre","Nazareth","Kadesh","Zeboim","Admah",
             		"Gaza","Megiddo","Nineveh","Gomorrah","Avaris"]
@@ -819,7 +819,7 @@
 					"[+2 Gold] from all [Gold] buildings <if [Leader - Franklin Roosevelt] is constructed>",
 					
 					"[+1 Happiness] from every [District - City] <if [Leader - Abraham Lincoln] is constructed>"],
-		"uniqueText": " [Manifest Destiny]: \n * ['[Military]' [units] [when at war] [[+1] Sight]] \n * [All cities] [[-33]% Gold cost of acquiring tiles] ",
+		"uniqueText": " [Manifest Destiny]: \n * [When at war], ['[Military]' [units] [[+1] Sight]] \n * [All cities] [[-33]% Gold cost of acquiring tiles] ",
 		
 		"cities":  ["Washington","New York","Boston","Philadelphia","Atlanta","Chicago","Seattle","San Francisco","Los Angeles","Houston",
 					"Portland","St. Louis","Miami","Buffalo","Detroit","New Orleans","Baltimore","Denver","Cincinnati","Dallas",
@@ -1080,44 +1080,759 @@
 					"Tikopia","Emae","Kapingamarangi","Takuu","Nukuoro","Sikaiana","Anuta","Nuguria","Pileni","Nukumanu"]
 	},
 	
+//城邦
+	
+	//军事型
+	
 	{
-		"name": "Rio de Janeiro",
-		"adjective": ["Carioca"],
-		"cityStateType": "Maritime",
-		"startBias": ["Coast"],
+		"name": "Daliang",
+		"adjective": ["Daliang"],
+		"cityStateType": "Daliang",
 
-		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
-		"attacked": "You can see how fruitless this will be for you... right?",
-		"defeated": "May God grant me these last wishes - peace and prosperity for Brazil.",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
 		"outerColor": [0, 0, 0],
-		"innerColor": [211, 220, 103],
-		"cities": ["Rio de Janeiro"]
-	},
-	{
-		"name": "Sydney",
-		"adjective": ["Sydney"],
-		"cityStateType": "Maritime",
-
-		"declaringWar": "After thorough deliberation, Australia finds itself at a crossroads. Prepare yourself, for war is upon us.",
-		"attacked": "We will mobilize every means of resistance to stop this transgression against our nation!",
-		"defeated": "The principles for which we have fought will survive longer than any nation you could ever build.",
-		"outerColor": [0, 0, 0],
-		"innerColor": [255,204,204],
-		"cities": ["Sydney"]
+		"innerColor": [255,0,0],
+		"cities": ["Daliang"]
 	},
 	{
 		"name": "Ur",
 		"adjective": ["Ur"],
-		"cityStateType": "Maritime",
-		"startBias": ["Coast"],
+		"cityStateType": "Ur",
 
-		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
-		"attacked": "Why do we fight? Because Inanna demands it. Now, witness the power of the Sumerians!",
-		"defeated": "What treachery has struck us? No, what evil?",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
 		"outerColor": [0, 0, 0],
-		"innerColor": [255,69,0],
+		"innerColor": [255,0,0],
 		"cities": ["Ur"]
 	},
+	{
+		"name": "Kabul",
+		"adjective": ["Kabul"],
+		"cityStateType": "Kabul",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Kabul"]
+	},
+	{
+		"name": "Valletta",
+		"adjective": ["Valletta"],
+		"cityStateType": "Valletta",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Valletta"]
+	},
+	{
+		"name": "Granada",
+		"adjective": ["Granada"],
+		"cityStateType": "Granada",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Granada"]
+	},
+	{
+		"name": "Nazarjam",
+		"adjective": ["Nazarjam"],
+		"cityStateType": "Nazarjam",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Nazarjam"]
+	},
+	{
+		"name": "Lahore",
+		"adjective": ["Lahore"],
+		"cityStateType": "Lahore",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Lahore"]
+	},
+	{
+		"name": "Almaty",
+		"adjective": ["Almaty"],
+		"cityStateType": "Almaty",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Almaty"]
+	},
+	{
+		"name": "Belgrade",
+		"adjective": ["Belgrade"],
+		"cityStateType": "Belgrade",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Belgrade"]
+	},
+	{
+		"name": "Volyn",
+		"adjective": ["Volyn"],
+		"cityStateType": "Volyn",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Volyn"]
+	},
+	{
+		"name": "Sidon",
+		"adjective": ["Sidon"],
+		"cityStateType": "Sidon",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,0,0],
+		"cities": ["Sidon"]
+	},
+	
+	//文化型
+	
+	{
+		"name": "Preslav",
+		"adjective": ["Preslav"],
+		"cityStateType": "Preslav",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Preslav"]
+	},
+	{
+		"name": "Zhaoge",
+		"adjective": ["Zhaoge"],
+		"cityStateType": "Zhaoge",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Zhaoge"]
+	},
+	{
+		"name": "Kumasi",
+		"adjective": ["Kumasi"],
+		"cityStateType": "Kumasi",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Kumasi"]
+	},
+	{
+		"name": "Moenjo Daro",
+		"adjective": ["Moenjo Daro"],
+		"cityStateType": "Moenjo Daro",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Moenjo Daro"]
+	},
+	{
+		"name": "Nanmadur",
+		"adjective": ["Nanmadur"],
+		"cityStateType": "Nanmadur",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Nanmadur"]
+	},
+	{
+		"name": "Vilnius",
+		"adjective": ["Vilnius"],
+		"cityStateType": "Vilnius",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Vilnius"]
+	},
+	{
+		"name": "Antananarivo",
+		"adjective": ["Antananarivo"],
+		"cityStateType": "Antananarivo",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Antananarivo"]
+	},
+	{
+		"name": "Rapa Nui",
+		"adjective": ["Rapa Nui"],
+		"cityStateType": "Rapa Nui",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Rapa Nui"]
+	},
+	{
+		"name": "Florence",
+		"adjective": ["Florence"],
+		"cityStateType": "Florence",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Florence"]
+	},
+	{
+		"name": "Kuala Lumpur",
+		"adjective": ["Kuala Lumpur"],
+		"cityStateType": "Kuala Lumpur",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Kuala Lumpur"]
+	},
+	{
+		"name": "Quebec",
+		"adjective": ["Quebec"],
+		"cityStateType": "Quebec",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Quebec"]
+	},
+	{
+		"name": "Milan",
+		"adjective": ["Milan"],
+		"cityStateType": "Milan",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [139,96,255],
+		"cities": ["Milan"]
+	},
+	
+	//文化型
+	
+	{
+		"name": "Cahokia",
+		"adjective": ["Cahokia"],
+		"cityStateType": "Cahokia",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Cahokia"]
+	},
+	{
+		"name": "Jerusalem",
+		"adjective": ["Jerusalem"],
+		"cityStateType": "Jerusalem",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Jerusalem"]
+	},
+	{
+		"name": "Kandy",
+		"adjective": ["Kandy"],
+		"cityStateType": "Kandy",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Kandy"]
+	},
+	{
+		"name": "Travolta",
+		"adjective": ["Travolta"],
+		"cityStateType": "Travolta",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Travolta"]
+	},
+	{
+		"name": "Yerevan",
+		"adjective": ["Yerevan"],
+		"cityStateType": "Yerevan",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Yerevan"]
+	},
+	{
+		"name": "Vatican",
+		"adjective": ["Vatican"],
+		"cityStateType": "Vatican",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Vatican"]
+	},
+	{
+		"name": "Bratislava",
+		"adjective": ["Bratislava"],
+		"cityStateType": "Bratislava",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Bratislava"]
+	},
+	{
+		"name": "Lhasa",
+		"adjective": ["Lhasa"],
+		"cityStateType": "Lhasa",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255,255,255],
+		"cities": ["Lhasa"]
+	},
+	
+	//工业型
+	
+	{
+		"name": "Panzhihua",
+		"adjective": ["Panzhihua"],
+		"cityStateType": "Panzhihua",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Panzhihua"]
+	},
+	{
+		"name": "Buenos Aires",
+		"adjective": ["Buenos Aires"],
+		"cityStateType": "Buenos Aires",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Buenos Aires"]
+	},
+	{
+		"name": "Brussels",
+		"adjective": ["Brussels"],
+		"cityStateType": "Brussels",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Brussels"]
+	},
+	{
+		"name": "Oakland",
+		"adjective": ["Oakland"],
+		"cityStateType": "Oakland",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Oakland"]
+	},
+	{
+		"name": "Cardiff",
+		"adjective": ["Cardiff"],
+		"cityStateType": "Cardiff",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Cardiff"]
+	},
+	{
+		"name": "Mexico City",
+		"adjective": ["Mexico City"],
+		"cityStateType": "Mexico City",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [144,78,30],
+		"cities": ["Mexico City"]
+	},
+	
+	//科研型
+	
+	{
+		"name": "Linzi",
+		"adjective": ["Linzi"],
+		"cityStateType": "Linzi",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Linzi"]
+	},
+	{
+		"name": "Geneva",
+		"adjective": ["Geneva"],
+		"cityStateType": "Geneva",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Geneva"]
+	},
+	{
+		"name": "Hatusha",
+		"adjective": ["Hatusha"],
+		"cityStateType": "Hatusha",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Hatusha"]
+	},
+	{
+		"name": "Palenque",
+		"adjective": ["Palenque"],
+		"cityStateType": "Palenque",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Palenque"]
+	},
+	{
+		"name": "Bologna",
+		"adjective": ["Bologna"],
+		"cityStateType": "Bologna",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Bologna"]
+	},
+	{
+		"name": "Taluka",
+		"adjective": ["Taluka"],
+		"cityStateType": "Taluka",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [30,144,255],
+		"cities": ["Taluka"]
+	},
+	
+	//商业型
+	
+	{
+		"name": "Chinchew",
+		"adjective": ["Chinchew"],
+		"cityStateType": "Chinchew",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Chinchew"]
+	},
+	{
+		"name": "Hong Kong",
+		"adjective": ["Hong Kong"],
+		"cityStateType": "Hong Kong",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Hong Kong"]
+	},
+	{
+		"name": "Macao",
+		"adjective": ["Macao"],
+		"cityStateType": "Macao",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Macao"]
+	},
+	{
+		"name": "Singapore",
+		"adjective": ["Singapore"],
+		"cityStateType": "Singapore",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Singapore"]
+	},
+	{
+		"name": "Zanzibar",
+		"adjective": ["Zanzibar"],
+		"cityStateType": "Zanzibar",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Zanzibar"]
+	},
+	{
+		"name": "Hamsa",
+		"adjective": ["Hamsa"],
+		"cityStateType": "Hamsa",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Hamsa"]
+	},
+	{
+		"name": "Antwerp",
+		"adjective": ["Antwerp"],
+		"cityStateType": "Antwerp",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Antwerp"]
+	},
+	{
+		"name": "Genia",
+		"adjective": ["Genia"],
+		"cityStateType": "Genia",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Genia"]
+	},
+	{
+		"name": "Tyre",
+		"adjective": ["Tyre"],
+		"cityStateType": "Tyre",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Tyre"]
+	},
+	{
+		"name": "Vancouver",
+		"adjective": ["Vancouver"],
+		"cityStateType": "Vancouver",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [255, 216, 0],
+		"cities": ["Vancouver"]
+	},
+	
+	//商业型
+	
+	{
+		"name": "Ying",
+		"adjective": ["Ying"],
+		"cityStateType": "Ying",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Ying"]
+	},
+	{
+		"name": "Cape Town",
+		"adjective": ["Cape Town"],
+		"cityStateType": "Cape Town",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Cape Town"]
+	},
+	{
+		"name": "Loulan",
+		"adjective": ["Loulan"],
+		"cityStateType": "Loulan",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Loulan"]
+	},
+	{
+		"name": "Rio de Janeiro",
+		"adjective": ["Rio de Janeiro"],
+		"cityStateType": "Rio de Janeiro",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Rio de Janeiro"]
+	},
+	{
+		"name": "Manila",
+		"adjective": ["Manila"],
+		"cityStateType": "Manila",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Manila"]
+	},
+	{
+		"name": "Mogadishu",
+		"adjective": ["Mogadishu"],
+		"cityStateType": "Mogadishu",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Mogadishu"]
+	},
+	{
+		"name": "Sydney",
+		"adjective": ["Sydney"],
+		"cityStateType": "Sydney",
+
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"outerColor": [0, 0, 0],
+		"innerColor": [56, 255, 112],
+		"cities": ["Sydney"]
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 /*
 	#####模板#####

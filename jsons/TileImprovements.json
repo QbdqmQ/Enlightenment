@@ -161,7 +161,7 @@
 
 	{
 		"name": "Trading Post",//贸易站
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Geothermal Fissure","Atoll"],
+		"terrainsCanBeBuiltOn": ["Land","Atoll"],
 		"gold": 2,
 		"turnsToBuild": 7,
 		"uniques": ["Base Improvement",
@@ -1079,6 +1079,7 @@
 								 "Hill","Forest","Jungle","Marsh","Geothermal Fissure","Flood plains","Oasis"],
 		"turnsToBuild": 8,
 		"uniques": ["Base Improvement",
+					"Fortification",
 					
 					"Can be built outside your borders",
 					
@@ -1093,6 +1094,7 @@
 		"turnsToBuild": 8,
 		"techRequired": "Dynamite",
 		"uniques": ["Base Improvement",
+					"Fortification",
 					
 					"Can be built outside your borders",
 					
@@ -1188,6 +1190,20 @@
         "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
 	},
 	
+//城邦特色
+	
+	{
+		"name": "Cahokia Mounds",//卡霍基亚土丘
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniqueTo": "Cahokia",
+		"turnsToBuild": 5,
+		"techRequired": "Initialization",
+		"uniques": ["Base Improvement",
+					
+					"[+1 Happiness, +2 Faith]",
+					
+					"Pillaging this improvement yields approximately [+20 Faith]"],
+	},
 	
 	
 //文明特色

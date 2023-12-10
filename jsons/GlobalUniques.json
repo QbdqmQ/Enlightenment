@@ -15,7 +15,7 @@
 		"[+1 Culture] from every [Forest] <after adopting [Sacred Path]>",
         "[+1 Culture] from every [Jungle] <after adopting [Sacred Path]>",
 		
-		"[+2 Faith, +1 Production, +2 Food] from every [Mountain] <after adopting [Mountain Settlements]>",
+		"[+1 Faith, +1 Production, +2 Food] from every [Mountain] <after adopting [Mountain Settlements]>",
 		
 		"[+1 Production] from every [Marsh] <after adopting [Fukuzawa Sentient Beings]>",
 		"[+1 Production] from every [Oasis] <after adopting [Fukuzawa Sentient Beings]>",
@@ -145,6 +145,8 @@
 		"[+180]% maintenance costs <during the [Fusion era]>",
 		"[+220]% maintenance costs <during the [Star era]>",
 		"[+260]% maintenance costs <during the [Future era]>",
+		
+		"[-50]% to Flank Attack bonuses",
 		
 	//政策
 		

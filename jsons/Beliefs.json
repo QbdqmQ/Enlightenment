@@ -21,7 +21,7 @@
 	{
         "name": "Mountain Settlements",//山间民居
         "type": "Pantheon",
-        "uniques": ["'[Mountain]' [tiles] [+2 Faith, +1 Production, +2 Food]"]
+        "uniques": ["'[Mountain]' [tiles] [+1 Faith, +1 Production, +2 Food]"]
     },
 	{
         "name": "Fukuzawa Sentient Beings",//福泽众生
@@ -71,7 +71,7 @@
 	{
         "name": "Harvest Ceremony",//丰产仪式
         "type": "Pantheon",
-        "uniques": ["'[Civilian]' [units] [+1 Movement] [in '[Friendly Land]' [tiles]]"]
+        "uniques": ["'[Civilian]' [units] [[+1] Movement] [in '[Friendly Land]' [tiles]]"]
     },
 	{
         "name": "Religious Settlers",//宗教移民
@@ -84,7 +84,7 @@
         "name": "God of Plenty",//丰饶之神
         "type": "Pantheon",
         "uniques": ["[After discovering '[Relevant]'], [Provide [1] '[Relevant]']",
-                    "Example: [After discovering '[Animal Husbandry]'], [Provide [1] '[Horses]']"]
+                    "Example: [[After discovering '[Animal Husbandry]'], [Provide [1] '[Horses]']]"]
     },
 	{
         "name": "God of River",//大河水神
