@@ -3,7 +3,7 @@
         "name":"A 01 [About Enlightenment]",
         "civilopediaText":[
             { 
-                "text": "Mod Version: [0.0.1]",
+                "text": "Mod Version: [0.0.3]",
                 "size":15
             },
             { 
@@ -30,6 +30,62 @@
                 "color":"#FFFFFF",
                 "size":1
             }
+        ]
+    },
+    {
+        "name":"A 02 [Changelog]",
+        "civilopediaText":[
+            { 
+                "text": "Mod Version: [0.0.3]",
+                "size":15
+            },
+            { 
+                "text": "Add 'Special Force' and 'Digitization Force'",
+                "size":20
+            },
+            { 
+                "text": "Modify 'Belgrade' ability",
+                "size":20
+            },
+            { 
+                "text": "Cancel could raze holy city & capital",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.0.2]",
+                "size":15
+            },
+            { 
+                "text": "Fixed and balanced 'Khmer' abilities",
+                "size":20
+            },
+            { 
+                "text": "Balanced 'Tobacco' effect",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.0.1]",
+                "size":15
+            },
+            { 
+                "text": "Posted",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
         ]
     },
     {

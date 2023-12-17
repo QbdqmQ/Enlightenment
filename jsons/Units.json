@@ -663,12 +663,46 @@
 	{
 		"name": "Skirmisher",//散兵
 		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Special Force",
 		"movement": 3,
 		"range": 1,
 		"strength": 40,
 		"rangedStrength": 39,
 		"cost": 365,
 		"requiredTech": "Rifling",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Special Force",//特种部队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Digitization Force",
+		"movement": 3,
+		"range": 1,
+		"strength": 50,
+		"rangedStrength": 49,
+		"cost": 565,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Stealth",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Digitization Force",//数字化部队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 3,
+		"range": 1,
+		"strength": 80,
+		"rangedStrength": 79,
+		"cost": 565,
+		"requiredTech": "Stealth",
 		"uniques": ["Explorations",
 					
 					"Can move after attacking"],

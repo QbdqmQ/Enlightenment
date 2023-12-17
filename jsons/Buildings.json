@@ -3089,7 +3089,7 @@
 					"Destroyed when the city is captured",
 					"Only available <in cities with a [Palace]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Monasteries of the King]: \n * ['[Holy Site]' [district] [+1 Food] from each [1] adjacent '[River]' [tiles]]"
+		"replacementTextForUniques": " \n [Monasteries of the King]: \n * ['[Holy Site]' [district] [+1 Food] from each [2] adjacent '[River]' [tiles]]"
 	},
 	{
 		"name": "Prasat",//高棉庙堂

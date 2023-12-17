@@ -429,16 +429,13 @@
 		"innerColor": [254,129,019],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+1 Food] from every [Fresh water]",
-					"[+2 Faith] from every [District] <in [Fresh water] tiles>",
+		"uniques": ["[+1 Food] from every [Fresh Water]",
+					"[+2 Faith] from every [District] <in [Fresh Water] tiles>",
 					
-					"[+1 Food] from every [District - Holy Site] <with [1] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
-					"[+1 Food] from every [District - Holy Site] <with [2] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
-					"[+1 Food] from every [District - Holy Site] <with [3] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
-					"[+1 Food] from every [District - Holy Site] <with [4] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
-					"[+1 Food] from every [District - Holy Site] <with [5] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>",
-					"[+1 Food] from every [District - Holy Site] <with [6] to [6] neighboring [Fresh water] tiles> <if [Leader - Jayavarman VII] is constructed>"],
-		"uniqueText": " [Grand Barays]: \n * ['[Fresh water]' [tiles] [+1 Food]] \n * ['[District]' [improvement] [+1 Food] [in [Fresh water] tiles]] ",
+					"[+1 Food] from every [District - Holy Site] <with [2] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [4] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
+					"[+1 Food] from every [District - Holy Site] <with [6] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>"],
+		"uniqueText": " [Grand Barays]: \n * ['[Fresh Water]' [tiles] [+1 Food]] \n * ['[District]' [improvement] [+1 Food] [in [Fresh Water] tiles]] ",
 		
 		"cities":  ["Angkor Wat","Hariharalya","Yaodharapura","Mahendraparvata","Vimayapura","Indrapura","Lingapura","Preah Vihear","Bhavapura","Kompong Svay",
 					"Nagara Jayasri","Vyadhapura","Chaturmukha","Dviradapura","Rajavihara","Amarendrapura","Phanom Rung","Isvarapura","Muang Tam","Angkor Borei",
@@ -550,6 +547,7 @@
 		"uniqueName": "Unique Ability",
 		"uniques": ["[+25]% Strength <when attacking> <for [All] units>",
 					"[-25]% Strength <when defending> <for [All] units>",
+					"[+75]% Strength <vs [Civilian] units> <for [All] units>",
 					"[+20]% [Gold] from Trade Routes",
 					
 					"[+1 Happiness, +1 Faith] [in all non-occupied cities] <if [Leader - David Ben-Gurion] is constructed>",
@@ -557,7 +555,7 @@
 					
 					"[+25]% Strength <when attacking> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>",
 					"[-25]% Strength <when defending> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
-		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+25]% Strength] [when attacking]] \n * ['[All]' [units] [[-25]% Strength] [when defending]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
+		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+25]% Strength] [when attacking]] \n * ['[All]' [units] [[-25]% Strength] [when defending]] \n * ['[All]' [units] [[+75]% Strength] [when vs '[Civilian]' units]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
 		
 		"cities":  ["Yerushalayim","Hebron","Jericho","Sidon","Bethlehem","Tyre","Nazareth","Kadesh","Zeboim","Admah",
             		"Gaza","Megiddo","Nineveh","Gomorrah","Avaris"]

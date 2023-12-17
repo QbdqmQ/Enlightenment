@@ -257,9 +257,7 @@
             "Provides military units every ≈[8] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[7] turns <starting from the [Star era]> <hidden from users>"],
         "allyBonusUniques": [
-            "Provides military units every ≈[6] turns",
-            "Provides military units every ≈[6] turns",
-            "Provides military units every ≈[6] turns"],
+            "Provides military units every ≈[3] turns"],
         "color": [255, 0, 0]
     },
     {
