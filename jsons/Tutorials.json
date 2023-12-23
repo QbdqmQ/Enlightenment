@@ -3,7 +3,7 @@
         "name":"A 01 [About Enlightenment]",
         "civilopediaText":[
             { 
-                "text": "Mod Version: [0.0.3]",
+                "text": "Mod Version: [0.1.0]",
                 "size":15
             },
             { 
@@ -36,19 +36,65 @@
         "name":"A 02 [Changelog]",
         "civilopediaText":[
             { 
+                "text": "Mod Version: [0.1.0]",
+                "size":15
+            },
+            { 
+                "text": "Modified:\n    'District - City'\n   'Improvement'\n   'Worker' & 'City Designer'",
+                "size":20
+            },
+            { 
+                "text": "Balanced:\n   Maintenance\n   Limiting population growth\n   'Shennongjia'",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.0.4]",
+                "size":15
+            },
+            { 
+                "text": "Added:\n    'Airborne'\n   'Troubadour'\n   'Orchestra'\n   'Rock Band'",
+                "size":20
+            },
+            { 
+                "text": "Fixed:\n    0 faithCost of 'Great Person'\n    'Great Politician' can provide unlimited policy points\n    Negative stat due to electricity-consuming buildings",
+                "size":20
+            },
+            { 
+                "text": "Balanced:\n   'Khmer'\n   Specialists greatPersonPoints\n   'Summer Palace'\n   'Grand Temple'",
+                "size":20
+            },
+            { 
+                "text": "Increased:\n   TechCost of 'Fusion era' & 'Star era' & 'Future era'\n   PantheonCost",
+                "size":20
+            },
+            { 
+                "text": "Reduced:\n   Probability of river generation",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
                 "text": "Mod Version: [0.0.3]",
                 "size":15
             },
             { 
-                "text": "Add 'Special Force' and 'Digitization Force'",
+                "text": "Added:\n    'Special Force'\n   'Digitization Force'",
                 "size":20
             },
             { 
-                "text": "Modify 'Belgrade' ability",
+                "text": "Modified: 'Belgrade'",
                 "size":20
             },
             { 
-                "text": "Cancel could raze holy city & capital",
+                "text": "Canceled: Allow raze holy city & capital",
                 "size":20
             },
             {
@@ -61,11 +107,11 @@
                 "size":15
             },
             { 
-                "text": "Fixed and balanced 'Khmer' abilities",
+                "text": "Fixed and balanced: 'Khmer'",
                 "size":20
             },
             { 
-                "text": "Balanced 'Tobacco' effect",
+                "text": "Balanced: 'Tobacco'",
                 "size":20
             },
             {

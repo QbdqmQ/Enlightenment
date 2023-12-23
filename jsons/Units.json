@@ -70,6 +70,475 @@
 					"Only available <if [Project - Interstellar] is constructed>"]
 	},
 	
+//工人
+    {
+		"name": "Base Worker",//基础工人
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 999999999,
+		"uniques": ["Worker",
+					"Unbuildable",
+					"Cannot move",
+					
+					"Can transform to [Resource Worker I]",
+					"Can transform to [Power Plant Worker I]",
+					"Can transform to [Remove Worker I]",
+					"Can transform to [Building Worker I]",
+					"Can transform to [Engineering Worker I]",
+					
+					"Can transform to [Resource Worker II]",
+					"Can transform to [Power Plant Worker II]",
+					"Can transform to [Remove Worker II]",
+					"Can transform to [Building Worker II]",
+					"Can transform to [Engineering Worker II]",
+					
+					"Can transform to [Resource Worker III]",
+					"Can transform to [Power Plant Worker III]",
+					"Can transform to [Remove Worker III]",
+					"Can transform to [Building Worker III]",
+					"Can transform to [Engineering Worker III]",
+					
+					"Can transform to [Resource Worker IV]",
+					"Can transform to [Power Plant Worker IV]",
+					"Can transform to [Remove Worker IV]",
+					"Can transform to [Building Worker IV]",
+					"Can transform to [Engineering Worker IV]",
+					
+					"Can transform to [Resource Worker V]",
+					"Can transform to [Power Plant Worker V]",
+					"Can transform to [Remove Worker V]",
+					"Can transform to [Building Worker V]",
+					"Can transform to [Engineering Worker V]",
+					
+					"Can transform to [Resource Worker VI]",
+					"Can transform to [Power Plant Worker VI]",
+					"Can transform to [Remove Worker VI]",
+					"Can transform to [Building Worker VI]",
+					"Can transform to [Engineering Worker VI]",],
+	},
+	
+    {
+		"name": "Resource Worker I",//资源工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Resource Worker II",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Resource Worker II",//资源工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Resource Worker III",
+		"movement": 2,
+		"cost": 124,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Resource Worker III",//资源工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Resource Worker IV",
+		"movement": 3,
+		"cost": 329,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Resource Worker IV",//资源工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Resource Worker V",
+		"movement": 3,
+		"cost": 742,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Resource Worker V",//资源工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Resource Worker VI",
+		"movement": 4,
+		"cost": 1631,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Resource Worker VI",//资源工人
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2233,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    
+    {
+		"name": "Power Plant Worker I",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Power Plant Worker II",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Power Plant Worker II",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Power Plant Worker III",
+		"movement": 2,
+		"cost": 124,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Power Plant Worker III",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Power Plant Worker IV",
+		"movement": 3,
+		"cost": 329,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Power Plant Worker IV",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Power Plant Worker V",
+		"movement": 3,
+		"cost": 742,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Power Plant Worker V",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Power Plant Worker VI",
+		"movement": 4,
+		"cost": 1631,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Power Plant Worker VI",//电厂工人
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2233,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
+	},
+	
+    {
+		"name": "Remove Worker I",//移除工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Remove Worker II",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Remove Worker II",//移除工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Remove Worker III",
+		"movement": 2,
+		"cost": 124,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Remove Worker III",//移除工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Remove Worker IV",
+		"movement": 3,
+		"cost": 329,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Remove Worker IV",//移除工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Remove Worker V",
+		"movement": 3,
+		"cost": 742,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Remove Worker V",//移除工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Remove Worker VI",
+		"movement": 4,
+		"cost": 1631,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Remove Worker VI",//移除工人
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2233,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+	
+    {
+		"name": "Building Worker I",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Building Worker II",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Building Worker II",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Building Worker III",
+		"movement": 2,
+		"cost": 124,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Building Worker III",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Building Worker IV",
+		"movement": 3,
+		"cost": 329,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Building Worker IV",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Building Worker V",
+		"movement": 3,
+		"cost": 742,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Building Worker V",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Building Worker VI",
+		"movement": 4,
+		"cost": 1631,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Building Worker VI",//建筑工人
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2233,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+	
+    {
+		"name": "Engineering Worker I",//工程工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Engineering Worker II",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Engineering Worker II",//工程工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Engineering Worker III",
+		"movement": 2,
+		"cost": 124,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Engineering Worker III",//工程工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Engineering Worker IV",
+		"movement": 3,
+		"cost": 329,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Engineering Worker IV",//工程工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Engineering Worker V",
+		"movement": 3,
+		"cost": 742,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Engineering Worker V",//工程工人
+		"unitType": "Land 'Civilian'",
+		"upgradesTo": "Engineering Worker VI",
+		"movement": 4,
+		"cost": 1631,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    {
+		"name": "Engineering Worker VI",//工程工人
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2233,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"Worker",
+					
+					"May create improvements on water resources",
+					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+	},
+    
+    {
+		"name": "City Designer I",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 90,
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles",
+					"Can instantly construct a [District - City] improvement <[1] times> <during the [Ancient era]>"],
+	},
+    {
+		"name": "City Designer II",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 2,
+		"cost": 154,
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles"],
+	},
+    {
+		"name": "City Designer III",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 369,
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles"],
+	},
+    {
+		"name": "City Designer IV",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 3,
+		"cost": 792,
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles"],
+	},
+    {
+		"name": "City Designer V",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 1691,
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles"],
+	},
+    {
+		"name": "City Designer VI",//城市设计员
+		"unitType": "Land 'Civilian'",
+		"movement": 4,
+		"cost": 2303,
+		"uniques": ["Only available <starting from the [Star era]>",
+					"City Designer",
+					
+					"Can build [District] improvements on tiles"],
+	},
+
 //基础
 
     {
@@ -88,31 +557,11 @@
 		"uniques": ["Founds a new city",
 					"Excess Food converted to Production when under construction"],
 	},
-	
-    {
-		"name": "Worker",//工人
-		"unitType": "Land 'Civilian'",
-		"movement": 2,
-		"cost": 70,
-		"uniques": ["Can build [Base Improvement] improvements on tiles",
-					"Can build [Resource Improvement] improvements on tiles",
-					"May create improvements on water resources",
-					"Can instantly construct a [Farm] improvement <once>",
-					"Gain [248] [Gold] (modified by game speed) <by consuming this unit>"],
-	},
-    {
-		"name": "City Designer",//城市设计员
-		"unitType": "Land 'Civilian'",
-		"movement": 2,
-		"cost": 90,
-		"uniques": ["Can build [District] improvements on tiles"],
-	},
-
 	{
 		"name": "Work Boats",//工船
 		"unitType": "Water 'Civilian'",
 		"movement": 4,
-		"cost": 30,
+		"cost": 35,
 		"requiredTech": "Fishing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
 					"May create improvements on water resources"]
@@ -122,7 +571,7 @@
 		"name": "Icebreaker",//破冰船
 		"unitType": "Water 'Civilian'",
 		"movement": 3,
-		"cost": 115,
+		"cost": 265,
 		"requiredTech": "Meteorology",
 		"uniques": ["Can build [Remove Ice] improvements on tiles",
 					"Can enter ice tiles"]
@@ -133,40 +582,67 @@
 		"unitType": "Land 'Civilian'",
 		"upgradesTo": "Orchestra",
 		"strength": 10,
-		"movement": 2,
+		"movement": 3,
 		"uniques": ["Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Only available <starting from the [Medieval era]>",
+					
+					"Tourism Unit",
 					"May enter foreign tiles without open borders",
+					"Can move immediately once bought",
+					
+					"Can only attack [Tourism Unit] units",
 					
 					"This Unit gains [5] XP <upon ending a turn in a [Foreign Land] tile>",
 					
+					"Instantly provides [1] [Tourism Performance] <upon losing at least [10] HP in a single attack>",
 					"Instantly provides [2] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [3] [Tourism Performance] <upon being promoted>",
 					"Instantly provides [4] [Tourism Performance] <[2] times>"],
 	},
 	{
 		"name": "Orchestra",//巡回乐团
 		"unitType": "Land 'Civilian'",
 		"upgradesTo": "Rock Band",
-		"strength": 10,
-		"movement": 2,
+		"strength": 15,
+		"movement": 4,
 		"uniques": ["Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Only available <starting from the [Industrial era]>",
+					
+					"Tourism Unit",
 					"May enter foreign tiles without open borders",
+					"Can move immediately once bought",
+					
+					"Can only attack [Tourism Unit] units",
 					
 					"This Unit gains [10] XP <upon ending a turn in a [Foreign Land] tile>",
 					
+					"Instantly provides [2] [Tourism Performance] <upon losing at least [10] HP in a single attack>",
 					"Instantly provides [4] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [6] [Tourism Performance] <upon being promoted>",
 					"Instantly provides [8] [Tourism Performance] <[2] times>"],
 	},
 	{
 		"name": "Rock Band",//摇滚乐队
 		"unitType": "Land 'Civilian'",
-		"strength": 10,
-		"movement": 2,
+		"strength": 20,
+		"movement": 5,
 		"uniques": ["Unbuildable",
+					"Never appears as a Barbarian unit",
+					"Only available <starting from the [Information era]>",
+					
+					"Tourism Unit",
 					"May enter foreign tiles without open borders",
+					"Can move immediately once bought",
+					
+					"Can only attack [Tourism Unit] units",
 					
 					"This Unit gains [15] XP <upon ending a turn in a [Foreign Land] tile>",
 					
+					"Instantly provides [4] [Tourism Performance] <upon losing at least [10] HP in a single attack>",
 					"Instantly provides [8] [Tourism Performance] <upon ending a turn in a [Foreign Land] tile>",
+					"Instantly provides [12] [Tourism Performance] <upon being promoted>",
 					"Instantly provides [16] [Tourism Performance] <[2] times>"],
 	},
 	
@@ -176,7 +652,7 @@
 		"unitType": "Land 'Civilian'",
 		"movement": 4,
 		"uniques": ["Can Spread Religion <for [2] movement> <[2] times> <after which this unit is consumed>",
-					"May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+					"May enter foreign tiles without open borders, but loses [200] religious strength each turn it ends there",
 					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
 					"[-1] Sight",
 					"Unbuildable",
@@ -217,6 +693,7 @@
 		"uniques": ["Great Person - [Culture]",
 					"Great Artist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -238,6 +715,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Artist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -260,6 +738,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Artist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -284,6 +763,7 @@
 		"uniques": ["Great Person - [Science]",
 					"Great Scientist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -305,6 +785,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Scientist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -327,6 +808,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Scientist",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -351,6 +833,7 @@
 		"uniques": ["Great Person - [Gold]",
 					"Great Merchant",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -360,7 +843,6 @@
 					"Gain [-500]-[1000] [Gold] <[1] times>",
 					"Gain [-500]-[1000] [Gold] <upon being promoted>",
 					
-					"Can build [Trading Post] improvements on tiles",
 					"Can build [Great People Improvement(Gold)] improvements on tiles"],
 	},
 	{
@@ -372,6 +854,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Merchant",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -383,7 +866,6 @@
 					"Gain [-1000]-[2000] [Gold] <[1] times>",
 					"Gain [-1000]-[2000] [Gold] <upon being promoted>",
 					
-					"Can build [Trading Post] improvements on tiles",
 					"Can build [Great People Improvement(Gold)] improvements on tiles"],
 	},
 	{
@@ -394,6 +876,7 @@
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Merchant",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
 					"Cannot attack",
 					
@@ -405,14 +888,12 @@
 					"Gain [-1500]-[3000] [Gold] <[1] times>",
 					"Gain [-1500]-[3000] [Gold] <upon being promoted>",
 					
-					"Can build [Trading Post] improvements on tiles",
 					"Can build [Great People Improvement(Gold)] improvements on tiles"],
 	},
 	
 	{
 		"name": "Great Politician(Ordinary)",//大政治家
 		"unitType": "Great People",
-		"strength": 10,
 		"movement": 4,
 		"uniques": ["Great Person - [Politic]",
 					"Great Politician",
@@ -424,24 +905,26 @@
 	{
 		"name": "Great Politician(Development)",
 		"unitType": "Great People",
-		"strength": 10,
 		"movement": 1,
 		"uniques": ["Great Politician",
 					"Unbuildable",
+					"Cannot move",
 					
-					"Instantly provides [4] [Policy Point - Development] <for [1] movement> <upon ending a turn in a [District - Municipal Square] tile>",
+					"Instantly provides [4] [Policy Point - Development] <upon ending a turn in a [District - Municipal Square] tile>",
+					"Instantly provides [2] [Policy Point - Development] <upon ending a turn in a [City center] tile>",
 					
 					"Can transform to [Great Politician(Ordinary)]"],
 	},
 	{
 		"name": "Great Politician(Military)",
 		"unitType": "Great People",
-		"strength": 10,
 		"movement": 1,
 		"uniques": ["Great Politician",
 					"Unbuildable",
+					"Cannot move",
 					
-					"Instantly provides [4] [Policy Point - Military] <for [1] movement> <upon ending a turn in a [District - Municipal Square] tile>",
+					"Instantly provides [4] [Policy Point - Military] <upon ending a turn in a [District - Municipal Square] tile>",
+					"Instantly provides [2] [Policy Point - Military] <upon ending a turn in a [City center] tile>",
 					
 					"Can transform to [Great Politician(Ordinary)]"],
 	},
@@ -685,7 +1168,7 @@
 		"range": 1,
 		"strength": 50,
 		"rangedStrength": 49,
-		"cost": 565,
+		"cost": 530,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Stealth",
 		"uniques": ["Explorations",
@@ -701,7 +1184,7 @@
 		"range": 1,
 		"strength": 80,
 		"rangedStrength": 79,
-		"cost": 565,
+		"cost": 1165,
 		"requiredTech": "Stealth",
 		"uniques": ["Explorations",
 					
@@ -920,7 +1403,7 @@
 		"upgradesTo": "Marine",
 		"movement": 2,
 		"strength": 68,
-		"cost": 646,
+		"cost": 650,
 		"requiredTech": "Meteorology",
 		"obsoleteTech": "Radar",
 		"uniques": ["[1] Movement point cost to disembark",
@@ -934,7 +1417,7 @@
 		"unitType": "Land 'Melee' 'Hot weapon'",
 		"movement": 2,
 		"strength": 87,
-		"cost": 892,
+		"cost": 890,
 		"requiredTech": "Radar",
 		"uniques": ["[1] Movement point cost to disembark",
 					"Defense bonus when embarked",
@@ -948,9 +1431,22 @@
 		"unitType": "Land 'Melee' 'Hot weapon'",
 		"movement": 2,
 		"strength": 85,
-		"cost": 882,
+		"cost": 880,
 		"requiredTech": "Radar",
+		"obsoleteTech": "Stealth",
 		"uniques": ["May Paradrop up to [5] tiles from inside friendly territory",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Airborne",//空降部队
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Marine",
+		"movement": 2,
+		"strength": 93,
+		"cost": 1630,
+		"requiredTech": "Stealth",
+		"uniques": ["May Paradrop up to [10] tiles from inside friendly territory",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "shot"
 	},

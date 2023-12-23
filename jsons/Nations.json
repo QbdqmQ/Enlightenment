@@ -430,12 +430,12 @@
 		
 		"uniqueName": "Unique Ability",
 		"uniques": ["[+1 Food] from every [Fresh Water]",
-					"[+2 Faith] from every [District] <in [Fresh Water] tiles>",
+					"[+1 Faith] from every [District] <in [Fresh Water] tiles>",
 					
 					"[+1 Food] from every [District - Holy Site] <with [2] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
 					"[+1 Food] from every [District - Holy Site] <with [4] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
 					"[+1 Food] from every [District - Holy Site] <with [6] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>"],
-		"uniqueText": " [Grand Barays]: \n * ['[Fresh Water]' [tiles] [+1 Food]] \n * ['[District]' [improvement] [+1 Food] [in [Fresh Water] tiles]] ",
+		"uniqueText": " [Grand Barays]: \n * ['[Fresh Water]' [tiles] [+1 Food]] \n * ['[All]' [district] [+1 Faith] [in [Fresh Water] tiles]] ",
 		
 		"cities":  ["Angkor Wat","Hariharalya","Yaodharapura","Mahendraparvata","Vimayapura","Indrapura","Lingapura","Preah Vihear","Bhavapura","Kompong Svay",
 					"Nagara Jayasri","Vyadhapura","Chaturmukha","Dviradapura","Rajavihara","Amarendrapura","Phanom Rung","Isvarapura","Muang Tam","Angkor Borei",
@@ -473,7 +473,7 @@
 					"[+75]% Yield from every [District - Academy] <if [Leader - Hammurabi] is constructed>",
 					
 					"[Land] units gain the [Combat Experience] promotion <if [Leader - Nebuchadnezzar II] is constructed>"],
-		"uniqueText": " [Textual Innovation]: \n * ['[District]' [improvement] [+1 Science]] ",
+		"uniqueText": " [Textual Innovation]: \n * ['[All]' [district] [+1 Science]] ",
 		
 		"cities":  ["Babylon","Akkad","Dur-Kurigalzu","Nippur","Borsippa","Sippar","Opis","Mari","Shushan","Eshnunna",
 					"Ellasar","Erech","Kutha","Sirpurla","Neribtum","Ashur","Ninveh","Nimrud","Arbela","Nuzi",

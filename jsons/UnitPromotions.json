@@ -4,7 +4,8 @@
 	{
 		"name": "Basic Promotion - All",//基础效果 - 所有
 		"uniques": ["Heal this unit by [5] HP <upon defeating a [All] unit>",
-					"This Unit gains the [Whets] promotion <upon defeating a [All] unit>"],
+					"This Unit gains the [Whets] promotion <upon defeating a [All] unit>",
+					"Cannot attack <vs [Tourism Unit] units> <for [non-[Tourism Unit]] units>"],
 		"column": 1,
 		"row": 1
 	},
@@ -40,7 +41,7 @@
 	{
 		"name": "Whets",//磨砺
 		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
-					"[+2]% Strength"],
+					"[+2]% Strength <for [50] turns>"],
 		"column": 1,
 		"row": 5
 	},
@@ -177,6 +178,14 @@
 		"unitTypes":   ["Great People"],
 		"column": 3,
 		"row": 6
+	},
+
+	{
+		"name": "Concert",//演唱
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes":   ["Land 'Civilian'"],
+		"column": 3,
+		"row": 7
 	},
 	
 	//外物给予

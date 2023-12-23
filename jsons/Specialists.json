@@ -2,35 +2,35 @@
 [
 	{
 		"name":"Scientist",//科学家
-		"science":3,
-		"greatPersonPoints": {"Great Scientist I":2},
+		"science": 3,
+		"greatPersonPoints": {"Talent":2},
 		"color": [30,144,255]
 	},
 
 	{
 		"name":"Merchant",//商业家
-		"gold":3,
-		"greatPersonPoints": {"Great Merchant I":2},
+		"gold": 3,
+		"greatPersonPoints": {"Talent":2},
 		"color": [255,215,0]
 	},
 
 	{
 		"name":"Artist",//艺术家
-		"culture":3,
-		"greatPersonPoints": {"Great Artist I":2},
+		"culture": 3,
+		"greatPersonPoints": {"Talent":2},
 		"color": [160,32,240]
 	},
 
 	{
 		"name":"Engineer",//工程师
-		"production":3,
-		"greatPersonPoints": {"Great Engineer":1},
+		"production": 3,
+		"greatPersonPoints": {"Talent":2},
 		"color": [139,69,19]
 	},
 
 	{
 		"name":"Theologian",//神学家
-		"faith":4,
+		"faith": 3,
 		"greatPersonPoints": {"Talent":2},
 		"color": [255,255,255]
 	}

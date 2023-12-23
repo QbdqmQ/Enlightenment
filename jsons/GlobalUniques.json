@@ -148,6 +148,10 @@
 		
 		"[-50]% to Flank Attack bonuses",
 		
+		"May buy [Troubadour] units for [90] [Culture] [in all cities] at an increasing price ([10]) <starting from the [Medieval era]>",
+		"May buy [Orchestra] units for [120] [Culture] [in all cities] at an increasing price ([20]) <starting from the [Industrial era]>",
+		"May buy [Rock Band] units for [150] [Culture] [in all cities] at an increasing price ([30]) <starting from the [Information era]>",
+		
 	//政策
 		
 		"[-100]% Culture cost of adopting new Policies",
@@ -248,12 +252,12 @@
 	//奇观
 		
 		//神农架
-		"[+3 Food] from every [Land Tile] <with [1] to [6] neighboring [Shennongjia] tiles>",
-		"[+3 Food] from every [Land Tile] <with [2] to [6] neighboring [Shennongjia] tiles>",
-		"[+3 Food] from every [Land Tile] <with [3] to [6] neighboring [Shennongjia] tiles>",
-		"[+3 Food] from every [Land Tile] <with [4] to [6] neighboring [Shennongjia] tiles>",
-		"[+3 Food] from every [Land Tile] <with [5] to [6] neighboring [Shennongjia] tiles>",
-		"[+3 Food] from every [Land Tile] <with [6] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [1] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [2] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [3] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [4] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [5] to [6] neighboring [Shennongjia] tiles>",
+		"[+2 Food] from every [Land Tile] <with [6] to [6] neighboring [Shennongjia] tiles>",
 		
 		//乌布苏湖
 		"[+2 Faith] from every [District - Holy Site] <with [1] to [6] neighboring [Uvs Nuur] tiles>",

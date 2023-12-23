@@ -675,7 +675,7 @@
 	{
 		"columnNumber": 20,
 		"era": "Fusion era",
-		"techCost": 12800,
+		"techCost": 25600,
 		"buildingCost": 740,
 		"wonderCost": 1860,
 		"techs": [
@@ -705,7 +705,7 @@
 	{
 		"columnNumber": 21,
 		"era": "Fusion era",
-		"techCost": 25600,
+		"techCost": 51200,
 		"buildingCost": 800,
 		"wonderCost": 2040,
 		"techs": [
@@ -737,7 +737,7 @@
 	{
 		"columnNumber": 22,
 		"era": "Star era",
-		"techCost": 51200,
+		"techCost": 102400,
 		"buildingCost": 865,
 		"wonderCost": 2280,
 		"techs": [
@@ -760,7 +760,7 @@
 	{
 		"columnNumber": 23,
 		"era": "Star era",
-		"techCost": 102400,
+		"techCost": 204800,
 		"buildingCost": 930,
 		"wonderCost": 2520,
 		"techs": [
@@ -792,7 +792,7 @@
 	{
 		"columnNumber": 24,
 		"era": "Future era",
-		"techCost": 204800,
+		"techCost": 409600,
 		"buildingCost": 1000,
 		"wonderCost": 2760,
 		"techs": [

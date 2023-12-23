@@ -357,7 +357,7 @@
 					"Must be adjacent to [4] to [6] [Forest] tiles"],
 		"weight": 10,
         "civilopediaText": [
-			{"text":"Produced for adjacent '[Land]' [tiles] [+3 Food]"}
+			{"text":"Produced for adjacent '[Land]' [tiles] [+2 Food]"}
 			]
 	},
 	{
@@ -538,7 +538,7 @@
 					"Occurs in groups of [2] to [2] tiles"],
 		"weight": 10,
         "civilopediaText": [
-			{"text":"Produced for adjacent '[District]' [improvement] [+1 Culture, +1 Faith]"}
+			{"text":"Produced for adjacent '[All]' [district] [+1 Culture, +1 Faith]"}
 			]
 	},
 	{
@@ -639,7 +639,7 @@
 					"Fresh water"],
 		"weight": 5,
         "civilopediaText": [
-			{"text":"Produced for adjacent '[District]' [improvement] [[+2] [Yield]]"}
+			{"text":"Produced for adjacent '[All]' [district] [[+2] [Yield]]"}
 			]
 	},
 	{
@@ -819,7 +819,7 @@
 					"Occurs in groups of [2] to [2] tiles"],
 		"weight": 10,
         "civilopediaText": [
-			{"text":"Produced for adjacent '[Disitrict]' [improvement] [+2 Culture]"}
+			{"text":"Produced for adjacent '[All]' [district] [+2 Culture]"}
 			]
 	},
 	

@@ -17,7 +17,7 @@
 					"[-25]% Strength for cities <when attacking> <starting from the [Information era]>",
 					"[-25]% Strength for cities <when attacking> <starting from the [Star era]>",
 					
-					"Free [City Designer] appears",
+					"Free [City Designer I] appears",
 					
 					"Provides [3] [Great Seat ( Lv. III )]",
 					"Provides [5] [Great Seat ( Lv. II )]",
@@ -25,7 +25,16 @@
 					"Provides [1] [Policy Point - Development]",
 					"Provides [1] [Policy Point - Military]",
 					
-       				"[-33]% growth [in all cities]",
+       				"[-10]% growth [in all cities] <in cities with at least [5] [Population]>",
+       				"[-20]% growth [in all cities] <in cities with at least [10] [Population]>",
+       				"[-30]% growth [in all cities] <in cities with at least [15] [Population]>",
+       				"[-40]% growth [in all cities] <in cities with at least [20] [Population]>",
+       				"[-50]% growth [in all cities] <in cities with at least [25] [Population]>",
+       				"[-60]% growth [in all cities] <in cities with at least [30] [Population]>",
+       				"[-70]% growth [in all cities] <in cities with at least [35] [Population]>",
+       				"[-80]% growth [in all cities] <in cities with at least [40] [Population]>",
+       				"[-90]% growth [in all cities] <in cities with at least [45] [Population]>",
+       				"[-100]% growth [in all cities] <in cities with at least [50] [Population]>",
 					
 					
 					
@@ -127,7 +136,7 @@
 					"Cannot be purchased",
 					"Never destroyed when the city is captured",
 					
-					"Free [Worker] appears"
+					"Free [Base Worker] appears"
 					
 					
 					]
@@ -334,6 +343,7 @@
 	
 	{
 		"name": "Cathedral",//大教堂
+		"specialistSlots": {"Theologian": 2},
 		"cost": 0,
 		"uniques": ["Unbuildable",
 					"Hidden when religion is disabled",
@@ -372,6 +382,7 @@
 	},
 	{
 		"name": "Mosque",//清真寺
+		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"culture": 2,
 		"happiness": 1,
@@ -412,6 +423,7 @@
 	},
 	{
 		"name": "Buddha Temple",//浮屠祠
+		"specialistSlots": {"Theologian": 2},
 		"faith": 1,
 		"culture": 2,
 		"happiness": 2,
@@ -452,6 +464,7 @@
 	},
 	{
 		"name": "Chapel",//礼拜堂
+		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"production": 2,
 		"cost": 0,
@@ -491,6 +504,7 @@
 	},
 	{
 		"name": "Stupa",//窣堵波
+		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"science": 2,
 		"cost": 0,
@@ -530,6 +544,7 @@
 	},
 	{
 		"name": "Monastery",//修道院
+		"specialistSlots": {"Theologian": 2},
 		"faith": 3,
 		"gold": 2,
 		"cost": 0,
@@ -569,6 +584,7 @@
 	},
 	{
 		"name": "Fire Worship Temple",//拜火庙
+		"specialistSlots": {"Theologian": 2},
 		"faith": 1,
 		"cost": 0,
 		"uniques": ["Unbuildable",
@@ -608,6 +624,7 @@
 	},
 	{
 		"name": "Gurdwara",//谒师所
+		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"food": 1,
 		"cost": 0,
@@ -769,16 +786,14 @@
 	{
 		"name": "Project - Space Race",//项目 - 太空竞赛
 		"isNationalWonder": true,
-		"uniques": ["Enables nuclear weapon",
-					"Triggers a global alert upon completion",
+		"uniques": ["Triggers a global alert upon completion",
 					"Cannot be hurried"],
 		"requiredTech": "Rocketry"
 	},
 	{
 		"name": "Project - Interstellar",//项目 - 群星
 		"isNationalWonder": true,
-		"uniques": ["Enables nuclear weapon",
-					"Triggers a global alert upon completion",
+		"uniques": ["Triggers a global alert upon completion",
 					"Cannot be hurried"],
 		"requiredTech": "Space Dynamics"
 	},
@@ -787,6 +802,7 @@
 	
 	{
 		"name": "Shrine",//神社
+		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"maintenance": 1,
 		"cost": 60,
@@ -797,9 +813,9 @@
 	{
 		"name": "Temple",//寺庙
 		"percentStatBonus": {"faith": 10},
-		"specialistSlots": {"Theologian": 1},
+		"specialistSlots": {"Theologian": 3},
 		"faith": 3,
-		"maintenance": 2,
+		"maintenance": 3,
 		"cost": 100,
 		"hurryCostModifier": 25,
 		"uniques": ["Hidden when religion is disabled",
@@ -818,10 +834,10 @@
 	},
 	{
 		"name": "Observatory",//天文台
-		"percentStatBonus": {"science": 33},
+		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
 		"science": 1,
-		"maintenance": 2,
+		"maintenance": 6,
 		"hurryCostModifier": 15,
 		"uniques": ["Must have an owned [Mountain] within [2] tiles"],
 		"requiredTech": "Astronomy"
@@ -829,8 +845,10 @@
 	
 	{
 		"name": "Library",//图书馆
+		"percentStatBonus": {"science": 10},
+		"specialistSlots": {"Scientist": 1},
 		"science": 1,
-		"maintenance": 1,
+		"maintenance": 2,
 		"cost": 60,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Science] per [1] population [in this city]",
@@ -839,31 +857,30 @@
 	},
 	{
 		"name": "University",//大学
-		"percentStatBonus": {"science": 25},
-		"specialistSlots": {"Scientist": 2},
+		"percentStatBonus": {"science": 10},
+		"specialistSlots": {"Scientist": 1},
 		"science": 3,
-		"maintenance": 3,
+		"maintenance": 7,
 		"hurryCostModifier": 15,
 		"requiredTech": "Education"
 	},
 	{
 		"name": "Public School",//公立学校
-		"percentStatBonus": {"science": 20},
+		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
 		"science": 5,
-		"maintenance": 6,
+		"maintenance": 10,
 		"cost": 270,
 		"uniques": ["Only available <after adopting [Compulsory Education]>"]
 	},
 	{
 		"name": "Research Lab",//研发实验室
-		"percentStatBonus": {"science": 15},
+		"percentStatBonus": {"science": 20},
 		"specialistSlots": {"Scientist": 2},
 		"science": 8,
-		"maintenance": 12,
+		"maintenance": 16,
 		"uniques": ["Consumes [4] [Electric Power] <when above [4] [Electric Power]>",
-					"[-8 Science] <when below [4] [Electric Power]>",
-					"[-15]% [Science] <when below [4] [Electric Power]>"],
+					"[-8 Science] [in this city] <when below [4] [Electric Power]>"],
 		"requiredTech": "Atomic Theory"
 	},
 	
@@ -872,6 +889,8 @@
 	{
 		"name": "Mint",//铸币厂
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver"],
+		"percentStatBonus": {"gold": 10},
+		"specialistSlots": {"Merchant": 1},
 		"cost": 120,
 		"hurryCostModifier": 25,
 		"uniques": ["[+2 Gold] from [Gold Ore] tiles [in this city]",
@@ -882,7 +901,7 @@
 	
 	{
 		"name": "Market",//市场
-		"percentStatBonus": {"gold": 15},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 3,
 		"cost": 120,
@@ -891,7 +910,7 @@
 	},
 	{
 		"name": "Bank",//银行
-		"percentStatBonus": {"gold": 15},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 5,
 		"cost": 270,
@@ -900,8 +919,8 @@
 	},
 	{
 		"name": "Stock Exchange",//证券交易所
-		"percentStatBonus": {"gold": 15},
-		"specialistSlots": {"Merchant": 2},
+		"percentStatBonus": {"gold": 10},
+		"specialistSlots": {"Merchant": 1},
 		"gold": 7,
 		"cost": 300,
 		"hurryCostModifier": 15,
@@ -909,23 +928,22 @@
 	},
 	{
 		"name": "Advertising Company",//广告公司
-		"percentStatBonus": {"gold": 15},
-		"specialistSlots": {"Merchant": 2},
+		"percentStatBonus": {"gold": 10},
+		"specialistSlots": {"Merchant": 1},
 		"gold": 9,
 		"hurryCostModifier": 15,
 		"uniques": ["Consumes [4] [Electric Power] <when above [4] [Electric Power]>",
-					"[-9 Gold] <when below [4] [Electric Power]>",
-					"[-15]% [Gold] <when below [4] [Electric Power]>"],
+					"[-9 Gold] [in this city] <when below [4] [Electric Power]>"],
 		"requiredTech": "Computers"
 	},
 	{
 		"name": "Shopping Center",//购物中心
 		"percentStatBonus": {"gold": 10},
+		"specialistSlots": {"Merchant": 1},
 		"gold": 4,
 		"cost": 520,
 		"uniques": ["Consumes [3] [Electric Power] <when above [3] [Electric Power]>",
-					"[-4 Gold] <when below [3] [Electric Power]>",
-					"[-10]% [Gold] <when below [3] [Electric Power]>",
+					"[-4 Gold] [in this city] <when below [3] [Electric Power]>",
 					
 					"Only available <after adopting [Tertiary Industry]>"]
 	},
@@ -937,7 +955,7 @@
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
 		"happiness": 1,
 		"production": 1,
-		"maintenance": 2,
+		"maintenance": 3,
 		"uniques": ["[+1 Production] from [Stone] tiles [in this city]",
 					"[+1 Production] from [Marble] tiles [in this city]"],
 		"requiredTech": "Masonry"
@@ -945,8 +963,10 @@
 	{
 		"name": "Forge",//锻造场
 		"requiredNearbyImprovedResources": ["Iron", "Copper"],
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 1},
 		"production": 1,
-		"maintenance": 2,
+		"maintenance": 6,
 		"hurryCostModifier": 25,
 		"uniques": ["[+15]% Production when constructing [Land] units [in this city]",
 					"[+1 Production] from [Copper] tiles [in this city]",
@@ -955,9 +975,9 @@
 					"Provides [1] [Steel] <after discovering [Refining]>"],
 		"requiredTech": "Metal Casting"
 	},
+	
 	{
 		"name": "Furniture Factory",//家具厂
-		"specialistSlots": {"Engineer": 1},
 		"production": 3,
 		"gold": 4,
 		"cost": 240,
@@ -967,16 +987,18 @@
 	{
 		"name": "Ironworks",//钢铁厂
 		"production": 2,
-		"maintenance": 6,
+		"maintenance": 13,
 		"uniques": ["Consumes [1] [Coal] <when above [1] [Coal]>",
 					"Consumes [2] [Iron] <when above [2] [Iron]>",
 					"Provides [2] [Steel] <when above [1] [Coal]> <when above [2] [Iron]>",
-					"[-2 Production] <when below [1] [Coal]> <when below [2] [Iron]>"],
+					"[-2 Production] [in this city] <when below [1] [Coal]> <when below [2] [Iron]>"],
 		"requiredTech": "Refining"
 	},
 	
 	{
 		"name": "Kiln",//窑炉
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 1},
 		"production": 1,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Production] from [Clay] tiles [in this city]"],
@@ -987,33 +1009,33 @@
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 2,
-		"maintenance": 3,
+		"maintenance": 4,
 		"hurryCostModifier": 25,
 		"requiredTech": "Iron Working"
 	},
 	{
 		"name": "Windmill",//风车
-		"percentStatBonus": {"production": 15},
+		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 3,
-		"maintenance": 5,
+		"maintenance": 7,
 		"hurryCostModifier": 25,
 		"requiredTech": "Machinery"
 	},
 	{
 		"name": "Factory",//工厂
-		"percentStatBonus": {"production": 15},
-		"specialistSlots": {"Engineer": 2},
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 1},
 		"production": 5,
-		"maintenance": 7,
+		"maintenance": 12,
 		"requiredTech": "Industrialization"
 	},
 	{
 		"name": "Assembly Factory",//装配厂
-		"percentStatBonus": {"production": 15},
-		"specialistSlots": {"Engineer": 2},
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 1},
 		"production": 7,
-		"maintenance": 9,
+		"maintenance": 17,
 		"requiredTech": "Composites"
 	},
 	
@@ -1022,7 +1044,7 @@
 	{
 		"name": "Ancestral Hall",//祠堂
 		"culture": 1,
-		"maintenance": 2,
+		"maintenance": 1,
 		"cost": 40,
 		"hurryCostModifier": 40,
 		"uniques": ["[+1 Faith] per [3] population [in this city]",
@@ -1031,7 +1053,10 @@
 	},
 	{
 		"name": "Publishing House",//出版社
+		"percentStatBonus": {"culture": 10},
+		"specialistSlots": {"Artist": 1},
 		"culture": 2,
+		"maintenance": 9,
 		"hurryCostModifier": 10,
 		"uniques": ["[+1 Gold] per [1] population [in this city]"],
 		"requiredTech": "Printing"
@@ -1046,9 +1071,10 @@
 	},
 	{
 		"name": "Amphitheater",//圆形剧场
+		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 3,
-		"maintenance": 3,
+		"maintenance": 5,
 		"cost": 120,
 		"hurryCostModifier": 25,
 		"uniques": ["Only available <after adopting [Drama and Poetry]>"]
@@ -1058,38 +1084,38 @@
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 4,
-		"maintenance": 5,
+		"maintenance": 8,
 		"cost": 210,
 		"hurryCostModifier": 10,
 		"uniques": ["Only available <after adopting [Acoustics]>"]
 	},
 	{
 		"name": "Concert Hall",//音乐厅
-		"percentStatBonus": {"culture": 15},
+		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 5,
-		"maintenance": 7,
+		"maintenance": 9,
 		"cost": 240,
 		"hurryCostModifier": 10,
 		"uniques": ["Only available <after adopting [Aesthetics]>"]
 	},
 	{
 		"name": "Museum",//博物馆
-		"percentStatBonus": {"culture": 15},
-		"specialistSlots": {"Artist": 2},
+		"percentStatBonus": {"culture": 10},
+		"specialistSlots": {"Artist": 1},
 		"culture": 6,
-		"maintenance": 9,
+		"maintenance": 12,
 		"cost": 340,
 		"uniques": ["Only available <after adopting [Archaeology]>"]
 	},
 	{
 		"name": "Broadcast Tower",//广播塔
-		"percentStatBonus": {"culture": 20},
+		"percentStatBonus": {"culture": 10},
+		"specialistSlots": {"Artist": 1},
 		"culture": 3,
-		"maintenance": 6,
+		"maintenance": 14,
 		"uniques": ["Consumes [4] [Electric Power] <when above [4] [Electric Power]>",
-					"[-3 Culture] <when below [4] [Electric Power]>",
-					"[-20]% [Culture] <when below [4] [Electric Power]>"],
+					"[-3 Culture] [in this city] <when below [4] [Electric Power]>"],
 		"requiredTech": "Radio"
 	},
 	
@@ -1104,8 +1130,8 @@
 	},
 	{
 		"name": "Nature Reserve",//自然保护区
-		"maintenance": 12,
 		"happiness": 2,
+		"maintenance": 17,
 		"cost": 570,
 		"hurryCostModifier": 25,
 		"uniques": ["[+2 Culture, +3 Gold] from [Rare feature] tiles [in this city]",
@@ -1117,37 +1143,37 @@
 	{
 		"name": "Colosseum",//竞技场
 		"happiness": 2,
-		"maintenance": 2,
+		"maintenance": 5,
 		"hurryCostModifier": 25,
 		"requiredTech": "Engineering"
 	},
 	{
 		"name": "Theatre",//剧院
 		"happiness": 2,
-		"maintenance": 3,
+		"maintenance": 5,
 		"hurryCostModifier": 10,
 		"cost": 120,
 		"uniques": ["Only available <after adopting [Classical Philosophy]>"]
 	},
 	{
-		"name": "Sewer",//下水道
-		"happiness": 2,
-		"maintenance": 5,
-		"requiredTech": "Sanitation"
-	},
-	{
 		"name": "Aquaria",//水族馆
 		"happiness": 3,
-		"maintenance": 6,
+		"maintenance": 12,
 		"requiredTech": "Oceanography"
+	},
+	{
+		"name": "Sewer",//下水道
+		"happiness": 2,
+		"maintenance": 13,
+		"requiredTech": "Sanitation"
 	},
 	{
 		"name": "Stadium",//体育场
 		"happiness": 3,
-		"maintenance": 9,
+		"maintenance": 18,
 		"cost": 625,
 		"uniques": ["Consumes [4] [Electric Power] <when above [4] [Electric Power]>",
-					"[-3 Happiness] <when below [4] [Electric Power]>",
+					"[-3 Happiness] [in this city] <when below [4] [Electric Power]>",
 					
 					"Only available <after adopting [Globalization]>"]
 	},
@@ -1171,7 +1197,7 @@
 	{
 		"name": "Training Grounds",//练兵场
 		"cityStrength": 2,
-		"maintenance": 3,
+		"maintenance": 4,
 		"hurryCostModifier": 25,
 		"cost": 100,
 		"uniques": ["New [{Military} {Land}] units start with [10] Experience [in this city]",
@@ -1181,7 +1207,7 @@
 	{
 		"name": "Armory",//军械所
 		"cityStrength": 2,
-		"maintenance": 5,
+		"maintenance": 7,
 		"hurryCostModifier": 25,
 		"cost": 180,
 		"uniques": ["New [{Military} {Land}] units start with [15] Experience [in this city]",
@@ -1191,7 +1217,7 @@
 	{
 		"name": "Military Academy",//军事学院
 		"cityStrength": 2,
-		"maintenance": 7,
+		"maintenance": 10,
 		"uniques": ["New [{Military} {Land}] units start with [20] Experience [in this city]"],
 		"requiredTech": "Military Science"
 	},
@@ -1199,7 +1225,7 @@
 	{
 		"name": "Flight Academy",//航空学院
 		"cityStrength": 2,
-		"maintenance": 5,
+		"maintenance": 15,
 		"hurryCostModifier": 25,
 		"cost": 100,
 		"uniques": ["New [{Military} {Air}] units start with [5] Experience [in this city]"],
@@ -1208,7 +1234,7 @@
 	{
 		"name": "Training Base",//训练基地
 		"cityStrength": 2,
-		"maintenance": 7,
+		"maintenance": 16,
 		"hurryCostModifier": 25,
 		"cost": 180,
 		"uniques": ["New [{Military} {Air}] units start with [10] Experience [in this city]"],
@@ -1217,7 +1243,7 @@
 	{
 		"name": "Military Hangar",//军用机库
 		"cityStrength": 2,
-		"maintenance": 9,
+		"maintenance": 17,
 		"uniques": ["New [{Military} {Air}] units start with [15] Experience [in this city]"],
 		"requiredTech": "Composites"
 	},
@@ -1226,9 +1252,11 @@
 	
 	{
 		"name": "Lighthouse",//灯塔
-		"maintenance": 2,
+		"maintenance": 4,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Food] from [Coast] tiles [in this city]",
+		"uniques": ["Must have an owned [Water] within [3] tiles",
+					
+					"[+1 Food] from [Coast] tiles [in this city]",
 					"[+1 Food] from [Ocean] tiles [in this city]",
 					"[+1 Food] from [Fish] tiles [in this city]"],
 		"requiredTech": "Optics"
@@ -1236,9 +1264,11 @@
 	{
 		"name": "Dockyard",//船坞
 		"cityStrength": 2,
-		"maintenance": 5,
+		"maintenance": 8,
 		"hurryCostModifier": 25,
-		"uniques": ["New [{Military} {Water}] units start with [10] Experience [in this city]",
+		"uniques": ["Must have an owned [Water] within [3] tiles",
+					
+					"New [{Military} {Water}] units start with [10] Experience [in this city]",
 					"[+1 Gold] from [Coast] tiles [in this city]",
 					"[+1 Production] from [Water resource] tiles [in this city]",
 					"Connects trade routes over water"],
@@ -1247,9 +1277,11 @@
 	{
 		"name": "Seaport",//海运码头
 		"cityStrength": 2,
-		"maintenance": 7,
+		"maintenance": 10,
 		"hurryCostModifier": 25,
-		"uniques": ["New [{Military} {Water}] units start with [15] Experience [in this city]",
+		"uniques": ["Must have an owned [Water] within [3] tiles",
+					
+					"New [{Military} {Water}] units start with [15] Experience [in this city]",
 					"[+1 Gold] from [Ocean] tiles [in this city]",
 					"[+1 Production, +1 Gold] from [Water resource] tiles [in this city]"],
 		"requiredTech": "Navigation"
@@ -1257,9 +1289,11 @@
 	{
 		"name": "Shipyard",//造船厂
 		"cityStrength": 2,
-		"maintenance": 9,
+		"maintenance": 11,
 		"hurryCostModifier": 25,
-		"uniques": ["New [{Military} {Water}] units start with [20] Experience [in this city]",
+		"uniques": ["Must have an owned [Water] within [3] tiles",
+					
+					"New [{Military} {Water}] units start with [20] Experience [in this city]",
 					"[+15]% Production when constructing [Water] units [in this city]"],
 		"requiredTech": "Mass Production"
 	},
@@ -1269,7 +1303,7 @@
 	{
 		"name": "Granary",//粮仓
 		"food": 2,
-		"maintenance": 2,
+		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Food] from [Maize] tiles [in this city]",
 					"[+1 Food] from [Wheat] tiles [in this city]",
@@ -1287,7 +1321,7 @@
 	{
 		"name": "Breeding Farm",//养殖场
 		"food": 2,
-		"maintenance": 3,
+		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Food] from [Sheep] tiles [in this city]",
 					"[+1 Food] from [Cattle] tiles [in this city]",
@@ -1307,7 +1341,7 @@
 		"name": "Water Mill",//水磨机
 		"food": 2,
 		"production": 1,
-		"maintenance": 2,
+		"maintenance": 3,
 		"hurryCostModifier": 25,
 		"uniques": ["Must be on [River]",
 					"[-10]% Food is carried over after population increases [in this city]"],
@@ -1315,16 +1349,16 @@
 	},
 	{
 		"name": "Aqueduct",//引水渠
-		"maintenance": 2,
+		"maintenance": 3,
 		"hurryCostModifier": 10,
-		"cost": 60,
+		"cost": 80,
 		"uniques": ["[40]% Food is carried over after population increases [in this city]",
 					
 					"Only available <after adopting [State Workforce]>"]
 	},
 	{
 		"name": "Courthouse",//法庭
-		"maintenance": 6,
+		"maintenance": 5,
 		"hurryCostModifier": 50,
 		"cost": 120,
 		"uniques": ["Remove extra unhappiness from annexed cities",
@@ -1332,7 +1366,7 @@
 	},
 	{
 		"name": "Garden",//花园
-		"maintenance": 3,
+		"maintenance": 5,
 		"cost": 120,
 		"hurryCostModifier": 25,
 		"uniques": ["[+25]% Great Person generation [in this city]",
@@ -1342,7 +1376,7 @@
 	},
 	{
 		"name": "Dam",//水坝
-		"maintenance": 6,
+		"maintenance": 11,
 		"cost": 300,
 		"uniques": ["Must be next to [River]",
 					"[+1 Food] from [Flood plains] tiles [in this city]",
@@ -1351,7 +1385,7 @@
 	},
 	{
 		"name": "City Hall",//市政厅
-		"maintenance": 6,
+		"maintenance": 11,
 		"cost": 300,
 		"hurryCostModifier": 25,
 		"uniques": ["[+15]% Great Person generation [in this city] <for [10] turns> <upon declaring friendship>",
@@ -1363,36 +1397,36 @@
 					"Only available <after adopting [Political Reform]>"]
 	},
 	{
-		"name": "Hospital",//医院
-		"food": 6,
-		"maintenance": 8,
-		"cost": 570,
-		"uniques": ["Only available <after adopting [Medicare for All]>"]
-	},
-	{
-		"name": "Medical Lab",//医学实验室
-		"maintenance": 8,
-		"uniques": ["[25]% Food is carried over after population increases [in this city]"],
-		"requiredTech": "Pharmaceuticals"
-	},
-	{
-		"name": "Recycling Center",//回收中心
-		"maintenance": 7,
-		"uniques": ["Provides [1] [Aluminum]"],
-		"requiredTech": "Ecology"
-	},
-	{
 		"name": "Hydro Plant",//水电站
 		"requiredResource": "Aluminum",
-		"maintenance": 6,
+		"maintenance": 13,
 		"uniques": ["Must be on [River]",
 					"Provides [5] [Electric Power]",
 					"[+1 Production] from [River] tiles [in this city]"],
 		"requiredTech": "Electricity"
 	},
 	{
+		"name": "Recycling Center",//回收中心
+		"maintenance": 15,
+		"uniques": ["Provides [1] [Aluminum]"],
+		"requiredTech": "Ecology"
+	},
+	{
+		"name": "Medical Lab",//医学实验室
+		"maintenance": 16,
+		"uniques": ["[25]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Pharmaceuticals"
+	},
+	{
+		"name": "Hospital",//医院
+		"food": 6,
+		"maintenance": 17,
+		"cost": 570,
+		"uniques": ["Only available <after adopting [Medicare for All]>"]
+	},
+	{
 		"name": "Bomb Shelter",//防空洞
-		"maintenance": 5,
+		"maintenance": 19,
 		"uniques": ["Population loss from nuclear attacks [-75]% [in this city]"],
 		"requiredTech": "Telecommunications"
 	},
@@ -1403,6 +1437,7 @@
 		"name": "Walls",//城墙
 		"cityStrength": 10,
 		"cityHealth": 50,
+		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1412,6 +1447,7 @@
 		"name": "Castle",//城堡
 		"cityStrength": 20,
 		"cityHealth": 50,
+		"maintenance": 5,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1427,6 +1463,7 @@
 		"name": "Fortress",//要塞
 		"cityStrength": 30,
 		"cityHealth": 50,
+		"maintenance": 7,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1442,6 +1479,7 @@
 		"name": "Arsenal",//兵工厂
 		"cityStrength": 40,
 		"cityHealth": 50,
+		"maintenance": 10,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1457,6 +1495,7 @@
 		"name": "Military Base",//军事基地
 		"cityStrength": 50,
 		"cityHealth": 50,
+		"maintenance": 13,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1472,6 +1511,7 @@
 		"name": "Command Center",//指挥中心
 		"cityStrength": 60,
 		"cityHealth": 50,
+		"maintenance": 15,
 		"hurryCostModifier": 25,
 		"uniques": ["Defensive Building",
 					"Destroyed when the city is captured"],
@@ -1491,9 +1531,9 @@
 		"isNationalWonder": true,
 		"cost": 560,
 		"uniques": ["Doubles Gold given to enemy if city is captured",
-					"Free [Worker] appears",
+					"Free [Base Worker] appears",
 					"All newly-trained [Worker] units [in all cities] receive the [Civil Engineer] promotion",
-					"[Worker] units gain the [Civil Engineer] promotion",
+					"[Civilian] units gain the [Civil Engineer] promotion",
 
 					"Only available <after adopting [Urbanization]>"]
 	},
@@ -1501,7 +1541,6 @@
 	{
 		"name": "National Treasury",//国家金库
 		"isNationalWonder": true,
-		"specialistSlots": {"Merchant": 1},
 		"gold": 8,
 		"cost": 280,
 		"uniques": ["Requires a [Market] in all cities",
@@ -1617,7 +1656,7 @@
 		"cost": 280,
 		"uniques": ["Requires a [Temple] in all cities",
 					"Doubles Gold given to enemy if city is captured",
-					"[+100]% Yield from every [District - Holy Site]",
+					"[+50]% Yield from every [District - Holy Site]",
 					
 					"Only available <after adopting [Theology]>"]
 	},
@@ -1705,9 +1744,9 @@
 					
 					"Must have an owned [Desert] within [3] tiles",
 					"[-25]% construction time for [All] improvements",
-					"[2] free [Worker] units appear"],
+					"[2] free [Base Worker] units appear"],
 		"requiredTech": "Masonry",
-		"replacementTextForUniques": " [Require '[Masonry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Must have an owned '[Desert]' within [3] tiles] \n\n [[-25]% construction time for '[All]' improvements] \n [[2] '[Worker]' units appear] \n",
+		"replacementTextForUniques": " [Require '[Masonry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Must have an owned '[Desert]' within [3] tiles] \n\n [[-25]% construction time for '[All]' improvements] \n [[2] '[Base Worker]' units appear] \n",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
 	{
@@ -1944,7 +1983,7 @@
 					"[+1 Food] from [River] tiles [in this city]",
 					"[+1 Food] from [Farm] tiles [in this city] <with [2] to [6] neighboring [River] tiles>",
 					"[+1 Food] from [Farm] tiles [in this city] <with [4] to [6] neighboring [River] tiles>",
-					"[+1 Food] from [Farm] tiles [in this city] <with [6] to [6] neighboring [River] tiles>",],
+					"[+1 Food] from [Farm] tiles [in this city] <with [6] to [6] neighboring [River] tiles>"],
 		"requiredTech": "Engineering",
 		"replacementTextForUniques": " [Require '[Engineering]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must have an owned '[River]' within [3] tiles] \n\n [This city] ['[River]' [tiles] [+1 Food]] \n ['[Farm]' [improvement] [+1 Food] from each [2] adjacent '[River]' [tiles]] \n",
 		"quote": "'A lot of beautiful water connects the land and nourishes the land.' - Huang Yu, Dujiangyan"
@@ -2414,7 +2453,7 @@
 		"uniques": ["Ancient Wonder",
 					"Enlightenment era Wonder",
 					
-					"[+2]% Yield from every [Wonder]",
+					"[+1]% Yield from every [Wonder]",
 
 					"Only available <after adopting [Architecture]>"],
 		"replacementTextForUniques": " [Require '[Architecture]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n ['[Wonder]' [building] [[+2]% [Yield]]] \n",

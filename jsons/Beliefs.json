@@ -6,12 +6,12 @@
     {
         "name": "Dance of the Aurora",//极光之舞
         "type": "Pantheon",
-        "uniques": ["'[District]' [improvement] [+1 Faith] from each [2] adjacent '[Tundra]' [tiles]"]
+        "uniques": ["'[All]' [district] [+1 Faith] from each [2] adjacent '[Tundra]' [tiles]"]
     },
     {
         "name": "Desert Folklore",//沙漠民俗
         "type": "Pantheon",
-        "uniques": ["'[District]' [improvement] [+1 Faith] from each [2] adjacent '[Desert]' [tiles]"]
+        "uniques": ["'[All]' [district] [+1 Faith] from each [2] adjacent '[Desert]' [tiles]"]
     },
 	{
         "name": "Sacred Path",//神圣道路

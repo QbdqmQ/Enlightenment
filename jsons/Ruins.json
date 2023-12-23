@@ -40,8 +40,8 @@
 	
     {
         "name": "squatters willing to work for you",
-        "notification": "A [Worker] has joined us!",
-        "uniques": ["Free [Worker] found in the ruins"]
+        "notification": "A [Base Worker] has joined us!",
+        "uniques": ["Free [Base Worker] found in the ruins"]
     },
     {
         "name": "squatters wishing to settle under your rule",
