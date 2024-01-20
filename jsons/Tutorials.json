@@ -1,9 +1,10 @@
 [
-    {
+//A 总介绍
+    {//关于启蒙
         "name":"A 01 [About Enlightenment]",
         "civilopediaText":[
             { 
-                "text": "Mod Version: [0.1.0]",
+                "text": "Mod Version: [0.1.2]",
                 "size":15
             },
             { 
@@ -32,15 +33,68 @@
             }
         ]
     },
-    {
+    {//更新日志
         "name":"A 02 [Changelog]",
         "civilopediaText":[
             { 
-                "text": "Mod Version: [0.1.0]",
-                "size":15
+                "text": "Mod Version: [0.1.2]",
+                "size":15,
+                "color":"#8B3626"
             },
             { 
-                "text": "Modified:\n    'District - City'\n   'Improvement'\n   'Worker' & 'City Designer'",
+                "text": "Tutorial:\n   C 01\n   D 01 02\n   E 01",
+                "size":20
+            },
+            { 
+                "text": "Added:\n   'Scouting Drone'\n   'Particle Beam Mitter'\n   'Short-range Laser Mech'\n   'Heavy Laser Mech'\n   'Medium Laser Mech'\n   'Microwave Mitter'\n   'Automatic SAM'\n   'High-speed Helicopter'\n   'Laser Fighter'\n   'Pulse Bomber'\n   'Miniature Missile'",
+                "size":20
+            },
+            { 
+                "text": "Canceled:\n   'Agricultural Science'",
+                "size":20
+            },
+            { 
+                "text": "Balanced:\n   'Hospital'\n   'Alliances - Almaty'\n   'China (Qing)'\n   'Ottoman-Leader Suleiman I'",
+                "size":20
+            },
+            { 
+                "text": "Fixed:\n   Maintenance costs of some buildings and unusual effects",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.1.1]",
+                "size":15,
+                "color":"#8B3626"
+            },
+            { 
+                "text": "Canceled:\n   'Biotech'",
+                "size":20
+            },
+            { 
+                "text": "Balanced:\n   'Inca-Leader Pachacuti'",
+                "size":20
+            },
+            { 
+                "text": "Added:\n   'Exoskeletal Infantry'\n   'EMI Infantry'\n   'Automatic Mortar'",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.1.0]",
+                "size":15,
+                "color":"#8B3626"
+            },
+            { 
+                "text": "Modified:\n   'District - City'\n   'Improvement'\n   'Worker' & 'City Designer'",
                 "size":20
             },
             { 
@@ -54,14 +108,15 @@
             },
             { 
                 "text": "Mod Version: [0.0.4]",
-                "size":15
+                "size":15,
+                "color":"#8B3626"
             },
             { 
-                "text": "Added:\n    'Airborne'\n   'Troubadour'\n   'Orchestra'\n   'Rock Band'",
+                "text": "Added:\n   'Airborne'\n   'Troubadour'\n   'Orchestra'\n   'Rock Band'",
                 "size":20
             },
             { 
-                "text": "Fixed:\n    0 faithCost of 'Great Person'\n    'Great Politician' can provide unlimited policy points\n    Negative stat due to electricity-consuming buildings",
+                "text": "Fixed:\n   0 faithCost of 'Great Person'\n   'Great Politician' can provide unlimited policy points\n   Negative stat due to electricity-consuming buildings",
                 "size":20
             },
             { 
@@ -83,18 +138,19 @@
             },
             { 
                 "text": "Mod Version: [0.0.3]",
-                "size":15
+                "size":15,
+                "color":"#8B3626"
             },
             { 
-                "text": "Added:\n    'Special Force'\n   'Digitization Force'",
+                "text": "Added:\n   'Special Force'\n   'Digitization Force'",
                 "size":20
             },
             { 
-                "text": "Modified: 'Belgrade'",
+                "text": "Modified:\n   'Belgrade'",
                 "size":20
             },
             { 
-                "text": "Canceled: Allow raze holy city & capital",
+                "text": "Canceled:\n   Allow raze holy city & capital",
                 "size":20
             },
             {
@@ -104,14 +160,15 @@
             },
             { 
                 "text": "Mod Version: [0.0.2]",
-                "size":15
+                "size":15,
+                "color":"#8B3626"
             },
             { 
-                "text": "Fixed and balanced: 'Khmer'",
+                "text": "Fixed and balanced:\n   'Khmer'",
                 "size":20
             },
             { 
-                "text": "Balanced: 'Tobacco'",
+                "text": "Balanced:\n   'Tobacco'",
                 "size":20
             },
             {
@@ -121,7 +178,8 @@
             },
             { 
                 "text": "Mod Version: [0.0.1]",
-                "size":15
+                "size":15,
+                "color":"#8B3626"
             },
             { 
                 "text": "Posted",
@@ -134,12 +192,21 @@
             },
         ]
     },
-    {
+    //DLC
+    //教程种类
+    
+//B 文明&城邦
+    {//城邦种类
         "name":"B 01 [City-states Type]",
         "civilopediaText":[
             {
                 "text":"Militaristic City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -155,6 +222,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -168,13 +239,22 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "separator":true,
                 "color":"#FFFFFF",
                 "size":1
             },
             {
                 "text":"Cultured City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -190,6 +270,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -203,13 +287,22 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "separator":true,
                 "color":"#FFFFFF",
                 "size":1
             },
             {
                 "text":"Religious City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -225,6 +318,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -238,13 +335,22 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "separator":true,
                 "color":"#FFFFFF",
                 "size":1
             },
             {
                 "text":"Industrial City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -260,6 +366,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -271,6 +381,10 @@
             {
                 "text":"[After the '[Ancient era]'], [per [1] era increases the value by [2]]",
                 "size":18
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"[+1 Production] [in all cities]",
@@ -281,13 +395,22 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "separator":true,
                 "color":"#FFFFFF",
                 "size":1
             },
             {
                 "text":"Scientific City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -303,6 +426,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -316,6 +443,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"[+1 Science] [in all cities]",
                 "size":18
             },
@@ -324,13 +455,22 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "separator":true,
                 "color":"#FFFFFF",
                 "size":1
             },
             {
                 "text":"Mercantile City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -346,6 +486,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -359,6 +503,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"[+1 Gold] [in all cities]",
                 "size":18
             },
@@ -367,8 +515,16 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Provides a unique luxury",
                 "size":18
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "separator":true,
@@ -377,7 +533,12 @@
             },
             {
                 "text":"Agricultural City-states Effect",
-                "size":22
+                "size":22,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"Friend Bonus",
@@ -393,6 +554,10 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"Ally Bonus",
                 "size":20,
                 "color":"#1E90FF"
@@ -406,12 +571,20 @@
                 "size":18
             },
             {
+                "text":" ",
+                "size":1
+            },
+            {
                 "text":"+1 Happiness",
                 "size":18
             },
             {
-                "text":"[During the '[Ancient era]' and '[Enlightenment era]'], [per [1] era increases the value by [1]]",
+                "text":"[Between the '[Ancient era]' and '[Enlightenment era]'], [per [1] era increases the value by [1]]",
                 "size":18
+            },
+            {
+                "text":" ",
+                "size":1
             },
             {
                 "text":"[+1 Happiness] [in all cities]",
@@ -422,5 +595,596 @@
                 "size":18
             },
         ],
-    }
+    },
+    //城邦任务
+    //蛮族
+    //联合王国
+    //拜占庭
+    //俄罗斯帝国
+    //法兰西第一帝国
+    //德意志帝国
+    //匈人
+    //中华 - 秦
+    //巴比伦
+    //奥斯曼
+    //以色列
+    //高棉
+    //朝鲜
+    //印度
+    //桑海
+    //马里
+    //埃及
+    //埃塞俄比亚
+    //美利坚
+    //加拿大
+    //印加
+    //阿兹特克
+    //玛雅
+    //易洛魁
+    //波利尼西亚
+    
+//C 单位
+    {//工人介绍
+        "name":"C 01 [Worker Introduction]",
+        "civilopediaText":[
+            {
+                "text":"Worker Level",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"There are six levels of workers in total, and the only effect of level is to increase the cost of production.",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Worker Type",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"City Designer:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can build [District] improvements on tiles",
+                "size":18
+            },
+            {
+                "text":"e.g. [Unique District], [City], [Holy Site], [Academy], [Harbor], [Business Center], [Entertainment], [Landmark], [Industrial Zone], [Municipal Square]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Base Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can transform to other worker",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Resource Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can instantly construct '[Resource Improvement]'",
+                "size":18
+            },
+            {
+                "text":"e.g. [Camp], [Pasture], [Fishing Boats], [Quarry], [Plantation], [Oil Well], [Offshore Platform], [Mine], [Farm]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Power Plant Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can instantly construct '[Power Plant]'",
+                "size":18
+            },
+            {
+                "text":"e.g. [Coal-fired Plant], [Oil-fired Plant], [Nuclear Fission Plant], [Nuclear Fusion Plant], [Solar Plant], [Wind Plant], [Geothermal Plant], [Tidal Plant]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Remove Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can instantly construct '[Remove Improvement]'",
+                "size":18
+            },
+            {
+                "text":"e.g. [Remove Road], [Remove Railroad], [Remove Fallout], [Remove Forest], [Remove Jungle], [Remove Marsh], [Remove Mangrove], [Remove Ice]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Building Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can instantly construct '[Building Improvement]'",
+                "size":18
+            },
+            {
+                "text":"e.g. [Unique Improvement], [Baths], [Planted Forest], [Tourist Center], [Electrolysis Factory]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Engineering Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can instantly construct '[Engineering Improvement]'",
+                "size":18
+            },
+            {
+                "text":"e.g. [Fort], [Trenchs], [Road], [Railroad]",
+                "size":17
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+        ],
+    },
+    //伟人
+    //近程单位
+    //抗压单位
+    //远程单位
+    //骑兵&装甲单位
+    //军械&支援单位
+    //空中单位
+    //特殊单位
+    //平民单位
+    //单位克制
+    //晋升
+    //单位分类
+    
+//D 游戏设置
+    {//难度介绍
+        "name":"D 01 [Difficulty Introduction]",
+        "civilopediaText":[
+            {
+                "text":"Difficulty is made up of 'Player Difficulty' vs 'AI Difficulty'",
+                "size":18
+            },
+            {
+                "text":"e.g. 'Normal vs Challenging' means that the player is playing at normal difficulty and the AI is playing at challenging difficulty",
+                "size":18
+            },
+            {
+                "text":"Difficulty level from easy to hard: Baka < Simple < Normal < Challenging < Difficult",
+                "size":18
+            }
+        ],
+    },
+    {//胜利种类
+        "name":"D 02 [Victory Type]",
+        "civilopediaText":[
+            {
+                "text":"Time Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Have highest score after max turns",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Conquer Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Capture all capitals",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Domination Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Destroy all players",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Religious Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Become the world religion",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Cultural Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Build [World-famous Attraction]",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Diplomatic Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Win diplomatic vote",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Space Race Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Build:\n   '[Artificial Satellite]'\n   '[Satellite Probe]'\n   '[Manned Spaceship]'\n   '[Space Station]'\n   '[Space Telescope]'",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Interstellar Victory:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Add all [Spaceship part] in capital",
+                "size":18
+            },
+            {
+                "text":"Spaceship part:\n   '[SS Engine]'\n   '[SS Stasis Chamber]'\n   '[SS Cockpit]'\n   '[SS Booster]'*3",
+                "size":16
+            }
+        ],
+    },
+    //速度种类
+    //模式
+    //模组设置
+    //全局效果
+    
+//E 设施
+    {//设施种类
+        "name":"E 01 [Improvement Type]",
+        "civilopediaText":[
+            {
+                "text":"Improvement:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"Base Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"As opposed to 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Resource Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"To improve resources",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Power Plant:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Consumption of resources to produce electricity",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Remove Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"To remove improvement or terrain",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Building Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Have some unique effects that are used to make the mod more playable and interesting",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Engineering Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"To communicate between regions or defense",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Great People Improvement:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get a lot of yields by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"District:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"City:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get a lot of yields by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Holy Site:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get faiths by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Academy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get science by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Business Center:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get golds by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Industrial Zone:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get production by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Landmark:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get cultures by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Entertainment:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get happiness by virtue of the neighboring 'District'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Barracks:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can inflict damage on adjacent enemy units",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Harbor:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can get a lot of golds by virtue of the neighboring 'District' & 'Water Resources'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Municipal Square:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Provide [2] '[Policy Point - Development]' & '[Policy Point - Military]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+        ],
+    },
+    //基础设施列表&效果
+    //区域列表&效果
+    
+//F 建筑
+    //世界奇观种类
+    //国家奇观种类
+    //建筑种类
+    //特殊建筑种类
+    //专业人员种类
+    
+//G 宗教信仰
+    //宗教种类
+    //万神殿种类
+    //创始人种类
+    //信徒种类
+    //强化者种类
+    
+//H 科技&时代
+    //科技列表
+    //时代效果
+    
+//I 地块&资源
+    //自然奇观种类
+    //地块种类
+    //地貌种类
+    //资源种类
+    
+//J 政策
+    //政策设定
+    //政策列表
 ]

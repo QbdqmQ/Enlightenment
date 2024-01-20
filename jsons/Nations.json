@@ -341,7 +341,7 @@
 		
 		"uniqueName": "Unique Ability",
 		"uniques": ["[-1 Food, +1 Production] from every [Farm]",
-					"Earn [33]% of killed [Military] unit's [Cost] as [Gold]",
+					"Earn [67]% of killed [Military] unit's [Cost] as [Gold]",
 					"Free [Warrior] appears <upon gaining a [Spearman] unit>",
 					"Free [Swordsman] appears <upon gaining a [Heavy Spearman] unit>",
 					"Free [Longswordsman] appears <upon gaining a [Pikeman] unit>",
@@ -357,7 +357,7 @@
 					"Free [Light Infantry] appears <before discovering [Ballistics]> <after discovering [Rifling]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
 					"Free [Assault Infantry] appears <before discovering [Radar]> <after discovering [Ballistics]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
 					"Free [Mechanized Infantry] appears <after discovering [Radar]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>"],
-		"uniqueText": " [Farming and Warfare]: \n * ['[Farm]' [improvement] [-1 Food, +1 Production]] \n * ['[All]' [units] [Earn [33]% of killed [Military] unit's [Cost] as [Gold]]] \n\n [Tiger Tally]: \n * [Upon gaining a '[[Warrior] ([or upgrade])]' unit], [[1] '[[Spearman] ([or upgrade])]' units appear] ",
+		"uniqueText": " [Farming and Warfare]: \n * ['[Farm]' [improvement] [-1 Food, +1 Production]] \n * ['[All]' [units] [Earn [67]% of killed [Military] unit's [Cost] as [Gold]]] \n\n [Tiger Tally]: \n * [Upon gaining a '[[Warrior] ([or upgrade])]' unit], [[1] '[[Spearman] ([or upgrade])]' units appear] ",
 		
 		"cities":  ["Beijing","Shanghai","Guangzhou","Nanjing","Xian","Chengdu","Hangzhou","Tianjin","Macau","Shandong",
 					"Kaifeng","Ningbo","Baoding","Yangzhou","Harbin","Chongqing","Luoyang","Kunming","Taipei","Shenyang",
@@ -510,7 +510,7 @@
 		"uniques": ["[-50]% maintenance costs <for [Water] units>",
 					"When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it",
 					
-					"[+2 Happiness, +2 Culture, +3 Gold] [in all cities] <starting from the [Medieval era]> <if [Leader - Suleiman I] is constructed>"],
+					"[+3 Happiness, +3 Culture, +4 Gold] [in all cities] <starting from the [Medieval era]> <if [Leader - Suleiman I] is constructed>"],
 		"uniqueText": " [Barbary Corsairs]: \n * ['[Water]' [units] [-50]% maintenance costs] \n * [When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it] ",
 		
 		"cities":  ["Istanbul","Edirne","Ankara","Bursa","Konya","Samsun","Gaziantep","Diyarbakır","Izmir","Kayseri",
@@ -860,7 +860,6 @@
 					
 					"[+1 Production] from every [Mine] <in [Snow] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
 					"[+1 Production] from every [Mine] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
-					"[+1 Production] from every [Lumber Mill] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
 					"[+1 Food] from every [Camp] <if [Leader - Wilfrid Laurier] is constructed>"],
 		"uniqueText": " [Fur Trade]: \n * ['[Camp]' [improvement] [+2 Gold]] \n * ['[Furs]' [tiles] [+2 Gold]] \n\n [Northern Scenery]: \n * ['[Tundra]' & '[Snow]' [tiles] [+1 Culture]] ",
 		
@@ -901,7 +900,7 @@
 					"[-50]% maintenance on road & railroads",
 					"No Maintenance costs for improvements in [Hill] tiles",
 					
-					"[+1 Production] from every [Terrace Farm] <if [Leader - Pachacuti] is constructed>",
+					"[+2 Production] from every [Terrace Farm] <if [Leader - Pachacuti] is constructed>",
 					"[+2 Production] from every [Mountain] <if [Leader - Pachacuti] is constructed>",
 					"[+1 Food] from every [Mountain] <with [1] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
 					"[+1 Food] from every [Mountain] <with [2] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
@@ -909,6 +908,12 @@
 					"[+1 Food] from every [Mountain] <with [4] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
 					"[+1 Food] from every [Mountain] <with [5] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
 					"[+1 Food] from every [Mountain] <with [6] to [6] neighboring [Terrace Farm] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [1] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [2] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [3] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [4] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [5] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
+					"[+1 Faith] from every [Terrace Farm] <with [6] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
 					
 					"[Worker] units gain the [Huáscar] promotion <if [Leader - Wayna Qhapaq] is constructed>"],
 		"uniqueText": " [Qhapaq Ñan]: \n * [Units ignore terrain costs when moving into any tile with Hills] \n * [[-50]% maintenance on road & railroads] \n * [No Maintenance costs for improvements in '[Hill]' tiles] ",
@@ -962,7 +967,7 @@
 		"leaderName": "Civilization",
 		
 		"favoredReligion": "Mythological Beliefs",
-		"startBias": ["Jungle", "Forest"],
+		"startBias": ["Jungle", "Forest", "River"],
 		"preferredVictoryType": "",//
 		
 		"startIntroPart1": "",

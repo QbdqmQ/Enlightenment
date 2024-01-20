@@ -75,13 +75,13 @@
 		"name": "Base Worker",//基础工人
 		"unitType": "Land 'Civilian'",
 		"movement": 2,
-		"cost": 999999999,
+		"cost": 0,
 		"uniques": ["Worker",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Cannot move",
 					
 					"Can transform to [Resource Worker I]",
-					"Can transform to [Power Plant Worker I]",
 					"Can transform to [Remove Worker I]",
 					"Can transform to [Building Worker I]",
 					"Can transform to [Engineering Worker I]",
@@ -190,18 +190,6 @@
 	},
     
     {
-		"name": "Power Plant Worker I",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Power Plant Worker II",
-		"movement": 2,
-		"cost": 70,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-    {
 		"name": "Power Plant Worker II",//电厂工人
 		"unitType": "Land 'Civilian'",
 		"upgradesTo": "Power Plant Worker III",
@@ -271,7 +259,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Remove Worker II",//移除工人
@@ -283,7 +271,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Remove Worker III",//移除工人
@@ -295,7 +283,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Remove Worker IV",//移除工人
@@ -307,7 +295,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Remove Worker V",//移除工人
@@ -319,7 +307,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Remove Worker VI",//移除工人
@@ -330,7 +318,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
 	
     {
@@ -343,7 +331,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Building Worker II",//建筑工人
@@ -355,7 +343,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Building Worker III",//建筑工人
@@ -367,7 +355,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Building Worker IV",//建筑工人
@@ -379,7 +367,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Building Worker V",//建筑工人
@@ -391,7 +379,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Building Worker VI",//建筑工人
@@ -402,7 +390,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
 	},
 	
     {
@@ -415,7 +403,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Engineering Worker II",//工程工人
@@ -427,7 +415,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Engineering Worker III",//工程工人
@@ -439,7 +427,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Engineering Worker IV",//工程工人
@@ -451,7 +439,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Engineering Worker V",//工程工人
@@ -463,7 +451,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     {
 		"name": "Engineering Worker VI",//工程工人
@@ -474,7 +462,7 @@
 					"Worker",
 					
 					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
 	},
     
     {
@@ -1180,15 +1168,34 @@
 	{
 		"name": "Digitization Force",//数字化部队
 		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Scouting Drone",
 		"movement": 3,
 		"range": 1,
 		"strength": 80,
 		"rangedStrength": 79,
 		"cost": 1165,
 		"requiredTech": "Stealth",
+		"obsoleteTech": "Robotics",
 		"uniques": ["Explorations",
 					
 					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Scouting Drone",//侦查无人机
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 5,
+		"range": 1,
+		"strength": 85,
+		"rangedStrength": 84,
+		"cost": 1325,
+		"requiredTech": "Robotics",
+		"uniques": ["Explorations",
+					
+					"Can move after attacking",
+					"Can see invisible [Scouting Drone] units",
+					"Invisible to others"],
 		"promotions": ["Investigation"],
 		"attackSound": "nonmetalhit"
 	},
@@ -1275,10 +1282,23 @@
 	{
 		"name": "Mechanized Infantry",//机械化步兵
 		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "Exoskeletal Infantry",
 		"movement": 2,
 		"strength": 90,
 		"cost": 912,
 		"requiredTech": "Radar",
+		"obsoleteTech": "Exoskeleton",
+		"uniques": ["Costs [8] [Steel]",
+					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Exoskeletal Infantry",//外骨骼步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 110,
+		"cost": 1590,
+		"requiredTech": "Exoskeleton",
 		"uniques": ["Costs [8] [Steel]",
 					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
 		"attackSound": "shot"
@@ -1387,10 +1407,24 @@
 	{
 		"name": "Anti-tank Bazooka",//反坦克火箭筒
 		"unitType": "Land 'Melee' 'Hot weapon'",
+		"upgradesTo": "EMI Infantry",
 		"movement": 2,
 		"strength": 86,
 		"cost": 872,
 		"requiredTech": "Rocketry",
+		"obsoleteTech": "Exoskeleton",
+		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
+					"[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "EMI Infantry",//电磁干扰步兵
+		"unitType": "Land 'Melee' 'Hot weapon'",
+		"movement": 2,
+		"strength": 107,
+		"cost": 1530,
+		"requiredTech": "Exoskeleton",
 		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
 					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
 					"[+100]% Strength <vs [Armored] units>"],
@@ -1548,12 +1582,27 @@
 	{
 		"name": "Battalion Gun",//步兵炮
 		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"upgradesTo": "Particle Beam Mitter",
 		"movement": 2,
 		"range": 1,
 		"strength": 85,
 		"rangedStrength": 85,
 		"cost": 903,
 		"requiredTech": "Rocketry",
+		"obsoleteTech": "Superconductor",
+		"uniques": ["Gunnery",
+					"[+1] additional attacks per turn"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Particle Beam Mitter",//粒子束发射器
+		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"movement": 2,
+		"range": 1,
+		"strength": 105,
+		"rangedStrength": 105,
+		"cost": 1590,
+		"requiredTech": "Superconductor",
 		"uniques": ["Gunnery",
 					"[+1] additional attacks per turn"],
 		"attackSound": "arrow"
@@ -1651,12 +1700,31 @@
 	{
 		"name": "Main Battle Tank",//主战坦克
 		"unitType": "Land 'Melee' 'Armored'",
+		"upgradesTo": "Short-range Laser Mech",
 		"movement": 4,
 		"strength": 105,
 		"cost": 1359,
 		"requiredTech": "Motor",
+		"obsoleteTech": "Combat Mech",
 		"uniques": ["Melee Armored",
 					"Costs [13] [Steel]",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"[-25]% Strength <vs cities> <when attacking>",
+					"Ignores Zone of Control"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Short-range Laser Mech",//短距激光机甲
+		"unitType": "Land 'Melee' 'Armored'",
+		"movement": 4,
+		"strength": 122,
+		"cost": 2421,
+		"requiredTech": "Combat Mech",
+		"uniques": ["Melee Armored",
+					"Mechs",
+					"Costs [13] [Steel]",
+					"Costs [6] [Electric Power]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -1756,13 +1824,31 @@
 	{
 		"name": "Heavy Tank",//重型坦克
 		"unitType": "Land 'Melee' 'Armored'",
+		"upgradesTo": "Heavy Laser Mech",
 		"movement": 3,
 		"strength": 108,
 		"cost": 1437,
 		"requiredTech": "Motor",
+		"obsoleteTech": "Combat Mech",
 		"uniques": ["Heavy Armored",
 					"Costs [14] [Steel]",
 					"Costs [10] [Oil]",
+					"Can move after attacking",
+					"[+15]% Strength <when defending>",
+					"[-25]% Strength <vs cities> <when attacking>"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Heavy Laser Mech",//重型激光机甲
+		"unitType": "Land 'Melee' 'Armored'",
+		"movement": 3,
+		"strength": 125,
+		"cost": 2511,
+		"requiredTech": "Combat Mech",
+		"uniques": ["Heavy Armored",
+					"Mechs",
+					"Costs [14] [Steel]",
+					"Costs [16] [Electric Power]",
 					"Can move after attacking",
 					"[+15]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
@@ -1857,14 +1943,32 @@
 	{
 		"name": "Medium Tank",//中型坦克
 		"unitType": "Land 'Ranged' 'Armored'",
+		"upgradesTo": "Medium Laser Mech",
 		"movement": 4,
 		"range": 2,
 		"strength": 103,
 		"rangedStrength": 105,
 		"cost": 1407,
 		"requiredTech": "Motor",
+		"obsoleteTech": "Combat Mech",
 		"uniques": ["Ranged Armored",
 					"Costs [13] [Steel]",
+					"No defensive terrain bonus"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Medium Laser Mech",//中型激光机甲
+		"unitType": "Land 'Ranged' 'Armored'",
+		"movement": 4,
+		"range": 2,
+		"strength": 120,
+		"rangedStrength": 122,
+		"cost": 2481,
+		"requiredTech": "Combat Mech",
+		"uniques": ["Ranged Armored",
+					"Mechs",
+					"Costs [13] [Steel]",
+					"Costs [6] [Electric Power]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
@@ -1958,17 +2062,36 @@
 	{
 		"name": "Mobile Mortar",//自行迫击炮
 		"unitType": "Land 'Support'",
+		"upgradesTo": "Automatic Mortar",
 		"movement": 2,
 		"range": 2,
 		"strength": 78,
 		"rangedStrength": 55,
 		"cost": 1030,
 		"requiredTech": "Computers",
+		"obsoleteTech": "Robotics",
 		"uniques": ["Gunnery",
 					"[+100]% Strength <vs [Infantry] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Automatic Mortar",//自动迫击炮
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"range": 2,
+		"strength": 96,
+		"rangedStrength": 65,
+		"cost": 1030,
+		"requiredTech": "Robotics",
+		"uniques": ["Gunnery",
+					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Never appears as a Barbarian unit",
+					"Automation is a primary action"],
 		"attackSound": "throw"
 	},
 	
@@ -2073,12 +2196,32 @@
 	{
 		"name": "Rocket Artillery",//火箭炮
 		"unitType": "Land 'Support'",
+		"upgradesTo": "Microwave Mitter",
 		"movement": 2,
 		"range": 3,
 		"strength": 80,
 		"rangedStrength": 80,
 		"cost": 1190,
 		"requiredTech": "Rocketry",
+		"obsoleteTech": "Superconductor",
+		"uniques": ["Gunnery",
+					"[+200]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Water] units> <when attacking>",
+					"No Sight",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "throw"
+	},
+	{
+		"name": "Microwave Mitter",//微波发射器
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"range": 3,
+		"strength": 90,
+		"rangedStrength": 90,
+		"cost": 2130,
+		"requiredTech": "Superconductor",
 		"uniques": ["Gunnery",
 					"[+200]% Strength <vs cities> <when attacking>",
 					"[+50]% Strength <vs [Water] units> <when attacking>",
@@ -2109,11 +2252,13 @@
 	{
 		"name": "Mobile SAM",//自行防空导弹
 		"unitType": "Land 'Support'",
+		"upgradesTo": "Automatic SAM",
 		"movement": 2,
 		"interceptRange": 3,
 		"strength": 80,
 		"cost": 1050,
 		"requiredTech": "Computers",
+		"obsoleteTech": "Robotics",
 		"uniques": ["Gunnery",
 					"[100]% chance to intercept air attacks",
 					"[+50]% Strength <vs [Air] units>",
@@ -2121,16 +2266,51 @@
 					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
+	{
+		"name": "Automatic SAM",//自动防空导弹
+		"unitType": "Land 'Support'",
+		"movement": 2,
+		"interceptRange": 3,
+		"strength": 95,
+		"cost": 1860,
+		"requiredTech": "Robotics",
+		"uniques": ["Gunnery",
+					"[100]% chance to intercept air attacks",
+					"[+50]% Strength <vs [Air] units>",
+					"[+50]% Strength <vs [Helicopter Gunship] units>",
+					"Never appears as a Barbarian unit",
+					"Automation is a primary action"],
+		"attackSound": "machinegun"
+	},
 	
 	{
-
 		"name": "Helicopter Gunship",//武装直升机
 		"unitType": "Land 'Support'",
+		"upgradesTo": "High-speed Helicopter",
 		"movement": 6,
 		"strength": 94,
 		"cost": 932,
 		"requiredTech": "Motor",
+		"obsoleteTech": "Superconductor",
 		"uniques": ["Costs [9] [Aluminum]",
+					"Can pass through impassable tiles",
+					"No defensive terrain bonus",
+					"Can move after attacking",
+					"All tiles cost 1 movement",
+					"Ignores Zone of Control",
+					"Unable to capture cities",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "High-speed Helicopter",//高速直升机
+		"unitType": "Land 'Support'",
+		"movement": 8,
+		"strength": 103,
+		"cost": 1860,
+		"requiredTech": "Superconductor",
+		"uniques": ["Costs [9] [Aluminum]",
+					"Costs [3] [Electric Power]",
 					"Can pass through impassable tiles",
 					"No defensive terrain bonus",
 					"Can move after attacking",
@@ -2601,6 +2781,7 @@
 		"rangedStrength": 80,
 		"cost": 1053,
 		"requiredTech": "Flight",
+		"obsoleteTech": "Stealth",
 		"uniques": ["Costs [11] [Aluminum]",
 					"[80]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Air 'Bomber'] units>"],
@@ -2609,6 +2790,7 @@
 	{
 		"name": "Stealth Fighter",//隐形战斗机
 		"unitType": "Air 'Fighter'",
+		"upgradesTo": "Laser Fighter",
 		"movement": 1,
 		"range": 11,
 		"interceptRange": 11,
@@ -2616,7 +2798,25 @@
 		"rangedStrength": 100,
 		"cost": 1655,
 		"requiredTech": "Stealth",
+		"obsoleteTech": "Nuclear Fusion",
 		"uniques": ["Costs [12] [Aluminum]",
+					"[80]% chance to intercept air attacks",
+					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"Damage taken from interception reduced by [-25]%"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Laser Fighter",//激光战斗机
+		"unitType": "Air 'Fighter'",
+		"movement": 1,
+		"range": 13,
+		"interceptRange": 13,
+		"strength": 120,
+		"rangedStrength": 120,
+		"cost": 1879,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Costs [12] [Aluminum]",
+					"Costs [5] [Electric Power]",
 					"[80]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Air 'Bomber'] units>",
 					"Damage taken from interception reduced by [-25]%"],
@@ -2647,19 +2847,36 @@
 		"rangedStrength": 90,
 		"cost": 1077,
 		"requiredTech": "Flight",
+		"obsoleteTech": "Stealth",
 		"uniques": ["Costs [11] [Aluminum]"],
 		"attackSound": "bombing"
 	},
 	{
 		"name": "Stealth Bomber",//隐形轰炸机
 		"unitType": "Air 'Bomber'",
+		"upgradesTo": "Pulse Bomber",
 		"movement": 1,
 		"range": 13,
 		"strength": 110,
 		"rangedStrength": 110,
 		"cost": 1679,
 		"requiredTech": "Stealth",
+		"obsoleteTech": "Nuclear Fusion",
 		"uniques": ["Costs [12] [Aluminum]",
+					"Damage taken from interception reduced by [-25]%"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Pulse Bomber",//脉冲轰炸机
+		"unitType": "Air 'Bomber'",
+		"movement": 1,
+		"range": 13,
+		"strength": 120,
+		"rangedStrength": 120,
+		"cost": 1903,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Costs [12] [Aluminum]",
+					"Costs [5] [Electric Power]",
 					"Damage taken from interception reduced by [-25]%"],
 		"attackSound": "bombing"
 	},
@@ -2692,11 +2909,30 @@
 		"rangedStrength": 80,
 		"cost": 815,
 		"requiredTech": "Rocketry",
-		"uniques": ["Costs [9] [Aluminum]",
+		"uniques": ["Costs [8] [Aluminum]",
 					"[2] extra interceptions may be made per turn",
 					"[+2] additional attacks per turn",
 					"No Sight",
 					"Can only heal by pillaging"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Miniature Missile",//微型导弹
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 10,
+		"interceptRange": 10,
+		"strength": 90,
+		"rangedStrength": 90,
+		"cost": 1420,
+		"requiredTech": "Rocketry",
+		"uniques": ["Costs [8] [Aluminum]",
+					"Costs [2] [Electric Power]",
+					"[2] extra interceptions may be made per turn",
+					"[+4] additional attacks per turn",
+					"No Sight",
+					"Can only heal by pillaging",
+					"Heal this unit by [33] HP <every [3] turns>"],
 		"attackSound": "missile"
 	},
 	
@@ -2905,7 +3141,7 @@
 		"range": 3,
 		"strength": 40,
 		"rangedStrength": 40,
-		"cost": 696,
+		"cost": 892,
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Radio",
 		"uniques": ["Gunnery",
@@ -2928,7 +3164,7 @@
 		"replaces": "Line Infantry",
 		"movement": 2,
 		"strength": 52,
-		"cost": 534,
+		"cost": 584,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Ballistics",
 		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
@@ -3103,7 +3339,7 @@
 		"range": 3,
 		"strength": 25,
 		"rangedStrength": 25,
-		"cost": 210,
+		"cost": 310,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Dynamite",
 		"uniques": ["Gunnery",
@@ -3129,7 +3365,7 @@
 		"interceptRange": 11,
 		"strength": 100,
 		"rangedStrength": 100,
-		"cost": 1583,
+		"cost": 1189,
 		"requiredTech": "Stealth",
 		"uniques": ["Costs [12] [Aluminum]",
 					"[80]% chance to intercept air attacks",
@@ -3178,7 +3414,7 @@
 	
 //埃及
 	{
-		"name": "Maryannu Chariot Archer",//战车射手
+		"name": "Maryannu Chariot Archer",//贵族战车射手
 		"unitType": "Land 'Ranged' 'Cavalry'",
 		"upgradesTo": "Bow Cavalry",
 		"uniqueTo": "Egypt",
@@ -3317,7 +3553,7 @@
 		"attackSound": "horse"
 	},
 	
-//加拿大
+//印加
 	{
 		"name": "Warak’aq",//瓦剌卡战士
 		"unitType": "Land 'Melee' 'Cold weapon'",
@@ -3382,7 +3618,7 @@
 		"range": 2,
 		"strength": 18,
 		"rangedStrength": 23,
-		"cost": 45,
+		"cost": 47,
 		"obsoleteTech": "Mathematics",
 		"attackSound": "arrow"
 	},

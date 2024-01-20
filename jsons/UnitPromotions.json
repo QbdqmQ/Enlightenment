@@ -281,7 +281,7 @@
 	},
 	{
 		"name": "Alliances - Almaty",//同盟 - 阿拉木图
-		"uniques": ["Can build [Fortification] improvements on tiles"],
+		"uniques": ["Can build [Engineering Improvement] improvements on tiles"],
 		"column": 4,
 		"row": 15
 	},

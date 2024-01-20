@@ -541,13 +541,6 @@
 				"prerequisites": ["Electronics"],
 				"uniques": []
 			},
-			{
-				"name": "Pharmaceuticals",//制药学
-				"row": 6,
-				"quote": "",
-				"prerequisites": ["Ecology"],
-				"uniques": []
-			},
 		]
 	},
 	{
@@ -586,10 +579,10 @@
 				"uniques": []
 			},
 			{
-				"name": "Agricultural Science",//农业学
+				"name": "Pharmaceuticals",//制药学
 				"row": 6,
 				"quote": "",
-				"prerequisites": ["Pharmaceuticals"],
+				"prerequisites": ["Ecology"],
 				"uniques": []
 			},
 		]
@@ -656,16 +649,9 @@
 			},
 			{
 				"name": "Telecommunications",//远程通信
-				"row": 5,
-				"quote": "",
-				"prerequisites": ["Satellites"],
-				"uniques": []
-			},
-			{
-				"name": "Biotech",//生物科技
 				"row": 6,
 				"quote": "",
-				"prerequisites": ["Agricultural Science"],
+				"prerequisites": ["Pharmaceuticals","Satellites"],
 				"uniques": []
 			},
 		]
@@ -675,7 +661,7 @@
 	{
 		"columnNumber": 20,
 		"era": "Fusion era",
-		"techCost": 25600,
+		"techCost": 51200,
 		"buildingCost": 740,
 		"wonderCost": 1860,
 		"techs": [
@@ -697,7 +683,7 @@
 				"name": "Exoskeleton",//外骨骼
 				"row": 6,
 				"quote": "",
-				"prerequisites": ["Biotech"],
+				"prerequisites": ["Telecommunications"],
 				"uniques": []
 			},
 		]
@@ -705,7 +691,7 @@
 	{
 		"columnNumber": 21,
 		"era": "Fusion era",
-		"techCost": 51200,
+		"techCost": 102400,
 		"buildingCost": 800,
 		"wonderCost": 2040,
 		"techs": [
@@ -727,7 +713,7 @@
 				"name": "Combat Mech",//战斗机甲
 				"row": 5,
 				"quote": "",
-				"prerequisites": ["Telecommunications","Exoskeleton"],
+				"prerequisites": ["Superconductor","Exoskeleton"],
 				"uniques": []
 			},
 		]
@@ -737,7 +723,7 @@
 	{
 		"columnNumber": 22,
 		"era": "Star era",
-		"techCost": 102400,
+		"techCost": 204800,
 		"buildingCost": 865,
 		"wonderCost": 2280,
 		"techs": [
@@ -760,7 +746,7 @@
 	{
 		"columnNumber": 23,
 		"era": "Star era",
-		"techCost": 204800,
+		"techCost": 409600,
 		"buildingCost": 930,
 		"wonderCost": 2520,
 		"techs": [
@@ -792,7 +778,7 @@
 	{
 		"columnNumber": 24,
 		"era": "Future era",
-		"techCost": 409600,
+		"techCost": 812400,
 		"buildingCost": 1000,
 		"wonderCost": 2760,
 		"techs": [

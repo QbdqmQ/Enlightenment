@@ -74,7 +74,6 @@
 					"Can only be built to improve a resource",
 					
 					"[+1 Food] <after discovering [Biology]>",
-					"[+1 Gold] <after discovering [Agricultural Science]>",
 					
 					"Pillaging this improvement yields approximately [+70 Gold]"],
 	},
@@ -119,8 +118,6 @@
 					"[+1 Production] <in [Tundra] tiles>",
 					"[+1 Production] <in [Snow] tiles>",
 					
-					"[+1 Production] <after discovering [Chemistry]>",
-					
 					"Pillaging this improvement yields approximately [+70 Gold]"],
 	},
 	{
@@ -138,8 +135,6 @@
 					"[+2 Food] <in [Grassland] tiles>",
 					"[+1 Food] <in [Plains] tiles>",
 					"[+1 Food] <in [Desert] tiles>",
-
-					"[+1 Food] <after discovering [Agricultural Science]>",
 					
 					"Pillaging this improvement yields approximately [+40 Gold]"],
 	},
@@ -161,7 +156,7 @@
 	},
 
 	{
-		"name": "Plantations",//人工林区
+		"name": "Planted Forest",//人工林区
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra"],
 		"food": 2,
 		"gold": 2,
@@ -363,7 +358,7 @@
 					"[+2 Gold] for each adjacent [Baths]",
 					"[+2 Gold] for each adjacent [Tourist Center]",
 					
-					"[+1 Happiness] for each adjacent [Plantations]",
+					"[+1 Happiness] for each adjacent [Planted Forest]",
 					
 					"[+1 Production] for each adjacent [Strategic resource]",
 					"[+2 Gold] for each adjacent [Luxury resource]",
@@ -700,7 +695,6 @@
 		"turnsToBuild": 8,
 		"uniques": ["Base Improvement",
 					"Engineering Improvement",
-					"Fortification",
 					
 					"Can be built outside your borders",
 					
@@ -716,7 +710,6 @@
 		"techRequired": "Dynamite",
 		"uniques": ["Base Improvement",
 					"Engineering Improvement",
-					"Fortification",
 					
 					"Can be built outside your borders",
 					
@@ -811,6 +804,7 @@
 		"techRequired": "Initialization",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"[+1 Happiness, +2 Faith]",
 					
@@ -829,6 +823,7 @@
 		"techRequired": "The Wheel",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"Unbuildable <within [1] tiles of a [Palgum]>",
 					"Can only be built on [Fresh water] tiles",
@@ -847,6 +842,7 @@
 		"techRequired": "Masonry",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"[+1 Faith, +1 Culture]",
 					
@@ -868,6 +864,7 @@
 		"techRequired": "Masonry",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"[+2 Faith, +1 Culture]",
 					
@@ -882,6 +879,7 @@
 		"uniqueTo": "America",
 		"turnsToBuild": 20,
 		"uniques": ["District",
+					"Unique District",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -899,6 +897,7 @@
 		"techRequired": "Pottery",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"Cannot be built on [Bonus resource] tiles",
 					
@@ -916,6 +915,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Pottery",
 		"uniques": ["Blessing",
+					"Unique Improvement",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -933,6 +933,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Pottery",
 		"uniques": ["Blessing",
+					"Unique Improvement",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -950,6 +951,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Pottery",
 		"uniques": ["Blessing",
+					"Unique Improvement",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -967,6 +969,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Pottery",
 		"uniques": ["Blessing",
+					"Unique Improvement",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -984,6 +987,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Pottery",
 		"uniques": ["Blessing",
+					"Unique Improvement",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
@@ -1002,6 +1006,7 @@
 		"techRequired": "Masonry",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					"Unique Improvement",
 					
 					"[+1 Culture]",
 					
