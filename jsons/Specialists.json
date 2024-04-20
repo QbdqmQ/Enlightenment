@@ -33,5 +33,16 @@
 		"faith": 3,
 		"greatPersonPoints": {"Talent":2},
 		"color": [255,255,255]
+	},
+
+	{
+		"name":"Cthulhu Follower",//克苏鲁信徒
+		"faith": 3,
+		"science": 1,
+		"gold": 1,
+		"culture": 1,
+		"production": 1,
+		"greatPersonPoints": {"Cthulu Bishop":2},
+		"color": [000,139,069]
 	}
 ]

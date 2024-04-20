@@ -166,6 +166,8 @@
 					
 					"Pillaging this improvement yields approximately [+80 Gold]",
 					
+					"Costs [1] [Gold] per turn when in your territory",
+					
 					"Provides [-1] [Pollution]",
 
 					"Only available <after adopting [Reforestation]>"],
@@ -180,6 +182,8 @@
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
 					
+					"Costs [2] [Gold] per turn when in your territory",
+					
 					"Provides [1] [Tourism Performance]",
 
 					"Only available <after adopting [Tertiary Industry]>"],
@@ -193,6 +197,8 @@
 		"techRequired": "Particle Physics",
 		"uniques": ["Base Improvement",
 					"Building Improvement",
+					
+					"Costs [5] [Gold] per turn when in your territory",
 					
 					"Provides [1] [Deuterium] <when above [2] [Electric Power]>",
 					"Consumes [2] [Electric Power] <when above [2] [Electric Power]>",
@@ -212,6 +218,8 @@
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
 					
+					"Costs [3] [Gold] per turn when in your territory",
+					
 					"Provides [3] [Pollution] <when above [1] [Coal]>",
 					"Provides [3] [Electric Power] <when above [1] [Coal]>",
 					"Consumes [1] [Coal] <when above [1] [Coal]>",
@@ -227,6 +235,8 @@
 					"Power Plant",
 					
 					"Pillaging this improvement yields approximately [+200 Gold]",
+					
+					"Costs [3] [Gold] per turn when in your territory",
 					
 					"Provides [3] [Pollution] <when above [1] [Oil]>",
 					"Provides [4] [Electric Power] <when above [1] [Oil]>",
@@ -244,6 +254,8 @@
 					
 					"Pillaging this improvement yields approximately [+250 Gold]",
 					
+					"Costs [5] [Gold] per turn when in your territory",
+					
 					"Provides [1] [Pollution] <when above [1] [Uranium]>",
 					"Provides [5] [Electric Power] <when above [1] [Uranium]>",
 					"Consumes [1] [Uranium] <when above [1] [Uranium]>",
@@ -260,6 +272,8 @@
 					
 					"Pillaging this improvement yields approximately [+300 Gold]",
 					
+					"Costs [8] [Gold] per turn when in your territory",
+					
 					"Provides [6] [Electric Power] <when above [1] [Deuterium]>",
 					"Consumes [1] [Deuterium] <when above [1] [Deuterium]>",
 					"Provides [1] [Electric Power] <after adopting [Power Construction]> <when above [1] [Deuterium]>"],
@@ -267,7 +281,7 @@
 
 	{
 		"name": "Solar Plant",//太阳能发电厂
-		"terrainsCanBeBuiltOn": ["Desert", "Plains", "Grassland"],
+		"terrainsCanBeBuiltOn": ["Desert", "Plains", "Grassland", "Lakes"],
 		"production": 2,
 		"turnsToBuild": 9,
 		"techRequired": "Clean Energy",
@@ -275,6 +289,8 @@
 					"Power Plant",
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Costs [3] [Gold] per turn when in your territory",
 					
 					"Provides [2] [Electric Power]",
 					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
@@ -290,6 +306,8 @@
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
 					
+					"Costs [3] [Gold] per turn when in your territory",
+					
 					"Provides [1] [Electric Power]",
 					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
 	},
@@ -303,6 +321,8 @@
 					"Power Plant",
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
+					
+					"Costs [4] [Gold] per turn when in your territory",
 					
 					"Provides [3] [Electric Power]",
 					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
@@ -318,11 +338,64 @@
 					
 					"Pillaging this improvement yields approximately [+150 Gold]",
 					
+					"Costs [3] [Gold] per turn when in your territory",
+					
 					"Provides [1] [Electric Power]",
 					"Provides [1] [Electric Power] <after adopting [Power Construction]>"],
 	},
 	
 //区域
+	{
+		"name": "AI District",//智能区域
+		"terrainsCanBeBuiltOn": ["Land", "Water"],
+		"turnsToBuild": 10,
+		"uniques": ["District",
+					
+					"Pillaging this improvement yields approximately [+150 Gold]",
+
+					"Gives a defensive bonus of [10]% <for [AI player]>",
+					
+					"[+1 Food, +1 Production] <for [AI player]>",
+					
+					"[+1 Faith] for each adjacent [District - Holy Site]",
+					"[+1 Science] for each adjacent [District - Academy]",
+					"[+1 Gold] for each adjacent [District - Harbor]",
+					"[+1 Gold] for each adjacent [District - Business Center]",
+					"[+1 Happiness] for each adjacent [District - Entertainment]",
+					"[+1 Culture] for each adjacent [District - Landmark]",
+					"[+1 Production] for each adjacent [District - Industrial Zone]",
+					"[+1 Happiness] for each adjacent [District - Municipal Square]",
+					
+					"[+1 Food] for each adjacent [Camp] <for [AI player]>",
+					"[+1 Food] for each adjacent [Pasture] <for [AI player]>",
+					"[+1 Food] for each adjacent [Fishing Boats] <for [AI player]>",
+					"[+1 Food] for each adjacent [Farm] <for [AI player]>",
+					
+					"[+1 Production] for each adjacent [Quarry] <for [AI player]>",
+					"[+1 Production] for each adjacent [Oil Well] <for [AI player]>",
+					"[+1 Production] for each adjacent [Offshore Platform] <for [AI player]>",
+					"[+1 Production] for each adjacent [Mine] <for [AI player]>",
+					
+					"[+2 Gold] for each adjacent [Baths] <for [AI player]>",
+					"[+2 Gold] for each adjacent [Tourist Center] <for [AI player]>",
+					"[+2 Gold] for each adjacent [Plantation] <for [AI player]>",
+					
+					"[+1 Happiness] for each adjacent [Planted Forest] <for [AI player]>",
+					
+					"[+1 Production] for each adjacent [Strategic resource] <for [AI player]>",
+					"[+2 Gold] for each adjacent [Luxury resource] <for [AI player]>",
+					"[+1 Food] for each adjacent [Bonus resource] <for [AI player]>",
+					
+					"[+2 Production] <in [Strategic resource] tiles> <for [AI player]>",
+					"[+4 Gold] <in [Luxury resource] tiles> <for [AI player]>",
+					"[+2 Food] <in [Bonus resource] tiles> <for [AI player]>",
+					
+					"[+2 Science] <with [2] to [6] neighboring [Strategic resource] tiles> <for [AI player]>",
+					"[+2 Culture] <with [2] to [6] neighboring [Luxury resource] tiles> <for [AI player]>",
+					"[+2 Faith] <with [2] to [6] neighboring [Bonus resource] tiles> <for [AI player]>",
+					
+					"Only available <for [AI player]>"]
+	},
 	{
 		"name": "City",//城市
 		"terrainsCanBeBuiltOn": ["Land"],
@@ -332,7 +405,9 @@
 					
 					"Pillaging this improvement yields approximately [+180 Gold]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Food, +1 Production]",
 					
@@ -357,6 +432,7 @@
 					
 					"[+2 Gold] for each adjacent [Baths]",
 					"[+2 Gold] for each adjacent [Tourist Center]",
+					"[+2 Gold] for each adjacent [Plantation]",
 					
 					"[+1 Happiness] for each adjacent [Planted Forest]",
 					
@@ -378,7 +454,9 @@
 					
 					"Pillaging this improvement yields approximately [+30 Faith]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Faith] <with [2] to [6] neighboring [District] tiles>",
 					"[+1 Faith] <with [4] to [6] neighboring [District] tiles>",
@@ -399,7 +477,9 @@
 					
 					"Pillaging this improvement yields approximately [+20 Science]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Science] <with [2] to [6] neighboring [District] tiles>",
 					"[+1 Science] <with [4] to [6] neighboring [District] tiles>",
@@ -411,13 +491,16 @@
 		"turnsToBuild": 14,
 		"uniques": ["District",
 					"District - Barracks",
+					"Military Improvement",
 					
 					"Removes removable features when built",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
-					"Gives a defensive bonus of [100]%",
-					"Gives a defensive bonus of [50]% <with [2] to [6] neighboring [District - Barracks] tiles>",
+					"Costs [1] [Gold] per turn when in your territory",
+					
+					"Gives a defensive bonus of [60]%",
+					"Gives a defensive bonus of [60]% <with [2] to [6] neighboring [District - Barracks] tiles>",
 					"Adjacent enemy units ending their turn take [15] damage",
 					"Adjacent enemy units ending their turn take [15] damage <with [2] to [6] neighboring [District - Barracks] tiles>",
 
@@ -438,7 +521,9 @@
 					
 					"Pillaging this improvement yields approximately [+70 Gold]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+2 Gold] for each adjacent [District]"]
 	},
@@ -454,7 +539,9 @@
 					
 					"Pillaging this improvement yields approximately [+90 Gold]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Gold] <with [2] to [6] neighboring [District] tiles>",
 					"[+1 Gold] <with [4] to [6] neighboring [District] tiles>",
@@ -474,7 +561,9 @@
 					
 					"Pillaging this improvement yields approximately [+70 Gold]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"Tile provides yield without assigned population",
 					
@@ -495,7 +584,9 @@
 					
 					"Pillaging this improvement yields approximately [+20 Culture]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Culture] <with [2] to [6] neighboring [District] tiles>",
 					"[+1 Culture] <with [4] to [6] neighboring [District] tiles>",
@@ -516,32 +607,40 @@
 					
 					"Pillaging this improvement yields approximately [+70 Gold]",
 
-					"Gives a defensive bonus of [10]%",
+					"Gives a defensive bonus of [5]%",
+					
+					"Costs [1] [Gold] per turn when in your territory",
 					
 					"[+1 Production] <with [2] to [6] neighboring [District] tiles>",
 					"[+1 Production] <with [4] to [6] neighboring [District] tiles>",
 					"[+1 Production] <with [6] to [6] neighboring [District] tiles>"]
 	},
-	{
-		"name": "Municipal Square",//市政广场
-		"terrainsCanBeBuiltOn": ["Land"],
-		"turnsToBuild": 17,
-		"uniques": ["District",
-					"District - Municipal Square",
-					
-					"Removes removable features when built",
-					
-					"Pillaging this improvement yields approximately [+160 Gold]",
-
-					"Gives a defensive bonus of [10]%",
-					
-					"Provides [2] [Policy Point - Development]",
-					"Provides [2] [Policy Point - Military]",
-
-					"Only available <if [Polity ( Lv. I )] is constructed>"]
-	},
 	
 //伟人设施
+	
+	//大音乐家
+	{
+		"name": "Concert Hall",//音乐厅
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 7,
+		"techRequired": "Initialization",
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(Tourism)",
+					
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+70 Culture]",
+					
+					"Costs [2] [Culture] per turn when in your territory",
+					
+					"Provides [3] [Tourism Performance]",
+					"Provides [3] [Tourism Performance] <with [1] to [6] neighboring [Tourist Center] tiles>",
+					"Provides [3] [Tourism Performance] <with [2] to [6] neighboring [Tourist Center] tiles>",
+					"Provides [3] [Tourism Performance] <with [3] to [6] neighboring [Tourist Center] tiles>",
+					"Provides [3] [Tourism Performance] <with [4] to [6] neighboring [Tourist Center] tiles>",
+					"Provides [3] [Tourism Performance] <with [5] to [6] neighboring [Tourist Center] tiles>",
+					"Provides [3] [Tourism Performance] <with [6] to [6] neighboring [Tourist Center] tiles>"]
+	},
 	
 	//大艺术家
 	{
@@ -550,12 +649,14 @@
 		"culture": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Initialization",
-		"uniques": ["Great People Improvement",
-					"Great People Improvement(Culture)",
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(Culture)",
 					
-					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
 					
 					"Pillaging this improvement yields approximately [+35 Culture]",
+					
+					"Costs [2] [Culture] per turn when in your territory",
 					
 					"[+2 Culture] for each adjacent [District]",
 					"[+2 Culture] for each adjacent [District - Landmark]"]
@@ -563,17 +664,19 @@
 	
 	//大科学家
 	{
-		"name": "Seminar",//研讨会
+		"name": "Lecture Theatre",//报告厅
 		"terrainsCanBeBuiltOn": ["Land"],
 		"science": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Initialization",
-		"uniques": ["Great People Improvement",
-					"Great People Improvement(Science)",
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(Science)",
 					
-					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
 					
 					"Pillaging this improvement yields approximately [+70 Gold]",
+					
+					"Costs [2] [Culture] per turn when in your territory",
 					
 					"[+2 Science] for each adjacent [District]",
 					"[+2 Science] for each adjacent [District - Academy]"]
@@ -586,15 +689,51 @@
 		"gold": 1,
 		"turnsToBuild": 7,
 		"techRequired": "Initialization",
-		"uniques": ["Great People Improvement",
-					"Great People Improvement(Gold)",
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(Gold)",
 					
-					"Cannot be built on [All] tiles <with [1] to [6] neighboring [Great People Improvement] tiles>",
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
 					
 					"Pillaging this improvement yields approximately [+140 Gold]",
 					
+					"Costs [2] [Culture] per turn when in your territory",
+					
 					"[+2 Gold] for each adjacent [District]",
 					"[+2 Gold] for each adjacent [District - Business Center]"]
+	},
+	
+	//大外交官
+	{
+		"name": "Embassy",//大使馆
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 7,
+		"techRequired": "Initialization",
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(City-State)",
+					
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+140 Gold]",
+					
+					"Costs [2] [Culture] per turn when in your territory"]
+	},
+	
+	//大政治家
+	{
+		"name": "Municipal Square",//市政广场
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 17,
+		"uniques": ["Great Person Improvement",
+					"Great Person Improvement(Politic)",
+					
+					"Unbuildable <with [1] to [6] neighboring [Great Person Improvement] tiles>",
+					
+					"Pillaging this improvement yields approximately [+160 Gold]",
+					
+					"Costs [2] [Culture] per turn when in your territory",
+					
+					"Provides [1] [Policy Point - Development] <if [Polity ( Lv. I )] is constructed>",
+					"Provides [1] [Policy Point - Military] <if [Polity ( Lv. I )] is constructed>"]
 	},
 	
 //移除地块
@@ -690,30 +829,30 @@
 //军事设施
 	{
 		"name": "Fort",//堡垒
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow",
-								 "Hill","Forest","Jungle","Marsh","Geothermal Fissure","Flood plains","Oasis"],
+		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 8,
 		"uniques": ["Base Improvement",
 					"Engineering Improvement",
+					"Military Improvement",
 					
 					"Can be built outside your borders",
 					
-					"Gives a defensive bonus of [50]%",
+					"Gives a defensive bonus of [15]%",
 
 					"Only available <after adopting [Fortifications]>"]
 	},
 	{
 		"name": "Trenchs",//堑壕
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow",
-								 "Hill","Forest","Jungle","Marsh","Geothermal Fissure","Flood plains","Oasis"],
+		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 8,
 		"techRequired": "Dynamite",
 		"uniques": ["Base Improvement",
 					"Engineering Improvement",
+					"Military Improvement",
 					
 					"Can be built outside your borders",
 					
-					"Gives a defensive bonus of [100]%"]
+					"Gives a defensive bonus of [25]%"]
 	},
 	
 //特殊设施
@@ -727,7 +866,7 @@
 					
 					"Can be built outside your borders",
 					
-					"Costs [1] [Gold] per turn when in your territory"],
+					"Costs [2] [Gold] per turn when in your territory"],
         "civilopediaText": [
             {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
             {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
@@ -744,7 +883,7 @@
 					
 					"Can be built outside your borders",
 					
-					"Costs [2] [Gold] per turn when in your territory"],
+					"Costs [4] [Gold] per turn when in your territory"],
         "civilopediaText": [{"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"}]
 	},
 	
@@ -766,6 +905,7 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable",
 					"Irremovable",
+					"Unbuildable",
 					
 					"District",
 					"District - City",
@@ -778,7 +918,26 @@
 					"[+1 Happiness] for each adjacent [District - Entertainment] <after adopting [Town]>",
 					"[+1 Culture] for each adjacent [District - Landmark] <after adopting [Town]>",
 					"[+1 Production] for each adjacent [District - Industrial Zone] <after adopting [Town]>",
-					"[+1 Happiness] for each adjacent [District - Municipal Square] <after adopting [Town]>",],
+					
+					"[+1 Food] for each adjacent [Camp] <after adopting [Town]>",
+					"[+1 Food] for each adjacent [Pasture] <after adopting [Town]>",
+					"[+1 Food] for each adjacent [Fishing Boats] <after adopting [Town]>",
+					"[+1 Food] for each adjacent [Farm] <after adopting [Town]>",
+					
+					"[+1 Production] for each adjacent [Quarry] <after adopting [Town]>",
+					"[+1 Production] for each adjacent [Oil Well] <after adopting [Town]>",
+					"[+1 Production] for each adjacent [Offshore Platform] <after adopting [Town]>",
+					"[+1 Production] for each adjacent [Mine] <after adopting [Town]>",
+					
+					"[+2 Gold] for each adjacent [Baths] <after adopting [Town]>",
+					"[+2 Gold] for each adjacent [Tourist Center] <after adopting [Town]>",
+					"[+2 Gold] for each adjacent [Plantation] <after adopting [Town]>",
+					
+					"[+1 Happiness] for each adjacent [Planted Forest] <after adopting [Town]>",
+					
+					"[+1 Production] for each adjacent [Strategic resource] <after adopting [Town]>",
+					"[+2 Gold] for each adjacent [Luxury resource] <after adopting [Town]>",
+					"[+1 Food] for each adjacent [Bonus resource] <after adopting [Town]>",],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
 			{"text":"Appearance changes with the technological era of the owning civilization"}
@@ -825,13 +984,13 @@
 					"Building Improvement",
 					"Unique Improvement",
 					
-					"Unbuildable <within [1] tiles of a [Palgum]>",
+					"Unbuildable <in tiles adjacent to [Palgum]>",
 					"Can only be built on [Fresh water] tiles",
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
-					"Produced for adjacent '[City]' [district] [+1 Food, +1 Production]",
-					"Produced for adjacent '[Farm]' [improvement] [+1 Food]"],
+					"Comment [Produced for adjacent '[City]' [district] [+1 Food, +1 Production]]",
+					"Comment [Produced for adjacent '[Farm]' [improvement] [+1 Food]]"],
 	},
 	
 	{
@@ -870,6 +1029,8 @@
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
+					"[+1 Faith, +1 Culture] for each adjacent [Stele]",
+					
 					"[+2 Culture] <after adopting [Archaeology]>"],
 	},
 	
@@ -886,6 +1047,31 @@
 					"[+3 Gold] for each adjacent [District - City]",
 
 					"Only available <after adopting [Banking]>"],
+	},
+	
+	{
+		"name": "Ski Area",//滑雪场
+		"terrainsCanBeBuiltOn": ["Snow","Tundra"],
+		"uniqueTo": "Canada",
+		"turnsToBuild": 7,
+		"techRequired": "Oceanography",
+		"uniques": ["Base Improvement",
+					"Building Improvement",
+					"Unique Improvement",
+					
+					"Unbuildable <in tiles adjacent to [Ski Area]>",
+					
+					"Tile provides yield without assigned population",
+					
+					"Pillaging this improvement yields approximately [+60 Gold]",
+					
+					"[+1 Culture, +1 Gold] for each adjacent [Snow]",
+					"[+1 Culture, +1 Gold] for each adjacent [Tundra]",
+					"[+1 Culture, +1 Gold] for each adjacent [{Snow} {Hill}]",
+					"[+1 Culture, +1 Gold] for each adjacent [{Tundra} {Hill}]",
+					"[+1 Culture, +1 Gold] for each adjacent [{Snow} {Forest}]",
+					"[+1 Culture, +1 Gold] for each adjacent [{Tundra} {Forest}]",
+					"[+1 Culture, +1 Gold] for each adjacent [Mountain]",],
 	},
 	
 	{
@@ -1014,10 +1200,7 @@
 					
 					"Pillaging this improvement yields approximately [+60 Gold]",
 					
-					"[+1 Culture] for each adjacent [Moai]",
-					
-					"[+2 Culture] <after adopting [Archaeology]>",
-					"[+1 Gold] <after adopting [Tourism]>"],
+					"[+2 Culture] for each adjacent [Moai]"],
 	},
 	
 	

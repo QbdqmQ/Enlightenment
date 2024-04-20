@@ -2,6 +2,10 @@
     "name": "Global uniques", 
     "uniques": [
 		
+	//事件
+		
+		"Triggers a [The Real Universe] event <upon turn end> <with [1]% chance> <when above [50] [Research Point]>",
+		
 	//万神殿
 		
 		"[+1 Faith] from [District] tiles [in this city] <with [2] to [6] neighboring [Tundra] tiles> <after adopting [Dance of the Aurora]>",
@@ -12,8 +16,7 @@
 		"[+1 Faith] from [District] tiles [in this city] <with [4] to [6] neighboring [Desert] tiles> <after adopting [Desert Folklore]>",
 		"[+1 Faith] from [District] tiles [in this city] <with [6] to [6] neighboring [Desert] tiles> <after adopting [Desert Folklore]>",
 		
-		"[+1 Culture] from every [Forest] <after adopting [Sacred Path]>",
-        "[+1 Culture] from every [Jungle] <after adopting [Sacred Path]>",
+		"[+1 Culture] from every [All Road] <after adopting [Sacred Path]>",
 		
 		"[+1 Faith, +1 Production, +2 Food] from every [Mountain] <after adopting [Mountain Settlements]>",
 		
@@ -21,32 +24,30 @@
 		"[+1 Production] from every [Oasis] <after adopting [Fukuzawa Sentient Beings]>",
 		"[+1 Production] from every [Flood plains] <after adopting [Fukuzawa Sentient Beings]>",
 		
-		"[+2 Faith, +1 Culture] from every [Lakes] <after adopting [Pray for Rain Dance]>",
+		"[+3 Faith, +2 Happiness] from every [Lakes] <after adopting [Pray for Rain Dance]>",
 		
-		"[+3 Faith] from every [Quarry] <after adopting [Stone Circles]>",
+		"[+2 Faith, +2 Culture] from every [Quarry] <after adopting [Stone Circles]>",
 		
 		"[+1 Happiness] from every [Luxury resource] <after adopting [Religious Idols]>",
 		
-		"[+1 Culture] from every [Plantation] <after adopting [Teach Orally]>",
+		"[+1 Culture] from every [District - City] <after adopting [Teach Orally]>",
 		
-		"[+4 Faith] from every [Natural Wonder] <after adopting [One with Nature]>",
+		"[+4 Faith, +1 Happiness] from every [Natural Wonder] <after adopting [One with Nature]>",
 		
 		"[+20]% Production when constructing [All] wonders [in this city] <before the [Medieval era]> <after adopting [Historical Monuments]>",
 		
 		"[+3 Science] [in capital] <before the [Renaissance era]> <after adopting [Enlightenment Unions]>",
 		"[+15]% [Science] [in capital] <before the [Renaissance era]> <after adopting [Enlightenment Unions]>",
 		
-		"[+1] Movement <for [Civilian] units> <in [Friendly Land] tiles> <after adopting [Harvest Ceremony]>",
+		"[+1] Movement <for [Worker] units> <after adopting [Harvest Ceremony]>",
 		
-		"[1] free [Settler] units appear <after adopting [Religious Settlers]>",
-		
-		"Provides [1] [Horses] <after discovering [Animal Husbandry]> <after adopting [God of Plenty]>",
-		"Provides [1] [Copper] <after discovering [Bronze Working]> <after adopting [God of Plenty]>",
-		"Provides [1] [Iron] <after discovering [Iron Working]> <after adopting [God of Plenty]>",
-		"Provides [1] [Coal] <after discovering [Industrialization]> <after adopting [God of Plenty]>",
-		"Provides [1] [Oil] <after discovering [Biology]> <after adopting [God of Plenty]>",
-		"Provides [1] [Aluminum] <after discovering [Refrigeration]> <after adopting [God of Plenty]>",
-		"Provides [1] [Uranium] <after discovering [Atomic Theory]> <after adopting [God of Plenty]>",
+		"Provides [2] [Horses] <after discovering [Animal Husbandry]> <after adopting [God of Plenty]>",
+		"Provides [2] [Copper] <after discovering [Bronze Working]> <after adopting [God of Plenty]>",
+		"Provides [2] [Iron] <after discovering [Iron Working]> <after adopting [God of Plenty]>",
+		"Provides [2] [Coal] <after discovering [Industrialization]> <after adopting [God of Plenty]>",
+		"Provides [2] [Oil] <after discovering [Biology]> <after adopting [God of Plenty]>",
+		"Provides [2] [Aluminum] <after discovering [Refrigeration]> <after adopting [God of Plenty]>",
+		"Provides [2] [Uranium] <after discovering [Atomic Theory]> <after adopting [God of Plenty]>",
 		
 		"[+2 Faith] from every [Strategic resource] <after adopting [God of Craftsman]>",
 		
@@ -55,12 +56,12 @@
 		"[+15]% Production when constructing [All] buildings [in this city] <before the [Medieval era]> <after adopting [God of Forging]>",
 		"[-15]% Production when constructing [All] wonders [in this city] <before the [Medieval era]> <after adopting [God of Forging]>",
 		
-		"[+1 Faith] from every [Coast] <after adopting [God of Sea]>",
-		"[+1 Faith] from every [Ocean] <after adopting [God of Sea]>",
+		"[+1 Faith, +1 Food, +1 Production, +1 Gold, +1 Culture] from every [Coast] <after adopting [God of Sea]>",
+		"[+1 Faith, +1 Food, +1 Production, +1 Gold, +1 Culture] from every [Ocean] <after adopting [God of Sea]>",
 		
-		"[+1 Culture] from every [Pasture] <after adopting [God of Open Sky]>",
+		"[+2 Culture] from every [Pasture] <after adopting [God of Open Sky]>",
 		
-		"[+1 Production, +1 Food] from every [Camp] <after adopting [Goddess of the Hunt]>",
+		"[+2 Production, +1 Food] from every [Camp] <after adopting [Goddess of the Hunt]>",
 		
 		"[+15]% [Production] [in this city] <during a Golden Age> <after adopting [Goddess of Festivals]>",
 		"[+10]% [Science] [in this city] <during a Golden Age> <after adopting [Goddess of Festivals]>",
@@ -70,30 +71,28 @@
 		
 	//信徒
 		
-		"[+2 Faith] from every [Wonder] <after adopting [Divine Revelation]>",
-		
-		"[+2 Food] from all [Faith] buildings <after adopting [Feed the World]>",
+		"[+2 Food] from every [District - Holy Site] <after adopting [Feed the World]>",
 		
 		"[+2 Culture] from every [District - Holy Site] <after adopting [Choral Chant]>",
 		
-		"[+2 Happiness] from every [Garden] <after adopting [Peace Gardens]>",
-		
-		"[+8 Culture] from every [National Museum] <after adopting [Holy Art]>",
-		
 		"[+1 Happiness] from every [District - Holy Site] <after adopting [Asceticism]>",
 		
-		"[+3 Gold] from every [Workshop] <after adopting [Guruship]>",
+		"[+2 Faith] from every [Wonder] <after adopting [Divine Revelation]>",
+		
+		"[+2 Happiness] from every [Garden] <after adopting [Peace Gardens]>",
+		
+		"[+5]% [Happiness] from every [National Wonder] <after adopting [Holy Art]>",
+		
+		"[+5 Gold] from every [Workshop] <after adopting [Guruship]>",
 		"[+10]% [Production] from every [Workshop] <after adopting [Guruship]>",
 		
 		"[+15]% [Faith] from every [Opera House] <after adopting [Liturgical Opera]>",
 		
 		"[+10]% [Gold] from every [Amphitheater] <after adopting [Arts Tour]>",
 		
-		"[+1 Production] from every [Farm] <with [2] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
-		"[+1 Production] from every [Farm] <with [4] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
-		"[+1 Production] from every [Farm] <with [6] to [6] neighboring [Farm] tiles> <after adopting [Reclamation of Wasteland]>",
+		"[+1 Production] from every [Farm] <after adopting [Reclamation of Wasteland]>",
 		
-		"[+10]% [Food] [in this city] <when not at war> <after adopting [Swords into Ploughshares]>",
+		"[+10]% growth [in this city] <when not at war> <after adopting [Swords into Ploughshares]>",
 		
 		"[+2 Science, +1 Gold] from each Trade Route <after adopting [Traveling Messenger]>",
 		
@@ -132,8 +131,6 @@
 		
 	//单位
 		
-		"Gain [25] Influence with a [Peacekeeper] gift to a City-State",
-		
 		"[+15]% maintenance costs <during the [Classical era]>",
 		"[+30]% maintenance costs <during the [Medieval era]>",
 		"[+45]% maintenance costs <during the [Renaissance era]>",
@@ -148,6 +145,9 @@
 		
 		"[-50]% to Flank Attack bonuses",
 		
+		"Gain [10] Influence with a [{Civilian} {non-[Messenger]} {non-[Great People]}] gift to a City-State",
+		"Gain [10] Influence with a [{Military} {non-[Tourism Unit]}] gift to a City-State",
+		
 		"May buy [Troubadour] units for [90] [Culture] [in all cities] at an increasing price ([10]) <starting from the [Medieval era]>",
 		"May buy [Orchestra] units for [120] [Culture] [in all cities] at an increasing price ([20]) <starting from the [Industrial era]>",
 		"May buy [Rock Band] units for [150] [Culture] [in all cities] at an increasing price ([30]) <starting from the [Information era]>",
@@ -157,56 +157,117 @@
 		"[-100]% Culture cost of adopting new Policies",
 		"Each city founded increases culture cost of policies [-100]% less than normal",
 		"[+1 Culture] per [2] social policies adopted",
-
+		
 		"May buy [Mercenary] units with [Gold] for [2] times their normal Production cost <after adopting [Mercenary Regiments]>",
+		
+		////////
+		
+		"Adopt [[History] [(Development)]] <upon constructing [{Culture} {non-[Palace]}]> <before adopting [[History] [(Development)]]>",
+		
+		"Adopt [[Art] [(Development)]] <when above [400] [Culture] (modified by game speed)> <upon turn end> <before adopting [[Art] [(Development)]]>",
+		
+		"Adopt [[Ideology] [(Development)]] <upon founding a Religion> <before adopting [[Ideology] [(Development)]]>",
+		
+		"Adopt [[Enlightenment] [(Development)]] <upon entering the [Enlightenment era]> <before adopting [[Enlightenment] [(Development)]]>",
+		
+		"Adopt [[Development] [(Development)]] <upon gaining a [Immigrant] unit> <before adopting [[Development] [(Development)]]>",
+		
+		"Adopt [[Urban] [(Development)]] <upon constructing [Adopt Urban]> <before adopting [[Urban] [(Development)]]>",
+		
+		"Adopt [[Navigation] [(Development)]] <upon constructing [Dockyard]> <before adopting [[Navigation] [(Development)]]>",
+		
+		"Adopt [[Trading] [(Development)]] <when above [150] [Gold] (modified by game speed)> <before adopting [[Trading] [(Development)]]>",
+		"Adopt [[Trading] [(Development)]] <upon constructing [{Gold} {non-[Palace]}]> <before adopting [[Trading] [(Development)]]>",
+		"Adopt [[Trading] [(Development)]] <upon discovering [The Wheel] technology> <before adopting [[Trading] [(Development)]]>",
+		
+		"Adopt [[Commerce] [(Development)]] <when above [600] [Gold] (modified by game speed)> <upon turn end> <before adopting [[Commerce] [(Development)]]>",
+		
+		"Adopt [[Wartime] [(Development)]] <when above [12] [War-weariness]> <upon turn end> <before adopting [[Wartime] [(Development)]]>",
+		
+		"Adopt [[Economy] [(Development)]] <when above [24] [War-weariness]> <when not at war> <upon turn end> <before adopting [[Economy] [(Development)]]>",
+		
+		"Adopt [[Diplomacy] [(Development)]] <upon declaring friendship> <before adopting [[Diplomacy] [(Development)]]>",
+		
+		"Adopt [[Research] [(Development)]] <when above [600] [Science] (modified by game speed)> <upon turn end> <before adopting [[Research] [(Development)]]>",
+		
+		"Adopt [[Technology] [(Development)]] <when above [4000] [Science] (modified by game speed)> <upon turn end> <before adopting [[Technology] [(Development)]]>",
+		
+		"Adopt [[Environment] [(Development)]] <when above [10] [Pollution]> <upon turn end> <before adopting [[Environment] [(Development)]]>",
+		
+		"Adopt [[Universe] [(Development)]] <upon constructing [Project - Space Race]> <before adopting [[Universe] [(Development)]]>",
+		
+		"Adopt [[Energy] [(Development)]] <when above [10] [Electric Power]> <upon turn end> <before adopting [[Energy] [(Development)]]>",
+		
+		"Adopt [[New Era] [(Development)]] <upon entering the [Information era]> <before adopting [[New Era] [(Development)]]>",
+		
+		////////
+		
+		"Adopt [[Exploration] [(Military)]] <upon gaining a [{Land 'Exploration'} {non-[Pioneer]}] unit> <before adopting [[Exploration] [(Military)]]>",
+		
+		"Adopt [[Military] [(Military)]] <upon gaining a [{Military} {non-[Land 'Exploration']}] unit> <before adopting [[Military] [(Military)]]>",
+		
+		"Adopt [[Defense] [(Military)]] <upon constructing [Defensive Building]> <before adopting [[Defense] [(Military)]]>",
+		
+		"Adopt [[Warfare] [(Military)]] <upon declaring war with a major Civilization> <before adopting [[Warfare] [(Military)]]>",
+		
+		"Adopt [[Tactics] [(Military)]] <upon building a [District - Barracks] improvement> <before adopting [[Tactics] [(Military)]]>",
+		"Adopt [[Tactics] [(Military)]] <upon constructing [Training Building]> <before adopting [[Tactics] [(Military)]]>",
+		
+		"Adopt [[Indenture] [(Military)]] <upon entering the [Medieval era]> <before adopting [[Indenture] [(Military)]]>",
+		
+		"Adopt [[Cold War] [(Military)]] <upon entering the [Atomic era]> <when above [12] [War-weariness]> <when not at war> <upon turn end> <before adopting [[Cold War] [(Military)]]>",
+		
+		"Adopt [[Digitalization] [(Military)]] <upon entering the [Information era]> <before adopting [[Digitalization] [(Military)]]>",
+		
+		"Adopt [[Mecha] [(Military)]] <upon gaining a [Mechs] unit> <before adopting [[Mecha] [(Military)]]>",
 		
 	//快乐值
 		
-        "[+20]% [Science] [in all cities] <when between [41] and [2147483647] Happiness>",
-        "[+20]% [Culture] [in all cities] <when between [41] and [2147483647] Happiness>",
-        "[+20]% [Faith] [in all cities] <when between [41] and [2147483647] Happiness>",
-        "[+20]% [Gold] [in all cities] <when between [41] and [2147483647] Happiness>",
+        "[+20]% [Science] [in all cities] <when above [56] Happiness>",
+        "[+20]% [Culture] [in all cities] <when above [56] Happiness>",
+        "[+20]% [Faith] [in all cities] <when above [56] Happiness>",
+        "[+20]% [Gold] [in all cities] <when above [56] Happiness>",
 		
-        "[+15]% [Science] [in all cities] <when between [31] and [40] Happiness>",
-        "[+15]% [Culture] [in all cities] <when between [31] and [40] Happiness>",
-        "[+15]% [Faith] [in all cities] <when between [31] and [40] Happiness>",
-        "[+15]% [Gold] [in all cities] <when between [31] and [40] Happiness>",
+        "[+15]% [Science] [in all cities] <when between [41] and [55] Happiness>",
+        "[+15]% [Culture] [in all cities] <when between [41] and [55] Happiness>",
+        "[+15]% [Faith] [in all cities] <when between [41] and [55] Happiness>",
+        "[+15]% [Gold] [in all cities] <when between [41] and [55] Happiness>",
 		
-        "[+10]% [Science] [in all cities] <when between [21] and [30] Happiness>",
-        "[+10]% [Culture] [in all cities] <when between [21] and [30] Happiness>",
-        "[+10]% [Faith] [in all cities] <when between [21] and [30] Happiness>",
-        "[+10]% [Gold] [in all cities] <when between [21] and [30] Happiness>",
+        "[+10]% [Science] [in all cities] <when between [26] and [40] Happiness>",
+        "[+10]% [Culture] [in all cities] <when between [26] and [40] Happiness>",
+        "[+10]% [Faith] [in all cities] <when between [26] and [40] Happiness>",
+        "[+10]% [Gold] [in all cities] <when between [26] and [40] Happiness>",
 		
-        "[+5]% [Science] [in all cities] <when between [11] and [20] Happiness>",
-        "[+5]% [Culture] [in all cities] <when between [11] and [20] Happiness>",
-        "[+5]% [Faith] [in all cities] <when between [11] and [20] Happiness>",
-        "[+5]% [Gold] [in all cities] <when between [11] and [20] Happiness>",
+        "[+5]% [Science] [in all cities] <when between [11] and [25] Happiness>",
+        "[+5]% [Culture] [in all cities] <when between [11] and [25] Happiness>",
+        "[+5]% [Faith] [in all cities] <when between [11] and [25] Happiness>",
+        "[+5]% [Gold] [in all cities] <when between [11] and [25] Happiness>",
 		
         "[-5]% [Production] [in all cities] <when between [-10] and [-1] Happiness>",
         "[-5]% [Gold] [in all cities] <when between [-10] and [-1] Happiness>",
         "[-15]% growth [in all cities] <when between [-10] and [-1] Happiness>",
         "[-10]% Strength <for [All] units> <when between [-10] and [-1] Happiness>",
 		
-        "[-20]% [Production] [in all cities] <when between [-20] and [-11] Happiness>",
-        "[-20]% [Gold] [in all cities] <when between [-20] and [-11] Happiness>",
-        "[-50]% growth [in all cities] <when between [-20] and [-11] Happiness>",
-        "[-20]% Strength <for [All] units> <when between [-20] and [-11] Happiness>",
+        "[-20]% [Production] [in all cities] <when between [-15] and [-11] Happiness>",
+        "[-20]% [Gold] [in all cities] <when between [-15] and [-11] Happiness>",
+        "[-50]% growth [in all cities] <when between [-15] and [-11] Happiness>",
+        "[-20]% Strength <for [All] units> <when between [-15] and [-11] Happiness>",
 		
-        "[-35]% [Production] [in all cities] <when between [-30] and [-21] Happiness>",
-        "[-35]% [Gold] [in all cities] <when between [-30] and [-21] Happiness>",
-        "Nullifies Growth [in all cities] <when below [-21] Happiness>",
-        "[-30]% Strength <for [All] units> <when between [-30] and [-21] Happiness>",
+        "[-35]% [Production] [in all cities] <when between [-20] and [-16] Happiness>",
+        "[-35]% [Gold] [in all cities] <when between [-20] and [-16] Happiness>",
+        "Nullifies Growth [in all cities] <when below [-15] Happiness>",
+        "[-30]% Strength <for [All] units> <when between [-20] and [-16] Happiness>",
 		
-        "[-50]% [Production] [in all cities] <when below [-31] Happiness>",
-        "[-50]% [Gold] [in all cities] <when below [-31] Happiness>",
-        "[-40]% Strength <for [All] units> <when below [-31] Happiness>",
+        "[-50]% [Production] [in all cities] <when below [-20] Happiness>",
+        "[-50]% [Gold] [in all cities] <when below [-20] Happiness>",
+        "[-40]% Strength <for [All] units> <when below [-20] Happiness>",
 		
         "Rebel units may spawn <when below [-10] Happiness>",
 
-        "Cannot build [Settler] units <when below [-15] Happiness>",
+        "Cannot build [Settler] units <when below [-10] Happiness>",
 		
-        "[+1 Happiness] [in this city] <during a Golden Age>",
-        "[+1 Happiness] [in this city] <during We Love The King Day>",
+        "[+1 Happiness] [in all cities] <during a Golden Age>",
+        "[+1 Happiness] [in all cities] <during We Love The King Day>",
 		
 	//晋升
 		
@@ -219,8 +280,16 @@
 		
 		"May not generate great prophet equivalents naturally",
 		
-		"May buy [Talent] units for [200] [Culture] [in all cities] at an increasing price ([200])",
+		"May buy [Talent] units for [100] [Culture] [in all cities] at an increasing price ([100])",
 		"May buy [Great Prophet] units for [200] [Faith] [in all cities] at an increasing price ([100])",
+		
+		"Gain [25] Influence with a [Messenger] gift to a City-State",
+		
+		"Free Great Person <upon gaining a [Talent] unit> <for [AI player]>",
+		
+		
+		
+		
 		
 	//地块
 		

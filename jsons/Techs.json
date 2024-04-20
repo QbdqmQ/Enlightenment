@@ -45,7 +45,7 @@
 	{
 		"columnNumber": 2,
 		"era": "Ancient era",
-		"techCost": 40,
+		"techCost": 20,
 		"buildingCost": 60,
 		"wonderCost": 180,
 		"techs": [
@@ -82,7 +82,7 @@
 	{
 		"columnNumber": 3,
 		"era": "Ancient era",
-		"techCost": 80,
+		"techCost": 70,
 		"buildingCost": 80,
 		"wonderCost": 240,
 		"techs": [
@@ -151,7 +151,7 @@
 	{
 		"columnNumber": 5,
 		"era": "Classical era",
-		"techCost": 200,
+		"techCost": 230,
 		"buildingCost": 120,
 		"wonderCost": 360,
 		"techs": [
@@ -176,7 +176,7 @@
 	{
 		"columnNumber": 6,
 		"era": "Medieval era",
-		"techCost": 280,
+		"techCost": 340,
 		"buildingCost": 150,
 		"wonderCost": 420,
 		"techs": [
@@ -191,7 +191,7 @@
 				"name": "Metal Casting",//金属铸造
 				"row": 3,
 				"quote": "",
-				"prerequisites": ["Iron Working"],
+				"prerequisites": ["Mathematics","Iron Working"],
 				"uniques": []
 			},
 			{
@@ -206,7 +206,7 @@
 	{
 		"columnNumber": 7,
 		"era": "Medieval era",
-		"techCost": 400,
+		"techCost": 470,
 		"buildingCost": 180,
 		"wonderCost": 480,
 		"techs": [
@@ -229,7 +229,7 @@
 				"name": "Stirrups",//马镫
 				"row": 6,
 				"quote": "",
-				"prerequisites": ["Horse Armor"],
+				"prerequisites": ["Physics","Horse Armor"],
 				"uniques": []
 			},
 		]
@@ -239,7 +239,7 @@
 	{
 		"columnNumber": 8,
 		"era": "Renaissance era",
-		"techCost": 680,
+		"techCost": 650,
 		"buildingCost": 210,
 		"wonderCost": 540,
 		"techs": [
@@ -269,7 +269,7 @@
 	{
 		"columnNumber": 9,
 		"era": "Renaissance era",
-		"techCost": 800,
+		"techCost": 880,
 		"buildingCost": 240,
 		"wonderCost": 600,
 		"techs": [
@@ -294,7 +294,7 @@
 	{
 		"columnNumber": 10,
 		"era": "Enlightenment era",
-		"techCost": 960,
+		"techCost": 1160,
 		"buildingCost": 270,
 		"wonderCost": 660,
 		"techs": [
@@ -324,7 +324,7 @@
 	{
 		"columnNumber": 11,
 		"era": "Enlightenment era",
-		"techCost": 1400,
+		"techCost": 1490,
 		"buildingCost": 300,
 		"wonderCost": 720,
 		"techs": [
@@ -349,7 +349,7 @@
 	{
 		"columnNumber": 12,
 		"era": "Industrial era",
-		"techCost": 1800,
+		"techCost": 1870,
 		"buildingCost": 340,
 		"wonderCost": 840,
 		"techs": [
@@ -778,7 +778,7 @@
 	{
 		"columnNumber": 24,
 		"era": "Future era",
-		"techCost": 812400,
+		"techCost": 2147483647,
 		"buildingCost": 1000,
 		"wonderCost": 2760,
 		"techs": [

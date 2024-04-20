@@ -2,12 +2,18 @@
 [
     //平民
 	{
-        "name": "Land 'Civilian'",//陆地 平民
+        "name": "Land 'Base'",//陆地 基础
         "movementType": "Land"
     },
 	{
-        "name": "Water 'Civilian'",//水上 平民
+        "name": "Water 'Base'",//水上 基础
         "movementType": "Water"
+    },
+	
+	{
+        "name": "Tourism Unit",//旅游单位
+        "movementType": "Land",
+        "uniques": []
     },
 	
 	{
@@ -17,56 +23,30 @@
     },
 	
 	{
-        "name": "Special Effect",//特殊效果
-        "movementType": "Air",
+        "name": "Sub-unit",//附属单位
+        "movementType": "Land",
+        "uniques": []
+    },
+	
+	{
+        "name": "Workers",//工人
+        "movementType": "Land",
         "uniques": []
     },
 	
 	//陆地
 	{
-        "name": "Land 'Melee' 'Cold weapon'",//陆地近程 冷兵器
+        "name": "Land 'Exploration'",//陆地 侦查
         "movementType": "Land",
-        "uniques": ["Infantry"]
+        "uniques": []
     },
 	{
-        "name": "Land 'Ranged' 'Cold weapon'",//陆地远程 冷兵器
+        "name": "Land 'Battle'",//陆地 战斗
         "movementType": "Land",
-        "uniques": ["Infantry"]
+        "uniques": []
     },
 	{
-        "name": "Land 'Melee' 'Hot weapon'",//陆地近程 热兵器
-        "movementType": "Land",
-        "uniques": ["Infantry"]
-    },
-	{
-        "name": "Land 'Ranged' 'Hot weapon'",//陆地远程 热兵器
-        "movementType": "Land",
-        "uniques": ["Infantry"]
-    },
-	
-	{
-        "name": "Land 'Melee' 'Cavalry'",//陆地近程 骑兵
-        "movementType": "Land",
-        "uniques": ["Cavalry"]
-    },
-	{
-        "name": "Land 'Ranged' 'Cavalry'",//陆地远程 骑兵
-        "movementType": "Land",
-        "uniques": ["Cavalry"]
-    },
-	{
-        "name": "Land 'Melee' 'Armored'",//陆地近程 装甲
-        "movementType": "Land",
-        "uniques": ["Armored"]
-    },
-	{
-        "name": "Land 'Ranged' 'Armored'",//陆地远程 装甲
-        "movementType": "Land",
-        "uniques": ["Armored"]
-    },
-	
-	{
-        "name": "Land 'Ordnance'",//陆地 军械
+        "name": "Land 'Anti-rush'",//陆地 抗冲锋
         "movementType": "Land",
         "uniques": []
     },
@@ -76,79 +56,108 @@
         "uniques": []
     },
 	
+	{
+        "name": "Land 'Light Rush'",//陆地 轻 冲锋
+        "movementType": "Land",
+        "uniques": ["Rush Unit"]
+    },
+	{
+        "name": "Land 'Heavy Rush'",//陆地 重 冲锋
+        "movementType": "Land",
+        "uniques": ["Rush Unit"]
+    },
+	{
+        "name": "Land 'Ranged Rush'",//陆地 远 冲锋
+        "movementType": "Land",
+        "uniques": ["Rush Unit"]
+    },
+	
+	{
+        "name": "Land 'Siege'",//陆地 攻城
+        "movementType": "Land",
+        "uniques": []
+    },
+	{
+        "name": "Land 'Gunnery'",//陆地 炮兵
+        "movementType": "Land",
+        "uniques": []
+    },
 	
 	//水上
 	{
-        "name": "Water 'Melee' 'Cold weapon'",//水上近程 冷兵器
+        "name": "Water 'Battle'",//水上 战斗
         "movementType": "Water",
         "uniques": []
-    },
-	{
-        "name": "Water 'Ranged' 'Cold weapon'",//水上远程 冷兵器
-        "movementType": "Water",
-        "uniques": []
-    },
-	{
-        "name": "Water 'Melee' 'Hot weapon'",//水上近程 热兵器
-        "movementType": "Water",
-        "uniques": []
-    },
-	{
-        "name": "Water 'Ranged' 'Hot weapon'",//水上远程 热兵器
-        "movementType": "Water",
-        "uniques": []
-    },
-	{
-        "name": "Water 'Melee' 'Armored'",//水上近程 装甲
-        "movementType": "Water",
-        "uniques": ["Armored"]
-    },
-	{
-        "name": "Water 'Ranged' 'Armored'",//水上远程 装甲
-        "movementType": "Water",
-        "uniques": ["Armored"]
     },
 	{
         "name": "Water 'Support'",//水上 支援
         "movementType": "Water",
         "uniques": []
     },
+    
 	{
-        "name": "Water 'Aircraft Carrier'",//航空母舰
+        "name": "Water 'Harass'",//水上 袭扰
         "movementType": "Water",
-        "uniques": ["Armored"]
+        "uniques": []
+    },
+    
+	{
+        "name": "Water 'Siege'",//水上 攻城
+        "movementType": "Water",
+        "uniques": []
+    },
+    
+	{
+        "name": "Water 'Carrier'",//水上 运载
+        "movementType": "Water",
+        "uniques": []
     },
 	
 	//空中
 	{
         "name": "Air 'Fighter'",//空中 战斗机
         "movementType": "Air",
-		"uniques": ["Armored","Aircraft"],
+		"uniques": ["Armored",
+	                "Aircraft",
+	                "Airplane",
+	                
+	                "Can perform Air Sweep"],
     },
 	{
         "name": "Air 'Bomber'",//空中 轰炸机
         "movementType": "Air",
-        "uniques": ["Armored","Aircraft"]
+        "uniques": ["Armored",
+	                "Aircraft",
+	                "Airplane"]
     },
 	
 	{
         "name": "Air 'Missile'",//空中 导弹
         "movementType": "Air",
-        "uniques": ["Aircraft"]
+        "uniques": ["Aircraft",
+	                
+	                "Can perform Air Sweep"]
     },
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	//空舰
 	{
-        "name": "Test",//测试
+        "name": "Airship 'Battle'",//空舰 战斗
         "movementType": "Land",
         "uniques": []
     },
-	
+	{
+        "name": "Airship 'Support'",//空舰 支援
+        "movementType": "Land",
+        "uniques": []
+    },
+	{
+        "name": "Airship 'Siege'",//空舰 攻城
+        "movementType": "Land",
+        "uniques": []
+    },
+	{
+        "name": "Airship 'Harass'",//空舰 袭扰
+        "movementType": "Land",
+        "uniques": []
+    }
 ]

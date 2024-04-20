@@ -1,0 +1,13 @@
+[
+    {
+        "name":"The Real Universe",
+        "text":"After thousands of years of studying the universe, scientists have discovered a maddening fact - the current universe is just a dream. Although the government promptly blocked all information about the universe being a dream, the information has long been known to the entire world through the extremely advanced Internet. The world was thrown into a panic, and beings on every planet went into a riot. The beings began to doubt their own identity, and thoughts of self-reactionism and nihilism consumed the minds of the beings in an instant. After the leaders of civilizations deliberated, the 'Lifeform Extermination Plan' was finally launched, and the universe returned to silence.",
+        "choices":[
+            {
+                "text":"Wake Up",
+                "triggeredUniques":["Gain a free [The Real] [in capital] <hidden from users>"],
+                "conditions":[]
+            }
+        ]
+    }
+]

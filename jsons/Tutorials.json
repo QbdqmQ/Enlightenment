@@ -1,11 +1,11 @@
 [
 //A 总介绍
     {//关于启蒙
-        "name":"A 01 [About Enlightenment]",
+        "name":"AA A 01 [About Enlightenment]",
         "civilopediaText":[
             { 
-                "text": "Mod Version: [0.1.2]",
-                "size":15
+                "text": "Mod Version: [1.0.0]",
+                "size":17
             },
             { 
                 "text": "Enlightenment is a large ruleset developed by me (QbdqmQ) and my friends.",
@@ -34,8 +34,242 @@
         ]
     },
     {//更新日志
-        "name":"A 02 [Changelog]",
+        "name":"AA A 02 [Changelog]",
         "civilopediaText":[
+            { 
+                "text": "Mod Version: [1.0.0]",
+                "size":15,
+                "color":"#8B3626"
+            },
+            { 
+                "text": "Added:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"1.Items Behind the Information Era:\n   'Starbase Construction'\n   'Dyson Sphere'\n   'Mega-Assembly System'\n   'Nanocomposite Material Factory'\n   'Advanced Railgun'\n   'Antimatter Missile'\n   'Project - AI-Controlled Colony Ships'\n   'Improved Battleship'\n   'Improved Corvette'\n   'Improved Cruiser'\n   'Improved Destroyer'",
+                "size":20
+            },
+            {
+                "text":"2.Reclassify all units, and add unique promotions for each unit type",
+                "size":20
+            },
+            {
+                "text":"3.New Religions:\n   'Animism'\n   'Jainism'\n   'Magicism'\n   'Earth Cat'\n   'Atheism'",
+                "size":20
+            },
+            {
+                "text":"4.New Great Person: Great Musician",
+                "size":20
+            },
+            {
+                "text":"5.New Promotion: (I forgot to count QAQ)",
+                "size":20
+            },
+            {
+                "text":"6.New Resources:\n   'Pollution'\n   'War-weariness'\n   'Research Point'",
+                "size":20
+            },
+            {
+                "text":"7.New Victory Type: 'Truth Victory'",
+                "size":20
+            },
+            {
+                "text":"8.Add effects to the remaining 10 polities",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            { 
+                "text": "Canceled:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"1.Cancel 'Peacekeeping Force'",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            { 
+                "text": "Balanced:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"I.Civilization:",
+                "size":20
+            },
+            { 
+                "text": "1.The Huns:\n   Elimination of Starting Technology\n   Remove 'Pasture' improvement +1 Production\n   New 'Land 'Ranged Rush' non-Armored' units start with 10 Experience\n   +100% Production when constructing 'Land 'Ranged Rush' non-Armored' units\n   Leader Attila:\n      'Land 'Ranged Rush' non-Armored' units +1 additional attacks per turn",
+                "size":20
+            },
+            {
+                "text":"2.German Empire:\n   Modify to 'City' district +50% Science +50% Culture",
+                "size":20
+            },
+            {
+                "text":"3.Macedon:\n   'Macedonian Phalanx' -2 Strength, reduce production cost \n   'Companion Cavalry' +1 Movement",
+                "size":20
+            },
+            {
+                "text":"4.America:\n   Modify to +1 Culture, +1 Science per 1 social policies adopted\n   Leader Theodore Roosevelt:\n      Remove 'Volunteer Cavalry'\n      'Brave New World' modify to 'All' district +1 Science +2 Culture from each 1 adjacent 'Natural Wonder' tiles",
+                "size":20
+            },
+            {
+                "text":"5.Israel:\n   UA renamed 'Menorah':\n      After founding a Pantheon, all cities +2 Faith, +2 Gold\n   UB renamed 'Prison':\n      -2 population\n      -25% growth\n      -15% Unhappiness from Population\n      +10% Faith\n   Leader Benjamin Netanyahu:\n      Modify to When at war, 'All' units +10% Strength when attacking and -7% Strength when defending",
+                "size":20
+            },
+            {
+                "text":"6.France (First Empire):\n   'Triumphal Arch' modify to -10% maintenance cost for buildings in all cities",
+                "size":20
+            },
+            {
+                "text":"7.Canada:\n   Modify to 'City' & 'Business Center' district +2 Gold from each 1 adjacent 'Luxury resource' tiles",
+                "size":20
+            },
+            {
+                "text":"8.Maya:\n   'Milpa' modify to 'Farm' improvement +1 Food",
+                "size":20
+            },
+            {
+                "text":"9.India:\n   Modify to All cities +20% growth",
+                "size":20
+            },
+            {
+                "text":"10.Iroquois:\n   'Longhouse' modify to:\n      Replaces 'Kiln'\n      'All' district +1 Food from each 1 adjacent 'Forest' & 'Jungle' & 'Bonus resource' tiles",
+                "size":20
+            },
+            {
+                "text":"II.Unit:",
+                "size":20
+            },
+            {
+                "text":"1.All units +10 Strength",
+                "size":20
+            },
+            {
+                "text":"2.Percentage strength bonus are all reduced",
+                "size":20
+            },
+            {
+                "text":"III.Belief:",
+                "size":20
+            },
+            {
+                "text":"1.Balance almost all the pantheons",
+                "size":20
+            },
+            {
+                "text":"2.Balance some faith effects",
+                "size":20
+            },
+            {
+                "text":"IV.Others:",
+                "size":20
+            },
+            {
+                "text":"1.Balance Happiness Effect, the happiness amount interval of the Happiness Effect is now increased",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            { 
+                "text": "Fixed:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"1.Fix countless bugs (I forgot to count too QAQ)",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            { 
+                "text": "Increased:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"1.Increase the cost of science in the Late Classical Era to Pre-Industrial Era, but decrease the cost of science in the Ancient Era and Pre-Classical Era",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            { 
+                "text": "Modified:",
+                "size":25,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"I.Policy:",
+                "size":20
+            },
+            {
+                "text":"1.Modify the method of opening the policy",
+                "size":20
+            },
+            {
+                "text":"2.Modify some policies and their effects",
+                "size":20
+            },
+            {
+                "text":"3.Unify rate of policy point conversion",
+                "size":20
+            },
+            {
+                "text":"4.'Polity' and 'Municipal Square' modify to provide 1 Policy Point - Development and 1 Policy Point - Military",
+                "size":20
+            },
+            {
+                "text":"II.Unit:",
+                "size":20
+            },
+            {
+                "text":"1.Modify the Unique Ability of Great Person",
+                "size":20
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [0.1.3]",
+                "size":15,
+                "color":"#8B3626"
+            },
+            { 
+                "text": "Balanced:\n   'The Huns-Leader Attila' is no longer 'All' unit adding movement, it has been changed to 'Ranged Cavalry' unit adding movement\n   'Macao' removed Friendly Bonus, and Ally Bonus changed to 'Upon constructing Gold, gain 250 Gold (modified by game speed)'",
+                "size":20
+            },
+            { 
+                "text": "Fixed:\n   'Religious Settlers' do not give 'Settler'\n   'City center' can be built\n   No Yield when 'District - City' and 'Plantation' are next to each other",
+                "size":20
+            },
+            { 
+                "text": "Added:\n   'AI Worker'",
+                "size":20
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
             { 
                 "text": "Mod Version: [0.1.2]",
                 "size":15,
@@ -197,7 +431,7 @@
     
 //B 文明&城邦
     {//城邦种类
-        "name":"B 01 [City-states Type]",
+        "name":"AA B 01 [City-states Type]",
         "civilopediaText":[
             {
                 "text":"Militaristic City-states Effect",
@@ -625,15 +859,15 @@
     
 //C 单位
     {//工人介绍
-        "name":"C 01 [Worker Introduction]",
+        "name":"AA C 01 [Worker Introduction]",
         "civilopediaText":[
             {
-                "text":"Worker Level",
+                "text":"Worker Level:",
                 "size":23,
                 "color":"#8B3626"
             },
             {
-                "text":"There are six levels of workers in total, and the only effect of level is to increase the cost of production.",
+                "text":"There are six levels of workers in total, and the only effect of level is to increase the cost of production",
                 "size":18
             },
             {
@@ -641,8 +875,96 @@
                 "color":"#FFFFFF",
                 "size":1
             },
+            { 
+                "text": "Mod Version: [1.0.0]",
+                "size":15,
+                "color":"#8B3626"
+            },
             {
-                "text":"Worker Type",
+                "text":"Worker Type:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"Caravan:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"[Can instantly construct '[All Road]'] [[6] times]",
+                "size":18
+            },
+            {
+                "text":"[If it hasn't used other actions yet], ['[Caravan]' [units] [can instantly construct '[Trading Station]'] [[[1] times] [after which this unit is consumed]]], [but it will cost [+35 Production] stats]",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"City Designer:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Can build [District] improvements on tiles",
+                "size":18
+            },
+            {
+                "text":"e.g. [Unique District], [City], [Holy Site], [Academy], [Harbor], [Business Center], [Entertainment], [Landmark], [Industrial Zone], [Municipal Square]",
+                "size":17
+            },
+            {
+                "text":"[During the '[Ancient era]'], ['[City Designer I]' [units] [can instantly construct '[District - City]'] [[1] times]]",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Workers can construct improvements immediately on suitable tiles",
+                "size":18
+            },
+            {
+                "text":"No level workers have 4 initial uses times, level workers have 3 initial uses times",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"AI Worker:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"AI workers are only available to the AI and not to the player",
+                "size":18
+            },
+            {
+                "text":"Can build [AI District] improvements on tiles",
+                "size":18
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            { 
+                "text": "Mod Version: [Before 1.0.0]",
+                "size":15,
+                "color":"#8B3626"
+            },
+            {
+                "text":"Worker Type:",
                 "size":23,
                 "color":"#8B3626"
             },
@@ -664,7 +986,7 @@
                 "size":1
             },
             {
-                "text":"Base Worker:",
+                "text":"Worker:",
                 "size":20,
                 "color":"#CDCDB4"
             },
@@ -757,28 +1079,47 @@
                 "text":"e.g. [Fort], [Trenchs], [Road], [Railroad]",
                 "size":17
             },
+        ],
+    },
+    {//伟人
+        "name":"AA C 02 [Great Person Introduction]",
+        "civilopediaText":[
+            {
+                "text":"Great Person Level:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"There are three levels of workers in total, and the effect of level is to increase XP acquisition and other gains",
+                "size":18
+            },
             {
                 "text":" ",
                 "size":1
             },
+            {
+                "text":"Great Person Summary:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"Some Great Persons have Great Person Improvements of their own, and they can only function on their Great Person Improvement",
+                "size":18
+            },
+            {
+                "text":"e.g. [Great Musician I], [Great Artist I], [Great Scientist I], [Great Merchant I], [Great Diplomat I], [Great Politician(Ordinary)]",
+                "size":17
+            },
         ],
-    },
-    //伟人
-    //近程单位
-    //抗压单位
-    //远程单位
-    //骑兵&装甲单位
-    //军械&支援单位
-    //空中单位
-    //特殊单位
-    //平民单位
+    }
+    //旅游单位
+    //单位分类
     //单位克制
     //晋升
-    //单位分类
     
 //D 游戏设置
     {//难度介绍
-        "name":"D 01 [Difficulty Introduction]",
+        "name":"AA D 01 [Difficulty Introduction]",
         "civilopediaText":[
             {
                 "text":"Difficulty is made up of 'Player Difficulty' vs 'AI Difficulty'",
@@ -795,7 +1136,7 @@
         ],
     },
     {//胜利种类
-        "name":"D 02 [Victory Type]",
+        "name":"AA D 02 [Victory Type]",
         "civilopediaText":[
             {
                 "text":"Time Victory:",
@@ -910,14 +1251,14 @@
             }
         ],
     },
+    //全局效果*
     //速度种类
     //模式
     //模组设置
-    //全局效果
     
 //E 设施
-    {//设施种类
-        "name":"E 01 [Improvement Type]",
+    {//设施种类*
+        "name":"AA E 01 [Improvement Type]",
         "civilopediaText":[
             {
                 "text":"Improvement:",
@@ -1003,7 +1344,7 @@
                 "size":1
             },
             {
-                "text":"Great People Improvement:",
+                "text":"Great Person Improvement:",
                 "size":20,
                 "color":"#CDCDB4"
             },
@@ -1157,13 +1498,13 @@
             },
         ],
     },
-    //基础设施列表&效果
-    //区域列表&效果
+    //基础设施列表&效果*
+    //区域列表&效果*
     
 //F 建筑
+    //建筑种类
     //世界奇观种类
     //国家奇观种类
-    //建筑种类
     //特殊建筑种类
     //专业人员种类
     
@@ -1176,15 +1517,511 @@
     
 //H 科技&时代
     //科技列表
-    //时代效果
+    //时代效果*
     
 //I 地块&资源
-    //自然奇观种类
     //地块种类
     //地貌种类
-    //资源种类
+    //自然奇观种类
+    {//资源种类*
+        "name":"AA I 04 [Resource Type]",
+        "civilopediaText":[
+            {
+                "text":"General Resource:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"e.g. [Bonus resource], [Luxury resource], [some] [Strategic resource]",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Special Resource:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"Policy Point:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"For policy adoption",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Policies Number:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"No use at this time",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Great Seat:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"For limiting the number of Advanced Great Persons",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Tourism Performance:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"For Cultural Victory",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"Pollution:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Reduce 2 pollution per turn",
+                "size":18
+            },
+            {
+                "text":"Per 6 pollution:\n   All cities\n      +2% Unhappiness from Population\n      -3% Growth\n      -5% Production\n      -5% Food\n      -3% Gold",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"War-weariness:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When at war, provide 1 war-weariness per turn",
+                "size":18
+            },
+            {
+                "text":"When not at war, reduce 2 war-weariness per turn",
+                "size":18
+            },
+            {
+                "text":"Maximum: 50",
+                "size":18
+            },
+            {
+                "text":"Per 6 war-weariness:\n   All cities\n      +4% Unhappiness from Population\n      -5% Growth\n      -5% Production when constructing all items\n   Military units -3% Strength",
+                "size":18
+            },
+        ],
+    },
     
 //J 政策
-    //政策设定
+    //政策设定*
+    {//政策前置任务*
+        "name":"AA J 02 [Policy Pre-tasks]",
+        "civilopediaText":[
+            {
+                "text":"Development Policy:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"'[History]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"[Upon constructing '[Culture]'] [building]",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Art]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [400] '[Culture]' (modified by game speed)",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Ideology]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon founding a Religion",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Enlightenment]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon entering the '[Enlightenment era]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Development]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon gaining a '[Immigrant]' unit",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Urban]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Have a city of more than 10 population",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Navigation]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon constructing '[Dockyard]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Trading]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [150] '[Gold]' (modified by game speed)",
+                "size":18
+            },
+            {
+                "text":"[Upon constructing '[Gold]'] [building]",
+                "size":18
+            },
+            {
+                "text":"Upon discovering '[The Wheel]' technology",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Commerce]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [600] '[Gold]' (modified by game speed)",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Wartime]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [12] '[War-weariness]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Economy]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [24] '[War-weariness]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Diplomacy]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon declaring friendship",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Research]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [600] '[Science]' (modified by game speed)",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Technology]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [4000] '[Science]' (modified by game speed)",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Environment]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [10] '[Pollution]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Universe]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"upon constructing '[Project - Space Race]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Energy]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"When above [10] '[Electric Power]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[New Era]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon entering the '[Information era]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "separator":true,
+                "color":"#FFFFFF",
+                "size":1
+            },
+            {
+                "text":"Military Policy:",
+                "size":23,
+                "color":"#8B3626"
+            },
+            {
+                "text":"'[Exploration]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon gaining a '[Land 'Exploration']' unit",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Military]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon gaining a '[[non-[Land 'Exploration']] [Military]]' unit",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Defense]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon constructing '[Defensive Building]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Warfare]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon declaring war with a major Civilization",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Tactics]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon building '[District - Barracks]' improvement",
+                "size":18
+            },
+            {
+                "text":"Upon constructing '[Training Building]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Indenture]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon entering the '[Medieval era]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Cold War]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon entering the '[Atomic era]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Digitalization]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon entering the '[Information era]'",
+                "size":18
+            },
+            {
+                "text":" ",
+                "size":1
+            },
+            {
+                "text":"'[Mecha]' Policy:",
+                "size":20,
+                "color":"#CDCDB4"
+            },
+            {
+                "text":"Upon gaining a '[Mechs]' unit",
+                "size":18
+            },
+        ],
+    },
     //政策列表
 ]

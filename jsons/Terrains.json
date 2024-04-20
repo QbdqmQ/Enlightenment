@@ -147,7 +147,7 @@
 		"name": "Mountain",//山脉
 		"type": "Land",
 		"impassable": true,
-		"defenceBonus": 0.75,
+		"defenceBonus": 0.5,
 		"RGB": [120, 120, 120],
 		"uniques": ["Tile",
 					"Land Tile",
@@ -164,7 +164,7 @@
 		"name": "Hill",//丘陵
 		"type": "TerrainFeature",
 		"movementCost": 2,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0.1,
 		"RGB": [105,125,72],
 		"occursOn": ["Tundra","Plains","Grassland","Desert","Snow"],
 		"uniques": ["Rough terrain",
@@ -184,7 +184,7 @@
 		"movementCost": 2,
 		"production": 1,
 		"unbuildable": true,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0.1,
 		"occursOn": ["Tundra","Plains","Grassland","Hill"],
 		"uniques": ["Rough terrain", "Vegetation",
 					"Provides a one-time Production bonus to the closest city when cut down",
@@ -206,7 +206,7 @@
 		"movementCost": 2,
 		"food": 1,
 		"unbuildable": true,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0.1,
 		"occursOn": ["Plains","Grassland"],
 		"uniques": ["Rough terrain", "Vegetation",
 					"Provides a one-time Production bonus to the closest city when cut down",
@@ -240,7 +240,7 @@
 		"production": 2,
 		"science": 1,
 		"impassable": true,
-		"defenceBonus": 1.25,
+		"defenceBonus": 0.75,
 		"occursOn": ["Mountain"],
 		"uniques": ["Rare feature",
 					"Units ending their turn on this terrain take [50] damage"],
@@ -253,7 +253,7 @@
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"production": 1,
-		"defenceBonus": 0.20,
+		"defenceBonus": 0.1,
 		"occursOn": ["Coast"],
 		"uniques": ["Rare feature",
 					"[25]% Chance to be destroyed by nukes",
@@ -272,11 +272,11 @@
 		"name": "Fallout",//核辐射
 		"type": "TerrainFeature",
 		"movementCost": 2,
+		"defenceBonus": -0.5,
 		"overrideStats": true,
 		"unbuildable": true,
 		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally","Units ending their turn on this terrain take [20] damage"],
-		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh"],
-		"defenceBonus": -0.5
+		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh"]
 	},
 	{
 		"name": "Oasis",//绿洲
@@ -321,6 +321,7 @@
 		"production": 1,
 		"gold": 1,
 		"food": 1,
+		"defenceBonus": 0.1,
 		"occursOn": ["Coast"],
 		"uniques": ["Rare feature"]
 	},

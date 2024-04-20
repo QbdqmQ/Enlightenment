@@ -119,7 +119,7 @@
             "Provides military units every ≈[4] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[3] turns <starting from the [Star era]> <hidden from users>",
             
-            "[+15]% Strength <for [Military] units> <when defending>"],
+            "[+10]% Strength <for [Military] units> <when defending>"],
         "color": [255, 0, 0]
     },
     {
@@ -209,7 +209,7 @@
             "Provides military units every ≈[4] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[3] turns <starting from the [Star era]> <hidden from users>",
             
-            "[+10]% Strength <for [{Land} {Military}] units> <when adjacent to a [{Land} {Military}] unit>"],
+            "[+7]% Strength <for [{Land} {Military} {non-[Great People]} {non-[Tourism Unit]}] units> <when adjacent to a [{Land} {Military}] unit>"],
         "color": [255, 0, 0]
     },
     {
@@ -239,7 +239,7 @@
             "Provides military units every ≈[4] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[3] turns <starting from the [Star era]> <hidden from users>",
             
-            "[{Land} {Military}] units gain the [Alliances - Almaty] promotion"],
+            "[{Land} {Military} {non-[Great People]} {non-[Tourism Unit]}] units gain the [Alliances - Almaty] promotion"],
         "color": [255, 0, 0]
     },
     {
@@ -287,7 +287,7 @@
             "Provides military units every ≈[4] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[3] turns <starting from the [Star era]> <hidden from users>",
             
-            "[Great General] is earned [+75]% faster"],
+            "Free [Commander] appears <upon declaring war with a major Civilization>"],
         "color": [255, 0, 0]
     },
     {
@@ -317,7 +317,7 @@
             "Provides military units every ≈[4] turns <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "Provides military units every ≈[3] turns <starting from the [Star era]> <hidden from users>",
             
-            "[+2 Culture, +2 Gold, +2 Faith] [in all cities with a garrison]"],
+            "[+3 Culture, +3 Gold, +3 Faith] [in all cities with a garrison]"],
         "color": [255, 0, 0]
     },
     
@@ -535,7 +535,7 @@
             "[+66 Culture] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+72 Culture] <starting from the [Star era]> <hidden from users>",
             
-            "[+2 Culture] from every [Great People Improvement]"],
+            "[+2 Culture] from every [Great Person Improvement]"],
         "color": [139, 96, 255]
     },
     {
@@ -565,7 +565,7 @@
             "[+66 Culture] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+72 Culture] <starting from the [Star era]> <hidden from users>",
             
-            "[+10]% [Culture] [in all cities]"],
+            "[+7]% [Culture] [in all cities]"],
         "color": [139, 96, 255]
     },
     {
@@ -625,7 +625,7 @@
             "[+66 Culture] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+72 Culture] <starting from the [Star era]> <hidden from users>",
             
-            "[+3 Culture] from each Trade Route"],
+            "[+2 Culture] from each Trade Route"],
         "color": [139, 96, 255]
     },
     {
@@ -685,7 +685,8 @@
             "[+66 Culture] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+72 Culture] <starting from the [Star era]> <hidden from users>",
             
-            "[+1 Culture] from every [Jungle]"],
+            "[+2 Culture] from every [Jungle]",
+            "[+2 Culture] from every [Forest]"],
         "color": [139, 96, 255]
     },
     {
@@ -992,7 +993,7 @@
             "[+80 Faith] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+88 Faith] <starting from the [Star era]> <hidden from users>",
             
-            "[+1 Faith] from every [Tundra]"],
+            "[+2 Faith] from every [Tundra]"],
         "color": [255,255,255]
     },
     
@@ -1404,7 +1405,7 @@
             "[+10 Science] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+11 Science] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "[+15]% [Science] <while the empire is happy>"],
+            "[+10]% [Science] <while the empire is happy>"],
         "color": [30,144,255]
     },
     {
@@ -1527,7 +1528,7 @@
             "[+10 Science] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+11 Science] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "[1] free [Research Report] units appear <upon gaining a [Great People] unit>"],
+            "[1] free [Research Report] units appear <upon gaining a [{Great People} {non-[Talent]}] unit>"],
         "color": [30,144,255]
     },
     {
@@ -1716,9 +1717,7 @@
             "[+24 Gold] <starting from the [Atomic era]> <before the [Information era]> <hidden from users>",
             "[+27 Gold] <starting from the [Information era]> <before the [Fusion era]> <hidden from users>",
             "[+30 Gold] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
-            "[+33 Gold] <starting from the [Star era]> <hidden from users>",
-            
-            "Gain [400] [Gold] (modified by game speed)"],
+            "[+33 Gold] <starting from the [Star era]> <hidden from users>"],
         "allyBonusUniques": [
             "[+6 Gold] <starting from the [Ancient era]> <before the [Classical era]> <hidden from users>",
             "[+12 Gold] <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
@@ -1731,7 +1730,7 @@
             "[+54 Gold] <starting from the [Information era]> <before the [Fusion era]> <hidden from users>",
             "[+60 Gold] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+66 Gold] <starting from the [Star era]> <hidden from users>",
-            "Provides a unique luxury",
+            "Provides a unique luxury <hidden from users>",
             "[+1 Gold] [in all cities] <starting from the [Ancient era]> <before the [Classical era]> <hidden from users>",
             "[+3 Gold] [in all cities] <starting from the [Classical era]> <before the [Medieval era]> <hidden from users>",
             "[+5 Gold] [in all cities] <starting from the [Medieval era]> <before the [Renaissance era]> <hidden from users>",
@@ -1744,7 +1743,7 @@
             "[+21 Gold] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+23 Gold] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "Gain [800] [Gold] (modified by game speed)"],
+            "Gain [250] [Gold] (modified by game speed) <upon constructing [Gold]>"],
         "color": [255, 216, 0]
     },
     {
@@ -1871,7 +1870,7 @@
             "[+21 Gold] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+23 Gold] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "[-33]% maintenance on road & railroads"],
+            "[-50]% maintenance on road & railroads"],
         "color": [255, 216, 0]
     },
     {
@@ -1997,7 +1996,7 @@
             "[+21 Gold] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+23 Gold] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "[+2 Gold] from every [Plantation]"],
+            "[+3 Gold] from every [Plantation]"],
         "color": [255, 216, 0]
     },
     {
@@ -2211,7 +2210,7 @@
             "[+5 Happiness] [in all cities] <starting from the [Fusion era]> <before the [Star era]> <hidden from users>",
             "[+6 Happiness] [in all cities] <starting from the [Star era]> <hidden from users>",
             
-            "[+8]% [Food] [in all cities]"],
+            "[+7]% [Food] [in all cities]"],
         "color": [56, 255, 112]
     },
     {

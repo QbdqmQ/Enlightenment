@@ -1,476 +1,532 @@
 [
 //飞船部件
 	
-	{
-		"name": "SS Booster",//飞船助推器
-		"unitType": "Land 'Civilian'",
+	{//飞船助推器
+		"name": "SS Booster",
+		"unitType": "Land 'Base'",
 		"movement": 3,
 		"cost": 3060,
 		"requiredTech": "Space Dynamics",
 		"uniques": ["Space Unit",
 					"Spaceship part",
 					
-					"Cannot be purchased",
-					"Uncapturable",
-					"Can be added to [The Spaceship] in the Capital",
-					"Limited to [3] per Civilization",
 					"Costs [8] [Aluminum]",
+					
 					"Hidden when [Interstellar Victory] Victory is disabled",
-					"Only available <if [Project - Interstellar] is constructed>"]
+					"Uncapturable",
+					"Cannot be purchased",
+					"Limited to [3] per Civilization",
+					
+					"Can be added to [The Spaceship] in the Capital"]
 	},
-	{
-		"name": "SS Engine",//飞船发动机
-		"unitType": "Land 'Civilian'",
+	{//飞船发动机
+		"name": "SS Engine",
+		"unitType": "Land 'Base'",
 		"movement": 3,
 		"cost": 3060,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Space Unit",
 					"Spaceship part",
 					
-					"Cannot be purchased",
-					"Uncapturable",
-					"Can be added to [The Spaceship] in the Capital",
-					"Limited to [1] per Civilization",
 					"Costs [8] [Aluminum]",
+					
 					"Hidden when [Interstellar Victory] Victory is disabled",
-					"Only available <if [Project - Interstellar] is constructed>"]
+					"Uncapturable",
+					"Cannot be purchased",
+					"Limited to [1] per Civilization",
+					
+					"Can be added to [The Spaceship] in the Capital"]
 	},
-	{
-		"name": "SS Stasis Chamber",//飞船休眠舱
-		"unitType": "Land 'Civilian'",
+	{//飞船休眠舱
+		"name": "SS Stasis Chamber",
+		"unitType": "Land 'Base'",
 		"movement": 3,
 		"cost": 3420,
 		"requiredTech": "Space Materialogy",
 		"uniques": ["Space Unit",
 					"Spaceship part",
 					
-					"Cannot be purchased",
-					"Uncapturable",
-					"Can be added to [The Spaceship] in the Capital",
-					"Limited to [1] per Civilization",
 					"Costs [8] [Aluminum]",
+					
 					"Hidden when [Interstellar Victory] Victory is disabled",
-					"Only available <if [Project - Interstellar] is constructed>"]
+					"Uncapturable",
+					"Cannot be purchased",
+					"Limited to [1] per Civilization",
+					
+					"Can be added to [The Spaceship] in the Capital"]
 	},
-	{
-		"name": "SS Cockpit",//飞船驾驶舱
-		"unitType": "Land 'Civilian'",
+	{//飞船驾驶舱
+		"name": "SS Cockpit",
+		"unitType": "Land 'Base'",
 		"movement": 3,
 		"cost": 3780,
 		"requiredTech": "Space Exploration",
 		"uniques": ["Space Unit",
 					"Spaceship part",
 					
-					"Cannot be purchased",
-					"Uncapturable",
-					"Can be added to [The Spaceship] in the Capital",
-					"Limited to [1] per Civilization",
 					"Costs [8] [Aluminum]",
+					
 					"Hidden when [Interstellar Victory] Victory is disabled",
-					"Only available <if [Project - Interstellar] is constructed>"]
+					"Uncapturable",
+					"Cannot be purchased",
+					"Limited to [1] per Civilization",
+					
+					"Can be added to [The Spaceship] in the Capital"]
 	},
 	
 //工人
-    {
-		"name": "Base Worker",//基础工人
-		"unitType": "Land 'Civilian'",
+    
+    {//商人
+		"name": "Caravan",
+		"unitType": "Workers",
+		"movement": 3,
+		"cost": 88,
+		"uniques": ["Only available <after adopting [Foreign Trade]>",
+					
+					"Ignores terrain cost",
+					"[+1] Movement <in [Road] tiles>",
+					"[+2] Movement <in [Railroad] tiles>",
+					
+					"Can instantly construct a [All Road] improvement <[6] times> <after which this unit is consumed>",
+					"Can instantly construct a [Trading Station] improvement <[1] times> <after which this unit is consumed> <costs [+35 Production] stats> <if it hasn't used other actions yet>"],
+	},
+    
+    {//AI工人
+		"name": "AI Worker",
+		"unitType": "Workers",
 		"movement": 2,
+		"cost": 70,
+		"uniques": ["Only available <for [AI player]>",
+					
+					"Gain [186] [Gold] (modified by game speed) <upon being defeated> <for [AI player]>",
+					
+					"May create improvements on water resources <for [AI player]>",
+					"[-50]% construction time for [All] improvements",
+					"Can build [AI District] improvements on tiles <for [AI player]>",
+					"Can build [Base Improvement] improvements on tiles <for [AI player]>"],
+	},
+	
+    {//工人
+		"name": "Worker",
+		"unitType": "Workers",
+		"movement": 3,
 		"cost": 0,
-		"uniques": ["Worker",
+		"uniques": ["Only available <for [Human player]>",
 					"Unbuildable",
 					"Cannot be purchased",
-					"Cannot move",
 					
-					"Can transform to [Resource Worker I]",
-					"Can transform to [Remove Worker I]",
-					"Can transform to [Building Worker I]",
-					"Can transform to [Engineering Worker I]",
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[4] times]), [after which this unit is consumed]]",
 					
-					"Can transform to [Resource Worker II]",
-					"Can transform to [Power Plant Worker II]",
-					"Can transform to [Remove Worker II]",
-					"Can transform to [Building Worker II]",
-					"Can transform to [Engineering Worker II]",
+					"Can instantly construct a [Camp] improvement <[4] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[4] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[4] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[4] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[4] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[4] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[4] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[4] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[4] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[4] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
 					
-					"Can transform to [Resource Worker III]",
-					"Can transform to [Power Plant Worker III]",
-					"Can transform to [Remove Worker III]",
-					"Can transform to [Building Worker III]",
-					"Can transform to [Engineering Worker III]",
+					"Can instantly construct a [Coal-fired Plant] improvement <[4] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[4] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[4] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[4] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[4] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[4] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[4] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
 					
-					"Can transform to [Resource Worker IV]",
-					"Can transform to [Power Plant Worker IV]",
-					"Can transform to [Remove Worker IV]",
-					"Can transform to [Building Worker IV]",
-					"Can transform to [Engineering Worker IV]",
+					"Can instantly construct a [Planted Forest] improvement <[4] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[4] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[4] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[4] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
 					
-					"Can transform to [Resource Worker V]",
-					"Can transform to [Power Plant Worker V]",
-					"Can transform to [Remove Worker V]",
-					"Can transform to [Building Worker V]",
-					"Can transform to [Engineering Worker V]",
+					"Can instantly construct a [Tourist Center] improvement <[4] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
 					
-					"Can transform to [Resource Worker VI]",
-					"Can transform to [Power Plant Worker VI]",
-					"Can transform to [Remove Worker VI]",
-					"Can transform to [Building Worker VI]",
-					"Can transform to [Engineering Worker VI]",],
+					"Can instantly construct a [Electrolysis Factory] improvement <[4] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[4] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[4] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[4] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[4] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[4] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[4] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[4] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[4] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[4] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[4] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[4] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[4] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[4] times> <after which this unit is consumed> <hidden from users>"],
 	},
 	
-    {
-		"name": "Resource Worker I",//资源工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Resource Worker II",
+    {//工人 I
+		"name": "Worker I",
+		"unitType": "Workers",
+		"upgradesTo": "Worker II",
 		"movement": 2,
 		"cost": 70,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     {
-		"name": "Resource Worker II",//资源工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Resource Worker III",
+		"name": "Worker II",//工人
+		"unitType": "Workers",
+		"upgradesTo": "Worker III",
 		"movement": 2,
 		"cost": 124,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     {
-		"name": "Resource Worker III",//资源工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Resource Worker IV",
+		"name": "Worker III",//工人
+		"unitType": "Workers",
+		"upgradesTo": "Worker IV",
 		"movement": 3,
 		"cost": 329,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     {
-		"name": "Resource Worker IV",//资源工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Resource Worker V",
+		"name": "Worker IV",//工人
+		"unitType": "Workers",
+		"upgradesTo": "Worker V",
 		"movement": 3,
 		"cost": 742,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     {
-		"name": "Resource Worker V",//资源工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Resource Worker VI",
+		"name": "Worker V",//工人
+		"unitType": "Workers",
+		"upgradesTo": "Worker VI",
 		"movement": 4,
 		"cost": 1631,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     {
-		"name": "Resource Worker VI",//资源工人
-		"unitType": "Land 'Civilian'",
+		"name": "Worker VI",//工人
+		"unitType": "Workers",
 		"movement": 4,
 		"cost": 2233,
-		"uniques": ["Only available <starting from the [Star era]>",
-					"Worker",
+		"uniques": ["Only available <starting from the [Star era]> <for [Human player]>",
 					
-					"May create improvements on water resources",
-					"Can instantly construct a [Resource Improvement] improvement <[3] times> <after which this unit is consumed>"],
+					"Comment [[Can instantly construct '[Base Improvement]'] ([[3] times]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[3] times> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[3] times> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[3] times> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[3] times> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[3] times> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[3] times> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[3] times> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[3] times> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[3] times> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[3] times> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[3] times> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[3] times> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[3] times> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[3] times> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[3] times> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[3] times> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[3] times> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[3] times> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Electrolysis Factory] improvement <[3] times> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[3] times> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[3] times> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[3] times> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[3] times> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[3] times> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[3] times> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[3] times> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[3] times> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[3] times> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[3] times> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[3] times> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[3] times> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Unique Improvement] improvement <[3] times> <after which this unit is consumed> <hidden from users>"],
 	},
     
-    {
-		"name": "Power Plant Worker II",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Power Plant Worker III",
-		"movement": 2,
-		"cost": 124,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Power Plant Worker III",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Power Plant Worker IV",
-		"movement": 3,
-		"cost": 329,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Power Plant Worker IV",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Power Plant Worker V",
-		"movement": 3,
-		"cost": 742,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Power Plant Worker V",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Power Plant Worker VI",
-		"movement": 4,
-		"cost": 1631,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Power Plant Worker VI",//电厂工人
-		"unitType": "Land 'Civilian'",
-		"movement": 4,
-		"cost": 2233,
-		"uniques": ["Only available <starting from the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Power Plant] improvement <[3] times> <after which this unit is consumed>"],
-	},
-	
-    {
-		"name": "Remove Worker I",//移除工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Remove Worker II",
-		"movement": 2,
-		"cost": 70,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Remove Worker II",//移除工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Remove Worker III",
-		"movement": 2,
-		"cost": 124,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Remove Worker III",//移除工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Remove Worker IV",
-		"movement": 3,
-		"cost": 329,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Remove Worker IV",//移除工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Remove Worker V",
-		"movement": 3,
-		"cost": 742,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Remove Worker V",//移除工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Remove Worker VI",
-		"movement": 4,
-		"cost": 1631,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Remove Worker VI",//移除工人
-		"unitType": "Land 'Civilian'",
-		"movement": 4,
-		"cost": 2233,
-		"uniques": ["Only available <starting from the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Remove Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-	
-    {
-		"name": "Building Worker I",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Building Worker II",
-		"movement": 2,
-		"cost": 70,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Building Worker II",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Building Worker III",
-		"movement": 2,
-		"cost": 124,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Building Worker III",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Building Worker IV",
-		"movement": 3,
-		"cost": 329,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Building Worker IV",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Building Worker V",
-		"movement": 3,
-		"cost": 742,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Building Worker V",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Building Worker VI",
-		"movement": 4,
-		"cost": 1631,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Building Worker VI",//建筑工人
-		"unitType": "Land 'Civilian'",
-		"movement": 4,
-		"cost": 2233,
-		"uniques": ["Only available <starting from the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Building Improvement] improvement <[4] times> <after which this unit is consumed>"],
-	},
-	
-    {
-		"name": "Engineering Worker I",//工程工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Engineering Worker II",
-		"movement": 2,
-		"cost": 70,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Engineering Worker II",//工程工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Engineering Worker III",
-		"movement": 2,
-		"cost": 124,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Engineering Worker III",//工程工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Engineering Worker IV",
-		"movement": 3,
-		"cost": 329,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Engineering Worker IV",//工程工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Engineering Worker V",
-		"movement": 3,
-		"cost": 742,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Engineering Worker V",//工程工人
-		"unitType": "Land 'Civilian'",
-		"upgradesTo": "Engineering Worker VI",
-		"movement": 4,
-		"cost": 1631,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    {
-		"name": "Engineering Worker VI",//工程工人
-		"unitType": "Land 'Civilian'",
-		"movement": 4,
-		"cost": 2233,
-		"uniques": ["Only available <starting from the [Star era]>",
-					"Worker",
-					
-					"May create improvements on water resources",
-					"Can instantly construct a [Engineering Improvement] improvement <[5] times> <after which this unit is consumed>"],
-	},
-    
-    {
-		"name": "City Designer I",//城市设计员
-		"unitType": "Land 'Civilian'",
+    {//城市设计员 I
+		"name": "City Designer I",
+		"unitType": "Workers",
 		"movement": 2,
 		"cost": 90,
-		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]>",
+		"uniques": ["Only available <starting from the [Ancient era]> <before the [Medieval era]> <for [Human player]>",
 					"City Designer",
 					
 					"Can build [District] improvements on tiles",
@@ -478,104 +534,112 @@
 	},
     {
 		"name": "City Designer II",//城市设计员
-		"unitType": "Land 'Civilian'",
+		"unitType": "Workers",
 		"movement": 2,
 		"cost": 154,
-		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]>",
+		"uniques": ["Only available <starting from the [Medieval era]> <before the [Enlightenment era]> <for [Human player]>",
 					"City Designer",
 					
 					"Can build [District] improvements on tiles"],
 	},
     {
 		"name": "City Designer III",//城市设计员
-		"unitType": "Land 'Civilian'",
+		"unitType": "Workers",
 		"movement": 3,
 		"cost": 369,
-		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]>",
+		"uniques": ["Only available <starting from the [Enlightenment era]> <before the [Modern era]> <for [Human player]>",
 					"City Designer",
 					
 					"Can build [District] improvements on tiles"],
 	},
     {
 		"name": "City Designer IV",//城市设计员
-		"unitType": "Land 'Civilian'",
+		"unitType": "Workers",
 		"movement": 3,
 		"cost": 792,
-		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]>",
+		"uniques": ["Only available <starting from the [Modern era]> <before the [Information era]> <for [Human player]>",
 					"City Designer",
 					
 					"Can build [District] improvements on tiles"],
 	},
     {
 		"name": "City Designer V",//城市设计员
-		"unitType": "Land 'Civilian'",
+		"unitType": "Workers",
 		"movement": 4,
 		"cost": 1691,
-		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]>",
+		"uniques": ["Only available <starting from the [Information era]> <before the [Star era]> <for [Human player]>",
+					
 					"City Designer",
 					
 					"Can build [District] improvements on tiles"],
 	},
     {
 		"name": "City Designer VI",//城市设计员
-		"unitType": "Land 'Civilian'",
+		"unitType": "Workers",
 		"movement": 4,
 		"cost": 2303,
-		"uniques": ["Only available <starting from the [Star era]>",
+		"uniques": ["Only available <starting from the [Star era]> <for [Human player]>",
 					"City Designer",
 					
 					"Can build [District] improvements on tiles"],
 	},
 
 //基础
-
-    {
-		"name": "Research Report",//研究报告
-		"unitType": "Land 'Civilian'",
-		"movement": 2,
-		"uniques": ["Unbuildable",
-					"Can hurry technology research"],
+	
+	{//定居者
+		"name": "Settler",
+		"unitType": "Land 'Base'",
+		"movement": 3,
+		"cost": 0,
+		"uniques": ["Settlers",
+					
+					"Cannot be purchased",
+					"Unbuildable",
+					"Founds a new city",
+					"All tiles cost 1 movement"],
 	},
-
-	{
-		"name": "Settler",//移民
-		"unitType": "Land 'Civilian'",
+	{//移民
+		"name": "Immigrant",
+		"unitType": "Land 'Base'",
 		"movement": 2,
 		"cost": 106,
-		"uniques": ["Founds a new city",
+		"uniques": ["Settlers",
+					
+					"Founds a new city",
 					"Excess Food converted to Production when under construction"],
 	},
-	{
-		"name": "Work Boats",//工船
-		"unitType": "Water 'Civilian'",
+	
+	{//工船
+		"name": "Work Boats",
+		"unitType": "Water 'Base'",
 		"movement": 4,
 		"cost": 35,
 		"requiredTech": "Fishing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>",
 					"May create improvements on water resources"]
 	},
-	
-	{
-		"name": "Icebreaker",//破冰船
-		"unitType": "Water 'Civilian'",
+	{//破冰船
+		"name": "Icebreaker",
+		"unitType": "Water 'Base'",
 		"movement": 3,
 		"cost": 265,
 		"requiredTech": "Meteorology",
 		"uniques": ["Can build [Remove Ice] improvements on tiles",
 					"Can enter ice tiles"]
 	},
+
+//旅游单位
 	
-	{
-		"name": "Troubadour",//吟游诗人
-		"unitType": "Land 'Civilian'",
+	{//吟游诗人
+		"name": "Troubadour",
+		"unitType": "Tourism Unit",
 		"upgradesTo": "Orchestra",
-		"strength": 10,
+		"strength": 20,
 		"movement": 3,
 		"uniques": ["Unbuildable",
 					"Never appears as a Barbarian unit",
 					"Only available <starting from the [Medieval era]>",
 					
-					"Tourism Unit",
 					"May enter foreign tiles without open borders",
 					"Can move immediately once bought",
 					
@@ -588,17 +652,16 @@
 					"Instantly provides [3] [Tourism Performance] <upon being promoted>",
 					"Instantly provides [4] [Tourism Performance] <[2] times>"],
 	},
-	{
-		"name": "Orchestra",//巡回乐团
-		"unitType": "Land 'Civilian'",
+	{//巡回乐团
+		"name": "Orchestra",
+		"unitType": "Tourism Unit",
 		"upgradesTo": "Rock Band",
-		"strength": 15,
+		"strength": 25,
 		"movement": 4,
 		"uniques": ["Unbuildable",
 					"Never appears as a Barbarian unit",
 					"Only available <starting from the [Industrial era]>",
 					
-					"Tourism Unit",
 					"May enter foreign tiles without open borders",
 					"Can move immediately once bought",
 					
@@ -611,16 +674,15 @@
 					"Instantly provides [6] [Tourism Performance] <upon being promoted>",
 					"Instantly provides [8] [Tourism Performance] <[2] times>"],
 	},
-	{
-		"name": "Rock Band",//摇滚乐队
-		"unitType": "Land 'Civilian'",
-		"strength": 20,
+	{//摇滚乐队
+		"name": "Rock Band",
+		"unitType": "Tourism Unit",
+		"strength": 30,
 		"movement": 5,
 		"uniques": ["Unbuildable",
 					"Never appears as a Barbarian unit",
 					"Only available <starting from the [Information era]>",
 					
-					"Tourism Unit",
 					"May enter foreign tiles without open borders",
 					"Can move immediately once bought",
 					
@@ -635,258 +697,497 @@
 	},
 	
 //宗教单位
-	{
-		"name": "Missionary",//传教士
-		"unitType": "Land 'Civilian'",
+	
+	{//传教士
+		"name": "Missionary",
+		"unitType": "Land 'Base'",
 		"movement": 4,
-		"uniques": ["Can Spread Religion <for [2] movement> <[2] times> <after which this unit is consumed>",
-					"May enter foreign tiles without open borders, but loses [200] religious strength each turn it ends there",
-					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
-					"[-1] Sight",
+		"uniques": ["Religious Unit",
+					
 					"Unbuildable",
-					"Religious Unit",
-					"Hidden when religion is disabled"],
+					"Only available <before adopting [Cosmicis]>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+					
+					"Hidden when religion is disabled",
+					
+					"Can Spread Religion <requires [2] movement> <[2] times> <after which this unit is consumed>",
+					"May enter foreign tiles without open borders, but loses [200] religious strength each turn it ends there",
+					"[-1] Sight"],
 		"religiousStrength": 1000
 	},
-	{
-		"name": "Inquisitor",//审判官
-		"unitType": "Land 'Civilian'",
+	{//审判官
+		"name": "Inquisitor",
+		"unitType": "Land 'Base'",
 		"movement": 4,
-		"uniques": ["Prevents spreading of religion to the city it is next to",
-					"Can remove other religions from cities <in [Friendly] tiles> <for [2] movement> <[1] times> <after which this unit is consumed>",
-					"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
-					"[-1] Sight",
+		"uniques": ["Religious Unit",
+					
 					"Unbuildable",
-					"Religious Unit",
-					"Hidden when religion is disabled"],
+					"Only available <before adopting [Cosmicis]>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+					
+					"Hidden when religion is disabled",
+					
+					"Prevents spreading of religion to the city it is next to",
+					"Can remove other religions from cities <in [Friendly] tiles> <for [2] movement> <[1] times> <after which this unit is consumed>",
+					"[-1] Sight"],
+	},
+	
+	{//星空智慧教堂
+		"name": "Starry Wisdom",
+		"unitType": "Land 'Base'",
+		"movement": 4,
+		"uniques": ["Religious Unit",
+					"Cthulhu Organization",
+					
+					"Unbuildable",
+					"Only available <after adopting [Cosmicis]>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+					
+					"Hidden when religion is disabled",
+					
+					"May enter foreign tiles without open borders, but loses [200] religious strength each turn it ends there",
+					"Can Spread Religion <requires [2] movement> <[3] times> <after which this unit is consumed>",
+					"[+1] Sight"],
+		"religiousStrength": 1500
+	},
+	{//黑法老兄弟会
+		"name": "Brotherhood of the Black Pharaoh",
+		"unitType": "Land 'Base'",
+		"movement": 4,
+		"uniques": ["Religious Unit",
+					"Cthulhu Organization",
+					
+					"Unbuildable",
+					"Only available <after adopting [Cosmicis]>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
+					
+					"Hidden when religion is disabled",
+					
+					"May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+					"Prevents spreading of religion to the city it is next to",
+					"Can remove other religions from cities <requires [2] movement> <[3] times> <after which this unit is consumed>",
+					"[+1] Sight"],
+		"religiousStrength": 1500
+	},
+	{//大衮密令教
+		"name": "Esoteric Order of Dagon",
+		"unitType": "Land 'Base'",
+		"movement": 4,
+		"uniques": ["Religious Unit",
+					"Cthulhu Organization",
+					
+					"Unbuildable",
+					"Only available <after adopting [Delta Green]>",
+					"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
+					
+					"Hidden when religion is disabled",
+					
+					"May enter foreign tiles without open borders, but loses [200] religious strength each turn it ends there",
+					"[-10]% Strength for enemy [All] units in adjacent [All] tiles",
+					"[+1] Sight"],
+		"religiousStrength": 1600
 	},
 	
 //伟人
-	{
-		"name": "Talent",//天才
+	
+	{//天才
+		"name": "Talent",
 		"unitType": "Great People",
 		"movement": 2,
 		"uniques": ["Great Person - [Base]",
+					
 					"Unbuildable",
 					
-					"Free Great Person <by consuming this unit>"],
+					"Can transform to [Great Musician I]",
+					"Can transform to [Great Artist I]",
+					"Can transform to [Great Scientist I]",
+					"Can transform to [Great Merchant I]",
+					"Can transform to [Great Diplomat I]",
+					"Can transform to [Great Politician(Ordinary)]",
+					"Can transform to [Great General]",
+					"Can transform to [Great Admiral]",
+					"Can transform to [Great Engineer]",
+					"Can transform to [Great Prophet] <before adopting [Cosmicis]>",
+					"Can transform to [Cthulu Bishop] <after adopting [Cosmicis]>"],
 	},
 	
-	{
-		"name": "Great Artist I",//大艺术家
+	{//大音乐家
+		"name": "Great Musician I",
 		"unitType": "Great People",
-		"upgradesTo": "Great Artist II",
-		"strength": 10,
+		"upgradesTo": "Great Musician II",
+		"strength": 20,
 		"movement": 3,
-		"uniques": ["Great Person - [Culture]",
-					"Great Artist",
+		"uniques": ["Great Person - [Tourism]",
+					"Great Musician",
+					
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Gain [1]-[30] [Culture] <upon ending a turn in a [District - Landmark] tile>",
-					"Instantly provides [1] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
-					"This Unit gains [5] XP <upon ending a turn in a [District - Landmark] tile>",
+					"Can instantly construct a [Great Person Improvement(Tourism)] improvement <[1] times>",
+					"Instantly provides [5] [Tourism Performance] <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [5] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile> <after adopting [Expert Seats]>",
 					
-					"Instantly provides [10] [Tourism Performance] <[1] times>",
-					"Instantly provides [10] [Tourism Performance] <upon being promoted>",
+					"Instantly provides [20] [Tourism Performance] <[1] times>",
+					"Instantly provides [20] [Tourism Performance] <upon being promoted>",
 					
-					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+					"Can build [Great Person Improvement(Tourism)] improvements on tiles"],
+	},
+	{
+		"name": "Great Musician II",
+		"unitType": "Great People",
+		"upgradesTo": "Great Musician III",
+		"strength": 25,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Musician",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Cannot attack",
+					
+					"Instantly provides [10] [Tourism Performance] <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [20] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile> <after adopting [Expert Seats]>",
+					
+					"Instantly provides [40] [Tourism Performance] <upon being promoted>",
+					
+					"Can build [Great Person Improvement(Tourism)] improvements on tiles"],
+	},
+	{
+		"name": "Great Musician III",
+		"unitType": "Great People",
+		"strength": 30,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Musician",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Cannot attack",
+					
+					"Instantly provides [15] [Tourism Performance] <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [15] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile>",
+					"This Unit gains [30] XP <upon ending a turn in a [Great Person Improvement(Tourism)] tile> <after adopting [Expert Seats]>",
+					
+					"Instantly provides [60] [Tourism Performance] <upon being promoted>",
+					
+					"Can build [Great Person Improvement(Tourism)] improvements on tiles"],
+	},
+	
+	{//大艺术家
+		"name": "Great Artist I",
+		"unitType": "Great People",
+		"upgradesTo": "Great Artist II",
+		"strength": 20,
+		"movement": 3,
+		"uniques": ["Great Person - [Culture]",
+					"Great Artist",
+					
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Cannot attack",
+					
+					"Can instantly construct a [Great Person Improvement(Culture)] improvement <[1] times>",
+					"Gain [1]-[20] [Culture] <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [5] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile> <after adopting [Expert Seats]>",
+					
+					"Gain [1]-[40] [Culture] <[1] times>",
+					"Gain [1]-[40] [Culture] <upon being promoted>",
+					
+					"Can build [Great Person Improvement(Culture)] improvements on tiles"],
 	},
 	{
 		"name": "Great Artist II",
 		"unitType": "Great People",
 		"upgradesTo": "Great Artist III",
-		"strength": 15,
+		"strength": 25,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Artist",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Gain [10]-[40] [Culture] <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [20] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[60] [Culture] <upon ending a turn in a [District - Landmark] tile>",
-					"Instantly provides [2] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
-					"This Unit gains [10] XP <upon ending a turn in a [District - Landmark] tile>",
+					"Gain [10]-[80] [Culture] <upon being promoted>",
 					
-					"Instantly provides [20] [Tourism Performance] <[1] times>",
-					"Instantly provides [20] [Tourism Performance] <upon being promoted>",
-					
-					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+					"Can build [Great Person Improvement(Culture)] improvements on tiles"],
 	},
 	{
 		"name": "Great Artist III",
 		"unitType": "Great People",
-		"strength": 20,
+		"strength": 30,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Artist",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. III )]",
+					"Gain [25]-[80] [Culture] <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [15] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile>",
+					"This Unit gains [30] XP <upon ending a turn in a [Great Person Improvement(Culture)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[90] [Culture] <upon ending a turn in a [District - Landmark] tile>",
-					"Instantly provides [3] [Tourism Performance] <upon ending a turn in a [District - Landmark] tile>",
-					"This Unit gains [15] XP <upon ending a turn in a [District - Landmark] tile>",
+					"Gain [25]-[160] [Culture] <upon being promoted>",
 					
-					"Instantly provides [30] [Tourism Performance] <[1] times>",
-					"Instantly provides [30] [Tourism Performance] <upon being promoted>",
-					
-					"Can build [Great People Improvement(Culture)] improvements on tiles"],
+					"Can build [Great Person Improvement(Culture)] improvements on tiles"],
 	},
 	
-	{
-		"name": "Great Scientist I",//大科学家
+	{//大科学家
+		"name": "Great Scientist I",
 		"unitType": "Great People",
 		"upgradesTo": "Great Scientist II",
-		"strength": 10,
+		"strength": 20,
 		"movement": 3,
 		"uniques": ["Great Person - [Science]",
 					"Great Scientist",
+					
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Gain [1]-[50] [Science] <upon ending a turn in a [District - Academy] tile>",
-					"Gain [1]-[50] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
-					"This Unit gains [5] XP <upon ending a turn in a [District - Academy] tile>",
+					"Can instantly construct a [Great Person Improvement(Science)] improvement <[1] times>",
+					"Gain [1]-[20] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"Gain [1]-[20] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile> <during a Golden Age>",
+					"This Unit gains [5] XP <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Science)] tile> <after adopting [Expert Seats]>",
 					
 					"Free [Research Report] appears <[1] times>",
 					"Free [Research Report] appears <upon being promoted>",
 					
-					"Can build [Great People Improvement(Science)] improvements on tiles"],
+					"Can build [Great Person Improvement(Science)] improvements on tiles"],
 	},
 	{
 		"name": "Great Scientist II",
 		"unitType": "Great People",
 		"upgradesTo": "Great Scientist III",
-		"strength": 15,
+		"strength": 25,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Scientist",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Gain [1]-[60] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"Gain [1]-[60] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile> <during a Golden Age>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"This Unit gains [20] XP <upon ending a turn in a [Great Person Improvement(Science)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[100] [Science] <upon ending a turn in a [District - Academy] tile>",
-					"Gain [1]-[100] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
-					"This Unit gains [10] XP <upon ending a turn in a [District - Academy] tile>",
-					
-					"Free [Research Report] appears <[1] times>",
 					"Free [Research Report] appears <upon being promoted>",
 					
-					"Can build [Great People Improvement(Science)] improvements on tiles"],
+					"Can build [Great Person Improvement(Science)] improvements on tiles"],
 	},
 	{
 		"name": "Great Scientist III",
 		"unitType": "Great People",
-		"strength": 20,
+		"strength": 30,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Scientist",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. III )]",
+					"Gain [1]-[180] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"Gain [1]-[180] [Science] <upon ending a turn in a [Great Person Improvement(Science)] tile> <during a Golden Age>",
+					"This Unit gains [15] XP <upon ending a turn in a [Great Person Improvement(Science)] tile>",
+					"This Unit gains [30] XP <upon ending a turn in a [Great Person Improvement(Science)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[150] [Science] <upon ending a turn in a [District - Academy] tile>",
-					"Gain [1]-[150] [Science] <upon ending a turn in a [District - Academy] tile> <during a Golden Age>",
-					"This Unit gains [15] XP <upon ending a turn in a [District - Academy] tile>",
-					
-					"Free [Research Report] appears <[1] times>",
 					"Free [Research Report] appears <upon being promoted>",
 					
-					"Can build [Great People Improvement(Science)] improvements on tiles"],
+					"Can build [Great Person Improvement(Science)] improvements on tiles"],
 	},
 	
-	{
-		"name": "Great Merchant I",//大商业家
+	{//大商业家
+		"name": "Great Merchant I",
 		"unitType": "Great People",
 		"upgradesTo": "Great Merchant II",
-		"strength": 10,
+		"strength": 20,
 		"movement": 3,
 		"uniques": ["Great Person - [Gold]",
 					"Great Merchant",
+					
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Gain [1]-[100] [Gold] <upon ending a turn in a [District - Business Center] tile>",
-					"This Unit gains [5] XP <upon ending a turn in a [District - Business Center] tile>",
+					"Can instantly construct a [Great Person Improvement(Gold)] improvement <[1] times>",
+					"Gain [1]-[20] [Gold] <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [5] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile> <after adopting [Expert Seats]>",
 					
 					"Gain [-500]-[1000] [Gold] <[1] times>",
 					"Gain [-500]-[1000] [Gold] <upon being promoted>",
 					
-					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+					"Can build [Great Person Improvement(Gold)] improvements on tiles"],
 	},
 	{
 		"name": "Great Merchant II",
 		"unitType": "Great People",
 		"upgradesTo": "Great Merchant III",
-		"strength": 15,
+		"strength": 25,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Merchant",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Gain [1]-[60] [Gold] <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [20] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[200] [Gold] <upon ending a turn in a [District - Business Center] tile>",
-					"This Unit gains [10] XP <upon ending a turn in a [District - Business Center] tile>",
-					
-					"Gain [-1000]-[2000] [Gold] <[1] times>",
 					"Gain [-1000]-[2000] [Gold] <upon being promoted>",
 					
-					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+					"Can build [Great Person Improvement(Gold)] improvements on tiles"],
 	},
 	{
 		"name": "Great Merchant III",
 		"unitType": "Great People",
-		"strength": 20,
+		"strength": 30,
 		"movement": 3,
 		"requiredTech": "Future Tech",
 		"uniques": ["Great Merchant",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
 					"Unbuildable",
 					"Cannot be purchased",
 					"Never appears as a Barbarian unit",
+					
 					"Cannot attack",
 					
-					"Consumes [1] [Great Seat ( Lv. III )]",
+					"Gain [1]-[180] [Gold] <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [15] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile>",
+					"This Unit gains [30] XP <upon ending a turn in a [Great Person Improvement(Gold)] tile> <after adopting [Expert Seats]>",
 					
-					"Gain [1]-[300] [Gold] <upon ending a turn in a [District - Business Center] tile>",
-					"This Unit gains [15] XP <upon ending a turn in a [District - Business Center] tile>",
-					
-					"Gain [-1500]-[3000] [Gold] <[1] times>",
 					"Gain [-1500]-[3000] [Gold] <upon being promoted>",
 					
-					"Can build [Great People Improvement(Gold)] improvements on tiles"],
+					"Can build [Great Person Improvement(Gold)] improvements on tiles"],
 	},
 	
+	{//大外交官
+		"name": "Great Diplomat I",
+		"unitType": "Great People",
+		"upgradesTo": "Great Diplomat II",
+		"strength": 20,
+		"movement": 3,
+		"uniques": ["Great Person - [City-State]",
+					"Great Diplomat",
+					
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Cannot attack",
+					
+					"Can instantly construct a [Great Person Improvement(City-State)] improvement <[1] times>",
+					"This Unit gains [5] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile>",
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile> <after adopting [Expert Seats]>",
+					
+					"Free [Messenger] appears <[1] times>",
+					"Free [Messenger] appears <upon being promoted>",
+					
+					"Can build [Great Person Improvement(City-State)] improvements on tiles"],
+	},
 	{
-		"name": "Great Politician(Ordinary)",//大政治家
+		"name": "Great Diplomat II",
+		"unitType": "Great People",
+		"upgradesTo": "Great Diplomat III",
+		"strength": 25,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Diplomat",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Cannot attack",
+					
+					"This Unit gains [10] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile>",
+					"This Unit gains [20] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile> <after adopting [Expert Seats]>",
+					
+					"Free [Messenger] appears <upon being promoted>",
+					
+					"Can build [Great Person Improvement(City-State)] improvements on tiles"],
+	},
+	{
+		"name": "Great Diplomat III",
+		"unitType": "Great People",
+		"strength": 30,
+		"movement": 3,
+		"requiredTech": "Future Tech",
+		"uniques": ["Great Diplomat",
+					
+					"Unbuildable",
+					"Cannot be purchased",
+					"Never appears as a Barbarian unit",
+					
+					"Consumes [1] [Great Seat ( Lv. III )]",
+					"Cannot attack",
+					
+					"This Unit gains [15] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile>",
+					"This Unit gains [30] XP <upon ending a turn in a [Great Person Improvement(City-State)] tile> <after adopting [Expert Seats]>",
+					
+					"Free [Messenger] appears <upon being promoted>",
+					
+					"Can build [Great Person Improvement(City-State)] improvements on tiles"],
+	},
+	
+	{//大政治家
+		"name": "Great Politician(Ordinary)",
 		"unitType": "Great People",
 		"movement": 4,
 		"uniques": ["Great Person - [Politic]",
 					"Great Politician",
-					"Unbuildable",
 					
+					"Consumes [1] [Great Seat ( Lv. II )]",
+					"Unbuildable",
+					"Cannot be purchased",
+					
+					"Can instantly construct a [Great Person Improvement(Politic)] improvement <[1] times>",
 					"Can transform to [Great Politician(Development)]",
 					"Can transform to [Great Politician(Military)]"],
 	},
@@ -895,80 +1196,86 @@
 		"unitType": "Great People",
 		"movement": 1,
 		"uniques": ["Great Politician",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Cannot move",
 					
-					"Instantly provides [4] [Policy Point - Development] <upon ending a turn in a [District - Municipal Square] tile>",
-					"Instantly provides [2] [Policy Point - Development] <upon ending a turn in a [City center] tile>",
+					"Instantly provides [1] [Policy Point - Development] <upon ending a turn in a [Great Person Improvement(Politic)] tile>",
+					"Instantly provides [1] [Policy Point - Military] <with [War-weariness]> <when at war>",
+					"Instantly provides [1] [Policy Point - Development] <with [War-weariness]> <when not at war>",
 					
-					"Can transform to [Great Politician(Ordinary)]"],
+					"Can transform to [Great Politician(Military)]"],
 	},
 	{
 		"name": "Great Politician(Military)",
 		"unitType": "Great People",
 		"movement": 1,
 		"uniques": ["Great Politician",
+					
+					"Consumes [1] [Great Seat ( Lv. II )]",
 					"Unbuildable",
+					"Cannot be purchased",
 					"Cannot move",
 					
-					"Instantly provides [4] [Policy Point - Military] <upon ending a turn in a [District - Municipal Square] tile>",
-					"Instantly provides [2] [Policy Point - Military] <upon ending a turn in a [City center] tile>",
+					"Instantly provides [1] [Policy Point - Military] <upon ending a turn in a [Great Person Improvement(Politic)] tile>",
+					"Instantly provides [1] [Policy Point - Military] <with [War-weariness]> <when at war>",
+					"Instantly provides [1] [Policy Point - Development] <with [War-weariness]> <when not at war>",
 					
-					"Can transform to [Great Politician(Ordinary)]"],
+					"Can transform to [Great Politician(Development)]"],
 	},
 	
-	{
-		"name": "Great General",//陆军统帅
+	{//陆军统帅
+		"name": "Great General",
 		"unitType": "Great People",
 		"movement": 3,
 		"uniques": ["Great Person - [War]",
-					"Unbuildable",
 					
-					"Empire enters a [5]-turn Golden Age <once>",
-					"[+15]% Strength bonus for [Land] units within [2] tiles"],
+					"Unbuildable",
+					"Cannot be purchased",
+					
+					"Empire enters a [2]-turn Golden Age <once>",
+					
+					"[+10]% Strength bonus for [Land] units within [2] tiles"],
 	},
-	{
-		"name": "Great Admiral",//海军统帅
+	{//海军统帅
+		"name": "Great Admiral",
 		"unitType": "Great People",
 		"movement": 3,
 		"uniques": ["Great Person - [Water War]",
-					"Unbuildable",
-
-					"Empire enters a [5]-turn Golden Age <once>",
-					"[+15]% Strength bonus for [Water] units within [2] tiles"],
-	},
-	{
-		"name": "Great Diplomat",//大外交官
-		"unitType": "Great People",
-		"movement": 3,
-		"uniques": ["Great Person - [City-State]",
-					"Unbuildable",
 					
-					"Can undertake a trade mission with City-State, giving a large sum of gold and [80] Influence",
-					"May enter foreign tiles without open borders"],
+					"Unbuildable",
+					"Cannot be purchased",
+					
+					"Empire enters a [2]-turn Golden Age <once>",
+					"[+10]% Strength bonus for [Water] units within [2] tiles"],
 	},
-	{
-		"name": "Great Engineer",//大工程师
+	
+	{//大工程师
+		"name": "Great Engineer",
 		"unitType": "Great People",
 		"movement": 3,
 		"uniques": ["Great Person - [Production]",
+					
 					"Unbuildable",
+					"Cannot be purchased",
 					
 					"[-50]% construction time for [All] improvements",
+					
 					"Can build [District] improvements on tiles",
-					"Can build [Base Improvement] improvements on tiles",
-					"Can build [Resource Improvement] improvements on tiles"],
+					"Can build [Base Improvement] improvements on tiles"],
 	},
-	{
-		"name": "Great Prophet",//大预言家
+	{//大预言家
+		"name": "Great Prophet",
 		"unitType": "Great People",
 		"movement": 3,
 		"religiousStrength": 3000,
 		"uniques": ["Great Person - [Faith]",
-					"Unbuildable",
-					
-					"Hidden when religion is disabled",
 					"Religious Unit",
+					
+					"Unbuildable",
+					"Hidden when religion is disabled",
 					
 					"Can Spread Religion <for [2] movement> <[3] times> <after which this unit is consumed>",
 					"Removes other religions when spreading religion",
@@ -980,118 +1287,198 @@
 					"May enter foreign tiles without open borders",
 					"[-1] Sight"],
 	},
+	{//克苏鲁主教
+		"name": "Cthulu Bishop",
+		"unitType": "Great People",
+		"movement": 4,
+		"religiousStrength": 3000,
+		"uniques": ["Great Person - [Cthulu]",
+					"Religious Unit",
+					
+					"Unbuildable",
+					"Only available <after adopting [Cosmicis]>",
+					"Hidden when religion is disabled",
+					
+					"Can Spread Religion <requires [3] movement> <[6] times>",
+					"Can remove other religions from cities <requires [3] movement> <[6] times>",
+					"[-15]% Strength for enemy [All] units in adjacent [All] tiles",
+					
+					"May enter foreign tiles without open borders",
+					"Prevents spreading of religion to the city it is next to",
+					"Removes other religions when spreading religion",
+					"Takes your religion over the one in their birth city",
+					"[+1] Sight"],
+	},
+	
+//附属单位
+	
+    {//音乐合集
+		"name": "Music Collection",
+		"unitType": "Sub-unit",
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"Cannot be purchased",
+					
+					"Instantly provides [20] [Tourism Performance] <by consuming this unit>"],
+	},
+    {//艺术作品
+		"name": "Artwork",
+		"unitType": "Sub-unit",
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"Cannot be purchased",
+					
+					"Can generate a large amount of culture"],
+	},
+    {//研究报告
+		"name": "Research Report",
+		"unitType": "Sub-unit",
+		"movement": 2,
+		"uniques": ["Unbuildable",
+					"Cannot be purchased",
+					
+					"Can hurry technology research"],
+	},
+    {//指挥官
+		"name": "Commander",
+		"unitType": "Sub-unit",
+		"movement": 1,
+		"uniques": ["Unbuildable",
+					"Cannot be purchased",
+					"Can be earned through combat",
+					
+					"[+15]% Strength bonus for [All] units within [2] tiles <for [AI player]>",
+					
+					"Can transform to [Great General]",
+					"Can transform to [Great Admiral]"],
+	},
+    {//使者
+		"name": "Messenger",
+		"unitType": "Sub-unit",
+		"movement": 3,
+		"uniques": ["Unbuildable",
+					"Cannot be purchased",
+					
+					"May enter foreign tiles without open borders"],
+	},
 	
 //雇佣兵
 	
 	{
 		"name": "Mercenary - Pike",//雇佣兵 - 长枪
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Mercenary - Musket",
 		"movement": 2,
-		"strength": 25,
+		"strength": 36,
 		"cost": 92,
 		"uniques": ["Mercenary",
-					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
 					
-					"Can move immediately once bought",
-					"Unable to capture cities",
-					"Unbuildable",
+					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
 					"Can be purchased with [Gold] [in all cities]",
-					"[-100]% maintenance costs",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Unbuildable",
+					
+					"Unable to capture cities",
+					"Can move immediately once bought",
+					"[-100]% maintenance costs"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Mercenary - Musket",//雇佣兵 - 火枪
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Musketeer",
 		"movement": 2,
-		"strength": 40,
+		"strength": 46,
 		"cost": 140,
 		"uniques": ["Mercenary",
-					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
 					
-					"Can move immediately once bought",
-					"Unable to capture cities",
-					"Unbuildable",
+					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
 					"Can be purchased with [Gold] [in all cities]",
-					"[-100]% maintenance costs",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Unbuildable",
+					
+					"Unable to capture cities",
+					"Can move immediately once bought",
+					"[-100]% maintenance costs"],
 		"attackSound": "nonmetalhit"
 	},
 	
 	{
 		"name": "Mercenary - Bow",//雇佣兵 - 弓箭
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Mercenary - Arquebus",
 		"movement": 2,
 		"range": 2,
-		"strength": 23,
-		"rangedStrength": 28,
+		"strength": 36,
+		"rangedStrength": 41,
 		"cost": 105,
 		"uniques": ["Mercenary",
-					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
 					
-					"Can move immediately once bought",
-					"Unable to capture cities",
-					"Unbuildable",
+					"Only available <after adopting [Mercenary Regiments]> <before discovering [Gunpowder]>",
 					"Can be purchased with [Gold] [in all cities]",
-					"[-100]% maintenance costs",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Unbuildable",
+					
+					"Unable to capture cities",
+					"Can move immediately once bought",
+					"[-100]% maintenance costs"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Mercenary - Arquebus",//雇佣兵 - 火绳枪
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Arquebusier",
 		"movement": 2,
 		"range": 2,
-		"strength": 34,
-		"rangedStrength": 43,
+		"strength": 42,
+		"rangedStrength": 47,
 		"cost": 135,
 		"uniques": ["Mercenary",
-					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
 					
-					"Can move immediately once bought",
-					"Unable to capture cities",
-					"Unbuildable",
+					"Only available <after adopting [Mercenary Regiments]> <after discovering [Gunpowder]>",
 					"Can be purchased with [Gold] [in all cities]",
-					"[-100]% maintenance costs",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"Unbuildable",
+					
+					"Unable to capture cities",
+					"Can move immediately once bought",
+					"[-100]% maintenance costs"],
 		"attackSound": "nonmetalhit"
 	},
 	
 //陆地单位
-
-	//特殊单位
-	{
-		"name": "Peacekeeper",//维和部队
-		"unitType": "Land 'Melee' 'Hot weapon'",
-		"movement": 2,
-		"strength": 80,
-		"cost": 500,
-		"uniques": ["Only available <after adopting [Non-combat Military Operations]>",
-					"Never appears as a Barbarian unit",
-					
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>",
-					
-					"[+20]% Strength <when fighting in [Foreign Land] tiles>",
-					"[-100]% Strength <when fighting in [Enemy Land] tiles>"],
-		"attackSound": "shot"
-	},
 	
 	//侦查
 	{
-		"name": "Explorer",//探索者
-		"unitType": "Land 'Melee' 'Cold weapon'",
-		"upgradesTo": "Scout",
-		"movement": 3,
+		"name": "Pioneer",//开拓者
+		"unitType": "Land 'Exploration'",
+		"upgradesTo": "Explorer",
+		"movement": 2,
 		"range": 1,
-		"strength": 10,
-		"rangedStrength": 9,
+		"strength": 17,
+		"rangedStrength": 16,
+		"cost": 0,
+		"obsoleteTech": "Iron Working",
+		"uniques": ["Infantry",
+					
+					"Cannot be purchased",
+					"Unbuildable",
+					
+					"Can move after attacking"],
+		"promotions": ["Investigation"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Explorer",//探索者
+		"unitType": "Land 'Exploration'",
+		"upgradesTo": "Scout",
+		"movement": 2,
+		"range": 1,
+		"strength": 20,
+		"rangedStrength": 19,
 		"cost": 35,
 		"obsoleteTech": "Iron Working",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1099,16 +1486,16 @@
 	},
 	{
 		"name": "Scout",//斥候
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Chasseur",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 20,
-		"rangedStrength": 19,
+		"strength": 30,
+		"rangedStrength": 29,
 		"cost": 55,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Chemistry",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1116,16 +1503,16 @@
 	},
 	{
 		"name": "Chasseur",//猎兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Skirmisher",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 30,
-		"rangedStrength": 29,
+		"strength": 40,
+		"rangedStrength": 39,
 		"cost": 125,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Rifling",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1133,16 +1520,16 @@
 	},
 	{
 		"name": "Skirmisher",//散兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Special Force",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 40,
-		"rangedStrength": 39,
+		"strength": 50,
+		"rangedStrength": 49,
 		"cost": 365,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1150,16 +1537,16 @@
 	},
 	{
 		"name": "Special Force",//特种部队
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Digitization Force",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 50,
-		"rangedStrength": 49,
+		"strength": 60,
+		"rangedStrength": 59,
 		"cost": 530,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Stealth",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1167,16 +1554,16 @@
 	},
 	{
 		"name": "Digitization Force",//数字化部队
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Scouting Drone",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 80,
-		"rangedStrength": 79,
+		"strength": 90,
+		"rangedStrength": 89,
 		"cost": 1165,
 		"requiredTech": "Stealth",
 		"obsoleteTech": "Robotics",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking"],
 		"promotions": ["Investigation"],
@@ -1184,14 +1571,14 @@
 	},
 	{
 		"name": "Scouting Drone",//侦查无人机
-		"unitType": "Land 'Melee' 'Hot weapon'",
-		"movement": 5,
+		"unitType": "Land 'Exploration'",
+		"movement": 4,
 		"range": 1,
-		"strength": 85,
-		"rangedStrength": 84,
+		"strength": 100,
+		"rangedStrength": 99,
 		"cost": 1325,
 		"requiredTech": "Robotics",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking",
 					"Can see invisible [Scouting Drone] units",
@@ -1203,244 +1590,268 @@
 	//近步
 	{
 		"name": "Warrior",//勇士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Swordsman",
 		"movement": 2,
-		"strength": 20,
+		"strength": 30,
 		"cost": 42,
 		"obsoleteTech": "Iron Working",
-		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"uniques" : ["Infantry",
+					
+					"May upgrade to [Spearman] through ruins-like effects"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Swordsman",//剑士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Longswordsman",
 		"movement": 2,
-		"strength": 27,
+		"strength": 37,
 		"cost": 71,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Longswordsman",//长剑士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Musketeer",
 		"movement": 2,
-		"strength": 34,
+		"strength": 44,
 		"cost": 106,
 		"requiredTech": "Metal Casting",
 		"obsoleteTech": "Gunpowder",
-		"uniques": ["Knights",
+		"uniques": ["Infantry",
+					"Knights",
 					
 					"Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Musketeer",//火枪手
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Light Infantry",
 		"movement": 2,
-		"strength": 40,
+		"strength": 50,
 		"cost": 165,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Rifling",
-		"uniques": ["Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Light Infantry",//轻装步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Assault Infantry",
 		"movement": 2,
-		"strength": 56,
+		"strength": 66,
 		"cost": 458,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Ballistics",
-		"uniques": ["Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "shot"
 	},
 	{
 		"name": "Assault Infantry",//突击步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Mechanized Infantry",
 		"movement": 2,
-		"strength": 70,
+		"strength": 80,
 		"cost": 661,
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Radar",
-		"uniques": ["Costs [8] [Steel]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Steel]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "shot"
 	},
 	{
 		"name": "Mechanized Infantry",//机械化步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Exoskeletal Infantry",
 		"movement": 2,
-		"strength": 90,
+		"strength": 100,
 		"cost": 912,
 		"requiredTech": "Radar",
 		"obsoleteTech": "Exoskeleton",
-		"uniques": ["Costs [8] [Steel]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Steel]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "shot"
 	},
 	{
 		"name": "Exoskeletal Infantry",//外骨骼步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Improved Battleship",
 		"movement": 2,
-		"strength": 110,
+		"strength": 120,
 		"cost": 1590,
 		"requiredTech": "Exoskeleton",
-		"uniques": ["Costs [8] [Steel]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Steel]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"attackSound": "shot"
 	},
 	
 	{
 		"name": "Spearman",//枪兵
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Pikeman",
 		"movement": 2,
-		"strength": 23,
+		"strength": 33,
 		"cost": 46,
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"uniques": ["Infantry",
+					
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Heavy Spearman",//重装枪兵
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Heavy Pikeman",
 		"movement": 2,
-		"strength": 23,
+		"strength": 33,
 		"cost": 57,
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["Costs [8] [Copper]",
-					"[+15]% Strength <when defending>",
-					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Copper]",
+					"[+10]% Strength <when defending>",
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Pikeman",//长枪兵
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Pike and Shot",
 		"movement": 2,
-		"strength": 30,
+		"strength": 40,
 		"cost": 103,
 		"requiredTech": "Metal Casting",
 		"obsoleteTech": "Gunpowder",
-		"uniques": ["Knights",
+		"uniques": ["Infantry",
 					
-					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+					"Knights",
+					
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Heavy Pikeman",//重装长枪兵
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Pike and Shot",
 		"movement": 2,
-		"strength": 30,
+		"strength": 40,
 		"cost": 114,
 		"requiredTech": "Metal Casting",
 		"obsoleteTech": "Gunpowder",
-		"uniques": ["Knights",
+		"uniques": ["Infantry",
+					"Knights",
 					
 					"Costs [8] [Copper]",
-					"[+15]% Strength <when defending>",
-					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+					"[+10]% Strength <when defending>",
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Pike and Shot",//枪矛方阵兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Line Infantry",
 		"movement": 2,
-		"strength": 36,
+		"strength": 46,
 		"cost": 155,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Rifling",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"uniques": ["Infantry",
+					
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Line Infantry",//线列步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Anti-tank Gun",
 		"movement": 2,
-		"strength": 52,
+		"strength": 62,
 		"cost": 438,
 		"requiredTech": "Rifling",
-		"obsoleteTech": "Ballistics",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"obsoleteTech": "Ballistics", 
+		"uniques": ["Infantry",
+					
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Anti-tank Gun",//反坦克炮
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Anti-tank Bazooka",
 		"movement": 2,
-		"strength": 66,
-		"cost": 631,
+		"strength": 76,
+		"cost": 631, 
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Rocketry",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Armored] units>"],
+		"uniques": ["Infantry",
+					
+					"[+33]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Anti-tank Bazooka",//反坦克火箭筒
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "EMI Infantry",
 		"movement": 2,
-		"strength": 86,
+		"strength": 96,
 		"cost": 872,
 		"requiredTech": "Rocketry",
 		"obsoleteTech": "Exoskeleton",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Armored] units>"],
+		"uniques": ["Infantry",
+					
+					"[+33]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "EMI Infantry",//电磁干扰步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Anti-rush'",
+		"upgradesTo": "Improved Battleship",
 		"movement": 2,
-		"strength": 107,
+		"strength": 117,
 		"cost": 1530,
 		"requiredTech": "Exoskeleton",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Armored] units>"],
+		"uniques": ["Infantry",
+					
+					"[+33]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	
 	{
 		"name": "Navy Infantry",//海军步兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Marine",
 		"movement": 2,
-		"strength": 68,
+		"strength": 78,
 		"cost": 650,
 		"requiredTech": "Meteorology",
 		"obsoleteTech": "Radar",
-		"uniques": ["[1] Movement point cost to disembark",
+		"uniques": ["Infantry",
+					
+					"[1] Movement point cost to disembark",
 					"Defense bonus when embarked",
 					"No defensive terrain bonus"],
 		"promotions": ["Amphibious"],
@@ -1448,12 +1859,15 @@
 	},
 	{
 		"name": "Marine",//海军陆战队
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Improved Battleship",
 		"movement": 2,
-		"strength": 87,
+		"strength": 97,
 		"cost": 890,
 		"requiredTech": "Radar",
-		"uniques": ["[1] Movement point cost to disembark",
+		"uniques": ["Infantry",
+					
+					"[1] Movement point cost to disembark",
 					"Defense bonus when embarked",
 					"No defensive terrain bonus"],
 		"promotions": ["Amphibious"],
@@ -1462,25 +1876,30 @@
 	
 	{
 		"name": "Paratrooper",//伞兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Airborne",
 		"movement": 2,
-		"strength": 85,
+		"strength": 95,
 		"cost": 880,
 		"requiredTech": "Radar",
 		"obsoleteTech": "Stealth",
-		"uniques": ["May Paradrop up to [5] tiles from inside friendly territory",
+		"uniques": ["Infantry",
+					
+					"May Paradrop up to [5] tiles from inside friendly territory",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "shot"
 	},
 	{
 		"name": "Airborne",//空降部队
-		"unitType": "Land 'Melee' 'Hot weapon'",
-		"upgradesTo": "Marine",
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Improved Battleship",
 		"movement": 2,
-		"strength": 93,
+		"strength": 103,
 		"cost": 1630,
 		"requiredTech": "Stealth",
-		"uniques": ["May Paradrop up to [10] tiles from inside friendly territory",
+		"uniques": ["Infantry",
+					
+					"May Paradrop up to [10] tiles from inside friendly territory",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "shot"
 	},
@@ -1488,122 +1907,134 @@
 	//远步
 	{
 		"name": "Slinger",//投石手
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Archer",
 		"movement": 2,
 		"range": 1,
-		"strength": 16,
-		"rangedStrength": 18,
+		"strength": 26,
+		"rangedStrength": 28,
 		"cost": 39,
 		"obsoleteTech": "Animal Husbandry",
+		"uniques": ["Infantry"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Archer",//弓箭手
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Composite Bowman",
 		"movement": 2,
 		"range": 2,
-		"strength": 18,
-		"rangedStrength": 23,
+		"strength": 28,
+		"rangedStrength": 33,
 		"cost": 53,
 		"requiredTech": "Animal Husbandry",
 		"obsoleteTech": "Mathematics",
+		"uniques": ["Infantry"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Composite Bowman",//复合弓兵
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Crossbowman",
 		"movement": 2,
 		"range": 2,
-		"strength": 24,
-		"rangedStrength": 28,
+		"strength": 34,
+		"rangedStrength": 38,
 		"cost": 67,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Physics",
+		"uniques": ["Infantry"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Crossbowman",//弩手
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Arquebusier",
 		"movement": 2,
 		"range": 2,
-		"strength": 30,
-		"rangedStrength": 35,
+		"strength": 40,
+		"rangedStrength": 45,
 		"cost": 101,
 		"requiredTech": "Physics",
 		"obsoleteTech": "Gunpowder",
-		"uniques": ["Knights"],
+		"uniques": ["Infantry",
+					"Knights"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Arquebusier",//火绳枪兵
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Gatling Gun",
 		"movement": 2,
 		"range": 2,
-		"strength": 36,
-		"rangedStrength": 41,
+		"strength": 46,
+		"rangedStrength": 51,
 		"cost": 159,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Industrialization",
+		"uniques": ["Infantry"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Gatling Gun",//加特林机枪
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Machine Gun",
 		"movement": 2,
 		"range": 1,
-		"strength": 50,
-		"rangedStrength": 50,
+		"strength": 60,
+		"rangedStrength": 60,
 		"cost": 451,
 		"requiredTech": "Industrialization",
 		"obsoleteTech": "Ballistics",
-		"uniques": ["[+1] additional attacks per turn"],
+		"uniques": ["Infantry",
+					
+					"[+1] additional attacks per turn"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Machine Gun",//机关枪
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Battalion Gun",
 		"movement": 2,
 		"range": 1,
-		"strength": 65,
-		"rangedStrength": 65,
+		"strength": 75,
+		"rangedStrength": 75,
 		"cost": 653,
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Rocketry",
-		"uniques": ["[+1] additional attacks per turn"],
+		"uniques": ["Infantry",
+					
+					"[+1] additional attacks per turn"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Battalion Gun",//步兵炮
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Particle Beam Mitter",
 		"movement": 2,
 		"range": 1,
-		"strength": 85,
-		"rangedStrength": 85,
+		"strength": 95,
+		"rangedStrength": 95,
 		"cost": 903,
 		"requiredTech": "Rocketry",
 		"obsoleteTech": "Superconductor",
-		"uniques": ["Gunnery",
+		"uniques": ["Infantry",
+					
 					"[+1] additional attacks per turn"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Particle Beam Mitter",//粒子束发射器
-		"unitType": "Land 'Ranged' 'Hot weapon'",
+		"unitType": "Land 'Support'",
+		"upgradesTo": "Improved Corvette",
 		"movement": 2,
 		"range": 1,
-		"strength": 105,
-		"rangedStrength": 105,
+		"strength": 115,
+		"rangedStrength": 115,
 		"cost": 1590,
 		"requiredTech": "Superconductor",
-		"uniques": ["Gunnery",
+		"uniques": ["Infantry",
+					
 					"[+1] additional attacks per turn"],
 		"attackSound": "arrow"
 	},
@@ -1612,15 +2043,14 @@
 	
 	{
 		"name": "Horseman",//骑手
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Spear Cavalry",
 		"movement": 4,
-		"strength": 27,
+		"strength": 37,
 		"cost": 75,
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Horse Armor",
-		"uniques": ["Melee Cavalry",
-					"Costs [8] [Horses]",
+		"uniques": ["Costs [8] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -1629,15 +2059,14 @@
 	},
 	{
 		"name": "Spear Cavalry",//长矛骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Honor Knight",
 		"movement": 4,
-		"strength": 34,
+		"strength": 44,
 		"cost": 111,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Melee Cavalry",
-					"Costs [9] [Horses]",
+		"uniques": ["Costs [9] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -1646,15 +2075,14 @@
 	},
 	{
 		"name": "Honor Knight",//荣誉骑士
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Lancer",
 		"movement": 4,
-		"strength": 40,
+		"strength": 50,
 		"cost": 156,
 		"requiredTech": "Stirrups",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Melee Cavalry",
-					"Knights",
+		"uniques": ["Knights",
 					
 					"Costs [10] [Horses]",
 					"No defensive terrain bonus",
@@ -1665,15 +2093,14 @@
 	},
 	{
 		"name": "Lancer",//枪骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Wheeled Armored",
 		"movement": 4,
-		"strength": 60,
+		"strength": 70,
 		"cost": 435,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Melee Cavalry",
-					"Costs [11] [Horses]",
+		"uniques": ["Costs [11] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -1682,14 +2109,15 @@
 	},
 	{
 		"name": "Wheeled Armored",//轮式装甲车
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Main Battle Tank",
 		"movement": 4,
-		"strength": 84,
+		"strength": 94,
 		"cost": 990,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Motor",
-		"uniques": ["Melee Armored",
+		"uniques": ["Armored",
+					
 					"Costs [12] [Steel]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
@@ -1699,14 +2127,15 @@
 	},
 	{
 		"name": "Main Battle Tank",//主战坦克
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Short-range Laser Mech",
 		"movement": 4,
-		"strength": 105,
+		"strength": 115,
 		"cost": 1359,
 		"requiredTech": "Motor",
 		"obsoleteTech": "Combat Mech",
-		"uniques": ["Melee Armored",
+		"uniques": ["Armored",
+					
 					"Costs [13] [Steel]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
@@ -1716,13 +2145,14 @@
 	},
 	{
 		"name": "Short-range Laser Mech",//短距激光机甲
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Light Rush'",
 		"movement": 4,
-		"strength": 122,
+		"strength": 132,
 		"cost": 2421,
 		"requiredTech": "Combat Mech",
-		"uniques": ["Melee Armored",
+		"uniques": ["Armored",
 					"Mechs",
+					
 					"Costs [13] [Steel]",
 					"Costs [6] [Electric Power]",
 					"No defensive terrain bonus",
@@ -1736,121 +2166,120 @@
 	
 	{
 		"name": "Heavy Chariot",//重型战车
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Armored Cavalry",
 		"movement": 3,
-		"strength": 30,
+		"strength": 40,
 		"cost": 105,
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Horse Armor",
-		"uniques": ["Heavy Cavalry",
-					"Costs [9] [Horses]",
+		"uniques": ["Costs [9] [Horses]",
 					"Costs [5] [Copper]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Armored Cavalry",//披甲骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Valor Knight",
 		"movement": 3,
-		"strength": 37,
+		"strength": 47,
 		"cost": 141,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Heavy Cavalry",
-					"Costs [10] [Horses]",
+		"uniques": ["Costs [10] [Horses]",
 					"Costs [6] [Iron]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
 	{
 		"name": "Valor Knight",//英勇骑士
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Cuirassier",
 		"movement": 3,
-		"strength": 43,
+		"strength": 53,
 		"cost": 186,
 		"requiredTech": "Stirrups",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Heavy Cavalry",
-					"Knights",
+		"uniques": ["Knights",
 					
 					"Costs [11] [Horses]",
 					"Costs [7] [Iron]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
 	{
 		"name": "Cuirassier",//胸甲骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Tracked Armored",
 		"movement": 3,
-		"strength": 63,
+		"strength": 73,
 		"cost": 465,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Heavy Cavalry",
-					"Costs [12] [Horses]",
+		"uniques": ["Costs [12] [Horses]",
 					"Costs [8] [Iron]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
 	{
 		"name": "Tracked Armored",//履带装甲车
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Heavy Tank",
 		"movement": 3,
-		"strength": 87,
+		"strength": 97,
 		"cost": 1068,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Motor",
-		"uniques": ["Heavy Armored",
+		"uniques": ["Armored",
+					
 					"Costs [13] [Steel]",
 					"Costs [9] [Oil]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
 	{
 		"name": "Heavy Tank",//重型坦克
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Heavy Laser Mech",
 		"movement": 3,
-		"strength": 108,
+		"strength": 118,
 		"cost": 1437,
 		"requiredTech": "Motor",
 		"obsoleteTech": "Combat Mech",
-		"uniques": ["Heavy Armored",
+		"uniques": ["Armored",
+					
 					"Costs [14] [Steel]",
 					"Costs [10] [Oil]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
 	{
 		"name": "Heavy Laser Mech",//重型激光机甲
-		"unitType": "Land 'Melee' 'Armored'",
+		"unitType": "Land 'Heavy Rush'",
 		"movement": 3,
-		"strength": 125,
+		"strength": 135,
 		"cost": 2511,
 		"requiredTech": "Combat Mech",
-		"uniques": ["Heavy Armored",
+		"uniques": ["Armored",
 					"Mechs",
+					
 					"Costs [14] [Steel]",
 					"Costs [16] [Electric Power]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>"],
 		"attackSound": "horse"
 	},
@@ -1859,50 +2288,47 @@
 	
 	{
 		"name": "Chariot Archer",//战车射手
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Bow Cavalry",
 		"movement": 4,
 		"range": 2,
-		"strength": 25,
-		"rangedStrength": 27,
+		"strength": 35,
+		"rangedStrength": 37,
 		"cost": 95,
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Horse Armor",
-		"uniques": ["Ranged Cavalry",
-					"Costs [8] [Horses]",
+		"uniques": ["Costs [8] [Horses]",
 					"No defensive terrain bonus",
 					"Rough terrain penalty"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Bow Cavalry",//弓骑兵
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Humility Knight",
 		"movement": 4,
 		"range": 2,
-		"strength": 32,
-		"rangedStrength": 34,
+		"strength": 42,
+		"rangedStrength": 44,
 		"cost": 131,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Ranged Cavalry",
-					"Costs [9] [Horses]",
+		"uniques": ["Costs [9] [Horses]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Humility Knight",//谦卑骑士
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Courser",
 		"movement": 4,
 		"range": 2,
-		"strength": 38,
-		"rangedStrength": 40,
+		"strength": 48,
+		"rangedStrength": 50,
 		"cost": 176,
 		"requiredTech": "Stirrups",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Ranged Cavalry",
-					"Knights",
+		"uniques": ["Knights",
 					
 					"Costs [10] [Horses]",
 					"No defensive terrain bonus"],
@@ -1910,63 +2336,65 @@
 	},
 	{
 		"name": "Courser",//追猎者
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Machine Gun Armored",
 		"movement": 4,
 		"range": 2,
-		"strength": 58,
-		"rangedStrength": 60,
+		"strength": 68,
+		"rangedStrength": 70,
 		"cost": 455,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Ranged Cavalry",
-					"Costs [11] [Horses]",
+		"uniques": ["Costs [11] [Horses]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Machine Gun Armored",//机枪装甲车
-		"unitType": "Land 'Ranged' 'Armored'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Medium Tank",
 		"movement": 4,
 		"range": 2,
-		"strength": 82,
-		"rangedStrength": 84,
+		"strength": 92,
+		"rangedStrength": 94,
 		"cost": 1038,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Motor",
-		"uniques": ["Ranged Armored",
+		"uniques": ["Armored",
+					
 					"Costs [12] [Steel]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Medium Tank",//中型坦克
-		"unitType": "Land 'Ranged' 'Armored'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Medium Laser Mech",
 		"movement": 4,
 		"range": 2,
-		"strength": 103,
-		"rangedStrength": 105,
+		"strength": 113,
+		"rangedStrength": 115,
 		"cost": 1407,
 		"requiredTech": "Motor",
 		"obsoleteTech": "Combat Mech",
-		"uniques": ["Ranged Armored",
+		"uniques": ["Armored",
+					
 					"Costs [13] [Steel]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Medium Laser Mech",//中型激光机甲
-		"unitType": "Land 'Ranged' 'Armored'",
+		"unitType": "Land 'Ranged Rush'",
 		"movement": 4,
 		"range": 2,
-		"strength": 120,
-		"rangedStrength": 122,
+		"strength": 130,
+		"rangedStrength": 132,
 		"cost": 2481,
 		"requiredTech": "Combat Mech",
-		"uniques": ["Ranged Armored",
+		"uniques": ["Armored",
 					"Mechs",
+					
 					"Costs [13] [Steel]",
 					"Costs [6] [Electric Power]",
 					"No defensive terrain bonus"],
@@ -1977,14 +2405,14 @@
 	
 	{
 		"name": "Battering Ram",//破城槌
-		"unitType": "Land 'Ordnance'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Siege Tower",
 		"movement": 2,
-		"strength": 20,
+		"strength": 30,
 		"cost": 80,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Military Engineering",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>",
 					"[+33]% Strength <vs cities> <when defending>",
 					"[-67]% Strength <vs [Land] units>",
 					"No Sight",
@@ -1994,14 +2422,14 @@
 	},
 	{
 		"name": "Siege Tower",//攻城塔
-		"unitType": "Land 'Ordnance'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Grenadier",
 		"movement": 2,
-		"strength": 23,
+		"strength": 33,
 		"cost": 110,
 		"requiredTech": "Physics",
 		"obsoleteTech": "Chemistry",
-		"uniques": ["[+200]% Strength <vs cities> <when defending>",
+		"uniques": ["[+100]% Strength <vs cities> <when defending>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
@@ -2009,15 +2437,15 @@
 	},
 	{
 		"name": "Grenadier",//掷弹兵
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Field Cannon",
 		"movement": 2,
-		"strength": 25,
+		"strength": 35,
 		"cost": 175,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Dynamite",
-		"uniques": ["[+300]% Strength <vs cities> <when attacking>",
-					"[+100]% Strength <vs [Land] units> <when attacking>",
+		"uniques": ["[+180]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
@@ -2025,35 +2453,33 @@
 	},
 	{
 		"name": "Field Cannon",//野战加农炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Mortar",
 		"movement": 2,
 		"range": 2,
-		"strength": 44,
-		"rangedStrength": 35,
+		"strength": 54,
+		"rangedStrength": 45,
 		"cost": 510,
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Radio",
-		"uniques": ["Gunnery",
-					"[+100]% Strength <vs [Infantry] units> <when attacking>",
-					"No Sight",
+		"uniques": ["[+50]% Strength <vs [Infantry] units> <when attacking>",
+					"No Sight", 
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Mortar",//迫击炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Mobile Mortar",
 		"movement": 2,
 		"range": 2,
-		"strength": 58,
-		"rangedStrength": 45,
+		"strength": 68,
+		"rangedStrength": 55,
 		"cost": 740,
 		"requiredTech": "Radio",
 		"obsoleteTech": "Computers",
-		"uniques": ["Gunnery",
-					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+		"uniques": ["[+50]% Strength <vs [Infantry] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
@@ -2061,17 +2487,18 @@
 	},
 	{
 		"name": "Mobile Mortar",//自行迫击炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Automatic Mortar",
 		"movement": 2,
 		"range": 2,
-		"strength": 78,
-		"rangedStrength": 55,
+		"strength": 88,
+		"rangedStrength": 65,
 		"cost": 1030,
 		"requiredTech": "Computers",
 		"obsoleteTech": "Robotics",
-		"uniques": ["Gunnery",
-					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"[+50]% Strength <vs [Infantry] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
@@ -2079,15 +2506,17 @@
 	},
 	{
 		"name": "Automatic Mortar",//自动迫击炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
+		"upgradesTo": "Improved Corvette",
 		"movement": 2,
 		"range": 2,
-		"strength": 96,
-		"rangedStrength": 65,
+		"strength": 106,
+		"rangedStrength": 75,
 		"cost": 1030,
 		"requiredTech": "Robotics",
-		"uniques": ["Gunnery",
-					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"[+50]% Strength <vs [Infantry] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit",
@@ -2097,18 +2526,18 @@
 	
 	{
 		"name": "Catapult",//投石车
-		"unitType": "Land 'Ordnance'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Trebuchet",
 		"movement": 2,
 		"range": 2,
-		"strength": 20,
-		"rangedStrength": 20,
+		"strength": 30,
+		"rangedStrength": 30,
 		"cost": 100,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Physics",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"No Sight",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
+					"No Sight", 
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"Never appears as a Barbarian unit"],
@@ -2116,17 +2545,17 @@
 	},
 	{
 		"name": "Trebuchet",//抛石机
-		"unitType": "Land 'Ordnance'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Cannon",
 		"movement": 2,
 		"range": 2,
-		"strength": 25,
-		"rangedStrength": 25,
+		"strength": 35,
+		"rangedStrength": 35,
 		"cost": 140,
 		"requiredTech": "Physics",
 		"obsoleteTech": "Chemistry",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2135,18 +2564,17 @@
 	},
 	{
 		"name": "Cannon",//加农炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Artillery",
 		"movement": 2,
 		"range": 2,
-		"strength": 30,
-		"rangedStrength": 30,
+		"strength": 40,
+		"rangedStrength": 40,
 		"cost": 210,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Dynamite",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2155,18 +2583,17 @@
 	},
 	{
 		"name": "Artillery",//火炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Howitzer",
 		"movement": 2,
 		"range": 3,
-		"strength": 40,
-		"rangedStrength": 40,
+		"strength": 50,
+		"rangedStrength": 50,
 		"cost": 600,
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Radio",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2175,18 +2602,17 @@
 	},
 	{
 		"name": "Howitzer",//榴弹炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Rocket Artillery",
 		"movement": 2,
 		"range": 3,
-		"strength": 60,
-		"rangedStrength": 60,
+		"strength": 70,
+		"rangedStrength": 70,
 		"cost": 860,
 		"requiredTech": "Radio",
 		"obsoleteTech": "Rocketry",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2195,18 +2621,19 @@
 	},
 	{
 		"name": "Rocket Artillery",//火箭炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Microwave Mitter",
 		"movement": 2,
 		"range": 3,
-		"strength": 80,
-		"rangedStrength": 80,
+		"strength": 90,
+		"rangedStrength": 90,
 		"cost": 1190,
 		"requiredTech": "Rocketry",
 		"obsoleteTech": "Superconductor",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2215,16 +2642,18 @@
 	},
 	{
 		"name": "Microwave Mitter",//微波发射器
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
+		"upgradesTo": "Improved Cruiser",
 		"movement": 2,
 		"range": 3,
-		"strength": 90,
-		"rangedStrength": 90,
+		"strength": 100,
+		"rangedStrength": 100,
 		"cost": 2130,
 		"requiredTech": "Superconductor",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"[+150]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -2234,47 +2663,51 @@
 	
 	{
 		"name": "Anti-aircraft Gun",//高射炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Mobile SAM",
 		"movement": 2,
 		"interceptRange": 2,
-		"strength": 60,
+		"strength": 70,
 		"cost": 750,
 		"requiredTech": "Radio",
 		"obsoleteTech": "Computers",
-		"uniques": ["Gunnery",
+		"uniques": ["Armored",
+					
 					"[100]% chance to intercept air attacks",
-					"[+50]% Strength <vs [Air] units>",
-					"[+50]% Strength <vs [Helicopter Gunship] units>",
+					"[+25]% Strength <vs [Air] units>",
+					"[+25]% Strength <vs [Helicopter Gunship] units>",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
 	{
 		"name": "Mobile SAM",//自行防空导弹
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Automatic SAM",
 		"movement": 2,
 		"interceptRange": 3,
-		"strength": 80,
+		"strength": 90,
 		"cost": 1050,
 		"requiredTech": "Computers",
 		"obsoleteTech": "Robotics",
-		"uniques": ["Gunnery",
+		"uniques": ["Armored",
+					
 					"[100]% chance to intercept air attacks",
-					"[+50]% Strength <vs [Air] units>",
-					"[+50]% Strength <vs [Helicopter Gunship] units>",
+					"[+25]% Strength <vs [Air] units>",
+					"[+25]% Strength <vs [Helicopter Gunship] units>",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
 	{
 		"name": "Automatic SAM",//自动防空导弹
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
+		"upgradesTo": "Improved Corvette",
 		"movement": 2,
 		"interceptRange": 3,
-		"strength": 95,
+		"strength": 105,
 		"cost": 1860,
 		"requiredTech": "Robotics",
-		"uniques": ["Gunnery",
+		"uniques": ["Armored",
+					
 					"[100]% chance to intercept air attacks",
 					"[+50]% Strength <vs [Air] units>",
 					"[+50]% Strength <vs [Helicopter Gunship] units>",
@@ -2285,14 +2718,16 @@
 	
 	{
 		"name": "Helicopter Gunship",//武装直升机
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "High-speed Helicopter",
 		"movement": 6,
-		"strength": 94,
+		"strength": 104,
 		"cost": 932,
 		"requiredTech": "Motor",
 		"obsoleteTech": "Superconductor",
-		"uniques": ["Costs [9] [Aluminum]",
+		"uniques": ["Armored",
+					
+					"Costs [9] [Aluminum]",
 					"Can pass through impassable tiles",
 					"No defensive terrain bonus",
 					"Can move after attacking",
@@ -2304,12 +2739,15 @@
 	},
 	{
 		"name": "High-speed Helicopter",//高速直升机
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Improved Destroyer",
 		"movement": 8,
-		"strength": 103,
+		"strength": 113,
 		"cost": 1860,
 		"requiredTech": "Superconductor",
-		"uniques": ["Costs [9] [Aluminum]",
+		"uniques": ["Armored",
+					
+					"Costs [9] [Aluminum]",
 					"Costs [3] [Electric Power]",
 					"Can pass through impassable tiles",
 					"No defensive terrain bonus",
@@ -2323,7 +2761,7 @@
 	
 	{
 		"name": "Medic",//医护兵
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Base'",
 		"movement": 2,
 		"cost": 450,
 		"requiredTech": "Sanitation",
@@ -2336,7 +2774,7 @@
 	
 	{
 		"name": "Land Logisticians",//后勤兵
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Base'",
 		"movement": 3,
 		"cost": 500,
 		"uniques": ["Only available <after adopting [Logistics]>",
@@ -2353,10 +2791,10 @@
 	//近程
 	{
 		"name": "Galley",//桨帆船
-		"unitType": "Water 'Melee' 'Cold weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Trireme",
 		"movement": 3,
-		"strength": 24,
+		"strength": 34,
 		"cost": 42,
 		"requiredTech": "Sailing",
 		"obsoleteTech": "Optics",
@@ -2365,10 +2803,10 @@
 	},
 	{
 		"name": "Trireme",//三列桨战船
-		"unitType": "Water 'Melee' 'Cold weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Cog",
 		"movement": 3,
-		"strength": 28,
+		"strength": 38,
 		"cost": 66,
 		"requiredTech": "Optics",
 		"obsoleteTech": "Astronomy",
@@ -2377,10 +2815,10 @@
 	},
 	{
 		"name": "Cog",//柯克船
-		"unitType": "Water 'Melee' 'Cold weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Caravel",
 		"movement": 4,
-		"strength": 35,
+		"strength": 45,
 		"cost": 96,
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Square Rigging",
@@ -2389,10 +2827,10 @@
 	},
 	{
 		"name": "Caravel",//轻帆船
-		"unitType": "Water 'Melee' 'Hot weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Ironclad",
 		"movement": 4,
-		"strength": 42,
+		"strength": 52,
 		"cost": 150,
 		"requiredTech": "Square Rigging",
 		"obsoleteTech": "Steam Power",
@@ -2401,48 +2839,49 @@
 	},
 	{
 		"name": "Ironclad",//铁甲舰
-		"unitType": "Water 'Melee' 'Hot weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Battleship",
 		"movement": 4,
-		"strength": 58,
+		"strength": 68,
 		"cost": 438,
 		"requiredTech": "Steam Power",
 		"obsoleteTech": "Electronics",
-		"uniques": [],
+		"uniques": ["Armored"],
 		"attackSound": "cannon"
 	},
 	{
 		"name": "Battleship",//战列舰
-		"unitType": "Water 'Melee' 'Hot weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Escort Destroyer",
 		"movement": 4,
-		"strength": 74,
+		"strength": 84,
 		"cost": 882,
 		"requiredTech": "Electronics",
 		"obsoleteTech": "Modern Navy",
-		"uniques": [],
+		"uniques": ["Armored"],
 		"attackSound": "cannon"
 	},
 	{
 		"name": "Escort Destroyer",//护航驱逐舰
-		"unitType": "Water 'Melee' 'Hot weapon'",
+		"unitType": "Water 'Battle'",
+		"upgradesTo": "Improved Battleship",
 		"movement": 4,
-		"strength": 95,
+		"strength": 105,
 		"cost": 1398,
 		"requiredTech": "Modern Navy",
-		"uniques": [],
+		"uniques": ["Armored"],
 		"attackSound": "cannon"
 	},
 	
 	//远程
 	{
 		"name": "Squaresail",//横帆战船
-		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Quadrireme",
 		"movement": 3,
 		"range": 2,
-		"strength": 22,
-		"rangedStrength": 25,
+		"strength": 32,
+		"rangedStrength": 35,
 		"cost": 49,
 		"requiredTech": "Sailing",
 		"obsoleteTech": "Optics",
@@ -2451,12 +2890,12 @@
 	},
 	{
 		"name": "Quadrireme",//四段帆船
-		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Galleass",
 		"movement": 3,
 		"range": 2,
-		"strength": 26,
-		"rangedStrength": 29,
+		"strength": 36,
+		"rangedStrength": 39,
 		"cost": 73,
 		"requiredTech": "Optics",
 		"obsoleteTech": "Astronomy",
@@ -2465,12 +2904,12 @@
 	},
 	{
 		"name": "Galleass",//桨帆战舰
-		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Frigate",
 		"movement": 4,
 		"range": 2,
-		"strength": 33,
-		"rangedStrength": 36,
+		"strength": 43,
+		"rangedStrength": 46,
 		"cost": 103,
 		"requiredTech": "Astronomy",
 		"obsoleteTech": "Square Rigging",
@@ -2479,12 +2918,12 @@
 	},
 	{
 		"name": "Frigate",//护卫舰
-		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Monitor",
 		"movement": 4,
 		"range": 2,
-		"strength": 40,
-		"rangedStrength": 43,
+		"strength": 50,
+		"rangedStrength": 53,
 		"cost": 160,
 		"requiredTech": "Square Rigging",
 		"obsoleteTech": "Steam Power",
@@ -2493,52 +2932,59 @@
 	},
 	{
 		"name": "Monitor",//重炮舰
-		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Destroyer",
 		"movement": 4,
 		"range": 2,
-		"strength": 53,
-		"rangedStrength": 56,
+		"strength": 63,
+		"rangedStrength": 66,
 		"cost": 458,
 		"requiredTech": "Steam Power",
 		"obsoleteTech": "Electronics",
-		"uniques": ["Costs [9] [Coal]"],
+		"uniques": ["Armored",
+					
+					"Costs [9] [Coal]"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Destroyer",//驱逐舰
-		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Missile Destroyer",
 		"movement": 4,
 		"range": 2,
-		"strength": 72,
-		"rangedStrength": 75,
+		"strength": 82,
+		"rangedStrength": 85,
 		"cost": 912,
 		"requiredTech": "Electronics",
 		"obsoleteTech": "Modern Navy",
-		"uniques": ["Costs [10] [Oil]"],
+		"uniques": ["Armored",
+					
+					"Costs [10] [Oil]"],
 		"attackSound": "arrow"
 	},
 	{
 		"name": "Missile Destroyer",//导弹驱逐舰
-		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"unitType": "Water 'Support'",
+		"upgradesTo": "Improved Corvette",
 		"movement": 4,
 		"range": 2,
-		"strength": 93,
-		"rangedStrength": 96,
+		"strength": 103,
+		"rangedStrength": 106,
 		"cost": 1438,
 		"requiredTech": "Modern Navy",
-		"uniques": ["Costs [11] [Oil]"],
+		"uniques": ["Armored",
+					
+					"Costs [11] [Oil]"],
 		"attackSound": "arrow"
 	},
 	
 	//支援
 	{
 		"name": "Privateer",//私掠舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
 		"upgradesTo": "Commerce Raider",
 		"movement": 5,
-		"strength": 37,
+		"strength": 47,
 		"cost": 282,
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Steam Power",
@@ -2548,130 +2994,144 @@
 	},
 	{
 		"name": "Commerce Raider",//伪装巡洋舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
 		"upgradesTo": "Battle Cruiser",
 		"movement": 5,
-		"strength": 53,
+		"strength": 63,
 		"cost": 438,
 		"requiredTech": "Steam Power",
 		"obsoleteTech": "Refrigeration",
-		"uniques": ["May capture killed [Water] units",
+		"uniques": ["Armored",
+					
+					"May capture killed [Water] units",
 					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
 		"attackSound": "cannon"
 	},
 	{
 		"name": "Battle Cruiser",//战列巡洋舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
 		"upgradesTo": "Mobile Destroyer",
 		"movement": 5,
-		"strength": 69,
+		"strength": 79,
 		"cost": 882,
 		"requiredTech": "Refrigeration",
 		"obsoleteTech": "Modern Navy",
-		"uniques": ["May capture killed [Water] units",
+		"uniques": ["Armored",
+					
+					"May capture killed [Water] units",
 					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
 		"attackSound": "cannon"
 	},
 	{
 		"name": "Mobile Destroyer",//机动驱逐舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
+		"upgradesTo": "Improved Destroyer",
 		"movement": 5,
-		"strength": 90,
+		"strength": 100,
 		"cost": 1398,
 		"requiredTech": "Modern Navy",
-		"uniques": ["May capture killed [Water] units",
+		"uniques": ["Armored",
+					
+					"May capture killed [Water] units",
 					"Earn [100]% of the damage done to [{Water} {Military}] units as [Gold]"],
 		"attackSound": "cannon"
 	},
 	
 	{
 		"name": "Carrack",//卡拉克帆船
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
 		"upgradesTo": "Capital Ship",
 		"movement": 3,
 		"range": 2,
-		"strength": 28,
-		"rangedStrength": 28,
+		"strength": 38,
+		"rangedStrength": 38,
 		"cost": 110,
 		"requiredTech": "Square Rigging",
 		"obsoleteTech": "Navigation",
-		"uniques": ["[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Capital Ship",//主力舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
 		"upgradesTo": "Dreadnought",
 		"movement": 3,
 		"range": 2,
-		"strength": 36,
-		"rangedStrength": 36,
+		"strength": 46,
+		"rangedStrength": 46,
 		"cost": 349,
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Industrialization",
 		"uniques": ["Costs [9] [Iron]",
-					"[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Dreadnought",//无畏舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
 		"upgradesTo": "Armored Cruiser",
 		"movement": 3,
 		"range": 2,
-		"strength": 44,
-		"rangedStrength": 44,
+		"strength": 54,
+		"rangedStrength": 54,
 		"cost": 531,
 		"requiredTech": "Industrialization",
 		"obsoleteTech": "Electronics",
-		"uniques": ["Costs [10] [Coal]",
-					"[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"Costs [10] [Coal]",
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Armored Cruiser",//装甲巡洋舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
 		"upgradesTo": "Missile Cruiser",
 		"movement": 3,
 		"range": 2,
-		"strength": 60,
-		"rangedStrength": 60,
+		"strength": 70,
+		"rangedStrength": 70,
 		"cost": 1049,
 		"requiredTech": "Electronics",
 		"obsoleteTech": "Modern Navy",
-		"uniques": ["Costs [11] [Oil]",
-					"[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"Costs [11] [Oil]",
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Missile Cruiser",//导弹巡洋舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
+		"upgradesTo": "Improved Cruiser",
 		"movement": 3,
 		"range": 2,
-		"strength": 81,
-		"rangedStrength": 81,
+		"strength": 91,
+		"rangedStrength": 91,
 		"cost": 1651,
 		"requiredTech": "Modern Navy",
-		"uniques": ["Costs [12] [Oil]",
-					"[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+		"uniques": ["Armored",
+					
+					"Costs [12] [Oil]",
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
@@ -2679,24 +3139,35 @@
 	
 	{
 		"name": "Carrier",//航空母舰
-		"unitType": "Water 'Aircraft Carrier'",
+		"unitType": "Water 'Carrier'",
 		"upgradesTo": "Nuclear Carrier",
 		"movement": 4,
-		"strength": 60,
+		"range": 4,
+		"strength": 70,
+		"rangedStrength": 70,
 		"cost": 848,
 		"requiredTech": "Refrigeration",
-		"uniques": ["Can carry [2] [Aircraft] units",
+		"uniques": ["Armored",
+					
+					"Can only attack [non-[City]] units",
+					"Can carry [2] [Aircraft] units",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "torpedo"
 	},
 	{
 		"name": "Nuclear Carrier",//核动力航空母舰
-		"unitType": "Water 'Aircraft Carrier'",
+		"unitType": "Water 'Carrier'",
 		"movement": 5,
-		"strength": 80,
+		"range": 4,
+		"strength": 90,
+		"rangedStrength": 70,
 		"cost": 1176,
 		"requiredTech": "Nuclear Fission",
-		"uniques": ["Costs [8] [Uranium]",
+		"uniques": ["Armored",
+					
+					"Costs [8] [Uranium]",
+					
+					"Can only attack [non-[City]] units",
 					"Can carry [3] [Aircraft] units",
 					"Never appears as a Barbarian unit"],
 		"attackSound": "torpedo"
@@ -2704,14 +3175,16 @@
 	
 	{
 		"name": "Submarine",//潜艇
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
 		"upgradesTo": "Nuclear Submarine",
 		"movement": 4,
-		"strength": 60,
-		"rangedStrength": 80,
+		"strength": 70,
+		"rangedStrength": 90,
 		"cost": 671,
 		"requiredTech": "Refrigeration",
-		"uniques": ["Submarines",
+		"uniques": ["Armored",
+					"Submarines",
+					
 					"Can only attack [Water] tiles",
 					"Can enter ice tiles",
 					"Invisible to non-adjacent units",
@@ -2721,13 +3194,15 @@
 	},
 	{
 		"name": "Nuclear Submarine",//核潜艇
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Harass'",
 		"movement": 4,
-		"strength": 80,
-		"rangedStrength": 100,
+		"strength": 70,
+		"rangedStrength": 110,
 		"cost": 917,
 		"requiredTech": "Nuclear Fission",
-		"uniques": ["Submarines",
+		"uniques": ["Armored",
+					"Submarines",
+					
 					"Costs [8] [Uranium]",
 					"Can only attack [Water] tiles",
 					"Can enter ice tiles",
@@ -2739,7 +3214,7 @@
 	
 	{
 		"name": "Water Logisticians",//水上后勤舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Base'",
 		"movement": 4,
 		"cost": 500,
 		"uniques": ["Only available <after adopting [Logistics]>",
@@ -2760,14 +3235,14 @@
 		"movement": 1,
 		"range": 6,
 		"interceptRange": 6,
-		"strength": 65,
-		"rangedStrength": 65,
+		"strength": 75,
+		"rangedStrength": 75,
 		"cost": 766,
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Flight",
 		"uniques": ["Costs [10] [Oil]",
 					"[50]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air 'Bomber'] units>"],
+					"[+50]% Strength <vs [Aircraft] units>"],
 		"attackSound": "machinegun"
 	},
 	{
@@ -2777,14 +3252,13 @@
 		"movement": 1,
 		"range": 9,
 		"interceptRange": 9,
-		"strength": 80,
-		"rangedStrength": 80,
+		"strength": 90,
+		"rangedStrength": 90,
 		"cost": 1053,
 		"requiredTech": "Flight",
 		"obsoleteTech": "Stealth",
 		"uniques": ["Costs [11] [Aluminum]",
-					"[80]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air 'Bomber'] units>"],
+					"[+50]% Strength <vs [Aircraft] units>"],
 		"attackSound": "machinegun"
 	},
 	{
@@ -2794,14 +3268,13 @@
 		"movement": 1,
 		"range": 11,
 		"interceptRange": 11,
-		"strength": 100,
-		"rangedStrength": 100,
+		"strength": 110,
+		"rangedStrength": 110,
 		"cost": 1655,
 		"requiredTech": "Stealth",
 		"obsoleteTech": "Nuclear Fusion",
 		"uniques": ["Costs [12] [Aluminum]",
-					"[80]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"[+50]% Strength <vs [Aircraft] units>",
 					"Damage taken from interception reduced by [-25]%"],
 		"attackSound": "machinegun"
 	},
@@ -2811,14 +3284,13 @@
 		"movement": 1,
 		"range": 13,
 		"interceptRange": 13,
-		"strength": 120,
-		"rangedStrength": 120,
+		"strength": 130,
+		"rangedStrength": 130,
 		"cost": 1879,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Costs [12] [Aluminum]",
 					"Costs [5] [Electric Power]",
-					"[80]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"[+50]% Strength <vs [Aircraft] units>",
 					"Damage taken from interception reduced by [-25]%"],
 		"attackSound": "machinegun"
 	},
@@ -2829,8 +3301,8 @@
 		"upgradesTo": "Bomber",
 		"movement": 1,
 		"range": 7,
-		"strength": 75,
-		"rangedStrength": 75,
+		"strength": 85,
+		"rangedStrength": 85,
 		"cost": 790,
 		"requiredTech": "Ballistics",
 		"obsoleteTech": "Flight",
@@ -2843,8 +3315,8 @@
 		"upgradesTo": "Stealth Bomber",
 		"movement": 1,
 		"range": 11,
-		"strength": 90,
-		"rangedStrength": 90,
+		"strength": 100,
+		"rangedStrength": 100,
 		"cost": 1077,
 		"requiredTech": "Flight",
 		"obsoleteTech": "Stealth",
@@ -2857,8 +3329,8 @@
 		"upgradesTo": "Pulse Bomber",
 		"movement": 1,
 		"range": 13,
-		"strength": 110,
-		"rangedStrength": 110,
+		"strength": 120,
+		"rangedStrength": 120,
 		"cost": 1679,
 		"requiredTech": "Stealth",
 		"obsoleteTech": "Nuclear Fusion",
@@ -2871,8 +3343,8 @@
 		"unitType": "Air 'Bomber'",
 		"movement": 1,
 		"range": 13,
-		"strength": 120,
-		"rangedStrength": 120,
+		"strength": 130,
+		"rangedStrength": 130,
 		"cost": 1903,
 		"requiredTech": "Nuclear Fusion",
 		"uniques": ["Costs [12] [Aluminum]",
@@ -2884,12 +3356,11 @@
 	{
 		"name": "Guided Missile",//导弹
 		"unitType": "Air 'Missile'",
-		"upgradesTo": "Ballistic Missile",
 		"movement": 1,
 		"range": 10,
 		"interceptRange": 10,
-		"strength": 60,
-		"rangedStrength": 60,
+		"strength": 70,
+		"rangedStrength": 70,
 		"cost": 610,
 		"requiredTech": "Flight",
 		"uniques": ["Costs [7] [Aluminum]",
@@ -2905,8 +3376,8 @@
 		"movement": 1,
 		"range": 10,
 		"interceptRange": 10,
-		"strength": 80,
-		"rangedStrength": 80,
+		"strength": 90,
+		"rangedStrength": 90,
 		"cost": 815,
 		"requiredTech": "Rocketry",
 		"uniques": ["Costs [8] [Aluminum]",
@@ -2922,8 +3393,8 @@
 		"movement": 1,
 		"range": 10,
 		"interceptRange": 10,
-		"strength": 90,
-		"rangedStrength": 90,
+		"strength": 100,
+		"rangedStrength": 100,
 		"cost": 1420,
 		"requiredTech": "Rocketry",
 		"uniques": ["Costs [8] [Aluminum]",
@@ -2935,14 +3406,33 @@
 					"Heal this unit by [33] HP <every [3] turns>"],
 		"attackSound": "missile"
 	},
+	{
+		"name": "Advanced Railgun",//先进轨道炮
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 15,
+		"interceptRange": 15,
+		"strength": 140,
+		"rangedStrength": 140,
+		"cost": 3190,
+		"requiredTech": "Cosmic Weapons",
+		"uniques": ["Costs [20] [Aluminum]",
+					"Costs [20] [Electric Power]",
+					"[15] extra interceptions may be made per turn",
+					"[+9] additional attacks per turn",
+					"No Sight",
+					"Can only heal by pillaging",
+					"Heal this unit by [50] HP <upon turn end>"],
+		"attackSound": "missile"
+	},
 	
 	{
 		"name": "Atomic Bomb",//原子弹
 		"unitType": "Air 'Missile'",
 		"movement": 1,
 		"range": 10,
-		"strength": 500,
-		"rangedStrength": 500,
+		"strength": 700,
+		"rangedStrength": 700,
 		"cost": 1764,
 		"requiredTech": "Nuclear Fission",
 		"uniques": ["Nuclear Weapon",
@@ -2951,8 +3441,7 @@
 					"Nuclear weapon of Strength [1]",
 					"Blast radius [2]",
 					"Self-destructs when attacking",
-					"Only available <if [Project - Nuclear Research] is constructed>"
-					],
+					"Only available <if [Project - Nuclear Research] is constructed>"],
 		"attackSound": "nuke"
 	},
 	{
@@ -2960,8 +3449,8 @@
 		"unitType": "Air 'Missile'",
 		"movement": 1,
 		"range": 12,
-		"strength": 1000,
-		"rangedStrength": 1000,
+		"strength": 1500,
+		"rangedStrength": 1500,
 		"cost": 2796,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["Nuclear Weapon",
@@ -2970,51 +3459,133 @@
 					"Nuclear weapon of Strength [2]",
 					"Blast radius [2]",
 					"Self-destructs when attacking",
-					"Only available <if [Project - Nuclear Research] is constructed>"
-					],
+					"Only available <if [Project - Nuclear Research] is constructed>"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Antimatter Missile",//反物质导弹
+		"unitType": "Air 'Missile'",
+		"movement": 1,
+		"range": 20,
+		"strength": 5000,
+		"rangedStrength": 5000,
+		"cost": 4466,
+		"requiredTech": "Cosmic Weapons",
+		"uniques": ["Nuclear Weapon",
+					
+					"Costs [50] [Electric Power]",
+					"Nuclear weapon of Strength [5]",
+					"Blast radius [5]",
+					"Self-destructs when attacking",
+					"Only available <if [Project - Nuclear Research] is constructed>"],
 		"attackSound": "nuke"
 	},
 	
+//空舰单位
 	
-	
-	
-	
-	
+	{
+		"name": "Improved Battleship",//改进战列舰
+		"unitType": "Airship 'Battle'",
+		"movement": 4,
+		"strength": 135,
+		"cost": 1914,
+		"requiredTech": "Starship",
+		"uniques": ["Space Unit",
+					"Armored",
+					
+					"[+7]% Strength <when adjacent to a [Airship 'Battle'] unit>"],
+		"attackSound": "cannon"
+	},
+    {
+        "name": "Improved Corvette",//改进护卫舰
+        "unitType": "Airship 'Support'",
+        "movement": 4,
+        "range": 2,
+        "strength": 130,
+        "rangedStrength": 140,
+        "cost": 1984,
+        "requiredTech": "Starship",
+        "uniques": ["Space Unit",
+					"Armored",
+                    
+                    "Costs [13] [Stell]",
+                    "Costs [13] [Eletric Power]",
+					
+					"[+1] additional attacks per turn"],
+        "attackSound": "cannon"
+    },
+    {
+        "name": "Improved Cruiser",//改进巡洋舰
+        "unitType": "Airship 'Siege'",
+        "movement": 3,
+        "range": 2,
+        "strength": 120,
+        "rangedStrength": 120,
+        "cost": 2253,
+        "requiredTech": "Starship",
+        "uniques": ["Space Unit",
+					"Armored",
+                    
+                    "Costs [15] [Stell]",
+                    "Costs [15] [Eletric Power]",
+                    
+                    "[+100]% Strength <vs cities> <when attacking>",
+                    "[+10]% Strength <vs [Water] units> <when attacking>",
+                    "[+10]% Strength <vs [Land] units> <when attacking>",
+                    
+                    "No Sight",
+                    "Never appears as a Barbarian unit"],
+        "attackSound": "cannon"
+    },
+    {
+        "name": "Improved Destroyer",//改进驱逐舰
+        "unitType": "Airship 'Harass'",
+        "movement": 5,
+        "strength": 125,
+        "cost": 1914,
+        "requiredTech": "Starship",
+        "uniques": ["Space Unit",
+					"Armored",
+                    
+                    "May capture killed [All] units",
+                    "Earn [100]% of the damage done to [All] units as [Gold]"],
+        "attackSound": "cannon"
+    },
 	
 //马其顿
 	{
 		"name": "Macedonian Phalanx",//马其顿方阵
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Anti-rush'",
 		"upgradesTo": "Heavy Pikeman",
 		"uniqueTo": "Macedon",
 		"replaces": "Heavy Spearman",
 		"movement": 2,
-		"strength": 25,
-		"cost": 57,
+		"strength": 33,
+		"cost": 49,
 		"requiredTech": "Bronze Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["Costs [8] [Copper]",
-					"[+15]% Strength <when defending>",
-					"[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Copper]",
+					"[+10]% Strength <when defending>",
+					"[+25]% Strength <vs [Rush Unit] units>"],
 		"attackSound": "metalhit"
 	},
 	{
 		"name": "Companion Cavalry",//禁卫骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Valor Knight",
 		"uniqueTo": "Macedon",
 		"replaces": "Armored Cavalry",
-		"movement": 3,
-		"strength": 39,
+		"movement": 4,
+		"strength": 49,
 		"cost": 141,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Heavy Cavalry",
-					"Costs [10] [Horses]",
+		"uniques": ["Costs [10] [Horses]",
 					"Costs [6] [Iron]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>",
 					
 					"Ignores Zone of Control"],
@@ -3024,39 +3595,37 @@
 //联合王国
 	{
 		"name": "Royal Capital Ship",//皇家主力舰
-		"unitType": "Water 'Support'",
+		"unitType": "Water 'Siege'",
 		"upgradesTo": "Dreadnought",
 		"uniqueTo": "United Kingdom",
 		"replaces": "Capital Ship",
 		"movement": 3,
 		"range": 2,
-		"strength": 36,
-		"rangedStrength": 36,
+		"strength": 46,
+		"rangedStrength": 46,
 		"cost": 349,
 		"requiredTech": "Navigation",
 		"obsoleteTech": "Industrialization",
 		"uniques": ["Costs [9] [Iron]",
-					"[+125]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
-					"[+25]% Strength <vs [Land] units> <when attacking>",
+					"[+100]% Strength <vs cities> <when attacking>",
+					"[+35]% Strength <vs [Water] units> <when attacking>",
+					"[+15]% Strength <vs [Land] units> <when attacking>",
 					"No Sight",
-					"Never appears as a Barbarian unit",
-					
-					"[+20]% Strength <vs [Water] units> <when attacking>"],
+					"Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 	
 //拜占庭
 	{
 		"name": "Dromon",//得罗蒙战舰
-		"unitType": "Water 'Ranged' 'Cold weapon'",
+		"unitType": "Water 'Support'",
 		"upgradesTo": "Galleass",
 		"uniqueTo": "Byzantium",
 		"replaces": "Quadrireme",
 		"movement": 3,
 		"range": 3,
-		"strength": 26,
-		"rangedStrength": 29,
+		"strength": 36,
+		"rangedStrength": 39,
 		"cost": 73,
 		"requiredTech": "Optics",
 		"obsoleteTech": "Astronomy",
@@ -3065,65 +3634,62 @@
 	},
 	{
 		"name": "Cataphract",//甲胄骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Heavy Rush'",
 		"upgradesTo": "Cuirassier",
 		"uniqueTo": "Byzantium",
 		"replaces": "Valor Knight",
 		"movement": 3,
-		"strength": 43,
+		"strength": 53,
 		"cost": 186,
 		"requiredTech": "Stirrups",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Heavy Cavalry",
-					"Knights",
+		"uniques": ["Knights",
 					"Costs [11] [Horses]",
 					"Costs [7] [Iron]",
 					"Can move after attacking",
-					"[+15]% Strength <when defending>",
+					"[+10]% Strength <when defending>",
 					"[-25]% Strength <vs cities> <when attacking>",
 					
-					"[+10]% Strength bonus for [Cavalry] units within [1] tiles"],
+					"[+7]% Strength bonus for [{Rush Unit} {non-[Armored]}] units within [1] tiles"],
 		"attackSound": "horse"
 	},
 	
 //俄罗斯帝国
 	{
 		"name": "Cossack",//哥萨克骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Wheeled Armored",
 		"uniqueTo": "Russia (Empire)",
 		"replaces": "Lancer",
 		"movement": 4,
-		"strength": 60,
+		"strength": 70,
 		"cost": 435,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Melee Cavalry",
-					"Costs [11] [Horses]",
+		"uniques": ["Costs [11] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
 					"Ignores Zone of Control"],
-		"promotions": ["'[Cossack]' ability"],
+		"promotions": ["Trample"],
 		"attackSound": "horse"
 	},
 	
 //法兰西第一帝国
 	{
 		"name": "Smoothbore Field Cannon",//滑膛野战炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Mortar",
 		"uniqueTo": "France (First Empire)",
 		"replaces": "Field Cannon",
 		"movement": 3,
 		"range": 2,
-		"strength": 44,
-		"rangedStrength": 35,
+		"strength": 54,
+		"rangedStrength": 45,
 		"cost": 510,
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Radio",
-		"uniques": ["Gunnery",
-					"[+100]% Strength <vs [Infantry] units> <when attacking>",
+		"uniques": ["[+50]% Strength <vs [Infantry] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Never appears as a Barbarian unit"],
@@ -3133,43 +3699,43 @@
 //德意志帝国
 	{
 		"name": "Paris-Geschütz",//巴黎巨炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Howitzer",
 		"uniqueTo": "German Empire",
 		"replaces": "Artillery",
 		"movement": 1,
 		"range": 3,
-		"strength": 40,
-		"rangedStrength": 40,
+		"strength": 50,
+		"rangedStrength": 50,
 		"cost": 892,
 		"requiredTech": "Dynamite",
 		"obsoleteTech": "Radio",
-		"uniques": ["Gunnery",
-					"[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"Never appears as a Barbarian unit",
 					
-					"[+100]% Strength <vs cities> <when attacking>",
-					"[+100]% Strength <vs [Military] units> <when attacking>"],
+					"[+25]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Military] units> <when attacking>"],
 		"attackSound": "throw"
 	},
 	{
 		"name": "Imperial Army",//帝国军队
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Anti-tank Gun",
 		"uniqueTo": "German Empire",
 		"replaces": "Line Infantry",
 		"movement": 2,
-		"strength": 52,
+		"strength": 62,
 		"cost": 584,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Ballistics",
-		"uniques": ["[+100]% Strength <vs [Land 'Melee' 'Cavalry'] units>",
-					"[+100]% Strength <vs [Land 'Ranged' 'Cavalry'] units>",
-					"[+15]% Strength <vs [Military] units> <when attacking>"],
+		"uniques": ["Infantry",
+					
+					"[+25]% Strength <vs [Rush Unit] units>",
+					"[+10]% Strength <vs [Military] units> <when attacking>"],
 		"promotions": ["Command"],
 		"attackSound": "metalhit"
 	},
@@ -3177,19 +3743,18 @@
 //匈人
 	{
 		"name": "Horse Archer",//骑射手
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Humility Knight",
 		"uniqueTo": "The Huns",
 		"replaces": "Bow Cavalry",
 		"movement": 4,
 		"range": 2,
-		"strength": 32,
-		"rangedStrength": 34,
+		"strength": 42,
+		"rangedStrength": 44,
 		"cost": 123,
 		"requiredTech": "Horseback Riding",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Ranged Cavalry",
-					"Costs [9] [Horses]",
+		"uniques": ["Costs [9] [Horses]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
@@ -3197,19 +3762,19 @@
 //中华 - 秦
 	{
 		"name": "Heavy Crossbow",//大秦重弩
-		"unitType": "Land 'Ordnance'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Trebuchet",
 		"uniqueTo": "China (Qing)",
 		"replaces": "Catapult",
 		"movement": 2,
 		"range": 3,
-		"strength": 20,
-		"rangedStrength": 20,
+		"strength": 30,
+		"rangedStrength": 30,
 		"cost": 116,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Physics",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
-					"[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+150]% Strength <vs cities> <when attacking>",
+					"[+25]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -3220,34 +3785,34 @@
 //朝鲜
 	{
 		"name": "Hwach'a",//火厢车
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Gunnery'",
 		"upgradesTo": "Artillery",
 		"uniqueTo": "Korea",
 		"replaces": "Cannon",
 		"movement": 2,
 		"range": 2,
-		"strength": 30,
-		"rangedStrength": 30,
+		"strength": 40,
+		"rangedStrength": 40,
 		"cost": 210,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Dynamite",
-		"uniques": ["[+50]% Strength <vs [Water] units> <when attacking>",
+		"uniques": ["[+33]% Strength <vs [Water] units> <when attacking>",
 					"No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"Never appears as a Barbarian unit",
 					
-					"[+60]% Strength <vs [Land] units> <when attacking>"],
+					"[+50]% Strength <vs [Land] units> <when attacking>"],
 		"attackSound": "throw"
 	},
 	{
 		"name": "Turtle Ship",//龟船
-		"unitType": "Water 'Melee' 'Hot weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Ironclad",
 		"uniqueTo": "Korea",
 		"replaces": "Caravel",
 		"movement": 4,
-		"strength": 48,
+		"strength": 58,
 		"cost": 150,
 		"requiredTech": "Square Rigging",
 		"obsoleteTech": "Steam Power",
@@ -3258,19 +3823,18 @@
 //高棉
 	{
 		"name": "Domrey",//高棉战象
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Humility Knight",
 		"uniqueTo": "Khmer",
 		"replaces": "Bow Cavalry",
 		"movement": 3,
 		"range": 2,
-		"strength": 33,
-		"rangedStrength": 35,
+		"strength": 44,
+		"rangedStrength": 45,
 		"cost": 131,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Ranged Cavalry",
-					"Costs [5] [Horses]",
+		"uniques": ["Costs [5] [Horses]",
 					"No defensive terrain bonus"],
 		"attackSound": "arrow"
 	},
@@ -3278,15 +3842,17 @@
 //巴比伦
 	{
 		"name": "Sabum Kibittum",//主力军团
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Swordsman",
 		"uniqueTo": "Babylon",
 		"replaces": "Warrior",
 		"movement": 2,
-		"strength": 20,
+		"strength": 30,
 		"cost": 42,
 		"obsoleteTech": "Iron Working",
-		"uniques" : ["May upgrade to [Spearman] through ruins-like effects",
+		"uniques": ["Infantry",
+					
+					"May upgrade to [Spearman] through ruins-like effects",
 					"[+10]% Strength <when adjacent to a [Sabum Kibittum] unit>"],
 		"attackSound": "nonmetalhit"
 	},
@@ -3294,17 +3860,16 @@
 //奥斯曼
 	{
 		"name": "Sipahi",//西帕希骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Wheeled Armored",
 		"uniqueTo": "Ottoman",
 		"replaces": "Lancer",
 		"movement": 5,
-		"strength": 54,
-		"cost": 435,
+		"strength": 64,
+		"cost": 335,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Melee Cavalry",
-					"Costs [11] [Horses]",
+		"uniques": ["Costs [11] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -3316,42 +3881,65 @@
 	},
 	{
 		"name": "Janissary",//苏丹亲兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Light Infantry",
 		"uniqueTo": "Ottoman",
 		"replaces": "Musketeer",
 		"movement": 2,
-		"strength": 40,
+		"strength": 50,
 		"cost": 165,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Rifling",
-		"uniques": ["Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"promotions": ["'[Janissary]' ability"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Urban Cannon",//乌尔班大炮
-		"unitType": "Land 'Support'",
+		"unitType": "Land 'Siege'",
 		"upgradesTo": "Artillery",
 		"uniqueTo": "Ottoman",
 		"movement": 1,
 		"range": 3,
-		"strength": 25,
-		"rangedStrength": 25,
+		"strength": 40,
+		"rangedStrength": 40,
 		"cost": 310,
 		"requiredTech": "Chemistry",
 		"obsoleteTech": "Dynamite",
-		"uniques": ["Gunnery",
-					"No Sight",
+		"uniques": ["No Sight",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
 					"Never appears as a Barbarian unit",
 					
-					"[+500]% Strength <vs cities> <when attacking>",
+					"[+33]% Strength <vs [Water] units> <when attacking>",
+					"[+300]% Strength <vs cities> <when attacking>",
 					"[+300]% maintenance costs",
 					"Only available <if [Leader - Mehmed II] is constructed>"],
 		"attackSound": "throw"
+	},
+	
+//以色列
+	{
+		"name": "Haganah",//哈加纳
+		"unitType": "Land 'Battle'",
+		"upgradesTo": "Mechanized Infantry",
+		"uniqueTo": "Israel",
+		"replaces": "Assault Infantry",
+		"movement": 2,
+		"strength": 80,
+		"cost": 661,
+		"requiredTech": "Ballistics",
+		"obsoleteTech": "Radar",
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Steel]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>",
+					
+					"[+7]% Strength <when defending>"],
+		"attackSound": "shot"
 	},
 	
 //印度
@@ -3363,13 +3951,14 @@
 		"movement": 1,
 		"range": 11,
 		"interceptRange": 11,
-		"strength": 100,
-		"rangedStrength": 100,
+		"strength": 110,
+		"rangedStrength": 110,
 		"cost": 1189,
 		"requiredTech": "Stealth",
 		"uniques": ["Costs [12] [Aluminum]",
 					"[80]% chance to intercept air attacks",
-					"[+150]% Strength <vs [Air 'Bomber'] units>",
+					"[+50]% Strength <vs [Air 'Bomber'] units>",
+					"[+50]% Strength <vs [Aircraft] units>",
 					"Damage taken from interception reduced by [-25]%"],
 		"attackSound": "machinegun"
 	},
@@ -3377,17 +3966,16 @@
 //马里
 	{
 		"name": "Mandekalu Cavalry",//曼德卡鲁骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Honor Knight",
 		"uniqueTo": "Mali",
 		"replaces": "Spear Cavalry",
 		"movement": 4,
-		"strength": 34,
+		"strength": 44,
 		"cost": 111,
 		"requiredTech": "Horse Armor",
 		"obsoleteTech": "Stirrups",
-		"uniques": ["Melee Cavalry",
-					"Costs [9] [Horses]",
+		"uniques": ["Costs [9] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
@@ -3399,12 +3987,12 @@
 //桑海
 	{
 		"name": "Songhai Sailor",//桑海水兵
-		"unitType": "Water 'Melee' 'Cold weapon'",
+		"unitType": "Water 'Battle'",
 		"upgradesTo": "Cog",
 		"uniqueTo": "Songhai",
 		"replaces": "Trireme",
 		"movement": 4,
-		"strength": 28,
+		"strength": 38,
 		"cost": 66,
 		"requiredTech": "Optics",
 		"obsoleteTech": "Astronomy",
@@ -3415,19 +4003,18 @@
 //埃及
 	{
 		"name": "Maryannu Chariot Archer",//贵族战车射手
-		"unitType": "Land 'Ranged' 'Cavalry'",
+		"unitType": "Land 'Ranged Rush'",
 		"upgradesTo": "Bow Cavalry",
 		"uniqueTo": "Egypt",
 		"replaces": "Chariot Archer",
 		"movement": 4,
 		"range": 2,
-		"strength": 25,
-		"rangedStrength": 27,
+		"strength": 35,
+		"rangedStrength": 37,
 		"cost": 87,
 		"requiredTech": "The Wheel",
 		"obsoleteTech": "Horse Armor",
-		"uniques": ["Ranged Cavalry",
-					"Costs [4] [Horses]",
+		"uniques": ["Costs [4] [Horses]",
 					"No defensive terrain bonus",
 					"Rough terrain penalty"],
 		"attackSound": "arrow"
@@ -3436,17 +4023,16 @@
 //埃塞俄比亚
 	{
 		"name": "Oromo Cavalry",//奥罗莫骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Lancer",
 		"uniqueTo": "Ethiopia",
 		"replaces": "Honor Knight",
 		"movement": 4,
-		"strength": 40,
+		"strength": 50,
 		"cost": 156,
 		"requiredTech": "Stirrups",
 		"obsoleteTech": "Military Science",
-		"uniques": ["Melee Cavalry",
-					"Knights",
+		"uniques": ["Knights",
 					
 					"Costs [10] [Horses]",
 					"No defensive terrain bonus",
@@ -3460,17 +4046,19 @@
 //美利坚
 	{
 		"name": "Minuteman",//快速民兵
-		"unitType": "Land 'Melee' 'Hot weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Light Infantry",
 		"uniqueTo": "America",
 		"replaces": "Musketeer",
 		"movement": 2,
-		"strength": 40,
+		"strength": 50,
 		"cost": 165,
 		"requiredTech": "Gunpowder",
 		"obsoleteTech": "Rifling",
-		"uniques": ["Costs [8] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Hot weapon'] unit>",
+		"uniques": ["Infantry",
+					
+					"Costs [8] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>",
 					
 					"Ignores terrain cost",
 					"Can move immediately once bought"],
@@ -3484,8 +4072,8 @@
 		"replaces": "Bomber",
 		"movement": 1,
 		"range": 11,
-		"strength": 92,
-		"rangedStrength": 92,
+		"strength": 102,
+		"rangedStrength": 102,
 		"cost": 1077,
 		"requiredTech": "Flight",
 		"uniques": ["Costs [11] [Aluminum]"],
@@ -3494,80 +4082,61 @@
 	},
 	{
 		"name": "Arleigh Burke-class Destroyer",//阿利伯克驱逐舰
-		"unitType": "Water 'Ranged' 'Hot weapon'",
+		"unitType": "Water 'Support'",
 		"uniqueTo": "America",
 		"replaces": "Missile Destroyer",
 		"movement": 4,
 		"range": 2,
-		"strength": 96,
-		"rangedStrength": 99,
+		"strength": 106,
+		"rangedStrength": 109,
 		"cost": 1438,
 		"requiredTech": "Modern Navy",
-		"uniques": ["Costs [11] [Oil]",
+		"uniques": ["Armored",
 					
-					"[+15]% Strength <vs [Water] units>"],
+					"Costs [11] [Oil]",
+					
+					"[+7]% Strength <vs [Water] units>"],
 		"attackSound": "arrow"
-	},
-	{
-		"name": "Rough Rider",//莽骑兵
-		"unitType": "Land 'Melee' 'Cavalry'",
-		"upgradesTo": "Wheeled Armored",
-		"uniqueTo": "America",
-		"movement": 4,
-		"strength": 60,
-		"cost": 435,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"uniques": ["Melee Cavalry",
-					"Costs [11] [Horses]",
-					"No defensive terrain bonus",
-					"Can move after attacking",
-					"[-25]% Strength <vs cities> <when attacking>",
-					"Ignores Zone of Control",
-					
-					"Earn [67]% of killed [Military] unit's [Strength] as [Culture]",
-					"Only available <if [Leader - Theodore Roosevelt] is constructed>"],
-		"attackSound": "horse"
 	},
 	
 //加拿大
 	{
 		"name": "Mountie",//皇家骑警
-		"unitType": "Land 'Melee' 'Cavalry'",
+		"unitType": "Land 'Light Rush'",
 		"upgradesTo": "Wheeled Armored",
 		"uniqueTo": "Canada",
 		"replaces": "Lancer",
 		"movement": 4,
-		"strength": 60,
+		"strength": 70,
 		"cost": 435,
 		"requiredTech": "Military Science",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Melee Cavalry",
-					"Costs [11] [Horses]",
+		"uniques": ["Costs [11] [Horses]",
 					"No defensive terrain bonus",
 					"Can move after attacking",
 					"[-25]% Strength <vs cities> <when attacking>",
 					"Ignores Zone of Control",
 					
-					"[+25]% Strength <in [District] tiles>"],
+					"[+10]% Strength <in [District] tiles>",
+					"[+10]% Strength <in [District - City] tiles>"],
 		"attackSound": "horse"
 	},
 	
 //印加
 	{
 		"name": "Warak’aq",//瓦剌卡战士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Exploration'",
 		"upgradesTo": "Chasseur",
 		"uniqueTo": "Inca",
 		"replaces": "Scout",
-		"movement": 3,
+		"movement": 2,
 		"range": 1,
-		"strength": 20,
-		"rangedStrength": 19,
+		"strength": 30,
+		"rangedStrength": 29,
 		"cost": 55,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Chemistry",
-		"uniques": ["Explorations",
+		"uniques": ["Infantry",
 					
 					"Can move after attacking",
 					"[+1] additional attacks per turn"],
@@ -3578,31 +4147,35 @@
 //阿兹特克
 	{
 		"name": "Eagle Warrior",//雄鹰战士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Swordsman",
 		"uniqueTo": "Aztec",
 		"replaces": "Warrior",
 		"movement": 2,
-		"strength": 22,
+		"strength": 32,
 		"cost": 42,
 		"obsoleteTech": "Iron Working",
-		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"uniques": ["Infantry",
+					
+					"[-150]% Gold cost of upgrading",
+					"May upgrade to [Spearman] through ruins-like effects"],
 		"promotions": ["Eagle & Jaguar"],
 		"attackSound": "nonmetalhit"
 	},
 	{
 		"name": "Jaguar Warrior",//美洲虎战士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Longswordsman",
 		"uniqueTo": "Aztec",
 		"replaces": "Swordsman",
 		"movement": 2,
-		"strength": 29,
+		"strength": 39,
 		"cost": 71,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["Costs [4] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>"],
+		"uniques": ["Infantry",
+					
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>"],
 		"promotions": ["Eagle & Jaguar"],
 		"attackSound": "nonmetalhit"
 	},
@@ -3610,51 +4183,56 @@
 //玛雅
 	{
 		"name": "Atlatlist",//投矛战士
-		"unitType": "Land 'Ranged' 'Cold weapon'",
+		"unitType": "Land 'Support'",
 		"upgradesTo": "Composite Bowman",
 		"uniqueTo": "Maya",
 		"replaces": "Archer",
 		"movement": 2,
 		"range": 2,
-		"strength": 18,
-		"rangedStrength": 23,
+		"strength": 28,
+		"rangedStrength": 33,
 		"cost": 47,
 		"obsoleteTech": "Mathematics",
+		"uniques": ["Infantry"],
 		"attackSound": "arrow"
 	},
 	
 //易洛魁
 	{
 		"name": "Mohawk Warrior",//莫霍克战士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Longswordsman",
 		"uniqueTo": "Iroquois",
 		"replaces": "Swordsman",
 		"movement": 2,
-		"strength": 27,
+		"strength": 37,
 		"cost": 71,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Metal Casting",
-		"uniques": ["Costs [4] [Iron]",
-					"[+10]% Strength <when adjacent to a [Land 'Melee' 'Cold weapon'] unit>",
+		"uniques": ["Infantry",
 					
-					"[+25]% Strength <when fighting in [Forest] tiles>",
-					"[+25]% Strength <when fighting in [Jungle] tiles>"],
+					"Costs [4] [Iron]",
+					"[+7]% Strength <when adjacent to a [Land 'Battle'] unit>",
+					
+					"[+10]% Strength <when fighting in [Forest] tiles>",
+					"[+10]% Strength <when fighting in [Jungle] tiles>"],
 		"attackSound": "nonmetalhit"
 	},
 	
 //波利尼西亚
 	{
 		"name": "Maori Warrior",//毛利勇士
-		"unitType": "Land 'Melee' 'Cold weapon'",
+		"unitType": "Land 'Battle'",
 		"upgradesTo": "Swordsman",
 		"uniqueTo": "Polynesia",
 		"replaces": "Warrior",
 		"movement": 2,
-		"strength": 20,
+		"strength": 30,
 		"cost": 42,
 		"obsoleteTech": "Iron Working",
-		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"uniques" : ["Infantry",
+					
+					"May upgrade to [Spearman] through ruins-like effects"],
 		"promotions": ["Haka War Dance"],
 		"attackSound": "nonmetalhit"
 	},

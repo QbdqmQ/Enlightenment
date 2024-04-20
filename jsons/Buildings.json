@@ -4,40 +4,149 @@
 		"isNationalWonder": true,
 		"cityStrength": 4,
 		"cost": 0,
-		"uniques": ["Indicates the capital city",
+		"uniques": [
+			"Indicates the capital city",
 		
-					"[+3 Production, +3 Science, +3 Gold, +1 Culture]",
+			"[+3 Production, +3 Science, +3 Gold, +1 Culture]",
 					
-					"Gain a free [City Center] [in all cities]",
+			"Gain a free [City Center] [in all cities]",
 					
-					"[-25]% Strength for cities <when attacking> <starting from the [Ancient era]>",
-					"[-25]% Strength for cities <when attacking> <starting from the [Medieval era]>",
-					"[-25]% Strength for cities <when attacking> <starting from the [Enlightenment era]>",
-					"[-25]% Strength for cities <when attacking> <starting from the [Modern era]>",
-					"[-25]% Strength for cities <when attacking> <starting from the [Information era]>",
-					"[-25]% Strength for cities <when attacking> <starting from the [Star era]>",
+			"[-200]% Yield from every [AI District] <for [Human player]>",
 					
-					"Free [City Designer I] appears",
+			"[-25]% Strength for cities <when attacking> <starting from the [Ancient era]>",
+			"[-25]% Strength for cities <when attacking> <starting from the [Medieval era]>",
+			"[-25]% Strength for cities <when attacking> <starting from the [Enlightenment era]>",
+			"[-25]% Strength for cities <when attacking> <starting from the [Modern era]>",
+			"[-25]% Strength for cities <when attacking> <starting from the [Information era]>",
+			"[-25]% Strength for cities <when attacking> <starting from the [Star era]>",
 					
-					"Provides [3] [Great Seat ( Lv. III )]",
-					"Provides [5] [Great Seat ( Lv. II )]",
+			"Free [City Designer I] appears <for [Human player]>",
 					
-					"Provides [1] [Policy Point - Development]",
-					"Provides [1] [Policy Point - Military]",
+			"Provides [3] [Great Seat ( Lv. III )] <for [Major]>",
+			"Provides [5] [Great Seat ( Lv. II )] <for [Major]>",
 					
-       				"[-10]% growth [in all cities] <in cities with at least [5] [Population]>",
-       				"[-20]% growth [in all cities] <in cities with at least [10] [Population]>",
-       				"[-30]% growth [in all cities] <in cities with at least [15] [Population]>",
-       				"[-40]% growth [in all cities] <in cities with at least [20] [Population]>",
-       				"[-50]% growth [in all cities] <in cities with at least [25] [Population]>",
-       				"[-60]% growth [in all cities] <in cities with at least [30] [Population]>",
-       				"[-70]% growth [in all cities] <in cities with at least [35] [Population]>",
-       				"[-80]% growth [in all cities] <in cities with at least [40] [Population]>",
-       				"[-90]% growth [in all cities] <in cities with at least [45] [Population]>",
-       				"[-100]% growth [in all cities] <in cities with at least [50] [Population]>",
+			"Provides [1] [Policy Point - Development] <for [Major]>",
+			"Provides [1] [Policy Point - Military] <for [Major]>",
 					
-					
-					
+       		"[-10]% growth [in all cities] <in cities with at least [5] [Population]>",
+       		"[-20]% growth [in all cities] <in cities with at least [10] [Population]>",
+       		"[-30]% growth [in all cities] <in cities with at least [15] [Population]>",
+       		"[-40]% growth [in all cities] <in cities with at least [20] [Population]>",
+       		"[-50]% growth [in all cities] <in cities with at least [25] [Population]>",
+       		"[-60]% growth [in all cities] <in cities with at least [30] [Population]>",
+       		"[-70]% growth [in all cities] <in cities with at least [35] [Population]>",
+       		"[-80]% growth [in all cities] <in cities with at least [40] [Population]>",
+       		"[-90]% growth [in all cities] <in cities with at least [45] [Population]>",
+       		"[-100]% growth [in all cities] <in cities with at least [50] [Population]>",
+		
+			//厌战度
+		
+			"Provides [1] [War-weariness] <when at war> <when below [50] [War-weariness]>",
+			"Instantly consumes [2] [War-weariness] <when not at war> <when above [0] [War-weariness]>",
+		
+			"[+3]% Unhappiness from [Population] [in all cities] <when between [6] and [11] [War-weariness]>",
+			"[+6]% Unhappiness from [Population] [in all cities] <when between [12] and [17] [War-weariness]>",
+			"[+9]% Unhappiness from [Population] [in all cities] <when between [18] and [23] [War-weariness]>",
+			"[+12]% Unhappiness from [Population] [in all cities] <when between [24] and [29] [War-weariness]>",
+			"[+15]% Unhappiness from [Population] [in all cities] <when between [30] and [35] [War-weariness]>",
+			"[+18]% Unhappiness from [Population] [in all cities] <when between [36] and [41] [War-weariness]>",
+			"[+21]% Unhappiness from [Population] [in all cities] <when between [42] and [47] [War-weariness]>",
+			"[+24]% Unhappiness from [Population] [in all cities] <when above [48] [War-weariness]>",
+		
+			"[-5]% growth [in all cities] <when between [6] and [11] [War-weariness]>",
+			"[-10]% growth [in all cities] <when between [12] and [17] [War-weariness]>",
+			"[-15]% growth [in all cities] <when between [18] and [23] [War-weariness]>",
+			"[-20]% growth [in all cities] <when between [24] and [29] [War-weariness]>",
+			"[-25]% growth [in all cities] <when between [30] and [35] [War-weariness]>",
+			"[-30]% growth [in all cities] <when between [36] and [41] [War-weariness]>",
+			"[-35]% growth [in all cities] <when between [42] and [47] [War-weariness]>",
+			"[-40]% growth [in all cities] <when above [48] [War-weariness]>",
+		
+			"[-5]% Production when constructing [All] buildings [in all cities] <when between [6] and [11] [War-weariness]>",
+			"[-10]% Production when constructing [All] buildings [in all cities] <when between [12] and [17] [War-weariness]>",
+			"[-15]% Production when constructing [All] buildings [in all cities] <when between [18] and [23] [War-weariness]>",
+			"[-20]% Production when constructing [All] buildings [in all cities] <when between [24] and [29] [War-weariness]>",
+			"[-25]% Production when constructing [All] buildings [in all cities] <when between [30] and [35] [War-weariness]>",
+			"[-30]% Production when constructing [All] buildings [in all cities] <when between [36] and [41] [War-weariness]>",
+			"[-35]% Production when constructing [All] buildings [in all cities] <when between [42] and [47] [War-weariness]>",
+			"[-40]% Production when constructing [All] buildings [in all cities] <when above [48] [War-weariness]>",
+			
+			"[-5]% Production when constructing [All] units [in all cities] <when between [6] and [11] [War-weariness]>",
+			"[-10]% Production when constructing [All] units [in all cities] <when between [12] and [17] [War-weariness]>",
+			"[-15]% Production when constructing [All] units [in all cities] <when between [18] and [23] [War-weariness]>",
+			"[-20]% Production when constructing [All] units [in all cities] <when between [24] and [29] [War-weariness]>",
+			"[-25]% Production when constructing [All] units [in all cities] <when between [30] and [35] [War-weariness]>",
+			"[-30]% Production when constructing [All] units [in all cities] <when between [36] and [41] [War-weariness]>",
+			"[-35]% Production when constructing [All] units [in all cities] <when between [42] and [47] [War-weariness]>",
+			"[-40]% Production when constructing [All] units [in all cities] <when above [48] [War-weariness]>",
+		
+			"[-3]% Strength <for [All] units> <when between [6] and [11] [War-weariness]>",
+			"[-6]% Strength <for [All] units> <when between [12] and [17] [War-weariness]>",
+			"[-9]% Strength <for [All] units> <when between [18] and [23] [War-weariness]>",
+			"[-12]% Strength <for [All] units> <when between [24] and [29] [War-weariness]>",
+			"[-15]% Strength <for [All] units> <when between [30] and [35] [War-weariness]>",
+			"[-18]% Strength <for [All] units> <when between [36] and [41] [War-weariness]>",
+			"[-21]% Strength <for [All] units> <when between [42] and [47] [War-weariness]>",
+			"[-24]% Strength <for [All] units> <when above [48] [War-weariness]>",
+		
+			//污染
+		
+			"Instantly consumes [2] [Pollution] <with [Pollution]>",
+		
+			"[+2]% Unhappiness from [Population] [in all cities] <when between [10] and [19] [Pollution]>",
+			"[+4]% Unhappiness from [Population] [in all cities] <when between [20] and [29] [Pollution]>",
+			"[+6]% Unhappiness from [Population] [in all cities] <when between [30] and [39] [Pollution]>",
+			"[+8]% Unhappiness from [Population] [in all cities] <when between [40] and [49] [Pollution]>",
+			"[+10]% Unhappiness from [Population] [in all cities] <when between [50] and [59] [Pollution]>",
+			"[+12]% Unhappiness from [Population] [in all cities] <when between [60] and [69] [Pollution]>",
+			"[+14]% Unhappiness from [Population] [in all cities] <when between [70] and [79] [Pollution]>",
+			"[+16]% Unhappiness from [Population] [in all cities] <when between [80] and [89] [Pollution]>",
+			"[+18]% Unhappiness from [Population] [in all cities] <when between [90] and [99] [Pollution]>",
+			"[+20]% Unhappiness from [Population] [in all cities] <when above [100] [Pollution]>",
+		
+			"[-3]% growth [in all cities] <when between [10] and [19] [Pollution]>",
+			"[-6]% growth [in all cities] <when between [20] and [29] [Pollution]>",
+			"[-9]% growth [in all cities] <when between [30] and [39] [Pollution]>",
+			"[-12]% growth [in all cities] <when between [40] and [49] [Pollution]>",
+			"[-15]% growth [in all cities] <when between [50] and [59] [Pollution]>",
+			"[-18]% growth [in all cities] <when between [60] and [69] [Pollution]>",
+			"[-21]% growth [in all cities] <when between [70] and [79] [Pollution]>",
+			"[-24]% growth [in all cities] <when between [80] and [89] [Pollution]>",
+			"[-27]% growth [in all cities] <when between [90] and [99] [Pollution]>",
+			"[-30]% growth [in all cities] <when above [100] [Pollution]>",
+		
+			"[-5]% [Production] [in all cities] <when between [10] and [19] [Pollution]>",
+			"[-10]% [Production] [in all cities] <when between [20] and [29] [Pollution]>",
+			"[-15]% [Production] [in all cities] <when between [30] and [39] [Pollution]>",
+			"[-20]% [Production] [in all cities] <when between [40] and [49] [Pollution]>",
+			"[-25]% [Production] [in all cities] <when between [50] and [59] [Pollution]>",
+			"[-30]% [Production] [in all cities] <when between [60] and [69] [Pollution]>",
+			"[-35]% [Production] [in all cities] <when between [70] and [79] [Pollution]>",
+			"[-40]% [Production] [in all cities] <when between [80] and [89] [Pollution]>",
+			"[-45]% [Production] [in all cities] <when between [90] and [99] [Pollution]>",
+			"[-50]% [Production] [in all cities] <when above [100] [Pollution]>",
+		
+			"[-5]% [Food] [in all cities] <when between [10] and [19] [Pollution]>",
+			"[-10]% [Food] [in all cities] <when between [20] and [29] [Pollution]>",
+			"[-15]% [Food] [in all cities] <when between [30] and [39] [Pollution]>",
+			"[-20]% [Food] [in all cities] <when between [40] and [49] [Pollution]>",
+			"[-25]% [Food] [in all cities] <when between [50] and [59] [Pollution]>",
+			"[-30]% [Food] [in all cities] <when between [60] and [69] [Pollution]>",
+			"[-35]% [Food] [in all cities] <when between [70] and [79] [Pollution]>",
+			"[-40]% [Food] [in all cities] <when between [80] and [89] [Pollution]>",
+			"[-45]% [Food] [in all cities] <when between [90] and [99] [Pollution]>",
+			"[-50]% [Food] [in all cities] <when above [100] [Pollution]>",
+		
+			"[-3]% [Gold] [in all cities] <when between [10] and [19] [Pollution]>",
+			"[-6]% [Gold] [in all cities] <when between [20] and [29] [Pollution]>",
+			"[-9]% [Gold] [in all cities] <when between [30] and [39] [Pollution]>",
+			"[-12]% [Gold] [in all cities] <when between [40] and [49] [Pollution]>",
+			"[-15]% [Gold] [in all cities] <when between [50] and [59] [Pollution]>",
+			"[-18]% [Gold] [in all cities] <when between [60] and [69] [Pollution]>",
+			"[-21]% [Gold] [in all cities] <when between [70] and [79] [Pollution]>",
+			"[-24]% [Gold] [in all cities] <when between [80] and [89] [Pollution]>",
+			"[-27]% [Gold] [in all cities] <when between [90] and [99] [Pollution]>",
+			"[-30]% [Gold] [in all cities] <when above [100] [Pollution]>",
 					
 					],
 	},
@@ -47,6 +156,7 @@
 		"uniques": [
 			"Destroyed when the city is captured",
 			"Unsellable",
+			"Moves to new capital when capital changes",
 			"Only available <in cities with a [Palace]>",
 			
 			"Instantly provides [120] [Policy Point - Development] <if starting in the [Classical era]>",
@@ -136,21 +246,44 @@
 					"Cannot be purchased",
 					"Never destroyed when the city is captured",
 					
-					"Free [Base Worker] appears <for [Human player]>",
-					"Free [Resource Worker I] appears <for [AI player]>",
-					"Free [Remove Worker I] appears <for [AI player]>",
+					"Free [Worker] appears <for [Human player]>",
+					"Free [AI Worker] appears <for [AI player]>",
 					
+					"Remove [Project(Once)] [in all cities] <upon turn end>",
 					
+					"Gain a free [Adopt Urban] [in capital] <in cities with at least [10] [Population]>",
 					]
 	},
 	
+//判定建筑
 	
-	{
-		"name": "Mode",//模式
+	{//真实
+		"name": "The Real",
 		"cost": 0,
 		"uniques": ["Unbuildable",
 					"Unsellable",
 					"Cannot be purchased",
+					"Moves to new capital when capital changes",
+					"Will not be displayed in Civilopedia"]
+	},
+	{//模式
+		"name": "Mode",
+		"cost": 0,
+		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
+					"Moves to new capital when capital changes",
+					"Will not be displayed in Civilopedia"]
+	},
+	
+	{//推行城市化
+		"name": "Adopt Urban",
+		"cost": 0,
+		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
+					"Never destroyed when the city is captured",
+					"Moves to new capital when capital changes",
 					"Will not be displayed in Civilopedia"]
 	},
 	
@@ -163,7 +296,7 @@
 					"Unbuildable",
 					"Can be purchased with [Gold] [in all cities]",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [PPC - 5 Development to 5 Military]>",
+					"Only available <in cities with a [Palace]> <in cities without a [PPC - 5 Development to 3 Military]>",
 					
 					"Consumes [5] [Policy Point - Military] <when above [5] [Policy Point - Military]>",
 					"Provides [3] [Policy Point - Development] <when above [5] [Policy Point - Military]>",
@@ -176,7 +309,7 @@
 					"Unbuildable",
 					"Can be purchased with [Gold] [in all cities]",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [PPC - 10 Development to 10 Military]>",
+					"Only available <in cities with a [Palace]> <in cities without a [PPC - 10 Development to 6 Military]>",
 					
 					"Consumes [10] [Policy Point - Military] <when above [10] [Policy Point - Military]>",
 					"Provides [6] [Policy Point - Development] <when above [10] [Policy Point - Military]>",
@@ -189,7 +322,7 @@
 					"Unbuildable",
 					"Can be purchased with [Gold] [in all cities]",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [PPC - 15 Development to 15 Military]>",
+					"Only available <in cities with a [Palace]> <in cities without a [PPC - 15 Development to 9 Military]>",
 					
 					"Consumes [15] [Policy Point - Military] <when above [15] [Policy Point - Military]>",
 					"Provides [9] [Policy Point - Development] <when above [15] [Policy Point - Military]>",
@@ -197,7 +330,7 @@
 	},
 	
 	{
-		"name": "PPC - 5 Development to 5 Military",// 5 发展 转 5 军事
+		"name": "PPC - 5 Development to 3 Military",// 5 发展 转 3 军事
 		"cost": 0,
 		"uniques": ["Policy Point Convert",
 					"Unbuildable",
@@ -206,11 +339,11 @@
 					"Only available <in cities with a [Palace]> <in cities without a [PPC - 5 Military to 3 Development]>",
 					
 					"Consumes [5] [Policy Point - Development] <when above [5] [Policy Point - Development]>",
-					"Provides [5] [Policy Point - Military] <when above [5] [Policy Point - Development]>",
+					"Provides [3] [Policy Point - Military] <when above [3] [Policy Point - Development]>",
 					]
 	},
 	{
-		"name": "PPC - 10 Development to 10 Military",// 10 发展 转 10 军事
+		"name": "PPC - 10 Development to 6 Military",// 10 发展 转 6 军事
 		"cost": 0,
 		"uniques": ["Policy Point Convert",
 					"Unbuildable",
@@ -219,11 +352,11 @@
 					"Only available <in cities with a [Palace]> <in cities without a [PPC - 10 Military to 6 Development]>",
 					
 					"Consumes [10] [Policy Point - Development] <when above [10] [Policy Point - Development]>",
-					"Provides [10] [Policy Point - Military] <when above [10] [Policy Point - Development]>",
+					"Provides [6] [Policy Point - Military] <when above [6] [Policy Point - Development]>",
 					]
 	},
 	{
-		"name": "PPC - 15 Development to 15 Military",// 15 发展 转 15 军事
+		"name": "PPC - 15 Development to 9 Military",// 15 发展 转 9 军事
 		"cost": 0,
 		"uniques": ["Policy Point Convert",
 					"Unbuildable",
@@ -232,7 +365,7 @@
 					"Only available <in cities with a [Palace]> <in cities without a [PPC - 15 Military to 9 Development]>",
 					
 					"Consumes [15] [Policy Point - Development] <when above [15] [Policy Point - Development]>",
-					"Provides [15] [Policy Point - Military] <when above [15] [Policy Point - Development]>",
+					"Provides [9] [Policy Point - Military] <when above [9] [Policy Point - Development]>",
 					]
 	},
 	
@@ -243,10 +376,12 @@
 		"cityStrength": 5,
 		"cost": 0,
 		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
 					"Doubles Gold given to enemy if city is captured",
 					"Destroyed when the city is captured",
 					
-					"Provides [2] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Development]",
 					"Provides [1] [Policy Point - Military]"]
 	},
 	{
@@ -254,39 +389,45 @@
 		"cityStrength": 10,
 		"cost": 0,
 		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
 					"Doubles Gold given to enemy if city is captured",
 					"Destroyed when the city is captured",
 					
-					"Provides [4] [Policy Point - Development]",
-					"Provides [2] [Policy Point - Military]"]
+					"Provides [1] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Military]"]
 	},
 	{
 		"name": "Polity ( Lv. III )",//政体
 		"cityStrength": 15,
 		"cost": 0,
 		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
 					"Doubles Gold given to enemy if city is captured",
 					"Destroyed when the city is captured",
 					
-					"Provides [6] [Policy Point - Development]",
-					"Provides [3] [Policy Point - Military]"]
+					"Provides [1] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Military]"]
 	},
 	{
 		"name": "Polity ( Lv. IV )",//政体
 		"cityStrength": 20,
 		"cost": 0,
 		"uniques": ["Unbuildable",
+					"Unsellable",
+					"Cannot be purchased",
 					"Doubles Gold given to enemy if city is captured",
 					"Destroyed when the city is captured",
 					
-					"Provides [8] [Policy Point - Development]",
-					"Provides [4] [Policy Point - Military]"]
+					"Provides [1] [Policy Point - Development]",
+					"Provides [1] [Policy Point - Military]"]
 	},
 	
 //太空竞赛
 	
-	{
-		"name": "Manned Spaceship",//载人飞船
+	{//载人飞船
+		"name": "Manned Spaceship",
 		"cost": 2160,
 		"uniques": ["Space Building",
 					"Space Races",
@@ -296,8 +437,8 @@
 					"Only available <if [Project - Space Race] is constructed>"],
 		"requiredTech": "Computers"
 	},
-	{
-		"name": "Space Station",//空间站
+	{//空间站
+		"name": "Space Station",
 		"cost": 2160,
 		"uniques": ["Space Building",
 					"Space Races",
@@ -307,8 +448,8 @@
 					"Only available <if [Project - Space Race] is constructed>"],
 		"requiredTech": "Composites"
 	},
-	{
-		"name": "Artificial Satellite",//人造卫星
+	{//人造卫星
+		"name": "Artificial Satellite",
 		"cost": 2340,
 		"uniques": ["Space Building",
 					"Space Races",
@@ -318,8 +459,8 @@
 					"Only available <if [Project - Space Race] is constructed>"],
 		"requiredTech": "Satellites"
 	},
-	{
-		"name": "Satellite Probe",//卫星探测器
+	{//卫星探测器
+		"name": "Satellite Probe",
 		"cost": 2520,
 		"uniques": ["Space Building",
 					"Space Races",
@@ -329,8 +470,8 @@
 					"Only available <if [Project - Space Race] is constructed>"],
 		"requiredTech": "Telecommunications"
 	},
-	{
-		"name": "Space Telescope",//太空望远镜
+	{//太空望远镜
+		"name": "Space Telescope",
 		"cost": 2520,
 		"uniques": ["Space Building",
 					"Space Races",
@@ -343,13 +484,16 @@
 	
 //宗教建筑
 	
-	{
-		"name": "Cathedral",//大教堂
+	{//大教堂
+		"name": "Cathedral",
 		"specialistSlots": {"Theologian": 2},
 		"cost": 0,
-		"uniques": ["Unbuildable",
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
 					"Hidden when religion is disabled",
-					"Religion Building",
+					
 					"[+2 Faith] from every specialist [in this city]"],
         "civilopediaText": [
 			{
@@ -382,16 +526,18 @@
             },
         ]
 	},
-	{
-		"name": "Mosque",//清真寺
+	{//清真寺
+		"name": "Mosque",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"culture": 2,
 		"happiness": 1,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -423,16 +569,18 @@
             },
         ]
 	},
-	{
-		"name": "Buddha Temple",//浮屠祠
+	{//浮屠祠
+		"name": "Buddha Temple",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 1,
 		"culture": 2,
 		"happiness": 2,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -464,15 +612,17 @@
             },
         ]
 	},
-	{
-		"name": "Chapel",//礼拜堂
+	{//礼拜堂
+		"name": "Chapel",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"production": 2,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -504,15 +654,17 @@
             },
         ]
 	},
-	{
-		"name": "Stupa",//窣堵波
+	{//窣堵波
+		"name": "Stupa",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"science": 2,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -544,15 +696,17 @@
             },
         ]
 	},
-	{
-		"name": "Monastery",//修道院
+	{//修道院
+		"name": "Monastery",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 3,
 		"gold": 2,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -584,14 +738,17 @@
             },
         ]
 	},
-	{
-		"name": "Fire Worship Temple",//拜火庙
+	{//拜火庙
+		"name": "Fire Worship Temple",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 1,
 		"cost": 0,
-		"uniques": ["Unbuildable",
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
 					"Hidden when religion is disabled",
-					"Religion Building",
+					
 					"[+10]% [Faith] [in this city]"],
         "civilopediaText": [
 			{
@@ -624,15 +781,17 @@
             },
         ]
 	},
-	{
-		"name": "Gurdwara",//谒师所
+	{//谒师所
+		"name": "Gurdwara",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"food": 1,
 		"cost": 0,
-		"uniques": ["Unbuildable",
-					"Hidden when religion is disabled",
-					"Religion Building"],
+		"uniques": ["Religion Building",
+					
+					"Unbuildable",
+					"Only available <before adopting [Cosmicis]>",
+					"Hidden when religion is disabled"],
         "civilopediaText": [
 			{
                 "text": "Jump to '[Cathedral]'",
@@ -665,9 +824,26 @@
         ]
 	},
 	
+	{//旧神方尖碑
+		"name": "Old God Obelisk",
+		"percentStatBonus": {"faith": 30},
+		"specialistSlots": {"Cthulhu Follower": 5},
+		"culture": 3,
+		"faith": 6,
+		"maintenance": 14,
+		"cost": 425,
+		"hurryCostModifier": 25,
+		"uniques": ["Religion Building",
+					
+					"Hidden when religion is disabled",
+					
+					"Only available <after adopting [Cosmicis]>"]
+	},
+	
 //效果
-	{
-		"name": "Effect - Professional Ethics",//职业道德
+	
+	{//职业道德
+		"name": "Effect - Professional Ethics",
 		"cost": 0,
         "uniques": ["Unbuildable",
 					"Hidden when religion is disabled",
@@ -676,8 +852,8 @@
 					"[+1 Production] from [District] tiles [in this city] <with [4] to [6] neighboring [District] tiles>",
 					"[+1 Production] from [District] tiles [in this city] <with [6] to [6] neighboring [District] tiles>"]
 	},
-	{
-		"name": "Effect - Sages' Enlightenment",//圣贤启发
+	{//圣贤启发
+		"name": "Effect - Sages' Enlightenment",
 		"cost": 0,
         "uniques": ["Unbuildable",
 					"Hidden when religion is disabled",
@@ -686,8 +862,8 @@
 					"[+1 Science] from [District] tiles [in this city] <with [4] to [6] neighboring [District] tiles>",
 					"[+1 Science] from [District] tiles [in this city] <with [6] to [6] neighboring [District] tiles>"]
 	},
-	{
-		"name": "Effect - Scientific Revolution",//科技革命
+	{//科技革命
+		"name": "Effect - Scientific Revolution",
 		"cost": 0,
         "uniques": ["Unbuildable",
 					"Hidden when religion is disabled",
@@ -706,8 +882,8 @@
 	
 //骑士团
 	
-	{
-		"name": "Knights Team - Ordine Ospedaliero",//骑士团 - 医院骑士团
+	{//医院骑士团
+		"name": "Knights Team - Ordine Ospedaliero",
 		"cost": 0,
 		"uniques": ["Knights Team",
 					
@@ -717,8 +893,8 @@
 					
 					"[Knights] units gain the [Ordine Ospedaliero] promotion"]
 	},
-	{
-		"name": "Knights Team - Deutscher Orden",//骑士团 - 条顿骑士团
+	{//条顿骑士团
+		"name": "Knights Team - Deutscher Orden",
 		"cost": 0,
 		"uniques": ["Knights Team",
 					
@@ -728,8 +904,8 @@
 					
 					"[Knights] units gain the [Deutscher Orden] promotion"]
 	},
-	{
-		"name": "Knights Team - Ordre du Temple",//骑士团 - 圣殿骑士团
+	{//圣殿骑士团
+		"name": "Knights Team - Ordre du Temple",
 		"cost": 0,
 		"uniques": ["Knights Team",
 					
@@ -739,8 +915,8 @@
 					
 					"[Knights] units gain the [Ordre du Temple] promotion"]
 	},
-	{
-		"name": "Knights Team - Fanatic Knights",//骑士团 - 狂热骑士团
+	{//狂热骑士团
+		"name": "Knights Team - Fanatic Knights",
 		"cost": 0,
 		"uniques": ["Knights Team",
 					
@@ -750,8 +926,8 @@
 					
 					"[Knights] units gain the [Fanatic Knights] promotion"]
 	},
-	{
-		"name": "Knights Team - Glorious Knights",//骑士团 - 光荣骑士团
+	{//骑士团光荣骑士团
+		"name": "Knights Team - Glorious Knights",
 		"cost": 0,
 		"uniques": ["Knights Team",
 					
@@ -764,89 +940,127 @@
 	
 //项目
 	
-	{
-		"name": "Project - Artificial Rainfall",//项目 - 人工降雨
-		"uniques": ["[+1 Food] from [Farm] tiles [in this city] <for [10] turns>",
-					"[+1 Food] from [Plantation] tiles [in this city] <for [10] turns>",
-					"Destroyed when the city is captured"],
+	{//人工降雨
+		"name": "Project - Artificial Rainfall",
+		"uniques": ["Project(Once)",
+					
+					"Destroyed when the city is captured",
+					
+					"Cost increases by [50] when built <in this city>",
+					
+					"[+1 Food] from [Farm] tiles [in this city] <for [5] turns>",
+					"[+1 Food] from [Plantation] tiles [in this city] <for [5] turns>"],
 		"requiredTech": "Meteorology"
 	},
-	{
-		"name": "Project - Seminar",//项目 - 研讨会
-		"uniques": ["[+10]% [Science] [in this city] <for [10] turns>",
-					"Destroyed when the city is captured"],
+	{//研讨会
+		"name": "Project - Seminar",
+		"uniques": ["Project(Once)",
+					
+					"Destroyed when the city is captured",
+					
+					"Cost increases by [70] when built <in this city>",
+					
+					"[+10]% [Science] [in this city] <for [5] turns>"],
 		"requiredTech": "Scientific Theory"
 	},
-	{
-		"name": "Project - Nuclear Research",//项目 - 核研究
+	{//核研究
+		"name": "Project - Nuclear Research",
 		"isNationalWonder": true,
-		"uniques": ["Enables nuclear weapon",
+		"uniques": ["Project",
+					
+					"Destroyed when the city is captured",
+					
+					"Cannot be hurried",
+					
 					"Triggers a global alert upon completion",
-					"Cannot be hurried"],
+					
+					"Enables nuclear weapon"],
 		"requiredTech": "Atomic Theory"
 	},
-	{
-		"name": "Project - Space Race",//项目 - 太空竞赛
+	{//太空竞赛
+		"name": "Project - Space Race",
 		"isNationalWonder": true,
-		"uniques": ["Triggers a global alert upon completion",
+		"uniques": ["Project",
+					
+					"Destroyed when the city is captured",
+					
+					"Cannot be hurried",
+					
+					"Triggers a global alert upon completion",
+					
 					"Cannot be hurried"],
 		"requiredTech": "Rocketry"
 	},
-	{
-		"name": "Project - Interstellar",//项目 - 群星
+	{//群星
+		"name": "Project - Interstellar",
 		"isNationalWonder": true,
-		"uniques": ["Triggers a global alert upon completion",
+		"uniques": ["Project",
+					
+					"Destroyed when the city is captured",
+					
+					"Cannot be hurried",
+					
+					"Triggers a global alert upon completion",
+					
 					"Cannot be hurried"],
 		"requiredTech": "Space Dynamics"
 	},
+	{//人工智能殖民船
+		"name": "Project - AI-Controlled Colony Ships",
+		"isNationalWonder": true,
+		"uniques": ["Project",
+					
+					"Destroyed when the city is captured",
+					
+					"Cannot be hurried",
+					
+					"Triggers a global alert upon completion",
+					
+					"[-100 Gold]",
+					"Gain [200]-[2000] [Gold] <with [8]% chance> <upon turn end>"],
+		"requiredTech": "Space Exploration"
+	},
 
-	//信仰建筑
+//信仰
 	
-	{
-		"name": "Shrine",//神社
+	{//神社
+		"name": "Shrine",
 		"specialistSlots": {"Theologian": 2},
 		"faith": 2,
 		"maintenance": 1,
 		"cost": 60,
 		"uniques": ["Hidden when religion is disabled",
-
-					"Only available <after adopting [Worship]>"]
+					
+					"Only available <after adopting [Worship]> <before adopting [Cosmicis]>"]
 	},
-	{
-		"name": "Temple",//寺庙
+	{//寺庙
+		"name": "Temple",
 		"percentStatBonus": {"faith": 10},
-		"specialistSlots": {"Theologian": 3},
+		"specialistSlots": {"Theologian": 2},
 		"faith": 3,
 		"maintenance": 3,
 		"cost": 100,
 		"hurryCostModifier": 25,
 		"uniques": ["Hidden when religion is disabled",
-
-					"Only available <after adopting [Theology]>"]
+					
+					"Only available <after adopting [Theology]> <before adopting [Cosmicis]>"]
 	},
 	
-	//科研建筑
+//科研
 	
-	{
-		"name": "Sundial",//日晷
-		"science": 2,
-		"cost": 40,
-		"hurryCostModifier": 25,
-		"uniques": ["Only available <after adopting [Calendar]>"]
-	},
-	{
-		"name": "Observatory",//天文台
+	{//天文台
+		"name": "Observatory",
 		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
-		"science": 1,
+		"science": 4,
 		"maintenance": 6,
 		"hurryCostModifier": 15,
 		"uniques": ["Must have an owned [Mountain] within [2] tiles"],
 		"requiredTech": "Astronomy"
 	},
 	
-	{
-		"name": "Library",//图书馆
+	{//图书馆
+		"name": "Library",
 		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
 		"science": 1,
@@ -857,8 +1071,17 @@
 					
 					"Only available <after adopting [Writing]>"]
 	},
-	{
-		"name": "University",//大学
+	{//日晷
+		"name": "Sundial",
+		"percentStatBonus": {"science": 10},
+		"specialistSlots": {"Scientist": 1},
+		"science": 2,
+		"cost": 40,
+		"hurryCostModifier": 25,
+		"uniques": ["Only available <after adopting [Calendar]>"]
+	},
+	{//大学
+		"name": "University",
 		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
 		"science": 3,
@@ -866,8 +1089,8 @@
 		"hurryCostModifier": 15,
 		"requiredTech": "Education"
 	},
-	{
-		"name": "Public School",//公立学校
+	{//公立学校
+		"name": "Public School",
 		"percentStatBonus": {"science": 10},
 		"specialistSlots": {"Scientist": 1},
 		"science": 5,
@@ -875,10 +1098,10 @@
 		"cost": 270,
 		"uniques": ["Only available <after adopting [Compulsory Education]>"]
 	},
-	{
-		"name": "Research Lab",//研发实验室
-		"percentStatBonus": {"science": 20},
-		"specialistSlots": {"Scientist": 2},
+	{//研发实验室
+		"name": "Research Lab",
+		"percentStatBonus": {"science": 10},
+		"specialistSlots": {"Scientist": 1},
 		"science": 8,
 		"maintenance": 16,
 		"uniques": ["Consumes [4] [Electric Power] <when above [4] [Electric Power]>",
@@ -886,10 +1109,10 @@
 		"requiredTech": "Atomic Theory"
 	},
 	
-	//金钱建筑
+//金钱
 	
-	{
-		"name": "Mint",//铸币厂
+	{//铸币厂
+		"name": "Mint",
 		"requiredNearbyImprovedResources": ["Gold Ore", "Silver"],
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
@@ -901,17 +1124,17 @@
 					"Only available <after adopting [Currency]>"]
 	},
 	
-	{
-		"name": "Market",//市场
+	{//市场
+		"name": "Market",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 3,
 		"cost": 120,
 		"hurryCostModifier": 25,
-		"uniques": ["Only available <after adopting [Foreign Trade]>"]
+		"uniques": ["Only available <after adopting [Chowk]>"]
 	},
-	{
-		"name": "Bank",//银行
+	{//银行
+		"name": "Bank",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 5,
@@ -919,8 +1142,8 @@
 		"hurryCostModifier": 15,
 		"uniques": ["Only available <after adopting [Banking]>"],
 	},
-	{
-		"name": "Stock Exchange",//证券交易所
+	{//证券交易所
+		"name": "Stock Exchange",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 7,
@@ -928,8 +1151,8 @@
 		"hurryCostModifier": 15,
 		"uniques": ["Only available <after adopting [Economics]>"]
 	},
-	{
-		"name": "Advertising Company",//广告公司
+	{//广告公司
+		"name": "Advertising Company",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 9,
@@ -938,8 +1161,8 @@
 					"[-9 Gold] [in this city] <when below [4] [Electric Power]>"],
 		"requiredTech": "Computers"
 	},
-	{
-		"name": "Shopping Center",//购物中心
+	{//购物中心
+		"name": "Shopping Center",
 		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 4,
@@ -950,10 +1173,10 @@
 					"Only available <after adopting [Tertiary Industry]>"]
 	},
 	
-	//产能建筑
+//产能
 	
-	{
-		"name": "Stone Works",//石工坊
+	{//石工坊
+		"name": "Stone Works",
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
 		"happiness": 1,
 		"production": 1,
@@ -962,8 +1185,8 @@
 					"[+1 Production] from [Marble] tiles [in this city]"],
 		"requiredTech": "Masonry"
 	},
-	{
-		"name": "Forge",//锻造场
+	{//锻造场
+		"name": "Forge",
 		"requiredNearbyImprovedResources": ["Iron", "Copper"],
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
@@ -978,16 +1201,16 @@
 		"requiredTech": "Metal Casting"
 	},
 	
-	{
-		"name": "Furniture Factory",//家具厂
+	{//家具厂
+		"name": "Furniture Factory",
 		"production": 3,
 		"gold": 4,
 		"cost": 240,
 		"hurryCostModifier": 25,
 		"uniques": ["Only available <after adopting [Town]>"]
 	},
-	{
-		"name": "Ironworks",//钢铁厂
+	{//钢铁厂
+		"name": "Ironworks",
 		"production": 2,
 		"maintenance": 13,
 		"uniques": ["Consumes [1] [Coal] <when above [1] [Coal]>",
@@ -997,8 +1220,8 @@
 		"requiredTech": "Refining"
 	},
 	
-	{
-		"name": "Kiln",//窑炉
+	{//窑炉
+		"name": "Kiln",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 1,
@@ -1006,8 +1229,8 @@
 		"uniques": ["[+1 Production] from [Clay] tiles [in this city]"],
 		"requiredTech": "Pottery"
 	},
-	{
-		"name": "Workshop",//工坊
+	{//工坊
+		"name": "Workshop",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 2,
@@ -1015,8 +1238,8 @@
 		"hurryCostModifier": 25,
 		"requiredTech": "Iron Working"
 	},
-	{
-		"name": "Windmill",//风车
+	{//风车
+		"name": "Windmill",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 3,
@@ -1024,27 +1247,33 @@
 		"hurryCostModifier": 25,
 		"requiredTech": "Machinery"
 	},
-	{
-		"name": "Factory",//工厂
+	{//工厂
+		"name": "Factory",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 5,
 		"maintenance": 12,
 		"requiredTech": "Industrialization"
 	},
-	{
-		"name": "Assembly Factory",//装配厂
+	{//装配厂
+		"name": "Assembly Factory",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 7,
 		"maintenance": 17,
 		"requiredTech": "Composites"
 	},
+	{//纳米复合材料工厂
+		"name": "Nanocomposite Material Factory",
+		"production": 15,
+		"maintenance": 22,
+		"requiredTech": "Space Materialogy"
+	},
 	
-	//文化建筑
+//文化
 	
-	{
-		"name": "Ancestral Hall",//祠堂
+	{//祠堂
+		"name": "Ancestral Hall",
 		"culture": 1,
 		"maintenance": 1,
 		"cost": 40,
@@ -1053,8 +1282,8 @@
 					
 					"Only available <after adopting [Worship]>"],
 	},
-	{
-		"name": "Publishing House",//出版社
+	{//出版社
+		"name": "Publishing House",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 2,
@@ -1064,15 +1293,15 @@
 		"requiredTech": "Printing"
 	},
 	
-	{
-		"name": "Monument",//纪念碑
+	{//纪念碑
+		"name": "Monument",
 		"culture": 2,
 		"maintenance": 1,
 		"cost": 40,
 		"hurryCostModifier": 40
 	},
-	{
-		"name": "Amphitheater",//圆形剧场
+	{//圆形剧场
+		"name": "Amphitheater",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 3,
@@ -1081,8 +1310,8 @@
 		"hurryCostModifier": 25,
 		"uniques": ["Only available <after adopting [Drama and Poetry]>"]
 	},
-	{
-		"name": "Opera House",//歌剧院
+	{//歌剧院
+		"name": "Opera House",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 4,
@@ -1091,8 +1320,8 @@
 		"hurryCostModifier": 10,
 		"uniques": ["Only available <after adopting [Acoustics]>"]
 	},
-	{
-		"name": "Concert Hall",//音乐厅
+	{//艺术学院
+		"name": "Art Institute",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 5,
@@ -1101,8 +1330,8 @@
 		"hurryCostModifier": 10,
 		"uniques": ["Only available <after adopting [Aesthetics]>"]
 	},
-	{
-		"name": "Museum",//博物馆
+	{//博物馆
+		"name": "Museum",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 6,
@@ -1110,8 +1339,8 @@
 		"cost": 340,
 		"uniques": ["Only available <after adopting [Archaeology]>"]
 	},
-	{
-		"name": "Broadcast Tower",//广播塔
+	{//广播塔
+		"name": "Broadcast Tower",
 		"percentStatBonus": {"culture": 10},
 		"specialistSlots": {"Artist": 1},
 		"culture": 3,
@@ -1121,17 +1350,17 @@
 		"requiredTech": "Radio"
 	},
 	
-	//快乐建筑
+//快乐
 	
-	{
-		"name": "Circus",//马戏场
+	{//马戏场
+		"name": "Circus",
 		"requiredNearbyImprovedResources": ["Ivory","Horses"],
 		"happiness": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Horseback Riding"
 	},
-	{
-		"name": "Nature Reserve",//自然保护区
+	{//自然保护区
+		"name": "Nature Reserve",
 		"happiness": 2,
 		"maintenance": 17,
 		"cost": 570,
@@ -1142,35 +1371,36 @@
 					"Only available <after adopting [Nature Reserves]>"]
 	},
 	
-	{
-		"name": "Colosseum",//竞技场
+	{//竞技场
+		"name": "Colosseum",
 		"happiness": 2,
 		"maintenance": 5,
 		"hurryCostModifier": 25,
-		"requiredTech": "Engineering"
+		"cost": 100,
+		"uniques": ["Only available <after adopting [Construction]>"]
 	},
-	{
-		"name": "Theatre",//剧院
+	{//剧院
+		"name": "Theatre",
 		"happiness": 2,
 		"maintenance": 5,
 		"hurryCostModifier": 10,
 		"cost": 120,
 		"uniques": ["Only available <after adopting [Classical Philosophy]>"]
 	},
-	{
-		"name": "Aquaria",//水族馆
+	{//水族馆
+		"name": "Aquaria",
 		"happiness": 3,
 		"maintenance": 12,
 		"requiredTech": "Oceanography"
 	},
-	{
-		"name": "Sewer",//下水道
+	{//下水道
+		"name": "Sewer",
 		"happiness": 2,
 		"maintenance": 13,
 		"requiredTech": "Sanitation"
 	},
-	{
-		"name": "Stadium",//体育场
+	{//体育场
+		"name": "Stadium",
 		"happiness": 3,
 		"maintenance": 18,
 		"cost": 625,
@@ -1180,10 +1410,10 @@
 					"Only available <after adopting [Globalization]>"]
 	},
 	
-	//军事建筑
+//军事
 	
-	{
-		"name": "Stable",//马厩
+	{//马厩
+		"name": "Stable",
 		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
 		"cityStrength": 2,
 		"maintenance": 3,
@@ -1196,64 +1426,70 @@
 		"requiredTech": "Horseback Riding"
 	},
 	
-	{
-		"name": "Training Grounds",//练兵场
+	{//练兵场
+		"name": "Training Grounds",
 		"cityStrength": 2,
 		"maintenance": 4,
 		"hurryCostModifier": 25,
 		"cost": 100,
-		"uniques": ["New [{Military} {Land}] units start with [10] Experience [in this city]",
+		"uniques": ["Training Building",
+					"New [{Military} {Land}] units start with [10] Experience [in this city]",
 					
 					"Only available <after adopting [Training]>"]
 	},
-	{
-		"name": "Armory",//军械所
+	{//军械所
+		"name": "Armory",
 		"cityStrength": 2,
 		"maintenance": 7,
 		"hurryCostModifier": 25,
 		"cost": 180,
-		"uniques": ["New [{Military} {Land}] units start with [15] Experience [in this city]",
+		"uniques": ["Training Building",
+					"New [{Military} {Land}] units start with [15] Experience [in this city]",
 					
 					"Only available <after adopting [Professional Army]>"]
 	},
-	{
-		"name": "Military Academy",//军事学院
+	{//军事学院
+		"name": "Military Academy",
 		"cityStrength": 2,
 		"maintenance": 10,
-		"uniques": ["New [{Military} {Land}] units start with [20] Experience [in this city]"],
+		"uniques": ["Training Building",
+					"New [{Military} {Land}] units start with [20] Experience [in this city]"],
 		"requiredTech": "Military Science"
 	},
 	
-	{
-		"name": "Flight Academy",//航空学院
+	{//航空学院
+		"name": "Flight Academy",
 		"cityStrength": 2,
 		"maintenance": 15,
 		"hurryCostModifier": 25,
 		"cost": 100,
-		"uniques": ["New [{Military} {Air}] units start with [5] Experience [in this city]"],
+		"uniques": ["Training Building",
+					"New [{Military} {Air}] units start with [5] Experience [in this city]"],
 		"requiredTech": "Flight"
 	},
-	{
-		"name": "Training Base",//训练基地
+	{//训练基地
+		"name": "Training Base",
 		"cityStrength": 2,
 		"maintenance": 16,
 		"hurryCostModifier": 25,
 		"cost": 180,
-		"uniques": ["New [{Military} {Air}] units start with [10] Experience [in this city]"],
+		"uniques": ["Training Building",
+					"New [{Military} {Air}] units start with [10] Experience [in this city]"],
 		"requiredTech": "Radar"
 	},
-	{
-		"name": "Military Hangar",//军用机库
+	{//军用机库
+		"name": "Military Hangar",
 		"cityStrength": 2,
 		"maintenance": 17,
-		"uniques": ["New [{Military} {Air}] units start with [15] Experience [in this city]"],
+		"uniques": ["Training Building",
+					"New [{Military} {Air}] units start with [15] Experience [in this city]"],
 		"requiredTech": "Composites"
 	},
 	
-	//港口建筑
+//海滨
 	
-	{
-		"name": "Lighthouse",//灯塔
+	{//灯塔
+		"name": "Lighthouse",
 		"maintenance": 4,
 		"hurryCostModifier": 25,
 		"uniques": ["Must have an owned [Water] within [3] tiles",
@@ -1263,12 +1499,13 @@
 					"[+1 Food] from [Fish] tiles [in this city]"],
 		"requiredTech": "Optics"
 	},
-	{
-		"name": "Dockyard",//船坞
+	{//船坞
+		"name": "Dockyard",
 		"cityStrength": 2,
 		"maintenance": 8,
 		"hurryCostModifier": 25,
-		"uniques": ["Must have an owned [Water] within [3] tiles",
+		"uniques": ["Training Building",
+					"Must have an owned [Water] within [3] tiles",
 					
 					"New [{Military} {Water}] units start with [10] Experience [in this city]",
 					"[+1 Gold] from [Coast] tiles [in this city]",
@@ -1276,34 +1513,36 @@
 					"Connects trade routes over water"],
 		"requiredTech": "Square Rigging"
 	},
-	{
-		"name": "Seaport",//海运码头
+	{//海运码头
+		"name": "Seaport",
 		"cityStrength": 2,
 		"maintenance": 10,
 		"hurryCostModifier": 25,
-		"uniques": ["Must have an owned [Water] within [3] tiles",
+		"uniques": ["Training Building",
+					"Must have an owned [Water] within [3] tiles",
 					
 					"New [{Military} {Water}] units start with [15] Experience [in this city]",
 					"[+1 Gold] from [Ocean] tiles [in this city]",
 					"[+1 Production, +1 Gold] from [Water resource] tiles [in this city]"],
 		"requiredTech": "Navigation"
 	},
-	{
-		"name": "Shipyard",//造船厂
+	{//造船厂
+		"name": "Shipyard",
 		"cityStrength": 2,
 		"maintenance": 11,
 		"hurryCostModifier": 25,
-		"uniques": ["Must have an owned [Water] within [3] tiles",
+		"uniques": ["Training Building",
+					"Must have an owned [Water] within [3] tiles",
 					
 					"New [{Military} {Water}] units start with [20] Experience [in this city]",
 					"[+15]% Production when constructing [Water] units [in this city]"],
 		"requiredTech": "Mass Production"
 	},
 	
-	//辅助建筑
+//食物
 	
-	{
-		"name": "Granary",//粮仓
+	{//粮仓
+		"name": "Granary",
 		"food": 2,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
@@ -1320,8 +1559,8 @@
             },
         ]
 	},
-	{
-		"name": "Breeding Farm",//养殖场
+	{//养殖场
+		"name": "Breeding Farm",
 		"food": 2,
 		"maintenance": 2,
 		"hurryCostModifier": 25,
@@ -1339,8 +1578,8 @@
         ]
 	},
 	
-	{
-		"name": "Water Mill",//水磨机
+	{//水磨机
+		"name": "Water Mill",
 		"food": 2,
 		"production": 1,
 		"maintenance": 3,
@@ -1349,8 +1588,21 @@
 					"[-10]% Food is carried over after population increases [in this city]"],
 		"requiredTech": "The Wheel"
 	},
-	{
-		"name": "Aqueduct",//引水渠
+	{//水坝
+		"name": "Dam",
+		"food": 1,
+		"maintenance": 11,
+		"cost": 300,
+		"uniques": ["Must be next to [River]",
+					"[+1 Food] from [Flood plains] tiles [in this city]",
+					
+					"Only available <after adopting [Civil Engineering]>"]
+	},
+	
+//辅助
+	
+	{//引水渠
+		"name": "Aqueduct",
 		"maintenance": 3,
 		"hurryCostModifier": 10,
 		"cost": 80,
@@ -1358,16 +1610,30 @@
 					
 					"Only available <after adopting [State Workforce]>"]
 	},
-	{
-		"name": "Courthouse",//法庭
+	{//医学实验室
+		"name": "Medical Lab",
+		"maintenance": 17,
+		"uniques": ["[-25]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Pharmaceuticals"
+	},
+	{//医院
+		"name": "Hospital",
+		"maintenance": 17,
+		"cost": 570,
+		"uniques": ["[+25]% growth [in this city]",
+					"Only available <after adopting [Medicare for All]>"]
+	},
+	
+	{//法庭
+		"name": "Courthouse",
 		"maintenance": 5,
 		"hurryCostModifier": 50,
 		"cost": 120,
 		"uniques": ["Remove extra unhappiness from annexed cities",
 					"[+1 Happiness] from all [Happiness] buildings <in this city>"]
 	},
-	{
-		"name": "Garden",//花园
+	{//花园
+		"name": "Garden",
 		"maintenance": 5,
 		"cost": 120,
 		"hurryCostModifier": 25,
@@ -1376,17 +1642,8 @@
 					
 					"Only available <after adopting [Mysticism]>"],
 	},
-	{
-		"name": "Dam",//水坝
-		"maintenance": 11,
-		"cost": 300,
-		"uniques": ["Must be next to [River]",
-					"[+1 Food] from [Flood plains] tiles [in this city]",
-					
-					"Only available <after adopting [Civil Engineering]>"]
-	},
-	{
-		"name": "City Hall",//市政厅
+	{//市政厅
+		"name": "City Hall",
 		"maintenance": 11,
 		"cost": 300,
 		"hurryCostModifier": 25,
@@ -1398,8 +1655,8 @@
 					
 					"Only available <after adopting [Political Reform]>"]
 	},
-	{
-		"name": "Hydro Plant",//水电站
+	{//水电站
+		"name": "Hydro Plant",
 		"requiredResource": "Aluminum",
 		"maintenance": 13,
 		"uniques": ["Must be on [River]",
@@ -1407,36 +1664,23 @@
 					"[+1 Production] from [River] tiles [in this city]"],
 		"requiredTech": "Electricity"
 	},
-	{
-		"name": "Recycling Center",//回收中心
+	{//回收中心
+		"name": "Recycling Center",
 		"maintenance": 15,
 		"uniques": ["Provides [1] [Aluminum]"],
 		"requiredTech": "Ecology"
 	},
-	{
-		"name": "Medical Lab",//医学实验室
-		"maintenance": 16,
-		"uniques": ["[-25]% Food is carried over after population increases [in this city]"],
-		"requiredTech": "Pharmaceuticals"
-	},
-	{
-		"name": "Hospital",//医院
-		"maintenance": 17,
-		"cost": 570,
-		"uniques": ["[+25]% growth [in this city]",
-					"Only available <after adopting [Medicare for All]>"]
-	},
-	{
-		"name": "Bomb Shelter",//防空洞
+	{//防空洞
+		"name": "Bomb Shelter",
 		"maintenance": 19,
 		"uniques": ["Population loss from nuclear attacks [-75]% [in this city]"],
 		"requiredTech": "Telecommunications"
 	},
 	
-	//城市防御
+//防御
 	
-	{
-		"name": "Walls",//城墙
+	{//城墙
+		"name": "Walls",
 		"cityStrength": 10,
 		"cityHealth": 50,
 		"maintenance": 2,
@@ -1445,8 +1689,8 @@
 					"Destroyed when the city is captured"],
 		"requiredTech": "Masonry"
 	},
-	{
-		"name": "Castle",//城堡
+	{//城堡
+		"name": "Castle",
 		"cityStrength": 20,
 		"cityHealth": 50,
 		"maintenance": 5,
@@ -1461,8 +1705,8 @@
             },
         ]
 	},
-	{
-		"name": "Fortress",//要塞
+	{//要塞
+		"name": "Fortress",
 		"cityStrength": 30,
 		"cityHealth": 50,
 		"maintenance": 7,
@@ -1477,8 +1721,8 @@
             },
         ]
 	},
-	{
-		"name": "Arsenal",//兵工厂
+	{//兵工厂
+		"name": "Arsenal",
 		"cityStrength": 40,
 		"cityHealth": 50,
 		"maintenance": 10,
@@ -1493,8 +1737,8 @@
             },
         ]
 	},
-	{
-		"name": "Military Base",//军事基地
+	{//军事基地
+		"name": "Military Base",
 		"cityStrength": 50,
 		"cityHealth": 50,
 		"maintenance": 13,
@@ -1509,8 +1753,8 @@
             },
         ]
 	},
-	{
-		"name": "Command Center",//指挥中心
+	{//指挥中心
+		"name": "Command Center",
 		"cityStrength": 60,
 		"cityHealth": 50,
 		"maintenance": 15,
@@ -1528,170 +1772,203 @@
 	
 //国家奇观
 	
-	{
-		"name": "Faculty of Civil Engineering",//土木工程学院
+	{//土木工程学院
+		"name": "Faculty of Civil Engineering",
 		"isNationalWonder": true,
 		"cost": 560,
 		"uniques": ["Doubles Gold given to enemy if city is captured",
-					"Free [Base Worker] appears",
-					"All newly-trained [Worker] units [in all cities] receive the [Civil Engineer] promotion",
-					"[Civilian] units gain the [Civil Engineer] promotion",
+					"Free [Worker] appears",
+					"All newly-trained [Workers] units [in all cities] receive the [Civil Engineer] promotion",
+					"[Workers] units gain the [Civil Engineer] promotion",
 
-					"Only available <after adopting [Urbanization]>"]
+					"Only available <after adopting [Town]>"]
 	},
 	
-	{
-		"name": "National Treasury",//国家金库
+	{//国家金库
+		"name": "National Treasury",
 		"isNationalWonder": true,
 		"gold": 8,
 		"cost": 280,
-		"uniques": ["Requires a [Market] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 
-					"Only available <after adopting [Guilds]>"],
+					"Only available <if [Market] is constructed in all [non-[Puppeted]] cities> <after adopting [Guilds]>"],
 	},
-	{
-		"name": "Central Bank",//中央银行
+	{//中央银行
+		"name": "Central Bank",
 		"isNationalWonder": true,
 		"percentStatBonus": {"gold": 33},
 		"cost": 440,
-		"uniques": ["Requires a [Bank] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+20]% Yield from every [District - Business Center]",
 					
-					"Only available <after adopting [Banking]>"]
+					"Only available <if [Bank] is constructed in all [non-[Puppeted]] cities> <after adopting [Banking]>"]
 	},
-	{
-		"name": "Transshipment Hub",//转运中枢
+	{//转运中枢
+		"name": "Transshipment Hub",
 		"isNationalWonder": true,
 		"cost": 440,
-		"uniques": ["Requires a [Dockyard] in all cities",
-					"Doubles Gold given to enemy if city is captured",
-					"[+2 Gold, +1 Culture, +1 Faith, +1 Science] from each Trade Route"],
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"[+2 Gold, +1 Culture, +1 Faith, +1 Science] from each Trade Route",
+					
+					"Only available <if [Dockyard] is constructed in all [Coastal] cities> <after adopting [Banking]>"],
 		"requiredTech": "Navigation"
 	},
 	
-	{
-		"name": "Supreme Courthouse",//最高法院
+	{//最高法院
+		"name": "Supreme Courthouse",
 		"isNationalWonder": true,
 		"cost": 480,
-		"uniques": ["Requires a [Courthouse] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+5]% [Happiness] from every [Courthouse]",
 					"[+1 Happiness] from every [Courthouse]",
 					
-					"Only available <after adopting [Political Reform]>"]
+					"Only available <if [Courthouse] is constructed in all [non-[Puppeted]] cities> <after adopting [Political Reform]>"]
 	},
 	
-	{
-		"name": "National Park",//国立公园
+	{//国立公园
+		"name": "National Park",
 		"isNationalWonder": true,
 		"cost": 880,
-		"uniques": ["Requires a [Garden] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+20]% growth [in all cities]",
 					"[+1] population in a random city",
 					"[-50]% Unhappiness from [Unemployed] [in all cities]",
 					
-					"Only available <after adopting [Environmental Protection]>"]
+					"Only available <if [Courthouse] is constructed in all [Garden] cities> <after adopting [Environmental Protection]>"]
 	},
 	
-	{
-		"name": "National University",//国立大学
+	{//国立研究院
+		"name": "National College",
+		"isNationalWonder": true,
+		"science": 1,
+		"cost": 280,
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"[+3 Science] from [District - Academy] tiles [in all cities]",
+					"Free Technology",
+					
+					"Only available <if [Library] is constructed in all [non-[Puppeted]] cities> <after adopting [Political Reform]>"],
+		"requiredTech": "Physics"
+	},
+	{//国立大学
+		"name": "National University",
 		"isNationalWonder": true,
 		"percentStatBonus": {"science": 33},
 		"science": 5,
 		"cost": 440,
-		"uniques": ["Requires a [University] in all cities",
-					"Doubles Gold given to enemy if city is captured"],
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					
+					"Only available <if [University] is constructed in all [non-[Puppeted]] cities> <after adopting [Political Reform]>"],
 		"requiredTech": "Scientific Theory"
 	},
 	
-	{
-		"name": "National College",//国立研究院
-		"isNationalWonder": true,
-		"science": 1,
-		"cost": 280,
-		"uniques": ["Requires a [Library] in all cities",
-					"Doubles Gold given to enemy if city is captured",
-					"[+3 Science] from [District - Academy] tiles [in all cities]",
-					"Free Technology"],
-		"requiredTech": "Physics"
-	},
-	
-	{
-		"name": "National Museum",//国家博物院
+	{//国家博物院
+		"name": "National Museum",
 		"isNationalWonder": true,
 		"culture": 6,
 		"cost": 640,
-		"uniques": ["Requires a [Museum] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+10]% [Culture] from every [Museum]",
 
-					"Only available <after adopting [Archaeology]>"]
+					"Only available <if [Museum] is constructed in all [non-[Puppeted]] cities> <after adopting [Archaeology]>"]
 	},
 	
-	{
-		"name": "National Epic",//民族史诗
+	{//民族史诗
+		"name": "National Epic",
 		"isNationalWonder": true,
 		"cost": 240,
-		"uniques": ["Requires a [Ancestral Hall] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+50]% Great Person generation [in all cities]",
 					
-					"Only available <after adopting [Classical Philosophy]>"]
+					"Only available <if [Ancestral Hall] is constructed in all [non-[Puppeted]] cities> <after adopting [Classical Philosophy]>"]
 	},
 	
-	{
-		"name": "Heroic Monument",//英雄纪念碑
+	{//英雄纪念碑
+		"name": "Heroic Monument",
 		"isNationalWonder": true,
 		"cost": 200,
-		"uniques": ["Requires a [Monument] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[non-air] units gain the [Morale] promotion",
 					
-					"Only available <after adopting [Military Tradition]>"]
-	},
-	{
-		"name": "Grand Temple",//圣殿
-		"isNationalWonder": true,
-		"cost": 280,
-		"uniques": ["Requires a [Temple] in all cities",
-					"Doubles Gold given to enemy if city is captured",
-					"[+50]% Yield from every [District - Holy Site]",
-					
-					"Only available <after adopting [Theology]>"]
+					"Only available <if [Monument] is constructed in all [Non-occupied] cities> <after adopting [Military Tradition]>"]
 	},
 	
-	{
-		"name": "Manufactory",//制造中心
+	{//圣殿
+		"name": "Grand Temple",
+		"isNationalWonder": true,
+		"cost": 280,
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"[+50]% Yield from every [District - Holy Site]",
+					
+					"Only available <if [Temple] is constructed in all [{Your} {in cities following our religion}] cities> <after adopting [Theology]>"]
+	},
+	
+	{//制造中心
+		"name": "Manufactory",
 		"isNationalWonder": true,
 		"production": 5,
 		"cost": 480,
-		"uniques": ["Requires a [Workshop] in all cities",
-					"Doubles Gold given to enemy if city is captured",
-					"Free [Great Engineer] appears"],
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"Free [Great Engineer] appears",
+					
+					"Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>"],
 		"requiredTech": "Mass Production"
 	},
 	
-//胜利方式
-
-	{
-		"name": "World-famous Attraction",//世界著名的旅游景点
+	{//恒星基地建设
+		"name": "Starbase Construction",
 		"isNationalWonder": true,
-		"cost": 2000,
+		"cost": 1520,
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"Provides [12] [Electric Power]",
+					
+					"Only available <in [non-[Puppeted]] cities>"],
+		"requiredTech": "Stellar Utilization"
+	},
+	
+	{//巨型装配系统
+		"name": "Mega-Assembly System",
+		"isNationalWonder": true,
+		"cost": 1520,
+		"uniques": ["Doubles Gold given to enemy if city is captured",
+					"[+10]% [Production] from every [Production]",
+					
+					"Only available <in [non-[Puppeted]] cities>"],
+		"requiredTech": "Space Materialogy"
+	},
+	
+//胜利方式
+	
+	{//宇宙研究所
+		"name": "Space Research Institute",
+		"percentStatBonus": {"science": 25},
+		"specialistSlots": {"Scientist": 5},
+		"science": 20,
+		"maintenance": 24,
+		"cost": 1380,
+		"hurryCostModifier": 50,
+		"uniques": ["Only available <after adopting [Dream Universe]>",
+					
+					"Provides [1] [Research Point] <hidden from users>"]
+	},
+
+	{//世界著名的旅游景点
+		"name": "World-famous Attraction",
+		"isNationalWonder": true,
+		"cost": 2300,
 		"culture": 12,
 		"gold": 20,
 		"uniques": ["Only available <when above [2999] [Tourism Performance]>",
-					"Costs [3000] [Tourism Performance]",
+					"Instantly consumes [3000] [Tourism Performance]",
 					"Cannot be hurried",
 					"Triggers a global alert upon build start"]
 	},
 	
 //奇观
 	
-	{
-		"name": "The Great Library",//大图书馆
+	//远古
+	
+	{//大图书馆
+		"name": "The Great Library",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"science": 2,
@@ -1706,8 +1983,8 @@
 		"replacementTextForUniques": " [Require '[Writing]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Gain [1] Free Technologies] \n",
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
-	{
-		"name": "Temple of Artemis",//阿尔忒弥斯神庙
+	{//阿尔忒弥斯神庙
+		"name": "Temple of Artemis",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1720,8 +1997,8 @@
 		"replacementTextForUniques": " [Require '[Animal Husbandry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [All cities] [[+10]% [Food]] & [[+20]% Production when constructing '[Ranged]' [units]] \n",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
 	},
-	{
-		"name": "Stonehenge",//巨石阵
+	{//巨石阵
+		"name": "Stonehenge",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1736,8 +2013,8 @@
 		"replacementTextForUniques": " [Require '[Astrology]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [[1] '[Great Prophet]' units appear] \n",
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
 	},
-	{
-		"name": "The Pyramids",//大金字塔
+	{//大金字塔
+		"name": "The Pyramids",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1745,14 +2022,14 @@
 					"Ancient era Wonder",
 					
 					"Must have an owned [Desert] within [3] tiles",
-					"[-25]% construction time for [All] improvements",
-					"[2] free [Base Worker] units appear"],
+					"[Workers] units gain the [Great Engineering] promotion",
+					"[2] free [Worker] units appear"],
 		"requiredTech": "Masonry",
-		"replacementTextForUniques": " [Require '[Masonry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Must have an owned '[Desert]' within [3] tiles] \n\n [[-25]% construction time for '[All]' improvements] \n [[2] '[Base Worker]' units appear] \n",
+		"replacementTextForUniques": " [Require '[Masonry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Must have an owned '[Desert]' within [3] tiles] \n\n [[-25]% construction time for '[All]' improvements] \n [[2] '[Worker]' units appear] \n",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
 	},
-	{
-		"name": "Mausoleum of Halicarnassus",//摩索拉斯陵墓
+	{//摩索拉斯陵墓
+		"name": "Mausoleum of Halicarnassus",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -1766,8 +2043,8 @@
 		"replacementTextForUniques": " [Require '[Masonry]'] \n\n [Ancient Wonder] \n [Ancient era Wonder] \n\n [Upon entering a Golden Age], [Gain [600] [Gold]] \n ['[Marble]' & '[Stone]' [tiles] [+2 Gold]] \n",
 		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
 	},
-	{
-		"name": "Mohenjo-Daro Great Bath",//摩亨佐-达罗大浴场
+	{//摩亨佐-达罗大浴场
+		"name": "Mohenjo-Daro Great Bath",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -1781,10 +2058,10 @@
 		"quote": "'Yet in this captious and intenible sieve, I still pour in the waters of my love, And lack not to lose still: thus, Indian-like, Religious in mine error, I adore. The sun, that looks upon his worshipper, But knows of him no more.'"
 	},
 	
-	////
+	//古典
 	
-	{
-		"name": "The Great Lighthouse",//大灯塔
+	{//大灯塔
+		"name": "The Great Lighthouse",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -1800,8 +2077,8 @@
 		"replacementTextForUniques": " [Require '[Optics]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must be next to '[Coast]'] \n\n ['[{Military} {Water}]' & '[{Military} {Embarked}]' [units] [[[+1] Movement] [[+1] Sight]]] \n",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
 	},
-	{
-		"name": "Hanging Gardens",//空中花园
+	{//空中花园
+		"name": "Hanging Gardens",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -1815,8 +2092,8 @@
 		"replacementTextForUniques": " [Require '[Mathematics]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [All cities] [[+33]% [Growth]] \n [[+2 Happiness] in cities on '[Fresh Water]' tiles] \n",
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
-	{
-		"name": "The Oracle",//神谕所
+	{//神谕所
+		"name": "The Oracle",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 5,
@@ -1830,8 +2107,8 @@
 		"replacementTextForUniques": " [Require '[Classical Philosophy]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Gain [1] Free Policies] \n",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},
-	{
-		"name": "Colossus",//太阳神巨像
+	{//太阳神巨像
+		"name": "Colossus",
 		"isWonder": true,
 		"percentStatBonus": {"gold": 33},
 		"greatPersonPoints": {"Great Merchant I": 2},
@@ -1847,8 +2124,8 @@
 		"replacementTextForUniques": " [Require '[Construction]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must be next to '[Coast]'] \n",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
-	{
-		"name": "Statue of Zeus",//宙斯神像
+	{//宙斯神像
+		"name": "Statue of Zeus",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1863,8 +2140,8 @@
 		"quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
 		
 	},
-	{
-		"name": "Great Wall",//长城
+	{//长城
+		"name": "Great Wall",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 3,
@@ -1876,8 +2153,8 @@
 		"replacementTextForUniques": " [Require '[Engineering]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Enemy '[Land]' units must spend [1] extra movement points when inside your territory] \n",
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
 	},
-	{
-		"name": "Terracotta Army",//兵马俑
+	{//兵马俑
+		"name": "Terracotta Army",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 5,
@@ -1889,8 +2166,8 @@
 		"replacementTextForUniques": " [Require '[Horse Armor]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [New '[{Military} {Land}]' units [15] XP] \n",
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
 	},
-	{
-		"name": "Petra",//佩特拉
+	{//佩特拉
+		"name": "Petra",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1906,8 +2183,8 @@
 		"replacementTextForUniques": " [Require '[Urban Planning]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must be next to '[Desert]'] \n ['[Desert]' [tiles] [+1 Production]] \n ['[{Desert} ({without '[Flood plains]'})]' [tiles] [+1 Food, +1 Gold]] \n",
 		"quote": "'...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...' - Indiana Jones"
 	},
-	{
-		"name": "Chichen Itza",//奇琴伊察
+	{//奇琴伊察
+		"name": "Chichen Itza",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1918,12 +2195,12 @@
 					
 					"[+25]% Golden Age length",
 					
-					"Only available <after adopting [Astrology]>"],
-		"replacementTextForUniques": " [Require '[Astrology]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [[+25]% Golden Age length] \n",
+					"Only available <after adopting [Calendar]>"],
+		"replacementTextForUniques": " [Require '[Calendar]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [[+25]% Golden Age length] \n",
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam"
 	},
-	{
-		"name": "Roman Colosseum",//罗马斗兽场
+	{//罗马斗兽场
+		"name": "Roman Colosseum",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -1938,8 +2215,8 @@
 		"replacementTextForUniques": " [Require '[Warrior Code]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n ['[Happiness]' [building] [+2 Gold, +1 Culture]] \n",
 		"quote": "'While the Colosseum stands, Rome shall stand; when the Colosseum falls, Rome shall fall; when Rome falls, the world shall fall.'"
 	},
-	{
-		"name": "Jebel Barkal",//博尔戈尔山
+	{//博尔戈尔山
+		"name": "Jebel Barkal",
 		"isWonder": true,
 		"culture": 1,
 		"uniques": ["Ancient Wonder",
@@ -1954,8 +2231,8 @@
 		"replacementTextForUniques": " [Require '[Iron Working]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must have an owned '[Desert]' within [3] tiles] \n\n [Provide [2] '[Iron]' & '[Copper]'] \n ['[Desert]' [tiles] [+1 Faith]] \n [[+3 Faith] in cities on '[Desert]' tiles] \n",
 		"quote": "'At the south-west corner a large perpendicular mass of sandstone has become separated by a deep fissure from the body of the mountain … it has all the appearance of a colossal statue.' – E. A. Wallis Budge"
 	},
-	{
-		"name": "The Beijing-Hangzhou Canal",//京杭运河
+	{//京杭运河
+		"name": "The Beijing-Hangzhou Canal",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"specialistSlots": {"Engineer": 2},
@@ -1972,8 +2249,8 @@
 		"replacementTextForUniques": " [Require '[Engineering]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must have an owned '[River]' within [3] tiles] \n\n ['[City center]' [district] [+1 Gold] from each [2] adjacent '[River]' [tiles]] \n",
 		"quote": "'Although everyone says that the Sui Dynasty died because of this canal, today the world relies on it for thousands of miles of water transportation.'"
 	},
-	{
-		"name": "Dujiangyan",//都江堰
+	{//都江堰
+		"name": "Dujiangyan",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -1990,8 +2267,8 @@
 		"replacementTextForUniques": " [Require '[Engineering]'] \n\n [Ancient Wonder] \n [Classical era Wonder] \n\n [Must have an owned '[River]' within [3] tiles] \n\n [This city] ['[River]' [tiles] [+1 Food]] \n ['[Farm]' [improvement] [+1 Food] from each [2] adjacent '[River]' [tiles]] \n",
 		"quote": "'A lot of beautiful water connects the land and nourishes the land.' - Huang Yu, Dujiangyan"
 	},
-	{
-		"name": "Mogao Caves",//莫高窟
+	{//莫高窟
+		"name": "Mogao Caves",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 3,
@@ -2009,10 +2286,10 @@
 		"quote": "'它是一种狂欢，一种释放。在它的怀抱里神人交融，时空飞腾，于是，它让人走进神话、走进寓言，走进宇宙意识的霓虹。(I didn't find a translation.)' - Yu Qiuyu, Cultural Perplexity in Agonized Travel"
 	},
 	
-	////
+	//中古
 	
-	{
-		"name": "Great Mosque of Djenne",//吉尼大清真寺
+	{//吉尼大清真寺
+		"name": "Great Mosque of Djenne",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 3,
@@ -2026,8 +2303,8 @@
 		"replacementTextForUniques": " [Require '[Theology]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n ['[Religious Unit]' units gain the '[Devout]' promotion] \n",
 		"quote": "'With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.' - Thomas Chalmers"
 	},
-	{
-		"name": "Hagia Sophia",//圣索菲亚大教堂
+	{//圣索菲亚大教堂
+		"name": "Hagia Sophia",
 		"isWonder": true,
 		"culture": 3,
 		"faith": 4,
@@ -2041,8 +2318,8 @@
 		"replacementTextForUniques": " [Require '[Theology]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [[1] '[Great Prophet]' units appear] \n",
 		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty' - Procopius, De Aedificis"
 	},
-	{
-		"name": "Angkor Wat",//吴哥窟
+	{//吴哥窟
+		"name": "Angkor Wat",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 2,
@@ -2057,8 +2334,8 @@
 		"replacementTextForUniques": " [Require '[Aesthetics]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [[-33]% Culture cost of natural border growth] \n [[-33]% Gold cost of acquiring tiles] \n",
 		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena"
 	},
-	{
-		"name": "Machu Picchu",//马丘比丘
+	{//马丘比丘
+		"name": "Machu Picchu",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2073,8 +2350,8 @@
 		"replacementTextForUniques": " [Require '[Astronomy]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [Must have an owned '[Mountain]' within [3] tiles] \n [[+25]% [Gold] from Trade Routes] \n",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
 	},
-	{
-		"name": "Alhambra",//阿尔罕布拉宫
+	{//阿尔罕布拉宫
+		"name": "Alhambra",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"percentStatBonus": {"culture": 20},
@@ -2089,8 +2366,8 @@
 		"replacementTextForUniques": " [Require '[Aesthetics]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [May buy '[Defensive Building]' [building] with [Culture] for [1] times their normal Production cost] \n",
 		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
 	},
-	{
-		"name": "Notre Dame",//巴黎圣母院
+	{//巴黎圣母院
+		"name": "Notre Dame",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2102,8 +2379,8 @@
 		"replacementTextForUniques": " [Require '[Stirrups]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n",
 		"quote": "'Architecture has recorded the great ideas of the human race. Not only every religious symbol, but every human thought has its page in that vast book.' - Victor Hugo"
 	},
-	{
-		"name": "Leaning Tower of Pisa",//比萨斜塔
+	{//比萨斜塔
+		"name": "Leaning Tower of Pisa",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2112,14 +2389,14 @@
 					"Medieval era Wonder",
 					
 					"[+33]% Great Person generation [in all cities]",
-					"Free Great Person",
+					"Free [Talent] appears",
 
 					"Only available <after adopting [Guilds]>"],
-		"replacementTextForUniques": " [Require '[Guilds]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [Free Great Person] \n [All cities] [[+33]% Great Person generation] \n",
+		"replacementTextForUniques": " [Require '[Guilds]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [[1] '[Talent]' units appear] \n [All cities] [[+33]% Great Person generation] \n",
 		"quote": "'Don't clap too hard - it's a very old building.' - John Osbourne"
 	},
-	{
-		"name": "Mahabodhi Temple",//摩诃菩提寺
+	{//摩诃菩提寺
+		"name": "Mahabodhi Temple",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 1,
@@ -2134,8 +2411,8 @@
 		"replacementTextForUniques": " [Require '[Idealism]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [Gain a free '[Follower]' belief] \n ['[Faith]' [building] [+1 Faith]] \n",
 		"quote": "'In a dusty, bustling corner of the Indian state of Bihar, there is a magical place that one might think of as the hub of Buddhism.'"
 	},
-	{
-		"name": "Mont St. Michel",//圣米歇尔山
+	{//圣米歇尔山
+		"name": "Mont St. Michel",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2151,8 +2428,8 @@
 		"replacementTextForUniques": " [Require '[Theology]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [[+4 Faith] from each Trade Route] \n ['[Natural Wonder]' [tiles] [+2 Faith]] \n",
 		"quote": "'Church and State, Soul and Body, God and Man, are all one at Mont Saint Michel, and the business of all is to fight, each in his own way, or to stand guard for each other.'"
 	},
-	{
-		"name": "Oxford University",//牛津大学
+	{//牛津大学
+		"name": "Oxford University",
 		"requiredBuilding": "University",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
@@ -2167,8 +2444,8 @@
 		"replacementTextForUniques": " [Require '[Education]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [Gain [2] Free Technologies] \n",
 		"quote": "'The clever men at Oxford... Know all that there is to be knowed. But they none of them know one half as much... As intelligent Mr. Toad!'"
 	},
-	{
-		"name": "University of Sankore",//桑科雷大学
+	{//桑科雷大学
+		"name": "University of Sankore",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"percentStatBonus": {"science": 33},
@@ -2183,8 +2460,8 @@
 		"replacementTextForUniques": " [Require '[Education]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [[+4 Science] from each Trade Route] \n",
 		"quote": "'Scholars are the heirs of the prophets, for the prophets did not leave behind a legacy of wealth but that of knowledge.'"
 	},
-	{
-		"name": "Huey Teocalli",//休伊神庙
+	{//休伊神庙
+		"name": "Huey Teocalli",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2198,8 +2475,8 @@
 		"replacementTextForUniques": " [Require '[Machinery]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n [Must have an owned '[Lakes]' within [3] tiles] \n ['[Lakes]' [tiles] [+1 Food, +1 Production]] \n [This city] ['[Lakes]' [tiles] [+1 Production]] \n",
 		"quote": "'But the wrath of Huizlopochtli was great, and as the sacrifice passed each of the four rooms dedicated to the sun god, the sun disappeared or reappeared in the sky.'"
 	},
-	{
-		"name": "Kotoku-in",//高德院
+	{//高德院
+		"name": "Kotoku-in",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 3,
@@ -2211,8 +2488,8 @@
 		"replacementTextForUniques": " [Require '[Machinery]'] \n\n [Ancient Wonder] \n [Medieval era Wonder] \n\n ['[non-air]' units gain the '[Martyrdom]' promotion] \n",
 		"quote": "'O ye who tread the Narrow Way, by Tophet-flare to Judgment Day, be gentle when ‘the heathen’ pray, to Buddha at Kamakura!'"
 	},
-	{
-		"name": "Umayyad Mosque",//大马士革清真寺
+	{//大马士革清真寺
+		"name": "Umayyad Mosque",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 4,
@@ -2227,10 +2504,10 @@
 		"quote": "'Indeed, those who have believed and done righteous deeds - their Lord will guide them because of their faith. Beneath them rivers will flow in the Gardens of Pleasure.' - The Koran"
 	},
 	
-	////
+	//文艺
 	
-	{
-		"name": "Sistine Chapel",//西斯廷教堂
+	{//西斯廷教堂
+		"name": "Sistine Chapel",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2244,8 +2521,8 @@
 		"replacementTextForUniques": " [Require '[Art Education]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [All cities] [[+20]% [Culture]] \n",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
 	},
-	{
-		"name": "Himeji Castle",//姬路城
+	{//姬路城
+		"name": "Himeji Castle",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"cityStrength": 15,
@@ -2258,8 +2535,8 @@
 		"replacementTextForUniques": " [Require '[Gunpowder]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n ['[All]' [units] [when fighting in '[Friendly Land]' tiles] [[+15]% Strength]] \n",
 		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
 	},
-	{
-		"name": "Forbidden Palace",//紫禁城
+	{//紫禁城
+		"name": "Forbidden Palace",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2271,8 +2548,8 @@
 		"replacementTextForUniques": " [Require '[Printing]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [All cities] [[-10]% Unhappiness from '[Population]'] \n",
 		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
 	},
-	{
-		"name": "Potala Palace",//布达拉宫
+	{//布达拉宫
+		"name": "Potala Palace",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 2,
@@ -2284,8 +2561,8 @@
 		"replacementTextForUniques": " [Require '[Printing]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [[Faith] cost of purchasing '[All]' [items] [-40]%] \n",
 		"quote": "'The first time I stepped onto the rooftop of the Potala Palace, I felt, as never before or since, as if I were stepping onto the rooftop of my being: onto some dimension of consciousness that I’d never visited before.'"
 	},
-	{
-		"name": "Kremlin",//克里姆林宫
+	{//克里姆林宫
+		"name": "Kremlin",
 		"isWonder": true,
 		"culture": 3,
 		"cityStrength": 18,
@@ -2297,8 +2574,8 @@
 		"replacementTextForUniques": " [Require '[Military Engineering]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [[+20]% City Strength from defensive buildings] \n",
 		"quote": "'The Law is a fortress on a hill that armies cannot take or floods wash away.' - The Prophet Muhammed"
 	},
-	{
-		"name": "Hermitage",//冬宫
+	{//冬宫
+		"name": "Hermitage",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2312,8 +2589,8 @@
 		"replacementTextForUniques": " [Require '[Architecture]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n ['[Culture]' [building] [+2 Culture]] \n",
 		"quote": "'Museums are on the front lines of the fight for culture, of good with evil – in any case, of the fight against platitudes and primitiveness.'"
 	},
-	{
-		"name": "Kilwa Kisiwani",//基尔瓦·基斯瓦尼
+	{//基尔瓦·基斯瓦尼
+		"name": "Kilwa Kisiwani",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2331,8 +2608,8 @@
 		"replacementTextForUniques": " [Require '[Coastal Construction]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [Must be next to '[Coast]'] \n\n [[+3 Gold] from each Trade Route] \n ['[Water Resource]' [tiles] [+1 Gold]] \n [This city] ['[Ocean]' & '[Coast]' [tiles] [+2 Gold]] \n",
 		"quote": "'Kilwa is one of the most beautifully built cities in the world; the houses there are entirely made of wood, their rooftops out of rope grass, and it rains with great vigour.'"
 	},
-	{
-		"name": "St. Basil's Cathedral",//圣瓦西里主教座堂
+	{//圣瓦西里主教座堂
+		"name": "St. Basil's Cathedral",
 		"isWonder": true,
 		"culture": 4,
 		"cost": 540,
@@ -2346,8 +2623,8 @@
 		"replacementTextForUniques": " [Require '[Art Education]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n [Must be next to '[Tundra]'] \n\n [This city] ['[Tundra]' [tiles] [+1 Food, +1 Production, +1 Culture]] \n",
 		"quote": "'One had a twisted design, red, on a green ground; another, all prickly angles, yellow and black; a third was ornamented with scales of blue and crimson; a forth was in quarters like a melon.'"
 	},
-	{
-		"name": "Meenakshi Temple",//米纳克希神庙
+	{//米纳克希神庙
+		"name": "Meenakshi Temple",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 2,
@@ -2364,8 +2641,8 @@
 		"replacementTextForUniques": " [Require '[Military Engineering]'] \n\n [Ancient Wonder] \n [Renaissance era Wonder] \n\n ['[City]' [district] [+2 Faith] from each [1] adjacent '[Holy Site]' [district]] \n",
 		"quote": "'We greet you, Devi Meenakshi, she who shines like a thousand-million suns, adorned with bracelets and garlands... She who is auspicious, she who embodies existence. I always bow to you, whose compassion is an ocean.'"
 	},
-	{
-		"name": "St. Peter's Basilica Church",//圣彼得大教堂
+	{//圣彼得大教堂
+		"name": "St. Peter's Basilica Church",
 		"isWonder": true,
 		"culture": 1,
 		"faith": 2,
@@ -2381,10 +2658,10 @@
 		"quote": "'But be holy in every detail of your lives, as he, whose servants you are, is holy.' - I Peter"
 	},
 	
-	////
+	//启蒙
 	
-	{
-		"name": "Taj Mahal",//泰姬陵
+	{//泰姬陵
+		"name": "Taj Mahal",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2400,8 +2677,8 @@
 		"replacementTextForUniques": " [Require '[Architecture]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n [Empire enters golden age] \n [[1] '[Great Artist I]' units appear] \n",
 		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.' - Rabindranath Tagore"
 	},
-	{
-		"name": "Porcelain Tower",//大报恩寺塔
+	{//大报恩寺塔
+		"name": "Porcelain Tower",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 1,
@@ -2414,8 +2691,8 @@
 		"replacementTextForUniques": " [Require '[Scientific Theory]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n [Science gained from research agreements [+50]%] \n [[1] '[Great Scientist I]' units appear] \n",
 		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.' - James Russell Lowell"
 	},
-    {
-        "name": "Venetian Arsenal",//威尼斯军械库
+    {//威尼斯军械库
+        "name": "Venetian Arsenal",
         "isWonder": true,
         "greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2432,8 +2709,8 @@
 		"replacementTextForUniques": " [Require '[Mass Production]'] \n\n [Enlightenment era Wonder] \n\n [Must be next to '[Coast]'] \n\n [Upon gaining a '[Water 'Melee' 'Hot weapon']' unit], [[1] '[Water 'Support']' units appear]",
         "quote": "'The Commonwealth of Venice in their armory have this inscription: 'Happy is that city which in time of peace thinks of war'.' –Robert Burton"
     },
-	{
-		"name": "Brandenburg Gate",//勃兰登堡门
+	{//勃兰登堡门
+		"name": "Brandenburg Gate",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 3,
@@ -2445,8 +2722,8 @@
 		"replacementTextForUniques": " [Require '[Military Science]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n ['[All]' [units] [[+3] XP gained from combat]] \n",
 		"quote": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.' - Horace"
 	},
-	{
-		"name": "Summer Palace",//颐和园
+	{//颐和园
+		"name": "Summer Palace",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 3, "Great Engineer": 3},
 		"culture": 1,
@@ -2461,8 +2738,8 @@
 		"replacementTextForUniques": " [Require '[Architecture]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n ['[Wonder]' [building] [[+2]% [Yield]]] \n",
 		"quote": "'Spring lake, sunset, blue waves, turquoise, turquoise, clear water waves, the clear shadow of the building platform, tens of miles of green mountains and emerald green, a line of egrets like in the jade and blue jade structure of the painting, this scene is like the Jiangnan water scene is unforgettable.'"
 	},
-	{
-		"name": "Royal Greenwich Observatory",//格林尼治天文台
+	{//格林尼治天文台
+		"name": "Royal Greenwich Observatory",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 1,
@@ -2478,8 +2755,8 @@
 		"replacementTextForUniques": " [Require '[Civil Engineering]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n [Must have an owned '[Mountain]' within [3] tiles] \n\n ['[Mountain]' [tiles] [+3 Science]] \n",
 		"quote": "'The road to the stars is difficult.' - Seneca"
 	},
-	{
-		"name": "White House",//白宫
+	{//白宫
+		"name": "White House",
 		"isWonder": true,
 		"culture": 1,
 		"uniques": ["Ancient Wonder",
@@ -2490,8 +2767,8 @@
 		"replacementTextForUniques": " [Require '[Scientific Theory]'] \n\n [Ancient Wonder] \n [Enlightenment era Wonder] \n\n ['[All]' [district] [[+20]% [Yield]]] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "Versailles Palace",//凡尔赛宫
+	{//凡尔赛宫
+		"name": "Versailles Palace",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2504,10 +2781,10 @@
 		"quote": "No introduction (welcome to contribute)"
 	},
 	
-	////
+	//工业
 	
-	{
-		"name": "The Louvre",//卢浮宫
+	{//卢浮宫
+		"name": "The Louvre",
 		"isWonder": true,
 		"culture": 3,
 		"happiness": 4,
@@ -2520,8 +2797,8 @@
 		"replacementTextForUniques": " [Require '[Archaeology]'] \n\n [Industrial era Wonder] \n\n [[2] '[Great Artist I]' units appear] \n",
 		"quote": "'Every genuine work of art has as much reason for being as the earth and the sun' - Ralph Waldo Emerson"
 	},
-	{
-		"name": "Big Ben",//大本钟
+	{//大本钟
+		"name": "Big Ben",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2533,8 +2810,8 @@
 		"replacementTextForUniques": " [Require '[Rifling]'] \n\n [Industrial era Wonder] \n\n [[Gold] cost of purchasing '[All]' [items] [-15]%] \n",
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.' - Leonard Bernstein"
 	},
-	{
-		"name": "Eiffel Tower",//埃菲尔铁塔
+	{//埃菲尔铁塔
+		"name": "Eiffel Tower",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2546,8 +2823,8 @@
 		"replacementTextForUniques": " [Require '[Sanitation]'] \n\n [Industrial era Wonder] \n\n [[+2 Gold, +2 Culture] per [4] social policies adopted] \n",
 		"quote": "'We live only to discover beauty, all else is a form of waiting' - Kahlil Gibran"
 	},
-	{
-		"name": "Statue of Liberty",//自由女神像
+	{//自由女神像
+		"name": "Statue of Liberty",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2558,8 +2835,8 @@
 		"replacementTextForUniques": " [Require '[Electricity]'] \n\n [Industrial era Wonder] \n\n ['[World Wonder]' [Wonder] [+1 Happiness]] \n",
 		"quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!' - Emma Lazarus"
 	},
-	{
-		"name": "Neuschwanstein",//新天鹅堡
+	{//新天鹅堡
+		"name": "Neuschwanstein",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"happiness": 2,
@@ -2574,8 +2851,8 @@
 		"replacementTextForUniques": " [Require '[Biology]'] \n\n [Industrial era Wonder] \n\n [Must have an owned '[Mountain]' within [3] tiles] \n\n ['[City center]' [district] [+2 Culture, +2 Gold]] \n",
 		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.' - King Ludwig II of Bavaria"
 	},
-	{
-		"name": "Ruhr Valley",//鲁尔山谷
+	{//鲁尔山谷
+		"name": "Ruhr Valley",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"percentStatBonus": {"production": 20},
@@ -2590,10 +2867,10 @@
 		"quote": "'The industrial heart of Germany practically stopped beating. Hardly anyone worked; hardly anything ran. The population of the Ruhr area … had to be supported by the rest of the country.'"
 	},
 	
-	////
+	//电气
 	
-	{
-		"name": "Cristo Redentor",//救世基督像
+	{//救世基督像
+		"name": "Cristo Redentor",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 5,
@@ -2604,8 +2881,8 @@
 		"replacementTextForUniques": " [Require '[Ecology]'] \n\n [Modern era Wonder] \n\n [Gain [2] Free Policies] \n",
 		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.' - New Testament, Matthew 11:28"
 	},
-	{
-		"name": "Golden Gate Bridge",//金门大桥
+	{//金门大桥
+		"name": "Golden Gate Bridge",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2620,10 +2897,10 @@
 		"quote": "'The golden gates of Sleep unbar, Where Strength and Beauty, met together, Kindle their image like a star, In a sea of glassy weather!'"
 	},
 	
-	////
+	//原子
 	
-	{
-		"name": "Sydney Opera House",//悉尼歌剧院
+	{//悉尼歌剧院
+		"name": "Sydney Opera House",
 		"requiredBuilding": "Opera House",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
@@ -2636,8 +2913,8 @@
 		"replacementTextForUniques": " [Require '[Environmental Science]'] \n\n [Atomic era Wonder] \n\n [Must be next to '[Coast]'] \n",
 		"quote": "'Those who lose dreaming are lost.' - Australian Aboriginal saying"
 	},
-	{
-		"name": "Pentagon",//五角大楼
+	{//五角大楼
+		"name": "Pentagon",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 3,
@@ -2650,8 +2927,8 @@
 		"replacementTextForUniques": " [Require '[Combined Arms]'] \n\n [Atomic era Wonder] \n\n [[20] units cost no maintenance] \n",
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.' - Dwight D. Eisenhower"
 	},
-	{
-		"name": "United Nations",//联合国
+	{//联合国
+		"name": "United Nations",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2662,12 +2939,12 @@
 					"Triggers voting for the Diplomatic Victory",
 					"Triggers a global alert upon completion",
 					
-					"Only available <after adopting [[Cold War] [(Policy)]]>"],
-		"replacementTextForUniques": " [Require '[[Cold War] [(Policy)]]'] \n\n [Atomic era Wonder] \n\n [Hidden when [Diplomatic Victory] Victory is disabled] \n\n [Triggers voting for the Diplomatic Victory] \n [Triggers a global alert upon completion] \n",
+					"Only available <after adopting [[Cold War] [(Military)]]>"],
+		"replacementTextForUniques": " [Require '[[Cold War] [(Military)]]'] \n\n [Atomic era Wonder] \n\n [Hidden when [Diplomatic Victory] Victory is disabled] \n\n [Triggers voting for the Diplomatic Victory] \n [Triggers a global alert upon completion] \n",
 		"quote": "'More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.' - Kofi Annan"
 	},
-	{
-		"name": "CN Tower",//加拿大国家电视塔
+	{//加拿大国家电视塔
+		"name": "CN Tower",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2678,8 +2955,8 @@
 		"replacementTextForUniques": " [Require '[Computers]'] \n\n [Atomic era Wonder] \n\n ['[City]' [district] [+1 Happiness, +2 Culture]] \n",
 		"quote": "'Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.' - Douglas Adams"
 	},
-	{
-		"name": "Amundsen-Scott Research Station",//阿蒙森-斯科特南极站
+	{//阿蒙森-斯科特南极站
+		"name": "Amundsen-Scott Research Station",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 1,
@@ -2694,8 +2971,8 @@
 		"replacementTextForUniques": " [Require '[Environmental Science]'] \n\n [Atomic era Wonder] \n\n [This city] ['[Snow]' [tiles] [+2 Science, +1 Production]] \n [All cities] [[+15]% [Science]] [[+10]% [Production]] \n",
 		"quote": "'For scientific leadership, give me Scott; for swift and efficient travel, Amundsen.'"
 	},
-	{
-		"name": "Lincoln Center",//林肯艺术中心
+	{//林肯艺术中心
+		"name": "Lincoln Center",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2706,8 +2983,8 @@
 		"replacementTextForUniques": " [Require '[Composites]'] \n\n [Atomic era Wonder] \n\n ['[Landmark]' [district] [+2 Science, +1 Production]] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "Empire State Building",//帝国大厦
+	{//帝国大厦
+		"name": "Empire State Building",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2720,10 +2997,10 @@
 		"quote": "No introduction (welcome to contribute)"
 	},
 	
-	////
+	//信息
 	
-	{
-		"name": "Hubble Space Telescope",//哈勃太空望远镜
+	{//哈勃太空望远镜
+		"name": "Hubble Space Telescope",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"percentStatBonus": {"science": 50},
@@ -2736,8 +3013,8 @@
 		"replacementTextForUniques": " [Require '[Satellites]'] \n\n [Information era Wonder] \n\n [[2] '[Great Scientist I]' units appear] \n",
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.' - Anatole France"
 	},
-	{
-		"name": "International Space Station",//国际空间站
+	{//国际空间站
+		"name": "International Space Station",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 1,
@@ -2750,8 +3027,8 @@
 		"replacementTextForUniques": " [Require '[Satellites]'] \n\n [Information era Wonder] \n\n [All cities] [+3 Science] \n [In cities with at least [6] '[Specialists]'] [+25]% [Science] \n [Capital] [+10]% [Science] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "Three Gorges Dam",//三峡大坝
+	{//三峡大坝
+		"name": "Three Gorges Dam",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2764,8 +3041,8 @@
 		"replacementTextForUniques": " [Require '[Clean Energy]'] \n\n [Information era Wonder] \n\n [Must be on '[River]'] \n\n [This city] ['[River]' [tiles] [+2 Production]] \n",
 		"quote": "'In spring and winter, you can see white rapids and swirling waves. The turquoise waters reflect the shadows of various scenes. Many strangely shaped cypress trees grow on the extremely high peaks, and there is a hanging spring waterfall between the peaks, which rushes above. The water is clear, the trees are glorious, the mountains are high, the grass is abundant, and the fun is endless.'"
 	},
-	{
-		"name": "Museo Nacional Centro de Arte Reina Sofía",//索非亚王后国家艺术中心博物馆
+	{//索非亚王后国家艺术中心博物馆
+		"name": "Museo Nacional Centro de Arte Reina Sofía",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist I": 2},
 		"culture": 1,
@@ -2778,8 +3055,8 @@
 		"replacementTextForUniques": " [Require '[Multicultural]'] \n\n [Information era Wonder] \n\n ['[Ancient Wonder]' [wonder] [[+5]% [Culture]]] \n",
 		"quote": "'Just as heat cannot be separated from fire, beauty cannot exist without eternity. And my mind is from eternity, burning something similar to eternity.' - Michelangelo, Italy."
 	},
-	{
-		"name": "World Trade Center",//世贸双子塔
+	{//世贸双子塔
+		"name": "World Trade Center",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Merchant I": 2},
 		"culture": 1,
@@ -2790,8 +3067,8 @@
 		"replacementTextForUniques": " [Require '[Advanced Ballistics]'] \n\n [Information era Wonder] \n\n ['[City]' [District] [+3 Gold]] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "Burj Khalifa Tower",//哈利法塔
+	{//哈利法塔
+		"name": "Burj Khalifa Tower",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2803,8 +3080,8 @@
 		"replacementTextForUniques": " [Require '[Satellites]'] \n\n [Information era Wonder] \n\n ['[Gold]' [building] [+4 Gold]] \n",
 		"quote": "'Beauty triumphs over weight and gravity, and both it and the will to power seek to express themselves in buildings, architecture is a rhetoric of power.(From Bing Translation)' -Friedrich Wilhelm Nietzsche"
 	},
-	{
-		"name": "Estadio do Maracana",//马拉卡纳体育场
+	{//马拉卡纳体育场
+		"name": "Estadio do Maracana",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2817,8 +3094,8 @@
 		"replacementTextForUniques": " [Require '[Globalization]'] \n\n [Information era Wonder] \n\n [Unbuildable] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "Jiuquan Wind Power Base",//酒泉风电基地
+	{//酒泉风电基地
+		"name": "Jiuquan Wind Power Base",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"culture": 1,
@@ -2830,8 +3107,8 @@
 		"replacementTextForUniques": " [Require '[Clean Energy]'] \n\n [Information era Wonder] \n\n [Unbuildable] \n",
 		"quote": "No introduction (welcome to contribute)"
 	},
-	{
-		"name": "The Sunway Taihulight",//神威·太湖之光
+	{//神威·太湖之光
+		"name": "The Sunway Taihulight",
 		"isWonder": true,
 		"greatPersonPoints": {"Great Scientist I": 2},
 		"culture": 1,
@@ -2844,67 +3121,96 @@
 		"quote": "No introduction (welcome to contribute)"
 	},
 	
+	//星际
+	
+	{//戴森球
+		"name": "Dyson Sphere",
+		"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 2},
+		"culture": 1,
+		"uniques": ["Star era Wonder",
+					
+					"Unbuildable"
+					],
+		"requiredTech": "Stellar Utilization",
+		"quote": "No introduction (welcome to contribute)"
+	},
+	
+	
+	
+	
 	/*
 	
-	{
-		"name": "xxxx",//xxxx
+	{//xxxx
+		"name": "xxxx",
 		"isWonder": true,
 		"greatPersonPoints": {"Great xxxx": 2},
 		"culture": 1,
-		"uniques": [
+		"uniques": ["xxxxx era Wonder",
+					
+					"Unbuildable"
 					],
 		"requiredTech": "xxxxx",
 		"quote": "xxxxxx"
 	},
 	*/
 	
-	
-	
-	
 //马其顿
-	{
-		"name": "Leader - Alexander III",//领袖 - 亚历山大三世
+	
+	{//领袖 - 亚历山大三世
+		"name": "Leader - Alexander III",
 		"uniqueTo": "Macedon",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Greatness Empire]: \n * [Upon capturing a city, receive [15] times its [[Culture]/[Science]] production as [Gold] immediately]"
 	},
 	
 //联合王国
-	{
-		"name": "Leader - Victoria(UK)",//领袖 - 维多利亚女王
+	
+	{//领袖 - 维多利亚女王
+		"name": "Leader - Victoria(UK)",
 		"uniqueTo": "United Kingdom",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Robert Walpole]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Victorian Age]: \n * [While the empire is happy], [+10% [Production] & [Gold]]"
 	},
-	{
-		"name": "Leader - Robert Walpole",//领袖 - 罗伯特·沃波尔
+	{//领袖 - 罗伯特·沃波尔
+		"name": "Leader - Robert Walpole",
 		"uniqueTo": "United Kingdom",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Victoria(UK)]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " [Peace and Freedom]: \n * [[[+4 Gold] [+1 Happiness]] per [4] population.] \n * [When not at war], [[+1 Gold] per [1] population.]"
+		"replacementTextForUniques": " [Peace and Freedom]: \n * [[[+4 Gold] [+1 Happiness]] per [5] population.] \n * [When not at war], [[+1 Gold] per [1] population.]"
 	},
-	{
-		"name": "Royal Navy Dock",//皇家海军船坞
+	
+	{//皇家海军船坞
+		"name": "Royal Navy Dock",
 		"uniqueTo": "United Kingdom",
 		"replaces": "Dockyard",
 		"cityStrength": 2,
 		"maintenance": 8,
 		"hurryCostModifier": 25,
-		"uniques": ["Must have an owned [Water] within [3] tiles",
+		"uniques": ["Training Building",
+					
+					"Must have an owned [Water] within [3] tiles",
 					
 					"New [{Military} {Water}] units start with [15] Experience [in this city]",
 					"[+15]% Production when constructing [Water] units [in this city]",
@@ -2915,41 +3221,49 @@
 	},
 	
 //拜占庭
-	{
-		"name": "Leader - Justinianus I",//领袖 - 查士丁尼一世
+	
+	{//领袖 - 查士丁尼一世
+		"name": "Leader - Justinianus I",
 		"uniqueTo": "Byzantium",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Constantinus I]> <in cities without a [Leader - Heraclius I]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " [Expand Territory]: \n * [May buy [Cavalry] units with [Faith] for [2] times their normal Production cost] \n * ['[Heavy Cavalry]' [units] [[+1] Movement]]"
+		"replacementTextForUniques": " [Expand Territory]: \n * [May buy [{Land 'Heavy Rush'} {non-[Armored]}] units with [Faith] for [1] times their normal Production cost] \n * ['[Land 'Heavy Rush'] [non-[Armored]]' [units] [[+1] Movement]]"
 	},
-	{
-		"name": "Leader - Constantinus I",//领袖 - 君士坦丁一世
+	{//领袖 - 君士坦丁一世
+		"name": "Leader - Constantinus I",
 		"uniqueTo": "Byzantium",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Justinianus I]> <in cities without a [Leader - Heraclius I]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [The Trinity]: \n * [May choose [1] additional belief(s) of any type when [Founding] a religion] \n * [May choose [1] additional [Follower] beliefs when [Enhancing] a religion]"
 	},
-	{
-		"name": "Leader - Heraclius I",//领袖 - 希拉克略一世
+	{//领袖 - 希拉克略一世
+		"name": "Leader - Heraclius I",
 		"uniqueTo": "Byzantium",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Constantinus I]> <in cities without a [Leader - Justinianus I]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Hellenistic]: \n * [[Faith] cost of purchasing '[Religious Unit]' [units] [-33]%]"
 	},
-	{
-		"name": "Hippodrome",//跑马场
+	
+	{//跑马场
+		"name": "Hippodrome",
 		"uniqueTo": "Byzantium",
 		"replaces": "Stable",
 		"cityStrength": 2,
@@ -2961,272 +3275,323 @@
 					"[+1 Production] from [Horses] tiles [in this city]",
 					"[+1 Production] from [Sheep] tiles [in this city]",
 					
-					"[Before adopting '[Chivalry]'], [upon constructing '[This object]'], [[1] '[Armored Cavalry]' units appear]",
-					"[After adopting '[Chivalry]'], [upon constructing '[This object]'], [[1] '[Cataphract]' units appear]"],
+					"Cost increases by [10] when built",
+					"Comment [[Before adopting '[Chivalry]'], [upon constructing '[This object]'], [[1] '[Armored Cavalry]' units appear]]",
+					"Comment [[After adopting '[Chivalry]'], [upon constructing '[This object]'], [[1] '[Cataphract]' units appear]]"],
 		"requiredTech": "Horseback Riding"
 	},
 	
 //俄罗斯帝国
-	{
-		"name": "Leader - Peter I",//领袖 - 彼得一世
+	
+	{//领袖 - 彼得一世
+		"name": "Leader - Peter I",
 		"uniqueTo": "Russia (Empire)",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Catherine II]> <in cities without a [Leader - Alexander II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Westernization Reform]: \n * ['[Holy Site]' [district] [[+2 Science] [+2 Food]]]"
 	},
-	{
-		"name": "Leader - Catherine II",//领袖 - 叶卡捷琳娜二世
+	{//领袖 - 叶卡捷琳娜二世
+		"name": "Leader - Catherine II",
 		"uniqueTo": "Russia (Empire)",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Peter I]> <in cities without a [Leader - Alexander II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " [Russo-Turkish War]: \n * ['[Land]' [units] [[+33]% Strength] [when vs '[Gunnery]' units]]"
+		"replacementTextForUniques": " [Russo-Turkish War]: \n * ['[Land]' [units] [[+10]% Strength] [when vs '[Land 'Gunnery']' units]]"
 	},
-	{
-		"name": "Leader - Alexander II",//领袖 - 亚历山大二世
+	{//领袖 - 亚历山大二世
+		"name": "Leader - Alexander II",
 		"uniqueTo": "Russia (Empire)",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Peter I]> <in cities without a [Leader - Catherine II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Serfdom Reform]: \n * ['[Plantation]' [improvement] [+1 Happiness]] \n * ['[Camp]' [improvement] [+1 Happiness]]"
 	},
-	{
-		"name": "Lavra",//拉夫拉修道院
+	
+	{//拉夫拉修道院
+		"name": "Lavra",
 		"uniqueTo": "Russia (Empire)",
 		"replaces": "Temple",
 		"percentStatBonus": {"faith": 10},
 		"specialistSlots": {"Theologian": 1},
 		"faith": 3,
-		"maintenance": 2,
+		"maintenance": 3,
 		"cost": 100,
 		"hurryCostModifier": 25,
 		"uniques": ["Hidden when religion is disabled",
 
-					"Only available <after adopting [Theology]>",
+					"Only available <after adopting [Theology]> <before adopting [Cosmicis]>",
 					
-					"[+1 Faith] from every [Tundra]",
-					"[+1 Faith] from every [Snow]"]
+					"[+1 Faith] from every [Tundra] <in this city>",
+					"[+1 Faith] from every [Snow] <in this city>"]
 	},
 	
 //法兰西第一帝国
-	{
-		"name": "Leader - Napoleon Bonaparte",//领袖 - 拿破仑·波拿巴
+	
+	{//领袖 - 拿破仑·波拿巴
+		"name": "Leader - Napoleon Bonaparte",
 		"uniqueTo": "France (First Empire)",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Napoleonic Wars]: \n * ['[Military]' units gain the '[Foreign Wars]' promotion]"
 	},
-	{
-		"name": "Triumphal Arch",//雄师凯旋门
+	
+	{//雄师凯旋门
+		"name": "Triumphal Arch",
 		"uniqueTo": "France (First Empire)",
 		"replaces": "National Epic",
 		"isNationalWonder": true,
 		"cost": 240,
-		"uniques": ["Requires a [Ancestral Hall] in all cities",
-					"Doubles Gold given to enemy if city is captured",
+		"uniques": ["Doubles Gold given to enemy if city is captured",
 					"[+50]% Great Person generation [in all cities]",
+					"Only available <if [Ancestral Hall] is constructed in all [non-[Puppeted]] cities>",
 					
-					"[+15]% [Happiness] [in this city]"],
+					"[-10]% maintenance cost for buildings [in all cities]"],
 		"requiredTech": "Initialization"
 	},
 	
 //德意志帝国
-	{
-		"name": "Leader - Otto von Bismarck",//领袖 - 奥托·冯·俾斯麦
+	
+	{//领袖 - 奥托·冯·俾斯麦
+		"name": "Leader - Otto von Bismarck",
 		"uniqueTo": "German Empire",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - August von Mackensen]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " [Eiserner Kanzler]: \n * [When conquering an encampment, earn [25] Gold and recruit a Barbarian unit]"
+		"replacementTextForUniques": " [Eiserner Kanzler]: \n * [When conquering an encampment, earn [50] Gold and recruit a Barbarian unit]"
 	},
-	{
-		"name": "Leader - August von Mackensen",//领袖 - 奥古斯特·冯·马肯森
+	{//领袖 - 奥古斯特·冯·马肯森
+		"name": "Leader - August von Mackensen",
 		"uniqueTo": "German Empire",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Otto von Bismarck]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " [Iron Cross]: \n * ['[Military]' units can gain extra [1] XP from combat]"
 	},
-	{
-		"name": "Hansa",//汉萨会馆
+	
+	{//汉萨会馆
+		"name": "Hansa",
 		"uniqueTo": "German Empire",
 		"replaces": "Bank",
-		"percentStatBonus": {"gold": 15},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 5,
 		"cost": 270,
 		"hurryCostModifier": 15,
 		"uniques": ["Only available <after adopting [Banking]>",
 					
-					"[-1 Gold] from [District - City] tiles [in this city]",
-					"[+2 Gold] from [District] tiles [in this city]"],
+					"[+2 Gold, +2 Production] from [{non-[District - City]} {District}] tiles [in this city]"],
 	},
 	
 //匈人
-	{
-		"name": "Leader - Attila",//领袖 - 阿提拉
+	
+	{//领袖 - 阿提拉
+		"name": "Leader - Attila",
 		"uniqueTo": "The Huns",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Steppe Herder]: \n * ['[Cattle]' & '[Sheep]' & '[Horses]' [tiles] [+1 Production]] \n * ['[All]' [units] [[+1] Movement]]"
+		"replacementTextForUniques": " \n [Steppe Herder]: \n * ['[{Land 'Ranged Rush'} {non-[Armored]}]' [units] [[+1] additional attacks per turn]]"
 	},
 	
 //中华 - 秦
-	{
-		"name": "Leader - Ying Zheng",//领袖 - 嬴政(秦始皇)
+	
+	{//领袖 - 嬴政(秦始皇)
+		"name": "Leader - Ying Zheng",
 		"uniqueTo": "China (Qing)",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Great Unity]: \n * [Upon declaring war with a major Civilization], [[1] '[[Warrior] ([or upgrade])]' units appear]"
+		"replacementTextForUniques": " \n [Great Unity]: \n * [Upon declaring war with a major Civilization], [[1] '[[Spearman] ([or upgrade])]' units appear]"
 	},
 	
 //朝鲜
-	{
-		"name": "Leader - Sejong",//领袖 - 李祹
+	
+	{//领袖 - 李祹
+		"name": "Leader - Sejong",
 		"uniqueTo": "Korea",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Hangul]: \n * ['[City]' [district] [+1 Science]]"
 	},
 	
 //高棉
-	{
-		"name": "Leader - Jayavarman VII",//领袖 - 阇耶跋摩七世
+	
+	{//领袖 - 阇耶跋摩七世
+		"name": "Leader - Jayavarman VII",
 		"uniqueTo": "Khmer",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Monasteries of the King]: \n * ['[Holy Site]' [district] [+1 Food] from each [2] adjacent '[River]' [tiles]]"
+		"replacementTextForUniques": " \n [Monasteries of the King]: \n * ['[Holy Site]' [district] [+1 Food] from each [2] adjacent '[Fresh Water]' [tiles]]"
 	},
-	{
-		"name": "Prasat",//高棉庙堂
+	
+	{//高棉庙堂
+		"name": "Prasat",
 		"uniqueTo": "Khmer",
 		"replaces": "Temple",
 		"percentStatBonus": {"faith": 10},
 		"specialistSlots": {"Theologian": 1},
 		"faith": 3,
-		"maintenance": 2,
+		"maintenance": 3,
 		"cost": 100,
 		"hurryCostModifier": 25,
 		"uniques": ["Hidden when religion is disabled",
 					
-					"Only available <after adopting [Theology]>",
+					"Only available <after adopting [Theology]> <before adopting [Cosmicis]>",
 					
 					"[+1 Science] from every specialist [in this city]",
-					"[-6]% Unhappiness from [Population] [in this city]",
-					"Hidden when [Leader Mode] Victory is disabled"]
+					"[-6]% Unhappiness from [Population] [in this city]"]
 	},
 	
 //巴比伦
-	{
-		"name": "Leader - Hammurabi",//领袖 - 汉谟拉比
+	
+	{//领袖 - 汉谟拉比
+		"name": "Leader - Hammurabi",
 		"uniqueTo": "Babylon",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Nebuchadnezzar II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Ingenuity]: \n * ['[Academy]' [district] [[+75]% [Yield]]]"
 	},
-	{
-		"name": "Leader - Nebuchadnezzar II",//领袖 - 尼布甲尼撒二世
+	{//领袖 - 尼布甲尼撒二世
+		"name": "Leader - Nebuchadnezzar II",
 		"uniqueTo": "Babylon",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Hammurabi]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Elite Army]: \n * ['[Land]' units gain the '[Combat Experience]' promotion]"
+		"replacementTextForUniques": " \n [Elite Army]: \n * ['[{Military} {Land} {non-[Great People]} {non-[Tourism Unit]}]' units gain the '[Combat Experience]' promotion]"
 	},
 	
 //奥斯曼
-	{
-		"name": "Leader - Suleiman I",//领袖 - 苏莱曼一世
+	
+	{//领袖 - 苏莱曼一世
+		"name": "Leader - Suleiman I",
 		"uniqueTo": "Ottoman",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Mehmed II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Kanuni]: \n * [Starting from the '[Medieval era]'], [all cities] [+3 Happiness, +3 Culture, +4 Gold]"
+		"replacementTextForUniques": " \n [Kanuni]: \n * [Starting from the '[Medieval era]'], [all cities] [+2 Happiness, +2 Culture, +3 Gold, +3 Faith, +2 Production]"
 	},
-	{
-		"name": "Leader - Mehmed II",//领袖 - 穆罕默德二世
+	{//领袖 - 穆罕默德二世
+		"name": "Leader - Mehmed II",
 		"uniqueTo": "Ottoman",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Suleiman I]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Augusudan]: \n * [Can constructing '[Urban Cannon]' [units]] \n * [Upon discovering '[Chemistry]'], [[1] '[Urban Cannon]' units appear]"
 	},
 	
 //以色列
-	{
-		"name": "Leader - David Ben-Gurion",//领袖 - 戴维·本-古里安
+	
+	{//领袖 - 戴维·本-古里安
+		"name": "Leader - David Ben-Gurion",
 		"uniqueTo": "Israel",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Benjamin Netanyahu]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Zionism]: \n * [All non-occupied cities] [+1 Happiness, +1 Faith] \n * [Before founding a Pantheon], [capital] [-1 Faith]"
+		"replacementTextForUniques": " \n [Zionism]: \n * [{Non-occupied} {non-[Capital]}] [+1 Happiness, +1 Faith]"
 	},
-	{
-		"name": "Leader - Benjamin Netanyahu",//领袖 - 本雅明·内塔尼亚胡
+	{//领袖 - 本雅明·内塔尼亚胡
+		"name": "Leader - Benjamin Netanyahu",
 		"uniqueTo": "Israel",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - David Ben-Gurion]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [New 'Mein Kampf']: \n * [When at war], ['[All]' [units] [[+25]% Strength] [when attacking]] \n * [When at war], ['[All]' [units] [[-25]% Strength] [when defending]]"
+		"replacementTextForUniques": " \n [New 'Mein Kampf']: \n * [When at war], ['[All]' [units] [[+10]% Strength] [when attacking]] \n * [When at war], ['[All]' [units] [[-7]% Strength] [when defending]]"
 	},
-	{
-		"name": "Gaza Prison",//加沙监狱
+	{//监狱
+		"name": "Prison",
 		"uniqueTo": "Israel",
 		"replaces": "Courthouse",
+		"percentStatBonus": {"faith": 10},
 		"maintenance": 5,
 		"hurryCostModifier": 50,
 		"cost": 120,
@@ -3234,57 +3599,67 @@
 					"[+1 Happiness] from all [Happiness] buildings <in this city>",
 					
 					"[-2] population [in this city]",
-					"[-33]% growth [in this city]",
-					"[-20]% Unhappiness from [Population] [in this city]"]
+					"[-25]% growth [in this city]",
+					"[-15]% Unhappiness from [Population] [in this city]"]
 	},
 	
 //印度
-	{
-		"name": "Leader - Chandragupta",//领袖 - 旃陀罗笈多
+	
+	{//领袖 - 旃陀罗笈多
+		"name": "Leader - Chandragupta",
 		"uniqueTo": "India",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Shah Jahan]> <in cities without a [Leader - Gandhi]> <in cities without a [Leader - Narendra Modi]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Arthashastra]: \n * [Upon constructing '[Faith]'], [[1] '[[Spearman] ([or upgrade])]' units appear]"
 	},
-	{
-		"name": "Leader - Shah Jahan",//领袖 - 沙·贾汗
+	{//领袖 - 沙·贾汗
+		"name": "Leader - Shah Jahan",
 		"uniqueTo": "India",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Chandragupta]> <in cities without a [Leader - Gandhi]> <in cities without a [Leader - Narendra Modi]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Crown Jewels]: \n * '[Harbor]' [district] [+2 Gold] \n * [Can constructing '[Fill Treasury]' [project]]"
 	},
-	{
-		"name": "Leader - Gandhi",//领袖 - 甘地
+	{//领袖 - 甘地
+		"name": "Leader - Gandhi",
 		"uniqueTo": "India",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Chandragupta]> <in cities without a [Leader - Shah Jahan]> <in cities without a [Leader - Narendra Modi]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Satyagraha]: \n * [Upon constructing '[Faith]'], [[20]% Faith cost of generating Great Prophet equivalents]"
 	},
-	{
-		"name": "Leader - Narendra Modi",//领袖 - 纳伦德拉·莫迪
+	{//领袖 - 纳伦德拉·莫迪
+		"name": "Leader - Narendra Modi",
 		"uniqueTo": "India",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Chandragupta]> <in cities without a [Leader - Shah Jahan]> <in cities without a [Leader - Gandhi]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Made in India]: \n * [[+1 Production] from all [Production] buildings] \n * [[+2 Gold] from all [Gold] buildings]"
 	},
-	{
-		"name": "Ashoka Pillar",//阿育王石柱
+	
+	{//阿育王石柱
+		"name": "Ashoka Pillar",
 		"uniqueTo": "India",
 		"replaces": "Monument",
 		"culture": 2,
@@ -3294,8 +3669,8 @@
 		"cost": 40,
 		"hurryCostModifier": 40
 	},
-	{
-		"name": "Mughal Fort",//莫卧尔城塞
+	{//莫卧尔城塞
+		"name": "Mughal Fort",
 		"uniqueTo": "India",
 		"replaces": "Castle",
 		"cityStrength": 20,
@@ -3314,8 +3689,8 @@
             },
         ]
 	},
-	{
-		"name": "Project - Fill Treasury",//项目 - 充盈国库
+	{//项目 - 充盈国库
+		"name": "Project - Fill Treasury",
 		"uniqueTo": "India",
 		"cost": 150,
 		"uniques": ["Cost increases by [50] per owned city",
@@ -3338,253 +3713,339 @@
 	},
 	
 //马里
-	{
-		"name": "Leader - Mansa Musa",//领袖 - 曼沙·穆萨
+	
+	{//领袖 - 曼沙·穆萨
+		"name": "Leader - Mansa Musa",
 		"uniqueTo": "Mali",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Sahel Merchants]: \n * ['[Gold]' [building] [[+10]% [Gold]]]"
+		"replacementTextForUniques": " \n [Sahel Merchants]: \n * ['[Gold]' [building] [+10]% [Gold]]"
 	},
-	{
-		"name": "Suguba",//曼丁戈市场
+	{//曼丁戈市场
+		"name": "Suguba",
 		"uniqueTo": "Mali",
 		"replaces": "Market",
-		"percentStatBonus": {"gold": 15},
+		"percentStatBonus": {"gold": 10},
 		"specialistSlots": {"Merchant": 1},
 		"gold": 3,
 		"cost": 120,
 		"hurryCostModifier": 25,
-		"uniques": ["Only available <after adopting [Foreign Trade]>",
+		"uniques": ["Only available <after adopting [Chowk]>",
 					"[Gold] cost of purchasing items in cities [-34]% <in this city>"]
 	},
 	
 //桑海
-	{
-		"name": "Leader - Muhammad Ture",//领袖 - 穆罕默德·杜尔
+	
+	{//领袖 - 穆罕默德·杜尔
+		"name": "Leader - Muhammad Ture",
 		"uniqueTo": "Songhai",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Sunni Ali]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Askia]: \n * ['[All]' [units] [Heal [8] HP] [upon ending a turn in a '[Desert]' tile]]"
+		"replacementTextForUniques": " \n [Askia]: \n * ['[All]' [units] [Heal [10] HP] [upon ending a turn in a '[Desert]' tile]]"
 	},
-	{
-		"name": "Leader - Sunni Ali",//领袖 - 桑尼·阿里
+	{//领袖 - 桑尼·阿里
+		"name": "Leader - Sunni Ali",
 		"uniqueTo": "Songhai",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Muhammad Ture]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [African Traditions]: \n * [After founding a Pantheon], [All cities] [+1 Culture] \n * ['[Mud Pyramid Mosque]' [building] [[+1 Culture] [[+10]% [Culture]]]]"
+		"replacementTextForUniques": " \n [African Traditions]: \n * [After founding a Pantheon], [All cities] [+1 Culture] \n * ['[Mud Pyramid Mosque]' [building] [[+2 Culture] [[+10]% [Culture]]]]"
 	},
-	{
-		"name": "Mud Pyramid Mosque",//土塔清真寺
+	
+	{//土塔清真寺
+		"name": "Mud Pyramid Mosque",
 		"uniqueTo": "Songhai",
 		"replaces": "Temple",
 		"percentStatBonus": {"faith": 10},
 		"specialistSlots": {"Theologian": 1},
 		"faith": 3,
 		"maintenance": 3,
-		"cost": 100,
+		"cost": 88,
 		"hurryCostModifier": 25,
 		"uniques": ["Hidden when religion is disabled",
-
-					"Only available <after adopting [Theology]>",
+					
+					"Only available <after adopting [Theology]> <before adopting [Cosmicis]>",
 					
 					"[+15]% [Faith] [in this city]"]
 	},
 	
 //埃及
-	{
-		"name": "Leader - Ramesses II",//领袖 - 拉美西斯二世
+	
+	{//领袖 - 拉美西斯二世
+		"name": "Leader - Ramesses II",
 		"uniqueTo": "Egypt",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Tutankhamun]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Gift of the Nile]: \n * ['[River]' [tiles] [+1 Food]]"
+		"replacementTextForUniques": " \n [Gift of the Nile]: \n * ['[River]' [tiles] [+1 Production]]"
 	},
-	{
-		"name": "Leader - Tutankhamun",//领袖 - 图坦卡蒙
+	{//领袖 - 阿蒙霍特普四世
+		"name": "Leader - Amenhotep IV",
 		"uniqueTo": "Egypt",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Ramesses II]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
+					"Hidden when [Leader Mode] Victory is disabled"],
+		"replacementTextForUniques": " \n [Aten Worship]: \n * [Upon building '[Sphinx]' improvement], [gain enough Faith for [10]% of a Great Prophet]"
+	},
+	{//领袖 - 图坦卡蒙
+		"name": "Leader - Tutankhamun",
+		"uniqueTo": "Egypt",
+		"cost": 0,
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
+					"Unsellable",
+					"Destroyed when the city is captured",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Eighteenth Dynasty Afterglow]: \n * ['[Luxury resource]' [tiles] [+1 Faith]] \n * ['[Plantation]' [improvement] [+1 Gold]]"
 	},
 	
 //埃塞俄比亚
-	{
-		"name": "Leader - Haile Selassie",//领袖 - 海尔·塞拉西
+	
+	{//领袖 - 海尔·塞拉西
+		"name": "Leader - Haile Selassie",
 		"uniqueTo": "Ethiopia",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Spirit of Adwa]: \n * ['[All]' [units] [when fighting units from a Civilization with more Cities than you] [[+20]% Strength]]"
+		"replacementTextForUniques": " \n [Spirit of Adwa]: \n * ['[All]' [units] [when fighting units from a Civilization with more Cities than you] [[+12]% Strength]]"
 	},
 	
 //美利坚
-	{
-		"name": "Leader - George Washington",//领袖 - 乔治·华盛顿
+	
+	{//领袖 - 乔治·华盛顿
+		"name": "Leader - George Washington",
 		"uniqueTo": "America",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Theodore Roosevelt]> <in cities without a [Leader - Franklin Roosevelt]> <in cities without a [Leader - Abraham Lincoln]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Founding Father]: \n * ['[All]' units gain the '[Boost Morale]' promotion]"
 	},
-	{
-		"name": "Leader - Theodore Roosevelt",//领袖 - 西奥多·罗斯福
+	{//领袖 - 西奥多·罗斯福
+		"name": "Leader - Theodore Roosevelt",
 		"uniqueTo": "America",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - George Washington]> <in cities without a [Leader - Franklin Roosevelt]> <in cities without a [Leader - Abraham Lincoln]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Volunteer Cavalry]: \n * [Can constructing '[Rough Rider]' [units]] \n\n [Brave New World]: \n * ['[City]' [district] [+1 Science, +1 Culture] from each [1] adjacent '[Natural Wonder]' [tiles]]"
+		"replacementTextForUniques": " [Brave New World]: \n * ['[All]' [district] [+1 Science, +2 Culture] from each [1] adjacent '[Natural Wonder]' [tiles]]"
 	},
-	{
-		"name": "Leader - Franklin Roosevelt",//领袖 - 富兰克林·罗斯福
+	{//领袖 - 富兰克林·罗斯福
+		"name": "Leader - Franklin Roosevelt",
 		"uniqueTo": "America",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - George Washington]> <in cities without a [Leader - Theodore Roosevelt]> <in cities without a [Leader - Abraham Lincoln]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [The New Deal]: \n * ['[Industrial Zone]' & '[Business Center]' [district] [+2 Gold]] \n * ['[Production]' & '[Gold]' [building] [+2 Gold]]"
 	},
-	{
-		"name": "Leader - Abraham Lincoln",//领袖 - 亚伯拉罕·林肯
+	{//领袖 - 亚伯拉罕·林肯
+		"name": "Leader - Abraham Lincoln",
 		"uniqueTo": "America",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - George Washington]> <in cities without a [Leader - Theodore Roosevelt]> <in cities without a [Leader - Franklin Roosevelt]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Emancipation Proclamation]: \n * ['[City]' [district] [+1 Happiness]]"
 	},
 	
 //加拿大
-	{
-		"name": "Leader - Wilfrid Laurier",//领袖 - 威尔弗里德·劳雷尔
+	
+	{//领袖 - 威尔弗里德·劳雷尔
+		"name": "Leader - Wilfrid Laurier",
 		"uniqueTo": "Canada",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [The Last Best West]: \n * ['[{Snow} {Mine}]' & '[{Tundra} {Mine}]' [improvement] [+1 Production]] \n * ['[Camp]' [improvement] [+1 Food]]"
+		"replacementTextForUniques": " \n [The Last Best West]: \n * ['[Snow]' & '[Tundra]' [tiles] [+1 Food]] \n * ['[Hill]' & '[Forest]' [tiles] [+1 Production] [in '[Snow]' or '[Tundra]' [tiles]]]"
 	},
 	
 //印加
-	{
-		"name": "Leader - Pachacuti",//领袖 - 帕查库特克
+	
+	{//领袖 - 帕查库特克
+		"name": "Leader - Pachacuti",
 		"uniqueTo": "Inca",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Wayna Qhapaq]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Mit’a]: \n * ['[Terrace Farm]' [improvement] [+2 Production]] \n * ['[Mountain]' [tiles] [+2 Production]] \n * ['[Mountain]' [tiles] [+1 Food] from each [1] adjacent '[Terrace Farm]' [improvement]] \n * ['[Terrace Farm]' [improvement] [+1 Faith] from each [1] adjacent '[Mountain]' [tiles]]"
 	},
-	{
-		"name": "Leader - Wayna Qhapaq",//领袖 - 瓦伊纳·卡帕克
+	{//领袖 - 瓦伊纳·卡帕克
+		"name": "Leader - Wayna Qhapaq",
 		"uniqueTo": "Inca",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - Pachacuti]>",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Great Andean Road]: \n * ['[Worker]' units gain the '[Huáscar]' promotion]"
+		"replacementTextForUniques": " \n [Great Andean Road]: \n * ['[Workers]' units gain the '[Huascar]' promotion]"
 	},
 	
 //阿兹特克
-	{
-		"name": "Leader - Montezuma I",//领袖 - 蒙特祖玛一世
+	
+	{//领袖 - 蒙特祖玛一世
+		"name": "Leader - Montezuma I",
 		"uniqueTo": "Aztec",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Xōchiyāōyōtl]: \n * ['[Military]' units gain the '[Flower]' promotion]"
+		"replacementTextForUniques": " \n [Xōchiyāōyōtl]: \n * ['[{Military} {non-[Great People]} {non-[Tourism Unit]}]' units gain the '[Flower]' promotion]"
 	},
 	
 //玛雅
-	{
-		"name": "Leader - Pacal II",//领袖 - 帕卡尔二世
+	
+	{//领袖 - 帕卡尔二世
+		"name": "Leader - Pacal II",
 		"uniqueTo": "Maya",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
 		"replacementTextForUniques": " \n [Lakam Ha Temple]: \n * ['[Faith]' [building] [+2 Science]]"
 	},
 	
 //易洛魁
-	{
-		"name": "Leader - Hiawatha",//领袖 - 海华沙
+	
+	{//领袖 - 海华沙
+		"name": "Leader - Hiawatha",
 		"uniqueTo": "Iroquois",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Eloquent]: \n * [Allied City-States provide [Gold] equal to [50]% of what they produce for themselves] \n * [Allied City-States provide [Culture] equal to [50]% of what they produce for themselves] \n * [Allied City-States provide [Faith] equal to [50]% of what they produce for themselves]"
+		"replacementTextForUniques": " \n [Eloquent]: \n * ['[Trade Route]' [[+25]% [Gold]] [+2 Science]]"
 	},
-	{
-		"name": "Longhouse",//长屋
+	
+	{//长屋
+		"name": "Longhouse",
 		"uniqueTo": "Iroquois",
-		"replaces": "Workshop",
+		"replaces": "Kiln",
 		"percentStatBonus": {"production": 10},
 		"specialistSlots": {"Engineer": 1},
 		"production": 2,
 		"maintenance": 4,
 		"hurryCostModifier": 25,
-		"uniques": ["[+1 Production] from [Forest] tiles [in this city]",
-					"[+1 Production] from [Jungle] tiles [in this city]"],
+		"uniques": ["[+1 Food] from [District] tiles [in all cities] <with [1] to [6] neighboring [Forest] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [2] to [6] neighboring [Forest] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [3] to [6] neighboring [Forest] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [4] to [6] neighboring [Forest] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [5] to [6] neighboring [Forest] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [6] to [6] neighboring [Forest] tiles>",
+					
+					"[+1 Food] from [District] tiles [in all cities] <with [1] to [6] neighboring [Jungle] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [2] to [6] neighboring [Jungle] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [3] to [6] neighboring [Jungle] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [4] to [6] neighboring [Jungle] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [5] to [6] neighboring [Jungle] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [6] to [6] neighboring [Jungle] tiles>",
+					
+					"[+1 Food] from [District] tiles [in all cities] <with [1] to [6] neighboring [Bonus resource] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [2] to [6] neighboring [Bonus resource] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [3] to [6] neighboring [Bonus resource] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [4] to [6] neighboring [Bonus resource] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [5] to [6] neighboring [Bonus resource] tiles>",
+					"[+1 Food] from [District] tiles [in all cities] <with [6] to [6] neighboring [Bonus resource] tiles>",],
+		"replacementTextForUniques": "['[All]' [district] [+1 Food] from each [1] adjacent '[Forest]' & '[Jungle]' & '[Bonus resource]' [tiles]]",
 		"requiredTech": "Iron Working"
 	},
 	
 //波利尼西亚
-	{
-		"name": "Leader - Kamehameha I",//领袖 - 卡美哈梅哈一世
+	
+	{//领袖 - 卡美哈梅哈一世
+		"name": "Leader - Kamehameha I",
 		"uniqueTo": "Polynesia",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]>",
+					"Moves to new capital when capital changes",
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 					"Hidden when [Leader Mode] Victory is disabled"],
-		"replacementTextForUniques": " \n [Hawaiian Culture]: \n * ['[All]' [units] [[+15]% Strength] [within [4] tiles of a '[Moai]']]"
+		"replacementTextForUniques": " \n [Hawaiian Culture]: \n * ['[All]' [units] [[+10]% Strength] [within [4] tiles of a '[Moai]']]"
 	},
 	
 	
@@ -3602,10 +4063,12 @@
 		"name": "Leader - ",//领袖 - 
 		"uniqueTo": "xxxxx",
 		"cost": 0,
-		"uniques": ["Can be purchased for [0] [Culture] [in capital]",
+		"uniques": ["Leader",
+					
+					"Can be purchased for [0] [Culture] [in capital]",
 					"Unsellable",
 					"Destroyed when the city is captured",
-					"Only available <in cities with a [Palace]> <in cities without a [Leader - ]>"],
+					"Only available <in cities with a [Palace]> <in cities without a [Leader]>",
 		"replacementTextForUniques": " \n [xxxxx]: \n * "
 	},
 	

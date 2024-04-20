@@ -4,19 +4,18 @@
 	{
 		"name": "Basic Promotion - All",//基础效果 - 所有
 		"uniques": ["Heal this unit by [5] HP <upon defeating a [All] unit>",
-					"This Unit gains the [Whets] promotion <upon defeating a [All] unit>",
-					"Cannot attack <vs [Tourism Unit] units> <for [non-[Tourism Unit]] units>"],
+					"Cannot attack <vs [Tourism Unit] units> <for [non-[Tourism Unit]] units>",
+					"Cannot attack <vs [Great People] units> <for [non-[Great People]] units>",
+					"This Unit gains the [Squads] promotion <upon defeating a [Major] unit> <for [non-[Air 'Missile']] units> <for units without [Squads]> <for units without [Platoons]> <for units without [Companies]> <for units without [Battalions]> <for units without [Regiments]> <for units without [Brigades]> <for units without [Divisions]> <for units without [Corps]> <hidden from users>"],
 		"column": 1,
 		"row": 1
 	},
 	{
 		"name": "Basic Promotion - Land",//基础效果 - 陆地
+		"prerequisites": ["Basic Promotion - All"],
 		"uniques": ["Heal this unit by [20] HP <upon being promoted>",
 					
-					"[1] Movement point cost to disembark <in [Harbor] tiles>",
-					"[2] Movement point cost to embark <in [Harbor] tiles>",
-					
-					"[+50]% Strength <for [Melee] units> <vs cities> <when adjacent to a [Siege Tower] unit>",
+					"[+33]% Strength <for [Melee] units> <vs cities> <when adjacent to a [Siege Tower] unit>",
 					
 					"[+10]% Strength when stacked with [Logisticians]",
 					
@@ -26,6 +25,7 @@
 	},
 	{
 		"name": "Basic Promotion - Water",//基础效果 - 水上
+		"prerequisites": ["Basic Promotion - All"],
 		"uniques": ["Heal this unit by [10] HP <upon being promoted>",
 					
 					"[+10]% Strength when stacked with [Water Logisticians]"],
@@ -34,53 +34,49 @@
 	},
 	{
 		"name": "Basic Promotion - Air",//基础效果 - 空中
+		"prerequisites": ["Basic Promotion - All"],
 		"uniques": ["Heal this unit by [10] HP <upon being promoted>"],
 		"column": 1,
 		"row": 4
 	},
 	{
-		"name": "Whets",//磨砺
+		"name": "Practical Training",//实战训练
+		"prerequisites": ["Basic Promotion - All"],
 		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
-					"[+2]% Strength <for [50] turns>"],
+					"This Unit gains the [Whets] promotion"],
+		"unitTypes": [
+			"Land 'Exploration'",
+			"Land 'Battle'",
+			"Land 'Anti-rush'",
+			"Land 'Support'",
+			"Land 'Light Rush'",
+			"Land 'Heavy Rush'",
+			"Land 'Ranged Rush'",
+			"Land 'Siege'",
+			"Land 'Gunnery'",
+			"Water 'Battle'",
+			"Water 'Support'",
+			"Water 'Harass'",
+			"Water 'Siege'",
+			"Water 'Carrier'",
+			"Air 'Fighter'",
+			"Air 'Bomber'",
+			"Air 'Missile'",
+			"Airship 'Battle'",
+			"Airship 'Support'",
+			"Airship 'Siege'",
+			"Airship 'Harass'"
+		],
 		"column": 1,
 		"row": 5
-	},
-	{
-		"name": "Promotion - [Awarded Ranks]",//授勋
-		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
-					
-            		"Only available <after adopting [Ranks]>",
-					"This Unit gains the [Awarded Ranks] promotion"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
-		"column": 1,
-		"row": 6
-	},
-	{
-		"name": "Awarded Ranks",//授勋
-		"uniques": ["[+1]% Strength <for [50] turns>"],
-		"column": 1,
-		"row": 7
 	},
 	
 	//文明能力
 	
 	{
 		"name": "Foreign Wars",//对外战争
-		"uniques": ["[+20]% Strength <when below [50] HP> <when defending>",
-					"[+5] HP when healing <when above [50] HP>"],
+		"uniques": ["[+7]% Strength <when below [50] HP> <when defending>",
+					"[+7] HP when healing <when above [50] HP>"],
 		"column": 2,
 		"row": 1
 	},
@@ -92,24 +88,23 @@
 	},
 	{
 		"name": "'[Askia]' ability",//阿斯基亚能力
-		"uniques": ["Heal this unit by [8] HP <upon ending a turn in a [Desert] tile>",],
+		"uniques": ["Heal this unit by [10] HP <upon ending a turn in a [Desert] tile>",],
 		"column": 2,
 		"row": 3
 	},
 	{
 		"name": "Boost Morale",//振奋军心
-		"uniques": ["[+10]% Strength <when below [50] HP>",
-					"[+20]% Strength <when below [40] HP>",
-					"[+30]% Strength <when below [30] HP>",
+		"uniques": ["[+5]% Strength <when below [50] HP>",
+					"[+10]% Strength <when below [40] HP>",
+					"[+15]% Strength <when below [30] HP>",
 					"Heals [50] damage if it kills a unit <when below [20] HP>"],
 		"column": 2,
 		"row": 4
 	},
 	{
-		"name": "Huáscar",//金缆绳
+		"name": "Huascar",//金缆绳
 		"uniques": ["Can pass through impassable tiles",
-					"Heal this unit by [50] HP <upon ending a turn in a [Mountain] tile>",
-					"Can build [Blessing] improvements on tiles"],
+					"Heal this unit by [50] HP <upon ending a turn in a [Mountain] tile>"],
 		"column": 2,
 		"row": 5
 	},
@@ -119,73 +114,32 @@
 		"column": 2,
 		"row": 6
 	},
-	
+	{
+		"name": "Favorable Condition",//有利条件
+		"uniques": ["[-10]% Strength for enemy [All] units in adjacent [Forest] tiles",
+					"[-10]% Strength for enemy [All] units in adjacent [Jungle] tiles"],
+		"column": 2,
+		"row": 7
+	},
 	{
 		"name": "Barbarian ability",//蛮族能力
 		"uniques": ["May capture killed [All] units",
 					"[-20]% Strength <when defending> <during the [Ancient era]>",
 					"[-1] Movement <for [Cavalry] units> <during the [Ancient era]>"],
 		"column": 2,
-		"row": 100
-	},
-	
-	//伟人
-	
-	{
-		"name": "Nurturing - I",//培育 - I
-		"uniques": [],
-		"unitTypes":   ["Great People"],
-		"column": 3,
-		"row": 1
+		"row": 8
 	},
 	{
-		"name": "Nurturing - II",//培育 - II
-		"prerequisites": ["Nurturing - I"],
-		"uniques": [],
-		"unitTypes":   ["Great People"],
+		"name": "Alliances - Almaty",//同盟 - 阿拉木图
+		"uniques": ["Can build [Engineering Improvement] improvements on tiles"],
 		"column": 3,
-		"row": 2
+		"row": 9
 	},
 	{
-		"name": "Nurturing - III",//培育 - III
-		"prerequisites": ["Nurturing - II"],
-		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. II )]>"],
-		"unitTypes":   ["Great People"],
+		"name": "Alliances - Cahokia",//同盟 - 卡霍基亚
+		"uniques": ["Can instantly construct a [Cahokia Mounds] improvement <[3] times>"],
 		"column": 3,
-		"row": 3
-	},
-	{
-		"name": "Nurturing - IV",//培育 - IV
-		"prerequisites": ["Nurturing - III"],
-		"uniques": [],
-		"unitTypes":   ["Great People"],
-		"column": 3,
-		"row": 4
-	},
-	{
-		"name": "Nurturing - V",//培育 - V
-		"prerequisites": ["Nurturing - IV"],
-		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. III )]>"],
-		"unitTypes":   ["Great People"],
-		"column": 3,
-		"row": 5
-	},
-
-	{
-		"name": "Working",//工作
-		"prerequisites": ["Nurturing - I"],
-		"uniques": ["Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes":   ["Great People"],
-		"column": 3,
-		"row": 6
-	},
-
-	{
-		"name": "Concert",//演唱
-		"uniques": ["Doing so will consume this opportunity to choose a Promotion"],
-		"unitTypes":   ["Land 'Civilian'"],
-		"column": 3,
-		"row": 7
+		"row": 10
 	},
 	
 	//外物给予
@@ -203,7 +157,7 @@
 	},
 	{
 		"name": "Morale",//士气昂扬
-		"uniques": ["[+15]% Strength"],
+		"uniques": ["[+7]% Strength"],
 		"column": 4,
 		"row": 3
 	},
@@ -244,7 +198,7 @@
 	{
 		"name": "Crisscrossing Hills",//纵横丘陵
 		"uniques": ["Double movement in [Hill]",
-					"[+15]% Strength <in [Hill] tiles>"],
+					"[+7]% Strength <in [Hill] tiles>"],
 		"column": 4,
 		"row": 9
 	},
@@ -256,7 +210,7 @@
 	},
 	{
 		"name": "Deutscher Orden",//条顿骑士团
-		"uniques": ["[+15]% Strength <when adjacent to a [Knights] unit>"],
+		"uniques": ["[+7]% Strength <when adjacent to a [Knights] unit>"],
 		"column": 4,
 		"row": 11
 	},
@@ -269,42 +223,179 @@
 	},
 	{
 		"name": "Fanatic Knights",//狂热骑士团
-		"uniques": ["[+50]% XP gained from combat"],
+		"uniques": ["[+25]% XP gained from combat"],
 		"column": 4,
 		"row": 13
 	},
 	{
 		"name": "Glorious Knights",//光荣骑士团
-		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Faith]"],
+		"uniques": ["Earn [100]% of killed [Military] unit's [Cost] as [Faith]"],
 		"column": 4,
 		"row": 14
 	},
 	{
-		"name": "Alliances - Almaty",//同盟 - 阿拉木图
-		"uniques": ["Can build [Engineering Improvement] improvements on tiles"],
+		"name": "Hand of God",//上帝之手
+		"uniques": ["Comment [Turn tile into a other tile]",
+					
+					"Turn this tile into a [Coast] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Mountain] tile <[3] times> <in [Snow] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Turn this tile into a [Ocean] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Coast] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Lakes] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Grassland] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Plains] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Desert] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Tundra] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Turn this tile into a [Snow] tile <[3] times> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>"],
 		"column": 4,
 		"row": 15
 	},
 	{
-		"name": "Alliances - Cahokia",//同盟 - 卡霍基亚
-		"uniques": ["Can build [Cahokia Mounds] improvements on tiles"],
+		"name": "Inspiration",//灵感
+		"uniques": ["Free [Music Collection] appears <upon being promoted> <for [Great Musician] units>",
+					"Free [Artwork] appears <upon being promoted> <for [Great Artist] units>"],
 		"column": 4,
 		"row": 16
 	},
+	{
+		"name": "Great Engineering",//伟大工程
+		"uniques": ["Comment [[Can instantly construct '[Base Improvement]'] ([[+1] additional time(s)]), [after which this unit is consumed]]",
+					
+					"Can instantly construct a [Camp] improvement <[+1] additional time(s)> <in [Camp Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Pasture] improvement <[+1] additional time(s)> <in [Pasture Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Fishing Boats] improvement <[+1] additional time(s)> <in [Fishing Boats Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Quarry] improvement <[+1] additional time(s)> <in [Quarry Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Plantation] improvement <[+1] additional time(s)> <in [Plantation Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil Well] improvement <[+1] additional time(s)> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Offshore Platform] improvement <[+1] additional time(s)> <in [Oil Well Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Mine] improvement <[+1] additional time(s)> <in [Mine Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Farm] improvement <[+1] additional time(s)> <in [Farm Resource] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Baths] improvement <[+1] additional time(s)> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Coal-fired Plant] improvement <[+1] additional time(s)> <after discovering [Industrialization]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Oil-fired Plant] improvement <[+1] additional time(s)> <after discovering [Refining]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fission Plant] improvement <[+1] additional time(s)> <after discovering [Nuclear Fission]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Nuclear Fusion Plant] improvement <[+1] additional time(s)> <after discovering [Nuclear Fusion]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Solar Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Lakes] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Hill] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Wind Plant] improvement <[+1] additional time(s)> <after discovering [Clean Energy]> <in [Mountain] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Geothermal Plant] improvement <[+1] additional time(s)> <after discovering [Composites]> <in [Geothermal Fissure] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Tidal Plant] improvement <[+1] additional time(s)> <after discovering [Particle Physics]> <in [Coast] tiles> <after which this unit is consumed> <hidden from users>",
+						
+					"Can instantly construct a [Planted Forest] improvement <[+1] additional time(s)> <after adopting [Reforestation]> <in [Plains] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[+1] additional time(s)> <after adopting [Reforestation]> <in [Grassland] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[+1] additional time(s)> <after adopting [Reforestation]> <in [Desert] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Planted Forest] improvement <[+1] additional time(s)> <after adopting [Reforestation]> <in [Tundra] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Tourist Center] improvement <[+1] additional time(s)> <after adopting [Tertiary Industry]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+		
+					"Can instantly construct a [Electrolysis Factory] improvement <[+1] additional time(s)> <after discovering [Particle Physics]> <in [Ocean] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Remove Road] improvement <[+1] additional time(s)> <in [Road] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Railroad] improvement <[+1] additional time(s)> <in [Railroad] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Fallout] improvement <[+1] additional time(s)> <in [Fallout] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Forest] improvement <[+1] additional time(s)> <in [Forest] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Jungle] improvement <[+1] additional time(s)> <in [Jungle] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Marsh] improvement <[+1] additional time(s)> <in [Marsh] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Mangrove] improvement <[+1] additional time(s)> <in [Mangrove] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Remove Ice] improvement <[+1] additional time(s)> <in [Ice] tiles> <after which this unit is consumed> <hidden from users>",
+					
+					"Can instantly construct a [Fort] improvement <[+1] additional time(s)> <after adopting [Fortifications]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Trenchs] improvement <[+1] additional time(s)> <after discovering [Dynamite]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Road] improvement <[+1] additional time(s)> <after discovering [The Wheel]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+					"Can instantly construct a [Railroad] improvement <[+1] additional time(s)> <after discovering [Steam Power]> <in [Land] tiles> <after which this unit is consumed> <hidden from users>",
+		
+					"Can instantly construct a [Unique Improvement] improvement <[+1] additional time(s)> <after which this unit is consumed> <hidden from users>"],
+		"column": 4,
+		"row": 17
+	},
 	
-	//单位
+	//单位自带
 	{
 		"name": "Investigation",//侦查
 		"uniques": ["Ignores terrain cost"],
 		"column": 5,
 		"row": 1
-	},
+	},/*
 	{
 		"name": "'[Cossack]' ability",//哥萨克骑兵能力
-		"uniques": ["[+50]% Strength <vs [Wounded] units>"],
+		"uniques": ["[+25]% Strength <vs [Wounded] units>"],
 		"column": 5,
 		"row": 2
-	},
+	},*/
 	{
 		"name": "Command",//指挥
 		"uniques": ["[Great General] is earned [+50]% faster"],
@@ -314,7 +405,7 @@
 	{
 		"name": "'[Janissary]' ability",//苏丹亲兵能力
 		"uniques": ["Heals [50] damage if it kills a unit",
-					"[+15]% Strength <when attacking>"],
+					"[+7]% Strength <when attacking>"],
 		"column": 5,
 		"row": 4
 	},
@@ -327,18 +418,18 @@
 	{
 		"name": "'[B-17]' ability",//B-17能力
 		"uniques": ["Damage taken from interception reduced by [-20]%",
-					"[+20]% Strength <vs cities>"],
+					"[+12]% Strength <vs cities>"],
 		"column": 5,
 		"row": 6
 	},
 	{
 		"name": "Eagle & Jaguar",//雄鹰 & 美洲虎
-		"uniques": ["[+33]% Strength <when fighting in [Forest] tiles>",
-					"[+33]% Strength <when fighting in [Jungle] tiles>",
+		"uniques": ["[+7]% Strength <when fighting in [Forest] tiles>",
+					"[+7]% Strength <when fighting in [Jungle] tiles>",
 					"Double movement in [Forest]",
 					"Double movement in [Jungle]",
 					"Heals [25] damage if it kills a unit",
-					"Heals [50] damage if it kills a unit <when below [50] HP>"],
+					"Heals [25] damage if it kills a unit <when below [50] HP>"],
 		"column": 5,
 		"row": 7
 	},
@@ -353,1006 +444,1410 @@
 	
 	{
 		"name": "Squads",//班
-		"prerequisites": [],
-		"uniques": ["This Unit gains [4] XP <upon being promoted>",
-					"[+10]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+5]% XP gained from combat",
+					"[+2]% Strength",
+					"This Unit gains the [Platoons] promotion <upon defeating a [Major] unit> <for units without [Platoons]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 1
 	},
 	{
 		"name": "Platoons",//排
-		"prerequisites": ["Squads"],
-		"uniques": ["This Unit gains [5] XP <upon being promoted>",
-					"[+10]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+10]% XP gained from combat",
+					"[+4]% Strength",
+					
+					"This Unit loses the [Squads] promotion <hidden from users>",
+					"This Unit gains the [Companies] promotion <upon defeating a [Major] unit> <for units without [Companies]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 2
 	},
 	{
 		"name": "Companies",//连
-		"prerequisites": ["Platoons"],
-		"uniques": ["This Unit gains [6] XP <upon being promoted>",
-					"[+10]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+15]% XP gained from combat",
+					"[+6]% Strength",
+					
+					"This Unit loses the [Platoons] promotion <hidden from users>",
+					"This Unit gains the [Battalions] promotion <upon defeating a [Major] unit> <for units without [Battalions]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 3
 	},
 	{
 		"name": "Battalions",//营
-		"prerequisites": ["Companies"],
-		"uniques": ["This Unit gains [7] XP <upon being promoted>",
-					"[+10]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+20]% XP gained from combat",
+					"[+8]% Strength",
+					
+					"This Unit loses the [Companies] promotion <hidden from users>",
+					"This Unit gains the [Regiments] promotion <upon defeating a [Major] unit> <for units without [Regiments]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 4
 	},
 	{
 		"name": "Regiments",//团
-		"prerequisites": ["Battalions"],
-		"uniques": ["This Unit gains [8] XP <upon being promoted>",
-					"[+15]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+25]% XP gained from combat",
+					"[+10]% Strength",
+					
+					"This Unit loses the [Battalions] promotion <hidden from users>",
+					"This Unit gains the [Brigades] promotion <upon defeating a [Major] unit> <for units without [Brigades]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 5
 	},
 	{
 		"name": "Brigades",//旅
-		"prerequisites": ["Regiments"],
-		"uniques": ["This Unit gains [9] XP <upon being promoted>",
-					"[+15]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+30]% XP gained from combat",
+					"[+12]% Strength",
+					
+					"This Unit loses the [Regiments] promotion <hidden from users>",
+					"This Unit gains the [Divisions] promotion <upon defeating a [Major] unit> <for units without [Divisions]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 6
 	},
 	{
 		"name": "Divisions",//师
-		"prerequisites": ["Brigades"],
-		"uniques": ["This Unit gains [10] XP <upon being promoted>",
-					"[+15]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+35]% XP gained from combat",
+					"[+14]% Strength",
+					
+					"This Unit loses the [Brigades] promotion <hidden from users>",
+					"This Unit gains the [Corps] promotion <upon defeating a [Major] unit> <for units without [Corps]>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 7
 	},
 	{
 		"name": "Corps",//军
-		"prerequisites": ["Divisions"],
-		"uniques": ["This Unit gains [11] XP <upon being promoted>",
-					"[+15]% XP gained from combat",
-					"[+1] XP gained from combat",
-					"[+2]% Strength"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'"
-						],
+		"uniques": ["[+40]% XP gained from combat",
+					"[+16]% Strength",
+					
+					"This Unit loses the [Divisions] promotion <hidden from users>",
+					"This Unit gains the [Whets] promotion <upon defeating a [Major] unit>"],
+		"unitTypes":   [],
 		"column": 6,
 		"row": 8
 	},
+	{
+		"name": "Whets",//磨砺
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion",
+					"[+3]% Strength <for [50] turns>"],
+		"unitTypes":   [],
+		"column": 6,
+		"row": 9
+	},
 	
-	//通用 - 全部
+	//伟人
 	
 	{
-		"name": "Alert",//警戒
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+1] Sight"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Nurturing - I",//培育 - I
+		"uniques": [],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 1
 	},
 	{
-		"name": "Besiege",//攻坚
-		"prerequisites": ["Companies"],
-		"uniques": ["[+50]% Strength <vs cities>",
-					"[-35]% Strength <vs cities> <for [Land 'Melee' 'Cavalry'] units>",
-					"[-20]% Strength <vs cities> <for [Land 'Ordnance'] units>",
-					"[-20]% Strength <vs cities> <for [Land 'Support'] units>",
-					"[-20]% Strength <vs cities> <for [Water 'Support'] units>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Nurturing - II",//培育 - II
+		"prerequisites": ["Nurturing - I"],
+		"uniques": [],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 2
 	},
 	{
-		"name": "Mobility",//机动能力
-		"prerequisites": ["Companies"],
-		"uniques": ["[+1] Movement"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Nurturing - III",//培育 - III
+		"prerequisites": ["Nurturing - II"],
+		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. II )]>"],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 3
 	},
 	{
-		"name": "Blitzkrieg",//闪击
-		"prerequisites": ["Regiments"],
-		"uniques": ["[+1] Movement",
-					"Cannot be intercepted <for [Air] units> <when above [85] HP>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Nurturing - IV",//培育 - IV
+		"prerequisites": ["Nurturing - III"],
+		"uniques": [],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 4
 	},
 	{
-		"name": "Ambush",//伏击
-		"prerequisites": ["Battalions"],
-		"uniques": ["[+20]% Strength <for [non-air] units> <when above [95] HP>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Nurturing - V",//培育 - V
+		"prerequisites": ["Nurturing - IV"],
+		"uniques": ["This Unit upgrades for free <when above [0] [Great Seat ( Lv. III )]>"],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 5
 	},
+	
 	{
-		"name": "Logistics",//后勤补给
-		"prerequisites": ["Regiments"],
-		"uniques": ["[+1] additional attacks per turn"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Air 'Fighter'",
-						"Air 'Bomber'",
-						"Test"
-						],
+		"name": "Working",//工作
+		"prerequisites": ["Nurturing - I"],
+		"uniques": ["Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes":   ["Great People"],
 		"column": 7,
 		"row": 6
 	},
 	
-	//通用 - 陆地
+	//旅游单位
+	
+	{
+		"name": "Original Work",//原创作品
+		"uniques": ["Instantly provides [1] [Tourism Performance] <upon losing at least [10] HP in a single attack> <for [Troubadour] units>",
+					"Instantly provides [2] [Tourism Performance] <upon losing at least [10] HP in a single attack> <for [Orchestra] units>",
+					"Instantly provides [4] [Tourism Performance] <upon losing at least [10] HP in a single attack> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 1
+	},
+	{
+		"name": "Folklore Music",//民俗音乐
+		"prerequisites": ["Original Work"],
+		"uniques": ["Gain [5]-[10] [Culture] <upon ending a turn in a [Foreign Land] tile> <for [Troubadour] units>",
+					"Gain [10]-[20] [Culture] <upon ending a turn in a [Foreign Land] tile> <for [Orchestra] units>",
+					"Gain [20]-[40] [Culture] <upon ending a turn in a [Foreign Land] tile> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 2
+	},
+	{
+		"name": "Civilian Fundraising",//民间筹资
+		"prerequisites": ["Original Work"],
+		"uniques": ["Gain [0]-[20] [Gold] <upon ending a turn in a [Foreign Land] tile> <for [Troubadour] units>",
+					"Gain [0]-[40] [Gold] <upon ending a turn in a [Foreign Land] tile> <for [Orchestra] units>",
+					"Gain [0]-[80] [Gold] <upon ending a turn in a [Foreign Land] tile> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 3
+	},
+	{
+		"name": "Religious Legend",//宗教传说
+		"prerequisites": ["Original Work"],
+		"uniques": ["Gain [10]-[20] [Faith] <upon ending a turn in a [Foreign Land] tile> <for [Troubadour] units>",
+					"Gain [20]-[40] [Faith] <upon ending a turn in a [Foreign Land] tile> <for [Orchestra] units>",
+					"Gain [40]-[80] [Faith] <upon ending a turn in a [Foreign Land] tile> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 4
+	},
+	{
+		"name": "Concert",//演唱
+		"prerequisites": ["Original Work"],
+		"uniques": ["Instantly provides [3] [Tourism Performance] <[+1] additional time(s)> <for [Troubadour] units>",
+					"Instantly provides [6] [Tourism Performance] <[+1] additional time(s)> <for [Orchestra] units>",
+					"Instantly provides [12] [Tourism Performance] <[+1] additional time(s)> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 5
+	},
+	{
+		"name": "Publicize",//宣传
+		"prerequisites": ["Folklore Music"],
+		"uniques": ["Gain [15]-[30] [Culture] <[+1] additional time(s)> <for [Troubadour] units>",
+					"Gain [30]-[60] [Culture] <[+1] additional time(s)> <for [Orchestra] units>",
+					"Gain [60]-[120] [Culture] <[+1] additional time(s)> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 6
+	},
+	{
+		"name": "Charity",//慈善
+		"prerequisites": ["Civilian Fundraising"],
+		"uniques": ["Gain [0]-[60] [Gold] <[+1] additional time(s)> <for [Troubadour] units>",
+					"Gain [0]-[120] [Gold] <[+1] additional time(s)> <for [Orchestra] units>",
+					"Gain [0]-[180] [Gold] <[+1] additional time(s)> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 7
+	},
+	{
+		"name": "Canticle",//颂歌
+		"prerequisites": ["Religious Legend"],
+		"uniques": ["Gain [30]-[60] [Faith] <[+1] additional time(s)> <for [Troubadour] units>",
+					"Gain [60]-[120] [Faith] <[+1] additional time(s)> <for [Orchestra] units>",
+					"Gain [120]-[180] [Faith] <[+1] additional time(s)> <for [Rock Band] units>"],
+		"unitTypes":   ["Tourism Unit"],
+		"column": 8,
+		"row": 8
+	},
+	
+	//陆地 侦查
+	
+	{
+		"name": "Binoculars",//望远镜
+		"prerequisites": [],
+		"uniques": ["Can see over obstacles"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 1
+	},
+	{
+		"name": "Survivalism",//生存
+		"prerequisites": [],
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 2
+	},
+	{
+		"name": "Alert",//警戒
+		"prerequisites": ["Binoculars"],
+		"uniques": ["Can see invisible [All] units"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 3
+	},
+	{
+		"name": "Slink",//潜行
+		"prerequisites": ["Survivalism"],
+		"uniques": ["Invisible to non-adjacent units"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 4
+	},
+	{
+		"name": "Climbing",//攀岩
+		"prerequisites": ["Alert"],
+		"uniques": ["Can pass through impassable tiles"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 5
+	},
+	{
+		"name": "Ambush",//埋伏
+		"prerequisites": ["Alert","Slink"],
+		"uniques": ["[+50]% Strength <when above [95] HP>"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 6
+	},
+	{
+		"name": "Guerrilla",//游击
+		"prerequisites": ["Slink"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 7
+	},
+	{
+		"name": "Sentinel",//哨兵
+		"prerequisites": ["Climbing"],
+		"uniques": ["[+2] Sight"],
+		"unitTypes":   ["Land 'Exploration'"],
+		"column": 9,
+		"row": 8
+	},
+	
+	//陆地 战斗
 	
 	{
 		"name": "Cover",//隐蔽
-		"prerequisites": ["Squads"],
-		"uniques": ["[+15]% Strength <when defending> <vs [Ranged] units>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Test"
-						],
-		"column": 8,
-		"row": 1
-	},
-	{
-		"name": "Amphibious",//两栖作战
-		"prerequisites": ["Platoons"],
-		"uniques": ["Eliminates combat penalty for attacking over a river",
-					"Eliminates combat penalty for attacking across a coast"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Test"
-						],
-		"column": 8,
-		"row": 2
-	},
-	{
-		"name": "Air Defence",//防空
-		"prerequisites": ["Companies"],
-		"uniques": ["[+25]% Strength <when defending> <vs [Air] units>"],
-		"unitTypes":   ["Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Test"
-						],
-		"column": 8,
-		"row": 3
-	},
-	{
-		"name": "March",//长途行军
-		"prerequisites": ["Regiments"],
-		"uniques": ["Unit will heal every turn, even if it performs an action"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Test"
-						],
-		"column": 8,
-		"row": 4
-	},
-	
-	//通用 - 海军
-	
-	{
-		"name": "Armor Plating",//船体装甲
-		"prerequisites": ["Squads"],
-		"uniques": ["[+15]% Strength <when defending>",
-					"[+15]% Strength <when attacking> <for [Melee] units>"],
-		"unitTypes":   ["Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Test"
-						],
-		"column": 9,
-		"row": 1
-	},
-	{
-		"name": "Supply",//海上补给
-		"prerequisites": ["Battalions"],
-		"uniques": ["May heal outside of friendly territory",
-					"[+15] HP when healing <in [Foreign Land] tiles>"],
-		"unitTypes":   ["Water 'Melee' 'Cold weapon'", "Water 'Ranged' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'", "Water 'Ranged' 'Hot weapon'",
-						"Water 'Melee' 'Armored'", "Water 'Ranged' 'Armored'",
-						"Water 'Support'",
-						"Water 'Aircraft Carrier'",
-						"Test"
-						],
-		"column": 9,
-		"row": 2
-	},
-	
-	//通用 - 空军
-	
-	{
-		"name": "Targeted Strikes",//定点打击
-		"prerequisites": ["Squads"],
-		"uniques": ["[+15]% Strength <when attacking>"],
-		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
-						"Test"],
+		"prerequisites": [],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Battle'"],
 		"column": 10,
 		"row": 1
 	},
 	{
-		"name": "Evasion",//战术躲避
-		"prerequisites": ["Platoons"],
-		"uniques": ["Damage taken from interception reduced by [-50]%"],
-		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
-						"Test"],
+		"name": "Drill",//操练
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Battle'"],
 		"column": 10,
-		"row": 2
-	},
-	{
-		"name": "Operational Range",//航程拓展
-		"prerequisites": ["Companies"],
-		"uniques": ["[+2] Range"],
-		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
-						"Test"],
-		"column": 10,
-		"row": 3
-	},
-	{
-		"name": "Air Repair",//空中维修
-		"prerequisites": ["Battalions"],
-		"uniques": ["Unit will heal every turn, even if it performs an action"],
-		"unitTypes":   ["Air 'Fighter'","Air 'Bomber'",
-						"Test"],
-		"column": 10,
-		"row": 4
-	},
-	
-	//通用 - 近战
-	
-	{
-		"name": "Plier-shaped",//钳形攻势
-		"prerequisites": ["Companies"],
-		"uniques": ["[+50]% to Flank Attack bonuses"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'",
-						"Land 'Melee' 'Armored'",
-						"Water 'Melee' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'",
-						"Water 'Melee' 'Armored'",
-						"Test"
-						],
-		"column": 11,
-		"row": 1
-	},
-	{
-		"name": "Pounce",//奇袭
-		"prerequisites": ["Battalions"],
-		"uniques": ["[+50]% Strength <when above [98] HP>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'",
-						"Land 'Melee' 'Cavalry'",
-						"Land 'Melee' 'Armored'",
-						"Water 'Melee' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'",
-						"Water 'Melee' 'Armored'",
-						"Test"
-						],
-		"column": 11,
-		"row": 2
-	},
-	
-	//通用 - 远程
-	
-	{
-		"name": "Extended Range",//射程拓展
-		"prerequisites": ["Companies"],
-		"uniques": ["[+1] Range"],
-		"unitTypes":   ["Land 'Ranged' 'Cold weapon'",
-						"Land 'Ranged' 'Hot weapon'",
-						"Land 'Ranged' 'Cavalry'",
-						"Land 'Ranged' 'Armored'",
-						"Water 'Ranged' 'Cold weapon'",
-						"Water 'Ranged' 'Hot weapon'",
-						"Water 'Ranged' 'Armored'",
-						"Test"
-						],
-		"column": 12,
-		"row": 1
-	},
-	{
-		"name": "Indirect Fire",//间瞄射击
-		"prerequisites": ["Battalions"],
-		"uniques": ["Ranged attacks may be performed over obstacles"],
-		"unitTypes":   ["Land 'Ranged' 'Cold weapon'",
-						"Land 'Ranged' 'Hot weapon'",
-						"Land 'Ranged' 'Cavalry'",
-						"Land 'Ranged' 'Armored'",
-						"Water 'Ranged' 'Cold weapon'",
-						"Water 'Ranged' 'Hot weapon'",
-						"Water 'Ranged' 'Armored'",
-						"Test"
-						],
-		"column": 12,
-		"row": 2
-	},
-	
-	//通用 - 军械/支援
-	
-	{
-		"name": "Suppression",//压制
-		"prerequisites": ["Squads"],
-		"uniques": ["[+15]% Strength <when attacking>"],
-		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
-						"Test"],
-		"column": 13,
-		"row": 1
-	},
-	{
-		"name": "Attack Reinforcements",//围点打援
-		"prerequisites": ["Companies"],
-		"uniques": ["Blast radius [1]",
-					"[+10]% Strength <when attacking>"],
-		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
-						"Test"],
-        "civilopediaText": [{"text":"Encircle an enemy post in order to attack reinforcements coming to its aid"}],
-		"column": 13,
-		"row": 2
-	},
-	{
-		"name": "'[Scorched Earth]' ability",//焦土策略
-		"prerequisites": ["Companies"],
-		"uniques": ["Only available <after adopting [Scorched Earth]>",
-					"Destroys tile improvements when attacking",
-					"[+10]% Strength <when attacking>"],
-		"unitTypes":   ["Land 'Ordnance'", "Land 'Support'", "Water 'Support'",
-						"Test"],
-		"column": 13,
-		"row": 3
-	},
-	
-	//陆地 - 近战/远程
-	
-	{
-		"name": "Choke Points",//咽喉要道
-		"prerequisites": ["Squads"],
-		"uniques": ["[+25]% Strength <when defending> <in [Marsh] tiles>",
-					"[+10]% Strength <when defending> <in [Jungle] tiles>",
-					"[+10]% Strength <when defending> <in [Forest] tiles>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
-		"row": 1
-	},
-	{
-		"name": "Urban Warfare",//城市战
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+15]% Strength <when fighting in [District] tiles>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
 		"row": 2
 	},
 	{
 		"name": "Military Doctor",//军医
-		"prerequisites": ["Platoons"],
+		"prerequisites": ["Cover"],
 		"uniques": ["[+5] HP when healing",
 					"All adjacent units heal [+5] HP when healing"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
 		"row": 3
 	},
 	{
-		"name": "Forest Shuttle",//林间穿梭
-		"prerequisites": ["Companies"],
-		"uniques": ["Double movement in [Forest]",
-					"Double movement in [Jungle]"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
+		"name": "Urban Warfare",//城市战
+		"prerequisites": ["Drill"],
+		"uniques": ["[+7]% Strength <in [District - City] tiles>"],
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
 		"row": 4
 	},
 	{
-		"name": "Guerrilla",//游击
-		"prerequisites": ["Battalions"],
-		"uniques": ["Ignores Zone of Control <in [Forest] tiles>",
-					"Ignores Zone of Control <in [Jungle] tiles>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
+		"name": "Amphibious",//两栖作战
+		"prerequisites": ["Drill"],
+		"uniques": ["Eliminates combat penalty for attacking across a coast",
+					"Eliminates combat penalty for attacking over a river"],
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
 		"row": 5
 	},
 	{
-		"name": "Trench",//堑壕战
-		"prerequisites": ["Battalions"],
-		"uniques": ["[+10]% Strength <when defending>",
-					"[+15]% Strength <when defending> <in [Trenchs] tiles>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Ranged' 'Cold weapon'",
-						"Land 'Melee' 'Hot weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"
-						],
-		"column": 14,
+		"name": "Trench Warfare",//堑壕战
+		"prerequisites": ["Military Doctor"],
+		"uniques": ["[+7]% Strength <when defending> <in [Military Improvement] tiles>"],
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
 		"row": 6
 	},
-	
-	//陆地 - 近战
-	
 	{
-		"name": "Drill",//操练
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
-						"Test"],
-		"column": 15,
-		"row": 1
+		"name": "Blitzkrieg",//闪击
+		"prerequisites": ["Urban Warfare"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
+		"row": 7
 	},
 	{
-		"name": "Shock",//冲击
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
-						"Test"],
-		"column": 15,
-		"row": 2
+		"name": "March",//行军
+		"prerequisites": ["Trench Warfare","Blitzkrieg"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Battle'"],
+		"column": 10,
+		"row": 8
+	},
+	
+	//陆地 抗冲锋
+	
+	{
+		"name": "Choke Points",//咽喉要道
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 1
 	},
 	{
 		"name": "Formation",//列阵
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+15]% Strength <when adjacent to a [{Land} {Melee}] unit>"],
-		"unitTypes":   ["Land 'Melee' 'Cold weapon'", "Land 'Melee' 'Hot weapon'",
-						"Test"],
-		"column": 15,
-		"row": 3
-	},
-	
-	//陆地 - 远程
-	
-	{
-		"name": "Accuracy",//精准
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes":   ["Land 'Ranged' 'Cold weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"],
-		"column": 16,
-		"row": 1
-	},
-	{
-		"name": "Salvo",//齐射
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes":   ["Land 'Ranged' 'Cold weapon'", "Land 'Ranged' 'Hot weapon'",
-						"Test"],
-		"column": 16,
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when adjacent to a [Land 'Anti-rush'] unit>"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
 		"row": 2
 	},
+	{
+		"name": "Dispensary",//驻守
+		"prerequisites": ["Choke Points"],
+		"uniques": ["[+7]% Strength <when defending>",
+					"[+7]% Strength <when defending> <in [Military Improvement] tiles>"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 3
+	},
+	{
+		"name": "Echelon",//梯队
+		"prerequisites": ["Formation"],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 4
+	},
+	{
+		"name": "Plier-shaped",//钳形攻势
+		"prerequisites": ["Formation"],
+		"uniques": ["[+50]% to Flank Attack bonuses"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 5
+	},
+	{
+		"name": "Redeploy",//重新部署
+		"prerequisites": ["Dispensary","Echelon"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 6
+	},
+	{
+		"name": "Pounce",//奇袭
+		"prerequisites": ["Plier-shaped"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 7
+	},
+	{
+		"name": "Will Fight",//斗志
+		"prerequisites": ["Redeploy","Pounce"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Anti-rush'"],
+		"column": 11,
+		"row": 8
+	},
 	
-	//陆地 - 骑兵/装甲
+	//陆地 支援
 	
 	{
-		"name": "Encirclement",//围剿
-		"prerequisites": ["Squads"],
-		"uniques": ["[+25]% to Flank Attack bonuses",
-					"[+15]% Strength <when adjacent to a [Cavalry] unit> <for [Land 'Melee' 'Cavalry'] units>",
-					"[+15]% Strength <when adjacent to a [Cavalry] unit> <for [Land 'Ranged' 'Cavalry'] units>",
-					"[+15]% Strength <when adjacent to a [Armored] unit> <for [Land 'Melee' 'Armored'] units>",
-					"[+15]% Strength <when adjacent to a [Armored] unit> <for [Land 'Ranged' 'Armored'] units>"],
-		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"
-						],
-		"column": 17,
+		"name": "Salvo",//齐射
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
 		"row": 1
 	},
 	{
+		"name": "Incendiary Device",//燃烧弹
+		"prerequisites": ["Salvo"],
+		"uniques": ["[+7]% Strength <when attacking> <vs cities>"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 2
+	},
+	{
+		"name": "Protection",//掩护
+		"prerequisites": ["Salvo"],
+		"uniques": ["[+7]% Strength <when adjacent to a [Land] unit>"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 3
+	},
+	{
+		"name": "Columns",//纵队
+		"prerequisites": ["Salvo"],
+		"uniques": ["[+7]% Strength <when adjacent to a [Land 'Support'] unit>"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 4
+	},
+	{
+		"name": "Indirect Fire",//间瞄射击
+		"prerequisites": ["Incendiary Device"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 5
+	},
+	{
+		"name": "Extended Range",//射程拓展
+		"prerequisites": ["Protection"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 6
+	},
+	{
+		"name": "Ammunition Supply",//弹药补给
+		"prerequisites": ["Columns"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 7
+	},
+	{
+		"name": "Logistics",//后勤
+		"prerequisites": ["Indirect Fire","Extended Range","Ammunition Supply"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Support'"],
+		"column": 12,
+		"row": 8
+	},
+	
+	//陆地 轻 冲锋
+	
+	{
 		"name": "Looting",//劫掠
-		"prerequisites": ["Platoons"],
+		"prerequisites": [],
 		"uniques": ["No movement cost to pillage"],
-		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"
-						],
-		"column": 17,
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 1
+	},
+	{
+		"name": "Horse Breeder",//饲马员
+		"prerequisites": [],
+		"uniques": ["Ignores terrain cost"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
 		"row": 2
 	},
 	{
 		"name": "Pursuit",//追击
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+25]% Strength <when attacking> <vs [Wounded] units>"],
-		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"
-						],
+		"prerequisites": ["Looting"],
+		"uniques": ["[+7]% Strength <vs [Wounded] units>"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 3
+	},
+	{
+		"name": "Encirclement",//围剿
+		"prerequisites": ["Looting","Horse Breeder"],
+		"uniques": ["[+50]% to Flank Attack bonuses"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 4
+	},
+	{
+		"name": "Mobility",//机动能力
+		"prerequisites": ["Horse Breeder"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 5
+	},
+	{
+		"name": "Fleeing",//逃窜
+		"prerequisites": ["Pursuit"],
+		"uniques": ["[+1] Movement <when below [30] HP>"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 6
+	},
+	{
+		"name": "Shock",//冲击
+		"prerequisites": ["Encirclement","Mobility"],
+		"uniques": ["[+7]% Strength <when adjacent to a [Rush Unit] unit> <when attacking>"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 7
+	},
+	{
+		"name": "Repair",//修复
+		"prerequisites": ["Fleeing","Shock"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Light Rush'"],
+		"column": 13,
+		"row": 8
+	},
+	
+	//陆地 重 冲锋
+	
+	{
+		"name": "Rout",//击溃
+		"prerequisites": [],
+		"uniques": ["[+2]% Strength <upon losing at least [0] HP in a single attack> <for [7] turns> <for [Land 'Heavy Rush'] units> <for units with [Rout]>"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 1
+	},
+	{
+		"name": "Saddle",//马鞍
+		"prerequisites": [],
+		"uniques": ["No defensive terrain penalty"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 2
+	},
+	{
+		"name": "Charge Fiercely",//猛烈冲锋
+		"prerequisites": ["Rout"],
+		"uniques": ["[+7]% Strength <when above [70] HP> <when attacking>"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 3
+	},
+	{
+		"name": "Trample",//践踏
+		"prerequisites": ["Rout"],
+		"uniques": ["[+7]% Strength <vs [Wounded] units>"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 4
+	},
+	{
+		"name": "Armor Piercing",//穿透护甲
+		"prerequisites": ["Saddle"],
+		"uniques": ["[+7]% Strength <vs [Armored] units>"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 5
+	},
+	{
+		"name": "Breakthrough",//突破
+		"prerequisites": ["Charge Fiercely"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 6
+	},
+	{
+		"name": "Reactive Armor",//反应装甲
+		"prerequisites": ["Trample","Armor Piercing"],
+		"uniques": ["[+7]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 7
+	},
+	{
+		"name": "Transport Team",//运输队
+		"prerequisites": ["Breakthrough"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Heavy Rush'"],
+		"column": 14,
+		"row": 8
+	},
+	
+	//陆地 远 冲锋
+	
+	{
+		"name": "Disturb",//袭扰
+		"prerequisites": [],
+		"uniques": ["Can move after attacking"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 1
+	},
+	{
+		"name": "Fraudulent Escape",//诈逃
+		"prerequisites": [],
+		"uniques": ["[+1] Movement <upon losing at least [12] HP in a single attack>"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 2
+	},
+	{
+		"name": "Failing",//弱点
+		"prerequisites": ["Disturb"],
+		"uniques": ["[+7]% Strength"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 3
+	},
+	{
+		"name": "Back Stab",//暗箭
+		"prerequisites": ["Disturb"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 4
+	},
+	{
+		"name": "Roundabout",//迂回
+		"prerequisites": ["Fraudulent Escape","Disturb"],
+		"uniques": ["Ignores Zone of Control"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 5
+	},
+	{
+		"name": "Concentrated",//专注
+		"prerequisites": ["Failing"],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 6
+	},
+	{
+		"name": "Rapid Fire",//急射
+		"prerequisites": ["Back Stab","Roundabout"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 7
+	},
+	{
+		"name": "Portable Supply",//便携补给
+		"prerequisites": ["Concentrated","Rapid Fire"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Land 'Ranged Rush'"],
+		"column": 15,
+		"row": 8
+	},
+	
+	//陆地 攻城
+	
+	{
+		"name": "Besiege",//攻坚
+		"prerequisites": [],
+		"uniques": ["[+25]% Strength <vs cities>"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 1
+	},
+	{
+		"name": "Guard",//护卫
+		"prerequisites": [],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 2
+	},
+	{
+		"name": "Suppression",//压制
+		"prerequisites": ["Besiege"],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 3
+	},
+	{
+		"name": "Axle",//轮轴
+		"prerequisites": ["Guard"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 4
+	},
+	{
+		"name": "Bombshell",//炮弹
+		"prerequisites": ["Suppression"],
+		"uniques": ["[+7]% Strength <when attacking>",
+					"Blast radius [1]"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 5
+	},
+	{
+		"name": "Range Finder",//测距员
+		"prerequisites": ["Axle"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 6
+	},
+	{
+		"name": "High Trajectory",//高抛
+		"prerequisites": ["Axle"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 7
+	},
+	{
+		"name": "Quick Loading",//快速装填
+		"prerequisites": ["Bombshell","Range Finder","High Trajectory"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Siege'"],
+		"column": 16,
+		"row": 8
+	},
+	
+	//陆地 炮兵
+	
+	{
+		"name": "Turret",//炮台
+		"prerequisites": [],
+		"uniques": ["[+2]% Strength <upon losing at least [0] HP in a single attack> <for [5] turns> <for [Land 'Gunnery'] units> <for units with [Turret]>"],
+		"unitTypes":   ["Land 'Gunnery'"],
+		"column": 17,
+		"row": 1
+	},
+	{
+		"name": "Barrage",//弹幕
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when attacking>"],
+		"unitTypes":   ["Land 'Gunnery'"],
+		"column": 17,
+		"row": 2
+	},
+	{
+		"name": "Shrapnel Shell",//榴霰弹
+		"prerequisites": ["Turret"],
+		"uniques": ["[+7]% Strength <when attacking>",
+					"Blast radius [1]"],
+		"unitTypes":   ["Land 'Gunnery'"],
 		"column": 17,
 		"row": 3
 	},
 	{
-		"name": "Fleeing",//逃窜
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+1] Movement <when below [15] HP>"],
-		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"
-						],
+		"name": "Air Defence",//防空
+		"prerequisites": ["Turret","Barrage"],
+		"uniques": ["[+50]% chance to intercept air attacks"],
+		"unitTypes":   ["Land 'Gunnery'"],
 		"column": 17,
 		"row": 4
 	},
 	{
-		"name": "Charge Fiercely",//猛烈冲锋
-		"prerequisites": ["Battalions"],
-		"uniques": ["[+50]% Strength <when attacking> <when above [98] HP>",
-					"[+1] Movement <when above [98] HP>"],
-		"unitTypes":   ["Land 'Melee' 'Cavalry'", "Land 'Ranged' 'Cavalry'",
-						"Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"
-						],
+		"name": "Creeping Barrage",//炮击徐进
+		"prerequisites": ["Barrage"],
+		"uniques": ["Can move after attacking"],
+		"unitTypes":   ["Land 'Gunnery'"],
 		"column": 17,
 		"row": 5
 	},
-	
-	//陆地 - 装甲
-	
 	{
-		"name": "Repair",//修复
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+10] HP when healing"],
-		"unitTypes":   ["Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Land 'Ordnance'", "Land 'Support'",
-						"Test"
-						],
-		"column": 18,
-		"row": 1
+		"name": "Portable Weapons",//便携武器
+		"prerequisites": ["Shrapnel Shell","Air Defence","Creeping Barrage"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Land 'Gunnery'"],
+		"column": 17,
+		"row": 6
 	},
 	{
-		"name": "Reactive Armor",//反应装甲
-		"prerequisites": ["Companies"],
-		"uniques": ["[+10]% Strength <when defending>"],
-		"unitTypes":   ["Land 'Melee' 'Armored'", "Land 'Ranged' 'Armored'",
-						"Test"],
-		"column": 18,
-		"row": 2
+		"name": "Firepower Pours",//火力倾泻
+		"prerequisites": ["Portable Weapons"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Land 'Gunnery'"],
+		"column": 17,
+		"row": 7
+	},
+	{
+		"name": "Scout Shooting",//侦察射击
+		"prerequisites": ["Portable Weapons"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Land 'Gunnery'"],
+		"column": 17,
+		"row": 8
 	},
 	
-	//水上 - 近战
+	//水上 战斗
 	
 	{
 		"name": "Boarding Party",//接舷
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <vs [Water] units>"],
-		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'",
-						"Water 'Melee' 'Armored'",
-						"Test"
-						],
-		"column": 19,
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
 		"row": 1
 	},
 	{
-		"name": "Coastal Raider",//海掠
-		"prerequisites": ["Squads"],
-		"uniques": ["Earn [50]% of the damage done to [Water] units as [Gold]",
-					"Earn [50]% of killed [Water] unit's [Strength] as [Gold]"],
-		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'",
-						"Water 'Melee' 'Armored'",
-						"Test"
-						],
-		"column": 19,
+		"name": "Seaman",//水手
+		"prerequisites": [],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
 		"row": 2
+	},
+	{
+		"name": "Wedge Formation",//楔形阵
+		"prerequisites": ["Boarding Party"],
+		"uniques": ["[+7]% Strength <when adjacent to a [{Military} {Water}] unit>"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 3
+	},
+	{
+		"name": "Helmsman",//舵手
+		"prerequisites": ["Boarding Party"],
+		"uniques": ["Can move after attacking"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 4
 	},
 	{
 		"name": "Landing Party",//抢滩登陆
-		"prerequisites": ["Platoons"],
+		"prerequisites": ["Seaman"],
 		"uniques": ["Eliminates combat penalty for attacking across a coast",
-					"[+10]% Strength <when fighting in [Coastal] tiles>"],
-		"unitTypes":   ["Water 'Melee' 'Cold weapon'",
-						"Water 'Melee' 'Hot weapon'",
-						"Water 'Melee' 'Armored'",
-						"Test"
-						],
-		"column": 19,
-		"row": 3
+					"Eliminates combat penalty for attacking over a river"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 5
+	},
+	{
+		"name": "Assault Tactic",//冲撞战术
+		"prerequisites": ["Wedge Formation"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 6
+	},
+	{
+		"name": "Route Chart",//航线海图
+		"prerequisites": ["Helmsman","Landing Party"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 7
+	},
+	{
+		"name": "Auxiliary Ship",//辅助船
+		"prerequisites": ["Route Chart"],
+		"uniques": ["May heal outside of friendly territory"],
+		"unitTypes":   ["Water 'Battle'"],
+		"column": 18,
+		"row": 8
 	},
 	
-	//水上 - 远程
+	//水上 支援
 	
 	{
 		"name": "Targeting",//定位
-		"prerequisites": ["Squads"],
-		"uniques": ["[+15]% Strength <vs [Water] units>"],
-		"unitTypes":   ["Water 'Ranged' 'Cold weapon'",
-						"Water 'Ranged' 'Hot weapon'",
-						"Water 'Ranged' 'Armored'",
-						"Test"
-						],
+		"prerequisites": [],
+		"uniques": ["[+1] Sight"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 1
+	},
+	{
+		"name": "Fire Preparation",//火力准备
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 2
+	},
+	{
+		"name": "Battle Formation",//战斗队形
+		"prerequisites": ["Targeting"],
+		"uniques": ["[+7]% Strength <when adjacent to a [{Military} {Water}] unit>"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 3
+	},
+	{
+		"name": "Convoy",//护航队
+		"prerequisites": ["Fire Preparation"],
+		"uniques": ["[+7]% Strength <when defending>"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 4
+	},
+	{
+		"name": "Coincidence Rangefinding",//测距一致
+		"prerequisites": ["Battle Formation"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 5
+	},
+	{
+		"name": "Anti-aircraft Artillery",//防空炮
+		"prerequisites": ["Convoy","Battle Formation"],
+		"uniques": ["[+50]% chance to intercept air attacks"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 6
+	},
+	{
+		"name": "Parallel Artillery Battle",//平行炮战
+		"prerequisites": ["Convoy"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 7
+	},
+	{
+		"name": "Maritime Supply",//海上补给
+		"prerequisites": ["Coincidence Rangefinding"],
+		"uniques": ["May heal outside of friendly territory"],
+		"unitTypes":   ["Water 'Support'"],
+		"column": 19,
+		"row": 8
+	},
+	
+	//水上 袭扰
+	
+	{
+		"name": "Movement Tactic",//运动战术
+		"prerequisites": [],
+		"uniques": ["Can move after attacking"],
+		"unitTypes":   ["Water 'Harass'"],
 		"column": 20,
 		"row": 1
 	},
 	{
-		"name": "Coincidence Rangefinding",//测距一致
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+1] Sight"],
-		"unitTypes":   ["Water 'Ranged' 'Cold weapon'",
-						"Water 'Ranged' 'Hot weapon'",
-						"Water 'Ranged' 'Armored'",
-						"Test"
-						],
+		"name": "Plunder Permit",//私掠许可证
+		"prerequisites": [],
+		"uniques": ["May enter foreign tiles without open borders"],
+		"unitTypes":   ["Water 'Harass'"],
 		"column": 20,
 		"row": 2
 	},
+	{
+		"name": "Anti-sonar Device",//反声呐装置
+		"prerequisites": ["Movement Tactic"],
+		"uniques": ["Can see invisible [Water] units",
+					"Invisible to non-adjacent units"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 3
+	},
+	{
+		"name": "Captured",//俘虏
+		"prerequisites": ["Plunder Permit"],
+		"uniques": ["Earn [75]% of killed [mapUnitFilter] unit's [Cost] as [Gold]"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 4
+	},
+	{
+		"name": "Coastal Raider",//海掠
+		"prerequisites": ["Plunder Permit"],
+		"uniques": ["Earn [50]% of the damage done to [City] units as [Gold]",
+					"Earn [50]% of the damage done to [{Land} {non-[Embarked]}] units as [Gold]"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 5
+	},
+	{
+		"name": "Wolf Pack Tactic",//狼群战术
+		"prerequisites": ["Anti-sonar Device","Captured"],
+		"uniques": ["[+7]% Strength <when adjacent to a [Water 'Harass'] unit>"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 6
+	},
+	{
+		"name": "Plunder Supply",//掠夺补给
+		"prerequisites": ["Coastal Raider"],
+		"uniques": ["Heals [40] damage if it kills a unit"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 7
+	},
+	{
+		"name": "Continuous Aiming",//连续瞄准
+		"prerequisites": ["Wolf Pack Tactic"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Water 'Harass'"],
+		"column": 20,
+		"row": 8
+	},
 	
-	//水上 - 航空母舰
+	//水上 攻城
+	
+	{
+		"name": "Shipboard Artillery",//船载火炮
+		"prerequisites": [],
+		"uniques": ["[+25]% Strength <vs cities>"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 1
+	},
+	{
+		"name": "Clad Copper",//覆铜
+		"prerequisites": [],
+		"uniques": ["[+1] Movement"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 2
+	},
+	{
+		"name": "Motorized Guard",//机动卫队
+		"prerequisites": ["Shipboard Artillery"],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 3
+	},
+	{
+		"name": "Bulb Bow",//球鼻艏
+		"prerequisites": ["Clad Copper"],
+		"uniques": ["Can move after attacking"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 4
+	},
+	{
+		"name": "Stabilization System",//稳定系统
+		"prerequisites": ["Motorized Guard","Bulb Bow"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 5
+	},
+	{
+		"name": "Live-fire Training",//实弹训练
+		"prerequisites": ["Stabilization System"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 6
+	},
+	{
+		"name": "Mooring",//靠岸休整
+		"prerequisites": ["Stabilization System"],
+		"uniques": ["Heal this unit by [10] HP <in tiles adjacent to [Land]> <upon turn end>"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 7
+	},
+	{
+		"name": "Long-range Attack",//远程打击
+		"prerequisites": ["Stabilization System"],
+		"uniques": ["[+1] Range"],
+		"unitTypes":   ["Water 'Siege'"],
+		"column": 21,
+		"row": 8
+	},
+	
+	//水上 运载
 	
 	{
 		"name": "Flight Deck",//飞行甲板
 		"prerequisites": [],
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
-		"unitTypes":   ["Water 'Aircraft Carrier'",
-						"Test"],
-		"column": 21,
+		"uniques": ["Can carry [1] extra [Airplane] units"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
 		"row": 1
+	},
+	{
+		"name": "Armor Plating",//船体装甲
+		"prerequisites": [],
+		"uniques": ["[+10]% Strength <when defending>"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 2
 	},
 	{
 		"name": "Aircraft Depot",//航母机库
 		"prerequisites": ["Flight Deck"],
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
-		"unitTypes":   ["Water 'Aircraft Carrier'",
-						"Test"],
-		"column": 21,
-		"row": 2
+		"uniques": ["Can carry [1] extra [Airplane] units"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 3
+	},
+	{
+		"name": "Advanced Engine",//先进发动机
+		"prerequisites": ["Armor Plating"],
+		"uniques": ["[+2] Movement"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 4
+	},
+	{
+		"name": "Scout Aircraft",//侦察机
+		"prerequisites": ["Armor Plating"],
+		"uniques": ["[+2] Sight"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 5
 	},
 	{
 		"name": "Folding Wing Aircraft",//折翼装载
 		"prerequisites": ["Aircraft Depot"],
-		"uniques": ["Can carry [1] extra [Aircraft] units"],
-		"unitTypes":   ["Water 'Aircraft Carrier'",
-						"Test"],
-		"column": 21,
+		"uniques": ["Can carry [1] extra [Airplane] units"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 6
+	},
+	{
+		"name": "Deck Commissioner",//甲板专员
+		"prerequisites": ["Advanced Engine"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 7
+	},
+	{
+		"name": "Aircraft Carrier Battle Group",//航空母舰战斗群
+		"prerequisites": ["Folding Wing Aircraft","Deck Commissioner"],
+		"uniques": ["Ranged attacks may be performed over obstacles",
+					"[+10]% Strength"],
+		"unitTypes":   ["Water 'Carrier'"],
+		"column": 22,
+		"row": 8
+	},
+	
+	//空中 战斗机
+	
+	{
+		"name": "Cockpit Armor",//座舱护甲
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 1
+	},
+	{
+		"name": "Dogfighting",//缠斗
+		"prerequisites": [],
+		"uniques": ["[+20]% Strength when performing Air Sweep"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 2
+	},
+	{
+		"name": "Evasion",//战术躲避
+		"prerequisites": ["Cockpit Armor"],
+		"uniques": ["Damage taken from interception reduced by [-25]%"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
 		"row": 3
 	},
 	{
-		"name": "Scout Aircraft",//侦察机
-		"prerequisites": ["Platoons"],
-		"uniques": ["[+2] Sight"],
-		"unitTypes":   ["Water 'Aircraft Carrier'",
-						"Test"],
-		"column": 21,
+		"name": "Strafing",//扫射
+		"prerequisites": ["Dogfighting"],
+		"uniques": ["[+20]% Damage when intercepting"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
 		"row": 4
-	},
-	
-	//空中 - 战斗机
-	
-	{
-		"name": "Dogfighting",//缠斗
-		"prerequisites": ["Squads"],
-		"uniques": ["[+33]% Strength when performing Air Sweep",
-					"Damage taken from interception reduced by [-20]%"],
-		"unitTypes":   ["Air 'Fighter'",
-						"Test"],
-		"column": 22,
-		"row": 1
 	},
 	{
 		"name": "Interception",//拦截
-		"prerequisites": ["Squads"],
-		"uniques": ["[+20]% chance to intercept air attacks",
-					"[+20]% Damage when intercepting"],
-		"unitTypes":   ["Air 'Fighter'",
-						"Test"],
-		"column": 22,
-		"row": 2
+		"prerequisites": ["Dogfighting"],
+		"uniques": ["[+40]% chance to intercept air attacks"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 5
+	},
+	{
+		"name": "Sidetank",//副油箱
+		"prerequisites": ["Evasion"],
+		"uniques": ["[+3] Range"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 6
 	},
 	{
 		"name": "Sortie",//连续出击
-		"prerequisites": ["Companies"],
+		"prerequisites": ["Evasion","Strafing","Interception"],
 		"uniques": ["[+1] extra interceptions may be made per turn"],
-		"unitTypes":   ["Air 'Fighter'",
-						"Test"],
-		"column": 22,
-		"row": 3
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 7
+	},
+	{
+		"name": "Ground Crew",//地勤人员
+		"prerequisites": ["Sidetank"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Air 'Fighter'"],
+		"column": 23,
+		"row": 8
 	},
 	
-	//空中 - 轰炸机
+	//空中 轰炸机
 	
 	{
 		"name": "Bombing",//轰炸
-		"prerequisites": ["Squads"],
-		"uniques": ["[+10]% Strength <when attacking>"],
-		"unitTypes":   ["Air 'Bomber'",
-						"Test"],
-		"column": 23,
+		"prerequisites": [],
+		"uniques": ["[+15]% Strength <vs cities> <when attacking>"],
+		"unitTypes":   ["Air 'Bomber'"],
+		"column": 24,
 		"row": 1
+	},
+	{
+		"name": "Airborne Support",//空中支援
+		"prerequisites": [],
+		"uniques": ["[+7]% Strength <when attacking> <in [non-[City]] tiles>"],
+		"unitTypes":   ["Air 'Bomber'"],
+		"column": 24,
+		"row": 2
 	},
 	{
 		"name": "Aviation Torpedoes",//航空鱼雷
-		"prerequisites": ["Companies"],
-		"uniques": ["[+10]% Strength <vs [Water] units> <when attacking>"],
-		"unitTypes":   ["Air 'Bomber'",
-						"Test"],
-		"column": 23,
-		"row": 2
-	},
-	
-	//空中 - 导弹
-	
-	{
-		"name": "Anti-tank",//反坦
-		"prerequisites": [],
-		"uniques": ["[+50]% Strength <vs [Land 'Melee' 'Armored'] units>",
-					"[+50]% Strength <vs [Land 'Ranged' 'Armored'] units>"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
-		"column": 24,
-		"row": 1
-	},
-	{
-		"name": "Anti-aircraft",//反空
-		"prerequisites": [],
-		"uniques": ["[+50]% Strength <vs [Air] units>"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
-		"column": 24,
-		"row": 2
-	},
-	{
-		"name": "Anti-missile",//反导
-		"prerequisites": [],
-		"uniques": ["[+75]% Strength <vs [Air 'Missile'] units>"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"prerequisites": ["Bombing"],
+		"uniques": ["[+7]% Strength <when attacking> <in [Water] tiles>"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 3
 	},
 	{
-		"name": "Anti-submarine",//反潜
-		"prerequisites": [],
-		"uniques": ["[+50]% Strength <vs [Submarines] units>"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"name": "Operational Range",//航程拓展
+		"prerequisites": ["Airborne Support"],
+		"uniques": ["[+2] Range"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 4
 	},
 	{
-		"name": "Anti-ship",//反舰
-		"prerequisites": [],
-		"uniques": ["[+50]% Strength <vs [Water] units>"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"name": "Targeted Strikes",//定点打击
+		"prerequisites": ["Aviation Torpedoes"],
+		"uniques": ["[+7]% Strength <when attacking>",
+					"Blast radius [1]"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 5
 	},
 	{
-		"name": "Propulsion Unit",//推进装置
-		"prerequisites": ["Anti-tank","Anti-aircraft","Anti-missile","Anti-submarine","Anti-ship"],
-		"uniques": ["[+3] Range"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"name": "Electronic Harassment",//电子干扰
+		"prerequisites": ["Operational Range"],
+		"uniques": ["Damage taken from interception reduced by [-33]%"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 6
 	},
 	{
-		"name": "New Type Charge",//新型装药
-		"prerequisites": ["Anti-tank","Anti-aircraft","Anti-missile","Anti-submarine","Anti-ship"],
-		"uniques": ["[+100]% Strength",
-					"Blast radius [2]"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"name": "Bombard",//重复轰炸
+		"prerequisites": ["Operational Range","Targeted Strikes"],
+		"uniques": ["[+1] additional attacks per turn"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 7
 	},
 	{
-		"name": "Qian Xuesen Ballistic",//钱学森弹道
-		"prerequisites": ["Propulsion Unit","New Type Charge"],
-		"uniques": ["Cannot be intercepted",
-					"[+2] Range"],
-		"unitTypes":   ["Air 'Missile'",
-						"Test"],
+		"name": "Air Repair",//空中维修
+		"prerequisites": ["Operational Range","Targeted Strikes"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes":   ["Air 'Bomber'"],
 		"column": 24,
 		"row": 8
 	},
+	
+	//空中 导弹
+	
+	{
+		"name": "Anti-air",//反空
+		"prerequisites": [],
+		"uniques": ["[+15]% Strength <vs [Air] units>"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 1
+	},
+	{
+		"name": "Anti-land",//反陆
+		"prerequisites": [],
+		"uniques": ["[+15]% Strength <vs [Land] units>"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 2
+	},
+	{
+		"name": "Anti-water",//反水
+		"prerequisites": [],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 3
+	},
+	{
+		"name": "Accuracy",//精确制导
+		"prerequisites": ["Anti-air"],
+		"uniques": ["[+15]% Strength"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 4
+	},
+	{
+		"name": "Fire Cover",//火力覆盖
+		"prerequisites": ["Anti-land"],
+		"uniques": ["Blast radius [+2]"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 5
+	},
+	{
+		"name": "New Type Charge",//新型装药
+		"prerequisites": ["Anti-water"],
+		"uniques": ["[10] HP when healing <upon losing at least [10] HP in a single attack>"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 6
+	},
+	{
+		"name": "Propulsion Unit",//推进装置
+		"prerequisites": ["Accuracy","Fire Cover","New Type Charge"],
+		"uniques": ["[+2] Range"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 7
+	},
+	{
+		"name": "Qian Xuesen Ballistic",//钱学森弹道
+		"prerequisites": ["Propulsion Unit"],
+		"uniques": ["[+2] Range",
+					"Cannot be intercepted"],
+		"unitTypes":   ["Air 'Missile'"],
+		"column": 25,
+		"row": 8
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

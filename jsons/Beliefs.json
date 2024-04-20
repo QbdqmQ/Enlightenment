@@ -6,120 +6,119 @@
     {
         "name": "Dance of the Aurora",//极光之舞
         "type": "Pantheon",
-        "uniques": ["'[All]' [district] [+1 Faith] from each [2] adjacent '[Tundra]' [tiles]"]
+        "uniques": ["Comment ['[All]' [district] [+1 Faith] from each [2] adjacent '[Tundra]' [tiles]]"]
     },
     {
         "name": "Desert Folklore",//沙漠民俗
         "type": "Pantheon",
-        "uniques": ["'[All]' [district] [+1 Faith] from each [2] adjacent '[Desert]' [tiles]"]
+        "uniques": ["Comment ['[All]' [district] [+1 Faith] from each [2] adjacent '[Desert]' [tiles]]"]
     },
 	{
         "name": "Sacred Path",//神圣道路
         "type": "Pantheon",
-        "uniques": ["'[Forest]' & '[Jungle]' [tiles] [+1 Culture]"]
+        "uniques": ["Comment ['[All Road]' [improvement] [+1 Culture]]"]
     },
 	{
         "name": "Mountain Settlements",//山间民居
         "type": "Pantheon",
-        "uniques": ["'[Mountain]' [tiles] [+1 Faith, +1 Production, +2 Food]"]
+        "uniques": ["Comment ['[Mountain]' [tiles] [+1 Faith, +1 Production, +2 Food]]"]
     },
 	{
         "name": "Fukuzawa Sentient Beings",//福泽众生
         "type": "Pantheon",
-        "uniques": ["'[Marsh]' & '[Oasis]' & '[Flood plains]' [tiles] [+1 Production]"]
+        "uniques": ["Comment ['[Marsh]' & '[Oasis]' & '[Flood plains]' [tiles] [+1 Production]]"]
     },
 	{
         "name": "Pray for Rain Dance",//祈雨曼舞
         "type": "Pantheon",
-        "uniques": ["'[Lakes]' [tiles] [+2 Faith, +1 Culture]"]
+        "uniques": ["Comment ['[Lakes]' [tiles] [+3 Faith, +2 Happiness]]"]
     },
 	{
         "name": "Stone Circles",//石圈丛生
         "type": "Pantheon",
-        "uniques": ["'[Quarry]' [improvement] [+3 Faith]"]
+        "uniques": ["Comment ['[Quarry]' [improvement] [+2 Faith, +2 Culture]]"]
     },
 	{
         "name": "Religious Idols",//宗教偶像
         "type": "Pantheon",
-        "uniques": ["'[Luxury Resource]' [tiles] [+1 Happiness]"]
+        "uniques": ["Comment ['[Luxury Resource]' [tiles] [+1 Happiness]]"]
     },
 	{
         "name": "Teach Orally",//口耳相传
         "type": "Pantheon",
-        "uniques": ["'[Plantation]' [improvement] [+1 Culture]"]
+        "uniques": ["Comment ['[City]' [district] [+1 Culture]]"]
     },
 	{
         "name": "One with Nature",//天人合一
         "type": "Pantheon",
-        "uniques": ["'[Natural Wonder]' [tiles] [+4 Faith]"]
+        "uniques": ["Comment ['[All]' [natural wonder] [+4 Faith, +1 Happiness]]"]
     },
 	{
         "name": "Historical Monuments",//历史古迹
         "type": "Pantheon",
-        "uniques": ["[Before the '[Medieval era]'], [[+20]% Production when constructing '[All]' [wonder]]"]
+        "uniques": ["Comment [[Before the '[Medieval era]'], [[+20]% Production when constructing '[All]' [wonder]]]"]
     },
 	{
         "name": "Ancestor Worship",//祖先崇拜
         "type": "Pantheon",
-        "uniques": ["Provides the cheapest [Faith] building in your first [3] cities for free"]
+        "uniques": ["Provides the cheapest [Faith] building in your first [6] cities for free"]
     },
 	{
         "name": "Enlightenment Unions",//启蒙工会
         "type": "Pantheon",
-        "uniques": ["[Before the '[Renaissance era]'], [[Capital] [+3 Science] [+15]% [Science]]"]
+        "uniques": ["Comment [[Before the '[Renaissance era]'], [[capital] [+3 Science] [+15]% [Science]]]"]
     },
 	{
         "name": "Harvest Ceremony",//丰产仪式
         "type": "Pantheon",
-        "uniques": ["'[Civilian]' [units] [[+1] Movement] [in '[Friendly Land]' [tiles]]"]
+        "uniques": ["Comment ['[Worker]' [units] [[+1] Movement]]"]
     },
 	{
         "name": "Religious Settlers",//宗教移民
         "type": "Pantheon",
-        "uniques": ["[1] '[Settler]' units appear",
-                    "May buy [Settler] units with [Faith] for [2] times their normal Production cost"]
+        "uniques": ["May buy [Settler] units with [Faith] for [1] times their normal Production cost"]
     },
     
 	{
         "name": "God of Plenty",//丰饶之神
         "type": "Pantheon",
-        "uniques": ["[After discovering '[Relevant]'], [Provide [1] '[Relevant]']",
-                    "Example: [[After discovering '[Animal Husbandry]'], [Provide [1] '[Horses]']]"]
+        "uniques": ["Comment [[After discovering '[Relevant]'], [provide [2] '[Relevant]']]",
+                    "Comment [Example: [[After discovering '[Animal Husbandry]'], [provide [2] '[Horses]']]]"]
     },
 	{
         "name": "God of River",//大河水神
         "type": "Pantheon",
-        "uniques": ["[+2 Happiness, +1 Food] in cities on [River] tiles"]
+        "uniques": ["[+2 Happiness, +2 Food] in cities on [River] tiles"]
     },
 	{
         "name": "God of Craftsman",//工匠之神
         "type": "Pantheon",
-        "uniques": ["'[Strategic Resource]' [tiles] [+2 Faith]"]
+        "uniques": ["Comment ['[Strategic Resource]' [tiles] [+2 Faith]]"]
     },
 	{
         "name": "God of Weapons",//武器之神
         "type": "Pantheon",
-        "uniques": ["[Before the '[Medieval era]'], [[+25]% Production when constructing '[Military]' [units]]"]
+        "uniques": ["Comment [[Before the '[Medieval era]'], [[+25]% Production when constructing '[Military]' [units]]]"]
     },
 	{
         "name": "God of Forging",//锻造之神
         "type": "Pantheon",
-        "uniques": ["[Before the '[Medieval era]'], [[+15]% Production when constructing '[All]' [building]]"]
+        "uniques": ["Comment [[Before the '[Medieval era]'], [[+15]% Production when constructing '[All]' [building]]]"]
     },
 	{
         "name": "God of Sea",//海洋之神
         "type": "Pantheon",
-        "uniques": ["'[Coast]' & '[Ocean]' [tiles] [+1 Faith]"]
+        "uniques": ["Comment ['[Coast]' & '[Ocean]' [tiles] [+1 Faith, +1 Food, +1 Production, +1 Gold]]"]
     },
 	{
         "name": "God of Open Sky",//天空之神
         "type": "Pantheon",
-        "uniques": ["'[Pasture]' [improvement] [+1 Culture]"]
+        "uniques": ["Comment ['[Pasture]' [improvement] [+2 Culture]]"]
     },
 	{
         "name": "God of War",//战争之神
         "type": "Pantheon",
-        "uniques": ["Earn [50]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion"]
+        "uniques": ["Earn [100]% of [Military] unit's [Strength] as [Faith] when killed within 4 tiles of a city following this religion"]
     },
     
 	{
@@ -130,12 +129,12 @@
 	{
         "name": "Goddess of the Hunt",//狩猎女神
         "type": "Pantheon",
-        "uniques": ["'[Camp]' [improvement] [+1 Production, +1 Food]"]
+        "uniques": ["Comment ['[Camp]' [improvement] [+2 Production, +1 Food]]"]
     },
 	{
         "name": "Goddess of Festivals",//节庆女神
         "type": "Pantheon",
-        "uniques": ["[During a Golden Age], [this city] [+15]% [Production] [+10]% [Science]"]
+        "uniques": ["Comment [[During a Golden Age], [this city] [+15]% [Production] [+10]% [Science]]"]
     },
 	{
         "name": "Goddess of Healing",//治疗女神
@@ -145,7 +144,7 @@
 	{
         "name": "Goddess of Protection",//守护女神
         "type": "Pantheon",
-        "uniques": ["[+33]% Strength for cities <when defending>"]
+        "uniques": ["[+25]% Strength for cities <when defending>"]
     },
 	
 ///////////////////////////////////////// 创始人 //////////////////////////////////////////
@@ -153,12 +152,12 @@
     {
         "name": "Pilgrimage",//朝圣之行
         "type": "Founder",
-		"uniques": ["[+2 Faith] for each global city following this religion"]
+		"uniques": ["[+3 Faith] for each global city following this religion"]
     },
     {
         "name": "Church Property",//教会财富
         "type": "Founder",
-		"uniques": ["[+2 Gold] for each global city following this religion"]
+		"uniques": ["[+3 Gold] for each global city following this religion"]
     },
     {
         "name": "Ceremonial Burial",//葬礼仪式
@@ -168,17 +167,19 @@
     {
         "name": "Sacred Place",//神圣之地
         "type": "Founder",
-		"uniques": ["[+2 Gold, +2 Faith, +2 Culture] [in cities following this religion] <in cities with a [World Wonder]>"]
+		"uniques": ["[+10]% [Culture] [in cities following this religion] <in cities with a [World Wonder]>",
+                    "[+10]% [Faith] [in cities following this religion] <in cities with a [World Wonder]>"]
     },
     {
         "name": "Interfaith Dialogue",//各教交流
         "type": "Founder",
-		"uniques": ["When spreading religion to a city, gain [20] times the amount of followers of other religions as [Science]"]
+		"uniques": ["When spreading religion to a city, gain [50] times the amount of followers of other religions as [Science]",
+                    "When spreading religion to a city, gain [30] times the amount of followers of other religions as [Culture]"]
     },
     {
         "name": "Initiation Rites",//入教仪式
         "type": "Founder",
-		"uniques": ["[+400 Gold] when a city adopts this religion for the first time (modified by game speed)"]
+		"uniques": ["[+500 Gold] when a city adopts this religion for the first time (modified by game speed)"]
     },
     {
         "name": "Peace Loving",//热爱和平
@@ -188,7 +189,7 @@
     {
         "name": "Tithe",//拾壹税
         "type": "Founder",
-		"uniques": ["[+1 Gold] from every [4] global followers [in cities following this religion]"]
+		"uniques": ["[+1 Gold] from every [3] global followers [in cities following this religion]"]
     },
     {
         "name": "World Church",//世界教堂
@@ -198,13 +199,13 @@
     {
         "name": "Church Allowances",//圣教津贴
         "type": "Founder",
-		"uniques": ["[+20]% growth [in this city]",
-					"[-15]% Food is carried over after population increases [in this city]"]
+		"uniques": ["[+20]% growth [in this city]"]
     },
     {
         "name": "Religious Expansion",//宗教扩张
         "type": "Founder",
-		"uniques": ["[-20]% Culture cost of natural border growth [in cities following this religion]"]
+		"uniques": ["[-15]% Culture cost of natural border growth [in cities following this religion]",
+					"[-15]% Food is carried over after population increases [in this city]"]
     },
     {
         "name": "Papal Primacy",//主教地位
@@ -215,59 +216,59 @@
 ///////////////////////////////////////// 信徒 /////////////////////////////////////////
 	
     {
-        "name": "Divine Revelation",//神灵启示
-        "type": "Follower",
-        "uniques": ["'[Wonder]' [building] [+2 Faith]"]
-    },
-    {
         "name": "Feed the World",//哺育世界
         "type": "Follower",
-        "uniques": ["'[Faith]' [building] [+2 Food]"]
+        "uniques": ["Comment ['[Holy Site]' [district] [+2 Food]]"]
     },
     {
         "name": "Choral Chant",//合唱圣歌
         "type": "Follower",
-        "uniques": ["'[Holy Site]' [district] [+2 Culture]"]
-    },
-    {
-        "name": "Peace Gardens",//和平花园
-        "type": "Follower",
-        "uniques": ["'[Garden]' [building] [+2 Happiness]"]
-    },
-    {
-        "name": "Holy Art",//圣明艺术
-        "type": "Follower",
-        "uniques": ["'[National Museum]' [national wonder] [+8 Culture]"]
+        "uniques": ["Comment ['[Holy Site]' [district] [+2 Culture]]"]
     },
     {
         "name": "Asceticism",//禁欲主义
         "type": "Follower",
-        "uniques": ["'[Holy Site]' [district] [+1 Happiness]"]
+        "uniques": ["Comment ['[Holy Site]' [district] [+1 Happiness]]"]
+    },
+    {
+        "name": "Divine Revelation",//神灵启示
+        "type": "Follower",
+        "uniques": ["Comment ['[All]' [wonder] [+2 Faith]]"]
+    },
+    {
+        "name": "Peace Gardens",//和平花园
+        "type": "Follower",
+        "uniques": ["Comment ['[Garden]' [building] [+2 Happiness]]"]
+    },
+    {
+        "name": "Holy Art",//圣明艺术
+        "type": "Follower",
+        "uniques": ["Comment ['[All]' [national wonder] [+5]% [Happiness]]"]
     },
     {
         "name": "Guruship",//古鲁导师
         "type": "Follower",
-        "uniques": ["'[Workshop]' [building] [[+3 Gold] [+10]% [Production]]"]
+        "uniques": ["Comment ['[Workshop]' [building] [[+5 Gold] [+10]% [Production]]]"]
     },
     {
         "name": "Liturgical Opera",//礼仪歌剧
         "type": "Follower",
-        "uniques": ["'[Opera House]' [building] [[+15]% [Faith]]"]
+        "uniques": ["Comment ['[Opera House]' [building] [[+15]% [Faith]]]"]
     },
     {
         "name": "Arts Tour",//文艺巡演
         "type": "Follower",
-        "uniques": ["'[Amphitheater]' [building] [[+10]% [Gold]]"]
+        "uniques": ["Comment ['[Amphitheater]' [building] [[+10]% [Gold]]]"]
     },
     {
         "name": "Reclamation of Wasteland",//开荒垦地
         "type": "Follower",
-        "uniques": ["'[Farm]' [improvement] [+1 Production] from each [2] adjacent '[Farm]' [improvement]"]
+        "uniques": ["Comment ['[Farm]' [improvement] [+1 Production]]"]
     },
     {
         "name": "Dense and Continuous",//稠迭连绵
         "type": "Follower",
-        "uniques": ["'[Mountain]' [tiles] [+1 Culture, +1 Faith] from each [1] adjacent '[Mountain]' [tiles]"]
+        "uniques": ["Comment ['[Mountain]' [tiles] [+1 Culture, +1 Faith] from each [1] adjacent '[Mountain]' [tiles]]"]
     },
     
     {
@@ -278,22 +279,22 @@
     {
         "name": "Godsend",//上天恩赐
         "type": "Follower",
-        "uniques": ["[+2 Production, +2 Food] [in all cities]"]
+        "uniques": ["[+2 Production, +2 Food, +2 Faith] [in this city]"]
     },
     {
         "name": "Swords into Ploughshares",//铸剑为犁
         "type": "Follower",
-        "uniques": ["[When not at war], [This city] [[+10]% [Food]]"]
+        "uniques": ["Comment [[When not at war], [this city] [[+10]% [Growth]]]"]
     },
     {
         "name": "Traveling Messenger",//巡游神使
         "type": "Follower",
-        "uniques": ["'[Trade Route]' [+2 Science, +1 Gold]"]
+        "uniques": ["Comment ['[Trade Route]' [+2 Science, +1 Gold]]"]
     },
     {
         "name": "Thriving Trade",//车击舟连
         "type": "Follower",
-        "uniques": ["'[Trade Route]' [+15]% [Gold]"]
+        "uniques": ["Comment ['[Trade Route]' [+15]% [Gold]]"]
     },
     {
         "name": "Religious Community",//宗教社区
@@ -303,7 +304,12 @@
     {
         "name": "Holy Warriors",//神圣战士
         "type": "Follower",
-        "uniques": ["May buy [{Military} {Land}] units with [Faith] for [2] times their normal Production cost"]
+        "uniques": ["May buy [{non-[Tourism Unit]} {non-[Great People]} {Military} {Land}] units with [Faith] for [2] times their normal Production cost"]
+    },
+    {
+        "name": "Holy Ships",//神圣舰队
+        "type": "Follower",
+        "uniques": ["May buy [{Military} {Water}] units with [Faith] for [2] times their normal Production cost"]
     },
 	
     ////////////////////////////////////// 强化者 ///////////////////////////////////////
@@ -311,27 +317,27 @@
     {
         "name": "Admonition Dogma",//教条训诫
         "type": "Enhancer",
-        "uniques": ["'[Missionary]' & '[Great Prophet]' units gain the '[Admonition Dogma]' promotion"]
+        "uniques": ["Comment ['[Missionary]' & '[Great Prophet]' units gain the '[Admonition Dogma]' promotion]"]
     },
     {
         "name": "Missionary Zeal",//传教热忱
         "type": "Enhancer",
-        "uniques": ["'[Missionary]' & '[Great Prophet]' units gain the '[Missionary Zeal]' promotion"]
+        "uniques": ["Comment ['[Missionary]' & '[Great Prophet]' units gain the '[Missionary Zeal]' promotion]"]
     },
     {
         "name": "Priesthood Groups",//圣职团体
         "type": "Enhancer",
-        "uniques": ["[Faith] cost of purchasing '[Missionary]' & '[Inquisitor]' [units] [-33]%"]
+        "uniques": ["Comment [[Faith] cost of purchasing '[Missionary]' & '[Inquisitor]' [units] [-33]%]"]
     },
     {
         "name": "Itinerant Preachers",//旅行布道
         "type": "Enhancer",
-        "uniques": ["Religion naturally spreads to cities [+3] tiles away"]
+        "uniques": ["Religion naturally spreads to cities [+5] tiles away"]
     },
     {
         "name": "Statues Commemorating",//纪念神像
         "type": "Enhancer",
-        "uniques": ["[+100]% Yield from every [District - Holy Site]"]
+        "uniques": ["[+50]% Yield from every [District - Holy Site]"]
     },
     {
         "name": "Religious Texts",//宗教典籍
@@ -348,17 +354,17 @@
     {
         "name": "Healing Light",//治愈圣光
         "type": "Enhancer",
-        "uniques": ["'[Military]' [units] [[+15] HP when healing] [in '[Friendly Land]' [tiles]]"]
+        "uniques": ["Comment ['[Military]' [units] [[+15] HP when healing] [in '[Friendly Land]' [tiles]]]"]
     },
     {
         "name": "Defender of the Faith",//护教卫士
         "type": "Enhancer",
-        "uniques": ["'[Military]' [units] [[+15]% Strength] [in '[Friendly Land]' [tiles]]"]
+        "uniques": ["Comment ['[Military]' [units] [[+15]% Strength] [in '[Friendly Land]' [tiles]]]"]
     },
     {
         "name": "Just War",//正义战争
         "type": "Enhancer",
-        "uniques": ["'[Military]' [units] [[+10]% Strength] [in '[Enemy Land]' [tiles]]"]
+        "uniques": ["Comment ['[Military]' [units] [[+10]% Strength] [in '[Enemy Land]' [tiles]]]"]
     },
 	
 	////////////////////////////////////// 宗教建筑 ///////////////////////////////////////

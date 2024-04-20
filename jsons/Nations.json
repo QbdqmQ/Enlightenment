@@ -73,14 +73,14 @@
 		
 		"uniqueName": "Unique Ability",
 		"uniques": ["[+1] Movement <for [Water] units>",
-					"[+10]% Strength <when fighting in [Water] tiles> <for [Water] units>",
+					"[+7]% Strength <when fighting in [Water] tiles> <for [Water] units>",
 					
 					"[+10]% [Production] [in all cities] <while the empire is happy> <if [Leader - Victoria(UK)] is constructed>",
 					"[+10]% [Gold] [in all cities] <while the empire is happy> <if [Leader - Victoria(UK)] is constructed>",
 					
-					"[+4 Gold, +1 Happiness] per [4] population [in all cities] <if [Leader - Robert Walpole] is constructed>",
+					"[+4 Gold, +1 Happiness] per [5] population [in all cities] <if [Leader - Robert Walpole] is constructed>",
 					"[+1 Gold] per [1] population [in all cities] <when not at war> <if [Leader - Robert Walpole] is constructed>"],
-		"uniqueText": " [Full name]: \n [United Kingdom of Great Britain and Ireland] \n\n [The Sun Never Sets]: \n * ['[Water]' [units] [[+1] Movement]] \n * ['[Water]' [units] [[+10]% Strength] when fighting in '[Water]' [tiles]] ",
+		"uniqueText": " [Full name]: \n [United Kingdom of Great Britain and Ireland] \n\n [The Sun Never Sets]: \n * ['[Water]' [units] [[+1] Movement]] \n * ['[Water]' [units] [[+7]% Strength] when fighting in '[Water]' [tiles]] ",
 		
 		"cities":  ["London","Dublin","Cardiff","Edinbourgh",
 					"York","Cork","Swansea","Glasgow",
@@ -127,8 +127,8 @@
 					"Free [Armored Cavalry] appears <before adopting [Chivalry]> <upon constructing [Hippodrome]>",
 					"Free [Cataphract] appears <after adopting [Chivalry]> <upon constructing [Hippodrome]>",
 					
-					"May buy [Cavalry] units with [Faith] for [2] times their normal Production cost <if [Leader - Justinianus I] is constructed>",
-					"[+1] Movement <for [Heavy Cavalry] units> <if [Leader - Justinianus I] is constructed>",
+					"May buy [{Land 'Heavy Rush'} {non-[Armored]}] units with [Faith] for [1] times their normal Production cost <if [Leader - Justinianus I] is constructed>",
+					"[+1] Movement <for [{Land 'Heavy Rush'} {non-[Armored]}] units> <if [Leader - Justinianus I] is constructed>",
 					
 					"May choose [1] additional belief(s) of any type when [founding] a religion <if [Leader - Constantinus I] is constructed>",
 					"May choose [1] additional [Follower] beliefs when [enhancing] a religion <if [Leader - Constantinus I] is constructed>",
@@ -172,7 +172,7 @@
 					
 					"[+2 Science, +2 Food] from every [District - Holy Site] <if [Leader - Peter I] is constructed>",
 					
-					"[+33]% Strength <for [Land] units> <vs [Gunnery] units> <if [Leader - Catherine II] is constructed>",
+					"[+10]% Strength <for [Land] units> <vs [Land 'Gunnery'] units> <if [Leader - Catherine II] is constructed>",
 					
 					"[+1 Happiness] from every [Plantation] <if [Leader - Alexander II] is constructed>",
 					"[+1 Happiness] from every [Camp] <if [Leader - Alexander II] is constructed>"],
@@ -209,8 +209,8 @@
 		"innerColor": [239,236,148],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["Provides [1] [Policy Point - Development]",
-					"Provides [1] [Policy Point - Military]",
+		"uniques": ["Provides [2] [Policy Point - Development] <when below [30] [Policy Point - Development]>",
+					"Provides [2] [Policy Point - Military] <when below [30] [Policy Point - Military]>",
 					
 					"[Military] units gain the [Foreign Wars] promotion <if [Leader - Napoleon Bonaparte] is constructed>"],
 		"uniqueText": " [Napoleonic Code]: \n * [Provides [1] [[Policy Point - Development] & [Policy Point - Military]]] ",
@@ -246,12 +246,12 @@
 		"innerColor": [000,000,000],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+1 Science, +1 Culture] from every [District - City]",
+		"uniques": ["[+50]% Yield from every [{non-[District - City]} {District}]",
 					
-					"When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <if [Leader - Otto von Bismarck] is constructed>",
+					"When conquering an encampment, earn [50] Gold and recruit a Barbarian unit <if [Leader - Otto von Bismarck] is constructed>",
 					
 					"[1] XP gained from combat <for [Military] units> <if [Leader - August von Mackensen] is constructed>"],
-		"uniqueText": " [Compulsory Education Act]: \n * ['[City]' [district] [+1 Science, +1 Culture]] ",
+		"uniqueText": " [Compulsory Education Act]: \n * ['[City]' [district] [+50]% [Culture] & [Science]] ",
 		
 		"cities":  ["Berlin","Hamburg","Munich","Cologne","Frankfurt","Essen","Dortmund","Stuttgart","Dusseldorf","Bremen",
 					"Hannover","Duisburg","Leipzig","Dresden","Bonn","Bochum","Bielefeld","Karlsruhe","Gelsenkirchen","Wiesbaden",
@@ -287,17 +287,17 @@
 		"innerColor": [070,000,004],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["Provides [-2] [Policy Point - Development] <if [Polity ( Lv. I )] is constructed>",
-					"Provides [2] [Policy Point - Military] <if [Polity ( Lv. I )] is constructed>",
-					"Provides [-4] [Policy Point - Development] <if [Polity ( Lv. II )] is constructed>",
-					"Provides [4] [Policy Point - Military] <if [Polity ( Lv. II )] is constructed>",
-					"Provides [-6] [Policy Point - Development] <if [Polity ( Lv. III )] is constructed>",
-					"Provides [6] [Policy Point - Military] <if [Polity ( Lv. III )] is constructed>",
-					"Provides [-8] [Policy Point - Development] <if [Polity ( Lv. IV )] is constructed>",
-					"Provides [8] [Policy Point - Military] <if [Polity ( Lv. IV )] is constructed>",
+		"uniques": ["Provides [-1] [Policy Point - Development] <if [Polity ( Lv. I )] is constructed>",
+					"Provides [1] [Policy Point - Military] <if [Polity ( Lv. I )] is constructed>",
+					"Provides [-1] [Policy Point - Development] <if [Polity ( Lv. II )] is constructed>",
+					"Provides [1] [Policy Point - Military] <if [Polity ( Lv. II )] is constructed>",
+					"Provides [-1] [Policy Point - Development] <if [Polity ( Lv. III )] is constructed>",
+					"Provides [1] [Policy Point - Military] <if [Polity ( Lv. III )] is constructed>",
+					"Provides [-1] [Policy Point - Development] <if [Polity ( Lv. IV )] is constructed>",
+					"Provides [1] [Policy Point - Military] <if [Polity ( Lv. IV )] is constructed>",
 					"\"Borrows\" city names from other civilizations in the game",
-					"[+1 Production] from every [Pasture]",
-					"Starts with [Trapping]",
+					"New [{Land 'Ranged Rush'} {non-[Armored]}] units start with [10] Experience [in all cities]",
+					"[+100]% Production when constructing [{Land 'Ranged Rush'} {non-[Armored]}] units [in all cities]",
 					"No movement cost to pillage",
 					"Upon capturing a city, receive [30] times its [Gold] production as [Gold] immediately",
 					"Cities are razed [2] times as fast",
@@ -305,11 +305,8 @@
 					"Resting point for Influence with City-States is increased by [-500]",
 					"Gifts of Gold to City-States generate [-500]% more Influence",
 					
-					"[+1 Production] from every [Cattle] <if [Leader - Attila] is constructed>",
-					"[+1 Production] from every [Sheep] <if [Leader - Attila] is constructed>",
-					"[+1 Production] from every [Horses] <if [Leader - Attila] is constructed>",
-					"[+1] Movement <for [All] units> <if [Leader - Attila] is constructed>"],
-		"uniqueText": " [Nomadic Empire]: \n * [Convert '[Policy Point - Development]' provided by the polity to '[Policy Point - Military]'] \n * [\"Borrows\" city names from other civilizations in the game] \n\n [Scourge of God]: \n * ['[Pasture]' [improvement] [+1 Production]] \n * [Starts with '[Trapping]'] \n\n [Siege and Plunder]: \n * ['[All]' [units] [No movement cost to pillage]] \n * [Upon capturing a city, receive [30] times its [Gold] production as [Gold] immediately] \n * [Cities are razed [2] times as fast] \n\n [Enemy of Civilization]: \n * [[+500]% City-State Influence degradation] \n * [Resting point for Influence with City-States is increased by [-500]] \n * [Gifts of Gold to City-States generate [-500]% more Influence] ",
+					"[+1] additional attacks per turn <for [{Land 'Ranged Rush'} {non-[Armored]}] units> <if [Leader - Attila] is constructed>"],
+		"uniqueText": " [Nomadic Empire]: \n * [Convert '[Policy Point - Development]' provided by the polity to '[Policy Point - Military]'] \n * [\"Borrows\" city names from other civilizations in the game] \n\n [Scourge of God]: \n * [New '[{Land 'Ranged Rush'} {non-[Armored]}]' units start with [10] Experience] \n * [[+100]% Production when constructing '[{Land 'Ranged Rush'} {non-[Armored]}]' [units]] \n\n [Siege and Plunder]: \n * ['[All]' [units] [No movement cost to pillage]] \n * [Upon capturing a city, receive [30] times its [Gold] production as [Gold] immediately] \n * [Cities are razed [2] times as fast] \n\n [Enemy of Civilization]: \n * [[+500]% City-State Influence degradation] \n * [Resting point for Influence with City-States is increased by [-500]] \n * [Gifts of Gold to City-States generate [-500]% more Influence] ",
 		
 		"cities":  ["Atilla's Court"]
 	},
@@ -340,24 +337,26 @@
 		"innerColor": [255,255,255],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[-1 Food, +1 Production] from every [Farm]",
-					"Earn [67]% of killed [Military] unit's [Cost] as [Gold]",
-					"Free [Warrior] appears <upon gaining a [Spearman] unit>",
-					"Free [Swordsman] appears <upon gaining a [Heavy Spearman] unit>",
-					"Free [Longswordsman] appears <upon gaining a [Pikeman] unit>",
-					"Free [Musketeer] appears <upon gaining a [Pike and Shot] unit>",
-					"Free [Light Infantry] appears <upon gaining a [Line Infantry] unit>",
-					"Free [Assault Infantry] appears <upon gaining a [Anti-tank Gun] unit>",
-					"Free [Mechanized Infantry] appears <upon gaining a [Anti-tank Bazooka] unit>",
+		"uniques": ["[-20]% maintenance costs <for [{Military} {non-[Tourism Unit]} {non-[Great People]}] units>",
+					"Free [Explorer] appears <upon gaining a [Spearman] unit>",
+					"Free [Scout] appears <upon gaining a [Heavy Spearman] unit>",
+					"Free [Scout] appears <upon gaining a [Pikeman] unit>",
+					"Free [Chasseur] appears <upon gaining a [Heavy Pikeman] unit>",
+					"Free [Chasseur] appears <upon gaining a [Pike and Shot] unit>",
+					"Free [Skirmisher] appears <upon gaining a [Line Infantry] unit>",
+					"Free [Special Force] appears <upon gaining a [Anti-tank Gun] unit>",
+					"Free [Digitization Force] appears <upon gaining a [Anti-tank Bazooka] unit>",
+					"Free [Scouting Drone] appears <upon gaining a [EMI Infantry] unit>",
+					"[+15]% Production when constructing [Military] units [in all cities]",
 					
-					"Free [Warrior] appears <before discovering [Iron Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Swordsman] appears <before discovering [Metal Casting]> <after discovering [Iron Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Longswordsman] appears <before discovering [Gunpowder]> <after discovering [Metal Casting]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Musketeer] appears <before discovering [Rifling]> <after discovering [Gunpowder]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Light Infantry] appears <before discovering [Ballistics]> <after discovering [Rifling]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Assault Infantry] appears <before discovering [Radar]> <after discovering [Ballistics]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
-					"Free [Mechanized Infantry] appears <after discovering [Radar]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>"],
-		"uniqueText": " [Farming and Warfare]: \n * ['[Farm]' [improvement] [-1 Food, +1 Production]] \n * ['[All]' [units] [Earn [67]% of killed [Military] unit's [Cost] as [Gold]]] \n\n [Tiger Tally]: \n * [Upon gaining a '[[Warrior] ([or upgrade])]' unit], [[1] '[[Spearman] ([or upgrade])]' units appear] ",
+					"Free [Spearman] appears <before discovering [Bronze Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Pikeman] appears <before discovering [Metal Casting]> <after discovering [Iron Working]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Pike and Shot] appears <before discovering [Gunpowder]> <after discovering [Metal Casting]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Line Infantry] appears <before discovering [Rifling]> <after discovering [Gunpowder]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Anti-tank Gun] appears <before discovering [Ballistics]> <after discovering [Rifling]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [Anti-tank Bazooka] appears <before discovering [Rocketry]> <after discovering [Ballistics]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>",
+					"Free [EMI Infantry] appears <after discovering [Exoskeleton]> <upon declaring war with a major Civilization> <if [Leader - Ying Zheng] is constructed>"],
+		"uniqueText": " [Farming and Warfare]: \n * ['[{Military} {non-[Tourism Unit]} {non-[Great People]}]' [units] [[-20]% maintenance costs]] \n\n [Tiger Tally]: \n * [Upon gaining a '[[Spearman] ([or upgrade])]' unit], [[1] '[[Explorer] ([or upgrade])]' units appear] \n * [[+15]% Production when constructing '[Military]' [units]] ",
 		
 		"cities":  ["Beijing","Shanghai","Guangzhou","Nanjing","Xian","Chengdu","Hangzhou","Tianjin","Macau","Shandong",
 					"Kaifeng","Ningbo","Baoding","Yangzhou","Harbin","Chongqing","Luoyang","Kunming","Taipei","Shenyang",
@@ -429,13 +428,13 @@
 		"innerColor": [254,129,019],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+1 Food] from every [Fresh Water]",
-					"[+1 Faith] from every [District] <in [Fresh Water] tiles>",
+		"uniques": ["[+1 Faith, +1 Food] from every [District - City] <in [Fresh Water] tiles>",
+					"[+2 Faith, +1 Food] from every [District - Holy Site] <in [Fresh Water] tiles>",
 					
 					"[+1 Food] from every [District - Holy Site] <with [2] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
 					"[+1 Food] from every [District - Holy Site] <with [4] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>",
 					"[+1 Food] from every [District - Holy Site] <with [6] to [6] neighboring [Fresh Water] tiles> <if [Leader - Jayavarman VII] is constructed>"],
-		"uniqueText": " [Grand Barays]: \n * ['[Fresh Water]' [tiles] [+1 Food]] \n * ['[All]' [district] [+1 Faith] [in [Fresh Water] tiles]] ",
+		"uniqueText": " [Grand Barays]: \n * ['[City]' [district] [+1 Faith, +1 Food] [in [Fresh Water] tiles]] \n * ['[Holy Site]' [district] [+2 Faith, +1 Food] [in [Fresh Water] tiles]] ",
 		
 		"cities":  ["Angkor Wat","Hariharalya","Yaodharapura","Mahendraparvata","Vimayapura","Indrapura","Lingapura","Preah Vihear","Bhavapura","Kompong Svay",
 					"Nagara Jayasri","Vyadhapura","Chaturmukha","Dviradapura","Rajavihara","Amarendrapura","Phanom Rung","Isvarapura","Muang Tam","Angkor Borei",
@@ -472,7 +471,7 @@
 					
 					"[+75]% Yield from every [District - Academy] <if [Leader - Hammurabi] is constructed>",
 					
-					"[Land] units gain the [Combat Experience] promotion <if [Leader - Nebuchadnezzar II] is constructed>"],
+					"[{Military} {Land} {non-[Great People]} {non-[Tourism Unit]}] units gain the [Combat Experience] promotion <if [Leader - Nebuchadnezzar II] is constructed>"],
 		"uniqueText": " [Textual Innovation]: \n * ['[All]' [district] [+1 Science]] ",
 		
 		"cities":  ["Babylon","Akkad","Dur-Kurigalzu","Nippur","Borsippa","Sippar","Opis","Mari","Shushan","Eshnunna",
@@ -507,11 +506,12 @@
 		"innerColor": [018,084,030],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[-50]% maintenance costs <for [Water] units>",
-					"When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it",
+		"uniques": ["New [{Military} {Land} {non-[Great People]} {non-[Tourism Unit]}] units start with [7] Experience [in all cities]",
 					
-					"[+3 Happiness, +3 Culture, +4 Gold] [in all cities] <starting from the [Medieval era]> <if [Leader - Suleiman I] is constructed>"],
-		"uniqueText": " [Barbary Corsairs]: \n * ['[Water]' [units] [-50]% maintenance costs] \n * [When defeating a [{Barbarian} {Water}] unit, earn [25] Gold and recruit it] ",
+					"[+2 Happiness, +2 Culture, +3 Gold, +3 Faith, +2 Production] [in all cities] <starting from the [Medieval era]> <if [Leader - Suleiman I] is constructed>",
+					
+					"Free [Urban Cannon] appears <upon discovering [Chemistry] technology> <if [Leader - Mehmed II] is constructed>"],
+		"uniqueText": " [Pasha]: \n * [New '[Military]' units [+7] XP] ",
 		
 		"cities":  ["Istanbul","Edirne","Ankara","Bursa","Konya","Samsun","Gaziantep","Diyarbakır","Izmir","Kayseri",
 					"Malatya","Mersin","Antalya","Zonguldak","Denizli","Ordu","Muğla","Eskişehir","Inebolu","Sinop",
@@ -545,17 +545,13 @@
 		"innerColor": [000,054,255],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+25]% Strength <when attacking> <for [All] units>",
-					"[-25]% Strength <when defending> <for [All] units>",
-					"[+75]% Strength <vs [Civilian] units> <for [All] units>",
-					"[+20]% [Gold] from Trade Routes",
+		"uniques": ["[+2 Faith, +2 Gold] [in all cities] <after founding a Pantheon>",
 					
-					"[+1 Happiness, +1 Faith] [in all non-occupied cities] <if [Leader - David Ben-Gurion] is constructed>",
-					"[-1 Faith] [in capital] <before founding a Pantheon> <if [Leader - David Ben-Gurion] is constructed>",
+					"[+1 Happiness, +1 Faith] [{non-[Capital]} {Non-occupied}] <if [Leader - David Ben-Gurion] is constructed>",
 					
-					"[+25]% Strength <when attacking> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>",
-					"[-25]% Strength <when defending> <for [All] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
-		"uniqueText": " [Equal Treatment]: \n * ['[All]' [units] [[+25]% Strength] [when attacking]] \n * ['[All]' [units] [[-25]% Strength] [when defending]] \n * ['[All]' [units] [[+75]% Strength] [when vs '[Civilian]' units]] \n\n [American Father]: \n * [[+20]% [Gold] from Trade Routes] ",
+					"[+10]% Strength <when attacking> <for [{All} {non-[Great People]} {non-[Tourism Unit]}] units> <if [Leader - Benjamin Netanyahu] is constructed>",
+					"[-7]% Strength <when defending> <for [{All} {non-[Great People]} {non-[Tourism Unit]}] units> <if [Leader - Benjamin Netanyahu] is constructed>"],
+		"uniqueText": " [Menorah]: \n * [After founding a Pantheon], [all cities] [+2 Faith, +2 Gold] ",
 		
 		"cities":  ["Yerushalayim","Hebron","Jericho","Sidon","Bethlehem","Tyre","Nazareth","Kadesh","Zeboim","Admah",
             		"Gaza","Megiddo","Nineveh","Gomorrah","Avaris"]
@@ -587,8 +583,7 @@
 		"innerColor": [255,163,071],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+100]% unhappiness from the number of cities",
-					"[-50]% Unhappiness from [Population] [in all cities]",
+		"uniques": ["[+20]% growth [in all cities]",
 					
 					"Free [Spearman] appears <after discovering [Bronze Working]> <before discovering [Metal Casting]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
 					"Free [Pikeman] appears <after discovering [Metal Casting]> <before discovering [Gunpowder]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
@@ -596,14 +591,15 @@
 					"Free [Line Infantry] appears <after discovering [Rifling]> <before discovering [Ballistics]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
 					"Free [Anti-tank Gun] appears <after discovering [Ballistics]> <before discovering [Rocketry]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
 					"Free [Anti-tank Bazooka] appears <after discovering [Rocketry]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
+					"Free [EMI Infantry] appears <after discovering [Exoskeleton]> <upon constructing [Faith]> <if [Leader - Chandragupta] is constructed>",
 					
-					"[+2 Gold] from every [Harbor] <if [Leader - Shah Jahan] is constructed>",
+					"[+2 Gold] from every [District - Harbor] <if [Leader - Shah Jahan] is constructed>",
 					
 					"[20]% Faith cost of generating Great Prophet equivalents <upon constructing [Faith]> <if [Leader - Gandhi] is constructed>",
 					
 					"[+1 Production] from all [Production] buildings <if [Leader - Narendra Modi] is constructed>",
 					"[+2 Gold] from all [Gold] buildings <if [Leader - Narendra Modi] is constructed>"],
-		"uniqueText": " [Population Growth]: \n * [[+100]% unhappiness from the number of cities] \n * [[-50]% Unhappiness from [Population] [in all cities]] ",
+		"uniqueText": " [Population Growth]: \n * [All cities] [+20]% [growth] ",
 		
 		"cities":  ["Delhi","Mumbai","Vijayanagara","Pataliputra","Varanasi","Agra","Calcutta","Lahore","Bangalore","Hyderabad",
 					"Madurai","Ahmedabad","Kolhapur","Prayaga","Ayodhya","Indraprastha","Mathura","Ujjain","Gulbarga","Jaunpur",
@@ -639,10 +635,10 @@
 		"uniqueName": "Unique Ability",
 		"uniques": ["[-2 Production, +6 Gold] from every [Mine]",
 					"[+1 Gold, +1 Food] from every [Desert]",
-					"[-25]% [Production] [in all cities]",
+					"[-20]% [Production] [in all cities]",
 					
 					"[+10]% [Gold] from every [Gold] <if [Leader - Mansa Musa] is constructed>"],
-		"uniqueText": " [Songs of the Jeli]: \n * ['[Mine]' [improvement] [-2 Production, +6 Gold]] \n * ['[Desert]' [tiles] [+1 Gold, +1 Food]] \n * [All cities] [-25]% [Production] ",
+		"uniqueText": " [Songs of the Jeli]: \n * ['[Mine]' [improvement] [-2 Production, +6 Gold]] \n * ['[Desert]' [tiles] [+1 Gold, +1 Food]] \n * [All cities] [-20]% [Production] ",
 		
 		"cities":  ["Niani","Timbuktu","Jenne","Gao","Kumbi Saleh","Walata","Tawdenni","Tadmekka","Awdaghust","Kirina",
 					"Segu","Nioro","Kangaba","Kouroussa","Niagassola","Diara","Kayes","N'teret","Dia","Arawan",
@@ -677,14 +673,14 @@
 		"uniqueName": "Unique Ability",
 		"uniques": ["Receive triple Gold from Barbarian encampments and pillaging Cities",
 					"Defense bonus when embarked <for [All] units>",
-					"[All] units gain the [Amphibious] promotion",
+					"[{All} {non-[Great People]} {non-[Tourism Unit]}] units gain the [Amphibious] promotion",
 					
 					"[All] units gain the ['[Askia]' ability] promotion <if [Leader - Muhammad Ture] is constructed>",
 					
 					"[+1 Culture] [in all cities] <after founding a Pantheon> <if [Leader - Sunni Ali] is constructed>",
-					"[+1 Culture] from every [Mud Pyramid Mosque] <if [Leader - Sunni Ali] is constructed>",
+					"[+2 Culture] from every [Mud Pyramid Mosque] <if [Leader - Sunni Ali] is constructed>",
 					"[+10]% [Culture] from every [Mud Pyramid Mosque] <if [Leader - Sunni Ali] is constructed>"],
-		"uniqueText": " [River Warlord]: \n * [Receive triple Gold from Barbarian encampments and pillaging Cities] \n * ['[All]' [units] [Defense bonus when embarked]] \n * ['[All]' units gain the '[Amphibious]' promotion] ",
+		"uniqueText": " [River Warlord]: \n * [Receive triple Gold from Barbarian encampments and pillaging Cities] \n * ['[All]' [units] [Defense bonus when embarked]] \n * ['[{All} {non-[Great People]} {non-[Tourism Unit]}]' units gain the '[Amphibious]' promotion] ",
 		
 		"cities":  ["Gao","Tombouctu","Jenne","Taghaza","Tondibi","Kumbi Saleh","Kukia","Walata","Tegdaoust","Argungu",
 					"Gwandu","Kebbi","Boussa","Motpi","Bamako","Wa","Kayes","Awdaghost","Ouadane","Dakar",
@@ -722,7 +718,9 @@
 					"[+15]% Production when constructing [Ancient era Wonder] wonders [in all cities] <in [River] tiles>",
 					"[+15]% Production when constructing [Classical era Wonder] wonders [in all cities] <in [River] tiles>",
 					
-					"[+1 Food] from every [River] <if [Leader - Ramesses II] is constructed>",
+					"[+1 Production] from every [River] <if [Leader - Ramesses II] is constructed>",
+					
+					"Gain enough Faith for [10]% of a Great Prophet <upon building a [Sphinx] improvement> <if [Leader - Amenhotep IV] is constructed>",
 					
 					"[+1 Faith] from every [Luxury resource] <if [Leader - Tutankhamun] is constructed>",
 					"[+1 Gold] from every [Plantation] <if [Leader - Tutankhamun] is constructed>"],
@@ -764,7 +762,7 @@
 		"uniques": ["[+33]% Natural religion spread [in all cities]",
 					"[Faith] cost of purchasing [Great Prophet] units [-33]%",
 					
-					"[+20]% Strength <when fighting units from a Civilization with more Cities than you> <if [Leader - Haile Selassie] is constructed>"],
+					"[+12]% Strength <when fighting units from a Civilization with more Cities than you> <if [Leader - Haile Selassie] is constructed>"],
 		"uniqueText": " [The Christian Gospel]: \n * [All cities] [[+33]% Natural religion spread] \n * [[Faith] cost of purchasing '[Great Prophet]' [units] [-33]%] ",
 		
 		"cities":  ["Addis Ababa","Gondar","Harar","Axum","Adwa","Lalibela","Mekele","Dessie","Jimma","Sodo",
@@ -799,17 +797,16 @@
 		"innerColor": [255,255,255],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+1] Sight <for [Military] units> <when at war>",
-					"[-33]% Gold cost of acquiring tiles [in all cities]",
+		"uniques": ["[+1 Culture, +1 Science] per [1] social policies adopted",
 					
 					"[All] units gain the [Boost Morale] promotion <if [Leader - George Washington] is constructed>",
 					
-					"[+1 Science, +1 Culture] from every [District - City] <with [1] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
-					"[+1 Science, +1 Culture] from every [District - City] <with [2] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
-					"[+1 Science, +1 Culture] from every [District - City] <with [3] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
-					"[+1 Science, +1 Culture] from every [District - City] <with [4] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
-					"[+1 Science, +1 Culture] from every [District - City] <with [5] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
-					"[+1 Science, +1 Culture] from every [District - City] <with [6] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [1] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [2] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [3] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [4] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [5] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
+					"[+1 Science, +2 Culture] from every [District] <with [6] to [6] neighboring [Natural Wonder] tiles> <if [Leader - Theodore Roosevelt] is constructed>",
 					
 					"[+2 Gold] from every [District - Industrial Zone] <if [Leader - Franklin Roosevelt] is constructed>",
 					"[+2 Gold] from every [District - Business Center] <if [Leader - Franklin Roosevelt] is constructed>",
@@ -817,7 +814,7 @@
 					"[+2 Gold] from all [Gold] buildings <if [Leader - Franklin Roosevelt] is constructed>",
 					
 					"[+1 Happiness] from every [District - City] <if [Leader - Abraham Lincoln] is constructed>"],
-		"uniqueText": " [Manifest Destiny]: \n * [When at war], ['[Military]' [units] [[+1] Sight]] \n * [All cities] [[-33]% Gold cost of acquiring tiles] ",
+		"uniqueText": " [Manifest Destiny]: \n * [[+1 Culture, +1 Science] per [1] social policies adopted] ",
 		
 		"cities":  ["Washington","New York","Boston","Philadelphia","Atlanta","Chicago","Seattle","San Francisco","Los Angeles","Houston",
 					"Portland","St. Louis","Miami","Buffalo","Detroit","New Orleans","Baltimore","Denver","Cincinnati","Dallas",
@@ -853,15 +850,26 @@
 		"innerColor": [205,000,001],
 		
 		"uniqueName": "Unique Ability",
-		"uniques": ["[+2 Gold] from every [Camp]",
-					"[+2 Gold] from every [Furs]",
-					"[+1 Culture] from every [Tundra]",
-					"[+1 Culture] from every [Snow]",
+		"uniques": ["[+2 Gold] from every [District - City] <with [1] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - City] <with [2] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - City] <with [3] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - City] <with [4] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - City] <with [5] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - City] <with [6] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [1] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [2] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [3] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [4] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [5] to [6] neighboring [Luxury resource] tiles>",
+					"[+2 Gold] from every [District - Business Center] <with [6] to [6] neighboring [Luxury resource] tiles>",
 					
-					"[+1 Production] from every [Mine] <in [Snow] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
-					"[+1 Production] from every [Mine] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
-					"[+1 Food] from every [Camp] <if [Leader - Wilfrid Laurier] is constructed>"],
-		"uniqueText": " [Fur Trade]: \n * ['[Camp]' [improvement] [+2 Gold]] \n * ['[Furs]' [tiles] [+2 Gold]] \n\n [Northern Scenery]: \n * ['[Tundra]' & '[Snow]' [tiles] [+1 Culture]] ",
+					"[+1 Food] from every [Snow] <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Food] from every [Tundra] <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Forest] <in [Snow] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Forest] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Hill] <in [Snow] tiles> <if [Leader - Wilfrid Laurier] is constructed>",
+					"[+1 Production] from every [Hill] <in [Tundra] tiles> <if [Leader - Wilfrid Laurier] is constructed>"],
+		"uniqueText": " [Fur Trade]: \n * ['[City]' & '[Business Center]' [district] [+2 Gold] from each [1] adjacent '[Luxury resource]' [tiles]] ",
 		
 		"cities":  ["Ottawa","Toronto","Montréal","Quebec City","Hamilton","Winnipeg","Halifax","Saint John","Vancouver","Victoria",
 					"Kingston","Brantford","Windsor","Charlottetown","Calgary","Sherbrooke","Guelph","Peterborough","Valleyfield","Edmonton",
@@ -915,7 +923,7 @@
 					"[+1 Faith] from every [Terrace Farm] <with [5] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
 					"[+1 Faith] from every [Terrace Farm] <with [6] to [6] neighboring [Mountain] tiles> <if [Leader - Pachacuti] is constructed>",
 					
-					"[Worker] units gain the [Huáscar] promotion <if [Leader - Wayna Qhapaq] is constructed>"],
+					"[Workers] units gain the [Huascar] promotion <if [Leader - Wayna Qhapaq] is constructed>"],
 		"uniqueText": " [Qhapaq Ñan]: \n * [Units ignore terrain costs when moving into any tile with Hills] \n * [[-50]% maintenance on road & railroads] \n * [No Maintenance costs for improvements in '[Hill]' tiles] ",
 		
 		"cities":  ["Cuzco","Tiwanaku","Machu","Ollantaytambo","Corihuayrachina","Huamanga","Rumicucho","Vilcabamba","Vitcos","Andahuaylas",
@@ -952,7 +960,7 @@
 		"uniqueName": "Unique Ability",
 		"uniques": ["Earn [50]% of killed [Military] unit's [Cost] as [Culture]",
 					
-					"[Military] units gain the [Flower] promotion <if [Leader - Montezuma I] is constructed>"],
+					"[{Military} {non-[Great People]} {non-[Tourism Unit]}] units gain the [Flower] promotion <if [Leader - Montezuma I] is constructed>"],
 		"uniqueText": " [Sacrificial Captives]: \n * ['[All]' [units] [Earn [50]% of killed [Military] unit's [Cost] as [Culture]]] ",
 		
 		"cities":  ["Tenochtitlan","Teotihuacan","Tlatelolco","Texcoco","Tlaxcala","Calixtlahuaca","Xochicalco","Tlacopan","Atzcapotzalco","Tzintzuntzan",
@@ -989,11 +997,10 @@
 		"uniqueName": "Unique Ability",
 		"uniques": ["Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Mathematics]. Each bonus person can only be chosen once.",
 					"Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.",
-					"[+2 Food] from every [Farm] <in [Fresh water] tiles>",
-					"[-3 Food] from every [Farm] <in [non-fresh water] tiles>",
+					"[+1 Food] from every [Farm]",
 					
 					"[+2 Science] from all [Faith] buildings <if [Leader - Pacal II] is constructed>"],
-		"uniqueText": " [The Long Count]: \n * [Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Mathematics]. Each bonus person can only be chosen once.] \n * [Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.] \n\n [Milpa]: \n * ['[{Fresh water} {Farm}]' [improvement] [+2 Food]] \n * ['[{non-fresh water} {Farm}]' [improvement] [-3 Food]] ",
+		"uniqueText": " [The Long Count]: \n * [Receive a free Great Person at the end of every [Maya Long Count calendar cycle] (every 394 years), after researching [Mathematics]. Each bonus person can only be chosen once.] \n * [Once The Long Count activates, the year on the world screen displays as the traditional Mayan Long Count.] \n\n [Milpa]: \n * ['[Farm]' [improvement] [+1 Food]] ",
 		
 		"cities":  ["Palenque","Tikal","Chichen Itza","Uxmal","Tulum","Copan","Coba","El Mirador","Calakmul","Edzna",
 					"Lamanai","Izapa","Uaxactun","Comalcalco","Piedras Negras","Cancuen","Yaxha","Quirigua","Q'umarkaj","Nakbe",
@@ -1028,12 +1035,11 @@
 		
 		"uniqueName": "Unique Ability",
 		"uniques": ["All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
-					"Resting point for Influence with City-States is increased by [+15]",
+					"[{Melee} {non-[Great People]} {non-[Tourism Unit]}] units gain the [Favorable Condition] promotion",
 					
-					"Allied City-States provide [Gold] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>",
-					"Allied City-States provide [Culture] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>",
-					"Allied City-States provide [Faith] equal to [50]% of what they produce for themselves <if [Leader - Hiawatha] is constructed>"],
-		"uniqueText": " [The Great Warpath]: \n * [All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.] \n\n [Coalition Politics]: \n * [Resting point for Influence with City-States is increased by [+15]] ",
+					"[+25]% [Gold] from Trade Routes <if [Leader - Hiawatha] is constructed>",
+					"[+2 Science] from each Trade Route <if [Leader - Hiawatha] is constructed>"],
+		"uniqueText": " [The Great Warpath]: \n * [All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.] \n\n [Coalition Politics]: \n * ['[Melee]' units gain the '[Favorable Condition]' promotion] ",
 		
 		"cities":  ["Onondaga","Osininka","Grand River","Akwesasme","Buffalo Creek","Brantford","Montreal","Genesse River","Canandaigua Lake","Lake Simcoe",
 					"Salamanca","Gowanda","Cuba","Akron","Kanesatake","Ganienkeh","Cayuga Castle","Chondote","Canajoharie","Nedrow",
@@ -1070,12 +1076,12 @@
 		"uniques": ["Enables embarkation for land units <starting from the [Ancient era]>",
 					"Enables [All] units to enter ocean tiles <starting from the [Ancient era]>",
 					"[+1] Sight <for [Embarked] units>",
-					"[-1 Faith] from every [Water resource] <in [unimproved] tiles>",
-					"[+2 Faith] from every [Water resource]",
+					"[+1 Faith] from every [{improved} {Water resource}]",
+					"[+1 Faith] from every [Water resource]",
 					"[+1 Food] from every [Fishing Boats]",
 					
-					"[+15]% Strength <within [4] tiles of a [Moai]> <if [Leader - Kamehameha I] is constructed>"],
-		"uniqueText": " [Wayfinding]: \n * [Starting from the '[Ancient era]'], ['[All]' [units] [enables enter ocean tiles]] & ['[All]' [units] [enables embarkation]] \n\n [Ocean Pet]: \n * ['[Water Resource]' [tiles] [+2 Faith]] \n * ['[{Unimproved} {Water Resource}]' [tiles] [-1 Faith]] \n * ['[Fishing Boats]' [improvement] [+1 Food]] ",
+					"[+10]% Strength <within [4] tiles of a [Moai]> <if [Leader - Kamehameha I] is constructed>"],
+		"uniqueText": " [Wayfinding]: \n * [Starting from the '[Ancient era]'], ['[All]' [units] [enables enter ocean tiles]] & ['[All]' [units] [enables embarkation]] \n\n [Ocean Pet]: \n * ['[Water Resource]' [tiles] [+1 Faith]] \n * ['[{Improved} {Water Resource}]' [tiles] [+1 Faith]] \n * ['[Fishing Boats]' [improvement] [+1 Food]] ",
 		
 		"cities":  ["Honolulu","Samoa","Tonga","Nuku Hiva","Raiatea","Aotearoa","Tahiti","Hilo","Te Wai Pounamu","Rapa Nui",
 					"Tuamotu","Rarotonga","Tuvalu","Tubuai","Mangareva","Oahu","Kiritimati","Ontong Java","Niue","Rekohu",

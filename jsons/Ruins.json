@@ -40,8 +40,8 @@
 	
     {
         "name": "squatters willing to work for you",
-        "notification": "A [Base Worker] has joined us!",
-        "uniques": ["Free [Base Worker] found in the ruins"]
+        "notification": "A [Worker] has joined us!",
+        "uniques": ["Free [Worker] found in the ruins"]
     },
     {
         "name": "squatters wishing to settle under your rule",
@@ -88,7 +88,7 @@
     {
         "name": "an ancient prophecy",
         "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
-        "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [90]% of a Great Prophet", "Hidden after generating a Great Prophet", "Only available <before the [Enlightenment era]>"],
+        "uniques": ["Hidden when religion is disabled", "Gain enough Faith for [90]% of a Great Prophet", "Only available <before the [Enlightenment era]>"],
 		"color": "#CDDDF4"
     }
 ]

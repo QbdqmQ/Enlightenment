@@ -66,6 +66,14 @@
         "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
     },
     
+    {
+        "name": "Truth Victory",//真相胜利
+        "hiddenInVictoryScreen": true,
+        "milestones": ["Build [The Real]"],
+        "victoryString": "You wake up. You feel as if you had a very long dream. But you can't remember any details about the dream at all. You decide to forget it and go for a walk.",
+        "defeatString": "Silently, everything is erased."
+    },
+    
 //模式
     
     {
